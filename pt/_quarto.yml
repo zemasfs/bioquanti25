@@ -23,7 +23,7 @@ website:
           # - text: "Bioquímica de gente, de bicho, e de planta"
           #   href: nivel/superior/biqTxT/index_txt.qmd
 
-      - section: "**Jmol & R no Ensino Básico**"
+      - section: "**Jmol e R no Ensino Básico**"
         contents:
           - text: "Moléculas & Jmol"
             href: nivel/basico/Curso/jmol_curso.qmd
