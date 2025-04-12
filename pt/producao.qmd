@@ -11,13 +11,13 @@ title: ""
 
 ## Livros
 
-- Schneedorf, J.M., Rodrigues, K.L. Bioquímica básica, de gente, de bicho, e de planta 353p., 2024. ISBN: DOI: http://dx.doi.org/10.13140/RG.2.2.32623.55208.
+- Schneedorf, J.M., Rodrigues, K.L. [Bioquímica básica, de gente, de bicho, e de planta](http://dx.doi.org/10.13140/RG.2.2.32623.55208). 353p., 2024. ISBN: 978-65-00-90366-9.
 
-- Schneedorf, J.M. Bioquímica Quantitativa & R. 152p., 2022. ISBN: 978-65-00-52125-2. DOI: http://dx.doi.org/10.13140/RG.2.2.36090.40644.
+- Schneedorf, J.M. [Bioquímica Quantitativa](http://dx.doi.org/10.13140/RG.2.2.36090.40644) & R. 152p., 2022. ISBN: 978-65-00-52125-2. .
 
-- Schneedorf, J.M. SISMA - Visualização Dinâmica em Catálise & Metabolismo. 95p., 2022. ISBN: 978-65-00-52124-5. DOI: http://dx.doi.org/10.13140/RG.2.2.25027.92964.
+- Schneedorf, J.M. [SISMA - Visualização Dinâmica em Catálise & Metabolismo](http://dx.doi.org/10.13140/RG.2.2.25027.92964). 95p., 2022. ISBN: 978-65-00-52124-5.
 
-- Schneedorf, J.M. Bioquímica Estrutural Guiada Por Jmol. 145p., 2019. ISBN: 978-85-63473-42-4. DOI: http://dx.doi.org/10.13140/RG.2.2.29268.10882
+- Schneedorf, J.M. [Bioquímica Estrutural Guiada Por Jmol](http://dx.doi.org/10.13140/RG.2.2.29268.10882). 145p., 2019. ISBN: 978-85-63473-42-4. 
 
 ## Capítulos
 
