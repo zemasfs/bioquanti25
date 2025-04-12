@@ -1,0 +1,27 @@
+---
+title: "Molecules of pharmacological interest"
+---
+
+[![Paracetamol is classified as a mild analgesic for pain relief.](paracetamol.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC(=O)NC1=CC=C(C=C1)O)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Paracetamol)
+</p>
+
+[![Ibuprofen can be used for symptomatic relief of migraines and acts as a anti-inflammatory.](ibuprofeno.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC(C)CC1=CC=C(C=C1)C(C)C(=O)O)
+
+<p style="text-align:right;">
+[Wikipedia](https://en.wikipedia.org/wiki/Ibuprofen)
+</p>
+
+[![Amoxicillin is an antibiotic used to treat a variety of bacterial infections.](amoxicilina.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?mode l=CC1(%5BC@@H%5D(N2%5BC@H%5D(S1)%5BC@@H%5D(C2=O)NC(=O)%5BC@@H%5D(C3=CC=C(C=C3)O)N)C(=O)O)C)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Amoxicillin)
+</p>
+
+[![Metformin is used in the treatment of type 2 diabetes.](metformina.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CN(C)C(=N)N=C(N)N)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Metformina)
+</p>

@@ -1,0 +1,16 @@
+---
+title: "Polymers, supramolecular complexes, and viruses"
+---
+
+[![Nylon 66, a structure formed by synthetic polyamines, similar to proteins (polyamides). Open the image in Jmol/JSmol.](ny6.png){width="40%"}](ny6.png)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/N%C3%A1ilon)
+</p>
+
+[![An example of virus (open the image in Jmol/JSmol).](virus.png){width="40%"}](virus.png)
+
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/V%C3%ADrus)
+</p>

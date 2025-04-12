@@ -1,0 +1,28 @@
+---
+title: "Moléculas de interesse toxicológico"
+publish: false
+---
+
+[![Formaldeído subatância de caracter Cancerígeno, usado na conservação de tecido.](formaldeido.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C=O)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Metanal)
+</p>
+
+[![Mercúrio é um metal tóxico com efeito cumulativo.](Mercúrio.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=%5BHg%5D)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Merc%C3%BArio)
+</p>
+
+[![Chumbo é um dos mais perigosos metais tóxicos pela quantidade e severidade dos seus efeitos.](chumbo.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=%5BPb%5D)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Chumbo)
+</p>
+
+[![Dioxina é um dos mais potentes carcinogênicos.](dioxina.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C1=C2C(=CC(=C1Cl)Cl)OC3=CC(=C(C=C3O2)Cl)Cl)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Dioxina)
+</p>

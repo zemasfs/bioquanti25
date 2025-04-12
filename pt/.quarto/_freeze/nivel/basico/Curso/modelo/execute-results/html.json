@@ -1,0 +1,15 @@
+{
+  "hash": "a2eb9db59a606ff085742d63a4e8eef9",
+  "result": {
+    "engine": "knitr",
+    "markdown": "<div class=\"hum-fundo\">  <!--modifica para cada área-->\n\n## Título\n\n<!-- ::: {.grid} -->\n\n<!-- ::: {.g-col-6} -->\n\n\n::: {.cell}\n\n:::\n\n<!-- ::: -->\n\n<!-- ::: {.g-col-6} -->\n\n::: {.cell}\n\n:::\n\n<!-- ::: -->\n\n<!-- ::: -->\n\n</div>\n\n<div class=\"hum-fundo2\"> <!--modifica para cada área-->\n\n**Sugestões:**\n\n|       Experimente modificar o gráfico, usando/substituindo alternativamente os comandos abaixo no trecho de código:\n\n\n::: {.cell}\n\n:::\n\n\n</div>\n\n\\",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

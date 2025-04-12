@@ -1,0 +1,59 @@
+---
+title: "Inorganic Molecules"
+---
+
+## Acids
+
+[![Sulfuric acid's primary uses include fertilizer production, petroleum refining, wastewater treatment, and chemical synthesis.](acido%20sulfurico.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=OS(=O)(=O)O)
+
+<p style="text-align:right;">
+[Wikipedia](https://en.wikipedia.org/wiki/acido%20sulfúrico)
+</p>
+
+[![Hydrochloric acid is often used in chemical analysis to prepare "digested" samples for analysis.](acido%20cloridrico.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=Cl)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/%C3%81cido_clor%C3%ADrico)
+</p>
+
+## Bases
+
+[![Sodium hydroxide is used in industry, mainly as a chemical base, in the manufacture of paper, textiles, detergents, food and biodiesel.](hidroxido%20de%20sodio.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=naoh)
+
+<p style="text-align:right;">
+[Wikipedia](https://en.wikipedia.org/wiki/Sodium_hydroxide)
+</p>
+
+[![Ammonium hydroxide is a soluble base, it only exists in aqueous solution when ammonia (NH3) is bubbled in water.](hidróxido%20de%20amonio.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=NH4OH)
+
+<p style="text-align:right;">
+[Wikipedia](https://en.wikipedia.org/wiki/Ammonium_hydroxide)
+</p>
+
+## Salts
+
+[![Sodium chloride is used on a large scale in the production of sodium hydroxide. sodium, chlorine, hydrogen and indirectly hydrochloric acid by electrolysis of its aqueous solution (chlor-alkali process).](cloreto%20de%20sodio.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=nacl)
+
+<p style="text-align:right;">
+[Wikipedia](https://en.wikipedia.org/wiki/Sodium%20chloride)
+</p>
+
+[![Sodium hypochlorite is used in the disinfection of drinking water at a concentration of 1 L of household bleach for every 4000 L of water.](Hipoclorito%20de%20sodio.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=naclo)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Hipoclorito%20de%20sódio)
+</p>
+
+## Oxides
+
+[![Carbon dioxide is a versatile industrial material, used, for example, as an inert gas in welding and fire extinguishers.](dióxido%20de%20carbono.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C(=O)=O)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Dióxido%20de%20Carbono)
+</p>
+
+[![Calcium oxide is used in construction to make mortars and prepare the processes of painting.](óxido%20de%20calcio.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=cao)
+
+<p style="text-align:right;">
+[Wikipedia](https://en.wikipedia.org/wiki/Calcium%20oxide)
+</p>

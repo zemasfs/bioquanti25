@@ -1,0 +1,28 @@
+---
+title: " Moléculas de interesse ambiental"
+publish: false
+---
+
+[![Dióxido de carbono é um gás de efeito estufa, sendo o principal responsável pelo aquecimento global.](dioxido%20de%20carbono.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C(=O)=O)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Di%C3%B3xido_de_carbono)
+</p>
+
+[![Dióxido de enxofre é um gás que contrbui para chuva ácida.](dióxido%20de%20enxofre.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=O=S=O)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Di%C3%B3xido_de_enxofre)
+</p>
+
+[![Nitrato está presente em fertilizantes, contribui para a eutrofização de corpos d'água.](Nitrato.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=%5BN+%5D(=O)(%5BO-%5D)%5BO-%5D%5D)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Nitrato)
+</p>
+
+[![Ozônio é um gás presente na estratosfera, protege contra radiação UV, mas é poluente na troposfera.](ozonio.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=%5BO-%5D%5BO+%5D=O)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Oz%C3%B4nio)
+</p>

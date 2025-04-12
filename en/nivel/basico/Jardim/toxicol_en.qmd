@@ -1,0 +1,27 @@
+---
+title: "Molecules of toxicological interest"
+---
+
+[![Formaldehyde is a substance with a carcinogenic nature, used in tissue preservation.](formaldeido.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C=O)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Methanal)
+</p>
+
+[![Mercury is a toxic metal with a cumulative effect.](mercurio.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=Hg2)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Merc%C3%BArio)
+</p>
+
+[![Lead is one of the most dangerous toxic metals due to the quantity and severity of its effects.](chumbo.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=%5BPb%5D)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Chumbo)
+</p>
+
+[![Dioxin is one of the most potent carcinogens.](dioxina.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C1=C2C(=CC(=C1Cl)Cl)OC3=CC(=C(C=C3O2)Cl)Cl)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Dioxin)
+</p>

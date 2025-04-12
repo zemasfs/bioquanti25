@@ -1,0 +1,27 @@
+---
+title: "Toxic Plant Molecules"
+---
+
+[![Atropine is an alkaloid found in plants such as belladonna (Atropabelladonna).](atropina.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CN1%5BC@@H%5D2CC%5BC@H%5D1CC(C2)OC(=O)C(CO)C3=CC=CC=C3)
+
+<p style="text-align:right;">
+[Wikipedia](https://en.wikipedia.org/wiki/Atropine)
+</p>
+
+[![Tetrodotoxin is found in certain marine plants, such as algae toxic.](tetrod.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=%20C([C@@]1([C@H]2[C@@H]3[C@H](N=C(N[C@@]34[C@@H]([C@@H]1O[C@]([C@H]4O)(O2)O)O)N)O)O)O)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Tetrodoxin)
+</p>
+
+[![ Strychnine is an alkaloid present in Strychnos nux-vomica, highly toxic.](Estricnina.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model= C1CN2CC3=CCO[C@H]4CC(=O)N5[C@H]6[C@H]4[C@H]3C[C@H]2[C@@]61C7=CC=CC=C75)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Strychnine)
+</p>
+
+[![Ricin is a toxin present in the castor bean (Ricinus communis), highly lethal.](ricina.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?&pdbid=2aai)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Ricina)
+</p>

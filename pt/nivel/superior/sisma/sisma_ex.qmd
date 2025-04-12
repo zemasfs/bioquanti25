@@ -1,0 +1,28 @@
+---
+title: "Exemplos de mapas dinâmicos com *Sisma*"
+---
+
+
+[Condição de Briggs-Haldane do estado estacionário](mapas/briggsHald.sis)
+
+[Efeito de Vm e Km](mapas/Vm_Km.sis)
+
+[Efeito do teor de enzima](mapas/conc_enz.sis)
+
+[Inibição por substrato](mapas/inib_substr.sis)
+
+[Equilíbrio T-R em enzima](mapas/eqTR.sis)
+
+[Ajuste induzido](mapas/ajuste_induzido.sis)
+
+[Efetor alostérico negativo](mapas/efetor_neg.sis)
+
+[Efetor alostérico positivo](mapas/efetor_pos.sis)
+
+[Glicólise](mapas/glicolise.sis)
+
+[Metabolismo de carboidratos](mapas/mapaCHO.sis)
+
+[Beta-oxidação de ácidos graxos](mapas/betaoxid.sis)
+
+[Mapa Metabólico](mapas/mapaMetab.sis)

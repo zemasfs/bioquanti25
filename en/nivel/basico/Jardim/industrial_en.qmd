@@ -1,0 +1,29 @@
+---
+title: "Molecules of industrial interest"
+---
+
+##Molecules of Industrial Interest
+
+[![Ammonia is used in the production of fertilizers.](amoníaco.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=N)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Ammonia)
+</p>
+
+[![Methanol is used as a solvent and in the production of formaldehyde.](Metanol.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CO)
+
+<p style="text-align:right;">
+[Wikipedia](https://en.wikipedia.org/wiki/Methanol)
+</p>
+
+[![Polyethylene is the most common plastic in the world.](polietileno.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=%20C=C)
+
+<p style="text-align:right;">
+[Wikipedia](https://en.wikipedia.org/wiki/Polyethylene)
+</p>
+
+[![Vinyl chloride is used in the production of PVC.](cloreto%20de%20vinila.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C=CCl)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Cloreto_de_vinila)
+</p>

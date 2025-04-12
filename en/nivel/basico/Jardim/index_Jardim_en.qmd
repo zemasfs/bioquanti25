@@ -1,0 +1,6 @@
+---
+title: "Initiative"
+class: basic-background
+---
+
+| This **Molecule Garden** under development aims to assist in the interactive learning of molecules with the help of three-dimensional atomic models together with codes for compilation of specific observations, colors, calculations, varied rendering of atomic structures, and animation, among others.

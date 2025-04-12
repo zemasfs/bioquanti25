@@ -1,0 +1,67 @@
+---
+title: ""
+---
+
+<!-- --Websites -->
+<!-- --Aplicativos -->
+<!--    - Sisma  -->
+<!--    - ScriptRplot -->
+<!--    - JSPlotly -->
+
+## Books
+
+- Schneedorf, J.M., Rodrigues, K.L. Bioquímica básica, de gente, de bicho, e de planta 353p., 2024. ISBN: DOI: http://dx.doi.org/10.13140/RG.2.2.32623.55208.
+
+- Schneedorf, J.M. Bioquímica Quantitativa & R. 152p., 2022. ISBN: 978-65-00-52125-2. DOI: http://dx.doi.org/10.13140/RG.2.2.36090.40644.
+
+- Schneedorf, J.M. SISMA - Visualização Dinâmica em Catálise & Metabolismo. 95p., 2022. ISBN: 978-65-00-52124-5. DOI: http://dx.doi.org/10.13140/RG.2.2.25027.92964.
+
+- Schneedorf, J.M. Bioquímica Estrutural Guiada Por Jmol. 145p., 2019. ISBN: 978-85-63473-42-4. DOI: http://dx.doi.org/10.13140/RG.2.2.29268.10882
+
+## Chapters
+
+<!-- - Schneedorf, J.M. JSPlotly. -->
+<!-- - Schneedorf, J.M. SriptRplot. -->
+
+- Oliveira, G. A. V. ; Lemes, N. H. T. ; Sindra, L. V. ; Schneedorf, J.M. . Binding of Molecules Followed by Electroanalytical Techniques. In: Ana Clarissa dos Santos Pires; Luis Henrique Mendes da Silva. (Org.). Methods and Protocols in Food Science - Characterization of Molecular Interactions. 1ed.New York: Springer Nature, 2025, v. 13, p. 1-12.
+
+- Ferreira, M. P. ; Galhardo, B. R. ; Lemes, N. H. T. ; Coelho, Y. L. ; Schneedorf, J.M. ; Sindra, L. V. Application of Quartz Crystal Microbalance to Study Intermolecular Interactions. In: Ana Clarissa dos Santos Pires; Luis Henrique Mendes da Silva. (Org.). Methods and Protocols in Food Science - Characterization of Molecular Interactions. 1ed.New York: Springer Nature, 2025, v. 13, p. 29-38.
+
+- Andrade, R. J. ; Lemes, N. H. T. ; Sindra, L. V. ; Schneedorf, J.M. . Difference Spectra Absorption Spectrophotometry Applied to Molecular Interactions. In: Ana Clarissa dos Santos Pires; Luis Henrique Mendes da Silva. (Org.). Methods and Protocols in Food Science - Characterization of Molecular Interactions. 1ed.New York: Springer Nature, 2025, v. 13, p. 14-28.
+
+- Schneedorf, J.M. R e RStudio: uma plataforma para implementação de ensino reprodutível. In: Aprendizagem Ativa: da Educação Básica ao Ensino Superior. Org: Sindiany Suelen Caduda dos Santos, Débora Moreira de Oliveira. V & V Editora, Santo André (SP), 2025 (in press).
+
+- Schneedorf, J.M., Nogueira, M.G.F., Mafra, L.A.S., Silva, E.L. Jardim de Moléculas: um catálogo virtual para ensino reprodutível de modelos atômicos ao ensino básico. In: Aprendizagem Ativa: da Educação Básica ao Ensino Superior. Org: Sindiany Suelen Caduda dos Santos, Débora Moreira de Oliveira. V & V Editora, Santo André (SP), 2025 (in press).
+
+- Schneedorf, J.M. Pacotes do R para criação de objetos de aprendizagem ativos em ensino reprodutível. In: Aprendizagem Ativa: da Educação Básica ao Ensino Superior. Org: Sindiany Suelen Caduda dos Santos, Débora Moreira de Oliveira. V & V Editora, Santo André (SP), 2025 (in press).
+
+- Schneedorf, J.M., Hornink, G.G. Desenvolvimento De Competências Digitais No Ensino Superior A Partir De Aprendizagem Baseada Em Projetos Com R e Rstudio.In: Aprendizagem Ativa: da Educação Básica ao Ensino Superior. Org: Sindiany Suelen Caduda dos Santos, Débora Moreira de Oliveira. V & V Editora, Santo André (SP), 2025 (in press).
+
+- Silva, L.E., Alves, L.P.O., Vespucio, N.M.B., Schneedorf, J.M. Sisma, um aplicativo para simulação de diagramas dinâmicos para o ensino-aprendizagem e sua adaptação para ambiente online (SismaWeb). In: Aprendizagem Ativa: da Educação Básica ao Ensino Superior. Org: Sindiany Suelen Caduda dos Santos, Débora Moreira de Oliveira. V & V Editora, Santo André (SP), 2025 (in press).
+
+- Schneedorf, J.M. Documentos Dinâmicos em Ensino Reprodutível com R & Rstudio. In: Tecnologias Emergentes em Educação. V & V Editora, Santo André (SP), 2025 (in press).
+
+- Schneedorf, J.M. Ensino reprodutível como metodologia ativa em ensino-aprendizagem. In: Tecnologias Emergentes em Educação. V & V Editora, Santo André (SP), 2025 (in press).
+
+- Schneedorf, J.M., Rodrigues, B.S., Hornink, G.G. OIER - Objetos Interativos em Ensino Reprodutível: uma abordagem com R. In: Tecnologias Emergentes em Educação. V & V Editora, Santo André (SP), 2025 (in press).
+
+- Schneedorf, J.M. Literacia de prompts na produção de objetos didáticos interativos em ensino reprodutível para R & RStudio. In:  Reflexões e Relatos sobre Inteligência Artificial. Org: Carolei, P., Rosalen, M. V & V Editora, Santo André (SP), 2025 (in press).
+
+- Schneedorf, J.M. Avaliação de assistentes de IA na criação de códigos de R para objetos interativos em ensino reprodutível. In:  Reflexões e Relatos sobre Inteligência Artificial. Org: Carolei, P., Rosalen, M. V & V Editora, Santo André (SP), 2025 (in press).
+
+- Silva, L.E., Lima, D.C., Isgrignero, I., França, J.G., Lage, R.M., Schneedorf, J.M., Mafra, L.A.S. Tales Ludos: aprimorando a experiência dos usuários 
+para a elaboração de jogos educacionais online.  In: Tecnologias Emergentes em Educação. V & V Editora, Santo André (SP), 2025 (in press).
+
+- Tecnologias digitais e a coprodução do bem público: interatividade e participação na construção de Recursos Educacionais Abertos. Mafra, L.A.S, Gozzi, W.P., Santos, A.G.S., Silva, L.E., Schneedorf, J.M. In: Abordagens Multidisciplinares na cultura digital. Org: Costa, C.T.O.P. V & V Editora, Santo André (SP), 2025 (in press).
+
+
+## Papers
+
+- Schneedorf, J.M. Livros vivos: uma proposta de ensino reprodutível com R & Rstudio. Revista Eletrônica Casa de Makunaima. 2025 (in press).
+
+- Schneedorf, J.M. Bioquanti, um website interativo para ensino-aprendizagem em Bioquímica." Revista de Ensino de Bioquímica 21.1 (2023): 110-124.
+
+
+
+
+

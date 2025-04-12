@@ -1,0 +1,27 @@
+---
+title: "Molecules of nutritional interest"
+---
+
+[![Curcumin is a yellow dye derived from turmeric](curcumina.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=COC1=C(C=CC(=C1)/C=C/C(=O)CC(=O)/C=C/C2=CC(=C(C=C2)O)OC)O)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Curcumin)
+</p>
+
+[![Beta-carotene is an orange dye derived from carrots](bcaroteno.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?)
+
+<p style="text-align:right;">
+[Wikipedia](https://en.wikipedia.org/wiki/Betacarotene)
+</p>
+
+[![Lycopene is a red dye found in tomatoes](licopeno.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC(=CCC/C(=C/C=C/C(=C/C=C/C=C(/C=C/C=C(/C=C/C=C(/CCC=C(C)C)\C)\C)\C)/C)/C)/C)
+
+<p style="text-align:right;">
+[Wikipedia](https://en.wikipedia.org/wiki/Lycopene)
+</p>
+
+[![Chlorophyll is a green ... leaf](clorofila.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CCC1=C(C2=NC1=CC3=C(C4=C(C(C(=C 4%5BN-%5D3)C5=NC(=CC6=NC(=C2)C(=C6C)C=C)C(C5CCC(=O)OCC=C(C)CCCC(C)CCCC(C)CCCC(C)C)C)C(=O)OC)%5BO-%5D)C)C.%5BMg+2%5D)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Clorofila)
+</p>

@@ -1,0 +1,287 @@
+---
+title: "Organic molecules"
+---
+
+# Hydrocarbon
+
+## Alkane
+
+[![Methane is used in the manufacture of acrylic resins and polyester fibers and in the pharmaceutical industry.](metano){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/metano)
+</p>
+
+```{r, eval=FALSE}
+wireframe only; wireframe 0.2
+```
+
+[![Ethane is used as a biofuel, a source of electrical energy, or as a raw material to generate byproducts.](etano){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC)
+
+```{r, eval=FALSE}
+rotate x 10
+```
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/etano)
+</p>
+
+[![Propane is present in some fuels used in automobiles, such as gasoline and alcohol.](propano.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CCC)
+
+```{r, eval=FALSE}
+spin on
+
+```
+
+<p style="text-align:right;">
+[Wikipedia](https://en.wikipedia.org/wiki/Propane)
+</p>
+
+[![Butane is used as a fuel for lighters and as a raw material in the production of synthetic rubber.](butano.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CCCC)
+
+```{r, eval=FALSE}
+isosurface vdw
+
+```
+
+<p style="text-align:right;">
+[Wikipedia](https://en.wikipedia.org/wiki/Butane)
+</p>
+
+[![Hexadecane is a high-purity compound widely used in various laboratory and pharmaceutical applications. industrial.](hexadecano.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CCCCCCCCCCCCCCC)
+
+```{r, eval=FALSE}
+moveto 2.0 {1 1 1 90}
+
+```
+
+<p style="text-align:right;">
+[Wikipedia](: https://pt.wikipedia.org/wiki/Alcano)
+</p>
+
+## Alkene
+
+[![Ethylene is produced during the ripening of fruits, accelerating this process in other fruits that are in contact with ripe fruits.](etileno.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C=C)
+
+```{r, eval=FALSE}
+select atomno=1,2
+color atoms yellow
+
+```
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Ethylene)
+</p>
+
+[![Propylene is used as a fixative in perfumes, a vehicle for some ingredients in topical medications, and also a moisturizing humectant in various cosmetics.](propileno.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC=C)
+
+```{r, eval=FALSE}
+bondOrder double
+```
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Propylene)
+</p>
+
+[![Pentene is a molecule used as a solvent, fuel additive, and in the production of polymers.](penteno.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CCCC=C)
+
+```{r, eval=FALSE}
+color bonds red
+
+```
+
+<p style="text-align:right;">
+[Wikipedia](https://en.wikibooks.org/wiki/Introduction_to_Chemistry/Hydrocarbons)
+</p>
+
+[![Benzene is used in the production of lubricants, rubbers, dyes, solvents, and pesticides.](benzeno.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C1=CC=CC=C1)
+
+```{r, eval=FALSE}
+for (var i=0; i<10; i++) {
+rotate y 30
+color atoms random
+delay 0.5
+}
+```
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/benzene)
+</p>
+
+[![Hexene is very commonly used in the chemical and petrochemical industries and gas stations.](hexeno.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CCCCC=C)
+
+```{r, eval=FALSE}
+color bonds blue
+```
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/hexene)
+</p>
+| Links:
+1. [Alkanes and alkenes](https://www.echalk.co.uk/3Dmolecules/alkanes_alkenes/alkanes.htm)
+
+## Alkyne
+
+[![Acetylene is used in the manufacture of explosives, solvents and plastics.](acetileno.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=
+acetylene)
+
+```{r, eval=FALSE}
+color bonds yellow
+```
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Acetylene)
+</p>
+
+[![Propylene is used in welding.](propino.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC#C)
+
+```{r, eval=FALSE}
+select bond(triple);C2, C3
+```
+
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/propino)
+</p>
+
+[![2-butyne the main use is the synthesis of butadiene for artificial rubber.](2-butino.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC#CC)
+
+```{r, eval=FALSE}
+load "SMILES:CCCC#C"
+```
+
+
+<p style="text-align:right;">
+[Wikipedia](https://en.wikipedia.org/wiki/Ethylacethylene)
+</p>
+
+# Arene
+
+# Alcohol
+
+[![Ethanol is used as a biofuel, a source of electrical energy or as a raw material to generate by-products.](etanol.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CCO)
+
+```{r, eval=FALSE}
+cylinder 50
+
+```
+
+<p style="text-align:right;">
+[Wikipedia](https://en.wikipedia.org/wiki/Ethanol)
+</p>
+
+[![Ethylene glycol is a chemical compound widely used in the composition of antifreezes.](etilenoglicol.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C(CO)O)
+
+```{r, eval=FALSE}
+spacefill 20
+```
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/etilenoglicol)
+</p>
+
+# Phenol
+
+[![Phenol has applications such as; precursor or reagent in the production of resins, plastics, medicines, herbicides and disinfectants.](fenol.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C1=CC=C(C=C1)O)
+
+```{r, eval=FALSE}
+select aromatic
+color blue
+```
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/fenol)
+</p>
+
+[![Resveratrol is used to reduce levels of LDL.](resveratrol.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C1=CC(=CC=C1/C=C/C2=CC(=CC(=C2)O)O)O)
+
+```{r, eval=FALSE}
+select aromatic
+wireframe 100
+```
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/resveratrol)
+</p>
+
+# Ether
+
+[![Ethyl ether is used as a solvent for resins and oils, as well as in the preparation of gunpowder and artificial silk.](eter etilico.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CCOCC)
+
+```{r, eval=FALSE}
+select O C
+wireframe 100
+```
+
+<p style="text-align:right;">
+[Wikipedia](https://en.wikipedia.org/wiki/%C3%89ter_et%C3%ADlico)
+</p>
+
+# Aldehyde
+
+[![Acetaldehyde is an intermediate in the manufacture of other substances, such as acetic acid.](acetaldeido.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC=O)
+
+```{r, eval=FALSE}
+select C=O
+wireframe 100
+```
+
+<p style="text-align:right;">
+[Wikipedia](https://en.wikipedia.org/wiki/Acetaldehyde)
+</p>
+
+[![Formaldehyde is used in industry, it can be used to manufacture disinfectants.](formaldeido.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C=O)
+
+```{r, eval=FALSE}
+wireframe 50
+```
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Methanal)
+</p>
+
+# Ketone
+
+[![Acetone is used as a solvent and intermediate in the manufacture of other chemical substances.](acetona.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC(=O)C)
+```{r, eval=FALSE}
+isosurface solvent; color isosurface red blue
+```
+
+<p style="text-align:right;">
+[Wikipedia](https://en.wikipedia.org/wiki/Acetone)
+</p>
+
+[![Cyclopentanone is a colorless liquid organic compound with an odor similar to the smell of peppermint.](ciclopentanona.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model= C1CCC(=O)C1)
+
+```{r, eval=FALSE}
+select carbonyl
+color yellow
+```
+
+<p style="text-align:right;">
+[Wikipedia](https://en.wikipedia.org/wiki/Cyclopentanone)
+</p>
+
+# Carboxylic acid
+
+[![Acetylsalicylic acid is used as a medication to treat pain (analgesic), fever (antipyretic) and inflammation (anti-inflammatory). ](ac.acetilsalicilico.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model= CC(=O)OC1=CC=CC=C1C(=O)O)
+
+```{r, eval=FALSE}
+dihedral
+```
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/%C3%81cido_acetilsalic%C3%ADlico)
+</p>
+
+[![Ascorbic acid increases the gastrointestinal absorption of iron; and acts as a urine acidifier.](acido ascorbico.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C([C@@H]([C@@H]1C(=C(C(=O)O1)O)O)O)O)
+
+```{r, eval=FALSE}
+show atoms
+show bonds
+```
+
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/%C3%81cido_asc%C3%B3rbico)
+</p>

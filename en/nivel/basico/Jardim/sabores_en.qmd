@@ -1,0 +1,27 @@
+---
+title: "Molecules of interest for flavors"
+---
+
+[![Monosodium glutamate is used to enhance the umami flavor.](glutamato monossodico.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C(CC(=O)O)%5BC@@H%5D(C(=O)%5BO-%5D)N.%5BNa+%5D)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/%C3%81acido_glut%C3%A2mico)
+</p>
+
+[![Caffeine is present in coffee and gives flavor bitter.](cafeína.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CN1C=NC2=C1C(=O)N(C(=O)N2C)C)
+
+<p style="text-align:right;">
+[Wikipedia](https://en.wikipedia.org/wiki/Caffeine)
+</p>
+
+[![Capsaicin is responsible for the spicy flavor in chili peppers.](caps.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC(C)/C=C/CCCCC(=O)NCC1=CC(=C(C=C1)O)OC)
+
+<p style="text-align:right;">
+[Wikipedia](https://en.wikipedia.org/wiki/Capsaicin)
+</p>
+
+[![Citric acid is the sour flavor found in citrus fruits.](ácido citrico.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C(C(=O)O)C(CC(=O)O)(C(=O)O)O)
+
+<p style="text-align:right;">
+[Wikipedia](https://en.wikipedia.org/wiki/Ácido%20citrico)
+</p>

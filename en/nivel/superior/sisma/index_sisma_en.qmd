@@ -1,0 +1,51 @@
+---
+title: "SISMA - Visual Dynamics of Transformations"
+---
+
+![ ](logo_sisma.png){width=20%}
+
+| **Sisma** is a program designed to generate a dynamic image of transformations occurring between reagents and products of isolated or network reactions, by simply inserting compounds (*object*) interconnected by arrows (*path*). In this sense, the program was designed to facilitate the insertion of reagents and metabolic pathways, **simulating what would be drawn with a pencil and a blank sheet of paper**.
+
+| The program was written in *Java* and allows you to dynamically visualize and evaluate the transformation of reagents and products in an isolated reaction, a metabolic flow, or complex maps. The name **Sisma** refers to the acronym for **Autocatalytic Map System**. The program performs a visual and quantitative simulation on a reaction map, by perceiving *variations in the hue of the objects* involved in each transformation, either from a *default* equation or introduced by the user.
+<br />
+**SISMA Features**
+
+| To study the relationships between reagents and products, the program allows the insertion of compounds (*Object*), paths (*Path*), figures and notes on the map, storage and reading of maps, simulation of the variations in the relative levels of each compound by means of a graph of points and lines simultaneously with those that occur on the map itself, pause, interruption, rewind and advance of the visualization at any time during the simulation, automatic generation and export of a spreadsheet containing the numerical values ​​of each transformed object at each instant, and instant printing of the map at the point of a desired transformation. In this way, the program makes the visualization of *forces and flows* dynamic, which are presented statically in diagrams and maps in *Biochemistry* and related areas.
+| The program was developed in partnership with Prof. Dr. Luiz Eduardo da Silva, from the Department of Computer Science (DCC/UNIFAL-MG) and three students of Scientific Initiation.
+
+<br />
+**Example of screens**
+
+![ ](estacion.png){width=40%}
+![ ](RP1.png){width=40%}
+![ ](rede.png){width=40%}
+![ ](achase.png){width=30%}
+
+## Download ##
+
+| The compressed file containing the program is obtained from this [**LINK**](Sisma.zip)
+
+## Quick tip for use ! ##
+| To use **Sisma**, download the file from the *link* above and unzip it on your PC. The program does not require installation, only a [*JAVA*](https://www.java.com/pt-BR/download/manual.jsp) virtual machine. To run it, go to the *"dist"* folder and click on the Java executable file (*"Sisma_Realese_1.jar"*).
+
+| This [**quick tutorial**](https://www.youtube.com/watch?v=MPr5zWlJqbY){target="\_blank"} in *video* illustrates the usage described below.
+
+| Right-click and select *Object* to insert a compound. Repeat the last procedure in another location on the *blank sheet* of the program, but this time reducing the color intensity on the scroll bar. Now connect the two objects by clicking on a vertex of one of them and dragging the mouse to the vertex of the other. Finally, click *OK* and run the simulation using the *Play* icon to view the conversion of hues from the first to the second object.
+
+## Ebook ##
+
+| To insert *objects* and *paths* in **Sisma**, as well as to develop, simulate and evaluate enzymatic reactions, chains or dynamic metabolic networks, download the book [SISMA - Visualização Dinâmica em Cataálise & Metabolismo](https://www.researchgate.net/publication/388871255_SISMA_-_Visualizacao_Dinamica_em_Catalise_Metabolismo). Below are some example files for dynamic transformations with *Sisma*.
+
+::: {layout="[ 300, 200 ]"}
+
+::: {#first-column}
+
+
+:::
+
+::: {#second-column}
+
+[![](biqSisma.png){width="20%" fig-align="right"}](https://www.researchgate.net/publication/388871255_SISMA_-_Visualizacao_Dinamica_em_Catalise_Metabolismo?channel=doi&linkId=67ab3dba4c479b26c9dd001c&showFulltext=true)
+
+:::
+:::
