@@ -359,18 +359,38 @@ main.content {
   z-index: 0;
 }
 
-/* Adiciona a imagem com transparência controlada */
+/* ########################## */
+/* PLANO DE FUNDO VISÍVEL E NÍTIDO */
+/* Substitui o antigo bloco que expandia verticalmente a imagem */
+/* ########################## */
+
 .page-columns::before {
   content: "";
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background: url("static/img/fundo-geral.png") no-repeat left top;
-  background-size: auto 200%; /* altura total da coluna */
-  opacity: 0.2;               /* ajuste a transparência aqui */
-  z-index: -1;                /* fica atrás de todo o conteúdo */
+
+  /* Imagem original */
+  background-image: url("static/img/fundo-geral.png");
+
+  /* Evita repetição */
+  background-repeat: no-repeat;
+
+  /* Mantém proporção e mostra toda a imagem */
+  background-size: contain;
+
+  /* Alinhamento da imagem */
+  background-position: top left;
+
+  /* Ajuste de transparência (0 = invisível, 1 = opaco) */
+  opacity: 0.3;
+
+  /* Garante que fique atrás do conteúdo */
+  z-index: -1;
 }
+
 
 /* #### atrás do sidebar
 
