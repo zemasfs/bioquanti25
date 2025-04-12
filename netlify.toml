@@ -1,0 +1,3 @@
+[build]
+  command = "echo 'Site already built'"
+  publish = "_site"
