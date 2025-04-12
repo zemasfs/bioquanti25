@@ -385,7 +385,7 @@ main.content {
   background-position: top left;
 
   /* Ajuste de transparência (0 = invisível, 1 = opaco) */
-  opacity: 0.3;
+  opacity: 0.1;
 
   /* Garante que fique atrás do conteúdo */
   z-index: -1;
