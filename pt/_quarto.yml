@@ -20,8 +20,8 @@ website:
             href: index.qmd
           - text: "ERЯƎ - Ensino Reprodutível"
             href: erre.qmd
-          - text: "Bioquímica de gente, de bicho, e de planta"
-            href: nivel/superior/biqTxT/index_txt.qmd
+          # - text: "Bioquímica de gente, de bicho, e de planta"
+          #   href: nivel/superior/biqTxT/index_txt.qmd
 
       - section: "**Jmol & R no Ensino Básico**"
         contents:

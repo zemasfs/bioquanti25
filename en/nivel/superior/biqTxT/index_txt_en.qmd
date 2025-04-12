@@ -1,10 +1,10 @@
 ---
-title: Prefácio
+title: "Preface"
 ---
 
 
 
-| This material, in Portuguese, only, aims to contribute to the learning of *Biochemistry* content usually found in the course syllabuses, as well as to outline a rough overview of its numerous applications in the human, animal, plant and microbial fields that are based on its foundations.
+| This material, in Portuguese only, aims to contribute to the learning of *Biochemistry* content usually found in the course syllabuses, as well as to outline a rough overview of its numerous applications in the human, animal, plant and microbial fields that are based on its foundations.
 
 | Unlike the other materials available on the website, this one is offered for reading and study only, and does not include code excerpts for use in the programs discussed on the *website*.
 
