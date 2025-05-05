@@ -1,0 +1,756 @@
+<!--- V23 - TRABALHA COM EQUAÇÕES DE PLOTLY.JS DA INTERNET, COM COM FUNÇÕES MATEMÁTICAS E PLOTS ADICIONADOS, E REALIZA CURVE FITTING 
+      v24 - TOGGLE SPIKE LINES NO MODE BAR
+      V25, 26, E 27 - MELHORIAS INDIVIDUAIS DO CHAT, MAS COM LAYOUT DO JSPLOTY COMPLETAMENTE DIFERENTE
+      v28 -  BOTÃO DE SALVAMENTO PNG/SVG, SCROOL DIRETO NO ECRÃ, RETIRADA DE BOTÕES DESNECESSÁRIOS DO MODEBAR (INCLUINDO SAVE PNG), INCLUSÃO DE EDIÇÃO 
+             DO GRÁFICO NO CHART STUDIO, RESPONSIVE PRA ADAPTAR A TAMANHO DE TELAS, EDIÇÃO DE RÓTULOS DIRETO NO PLOT
+      v29 - LINK PARA O BIOQUANTI NO CANTO SUP. DIR., TROCA DE CORES DO ÚLTIMO PLOT E BOTÃO NO MODE BAR
+      v30 - adaptação para mobile-friendly: Organiza os elementos em coluna no celular; Faz com que botões e campos ocupem a largura total, ideais para toque; 
+Reduz altura dos gráficos e editor para caber melhor na tela; Ajusta tipografia e legibilidade; Garante que o popup de exportação também funcione bem em telas pequenas.
+      v31 - alternância claro-escuro--->
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSPlotly</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.20.0/plotly.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.js"></script> <!--- biblioteca pra curve fitting polinom, exponenc, etc --->
+ <!---   <script src="https://cdn.jsdelivr.net/npm/numjs@0.16.1/dist/numjs.min.js"></script> <!--- biblioteca para ajuste não linear - Levenberg-Marquadt --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script> 
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { display: flex; justify-content: space-between; align-items: flex-start; }
+        #grafico { width: 55%; height: 500px; }
+        #editor-container { width: 40%; }
+        #editor { width: 100%; height: 350px; border: 1px solid #ccc; }
+
+.header-bar {
+    width: 100%;
+    height: 30px; /* Ajuste a altura conforme necessário */
+    background: linear-gradient(to right, #F5F5DC, #EDEAE0); /* Degradê em tons de marfim */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #5a4a42; /* Tom suave de marrom para contraste */
+<!---    text-transform: uppercase;--->
+    letter-spacing: 2px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para destaque */
+    margin-bottom: 40px; /* 🔹 Espaçamento extra abaixo da barra */
+}
+
+
+
+.license-info {
+    position: fixed;
+    bottom: 10px;
+    right: 500px;
+    font-size: 12px;
+    color: gray;
+    font-family: Arial, sans-serif;
+    opacity: 0.8;
+}
+
+
+
+////////////////////// app developed...
+
+
+.dev-info {
+    position: absolute;
+    top: 3px;  /* Ajusta para o topo */
+    left: 10px; /* Mantém alinhado à esquerda */
+    font-size: 6px !important; /* Tamanho de fonte pequeno */
+    color: #999; /* Cor cinza bem suave */
+    font-family: Arial, sans-serif;
+}
+
+.dev-info a {
+    text-decoration: none;
+    color: #888; /* Cinza um pouco mais forte para os links */
+    font-weight: bold;
+}
+.dev-info a:hover {
+    text-decoration: underline;
+    color: #666; /* Cor um pouco mais visível no hover */
+}
+
+
+///////////////////////////////
+       
+.button-container { 
+    display: flex; 
+    gap: 10px; 
+    margin-top: 10px; 
+}
+
+button { 
+    padding: 10px; 
+    cursor: pointer; 
+    border: none; 
+    font-size: 14px; 
+    border-radius: 5px; 
+    transition: background 0.3s ease-in-out; 
+}
+
+/* Botão para adicionar curva - tons suaves de verde */
+.add-btn { 
+    background: linear-gradient(to bottom, #e6f2e6, #d0e6d0); 
+    color: #2d6a2d; 
+}
+
+/* Botão para resetar gráfico - tons suaves de vermelho */
+.reset-btn { 
+    background: linear-gradient(to bottom, #fae3e3, #f4cccc); 
+    color: #a83232; 
+}
+
+/* Botão para salvar equação - tons suaves de dourado */
+.save-btn { 
+    background: linear-gradient(to bottom, #fff4e6, #ffe0b2); 
+    color: #8a5a00; 
+}
+
+/* Botão para salvar HTML - tons suaves de cinza/marfim */
+.save-html-btn { 
+    background: linear-gradient(to bottom, #f5f5f5, #e0e0e0); 
+    color: #444; 
+}
+
+.clear-btn {
+    background-color: #6c757d; /* Cinza suave */
+    color: white;
+}
+
+/* Estilo para o botão de remoção */
+.remove-btn {
+    background-color: #faf482;
+    color: #85802a;
+}
+
+.clear-btn {
+    background-color: #dc3545; /* Vermelho para indicar ação de limpeza */
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+.clear-btn:hover {
+    background-color: #a71d2a;
+}
+
+
+
+
+        .author-info { position: absolute; top: 60px; right: 20px; font-size: 14px; color: gray; }
+        .logo { position: fixed; bottom: 10px; right: 20px; width: 100px; z-index: 10;} 
+        .ascii-logo {
+            position: fixed;
+            bottom: 10px;
+            right: 20px;
+            font-family: monospace;
+            font-size: 2px;
+            white-space: pre;
+            text-align: right;
+            z-index: 10; 
+        }
+
+
+    </style>
+
+
+
+<!--- mobile-friendly --->
+<style>
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    #grafico {
+      width: 100% !important;
+      height: 300px !important;
+    }
+
+    #editor-container {
+      width: 100% !important;
+    }
+
+    #editor {
+      height: 300px !important;
+    }
+
+    .button-container {
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    button {
+      width: 100%;
+      font-size: 16px;
+    }
+
+    .header-bar {
+      font-size: 16px;
+    }
+
+    .popup {
+      width: 90%;
+    }
+
+    .external-link {
+      position: relative;
+      top: auto;
+      right: auto;
+      margin-top: 10px;
+      text-align: right;
+    }
+  }
+</style>
+
+<!--- modo escuro--->
+<style>
+  body.dark-mode {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+  }
+
+  body.dark-mode .header-bar {
+    background: linear-gradient(to right, #2e2e2e, #1a1a1a);
+    color: #f0f0f0;
+  }
+
+  body.dark-mode .button-container button {
+    background: #333 !important;
+    color: #ddd !important;
+  }
+
+  body.dark-mode .clear-btn {
+    background-color: #a71d2a !important;
+    color: white !important;
+  }
+
+  body.dark-mode #editor {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+  }
+
+  body.dark-mode .popup {
+    background-color: #2b2b2b;
+    color: #eee;
+  }
+</style>
+
+
+
+
+</head>
+<body>
+    <div class="header-bar">JSPlotly - Interactive Graphics </div>
+
+<!---botão de alternância de tema--->
+<button id="toggleTheme" onclick="alternarTema()" style="position: fixed; top: 10px; left: 10px; z-index: 999; background: none; border: none; font-size: 22px; cursor: pointer;">
+  🌙
+</button>
+
+
+
+<div class="external-link">
+  <a href="https://bioquanti.netlify.app/" target="_blank">🔗 Bioquanti</a>  <!--- link para o site --->
+</div>
+
+
+<div class="dev-info">
+    Developed with 
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a> 
+    and 
+    <a href="https://plotly.com/javascript/" target="_blank">Plotly.js</a>
+</div>
+
+
+
+    <div class="ascii-logo">
+      
+####  ####  ####   ####   ####   ########  ##########   ####                ######   ######     ######        <br>
+####  ####  #####  ####   ####   #####     ####   ###   ####        #####   ##### #### ####   ####            <br>
+####  ####  ### ## ####   ####   #######   ##########   ####        #####   #####  ## #####   ####    ###     <br>
+#########   ####  #####   ####   ####      ####   ###   ########            #####     #####    #########      <br>
+  #####     ####   ####   ####   ####      ####   ###   ########            #####     #####     #######       <br>              
+
+    </div> 
+
+
+  <div class="author-info">José Maurício Schneedorf FS  <br>
+                             Depto Bioquímica, UNIFAL-MG
+
+    </div>
+  <!--- <img src="dbq.png" alt="Logo da Instituição" class="logo"> --->
+
+
+
+
+    <div class="container">
+        <div id="grafico"></div>
+
+<!-- Adicionar após o gráfico -->
+<div id="popup" class="popup">
+    <p>Save as:</p>
+    <button onclick="salvarImagem('png')">PNG</button>
+    <button onclick="salvarImagem('svg')">SVG</button>
+    <button onclick="fecharPopup()">Cancelar</button>
+</div>
+
+<style>
+.popup {
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+.popup button {
+    margin: 5px;
+    padding: 8px;
+}
+
+.external-link {  /* link para o Bioquanti*/
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.external-link a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.external-link a:hover {
+  text-decoration: underline;
+  color: #0077cc;
+}
+
+</style>
+
+
+
+        <div id="editor-container">
+   <!---         <h3>Editor Interativo:</h3> --->
+            <input type="file" id="fileInput" accept=".js" onchange="carregarEquacaoAuto(event)">
+            <div id="editor"></div>
+            <div class="button-container">
+                <button class="add-btn" onclick="adicionarCurva()">add plot</button>
+                <button class="remove-btn" onclick="removerUltimaCurva()">remove last</button>
+                <button class="reset-btn" onclick="resetarGrafico()">clean plot</button>
+                <button class="save-html-btn" onclick="salvarHTML()">save html</button>
+                <button class="save-btn" onclick="salvarEquacao()">save script</button>                
+                <button class="clear-btn" onclick="limparEditor()">clean script</button> 
+   <!---             <button class="clear-btn" onclick="limparTudo()">Clean Script</button> --->
+
+                
+
+
+            </div>
+        </div>
+    </div>
+    <script>
+        var curvas = [];
+        var cores = ["red", "blue", "green", "purple", "orange", "brown", "pink", "gray"];
+        var corIndex = 0;
+     // Editor Interativo atualizado - Compatível com Plotly.js da web
+
+// Inicializar o editor Ace.js
+var editor = ace.edit("editor");
+editor.setTheme("ace/theme/github");
+editor.session.setMode("ace/mode/javascript");
+editor.session.setUseWrapMode(true);
+editor.setOptions({
+    fontSize: "14px",
+    wrap: true,
+    showPrintMargin: false
+});
+
+// Código inicial padrão do Plotly.js
+var codigoInicial = `
+// Exemplo: Equação de Michaelis-Menten
+const Vmax = 100;
+const Km = 10;
+const S_values = Array.from({length: 200}, (_, i) => i * (50 / 199));
+const V_values = S_values.map(S => (Vmax * S) / (Km + S));
+
+// Criar objeto de dados para Plotly.js
+var trace = {
+    x: S_values,
+    y: V_values,
+    type: 'scatter',
+    mode: 'lines',
+    line: { color: 'red' },
+    name: 'Michaelis-Menten'
+};
+
+// Definir layout do gráfico
+var layout = {
+    title: 'Curva de Michaelis-Menten',
+    xaxis: { title: 'Concentração de Substrato [S]', range: [0, 50] },
+    yaxis: { title: 'Velocidade da Reação (V)', range: [0, 100] },
+    showlegend: true
+};
+
+// Plotar o gráfico usando a estrutura padrão da web
+Plotly.newPlot('grafico', [trace], layout, config);
+`;
+
+// Definir código inicial no editor
+// Código inicial padrão do Plotly.js
+var codigoInicial = `
+// Exemplo: Equação de Michaelis-Menten
+const Vmax = 100;
+const Km = 10;
+const S_values = Array.from({length: 200}, (_, i) => i * (50 / 199));
+const V_values = S_values.map(S => (Vmax * S) / (Km + S));
+
+// Criar objeto de dados para Plotly.js
+var trace = {
+    x: S_values,
+    y: V_values,
+    type: 'scatter',
+    mode: 'lines',
+    line: { color: 'red' },
+    name: 'Michaelis-Menten'
+};
+
+// Definir layout do gráfico
+var layout = {
+    title: 'Curva de Michaelis-Menten',
+    xaxis: { title: 'Concentração de Substrato [S]', range: [0, 50] },
+    yaxis: { title: 'Velocidade da Reação (V)', range: [0, 100] },
+    showlegend: true
+};
+
+// Plotar o gráfico usando a estrutura padrão da web
+
+Plotly.newPlot('grafico', [trace], layout, config)
+`;
+
+// Definir código inicial no editor
+editor.setValue(codigoInicial, -1);
+
+var customSaveButton = {
+    name: 'PNG or SVG',
+    icon: Plotly.Icons.disk,
+    click: function(gd) {
+        abrirPopup();
+    }
+};
+
+/////////////////////////////////////////////// CONFIGURAÇÃO DO MODEBAR  ///////////////////////////////////////////////////////
+
+// Adição de botões do ModeBar para Spikes, salvamenteo png/svg, e edição no Chart Studio (o hoverCompare não aparece !!)
+var config = {
+  modeBarButtonsToAdd: [
+    'toggleSpikelines',
+    'hoverCompareCartesian',
+    customSaveButton,
+    {
+      name: 'change color',
+      icon: Plotly.Icons.camera,
+      click: function(gd) {
+        const ultima = curvas.length - 1;
+        const novaCor = cores[Math.floor(Math.random() * cores.length)];
+        Plotly.restyle(gd, { 'line.color': novaCor }, [ultima]);
+        curvas[ultima].line.color = novaCor;
+      }
+    }
+  ],
+  showEditInChartStudio: true,
+  plotlyServerURL: "https://chart-studio.plotly.com",
+  displaylogo: false,
+  displayModeBar: true,
+  responsive: true,
+  scrollZoom: true,
+  editable: true,
+  modeBarButtonsToRemove: [
+    'select2d',
+    'lasso2d',
+    'resetScale2d',
+    'zoomOut2d',
+    'zoomIn2d',
+    'toImage'
+  ]
+};
+
+
+/* modeBarButtonsToAdd: [{name: 'color toggler',icon: Plotly.Icons.pencil,click: function(gd) {var newColor = colors[Math.floor(3 * Math.random())] Plotly.restyle(gd, 'line.color', newColor)}}]*/
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ 
+// Função para executar o código do usuário
+function executarCodigo() {
+    try {
+        var codigoUsuario = editor.getValue().trim();
+        Plotly.purge('grafico'); // Remove gráficos anteriores antes de rodar um novo
+        eval(codigoUsuario);
+    } 
+
+catch (error) {
+      //  alert("Erro no código! Verifique a sintaxe.");
+      //  console.error(error);
+    }
+}
+
+// Função para limpar o gráfico
+function limparGrafico() {
+    Plotly.purge('grafico');
+}
+
+
+        function carregarEquacaoAuto(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    editor.setValue(e.target.result, -1);
+                };
+                reader.readAsText(file);
+            }
+        }
+
+////////////////////////////////////// FUNÇÃO DE ADIÇÃO DE CURVA (ADD PLOT) /////////////////////////////////////////
+
+function adicionarCurva() {
+    try {
+        var codigoUsuario = editor.getValue().trim();
+        var func = new Function(codigoUsuario + "; return { trace, layout, x_values, y_values };");
+        var resultado = func();
+
+        let novaCurva;
+
+        if (resultado.trace) {
+            novaCurva = resultado.trace;
+        } else if (resultado.x_values && resultado.y_values) {
+            novaCurva = {
+                x: resultado.x_values,
+                y: resultado.y_values,
+                type: 'scatter',
+                mode: 'lines',
+                line: { color: 'red' }
+            };
+        } else {
+            alert("O código precisa retornar 'trace' ou 'x_values' e 'y_values'.");
+            return;
+        }
+
+        curvas.push(novaCurva);
+        Plotly.newPlot("grafico", curvas, resultado.layout, config);
+    } catch (error) {
+        alert("Erro ao adicionar curva: " + error.message);
+        console.error(error);
+    }
+}
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function resetarGrafico() {
+            curvas = [];
+            corIndex = 0;
+            Plotly.newPlot('grafico', [], {xaxis: { title: 'X' }, yaxis: { title: 'Y' } });
+        }
+
+        function salvarEquacao() {
+            var blob = new Blob([editor.getValue()], { type: "text/javascript" });
+            var a = document.createElement("a");
+            a.href = URL.createObjectURL(blob);
+            a.download = "equacao_salva.js";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+
+        
+
+        function salvarHTML() {
+            var plotlyData = JSON.parse(JSON.stringify(curvas));
+            var plotlyLayout = document.getElementById('grafico').layout;
+
+            var htmlContent = '<!DOCTYPE html>\n' +
+                '<html>\n' +
+                '<head>\n' +
+                '    <meta charset="UTF-8">\n' +
+                '    <title>Gráfico Salvo</title>\n' +
+                '    <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.20.0/plotly.min.js"><\/script>\n' +
+                '</head>\n' +
+                '<body>\n' +
+                '    <div id="grafico" style="width: 100%; height: 600px;"></div>\n' +
+                '    <script>\n' +
+                '        var data = ' + JSON.stringify(plotlyData) + ';\n' +
+                '        var layout = ' + JSON.stringify(plotlyLayout) + ';\n' +
+                '        Plotly.newPlot("grafico", data, layout);\n' +
+                '    <\/script>\n' +
+                '</body>\n' +
+                '</html>';
+
+            var blob = new Blob([htmlContent], { type: 'text/html' });
+            var a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = 'grafico_interativo.html';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+
+        function limparEditor() {
+        editor.setValue("", -1); // Define o editor como vazio
+        }
+
+
+        // Função para remover a última curva adicionada
+        function removerUltimaCurva() {
+         if (curvas.length > 0) {
+        curvas.pop(); // Remove a última curva da lista
+        atualizarGrafico(); // Atualiza o gráfico com as curvas restantes
+        } else {
+        alert("Não há curvas para remover!");
+      }
+    }
+
+// Função para atualizar o gráfico
+function atualizarGrafico() {
+    Plotly.newPlot('grafico', curvas, {
+        title: 'Gráfico Interativo',
+        xaxis: { title: 'X' },
+        yaxis: { title: 'Y' },
+        showlegend: true
+    });
+}
+
+function abrirPopup() {
+    document.getElementById('popup').style.display = 'block';
+}
+function fecharPopup() {
+    document.getElementById('popup').style.display = 'none';
+}
+function salvarImagem(formato) {
+    Plotly.downloadImage('grafico', {format: formato, filename: 'grafico_interativo'});
+    fecharPopup();
+}
+
+
+function limparTudo() {
+    // Resetar o editor para um código padrão ou vazio
+    editor.setValue("", -1);
+
+    // Verifica se o gráfico existe antes de limpar
+    let graficoDiv = document.getElementById("grafico");
+    if (graficoDiv) {
+        // Remove todos os traços do gráfico e reinicializa
+        Plotly.newPlot("grafico", [], {
+            xaxis: { title: "Eixo X" },
+            yaxis: { title: "Eixo Y" }
+        });
+
+        // Força a remoção dos dados armazenados internamente pelo Plotly
+        graficoDiv.data = [];
+    }
+}
+
+
+
+
+
+
+// Definir a equação quadrática padrão
+var codigoPadrao = `
+const a = 2;
+const b = -3;
+const c = 5;
+
+// Criando um array de valores X de -10 a 10
+const x_values = [];
+const y_values = [];
+for (let i = -10; i <= 10; i += 0.5) {
+    x_values.push(i);
+    y_values.push(a * Math.pow(i, 2) + b * i + c);
+}
+
+// Configuração de eixos e etiquetas
+const x_range = [-10, 10];
+const y_range = [0, Math.max(...y_values)];
+const x_label = "Valores de X";
+const y_label = "Valores de Y";
+const title = "Gráfico da Equação Quadrática";
+
+// Retornando os valores para o editor
+return { x_values, y_values, x_range, y_range, x_label, y_label, title };`;
+
+// Carregar a equação padrão no editor quando a página for aberta
+window.onload = function() {
+    editor.setValue(codigoPadrao, -1);
+};
+
+
+
+        resetarGrafico();
+    </script>
+
+<div class="license-info">
+    <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" style="color: gray; text-decoration: none;">
+            licence under CC BY-NC 4.0
+    </a>
+</div>
+
+<!--- alternância de modo claro/escuro --->
+
+<script>
+  function alternarTema() {
+  document.body.classList.toggle("dark-mode");
+
+  const isDark = document.body.classList.contains("dark-mode");
+  const botao = document.getElementById("toggleTheme");
+  botao.textContent = isDark ? "☀️" : "🌙";
+
+  // Alterna tema do Ace Editor
+  editor.setTheme(isDark ? "ace/theme/monokai" : "ace/theme/github");
+
+  // Atualiza layout do gráfico existente
+  const layoutEscuro = {
+    plot_bgcolor: "#1e1e1e",
+    paper_bgcolor: "#1e1e1e",
+    font: { color: "#e0e0e0" },
+    xaxis: { color: "#e0e0e0", gridcolor: "#444" },
+    yaxis: { color: "#e0e0e0", gridcolor: "#444" }
+  };
+
+  const layoutClaro = {
+    plot_bgcolor: "#ffffff",
+    paper_bgcolor: "#ffffff",
+    font: { color: "#000000" },
+    xaxis: { color: "#000", gridcolor: "#ccc" },
+    yaxis: { color: "#000", gridcolor: "#ccc" }
+  };
+
+  const layoutNovo = isDark ? layoutEscuro : layoutClaro;
+
+  Plotly.relayout("grafico", layoutNovo);
+}
+
+</script>
+
+
+</body>
+</html>

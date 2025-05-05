@@ -11,7 +11,7 @@ title: ""
 
 ## Livros
 
-- Schneedorf, J.M. Bioquanti: Vivificando conteúdos para o ensino básico. Org: Mafra, L.A.S; Silva, L.E; Schneedorf, J.M. Ed. Pimenta Cultural, 84p. 2025 (no prelo). 
+- Schneedorf, J.M. Bioquanti: Vivificando conteúdos para o ensino básico. In: Recursos Educacionais Abertos na UNIFAL-MG.  Org: Mafra, L.A.S; Silva, L.E; Schneedorf, J.M. Ed. Pimenta Cultural, 84p. 2025 (no prelo). 
 
 - Schneedorf, J.M., Rodrigues, K.L. [Bioquímica básica, de gente, de bicho, e de planta](http://dx.doi.org/10.13140/RG.2.2.32623.55208). 353p., 2024. ISBN: 978-65-00-90366-9.
 
