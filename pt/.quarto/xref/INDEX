@@ -496,5 +496,20 @@
   },
   "jsplotly_sup.qmd": {
     "jsplotly_sup.html": "19f99a10"
+  },
+  "nivel/superior/jsplotly/jsplotly_sup.qmd": {
+    "jsplotly_sup.html": "960f92d3"
+  },
+  "nivel/superior/jsplotly/gsplotly.qmd": {
+    "gsplotly.html": "f715e156"
+  },
+  "nivel/superior/jsplotly/jsplotly_geral.qmd": {
+    "jsplotly_geral.html": "70a646e6"
+  },
+  "nivel/superior/jsplotly/jsptl_bioq.qmd": {
+    "jsptl_bioq.html": "1761679e"
+  },
+  "nivel/basico/jsplotly/jsplotly_bas.qmd": {
+    "jsplotly_bas.html": "b6a64ff3"
   }
 }

@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -269,8 +304,18 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#características-do-jsplotly" id="toc-características-do-jsplotly" class="nav-link active" data-scroll-target="#características-do-jsplotly">Características do JSPlotly</a></li>
+  <li><a href="#funcionalidades-do-jsplotly" id="toc-funcionalidades-do-jsplotly" class="nav-link" data-scroll-target="#funcionalidades-do-jsplotly">Funcionalidades do JSPlotly</a></li>
+  <li><a href="#usabilidade-do-jsplotly" id="toc-usabilidade-do-jsplotly" class="nav-link" data-scroll-target="#usabilidade-do-jsplotly">Usabilidade do JSPlotly</a></li>
+  <li><a href="#download-e-uso" id="toc-download-e-uso" class="nav-link" data-scroll-target="#download-e-uso">Download e uso</a></li>
+  <li><a href="#exemplos-em-bioquímica" id="toc-exemplos-em-bioquímica" class="nav-link" data-scroll-target="#exemplos-em-bioquímica">Exemplos em Bioquímica</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -294,11 +339,114 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </header>
 
 
-<p>Em construção !!</p>
+<div class="line-block">&nbsp;&nbsp;<em>JSPlotly</em> é um programa para construção de gráficos interativos e dinâmicos para uso em visualizadores HTML. Seu nome deve-se à principal linguagem utilizada em sua construção bem como para a produção dos gráficos, <a href="https://www.javascript.com/">JavaScritpt</a>, bem como a biblioteca envolvida nessa, <a href="https://plotly.com/javascript/basic-charts/">Plotly.js</a>.</div>
+<p><img src="js_logo_bg.png" class="img-fluid" style="width:20.0%" data-align="right"></p>
+<div class="line-block">&nbsp;&nbsp;O <em>JSPlotly</em> foi idealizado tendo-se em mente facilitar ao máximo a construção e compartilhamento de gráficos interativos para ensino-aprendizagem e pesquisa. Gráficos estão presentes em virtualmente qualquer conteúdo ou livro-texto de ciências naturais e matemática, e constituem uma das formas mais ascertivas para comunicação de dados e comportamentos naturais. Em especial, gráficos permitem modelar tal comportamento, pela simulação de um fenômeno a partir da equação que o envolve.</div>
+<div class="line-block">&nbsp;&nbsp;Tendo a função matemática descritora desse comportamento, é possível simulá-lo com base em parâmetros e variáveis que a compõe e, tão importante quanto, observar seu comportamento sob alteração desses valores. Dessa forma, agrega-se valor ímpar à apropriação do conteúdo técnico-científico apresentado pelo gráfico, quando permitida sua <em>manipulação paramétrica</em> <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</div>
+<p><img src="Plotly_logo.png" class="img-fluid" style="width:50.0%" data-align="left"></p>
+<section id="características-do-jsplotly" class="level2">
+<h2 class="anchored" data-anchor-id="características-do-jsplotly">Características do JSPlotly</h2>
+<div class="line-block">&nbsp;&nbsp;O programa possui diversas características encontradas em outros tantos no mercado, bem como algumas habilidades que o distinguem desses, a saber:</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Não requer instalação;</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Não requer requisitos <span class="fu">complementares</span> (ex<span class="sc">:</span> bibliotecas <span class="sc">*</span>.NET Microsoft<span class="sc">*</span>, Java<span class="sc">*</span>);</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Não requer conexão de rede;</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fl">4.</span> Não requer configuração de máquina de mínimo <span class="fu">desempenho</span> (ex<span class="sc">:</span> memória RAM);</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fl">5.</span> Pode ser carregado a partir de um simples visualizador de <span class="fu">HTML</span> (<span class="sc">*</span>Firefox<span class="sc">*</span>, <span class="sc">*</span>Edge<span class="sc">*</span>, <span class="sc">*</span>Safari<span class="sc">*</span>, <span class="sc">*</span>Chrome<span class="sc">*</span>);</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fl">6.</span> Não requer um editor específico para construção, podendo ser elaborado a partir de um simples bloco de notas;</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fl">7.</span> Possui código<span class="sc">-</span>fonte e produto contidos em um mesmo arquivo, facilitando armazenamento e compartilhamento;</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fl">8.</span> Pode ser carregado a partir de computador, dispositivos móveis (smartphone) ou removíveis (pendrive);</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fl">9.</span> É interpretado a partir de um código de texto simples, utilizando memória física desprezível (<span class="dv">20</span>kB), ainda que permita a elaboração de gráficos sofisticados, interativos e dinâmicos (atualização por evento de usuário ou em tempo real);</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fl">10.</span> Por ser passível de construção em editor simples de texto, possui compartilhamento irrestrito de seu código<span class="sc">-</span>fonte;</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fl">11.</span> É capaz de produzir gráficos <span class="dv">2</span>D e <span class="dv">3</span>D interativos instantaneamente, e tanto a partir de equações, como de dados inseridos pelo usuário;</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fl">12.</span> É capaz de produzir mapas interativos, elevando a extensão de uso para aplicações não matemáticas;</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fl">13.</span> Correlaciona<span class="sc">-</span>se diretamente ao uso de linguagens de programação, tal como requerido pela <span class="sc">*</span><span class="dv">4</span>a. e <span class="dv">5</span>a. Revolução Industrial<span class="sc">*</span>, e respectivamente  espelhados nas competências digitais da <span class="sc">*</span>Educação <span class="dv">4</span> e <span class="fl">5.0</span><span class="sc">*</span>; </span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="fl">14.</span> Por sua simplicidade como arquivo único em HTML, pode ser incorporado em páginas da web ou ambientes virtuais, permitindo seu uso para qualquer modalidade de ensino<span class="sc">-</span><span class="fu">aprendizagem</span> (ex<span class="sc">:</span> presencial, híbrido, remoto, EaD);</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fl">15.</span> Insere<span class="sc">-</span>se nos conceitos de <span class="sc">*</span>pesquisa reproduzível<span class="sc">*</span> bem como de <span class="sc">*</span>ensino reprodutível<span class="sc">*</span>, alicerçados pelo acesso e compartilhamento abertos, facilitados e documentados, para ferramentas digitais direcionadas a conteúdos científico, bem como das matrizes curriculares;</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fl">16.</span> Permite que se incorpore no código<span class="sc">-</span>fonte outras bibliotecas em <span class="sc">*</span>JavaScript<span class="sc">*</span>, complementares à produção e manejo gráficos (ex<span class="sc">:</span> <span class="er">*</span>numjs<span class="sc">*</span> para computação numérica e álgebra linear, <span class="sc">*</span>jsmath<span class="sc">*</span> para notações matemáticas complexas, <span class="sc">*</span>jStat<span class="sc">*</span> para computação estatística);</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fl">18.</span> Possui diversas ações interativas por cliques de mouse, e que pontuam um grau lúdico à experimentação de funções matemáticas;</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fl">19.</span> Renderiza gráficos a partir de linguagem de programação moderna e largamente utilizada, o que também permite ao aprendiz sua inserção paulatina em técnicas de programação contidos em outras linguagens <span class="fu">recorrentes</span> (<span class="sc">*</span>Python<span class="sc">*</span>, <span class="sc">*</span>R<span class="sc">*</span>), e do mundo <span class="sc">*</span>geek<span class="sc">*</span> (Arduino <span class="sc">-</span> <span class="er">*</span>C<span class="sc">/</span>C<span class="sc">++</span><span class="er">*</span>).</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="fl">20.</span> Pode ser livremente editado e compartilhado para fins específicos junto à licença Creative Commons.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="funcionalidades-do-jsplotly" class="level2">
+<h2 class="anchored" data-anchor-id="funcionalidades-do-jsplotly">Funcionalidades do JSPlotly</h2>
+<div class="line-block">&nbsp;&nbsp;Como produto de fusão da linguagem <em>JavaScript</em> com sua biblioteca gráfica <em>Plotly.js</em>, o programa possui diversas funcionalidades comuns a essas para a construção de um gráfico interativo, e outras tantas agregadas, destacando-se:</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Efeito de afastamento<span class="sc">/</span>aproximação visual <span class="fl">1.</span> geral ou de área específica (<span class="sc">*</span>zoom<span class="sc">*</span>);</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Arraste do ecrã de visualização (<span class="sc">*</span>pan<span class="sc">*</span>, panorâmica);</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Deslocamento individual de eixos;</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fl">4.</span> Retorno à configuração <span class="fu">original</span> (<span class="sc">*</span>reset<span class="sc">*</span>);</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fl">5.</span> Seleção de dados<span class="sc">/</span>pontos individuais ou coletivos <span class="fu">por</span> (<span class="sc">*</span>box<span class="sc">*</span> ou <span class="sc">*</span>lasso<span class="sc">*</span>);</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fl">6.</span> Informações por passagem de <span class="fu">mouse</span> (<span class="sc">*</span>hover<span class="sc">*</span> ou <span class="sc">*</span>mouse over<span class="sc">*</span>; ex<span class="sc">:</span> exibição dinâmica de valores);</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fl">7.</span> Dicas customizáveis de <span class="fu">ferramentas</span> (<span class="sc">*</span>tooltips<span class="sc">*</span>);</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fl">8.</span> Legendas interativas;</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fl">9.</span> Gráficos dinâmicos (atualização automática em fluxo);</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="fl">10.</span> Navegação <span class="fu">detalhada</span> (<span class="sc">*</span>drill1.down<span class="sc">*</span>; exploração em área específica);</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="fl">11.</span> Botões personalizados <span class="fu">no</span>  (<span class="sc">*</span>buttons<span class="sc">*</span>);</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="fl">12.</span> Eventos personalizados por mouse ou ação de usuário (<span class="sc">*</span>callbacks<span class="sc">*</span>, atualização de página por interação);</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="fl">13.</span> <span class="fu">Deslizadores</span> (<span class="sc">*</span>sliders<span class="sc">*</span>) e menus para filtragem de informações;</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="fl">14.</span> Marcação de dados por linhas pontilhadas nos eixos gráficos e <span class="sc">*</span>hover<span class="sc">*</span> (<span class="sc">*</span>Toggle Spike Lines<span class="sc">*</span>);</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="fl">15.</span> Menu de ícones para interatividade padrão (<span class="sc">*</span>Mode bar<span class="sc">*</span>);</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="fl">16.</span> Personalização do <span class="sc">*</span>Mode bar<span class="sc">*</span> (ex<span class="sc">:</span> exportação da imagem em SVG, cópia de dados do gráfico para a área de transferência);</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="fl">17.</span> Animações em <span class="sc">*</span>layout<span class="sc">*</span> ou transição de dados;</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="fl">18.</span> Facetas <span class="fu">interativas</span> (<span class="sc">*</span>facets<span class="sc">*</span>, gráficos lado a lado);</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="fl">19.</span> Sincronização entre gráficos <span class="fu">interconectados</span> (<span class="sc">*</span>zoom<span class="sc">*</span> e seleção de dados);</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="fl">20.</span> Criação de paineis dinâmicos <span class="fu">interativos</span> (<span class="sc">*</span>dashboards<span class="sc">*</span>);</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="fl">21.</span> Integração com bibliotecas <span class="fu">interativas</span> (<span class="sc">*</span>D3.js<span class="sc">*</span> e <span class="sc">*</span>React.js<span class="sc">*</span>) ou analíticas (ex<span class="sc">:</span> <span class="er">*</span>numjs<span class="sc">*</span>, <span class="sc">*</span>mathjs<span class="sc">*</span>, <span class="sc">*</span>jstat<span class="sc">*</span>).</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br>
+</p>
+<div class="line-block">&nbsp;&nbsp;Além disso, dada as peculiaridades da linguagem e da biblioteca, também permite:</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Observar a sintaxe da biblioteca <span class="sc">*</span>Plotly.js<span class="sc">*</span> por meio de uma equação pré<span class="sc">-</span>definida no carregamento do arquivo HTML do <span class="fu">aplicativo</span> (<span class="sc">*</span>função quadrática<span class="sc">*</span>);</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Carregar uma nova função para <span class="fu">plotagem</span> (<span class="sc">*</span>browser<span class="sc">*</span>);</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Editar parâmetros da equação, tanto de sua função matemática e das variáveis inseridas, quanto da configuração do plot; </span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fl">4.</span> Plotar o gráfico (<span class="sc">*</span>Add Plot<span class="sc">*</span>) e observar seus dados interativamente, por <span class="sc">*</span>hover<span class="sc">*</span> de mouse; </span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fl">6.</span> Alterar alguma informação no <span class="fu">editor</span> (variáveis, parâmetros, função matemática, eixos, por ex), e superimpor um novo gráfico, para visualização das diferenças propostas e estudo do comportamento da função (<span class="sc">*</span>Add Plot<span class="sc">*</span>);</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fl">6.</span> Alterar a cor do último plot por simples clique de mouse em í<span class="fu">cone</span> (<span class="sc">*</span>change color<span class="sc">*</span>) em barra de ferramentas;</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="fl">7.</span> Excluir da área gráfica a última equação (<span class="sc">*</span>Remove Last<span class="sc">*</span>), para novos ajustes e superimposição de outra curva;</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="fl">8.</span> Limpar a área gráfica (<span class="sc">*</span>Clean Plot<span class="sc">*</span>);</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="fl">9.</span> Armazenar o gráfico como um arquivo HTML autônomo (<span class="sc">*</span>self<span class="sc">-</span>contained<span class="sc">*</span>), preservando a interatividade da biblioteca <span class="sc">*</span>Plotly.js<span class="sc">*</span> para estudo posterior ou compartilhamento <span class="fu">do</span>(s) gráfico(s) <span class="fu">representados</span> (<span class="sc">*</span>Save Plot<span class="sc">*</span>);</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="fl">10.</span> Armazenar a equação como um <span class="sc">*</span>script<span class="sc">*</span> de <span class="sc">*</span>JavaScript<span class="sc">*</span> e <span class="sc">*</span>Plotly.js<span class="sc">*</span>, para carregamento posterior ou <span class="fu">compartilhamento</span> (<span class="sc">*</span>Save Script<span class="sc">*</span>);</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="dv">11</span> Armazenar o plot alternativamete como <span class="fu">PNG</span> (rasterizada <span class="sc">-</span> web, documentos) ou <span class="fu">SVG</span> (vetorial <span class="sc">-</span> qualidade de publicação, edição) por clique de mouse em ícone da barra;</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="fl">12.</span> Excluir todos os elementos gráficos e de <span class="sc">*</span>script<span class="sc">*</span> para uma nova edição (<span class="sc">*</span>Clean All<span class="sc">*</span>);</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="fl">13.</span> Desfazer<span class="sc">/</span>refazer em níveis ilimitados para comandos de edição de um gráfico;</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="fl">14.</span> Inserir um cursor de coordenadas por linha pontilhada no gráfico (<span class="sc">*</span>Toggle Spike Lines<span class="sc">*</span>) por ícone da barra de ferramentas;</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="fl">15.</span> Autoescalonar o gráfico por ícone da <span class="fu">barra</span> (<span class="sc">*</span>Autoscale<span class="sc">*</span>), ou por clique duplo do mouse no ecrã;</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="fl">16.</span> Deslocar o gráfico no ecrã por ícone da <span class="fu">barra</span> (<span class="sc">*</span>Pan<span class="sc">*</span>);</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="fl">17.</span> Ampliar qualquer área retangular sobre o gráfico por ícone da <span class="fu">barra</span> (<span class="sc">*</span>Zoom<span class="sc">*</span>);</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="fl">18.</span> Deslocar o eixo <span class="sc">*</span>x<span class="sc">*</span> ou <span class="sc">*</span>y<span class="sc">*</span> por arraste de mouse;</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="fl">19.</span> Ampliar ou reduzir o gráfico pelo botão <span class="sc">*</span>scroll<span class="sc">*</span> do <span class="fu">mouse</span> (rolagem);</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="fl">20.</span> Inserir rótulos para título e eixos, por simples clique nas respectivas áreas do gráfico;</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="fl">21.</span> Clicar na legenda para ocultar<span class="sc">/</span>apresentar cada linha<span class="sc">/</span>dados do gráfico;</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="fl">22.</span> Optar por visual claro<span class="sc">/</span><span class="fu">escuro</span> (ícone de lua<span class="sc">/</span>sol);</span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="fl">23.</span> Editar o gráfico em aplicativo web [Plotly Chart Studio](https<span class="sc">:</span><span class="er">//</span>chart<span class="sc">-</span>studio.plotly.com<span class="sc">/</span>create<span class="sc">/</span><span class="co">#/) do desenvolvedor da biblioteca por ícone da barra de ferramentas (*Edit in Chart Studio*).</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="usabilidade-do-jsplotly" class="level2">
+<h2 class="anchored" data-anchor-id="usabilidade-do-jsplotly">Usabilidade do JSPlotly</h2>
+<div class="line-block">&nbsp;&nbsp;JSPlotly é um aplicativo para criação de gráficos interativos e dinâmicos à simulação de fenômenos naturais baseados em equações e visualização de dados. Permite a reprodução, modificação, criação e compartilhamento de gráficos e painéis interativos em 2D ou 3D, juntamente a seus códigos. Foi concebido como uma alternativa simples, rápida, aberta, lúdica, reprodutível e compartilhável ao ensino-aprendizagem e pesquisa. Oportuniza o letramento e apropriação para expressões científicas envolvidas em fenômenos naturais, pela visualização resultante da manipulação paramétrica da simulação. O aplicativo possui menos de 25kB, pode ser personalizado em editor de texto, não requer conexão, roda em qualquer sistema operacional, e tanto para desktops como para dispositivos móveis, exporta o gráfico com preservação de sua interatividade, e permite inserção em páginas web. Para seu uso pleno em função da linguagem JavaScript que lhe é requerida, foi elaborado um GPT personalizado, GSPlotly, focado na produção dos códigos JS a partir de linguagem natural. Assim, é possível a elaboração, edição e compartilhamento de um gráfico interativo para qualquer área do conhecimento utilizada na alimentação de assistentes de IA, potencializando substancialmente as competências digitais e o pensamento computacional idealizados para este decênio.</div>
+<div class="line-block">&nbsp;&nbsp;Elaborado para facultar simplici</div>
+</section>
+<section id="download-e-uso" class="level2">
+<h2 class="anchored" data-anchor-id="download-e-uso">Download e uso</h2>
+<div class="line-block">&nbsp;&nbsp;A atual versão do programa pode ser baixada <a href="">aqui</a>. Para utilizá-lo</div>
+</section>
+<section id="exemplos-em-bioquímica" class="level2">
+<h2 class="anchored" data-anchor-id="exemplos-em-bioquímica">Exemplos em Bioquímica</h2>
+<div class="line-block">&nbsp;&nbsp;Seguem alguns exemplos de uso do <em>JSPlotly</em> para Bioquímica e áreas correlatas,</div>
 
 
+</section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a></main> <!-- /main -->
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Notas de rodapé</h2>
+
+<ol>
+<li id="fn1"><p>Schneedorf, J.M. JSPlotly: um aplicativo para gráficos interativos em Bioquímica para visualizadores HTML. Revista de Ensino de Bioquímica. 2025 (no prelo).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

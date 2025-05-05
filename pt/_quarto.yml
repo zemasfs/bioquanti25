@@ -13,13 +13,18 @@ website:
 
   sidebar:
     contents:
-      - section: "JSPlotly - simulação interativa"
+      - section: "JSPlotly & GSPlotly - simulação interativa"
       # "JSPlotly & GSPlotly - simulação interativa e IA"
         contents:
-          - text: "Bioquímica"
-            href: jsplotly_sup.qmd
+          - text: "JSPlotly - simulador de gráficos interativos"
+            href: nivel/superior/jsplotly/jsplotly_geral.qmd
+          - text: "GSPlotly - gerador de códigos de JSPlotly por IA"
+            href: nivel/superior/jsplotly/gsplotly.qmd
+          - text: "JSPlotly em Bioquímica"
+            href: nivel/superior/jsplotly/jsptl_bioq.qmd
           - text: "Simulações interativas na Escola"
-            href: jsplotly_bas.qmd
+            href: nivel/basico/jsplotly/jsplotly_bas.qmd
+
             
       - section: "Jmol - Moléculas em 3D"
         contents:
