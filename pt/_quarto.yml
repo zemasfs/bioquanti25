@@ -13,12 +13,13 @@ website:
 
   sidebar:
     contents:
-      - section: "JSPlotly & GSPlotly - simulação interativa e IA"
+      - section: "JSPlotly - simulação interativa"
+      # "JSPlotly & GSPlotly - simulação interativa e IA"
         contents:
           - text: "Bioquímica"
-            href: "#"
+            href: jsplotly_sup.qmd
           - text: "Simulações interativas na Escola"
-            href: "#"
+            href: jsplotly_bas.qmd
             
       - section: "Jmol - Moléculas em 3D"
         contents:
