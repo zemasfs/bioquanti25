@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3 - Alguns comandos pra se aventurar nas moléculas voadoras</title>
+<title>Alguns comandos pra se aventurar nas moléculas voadoras</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -113,35 +113,6 @@ gtag('js', new Date());
 gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../../styles.css">
 </head>
@@ -163,252 +134,38 @@ window.Quarto = {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html"> 
+<span class="menu-text">Sobre</span></a>
+  </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-estrutura-e-jmol" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Estrutura e Jmol</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-ensino-reprodutível" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Ensino Reprodutível</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-estrutura-e-jmol">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-ensino-reprodutível">    
         <li>
-    <a class="dropdown-item" href="../../../nivel/superior/jmol/index_jmol.html">
- <span class="dropdown-text">Introdução</span></a>
+    <a class="dropdown-item" href="../../../erre.html">
+ <span class="dropdown-text">ER</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../nivel/superior/jmol/carac.html">
- <span class="dropdown-text">Características do Jmol</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/jmol/comandos.html">
- <span class="dropdown-text">Comandos</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/jmol/agua.html">
- <span class="dropdown-text">Água</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/jmol/aminoacidos.html">
- <span class="dropdown-text">Aminoácidos</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/jmol/proteina.html">
- <span class="dropdown-text">Proteínas</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/jmol/enzima.html">
- <span class="dropdown-text">Enzimas</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/jmol/carboidrato.html">
- <span class="dropdown-text">Carboidratos</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/jmol/lipidio.html">
- <span class="dropdown-text">Lipídios</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/jmol/acnucleico.html">
- <span class="dropdown-text">Ácidos Nucleicos</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-função--r" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Função &amp; R</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-função--r">    
-        <li class="dropdown-header">I. INTRODUÇÃO</li>
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/r/index_r.html">
- <span class="dropdown-text">R &amp; RStudio</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/r/biomoleculas.html">
- <span class="dropdown-text">1. Biomoléculas</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/r/tampoes.html">
- <span class="dropdown-text">2. Sistemas tampão</span></a>
-  </li>  
-        <li class="dropdown-header">II. ESTRUTURA E FUNÇÃO</li>
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/r/aminoacid.html">
- <span class="dropdown-text">3. Aminoácidos</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/r/proteinas.html">
- <span class="dropdown-text">4. Proteínas</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/r/enzimas.html">
- <span class="dropdown-text">5. Enzimas</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/r/enzInib.html">
- <span class="dropdown-text">6. Inibição Enzimática</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/r/binding.html">
- <span class="dropdown-text">7. Interação Molecular</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/r/acnucleic.html">
- <span class="dropdown-text">8. Ácidos Nucleicos</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/r/membranas.html">
- <span class="dropdown-text">9. Biomembranas</span></a>
-  </li>  
-        <li class="dropdown-header">III. METABOLISMO</li>
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/r/biotermodin.html">
- <span class="dropdown-text">10. Biotermodinâmica</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/r/metabolismo.html">
- <span class="dropdown-text">11. Metabolismo</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/r/redes.html">
- <span class="dropdown-text">12. Redes Metabólicas</span></a>
-  </li>  
-        <li class="dropdown-header">IV. OUTROS</li>
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/r/planejExper.html">
- <span class="dropdown-text">13. Planejamento Experimental</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/r/referências.html">
- <span class="dropdown-text">Referências</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-dinâmica--sisma" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Dinâmica &amp; Sisma</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-dinâmica--sisma">    
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/sisma/index_sisma.html">
- <span class="dropdown-text">Sisma</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/sisma/sisma_ex.html">
- <span class="dropdown-text">Exemplos</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-jmol-no-ensino-básico" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Jmol no Ensino Básico</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-jmol-no-ensino-básico">    
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/Jardim/index_Jardim.html">
- <span class="dropdown-text">Introdução</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/Jardim/organica.html">
- <span class="dropdown-text">Orgânicas</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/Jardim/inorganica.html">
- <span class="dropdown-text">Inorgânicas</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/Jardim/biomol.html">
- <span class="dropdown-text">Biomoléculas</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/Jardim/farmac.html">
- <span class="dropdown-text">Farmacológicas</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/Jardim/medicin.html">
- <span class="dropdown-text">Medicinais</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/Jardim/toxicol.html">
- <span class="dropdown-text">Toxicológicas</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/Jardim/nutri.html">
- <span class="dropdown-text">Nutricionais</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/Jardim/sabores.html">
- <span class="dropdown-text">Sabores</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/Jardim/ambiental.html">
- <span class="dropdown-text">Ambientais</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/Jardim/peconhentos.html">
- <span class="dropdown-text">Peçonhas</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/Jardim/aromas.html">
- <span class="dropdown-text">Aromas</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/Jardim/industrial.html">
- <span class="dropdown-text">Industriais</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/Jardim/plantasToxicas.html">
- <span class="dropdown-text">Plantas Tóxicas</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/Jardim/supramol.html">
- <span class="dropdown-text">Supramoleculares</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-r-no-ensino-básico" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">R no Ensino Básico</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-r-no-ensino-básico">    
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/R/index_OIER.html">
- <span class="dropdown-text">Introdução</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/R/matematica.html">
- <span class="dropdown-text">Matemática</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/R/fisica.html">
- <span class="dropdown-text">Física</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/R/quimica.html">
- <span class="dropdown-text">Química</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/R/biologia.html">
- <span class="dropdown-text">Biologia</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/R/humanas.html">
- <span class="dropdown-text">Humanas</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/R/historia.html">
- <span class="dropdown-text">História</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/R/geografia.html">
- <span class="dropdown-text">Geografia</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/R/linguagens.html">
- <span class="dropdown-text">Linguagens</span></a>
+    <a class="dropdown-item" href="../../../#">
+ <span class="dropdown-text">Características de ER</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
+    <span class="nav-link">
+<span class="menu-text">Bioquímica</span>
+    </span>
+  </li>  
+  <li class="nav-item">
+    <span class="nav-link">
+<span class="menu-text">Ensino Básico</span>
+    </span>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../../../producao.html"> 
-<span class="menu-text">Produção</span></a>
+<span class="menu-text">Publicações</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../../contato.html"> 
@@ -417,7 +174,7 @@ window.Quarto = {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../../en/index.html"> 
+    <a class="nav-link" href="../../../../en/index.qmd"> 
 <span class="menu-text">EN</span></a>
   </li>  
 </ul>
@@ -436,7 +193,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">3 - Alguns comandos pra se aventurar nas moléculas voadoras</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Alguns comandos pra se aventurar nas moléculas voadoras</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -451,7 +208,7 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text"><strong>bioQuanti</strong></span></a>
+ <span class="menu-text">JSPlotly &amp; GSPlotly - simulação interativa e IA</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -459,20 +216,14 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">O site</span></a>
+  <a href="../../../#" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bioquímica</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../erre.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">ERЯƎ - Ensino Reprodutível</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../nivel/superior/biqTxT/index_txt.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Bioquímica de gente, de bicho, e de planta</span></a>
+  <a href="../../../#" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ensino Básico</span></a>
   </div>
 </li>
       </ul>
@@ -480,7 +231,7 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text"><strong>Jmol &amp; R no Ensino Básico</strong></span></a>
+ <span class="menu-text">Jmol - Moléculas em 3D</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -488,14 +239,78 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../nivel/basico/Curso/jmol_curso.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Moléculas &amp; Jmol</span></a>
+  <a href="../../../nivel/superior/jmol/index_jmol.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bioquímica</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../nivel/basico/Curso/r_curso.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Gráficos e mapas interativos &amp; R</span></a>
+  <a href="../../../nivel/basico/Curso/index_jmol_bas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Jmol na Escola</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/basico/Jardim/index_Jardim.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Jardim de Moléculas</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">R - cálculos e visualizações</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/superior/r/index_r.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bioquímica</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/basico/Curso/index_r_bas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R na Escola</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/basico/R/index_OIER.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Gráficos e mapas interativos na Escola</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../#" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">scriptRplot: gráficos elegantes</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Sisma - fluxos dinâmicos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/superior/sisma/index_sisma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bioquímica</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../#" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ensino Básico</span></a>
   </div>
 </li>
       </ul>
@@ -511,7 +326,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">3 - Alguns comandos pra se aventurar nas moléculas voadoras</h1>
+<h1 class="title">Alguns comandos pra se aventurar nas moléculas voadoras</h1>
 </div>
 
 
@@ -627,285 +442,10 @@ window.Quarto = {
 <figcaption>Representação da proteína <em>spike</em> do vírus de Sars-Cov-2 (coloração por número de cadeias).</figcaption>
 </figure>
 </div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Proteínas, enzimas, ácidos nucleicos, e associações macromoleculares são mais pertinentes ao estudo da <em>Bioquímica</em> estrutural. Nesse sentido lhe convido a visitar uma parte do <em>website</em> autoral que possui descrições e representações detalhadas de estruturas bioquímicas com auxílio do <em>Jmol</em>, o site <a href="https://bioquanti.netlify.app/">Bioquanti</a></div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="https://bioquanti.netlify.app/"><img src="bioquanti.png" class="img-fluid figure-img"></a></p>
-<figcaption>Bioquanti, um website autoral para estudos quantitativos em Bioquímica, e que inclui diversos modelos moleculares para o Jmol.</figcaption>
-</figure>
-</div>
-</section>
-</section>
-<section id="agora-que-a-molécula-está-na-página-do-navegador-o-que-posso-fazer-com-ela" class="level2">
-<h2 class="anchored" data-anchor-id="agora-que-a-molécula-está-na-página-do-navegador-o-que-posso-fazer-com-ela">Agora que a molécula está na página do navegador, o que posso fazer com ela ?</h2>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Muuuuuiiita coisa !!!</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O <em>Jmol</em> possui um <em>menu</em> com diversas operações, e centenas de comandos, e talvez outra centena de tutoriais pela internete. Para observações estruturais mais diretas e imediatas, contudo, pode-se resumir as operações em:</div>
-<ul>
-<li>Movimentos com mouse (rotação, translação, <em>zoom</em>)</li>
-<li>Representações do modelo (bola e varetas, espaço preenchido, arame)</li>
-<li>Cores (modelo e plano de fundo)</li>
-<li>Medidas (distâncias e ângulos)</li>
-<li>Características moleculares (ligações de H, nuvem de van der Waals, carga parcial e efetiva)</li>
-<li>Superfícies (molecular, eletrostática)</li>
-<li>Seleção de átomos e visualização (água, hidrogênio)</li>
-<li>Animações (zoom, rotação automática), cortes</li>
-</ul>
-</section>
-<section id="salvamento-do-modelo-no-computador-ou-dispositivo-móvel" class="level2">
-<h2 class="anchored" data-anchor-id="salvamento-do-modelo-no-computador-ou-dispositivo-móvel">Salvamento do modelo no computador ou dispositivo móvel</h2>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Todas as ações realizadas com a molécula produzem um novo modelo que pode ser baixado para o computador. E isso é bem legal porque a molécula modificada (com alteração de cores, representações, animações, por ex) pode ser carregada no <em>Jmol</em> ou na <em>JSmol</em> (internet) como já mencionado. Para tanto, pode-se usar cliques de mouse ou linhas de comando, como segue:</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Botão direito no ecrã <span class="ot">-&gt;</span> File <span class="ot">-&gt;</span> Save <span class="ot">-&gt;</span> Save as PNG<span class="sc">/</span>JMOL <span class="co"># por mouse</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>ou...</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> write nome_da_molecula.pngj <span class="co"># por linha de comando no Console</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Uma das características impressionantes com o Jmol é que salvando a molécula como PNG/JMOL, você poderá abrir o arquivo como uma imagem estática com um duplo clique, para apenas mostrar a molécula, ou arrastar o arquivo até a janela do Jmol mesmo no navegador, no que será carregada a estrutura tridimensional e interativa do modelo !!! </strong></div>
-<p><br>
-</p>
-<div class="reminder-markdown">
-<p><strong>Agora é com voce:</strong></p>
-<ol type="1">
-<li>Carregue um modelo para “fenol” digitando no Console: <code>load $phenol</code></li>
-<li>Salve o modelo digitando no Console: `write fenol.pngj</li>
-<li>Mude a orientação do modelo aleatoriamente com o mouse (só dar uma mexidinha);</li>
-<li>Localize o arquivo <code>fenol.pngj</code> em seu computador;</li>
-<li>Abra-o como uma figura normal, só pra testar;</li>
-<li>Agora arraste o arquivo para a a janela do Jmol online, e veja se o modelo substitui o anterior (basta conferir a orientação)</li>
-</ol>
-</div>
-<p><br>
-</p>
-<section id="alguns-movimentos-no-jmol" class="level3">
-<h3 class="anchored" data-anchor-id="alguns-movimentos-no-jmol">Alguns movimentos no Jmol</h3>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para exemplificar algumas ações, usaremos inicialmente o modelo da <em>vitamina C</em>, carregando-o com o comando abaixo no <em>Console</em>.</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>load <span class="sc">$</span>ascorbate</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-</section>
-<section id="movimentos-com-mouse" class="level2">
-<h2 class="anchored" data-anchor-id="movimentos-com-mouse">Movimentos com mouse</h2>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para <em>rotação e translação do modelo, bem como ampliação</em>:</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>zoom <span class="sc">-</span> botão do meio do mouse; se não houver o botão, Shift<span class="sc">+</span>botão esquerdo; </span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>rotação <span class="sc">-</span> botão esquerdo do mouse</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>translação <span class="sc">-</span> Ctrl<span class="sc">+</span>botão direito</span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>rotação no eixo <span class="sc">-</span> Shift<span class="sc">+</span>botão direito</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="representações-do-modelo" class="level2">
-<h2 class="anchored" data-anchor-id="representações-do-modelo">Representações do modelo</h2>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As representações referem-se ao aspecto visual do modelo (renderização), ou seu <em>estilo</em>, Assim, o <em>Jmol</em> pode renderizar o modelo como <em>vareta, arame, espaço preenchido, bola e vareta, traço, e desenho</em> (tudo em inglês, claro - <em>cpk, wireframe, trace, cartoon</em>).</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Experimente esses estilos, incluindo a opção <code>only</code>. Essa opção permite que a ação não seja sobreposta às anteriores (no caso, a sobreposição das representações). Para isso, copie, cole, e execute <strong>em cada linha separada</strong> o trecho de código que segue no <em>Console</em> do <em>Jmol</em>, e cuja renderização ilustra a molécula de fluoxetina.</div>
-<p><br>
-</p>
-<p><img src="fluoxetina_mapa.png" class="img-fluid" alt="Estrutura da fluoxetina. Fonte: MAPA: ensino médio - 3º Bim. 2º Ano, p.79. Ciências da natureza e suas tecnologias."><br>
-</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>load <span class="sc">$</span>fluoxetine  <span class="co"># carrega a molécula</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>wireframe only <span class="co"># estilo em arame</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>cpk only <span class="co"># espaço preenchido</span></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>cpk <span class="dv">20</span> only, bond <span class="dv">1</span> <span class="co"># bolas e varetas</span></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>cartoon only <span class="co"># representação de cartoon, mas que não ocorre com moléculas pequenas, apenas com biomacromoléculas (proteínas, ácidos nucleicos, por ex)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Observe também que a representação em <code>cartoon</code> não resulta numa renderização para o modelo da fluoxetina. Isso decorre porque <em>a representação em <code>cartoon</code> é restrita para biopolímeros somente, ou seja, proteínas e ácidos nucleicos, e algumas associações supramoleculares.</em></div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contudo, se quiser experimentar o <code>cartoon</code>, será necessário conhecer o código alfanumérico de uma proteína ou ácido nucleico. Exemplificando para a mioglobina, proteína transportadora de oxigênio em mamíferos (código: <em>1mcy</em>)</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>load<span class="ot">=</span><span class="dv">1</span>mcy <span class="co"># carregando a mioglobina</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Obs: veja que a linha de comando pra biopolímeros é ligeiramente diferente da usada pra moléculas pequenas</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Observe que a renderização padrão para grandes moléculas é a de <em>bolas e varetas</em>, pouco didática para o aprendiz. Nesse caso, pode-se representá-la como desenho exclusivo, digitando-se:</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>cartoon only <span class="co"># renderizando em desenho</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para se conseguir esse e outros códigos de proteínas e ácidos nucleicos, deve-se entrar no banco de dados do <a href="https://www.rcsb.org/">PDB - Protein Data Bank, RCSB</a>, e digitar o nome no campo de busca (no caso, <code>myoglobin</code>). O sistema retorna diversos modelos estruturais e seus códigos, bastando transcrever um desses códigos ao <em>Console</em> do <em>JSmol</em>.</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Se desejar observar um pouco mais sobre biomoléculas e o uso do <em>Jmol</em>, deixo-lhe um convite para visitar nosso portal de <a href="https://bioquanti.netlify.app/">Bioquímica Quantitativa</a>. Lá você encontrará também outras aplicações para o <em>Jmol</em>, <em>R e RStudio</em>, bem como um programa que simula transformações de elementos presentes em esquemas (diagramas, fluxogramas, heredogramas, redes e teias) por diferenças de luminância entre o elemento e seu predecessor/sucessor (<a href="https://bioquanti.netlify.app/uploads/sismabook/">SISMA - Sistema de Mapas Autocatalíticos</a>).</div>
-</section>
-<section id="cores" class="level2">
-<h2 class="anchored" data-anchor-id="cores">Cores</h2>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Existe grande flexibilidade de <a href="https://jmol.sourceforge.net/jscolors/">cores</a> para o <em>Jmol</em> (e, por consequência, para o <em>JSmol</em>), tanto para os modelos inteiros, partes do modelo (átomos específicos ou um conjunto), e plano de fundo. A visualização padrão de cores segue a convenção <a href="https://en.wikipedia.org/wiki/CPK_coloring">CPK (Corey–Pauling–Koltun)</a>. Exemplificando para o modelo anterior de vitamina C (<code>load $ascorbate</code>), experimente a variação que segue, separadamente:</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>color pink</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>color blue</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>color ligthgreen</span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>background yellow <span class="co"># cor do plano de fundo</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O último comando da lista acima permite variar a coloração do plano de fundo.</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adicionalmente, também é possível a coloração de ligações entre os átomos, como segue:</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>color bonds LightSeaGreen</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para um grande espectro de cores, você pode consultar a referência do <a href="https://jmol.sourceforge.net/jscolors/">Jmol Colors</a>, ou um <em>link</em> mais “mastigado”, de nossa autoria junto ao aprendizado do programa no ensino superior, o portal <a href="https://bioquanti.netlify.app/">Bioquanti</a> e, mais especificamente, o <a href="https://bioquanti.netlify.app/uploads/jmolbook/jmolquarto/comandos#cores-espec%C3%ADficas">tópico de cores para o Jmol</a>.</div>
-</section>
-<section id="medidas" class="level2">
-<h2 class="anchored" data-anchor-id="medidas">Medidas</h2>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O <em>Jmol</em> permite calcular distâncias e ângulos em um modelo molecular. Para exemplificar isso, talvez seja interessante o carregamento de um <em>modelo de água</em> (<code>load $water</code>), e cujas distâncias e ângulos estão presentes em alguns livros de Química.</div>
-<section id="para-distâncias" class="level3">
-<h3 class="anchored" data-anchor-id="para-distâncias">Para distâncias</h3>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No exemplo da molécula de água, para se determinar a distância de uma ligação O-H, por exemplo execute:</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Duplo<span class="sc">-</span>clique do mouse no <span class="dv">1</span>o. átomo;</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Arraste do mouse ao <span class="dv">2</span>o. átomo;</span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Clique do mouse no <span class="dv">2</span>o. átomo</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Experimentando para a distância da ligação O-H, o programa retorna o valor de 0,097 nm, ou 0,97 Angstroms, o valor convencial para esse tipo de ligação covalente.</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="aguaDist.png" class="img-fluid figure-img"></p>
-<figcaption>Medindo distância dentro da molécula.</figcaption>
-</figure>
-</div>
-</section>
-<section id="para-ângulos" class="level3">
-<h3 class="anchored" data-anchor-id="para-ângulos">Para ângulos</h3>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para a mesma molécula de água, experimente determinar o ângulo de ligação:</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Duplo clique no <span class="dv">1</span>o. á<span class="fu">tomo</span> (ex<span class="sc">:</span> H);</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Arrasta ao <span class="dv">2</span>o. á<span class="fu">tomo</span> (ex<span class="sc">:</span> O);</span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Clique no <span class="dv">2</span>o. átomo;</span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="fl">4.</span> Arraste ao <span class="dv">3</span>o. á<span class="fu">tomo</span> (ex<span class="sc">:</span> o outro H);</span>
-<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="fl">5.</span> Clique no <span class="dv">3</span>o. átomo</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perceba que o sistema retorna o valor de 114<span class="math inline">\(^{o}\)</span>, um valor próximo do previsto para a molécula (109.5<span class="math inline">\(^{o}\)</span>), ou medido (104.5<span class="math inline">\(^{o}\)</span>). Essa aproximação é decorrente da construção do modelo de água.</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="aguaAng.png" class="img-fluid figure-img"></p>
-<figcaption>Medindo ângulo dentro da molécula.</figcaption>
-</figure>
-</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para limpar as medidas, use o comando:</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>measure off</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-</section>
-<section id="características-moleculares" class="level2">
-<h2 class="anchored" data-anchor-id="características-moleculares">Características moleculares</h2>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;São diveras as informações tangíveis a um modelo molecular no <em>Jmol</em>. Exemplificando as mais básicas para a molécula de um componente do molho <em>shoyo</em>, o glutamato:</div>
-<section id="cargas" class="level3">
-<h3 class="anchored" data-anchor-id="cargas">Cargas</h3>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Por vezes pode ser interessante apresentar a polaridade das moléculas em função de sua distribuição de cargas. No <em>Jmol</em> há dois tipos de cargas, <em>carga efetiva (<code>formaCharge</code>) e carga parcial (<code>partialcharge</code>)</em>. Podemos ilustrar a distribuição de cargas em uma molécula de tensoativo, como o hexadecanoato.</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="hexadecanoate_mapa.png" class="img-fluid figure-img"></p>
-<figcaption>Exemplo de tensoativo de 16 carbonos, o ácido hexadecaenoico. Fonte: MAPA: ensino médio - 3º Bim. 3º Ano, p.63. Ciências da natureza e suas tecnologias.</figcaption>
-</figure>
-</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para isso, digite no <em>Console</em> os comandos abaixo:</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>load <span class="sc">$</span>hexadecanoate</span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>calculate partialCharge <span class="co"># cálculo de cargas parciais do modelo</span></span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>label %P <span class="co"># apresentação das cargas (etiquetagem)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Uma característica do <em>Jmol</em> que o torna mais eficiente a execução de suas ações é a disposição sequencial de comandos. Dessa forma, não é necessário clicar em <em>Enter</em> para cada comando, bastando separar os comando por ponto e vírgula (<em>;</em>) como ilustrado abaixo, para o cálculo de cargas parciais da molécula de glutamato:</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="glu.png" class="img-fluid figure-img"></p>
-<figcaption>Aprentação de cargas parciais no modelo de glutamato, um componente do molho Shoyo, também ilustrando uma sequência de ações no Jmol.</figcaption>
-</figure>
-</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Da mesma forma pode-se ilutrar a obtenção de <em>cargas formais</em> no modelo. Nessa, adicionou-se a coloração transparente, para melhor visualização da carga unitária negativa do ácido carboxílico:</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>calculate formalcharges <span class="co"># cálculo de cargas parciais do modelo</span></span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>label %C <span class="co"># apresentação das cargas (etiquetagem)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="gluFormal.png" class="img-fluid figure-img"></p>
-<figcaption>Ilustração dos comandos em sequência para visualização de cargas formais na molécula de glutamato.</figcaption>
-</figure>
-</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perceba que os comando da figura mistura maiúscula e minúsculas, de modo diferente da linha de comando que a antecede. Essa é uma <strong>característica bem legal do <em>Jmol</em>, que não se importa com a capitalização ou não da fonte</strong>. Ou seja, tanto faz se minúsculo, maiúsculo ou uma combinação de ambos; o <em>Jmol</em> executa a ação do mesmo modo.</div>
-<section id="scripts-ensino-reprodutível" class="level4">
-<h4 class="anchored" data-anchor-id="scripts-ensino-reprodutível">Scripts &amp; Ensino Reprodutível</h4>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O exemplo acima apresenta uma maneira simples de concatenar comandos, facilitando a execução automática e sequencial de um conjunto desses. No entanto, a visualização da linha de comando fica um pouco prejudicada com a separação por <em>“;”</em>, o que pode acarretar uma poluição visual quando houver vários comandos.</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A situação de contorno envolve a disposição dos comandos no formato de um <em>script</em>. Esse nada mais é do que um trecho de código contendo um comando por linha, o que melhora a visualização do código como um todo. Além disso, o <em>script</em> possui a vantagem adicional de se inserir comentários entre as linhas de comando, permitindo também uma melhor apropriação do código e de seu aprendizado.</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Essas características de um <em>comando por linha com comentários explicativos</em> conferem ao <em>Jmol</em> seu aspecto para <em>programação</em> de ações sequenciais, e enraiza por consequência uma das premissas básicas para um <em>Ensino Reprodutível</em>: a redação de trechos de códigos em comandos unitários por linha, escritos como num bloco de notas, e com comentários sobre as ações do programa em cada linha.</div>
-<p>Exemplificando para um <em>script</em> envolvendo as ações para o glutamato acima, apenas copie o trecho abaixo e cole-o no <em>Console</em> do <em>JSmol</em>, executando-o.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>load <span class="sc">$</span>glu <span class="co"># carregamento de micromolécula </span></span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>wireframe only <span class="co"># renderização exclusiva de varetas</span></span>
-<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>calculate partialCharge <span class="co"># carga parcial</span></span>
-<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>label %P </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Outro aspecto inerente à iniciativa de <em>Ensino Reprodutível</em> reside na <em>possibilidade de se avaliar o código com alguma alteração</em>, objetivando um produto final ligeiramente modificado. Tente repetir o trecho acima, mas para cargas efetivas, ou seja:</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>load <span class="sc">$</span>glu <span class="co"># carregamento de micromolécula </span></span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>cpk only <span class="co"># renderização exclusiva por espaço preenchido</span></span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>calculate formalCharge <span class="co"># carga efetiva </span></span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>label %C </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Complementarmente, pode-se atuar alterando mais comandos do código, de modo a criar um resultado completamente diferente do original. Isso define outra característica do <em>Ensino Reprodutível</em>, qual seja, a de <em>criação de trecho de código</em>. Ilustrando, segue um trecho baseado no anterior, mas para minimização de energia e reestruturação dos orbitais da molécula.</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>load <span class="sc">$</span>glu <span class="co"># carregamento de micromolécula </span></span>
-<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>cpk only <span class="co"># renderização exclusiva por espaço preenchido</span></span>
-<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>minimize <span class="co"># comando para minimização de energia da estrutura </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-</section>
-</section>
-<section id="características-moleculares-1" class="level2">
-<h2 class="anchored" data-anchor-id="características-moleculares-1">Características moleculares</h2>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Por vezes também é interessante apresentar à turma o conceito de <em>forças fracas</em> que permeia as interações moleculares, tal como ilustrado abaixo.</div>
-<p>![<a href="interacao_mapa.png">Algumas forças fracas em interação molecular. Fonte: MAPA: ensino médio - 2º Bim. 1º Ano, p.75. Ciências da natureza e suas tecnologias.</a></p>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Além de previsão estrutural para <em>carga parcial e carga formal</em>, o <em>Jmol</em> também permite evidenciar <em>forças fracas</em> no modelo, tais como <em>nuvem de van der Waals</em> e <em>ligações de hidrogênio</em>, como segue.</div>
-<section id="nuvem-de-van-der-waals" class="level3">
-<h3 class="anchored" data-anchor-id="nuvem-de-van-der-waals">Nuvem de van der Waals</h3>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>dots on <span class="co"># nuvem de van der Waals nos átomos do modelo (retira-se com "dots off")</span></span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>calculate hbonds <span class="co"># identifica ligações de hidrogênio no modelo</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ilustrando, copie e cole o trecho que segue no <em>Console</em>:</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>load <span class="sc">$</span>water</span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>dots on <span class="co"># nuvem de van der Waals na estrutura da água</span></span>
-<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>dots ionic <span class="co"># nuvem iônica sobre o modelo</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="vanderwaals.png" class="img-fluid figure-img"></p>
-<figcaption>Exemplificando a sobreposição de nuvens de van der Waals nos átomos da molécula de água.</figcaption>
-</figure>
-</div>
-<p><img src="ionic.png" class="img-fluid" alt="Ilustrando a representação de nuvem iônica para o modelo da água."><br>
-</p>
-</section>
-<section id="ligações-de-hidrogênio" class="level3">
-<h3 class="anchored" data-anchor-id="ligações-de-hidrogênio">Ligações de hidrogênio</h3>
-<p><br>
-</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>load<span class="ot">=</span><span class="dv">1</span>djf <span class="co"># carrega um modelo de peptídio</span></span>
-<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>calculate hbonds <span class="co"># apresenta as ligações de H presentes na estrutura</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p><br>
-</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="ligacoesH.png" class="img-fluid figure-img"></p>
-<figcaption>Exemplificando ligações de hidrogênio num modelo de peptídio.</figcaption>
-</figure>
-</div>
-</section>
-</section>
-<section id="superfícies" class="level2">
-<h2 class="anchored" data-anchor-id="superfícies">Superfícies</h2>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Além da superfície de van der Walls (<em>dots on</em>) vista acima, o <em>Jmol</em> é capaz de representar algumas superfícies para modelos moleculares. Quanto maior a molécula, maior o cálculo interno para gerar a superfície, o que pode dificultar sua visualização. Assim, ilustrando um comando simples para superfície da molécula de água:</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>isosurface molecular <span class="co"># superfície molecular que inclui o solvente</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="isosurfMolec.png" class="img-fluid figure-img"></p>
-<figcaption>Superfície molecular para o modelo da água.</figcaption>
-</figure>
-</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Proteínas, enzimas, ácidos nucleicos, e associações macromoleculares são mais pertinentes ao estudo da <em>Bioquímica</em> estrutural. Nesse sentido lhe convido a visitar uma parte do <em>website</em> que possui descrições e representações detalhadas de estruturas da <a href="nivel/superior/jmol/index_jmol.html">Bioquímica</a> com auxílio do <em>Jmol</em>.</div>
 
 
+</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->

@@ -71,27 +71,42 @@ a:hover {
 
 /* Aplica uma cor diferente aos itens da navbar, por ordem */
 .navbar-nav > li:nth-child(1) > a {
-  background-color: #379CD4; /* laranja - Ensino Básico */
+  background-color: #379CD4; /* azul escuro - Ensino Superior */
   color: white !important;
 }
 
 .navbar-nav > li:nth-child(2) > a {
-  background-color: #379CD4; /* laranja - Ensino Básico */
+  background-color: #379CD4; /* azul escuro - Ensino Superior */
   color: white !important;
 }
 
 .navbar-nav > li:nth-child(3) > a {
-  background-color: #379CD4 ; /* laranja - Ensino Básico */
+  background-color: #379CD4 ; /* azul escuro - Ensino Superior */
   color: white !important;
 }
 
 .navbar-nav > li:nth-child(4) > a {
-  background-color: #E57145; /* azul escuro - Ensino Superior */
+  background-color: #379CD4 ; /* azul escuro - Ensino Superior */
   color: white !important;
 }
 
 .navbar-nav > li:nth-child(5) > a {
-  background-color: #E57145; /* azul escuro - Ensino Superior */
+  background-color: #E57145; /* laranja - Ensino Básico */
+  color: white !important;
+}
+
+.navbar-nav > li:nth-child(6) > a {
+  background-color: #E57145; /* laranja - Ensino Básico */
+  color: white !important;
+}
+
+.navbar-nav > li:nth-child(7) > a {
+  background-color: #E57145; /* laranja - Ensino Básico */
+  color: white !important;
+}
+
+.navbar-nav > li:nth-child(8) > a {
+  background-color: #E57145; /* laranja - Ensino Básico */
   color: white !important;
 }
 
@@ -113,6 +128,16 @@ a:hover {
   color: #E57145 !important;
  /* text-decoration: underline; */
 }
+
+/* DESLOCAMENTO DA NAVBAR */
+
+/* Desloca os menus da navbar para a direita em 100px */
+.navbar-collapse {
+  margin-left: 100px;
+
+}
+
+
 
 /* ########## HOVER mais destacado na navbar ##########
 
@@ -179,8 +204,13 @@ a:hover {
 .navbar-nav .nav-link {
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
-  font-size: 0.95rem; /* Fonte um pouco menor (opcional) */
+  font-size: 1.1rem; /* tamanho de fonte */
 }
+/* 1rem	padrão (16px)
+1.1rem	~17.6px
+1.2rem	~19.2px
+1.3rem	~20.8px */
+
 
 
 /* ########### TAMANHO DA PÁGINA (para ajuste do sidebar) #################
@@ -199,7 +229,7 @@ a:hover {
 
 /*  Cores de blocos e plano de fundo individuais
 
-/*  BLOCO 1: bioQuanti */
+/*  BLOCO 1: JSPLOTLY */
 /* Fundo laranja com links azuis e hover laranja escuro */
 .sidebar-item-section:nth-of-type(1) {
   background-color: #E57145 !important; /* laranja */
@@ -235,7 +265,7 @@ a:hover {
 
 
 
-/* BLOCO 2: Jmol & R no Ensino Básico (compacto como o bloco 1) */
+/* BLOCO 2: JMOL */
 .sidebar-item-section:nth-of-type(2) {
   background-color: #379CD4 !important;
   border-radius: 10px;
@@ -264,6 +294,113 @@ a:hover {
 
 .sidebar-item-section:nth-of-type(2) a:hover {
   background-color: #1e4e79 !important;
+  color: white !important;
+}
+
+
+/* BLOCO3:  R & RSTUDIO */
+
+/* Fundo laranja com links azuis e hover laranja escuro */
+.sidebar-item-section:nth-of-type(3) {
+  background-color: #E57145 !important; /* laranja */
+  color: white;
+  border-radius: 4px;
+  padding: 2px;
+  margin-bottom: 4px;
+}
+
+.sidebar-item-section:nth-of-type(3) .sidebar-section-title {
+  background-color: #2a6fb3 !important;  /* azul escuro no título apenas */
+  color: white !important;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+.sidebar-item-section:nth-of-type(3) a {
+  background-color: #379CD4 !important;  /* azul */
+  color: white !important;
+  display: block;
+  padding: 6px 10px;
+  margin-bottom: 4px;
+  border-radius: 4px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.sidebar-item-section:nth-of-type(3) a:hover {
+  background-color: #cc4d1f !important;  /* laranja escuro */
+  color: white !important;
+}
+
+
+/* BLOCO 4: SISMA */
+
+
+.sidebar-item-section:nth-of-type(4) {
+  background-color: #379CD4 !important;
+  border-radius: 10px;
+  padding: 2px; /* mesmo padding do bloco 1 */
+  margin-bottom: 4px;
+}
+
+.sidebar-item-section:nth-of-type(4) .sidebar-section-title {
+  background-color: #c6541d !important;
+  color: white !important;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.sidebar-item-section:nth-of-type(4) a {
+  background-color: #E57145 !important;
+  color: white !important;
+  display: block;
+  padding: 6px 10px;          /* igual ao bloco 1 */
+  margin-bottom: 4px;         /* igual ao bloco 1 */
+  border-radius: 4px;         /* igual ao bloco 1 */
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.sidebar-item-section:nth-of-type(4) a:hover {
+  background-color: #1e4e79 !important;
+  color: white !important;
+}
+
+
+/*  BLOCO 5: SCRIPTRPLOT */
+
+/* Fundo laranja com links azuis e hover laranja escuro */
+.sidebar-item-section:nth-of-type(5) {
+  background-color: #E57145 !important; /* laranja */
+  color: white;
+  border-radius: 4px;
+  padding: 2px;
+  margin-bottom: 4px;
+}
+
+.sidebar-item-section:nth-of-type(5) .sidebar-section-title {
+  background-color: #2a6fb3 !important;  /* azul escuro no título apenas */
+  color: white !important;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+.sidebar-item-section:nth-of-type(5) a {
+  background-color: #379CD4 !important;  /* azul */
+  color: white !important;
+  display: block;
+  padding: 6px 10px;
+  margin-bottom: 4px;
+  border-radius: 4px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.sidebar-item-section:nth-of-type(5) a:hover {
+  background-color: #cc4d1f !important;  /* laranja escuro */
   color: white !important;
 }
 
@@ -654,5 +791,3 @@ div.sourceCode {
 code, pre, kbd, samp {
   font-family: 'Fira Code', monospace;
 }
-
-

@@ -23,14 +23,15 @@ website:
           # - text: "Bioquímica de gente, de bicho, e de planta"
           #   href: nivel/superior/biqTxT/index_en_txt.qmd
 
-      - section: "**Tutorials for Jmol & R in High School**"
+      - section: "**Tutorials for High School**"
         contents:
           - text: "Molecules & Jmol"
             href: nivel/basico/Curso/jmol_curso_en.qmd
           - text: "Interactive Graphs and Maps with R"
             href: nivel/basico/Curso/r_curso_en.qmd
-
-
+          - text: "Interactivity with Plotly graphs"
+            href: nivel/basico/Curso/jsplt_curso_en.qmd
+            
   navbar:
     search: true
     logo: logo-bioquanti.png # logo ao lado esquerdo da Home
@@ -111,6 +112,11 @@ website:
             href: nivel/superior/sisma/index_sisma_en.qmd
           - text: "Examples"
             href: nivel/superior/sisma/sisma_ex_en.qmd
+            
+      - text: "Visualization & JSPlotly"
+        id: sup-menu
+        menu:
+          - text: "Introduction"
             
       - text: "Jmol in High School"
         id: bas-menu

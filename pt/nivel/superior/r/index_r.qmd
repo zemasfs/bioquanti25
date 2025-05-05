@@ -12,7 +12,9 @@ csl: associacao-brasileira-de-normas-tecnicas-ufrgs-initials2023.csl
 
 ## Bioquímica
 
-|       Para acessar os conteúdos desenvolvidos com **R** e **RStudio** para **Bioquímica** e temas afins pode-se alternativamente descarregar um  [ebook](.\biqR.pdf) do material, ou acessar os tópicos individualmente abaixo, mais atualizados. Nesse caso, é possível reproduzir as atividades em qualquer tema tratado, bastando-se clicar no canto superior direito do trecho de código contendo um ícone de cópia ![ copiar ](icon_copiar.png){width=2%}, e colando-o em uma sessão instalada do *RStudio*, ou em sua versão *online* [RStudio Cloud](https://login.rstudio.cloud/). Este [**tutorial rápido**](https://youtu.be/LF99kO8DE6Y){target="\_blank"} em *vídeo* ilustra a dica.
+|       Para acessar os conteúdos desenvolvidos com **R** e **RStudio** para **Bioquímica** e temas afins pode-se alternativamente descarregar o *ebook* [Bioquímica Quantitativa & R](https://www.researchgate.net/publication/388877308_Bioquimica_Quantitativa_R), ou acessar os tópicos individuais abaixo. 
+
+|   Assim, é possível reproduzir as atividades em qualquer tema tratado, bastando-se clicar no canto superior direito do trecho de código contendo um ícone de cópia ![ copiar ](icon_copiar.png){width=2%}, e colando-o em uma sessão instalada do *RStudio*, ou em sua versão *online* [RStudio Cloud](https://login.rstudio.cloud/). Este [**tutorial rápido**](https://youtu.be/LF99kO8DE6Y){target="\_blank"} em *vídeo* ilustra a dica.
 
 |       São muitas as características que possibilitam o uso do *R & RStudio* para o ensino e aprendizagem em *Bioquímica*. Parte dessas características residem na *Pesquisa Reproduzível* [@gandrud2018reproducible], o qual é resumidamente norteada pela:
 
@@ -39,42 +41,42 @@ csl: associacao-brasileira-de-normas-tecnicas-ufrgs-initials2023.csl
 ::: {#first-column}
 
 
-<!-- **I. INTRODUÇÃO** -->
+**I. INTRODUÇÃO**
 
-<!-- [1. Biomoléculas](biomoleculas.qmd) -->
+[1. Biomoléculas](biomoleculas.qmd)
 
-<!-- [2. Sistemas tampão](tampoes.qmd)  -->
+[2. Sistemas tampão](tampoes.qmd)
 
-<!-- **II. ESTRUTURA E FUNÇÃO** -->
+**II. ESTRUTURA E FUNÇÃO**
 
-<!-- [3. Aminoácidos](aminoacid.qmd) -->
+[3. Aminoácidos](aminoacid.qmd)
 
-<!-- [4. Proteínas](proteinas.qmd) -->
+[4. Proteínas](proteinas.qmd)
 
-<!-- [5. Enzimas](enzimas.qmd) -->
+[5. Enzimas](enzimas.qmd)
 
-<!-- [6. Inibição enzimática](enzInib.qmd) -->
+[6. Inibição enzimática](enzInib.qmd)
 
-<!-- [7. Interação molecular](binding.qmd) -->
+[7. Interação molecular](binding.qmd)
 
-<!-- [8. Ácidos nuleicos](acnucleic.qmd) -->
+[8. Ácidos nuleicos](acnucleic.qmd)
 
-<!-- [9. Biomembranas](membranas.qmd) -->
+[9. Biomembranas](membranas.qmd)
 
 
-<!-- **III. METABOLISMO** -->
+**III. METABOLISMO**
 
-<!-- [10. Biotermodinâmica](biotermodin.qmd) -->
+[10. Biotermodinâmica](biotermodin.qmd)
 
-<!-- [11. Metabolismo](metabolismo.qmd) -->
+[11. Metabolismo](metabolismo.qmd)
 
-<!-- [12. Redes metabólicas](redes.qmd) -->
+[12. Redes metabólicas](redes.qmd)
 
-<!-- **IV. OUTROS** -->
+**IV. OUTROS**
 
-<!-- [13. Planejamento experimental](planejExper.qmd) -->
+[13. Planejamento experimental](planejExper.qmd)
 
-<!-- [Referências](referencias.qmd) -->
+[Referências](referencias.qmd)
 
 
 

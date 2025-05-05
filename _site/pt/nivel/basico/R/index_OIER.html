@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>index_oier</title>
+<title>Gráficos e Mapas Interativos na Escola</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,6 +65,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
+<link href="../../../nivel/superior/sisma/index_sisma.html" rel="next">
+<link href="../../../nivel/basico/Curso/index_r_bas.html" rel="prev">
 <link href="../../../avatar.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -99,249 +136,35 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html"> 
+<span class="menu-text">Sobre</span></a>
+  </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-estrutura-e-jmol" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Estrutura e Jmol</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-ensino-reprodutível" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Ensino Reprodutível</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-estrutura-e-jmol">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-ensino-reprodutível">    
         <li>
-    <a class="dropdown-item" href="../../../nivel/superior/jmol/index_jmol.html">
- <span class="dropdown-text">Introdução</span></a>
+    <a class="dropdown-item" href="../../../erre.html">
+ <span class="dropdown-text">ER</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../nivel/superior/jmol/carac.html">
- <span class="dropdown-text">Características do Jmol</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/jmol/comandos.html">
- <span class="dropdown-text">Comandos</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/jmol/agua.html">
- <span class="dropdown-text">Água</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/jmol/aminoacidos.html">
- <span class="dropdown-text">Aminoácidos</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/jmol/proteina.html">
- <span class="dropdown-text">Proteínas</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/jmol/enzima.html">
- <span class="dropdown-text">Enzimas</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/jmol/carboidrato.html">
- <span class="dropdown-text">Carboidratos</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/jmol/lipidio.html">
- <span class="dropdown-text">Lipídios</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/jmol/acnucleico.html">
- <span class="dropdown-text">Ácidos Nucleicos</span></a>
+    <a class="dropdown-item" href="../../../#">
+ <span class="dropdown-text">Características de ER</span></a>
   </li>  
     </ul>
   </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-função--r" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Função &amp; R</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-função--r">    
-        <li class="dropdown-header">I. INTRODUÇÃO</li>
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/r/index_r.html">
- <span class="dropdown-text">R &amp; RStudio</span></a>
+  <li class="nav-item">
+    <span class="nav-link">
+<span class="menu-text">Bioquímica</span>
+    </span>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/r/biomoleculas.html">
- <span class="dropdown-text">1. Biomoléculas</span></a>
+  <li class="nav-item">
+    <span class="nav-link">
+<span class="menu-text">Ensino Básico</span>
+    </span>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/r/tampoes.html">
- <span class="dropdown-text">2. Sistemas tampão</span></a>
-  </li>  
-        <li class="dropdown-header">II. ESTRUTURA E FUNÇÃO</li>
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/r/aminoacid.html">
- <span class="dropdown-text">3. Aminoácidos</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/r/proteinas.html">
- <span class="dropdown-text">4. Proteínas</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/r/enzimas.html">
- <span class="dropdown-text">5. Enzimas</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/r/enzInib.html">
- <span class="dropdown-text">6. Inibição Enzimática</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/r/binding.html">
- <span class="dropdown-text">7. Interação Molecular</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/r/acnucleic.html">
- <span class="dropdown-text">8. Ácidos Nucleicos</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/r/membranas.html">
- <span class="dropdown-text">9. Biomembranas</span></a>
-  </li>  
-        <li class="dropdown-header">III. METABOLISMO</li>
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/r/biotermodin.html">
- <span class="dropdown-text">10. Biotermodinâmica</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/r/metabolismo.html">
- <span class="dropdown-text">11. Metabolismo</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/r/redes.html">
- <span class="dropdown-text">12. Redes Metabólicas</span></a>
-  </li>  
-        <li class="dropdown-header">IV. OUTROS</li>
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/r/planejExper.html">
- <span class="dropdown-text">13. Planejamento Experimental</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/r/referências.html">
- <span class="dropdown-text">Referências</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-dinâmica--sisma" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Dinâmica &amp; Sisma</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-dinâmica--sisma">    
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/sisma/index_sisma.html">
- <span class="dropdown-text">Sisma</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/superior/sisma/sisma_ex.html">
- <span class="dropdown-text">Exemplos</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-jmol-no-ensino-básico" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Jmol no Ensino Básico</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-jmol-no-ensino-básico">    
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/Jardim/index_Jardim.html">
- <span class="dropdown-text">Introdução</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/Jardim/organica.html">
- <span class="dropdown-text">Orgânicas</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/Jardim/inorganica.html">
- <span class="dropdown-text">Inorgânicas</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/Jardim/biomol.html">
- <span class="dropdown-text">Biomoléculas</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/Jardim/farmac.html">
- <span class="dropdown-text">Farmacológicas</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/Jardim/medicin.html">
- <span class="dropdown-text">Medicinais</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/Jardim/toxicol.html">
- <span class="dropdown-text">Toxicológicas</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/Jardim/nutri.html">
- <span class="dropdown-text">Nutricionais</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/Jardim/sabores.html">
- <span class="dropdown-text">Sabores</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/Jardim/ambiental.html">
- <span class="dropdown-text">Ambientais</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/Jardim/peconhentos.html">
- <span class="dropdown-text">Peçonhas</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/Jardim/aromas.html">
- <span class="dropdown-text">Aromas</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/Jardim/industrial.html">
- <span class="dropdown-text">Industriais</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/Jardim/plantasToxicas.html">
- <span class="dropdown-text">Plantas Tóxicas</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/Jardim/supramol.html">
- <span class="dropdown-text">Supramoleculares</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-r-no-ensino-básico" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">R no Ensino Básico</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-r-no-ensino-básico">    
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/R/index_OIER.html">
- <span class="dropdown-text">Introdução</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/R/matematica.html">
- <span class="dropdown-text">Matemática</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/R/fisica.html">
- <span class="dropdown-text">Física</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/R/quimica.html">
- <span class="dropdown-text">Química</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/R/biologia.html">
- <span class="dropdown-text">Biologia</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/R/humanas.html">
- <span class="dropdown-text">Humanas</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/R/historia.html">
- <span class="dropdown-text">História</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/R/geografia.html">
- <span class="dropdown-text">Geografia</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../nivel/basico/R/linguagens.html">
- <span class="dropdown-text">Linguagens</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
     <a class="nav-link" href="../../../producao.html"> 
 <span class="menu-text">Publicações</span></a>
@@ -353,7 +176,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../../en/index.html"> 
+    <a class="nav-link" href="../../../../en/index.qmd"> 
 <span class="menu-text">EN</span></a>
   </li>  
 </ul>
@@ -372,7 +195,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../nivel/superior/r/index_r.html">R - cálculos e visualizações</a></li><li class="breadcrumb-item"><a href="../../../nivel/basico/R/index_OIER.html">Gráficos e mapas interativos na Escola</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -387,7 +210,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text"><strong>bioQuanti</strong></span></a>
+ <span class="menu-text">JSPlotly &amp; GSPlotly - simulação interativa e IA</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -395,14 +218,14 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">O site</span></a>
+  <a href="../../../#" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bioquímica</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../erre.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">ERЯƎ - Ensino Reprodutível</span></a>
+  <a href="../../../#" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ensino Básico</span></a>
   </div>
 </li>
       </ul>
@@ -410,7 +233,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text"><strong>Jmol &amp; R no Ensino Básico</strong></span></a>
+ <span class="menu-text">Jmol - Moléculas em 3D</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -418,14 +241,78 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../nivel/basico/Curso/jmol_curso.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Moléculas &amp; Jmol</span></a>
+  <a href="../../../nivel/superior/jmol/index_jmol.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bioquímica</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../nivel/basico/Curso/r_curso.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Gráficos e mapas interativos &amp; R</span></a>
+  <a href="../../../nivel/basico/Curso/index_jmol_bas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Jmol na Escola</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/basico/Jardim/index_Jardim.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Jardim de Moléculas</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">R - cálculos e visualizações</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/superior/r/index_r.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bioquímica</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/basico/Curso/index_r_bas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R na Escola</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/basico/R/index_OIER.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Gráficos e mapas interativos na Escola</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../#" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">scriptRplot: gráficos elegantes</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Sisma - fluxos dinâmicos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/superior/sisma/index_sisma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bioquímica</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../#" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ensino Básico</span></a>
   </div>
 </li>
       </ul>
@@ -437,28 +324,59 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../nivel/superior/r/index_r.html">R - cálculos e visualizações</a></li><li class="breadcrumb-item"><a href="../../../nivel/basico/R/index_OIER.html">Gráficos e mapas interativos na Escola</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Gráficos e Mapas Interativos na Escola</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="iniciativa" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="iniciativa">Iniciativa</h2>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Este material pretende oferecer um conjunto de <em>gráficos e mapas, interativos e de animação</em>, para alguns tópicos encontrados em disciplinas do <em>ensino médio</em>. Esses <em>objetos didáticos</em> utilizam pacotes interativos do <em>R</em>, principalmente <code>plotly</code> e <code>gganimate</code>.</div>
 <hr>
-</section>
 <section id="objetos-interativos-de-ensino-reprodutível-oier-desenvolvidos-para-o-ensino-básico" class="level2">
 <h2 class="anchored" data-anchor-id="objetos-interativos-de-ensino-reprodutível-oier-desenvolvidos-para-o-ensino-básico">Objetos Interativos de Ensino Reprodutível (OIER) desenvolvidos para o ensino básico</h2>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A parte de <em>Gráficos &amp; Mapas</em> do <a href="https://bioquanti.netlify.app/">Bioquanti</a> possui um repositório de objetos didáticos homônimos acompanhados de seus trechos de código comentados, permitindo fácil reprodução, personalização, e criação de novos materiais para compartilhamento. O repositório aborda as áreas de <em>Matemática, Ciências da Natureza, Ciências Humanas e Linguagens</em>. Encontra-se dividido em classes, cada qual com alguns OIERs ilustrativos: Matemática, Física, Química, Biologia, Humanas, História, Geografia, e Linguagens. Cada OIER está referenciado ao título juntamente a alguns códigos correlatos da <em>BNCC.</em> A fim de simplificar a produção de cada OIER para gráficos e mapas relativos ao ensino básico, bem como facilitar o uso do <code>R</code> em ambiente <em>RStudio</em>, privilegiou-se o emprego da biblioteca <code>plotly</code>.</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A parte de <em>Gráficos &amp; Mapas</em> do <a href="https://bioquanti.netlify.app/">Bioquanti</a> possui um repositório de objetos didáticos homônimos acompanhados de seus trechos de código comentados, permitindo fácil reprodução, personalização, e criação de novos materiais para compartilhamento. O repositório aborda as áreas de <em>Matemática, Ciências da Natureza, Ciências Humanas e Linguagens</em>. Encontra-se dividido em classes, cada qual com alguns <em>Objetos Interativos de Ensino Reprodutível (OIER)</em> ilustrativos: Matemática, Física, Química, Biologia, Humanas, História, Geografia, e Linguagens. Cada OIER está referenciado ao título juntamente a alguns códigos correlatos da <em>BNCC.</em> A fim de simplificar a produção de cada OIER para gráficos e mapas relativos ao ensino básico, bem como facilitar o uso do <code>R</code> em ambiente <em>RStudio</em>, privilegiou-se o emprego da biblioteca <code>plotly</code>.</div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ocasionalmente foi utilizada a biblioteca <code>ggplot2</code> para gráficos mais elaborados, e subsequente conversão à interatividade de <code>plotly</code> com uso da função <code>ggplotly</code> do pacote. Por vezes também foi utilizado o pacote <code>gganimate</code>, o qual permite criar uma animação por representação sequencial de gráficos de <code>ggplot2</code>, assim como alguns pacotes específicos a determinada situação.</div>
 <p><br>
 </p>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cada OIER está estruturado em 3 partes:</div>
-<ol type="1">
-<li>O OIER propriamente dito, com título e códigos <em>BNCC</em>;</li>
-<li>O código-fonte usado para gerar o objeto;</li>
-<li>Sugestões para modificações do código-fonte para obtenção de um objeto final distinto do original.</li>
-</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> O OIER propriamente dito, com título e códigos da BNCC;</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> O código<span class="sc">-</span>fonte usado para gerar o objeto;</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Sugestões para modificações do código<span class="sc">-</span>fonte para obtenção de um objeto final distinto do original.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="objetos-didáticos-e-códigos" class="level2">
+<h2 class="anchored" data-anchor-id="objetos-didáticos-e-códigos">Objetos didáticos e códigos</h2>
+<p><a href="../../../nivel/basico/R/matematica.html">1. Matemática</a><br>
+</p>
+<p><a href="../../../nivel/basico/R/fisica.html">2. Física</a><br>
+</p>
+<p><a href="../../../nivel/basico/R/biologia.html">3. Biologia</a><br>
+</p>
+<p><a href="../../../nivel/basico/R/humanas.html">4. Humanas</a><br>
+</p>
+<p><a href="../../../nivel/basico/R/historia.html">5. História</a><br>
+</p>
+<p><a href="../../../nivel/basico/R/geografia.html">6. Geografia</a><br>
+</p>
+<p><a href="../../../nivel/basico/R/linguagens.html">7. Linguagens</a></p>
 
 
 </section>
@@ -863,6 +781,18 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../../nivel/basico/Curso/index_r_bas.html" class="pagination-link" aria-label="R na Escola">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">R na Escola</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../../nivel/superior/sisma/index_sisma.html" class="pagination-link" aria-label="Bioquímica">
+        <span class="nav-page-text">Bioquímica</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 

@@ -71,27 +71,42 @@ a:hover {
 
 /* Aplica uma cor diferente aos itens da navbar, por ordem */
 .navbar-nav > li:nth-child(1) > a {
-  background-color: #379CD4; /* laranja - Ensino Básico */
+  background-color: #379CD4; /* azul escuro - Ensino Superior */
   color: white !important;
 }
 
 .navbar-nav > li:nth-child(2) > a {
-  background-color: #379CD4; /* laranja - Ensino Básico */
+  background-color: #379CD4; /* azul escuro - Ensino Superior */
   color: white !important;
 }
 
 .navbar-nav > li:nth-child(3) > a {
-  background-color: #379CD4 ; /* laranja - Ensino Básico */
+  background-color: #379CD4 ; /* azul escuro - Ensino Superior */
   color: white !important;
 }
 
 .navbar-nav > li:nth-child(4) > a {
-  background-color: #E57145; /* azul escuro - Ensino Superior */
+  background-color: #379CD4 ; /* azul escuro - Ensino Superior */
   color: white !important;
 }
 
 .navbar-nav > li:nth-child(5) > a {
-  background-color: #E57145; /* azul escuro - Ensino Superior */
+  background-color: #E57145; /* laranja - Ensino Básico */
+  color: white !important;
+}
+
+.navbar-nav > li:nth-child(6) > a {
+  background-color: #E57145; /* laranja - Ensino Básico */
+  color: white !important;
+}
+
+.navbar-nav > li:nth-child(7) > a {
+  background-color: #E57145; /* laranja - Ensino Básico */
+  color: white !important;
+}
+
+.navbar-nav > li:nth-child(8) > a {
+  background-color: #E57145; /* laranja - Ensino Básico */
   color: white !important;
 }
 

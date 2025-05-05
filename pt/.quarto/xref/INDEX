@@ -442,5 +442,44 @@
   },
   "producao.qmd": {
     "producao.html": "d4000813"
+  },
+  "nivel/basico/Curso/index_jmol_bas.qmd": {
+    "index_jmol_bas.html": "6aaca349"
+  },
+  "nivel/basico/Curso/jmol_uso.qmd": {
+    "jmol_uso.html": "0a3df372"
+  },
+  "nivel/basico/Curso/jmol_oficina.qmd": {
+    "jmol_oficina.html": "a824066b"
+  },
+  "nivel/basico/Curso/jmol_curso_index.qmd": {
+    "jmol_curso_index.html": "b86fdca6"
+  },
+  "nivel/basico/Curso/index_r_bas.qmd": {
+    "index_r_bas.html": "029740ce"
+  },
+  "nivel/basico/Curso/r_comandos.qmd": {
+    "r_comandos.html": "01d36ad3"
+  },
+  "nivel/basico/Curso/r_install.qmd": {
+    "r_install.html": "6e56965c"
+  },
+  "nivel/basico/Curso/r_maisinteract.qmd": {
+    "r_maisinteract.html": "4c503193"
+  },
+  "nivel/basico/Curso/r_pacotes.qmd": {
+    "r_pacotes.html": "27ef874d"
+  },
+  "nivel/basico/Curso/r_outros_plots.qmd": {
+    "r_outros_plots.html": "296617e2"
+  },
+  "nivel/basico/Curso/r_anim.qmd": {
+    "r_anim.html": "bcc5a192"
+  },
+  "nivel/basico/Curso/r_mapas.qmd": {
+    "r_mapas.html": "59842904"
+  },
+  "nivel/basico/Curso/r_plotly.qmd": {
+    "r_plotly.html": "73c904d6"
   }
 }
