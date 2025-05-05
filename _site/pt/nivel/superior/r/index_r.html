@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 /* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
@@ -50,7 +85,7 @@ div.csl-indent {
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../nivel/basico/Curso/index_r_bas.html" rel="next">
+<link href="../../../nivel/superior/ScriptRplot/scriptrplot.html" rel="next">
 <link href="../../../nivel/basico/Jardim/index_Jardim.html" rel="prev">
 <link href="../../../avatar.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
@@ -125,30 +160,13 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
     <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">Sobre</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-ensino-reprodutível" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Ensino Reprodutível</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-ensino-reprodutível">    
-        <li>
-    <a class="dropdown-item" href="../../../erre.html">
- <span class="dropdown-text">ER</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../#">
- <span class="dropdown-text">Características de ER</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
-    <span class="nav-link">
-<span class="menu-text">Bioquímica</span>
-    </span>
+    <a class="nav-link" href="../../../erre.html"> 
+<span class="menu-text">Ensino Reprodutível</span></a>
   </li>  
   <li class="nav-item">
-    <span class="nav-link">
-<span class="menu-text">Ensino Básico</span>
-    </span>
+    <a class="nav-link" href="../../../ferramentas.html"> 
+<span class="menu-text">Ferramentas</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../../producao.html"> 
@@ -161,7 +179,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../../en/index.qmd"> 
+    <a class="nav-link" href="../../../under_trans.html"> 
 <span class="menu-text">EN</span></a>
   </li>  
 </ul>
@@ -210,7 +228,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../#" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Ensino Básico</span></a>
+ <span class="menu-text">Simulações interativas na Escola</span></a>
   </div>
 </li>
       </ul>
@@ -233,7 +251,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../nivel/basico/Curso/index_jmol_bas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Jmol na Escola</span></a>
+ <span class="menu-text">Moléculas 3D na Escola</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -261,6 +279,12 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../../nivel/superior/ScriptRplot/scriptrplot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">scriptRplot: gráficos elegantes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../../nivel/basico/Curso/index_r_bas.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">R na Escola</span></a>
   </div>
@@ -271,18 +295,12 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
  <span class="menu-text">Gráficos e mapas interativos na Escola</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../#" class="sidebar-item-text sidebar-link">
- <span class="menu-text">scriptRplot: gráficos elegantes</span></a>
-  </div>
-</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
- <span class="menu-text">Sisma - fluxos dinâmicos</span></a>
+ <span class="menu-text">Sisma - diagramas dinâmicos interativos</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -297,7 +315,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../#" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Ensino Básico</span></a>
+ <span class="menu-text">Diagramas interativos na Escola</span></a>
   </div>
 </li>
       </ul>
@@ -336,16 +354,17 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </p>
 <section id="bioquímica" class="level2">
 <h2 class="anchored" data-anchor-id="bioquímica">Bioquímica</h2>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para acessar os conteúdos desenvolvidos com <strong>R</strong> e <strong>RStudio</strong> para <strong>Bioquímica</strong> e temas afins pode-se alternativamente descarregar um <a href=".\biqR.pdf">ebook</a> do material, ou acessar os tópicos individualmente abaixo, mais atualizados. Nesse caso, é possível reproduzir as atividades em qualquer tema tratado, bastando-se clicar no canto superior direito do trecho de código contendo um ícone de cópia <img src="icon_copiar.png" class="img-fluid" style="width:2.0%" alt="copiar">, e colando-o em uma sessão instalada do <em>RStudio</em>, ou em sua versão <em>online</em> <a href="https://login.rstudio.cloud/">RStudio Cloud</a>. Este <a href="https://youtu.be/LF99kO8DE6Y" target="_blank"><strong>tutorial rápido</strong></a> em <em>vídeo</em> ilustra a dica.</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para acessar os conteúdos desenvolvidos com <strong>R</strong> e <strong>RStudio</strong> para <strong>Bioquímica</strong> e temas afins pode-se alternativamente descarregar o <em>ebook</em> <a href="https://www.researchgate.net/publication/388877308_Bioquimica_Quantitativa_R">Bioquímica Quantitativa &amp; R</a>, ou acessar os tópicos individuais abaixo.</div>
+<div class="line-block">&nbsp;&nbsp;Assim, é possível reproduzir as atividades em qualquer tema tratado, bastando-se clicar no canto superior direito do trecho de código contendo um ícone de cópia <img src="icon_copiar.png" class="img-fluid" style="width:2.0%" alt="copiar">, e colando-o em uma sessão instalada do <em>RStudio</em>, ou em sua versão <em>online</em> <a href="https://login.rstudio.cloud/">RStudio Cloud</a>. Este <a href="https://youtu.be/LF99kO8DE6Y" target="_blank"><strong>tutorial rápido</strong></a> em <em>vídeo</em> ilustra a dica.</div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;São muitas as características que possibilitam o uso do <em>R &amp; RStudio</em> para o ensino e aprendizagem em <em>Bioquímica</em>. Parte dessas características residem na <em>Pesquisa Reproduzível</em> <span class="citation" data-cites="gandrud2018reproducible">(<a href="#ref-gandrud2018reproducible" role="doc-biblioref">Gandrud, 2018</a>)</span>, o qual é resumidamente norteada pela:</div>
-<ol type="1">
-<li>Disponibilização dos dados originais;</li>
-<li>Existência de um código para processar esses dados e analisá-los;</li>
-<li>Documentação dos dados e do código, possibilitando sua reprodutibilidade;</li>
-<li>Distribuição e acessibilidade do código.</li>
-</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span><span class="er">)</span>  Disponibilização dos dados originais;</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span><span class="er">)</span>  Existência de um código para processar esses dados e analisá<span class="sc">-</span>los;</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span><span class="er">)</span>  Documentação dos dados e do código, possibilitando sua reprodutibilidade;</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span><span class="er">)</span>  Distribuição e acessibilidade do código.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nesse sentido, a produção de textos, tabelas, gráficos, análise de dados e simulações, podem perfeitamente ajustar-se ao <strong>ensino-aprendizagem</strong> pelo uso de tais princípios e da simultaneidade de texto e códigos, tangenciando um <strong>Ensino Reproduzível</strong>. Tal abordagem permite ao leitor o estudo dos diversos temas tratados por leitura e interpretação, como também de sua apropriação mais convergente, pela execução, modificação, e criação de códigos pertinentes em cada tema. Na presente obra, essas concepções são aplicadas ao <em>conteúdo quantitativo</em> e às <em>relações matemáticas</em> dos temas abordados em <em>Bioquímica</em>.</div>
-<p><img src="rlogo.jpeg" class="img-fluid" style="width:10.0%"></p>
+<p><img src="rlogo_bg.png" class="img-fluid" style="width:10.0%"></p>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Essas relações estão presentes nos <strong>livros-texto de Bioquímica</strong> e abrangem, por exemplo, <strong>curvas de titulação de ácidos fracos e aminoácidos</strong>, estudo de <strong>cargas efetivas em biomoléculas</strong>, <strong>características físico-químicas de proteínas e ácidos nucleicos</strong> previstas por análise de sequência, <strong>cinética de enzimas e sua inibição</strong>, <strong>quantidades termodinâmicas e Bioenergética</strong>, <strong>interação ligante-biopolímero</strong>, <strong>estequiometria de reações bioquímicas</strong>, <strong>rotas bioquímicas e redes metabólicas</strong>, dentre outros.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;De modo geral, os temas acima são abordados neste material com auxílio do <em>R &amp; RStudio</em>. Não obstante, seu conteúdo não possui a pretensão de abordar, para além da superfície, o uso do <em>R</em>, do <em>RStudio</em>, e mesmo dos temas de <em>Bioquímica</em> propostos. Para esses, recomenda-se as fontes tradicionais de tutoriais, livros-texto e internete. E tampouco se arrisca a adentrar no universo da <em>Bioinformática</em>, tradicional ou estrutural, como na <em>Biologia de Sistemas</em>, <em>alinhamento de sequências</em>, <em>predição estrutural</em>, <em>modelagem, dinâmica e atracamento moleculares</em>, ou nas várias faces dos <em>estudos ômicos</em>.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Em resumo, objetiva-se apenas abordar os <em>conteúdos quantitativos</em> e <em>relações matemáticas</em> presentes em parte da <em>Bioquímica</em>, tal como descrito acima, utilizando o <em>R &amp; Rstudio</em>. Essa abordagem tangencia a <strong>solução de problemas e simulações por sistema linear de equações, álgebra linear, ajuste linear, não linear, polinomial, linear múltiplo, otimização, minimização, equações diferenciais simples, e análise de sequências</strong>, dentre outros.<br>
@@ -799,8 +818,8 @@ GANDRUD, C. <strong>Reproducible research with r and RStudio</strong>. [<em>S. l
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../nivel/basico/Curso/index_r_bas.html" class="pagination-link" aria-label="R na Escola">
-        <span class="nav-page-text">R na Escola</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../nivel/superior/ScriptRplot/scriptrplot.html" class="pagination-link" aria-label="scriptRplot: gráficos elegantes">
+        <span class="nav-page-text">scriptRplot: gráficos elegantes</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

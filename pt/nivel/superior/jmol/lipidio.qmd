@@ -1,5 +1,7 @@
 ---
 title: "Lipídios"
+toc: true
+lang: pt
 ---
 <!-- Google tag (gtag.js)-->
 

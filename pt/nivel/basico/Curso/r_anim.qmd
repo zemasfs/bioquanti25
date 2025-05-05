@@ -1,6 +1,8 @@
 ---
 title: "6 - Animações gráficas"
 format: html
+toc: true
+lang: pt
 ---
 
 

@@ -1,5 +1,7 @@
 ---
 title: "Comandos" 
+toc: true
+lang: pt
 ---
 
 <!-- Google tag (gtag.js)-->

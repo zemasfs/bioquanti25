@@ -1,6 +1,8 @@
 ---
 title: "Biologia"
 publish: false
+toc: true
+lang: pt
 ---
 
 <div class="biol-fundo">  <!--modifica para cada área-->

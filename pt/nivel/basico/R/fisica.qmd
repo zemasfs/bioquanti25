@@ -1,6 +1,8 @@
 ---
 title: "Física"
 publish: false
+toc: true
+lang: pt
 ---
 
 

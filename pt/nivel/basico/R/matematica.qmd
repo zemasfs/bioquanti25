@@ -1,6 +1,6 @@
 ---
 toc: true
-publish: false
+lang: pt
 ---
 
 # Matemática {.unnumbered}

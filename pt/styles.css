@@ -55,6 +55,9 @@ a:hover {
 .navbar-brand {
   height: 48px !important;  /* ou 40px, 48px, etc. */
   margin-right: 0px;
+  margin-left: 0px !important;    /* Remove espaço à esquerda */
+  margin-right: 0.5rem !important;  /* Pequeno respiro à direita, opcional */
+  padding-left: 0 !important;
 }
 
 
@@ -66,7 +69,7 @@ a:hover {
   border-bottom: 1px solid #379CD4;
 }
 
-/* ############## Cores de separação Superior e Básico ########*/
+/* ############## Cores de separação ########*/
 
 
 /* Aplica uma cor diferente aos itens da navbar, por ordem */
@@ -91,24 +94,10 @@ a:hover {
 }
 
 .navbar-nav > li:nth-child(5) > a {
-  background-color: #E57145; /* laranja - Ensino Básico */
+  background-color: #379CD4; /* laranja - Ensino Básico */
   color: white !important;
 }
 
-.navbar-nav > li:nth-child(6) > a {
-  background-color: #E57145; /* laranja - Ensino Básico */
-  color: white !important;
-}
-
-.navbar-nav > li:nth-child(7) > a {
-  background-color: #E57145; /* laranja - Ensino Básico */
-  color: white !important;
-}
-
-.navbar-nav > li:nth-child(8) > a {
-  background-color: #E57145; /* laranja - Ensino Básico */
-  color: white !important;
-}
 
 
 /* Bordas entre seções */
@@ -133,7 +122,7 @@ a:hover {
 
 /* Desloca os menus da navbar para a direita em 100px */
 .navbar-collapse {
-  margin-left: 100px;
+  margin-left: 2rem;
 
 }
 
@@ -149,15 +138,11 @@ a:hover {
   transition: background-color 0.2s ease-in-out;
 }
 
-/* Itens azuis - hover mais escuro */
-.navbar-nav > li:nth-of-type(1):hover > a,
-.navbar-nav > li:nth-of-type(2):hover > a,
-.navbar-nav > li:nth-of-type(3):hover > a {
-  background-color: #1e4e79 !important; /* azul escuro */
-  color: white !important;
-}
 
 /* Itens laranja - hover mais escuro */
+.navbar-nav > li:nth-of-type(1):hover > a,
+.navbar-nav > li:nth-of-type(2):hover > a,
+.navbar-nav > li:nth-of-type(3):hover > a,
 .navbar-nav > li:nth-of-type(4):hover > a,
 .navbar-nav > li:nth-of-type(5):hover > a {
   background-color: #cc4d1f !important; /* laranja escuro */
@@ -197,8 +182,11 @@ a:hover {
 .navbar {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+  height: 64px !important;     /* ou 72px, 80px, etc. */
   min-height: 40px; /* Altura mínima */
 }
+
+/* ############## LOGO DO SITE ################# */
 
 .navbar-brand,
 .navbar-nav .nav-link {
@@ -211,6 +199,11 @@ a:hover {
 1.2rem	~19.2px
 1.3rem	~20.8px */
 
+/* ############ DISTÂNCIA DE ÍCONES DA NAVBAR - DIREITA ###### */
+
+.navbar .navbar-collapse .navbar-nav:last-child {
+  margin-right: 1rem;  /* ou 20px, 32px, etc. */
+}
 
 
 /* ########### TAMANHO DA PÁGINA (para ajuste do sidebar) #################
@@ -224,6 +217,8 @@ a:hover {
   display: flex;
   flex-direction: row;
 }
+
+
 
 /* ######################  SIDEBAR (menu lateral)  ##################### */
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.7.22">
@@ -31,7 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
 <link href="../../../nivel/basico/R/index_OIER.html" rel="next">
-<link href="../../../nivel/superior/r/index_r.html" rel="prev">
+<link href="../../../nivel/superior/ScriptRplot/scriptrplot.html" rel="prev">
 <link href="../../../avatar.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -57,17 +57,17 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
   }
 }</script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-S1L73VGCG5"></script>
@@ -84,7 +84,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <link rel="stylesheet" href="../../../styles.css">
 </head>
 
-<body class="nav-sidebar floating nav-fixed fullcontent quarto-light">
+<body class="nav-sidebar floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -95,8 +95,8 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
     <img src="../../../logo-bioquanti.png" alt="" class="navbar-logo">
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Procurar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Alternar de navegação" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -106,19 +106,12 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <span class="menu-text">Sobre</span></a>
   </li>  
   <li class="nav-item">
-    <span class="nav-link">
-<span class="menu-text">Ensino Reprodutível</span>
-    </span>
+    <a class="nav-link" href="../../../erre.html"> 
+<span class="menu-text">Ensino Reprodutível</span></a>
   </li>  
   <li class="nav-item">
-    <span class="nav-link">
-<span class="menu-text">Bioquímica</span>
-    </span>
-  </li>  
-  <li class="nav-item">
-    <span class="nav-link">
-<span class="menu-text">Ensino Básico</span>
-    </span>
+    <a class="nav-link" href="../../../ferramentas.html"> 
+<span class="menu-text">Ferramentas</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../../producao.html"> 
@@ -131,13 +124,13 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../../en/index.qmd"> 
+    <a class="nav-link" href="../../../under_trans.html"> 
 <span class="menu-text">EN</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo de leitor">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
   </div>
@@ -147,11 +140,11 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../nivel/superior/r/index_r.html">R - cálculos e visualizações</a></li><li class="breadcrumb-item"><a href="../../../nivel/basico/Curso/index_r_bas.html">R na Escola</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
   </nav>
@@ -166,7 +159,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text">JSPlotly &amp; GSPlotly - simulação interativa e IA</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -180,7 +173,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../#" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Ensino Básico</span></a>
+ <span class="menu-text">Simulações interativas na Escola</span></a>
   </div>
 </li>
       </ul>
@@ -189,7 +182,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Jmol - Moléculas em 3D</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -203,7 +196,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../nivel/basico/Curso/index_jmol_bas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Jmol na Escola</span></a>
+ <span class="menu-text">Moléculas 3D na Escola</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -218,7 +211,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
  <span class="menu-text">R - cálculos e visualizações</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -227,6 +220,12 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
   <div class="sidebar-item-container"> 
   <a href="../../../nivel/superior/r/index_r.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Bioquímica</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/superior/ScriptRplot/scriptrplot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">scriptRplot: gráficos elegantes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -241,19 +240,13 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
  <span class="menu-text">Gráficos e mapas interativos na Escola</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../#" class="sidebar-item-text sidebar-link">
- <span class="menu-text">scriptRplot: gráficos elegantes</span></a>
-  </div>
-</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
- <span class="menu-text">Sisma - fluxos dinâmicos</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+ <span class="menu-text">Sisma - diagramas dinâmicos interativos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -267,7 +260,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../#" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Ensino Básico</span></a>
+ <span class="menu-text">Diagramas interativos na Escola</span></a>
   </div>
 </li>
       </ul>
@@ -277,7 +270,9 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -303,7 +298,8 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <div class="line-block">&nbsp;&nbsp;O <code>R</code> permite uma série de objetos didáticos interativos, aqui compilados principalmente a partir de uma biblioteca instalada chamada <code>plotly</code>.</div>
 <p><br>
 </p>
-<div class="line-block">&nbsp;&nbsp;Como super rápida demonstração, <strong>assista esse <a href="https://youtu.be/BstI7p3vZl4">VIDEO 1</a> curtíssimo para ver o <em>um gráfico interativo</em> com <code>plotly</code> pra R em ação, e esse outro <a href="https://youtu.be/IuKYgL-Bu10">VIDEO 2</a> tão “grande” quanto, para ver o <em>um mapa interativo</em> com <code>plotly</code> !</strong></div>
+<p><a href="https://cran.r-project.org/"><img src="rlogo_bg.png" class="img-fluid" width="100"></a></p>
+<div class="line-block">&nbsp;&nbsp;Como demonstração, <strong>assista esse <a href="https://youtu.be/BstI7p3vZl4">VIDEO 1</a> curtíssimo para ver o <em>um gráfico interativo</em> com <code>plotly</code> pra R em ação, e esse outro <a href="https://youtu.be/IuKYgL-Bu10">VIDEO 2</a> tão “grande” quanto, para ver o <em>um mapa interativo</em> com <code>plotly</code> !</strong></div>
 <p><br>
 </p>
 <p><a href="../../../nivel/basico/Curso/r_install.html">1. Como instalar R e RStudio</a><br>
@@ -319,10 +315,11 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <p><a href="../../../nivel/basico/Curso/r_anim.html">6. Animações gráficas</a><br>
 </p>
 <p><a href="../../../nivel/basico/Curso/r_mapas.html">7. Mapas interativos com <code>plotly</code></a></p>
+<p><a href="https://posit.co/download/rstudio-desktop/"><img src="rstudio_logo_bg.png" class="img-fluid" width="200"></a></p>
 
 
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -348,12 +345,12 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "Copiada");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "Copiada");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
@@ -724,8 +721,8 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../nivel/superior/r/index_r.html" class="pagination-link" aria-label="Bioquímica">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Bioquímica</span>
+      <a href="../../../nivel/superior/ScriptRplot/scriptrplot.html" class="pagination-link" aria-label="scriptRplot: gráficos elegantes">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">scriptRplot: gráficos elegantes</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

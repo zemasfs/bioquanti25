@@ -1,6 +1,8 @@
 ---
 title: "Mais interatividade !"
 format: html
+toc: true
+lang: pt
 ---
 
 <div class = "reminder-objetivos">

@@ -1,5 +1,7 @@
 ---
 title: "Biomoléculas"
+toc: true
+lang: pt
 ---
 
 ## Biomoléculas e dimensões {#sec-biomol}

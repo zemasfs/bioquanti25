@@ -1,6 +1,8 @@
 ---
 title: "Moléculas de animais peçonhentos"
 publish: false
+toc: true
+lang: pt
 ---
 
 [![Alfa-bungarotoxinas, são encontradas no veneno de cobras do gênero Bungarus.](alfabungarotoxina.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?&pdbid=1IK8)

@@ -17,9 +17,9 @@ title: "Visualização de moléculas em 3D e animações - Jmol"
 
 |       Dessa forma, o *Jmol* pode rodar tanto a partir de uma pasta de diretório contendo seus arquivos, como a partir de um disco rígido ou mídia removível (*pendrive*). Além disso é um programa de código-fonte e distribuição livres para representação de modelos moleculares tridimensionais, permite uma diversidade de visualizações e cores, movimentos de translação e rotação das moléculas, ampliação visual, cálculos de distância, ângulos, estruturas e superfícies, otimizações moleculares, e animações, dentre outros. Existe um número muito grande de portais na internet que utilizam o *Jmol*, a começar pela [lista](http://wiki.jmol.org/index.php/Websites_Using_Jmol:_A-L) disponível na [página da comunidade Wiki](http://wiki.jmol.org/index.php/Main_Page).
 
-|       Complementarmente, o acesso ao *Jmol* pode ser realizado pela internete, sem a necessidade de arquivos no computador. Dentre os diversos *sites* que possuem o *applet JSmol* que permite esse acesso, sugerimos clicar na imagem abaixo, que direcionará ao *applet* do *website* da [St. Olaf College](https://chemapps.stolaf.edu/jmol/jmol.php?), ilustrando uma *molécula de água*:
+|       Complementarmente, o acesso ao *Jmol* pode ser realizado pela internete, sem a necessidade de arquivos no computador. Dentre os diversos *sites* que possuem o *applet JSmol* que permite esse acesso, sugerimos **clicar na imagem abaixo**, que direcionará ao *applet* do *website* da [St. Olaf College](https://chemapps.stolaf.edu/jmol/jmol.php?), ilustrando uma *molécula de água*:
 
-[![](jsmol.png){width="30%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=water) <!-- &script=Console -->
+[![](jmol_bg.png){width="10%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=water) <!-- &script=Console -->
 
 
 |   **Assista esse [VIDEO](https://youtu.be/WQN_Gg-s9uA) curtíssimo para ver o *JSmol* online em ação !**
@@ -54,7 +54,7 @@ title: "Visualização de moléculas em 3D e animações - Jmol"
 :::
 
 ::: {#second-column}
-![](jmol_panfleto.png){width="50%" fig-align="right"}
+![](jmol_panfl_bg.png){width="50%" fig-align="right"}
 <!-- (https://www.researchgate.net/publication/388790369_Bioquimica_Estrutural_Guiada_Por_Jmol) --> 
 
 :::

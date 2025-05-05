@@ -1,6 +1,8 @@
 ---
 title: "4 - Como usar o Jmol"
 format: html
+toc: true
+lang: pt
 ---
 
 

@@ -1,6 +1,8 @@
 ---
 title: "Moléculas de interesse toxicológico"
 publish: false
+toc: true
+lang: pt
 ---
 
 [![Formaldeído subatância de caracter Cancerígeno, usado na conservação de tecido.](formaldeido.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C=O)

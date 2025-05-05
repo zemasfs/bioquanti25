@@ -17,14 +17,14 @@ website:
         contents:
           - text: "Bioquímica"
             href: "#"
-          - text: "Ensino Básico"
+          - text: "Simulações interativas na Escola"
             href: "#"
             
       - section: "Jmol - Moléculas em 3D"
         contents:
           - text: "Bioquímica"
             href: nivel/superior/jmol/index_jmol.qmd
-          - text: "Jmol na Escola"
+          - text: "Moléculas 3D na Escola"
             href: nivel/basico/Curso/index_jmol_bas.qmd
           - text: "Jardim de Moléculas"
             href: nivel/basico/Jardim/index_Jardim.qmd
@@ -33,18 +33,19 @@ website:
         contents:
           - text: "Bioquímica"
             href: nivel/superior/r/index_r.qmd
+          - text: "scriptRplot: gráficos elegantes"
+            href: nivel/superior/ScriptRplot/scriptrplot.qmd
           - text: "R na Escola"
             href: nivel/basico/Curso/index_r_bas.qmd
           - text: "Gráficos e mapas interativos na Escola"
             href:  nivel/basico/R/index_OIER.qmd
-          - text: "scriptRplot: gráficos elegantes"
-            href: "#"
 
-      - section: "Sisma - fluxos dinâmicos"
+
+      - section: "Sisma - diagramas dinâmicos interativos"
         contents:
           - text: "Bioquímica"
             href: nivel/superior/sisma/index_sisma.qmd
-          - text: "Ensino Básico"
+          - text: "Diagramas interativos na Escola"
             href: "#"
 
   navbar:
@@ -55,30 +56,32 @@ website:
     
       - text: "Sobre"
         id: sup-menu
-        href: index.qmd
+        href: index.html
       - text: "Ensino Reprodutível"
         id: bas-menu
+        href: erre.qmd
         # menu: 
         #   - text: "ER"
         #     href: erre.qmd
         #   - text: "Características de ER"
         #     href: "#"
          
-      - text: "Bioquímica"
+      - text: "Ferramentas"
         id: sup-menu
+        href: ferramentas.qmd
         # menu: 
         #   - text: "Possibilides"
         #     href: "#"
         #   - text: "Objetos"
         #     href: "#"
             
-      - text: "Ensino Básico"
-        id: bas-menu
-        # menu: 
-        #   - text: "Possibilidades"
-        #     href: "#"
-        #   - text: "Exemplos"
-        #     href: "#"
+      # - text: "Ensino Básico"
+      #   id: bas-menu
+      #   # menu: 
+      #   #   - text: "Possibilidades"
+      #   #     href: "#"
+      #   #   - text: "Exemplos"
+      #   #     href: "#"
 
       - text: "Publicações"
         href: producao.qmd
@@ -88,7 +91,8 @@ website:
 
     right:
       - text: "EN"
-        href: ../en/index.qmd
+        href: under_trans.qmd
+        # href: ../en/index.qmd
 
 format:
   html:

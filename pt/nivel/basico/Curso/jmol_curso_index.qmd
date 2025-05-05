@@ -2,6 +2,8 @@
 title: "1 - Moléculas & Jmol"
 class: fundo-bas
 publish: false
+toc: true
+lang: pt
 ---
 
 ##  Usando o Jmol para observar moléculas em 3D

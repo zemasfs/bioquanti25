@@ -1,6 +1,8 @@
 ---
 title: "Moleculas de interesse industrial"
 publish: false
+toc: true
+lang: pt
 ---
 
 ##Moléculas de Interesse Industrial

@@ -1,6 +1,8 @@
 ---
 title: "2 - Comandos básicos do R"
 format: html
+toc: true
+lang: pt
 ---
 
 

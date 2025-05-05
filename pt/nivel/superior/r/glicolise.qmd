@@ -1,5 +1,7 @@
 ---
 title: "Glicólise"
+toc: true
+lang: pt
 ---
 
 

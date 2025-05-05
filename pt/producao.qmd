@@ -11,6 +11,8 @@ title: ""
 
 ## Livros
 
+- Schneedorf, J.M. Bioquanti: Vivificando conteúdos para o ensino básico. Org: Mafra, L.A.S; Silva, L.E; Schneedorf, J.M. Ed. Pimenta Cultural, 84p. 2025 (no prelo). 
+
 - Schneedorf, J.M., Rodrigues, K.L. [Bioquímica básica, de gente, de bicho, e de planta](http://dx.doi.org/10.13140/RG.2.2.32623.55208). 353p., 2024. ISBN: 978-65-00-90366-9.
 
 - Schneedorf, J.M. [Bioquímica Quantitativa](http://dx.doi.org/10.13140/RG.2.2.36090.40644) & R. 152p., 2022. ISBN: 978-65-00-52125-2. .
@@ -21,14 +23,16 @@ title: ""
 
 ## Capítulos
 
-<!-- - Schneedorf, J.M. JSPlotly. -->
-<!-- - Schneedorf, J.M. SriptRplot. -->
 
 - Oliveira, G. A. V. ; Lemes, N. H. T. ; Sindra, L. V. ; Schneedorf, J.M. . Binding of Molecules Followed by Electroanalytical Techniques. In: Ana Clarissa dos Santos Pires; Luis Henrique Mendes da Silva. (Org.). Methods and Protocols in Food Science - Characterization of Molecular Interactions. 1ed.New York: Springer Nature, 2025, v. 13, p. 1-12.
 
 - Ferreira, M. P. ; Galhardo, B. R. ; Lemes, N. H. T. ; Coelho, Y. L. ; Schneedorf, J.M. ; Sindra, L. V. Application of Quartz Crystal Microbalance to Study Intermolecular Interactions. In: Ana Clarissa dos Santos Pires; Luis Henrique Mendes da Silva. (Org.). Methods and Protocols in Food Science - Characterization of Molecular Interactions. 1ed.New York: Springer Nature, 2025, v. 13, p. 29-38.
 
 - Andrade, R. J. ; Lemes, N. H. T. ; Sindra, L. V. ; Schneedorf, J.M. . Difference Spectra Absorption Spectrophotometry Applied to Molecular Interactions. In: Ana Clarissa dos Santos Pires; Luis Henrique Mendes da Silva. (Org.). Methods and Protocols in Food Science - Characterization of Molecular Interactions. 1ed.New York: Springer Nature, 2025, v. 13, p. 14-28. 
+
+- Schneedorf, J.M. JSPlotly - um aplicativo prático e portável para simulações gráficas interativas ao ensino reprodutível. In: Recursos Educacionais Abertos na UNIFAL-MG. Org: Mafra, L.A.S; Silva, L.E; Schneedorf, J.M. Ed. Pimenta Cultural. 2025 (no prelo).
+
+- Schneedorf, J.M. ScriptRplot - um script de R para produção de gráficos elegantes com ggplot2. In: Recursos Educacionais Abertos na UNIFAL-MG. Org: Mafra, L.A.S; Silva, L.E; Schneedorf, J.M. Ed. Pimenta Cultural. 2025 (no prelo).
 
 - Schneedorf, J.M. R e RStudio: uma plataforma para implementação de ensino reprodutível. In: Aprendizagem Ativa: da Educação Básica ao Ensino Superior. Org: Sindiany Suelen Caduda dos Santos, Débora Moreira de Oliveira. V & V Editora, Santo André (SP), 2025 (no prelo).
 

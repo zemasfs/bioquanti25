@@ -1,5 +1,7 @@
 ---
 title: "Planejamento experimental"
+toc: true
+lang: pt
 ---
 
 ## Sistema matricial

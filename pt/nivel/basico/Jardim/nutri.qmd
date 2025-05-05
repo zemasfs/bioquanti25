@@ -1,6 +1,8 @@
 ---
 title: "Moléculas de interesse nutricional"
 publish: false
+toc: true
+lang: pt
 ---
 
 [![Curcumina é um corante amarelo derivado da cúrcuma](curcumina.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=COC1=C(C=CC(=C1)/C=C/C(=O)CC(=O)/C=C/C2=CC(=C(C=C2)O)OC)O)

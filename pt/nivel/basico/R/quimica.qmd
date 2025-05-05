@@ -1,6 +1,8 @@
 ---
 title: "Química"
 number-sections: true
+toc: true
+lang: pt
 class: fundo-basico
 publish: false
 ---

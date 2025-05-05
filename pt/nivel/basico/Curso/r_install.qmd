@@ -1,5 +1,7 @@
 ---
 title: "1 - Como instalar o R e RStudio"
+toc: true
+lang: pt
 ---
 
 

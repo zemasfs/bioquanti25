@@ -1,5 +1,7 @@
 ---
 title: Àgua
+toc: true
+lang: pt
 ---
 
 <!-- Google tag (gtag.js)-->

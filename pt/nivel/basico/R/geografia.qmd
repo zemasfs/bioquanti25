@@ -1,6 +1,8 @@
 ---
 title: "Geografia"
 publish: false
+toc: true
+lang: pt
 ---
 
 <!-- ############# DADOS SOCIOECONÔMICOS - MAPA  ################ --->

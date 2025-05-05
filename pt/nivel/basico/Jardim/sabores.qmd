@@ -1,6 +1,8 @@
 ---
 title: "Moléculas de interesse para sabores"
 publish: false
+toc: true
+lang: pt
 ---
 
 [![Glutamato monossódico é utilizado para realça o sabor umami.](glutamato monossodico.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C(CC(=O)O)%5BC@@H%5D(C(=O)%5BO-%5D)N.%5BNa+%5D)

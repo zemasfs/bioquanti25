@@ -1,6 +1,8 @@
 ---
 title: "3 - Pacotes do R e `plotly`"
 format: html
+toc: true
+lang: pt
 ---
 
 

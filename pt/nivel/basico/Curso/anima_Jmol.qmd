@@ -1,5 +1,7 @@
 ---
 title: "6 - Algumas animações com Jmol"
+toc: true
+lang: pt
 ---
 
 <div class="reminder-objetivos">

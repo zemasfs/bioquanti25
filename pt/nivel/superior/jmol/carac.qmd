@@ -1,5 +1,7 @@
 ---
-title: "Algumas características do Jmol como visualizador molecular:"
+title: "Algumas características do Jmol como visualizador molecular"
+toc: true
+lang: pt
 ---
 
 

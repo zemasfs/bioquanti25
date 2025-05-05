@@ -1,6 +1,8 @@
 ---
 title: "5 - Outros gráficos com `plotly`"
 format: html
+toc: true
+lang: pt
 ---
 
 

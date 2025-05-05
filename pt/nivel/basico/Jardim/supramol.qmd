@@ -1,6 +1,8 @@
 ---
 title: "Polímeros, complexos supramoleculares, e vírus"
 publish: false
+toc: true
+lang: pt
 ---
 
 

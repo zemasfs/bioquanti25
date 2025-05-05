@@ -1,5 +1,7 @@
 ---
 title: "Aminoácidos"
+toc: true
+lang: pt
 ---
 
 

@@ -2,6 +2,7 @@
 title: "Ciências Humanas"
 publish: false
 toc: true
+lang: pt
 ---
 
 <!-- ############# ÁREA E POPULAÇÃO BRASILEIRA ################ --->

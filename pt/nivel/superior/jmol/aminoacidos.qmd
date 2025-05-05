@@ -1,6 +1,10 @@
-# Aminoácidos {#AAcido}
+---
+title: "Aminoácidos"
+toc: true
+lang: pt
+---
 
-## Estrutura
+## Estrutura {#AAcido}
 
 |       Existem centenas de aminoácidos, principalmente em solos e microorganismos, embora apenas 20 desses possam participar do código genético para a tradução em proteínas.
 |       Afim de iniciar a observação de alguns desses aminoácidos, baixe\index{carregamento} a estrutura da *Glicina* por um arquivo salvo no HD como "gly.png" ou por *File, Get Mol* (e digitando *gly* em seguida). Observe os grupos amino e carboxilato na **coloração CPK**. Identifique a estrutura do aminoácido:

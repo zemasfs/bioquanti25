@@ -1,5 +1,7 @@
 ---
 title: "Inibição enzimática"
+toc: true
+lang: pt
 ---
 
 ## Tipos de inibição

@@ -1,6 +1,8 @@
 ---
 title: "Moléculas orgânicas"
 publish: false
+toc: true
+lang: pt
 
 ---
 

@@ -1,5 +1,7 @@
 ---
 title: "Alguns comandos pra se aventurar nas moléculas voadoras"
+toc: true
+lang: pt
 ---
 
 <div class="reminder-objetivos">

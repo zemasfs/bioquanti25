@@ -481,5 +481,14 @@
   },
   "nivel/basico/Curso/r_plotly.qmd": {
     "r_plotly.html": "73c904d6"
+  },
+  "ferramentas.qmd": {
+    "ferramentas.html": "c8a2fc9a"
+  },
+  "nivel/superior/ScriptRplot/scriptrplot.qmd": {
+    "scriptrplot.html": "cf68527e"
+  },
+  "under_trans.qmd": {
+    "under_trans.html": "09b971b6"
   }
 }

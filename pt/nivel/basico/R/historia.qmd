@@ -1,6 +1,8 @@
 ---
 title: "História"
 publish: false
+toc: true
+lang: pt
 ---
 
 <!-- ############# ALGUNS CONFLITOS - MAPA  ################ --->
