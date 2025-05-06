@@ -160,7 +160,7 @@ lang: pt
 
 |   A atual versão do programa pode ser visualizada diretamente abaixo.
 
-|     [JSPlotly_v1](JSPlotly_v1.html)
+|     [JSPlotly_v1](JSPlotly_v1b.html)
 
 
 |   Observe que, por tratar-se de um arquivo HTML, o aplicativo abre em qualquer visualizador, como Chrome, Firefox, Safari, etc. Como também abre em desktop e dispositivos móveis, e de modo online, ou offline.
