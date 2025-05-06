@@ -8,9 +8,9 @@ lang: pt
 |   Frente à inerente dificuldade para uso de uma linguagem de programação, como *JavaScript*, bem como de bibliotecas correlatas, e outras linguagens modernas para web (HTML - estrutura, CSS - estilo), buscou-se desenvolver um *GPT personalizado* para a criação instantânea de códigos, bem como para sua edição e personalização.
 \
 
-[![Tela do *GSPlotly* para criação de códigos ao simulador JSPlotly. Clique na imagem para acessá-lo !](gsplotly_tela.png)]()
+[![Tela do *GSPlotly* para criação de códigos ao simulador JSPlotly. Clique na imagem para acessá-lo !](gsplotly_tela.png)](https://chatgpt.com/g/g-6819fbb8d2d08191bf7d50a3dbeadb0d-gsplotly)
 
 |   A iniciativa denomina-se *GSPlotly*, e visa atuar como um gerador em linguagem natural para o simulador *JSPlotly*. Dessa forma, permite-se duplamente a geração de um código em qualquer tema que assistentes de IA são hoje alimentados, bem como o aprendizado subliminar das próprias linguagens envolvidas.
 
-|   Teste o *GSPlotly* neste [link](). Para tal, peça a simulação de um tema qualquer embasado em função matemática para ciências naturais ou outra área do conhecimento, copie o código gerado, e rode-o no *JSPlotly*.
+|   Teste o *GSPlotly* neste [link](https://chatgpt.com/g/g-6819fbb8d2d08191bf7d50a3dbeadb0d-gsplotly). Para tal, peça a simulação de um tema qualquer embasado em função matemática para ciências naturais ou outra área do conhecimento, copie o código gerado, e rode-o no *JSPlotly*.
 
