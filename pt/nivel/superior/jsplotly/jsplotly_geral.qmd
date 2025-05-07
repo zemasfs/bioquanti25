@@ -2,6 +2,7 @@
 title: "JSPlotly e Simulação Interativa"
 format: html
 toc: true
+number-sections: true
 lang: pt
 ---
 
@@ -154,11 +155,9 @@ lang: pt
 23. Editar o gráfico em aplicativo web [Plotly Chart Studio](https://chart-studio.plotly.com/create/#/) 
   do desenvolvedor da biblioteca por ícone da barra de ferramentas ("Edit in Chart Studio").
 ```
-
-
-
-|   Observe que, por tratar-se de um arquivo HTML, o aplicativo abre em qualquer visualizador, como Chrome, Firefox, Safari, etc. Como também abre em desktop e dispositivos móveis, e de modo online, ou offline.
 \
+
+
 
 ## Download 
 
@@ -176,5 +175,16 @@ lang: pt
 
 
 [![](licenca_CC.png){width="30%"}](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt){target="_blank"}
+
+## Uso do *JSPlotly* no site *Bioquanti*
+
+
+```{r, eval=FALSE}
+
+1. Selecione a opção para gráficos correlatos à "Bioquímica" ou ao "Ensino Básico" no menu lateral;
+2. Escolha um tema de interesse, e clique no gráfico para visualizar o aplicativo. Uma nova janela se abrirá contendo o "JSPlotly" específico para o tema escolhido;
+4. Agora basta clicar em "Add Plot" para visualizar o gráfico e testar as várias possibilidades de interatividade;
+5. Siga as sugestões do "Quadro" para um melhor aproveitamento do tema escolhido.
+```
 
 
