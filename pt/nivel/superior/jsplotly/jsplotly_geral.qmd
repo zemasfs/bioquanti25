@@ -158,8 +158,6 @@ lang: pt
 
 ## Download 
 
-|   A atual versão do programa pode ser visualizada diretamente abaixo.
-
 |     [JSPlotly_v1](JSPlotly_v1.html)
 
 
