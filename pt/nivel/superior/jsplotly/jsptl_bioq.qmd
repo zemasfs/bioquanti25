@@ -8,7 +8,7 @@ lang: pt
 |   Para ilustrar o potencial de uso do *JSPlotly* para Bioquímica e áreas correlatas, segue um elenco de temas apresentando gráficos interativos e códigos para visualização, estudo, e compartilhamento.
 \
 
-[Equilíbrio ácido-básico e tampões]()
+[Equilíbrio ácido-básico e tampões](js_tampao.qmd)
 
 [Sequências biológicas - aminoácidos e nucleotídios]()
 

@@ -565,28 +565,25 @@ function limparTudo() {
 
 
 // Definir a equação quadrática padrão
-var codigoPadrao = `
-const a = 2;
-const b = -3;
-const c = 5;
+var codigoPadrao = `// Curva de Titulação de Ácido Diprótico
 
-// Criando um array de valores X de -10 a 10
-const x_values = [];
-const y_values = [];
-for (let i = -10; i <= 10; i += 0.5) {
-    x_values.push(i);
-    y_values.push(a * Math.pow(i, 2) + b * i + c);
-}
+const pKa1 = 4.85;
+const pKa2 = 9.22;
+const x_values = Array.from({length: 200}, (_, i) => i * (14 / 199));
+const y_values = x_values.map(pH =>
+    (1 / (1 + Math.pow(10, pKa1 - pH))) + (1 / (1 + Math.pow(10, pKa2 - pH)))
+);
+return {
+    x_values,
+    y_values,
+    layout: {
+        title: { text: "Titulação de ácido diprótico" },
+        xaxis: { title: { text: "pH" } },
+        yaxis: { title: { text: "mol de H+ dissociados" } }
+    }
+};
+`;
 
-// Configuração de eixos e etiquetas
-const x_range = [-10, 10];
-const y_range = [0, Math.max(...y_values)];
-const x_label = "Valores de X";
-const y_label = "Valores de Y";
-const title = "Gráfico da Equação Quadrática";
-
-// Retornando os valores para o editor
-return { x_values, y_values, x_range, y_range, x_label, y_label, title };`;
 
 
 window.onload = function() {
@@ -601,8 +598,8 @@ window.onload = function() {
 <div class="license-info">
   <p>
     Licence under 
-    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" style="color: gray; text-decoration: none;">
-      CC BY-NC-SA 4.0
+    <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" style="color: gray; text-decoration: none;">
+      CC BY-NC 4.0
     </a>
     © 2025 José Maurício Schneedorf FS
   </p>

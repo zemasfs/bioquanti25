@@ -1,0 +1,10 @@
+---
+title: "Sistemas tampão"
+format: html
+toc: true
+lang: pt
+---
+
+## Curva de titulação para um ácido diprótico
+
+[![Curva de titulação para X](Eq/tit_acbase.png)](Eq/jsp_acbase.html)

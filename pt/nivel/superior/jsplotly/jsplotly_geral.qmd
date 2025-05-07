@@ -1,16 +1,16 @@
 ---
-title: "JSPlotly e Simulação Interativa em Ciências Naturais"
+title: "JSPlotly e Simulação Interativa"
 format: html
 toc: true
 lang: pt
 ---
 
-|   *JSPlotly* é um aplicativo para criação de gráficos interativos e dinâmicos à simulação de fenômenos naturais baseados em equações e visualização de dados. Seu nome deve-se à principal linguagem utilizada em sua construção bem como para a produção dos gráficos, [JavaScritpt](https://www.javascript.com/), bem como a biblioteca envolvida nessa, [Plotly.js](https://plotly.com/javascript/basic-charts/). 
+|   *JSPlotly*  é um aplicativo para criação de gráficos interativos e dinâmicos à simulação de fenômenos naturais baseados em equações e visualização de dados. Seu nome deve-se à principal linguagem utilizada em sua construção bem como para a produção dos gráficos, [JavaScritpt](https://www.javascript.com/), bem como a biblioteca envolvida nessa, [Plotly.js](https://plotly.com/javascript/basic-charts/). 
 
 
 |   Permite a reprodução, modificação, criação e compartilhamento de gráficos e painéis interativos em 2D ou 3D, juntamente a seus códigos. Foi concebido como uma alternativa simples, rápida, aberta, lúdica, reprodutível e compartilhável ao ensino-aprendizagem e pesquisa. 
 
-|   Oportuniza o letramento e apropriação para expressões científicas envolvidas em fenômenos naturais, pela visualização resultante da manipulação paramétrica da simulação. O aplicativo possui menos de 25 kB, pode ser personalizado em editor de texto, não requer conexão, roda em qualquer sistema operacional, e tanto para desktops como para dispositivos móveis, exporta o gráfico com preservação de sua interatividade, e permite inserção em páginas web. 
+|   Oportuniza o letramento e apropriação para expressões científicas envolvidas em fenômenos naturais, pela visualização resultante da manipulação paramétrica da simulação. O aplicativo possui menos de 20 kB, pode ser personalizado em editor de texto, não requer conexão, roda em qualquer sistema operacional, e tanto para desktops como para dispositivos móveis, exporta o gráfico com preservação de sua interatividade, e permite inserção em páginas web. 
  
 ![](js_logo_bg.png){align="right" width="20%"}
 
@@ -156,11 +156,25 @@ lang: pt
 ```
 
 
-## Download 
-
-|     [JSPlotly_v1](JSPlotly_v1.html)
-
 
 |   Observe que, por tratar-se de um arquivo HTML, o aplicativo abre em qualquer visualizador, como Chrome, Firefox, Safari, etc. Como também abre em desktop e dispositivos móveis, e de modo online, ou offline.
+\
+
+## Download 
+
+:::{.html}
+<a href="JSPlotly_v1.html"
+   target="_blank"
+   onclick="gtag('event', 'JSPlotly_Download', {
+       'event_category': 'Downloads',
+       'event_label': 'JSPlotly_v1'
+   });">
+   JSPlotly_v1
+</a>
+:::
+
+
+
+[![](licenca_CC.png){width="30%"}](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt){target="_blank"}
 
 

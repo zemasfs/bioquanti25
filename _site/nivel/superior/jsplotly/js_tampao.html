@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Exemplos de gráficos interativos com JSPlotly para Bioquímica</title>
+<title>Sistemas tampão</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../nivel/basico/jsplotly/jsplotly_bas.html" rel="next">
-<link href="../../../nivel/superior/jsplotly/gsplotly.html" rel="prev">
 <link href="../../../avatar.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -143,7 +141,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../nivel/superior/jsplotly/jsplotly_geral.html">JSPlotly &amp; GSPlotly - simulação interativa</a></li><li class="breadcrumb-item"><a href="../../../nivel/superior/jsplotly/jsptl_bioq.html">JSPlotly em Bioquímica</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Sistemas tampão</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -178,7 +176,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../nivel/superior/jsplotly/jsptl_bioq.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../nivel/superior/jsplotly/jsptl_bioq.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">JSPlotly em Bioquímica</span></a>
   </div>
 </li>
@@ -282,15 +280,21 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#curva-de-titulação-para-um-ácido-diprótico" id="toc-curva-de-titulação-para-um-ácido-diprótico" class="nav-link active" data-scroll-target="#curva-de-titulação-para-um-ácido-diprótico">Curva de titulação para um ácido diprótico</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../nivel/superior/jsplotly/jsplotly_geral.html">JSPlotly &amp; GSPlotly - simulação interativa</a></li><li class="breadcrumb-item"><a href="../../../nivel/superior/jsplotly/jsptl_bioq.html">JSPlotly em Bioquímica</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Exemplos de gráficos interativos com JSPlotly para Bioquímica</h1>
+<h1 class="title">Sistemas tampão</h1>
 </div>
 
 
@@ -307,17 +311,17 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </header>
 
 
-<div class="line-block">&nbsp;&nbsp;Para ilustrar o potencial de uso do <em>JSPlotly</em> para Bioquímica e áreas correlatas, segue um elenco de temas apresentando gráficos interativos e códigos para visualização, estudo, e compartilhamento.</div>
-<p><br>
-</p>
-<p><a href="../../../nivel/superior/jsplotly/js_tampao.html">Equilíbrio ácido-básico e tampões</a></p>
-<p><a href="">Sequências biológicas - aminoácidos e nucleotídios</a></p>
-<p><a href="">Proteínas</a></p>
-<p><a href="">Interação de oxigênio com mioglobina e hemoglobina</a></p>
-<p><a href="">Cinética enzimática</a></p>
-<p><a href="">Inibição enzimática</a></p>
+<section id="curva-de-titulação-para-um-ácido-diprótico" class="level2">
+<h2 class="anchored" data-anchor-id="curva-de-titulação-para-um-ácido-diprótico">Curva de titulação para um ácido diprótico</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="Eq/jsp_acbase.html"><img src="Eq/tit_acbase.png" class="img-fluid figure-img"></a></p>
+<figcaption>Curva de titulação para X</figcaption>
+</figure>
+</div>
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -719,18 +723,6 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
     }
   });
   </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../../../nivel/superior/jsplotly/gsplotly.html" class="pagination-link" aria-label="GSPlotly - gerador de códigos de JSPlotly por IA">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">GSPlotly - gerador de códigos de JSPlotly por IA</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../../../nivel/basico/jsplotly/jsplotly_bas.html" class="pagination-link" aria-label="Simulações interativas na Escola">
-        <span class="nav-page-text">Simulações interativas na Escola</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 
 
