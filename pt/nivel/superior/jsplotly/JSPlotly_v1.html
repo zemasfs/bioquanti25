@@ -47,7 +47,7 @@
     position: absolute;
     top: 3px;  /* Ajusta para o topo */
     left: 10px; /* Mantém alinhado à esquerda */
-    font-size: 6px !important; /* Tamanho de fonte pequeno */
+    font-size: 13px !important; /* Tamanho de fonte pequeno */
     color: #999; /* Cor cinza bem suave */
     font-family: Arial, sans-serif;
 }
@@ -259,8 +259,9 @@ button {
 </div> 
 
 
-<div class="author-info">José Maurício Schneedorf FS  <br>
-                             Depto Bioquímica, UNIFAL-MG
+<div class="author-info">Dept. Bioquímica, UNIFAL-MG. jose.dasilva@unifal-mg.edu.br <br>
+
+                             
 
 </div>
 
@@ -315,7 +316,17 @@ button {
 </style>
 
   <div id="editor-container">
-    <input type="file" id="fileInput" accept=".js" onchange="carregarEquacaoAuto(event)">
+
+<div style="display: flex; align-items: center; gap: -5px; margin-bottom: 5px;">
+  <input type="file" id="fileInput" accept=".js" onchange="carregarEquacaoAuto(event)">
+  <span style="font-size: 13px; font-family: Arial, sans-serif; color: #444;">
+    For easy code construction, try 
+    <a href="https://chatgpt.com/g/g-6819fbb8d2d08191bf7d50a3dbeadb0d-gsplotly" target="_blank" style="color: #1a73e8; font-weight: bold; text-decoration: none;">
+      GSPlotly
+    </a>
+   </span>
+</div>
+
        <div id="editor"></div>
        <div class="button-container">
        <button class="add-btn" onclick="adicionarCurva()">add plot</button>
@@ -421,22 +432,31 @@ function adicionarCurva() {
         var func = new Function(codigoUsuario + "; return { trace, layout, x_values, y_values };");
         var resultado = func();
 
-        let novaCurva;
+let novaCor = cores[Math.floor(Math.random() * cores.length)];
+let novaCurva;
 
-        if (resultado.trace) {
-            novaCurva = resultado.trace;
-        } else if (resultado.x_values && resultado.y_values) {
-            novaCurva = {
-                x: resultado.x_values,
-                y: resultado.y_values,
-                type: 'scatter',
-                mode: 'lines',
-                line: { color: 'red' }
-            };
-        } else {
-            alert("O código precisa retornar 'trace' ou 'x_values' e 'y_values'.");
-            return;
-        }
+if (resultado.trace) {
+    novaCurva = resultado.trace;
+
+    if (!novaCurva.line) {
+        novaCurva.line = {};
+    }
+    if (!novaCurva.line.color) {
+        novaCurva.line.color = novaCor;
+    }
+} else if (resultado.x_values && resultado.y_values) {
+    novaCurva = {
+        x: resultado.x_values,
+        y: resultado.y_values,
+        type: 'scatter',
+        mode: 'lines',
+        line: { color: novaCor }
+    };
+} else {
+    alert("O código precisa retornar 'trace' ou 'x_values' e 'y_values'.");
+    return;
+}
+
 
         curvas.push(novaCurva);
         Plotly.newPlot("grafico", curvas, resultado.layout, config);
@@ -577,8 +597,18 @@ window.onload = function() {
 
 <div class="license-info">
     <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" style="color: gray; text-decoration: none;">
-            licence under CC BY-NC 4.0
+
+<div class="license-info">
+  <p>
+    Licence under 
+    <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" style="color: gray; text-decoration: none;">
+      CC BY-NC 4.0
     </a>
+    © 2025 José Maurício Schneedorf FS
+  </p>
+</div>
+
+
 </div>
 
 <script>
