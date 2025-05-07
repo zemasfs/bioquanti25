@@ -23,8 +23,8 @@ $$
 
 
 [![Curva de titulação de um ácido diprótico. O parâmetro *fa* representa a fração de ácido (grupos protonáveis).](Eq/tit_acbase.png)](Eq/jsp_acbase.html){target="_blank"}
-
-<div class="jsplotly_sup-fundo"> 
+\
+<!---div class="jsplotly_sup-fundo"> --->
 
 ### Sugestão: {.unnumbered}
 
@@ -40,6 +40,6 @@ $$
 
 ```
 
-</div>
+<!---</div>--->
 
 \
