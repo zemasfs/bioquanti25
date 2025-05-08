@@ -464,8 +464,36 @@ q =
 </section>
 <section id="interação-de-oxigênio-com-mioglobina-e-hemoglobina" class="level2" data-number="3">
 <h2 data-number="3" class="anchored" data-anchor-id="interação-de-oxigênio-com-mioglobina-e-hemoglobina"><span class="header-section-number">3</span> Interação de oxigênio com mioglobina e hemoglobina</h2>
+<section id="contexto-2" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="contexto-2">Contexto:</h4>
+<div class="line-block">&nbsp;&nbsp;A molécula de oxigênio pode combinar-se ao grupo <em>heme</em> de mioglobina e hemoglobina de forma distinta, em função da cooperatividade exibida nesta última frente à sua estrutura quaternária. O modelo que segue exemplica essa interação, por uso da <em>equação de Hill</em>.</div>
+</section>
+<section id="equação-2" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="equação-2">Equação:</h4>
+<div class="line-block">&nbsp;&nbsp;Para essa simulação não há uma equação direta, já que o algoritmo precisa decidir a carga em função da natureza básica ou ácido do resíduo em determinado valor de pH (observe o <em>script</em>). Assim:</div>
+<p><span class="math display">\[
+Y= \frac{pO_2^{nH}}{p_{50}^{nH} + pO_2^{nH}}
+\]</span> <em>Onde</em></p>
+<p>Y = grau de saturação de oxigênio na proteína</p>
+<p>pO<span class="math inline">\(_{2}\)</span> = pressão de oxigênio</p>
+<p>p<span class="math inline">\(_{50}\)</span> = pressão de oxigênio a 50% de saturação</p>
+<p>nH = coeficiente de Hill para a interação<br>
+</p>
+<p><a href="Eq/jsp_O2.html" target="_blank"><img src="Eq/O2.png" class="img-fluid"></a><br>
+<!---div class="jsplotly_sup-fundo"> ---></p>
+</section>
+<section id="sugestão-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="sugestão-2">Sugestão:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Rode o <span class="fu">aplicativo</span> (<span class="st">"add plot"</span>). Veja que o valor de <span class="st">"nH"</span> da constante de Hill é <span class="st">"1"</span>, ou seja, sem efeito de cooperatividade.</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Agora substitua o valor de <span class="st">"nH"</span> pelo coeficiente de Hill para a hemoglobina, <span class="fl">2.8</span>, e rode novamente <span class="sc">!</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br>
+</p>
 <p><a href="">Cinética enzimática</a></p>
 <p><a href="">Inibição enzimática</a></p>
+</section>
 </section>
 <section id="estabilidade-termodinâmica-de-ácidos-nucleicos" class="level2" data-number="4">
 <h2 data-number="4" class="anchored" data-anchor-id="estabilidade-termodinâmica-de-ácidos-nucleicos"><span class="header-section-number">4</span> Estabilidade termodinâmica de ácidos nucleicos</h2>

@@ -3847,7 +3847,7 @@
     "href": "nivel/superior/jsplotly/jsptl_bioq.html#interação-de-oxigênio-com-mioglobina-e-hemoglobina",
     "title": "Exemplos de gráficos interativos com JSPlotly para Bioquímica",
     "section": "3 Interação de oxigênio com mioglobina e hemoglobina",
-    "text": "3 Interação de oxigênio com mioglobina e hemoglobina\nCinética enzimática\nInibição enzimática",
+    "text": "3 Interação de oxigênio com mioglobina e hemoglobina\n\nContexto:\n  A molécula de oxigênio pode combinar-se ao grupo heme de mioglobina e hemoglobina de forma distinta, em função da cooperatividade exibida nesta última frente à sua estrutura quaternária. O modelo que segue exemplica essa interação, por uso da equação de Hill.\n\n\nEquação:\n  Para essa simulação não há uma equação direta, já que o algoritmo precisa decidir a carga em função da natureza básica ou ácido do resíduo em determinado valor de pH (observe o script). Assim:\n\\[\nY= \\frac{pO_2^{nH}}{p_{50}^{nH} + pO_2^{nH}}\n\\] Onde\nY = grau de saturação de oxigênio na proteína\npO\\(_{2}\\) = pressão de oxigênio\np\\(_{50}\\) = pressão de oxigênio a 50% de saturação\nnH = coeficiente de Hill para a interação\n\n\n\n\n\nSugestão:\n\n1. Rode o aplicativo (\"add plot\"). Veja que o valor de \"nH\" da constante de Hill é \"1\", ou seja, sem efeito de cooperatividade.\n\n2. Agora substitua o valor de \"nH\" pelo coeficiente de Hill para a hemoglobina, 2.8, e rode novamente !\n\n\n\nCinética enzimática\nInibição enzimática",
     "crumbs": [
       "Sobre",
       "JSPlotly & GSPlotly - simulação interativa",

@@ -101,7 +101,42 @@ $$
 
 ## Interação de oxigênio com mioglobina e hemoglobina
 
+#### Contexto: {.unnumbered}
 
+|   A molécula de oxigênio pode combinar-se ao grupo *heme* de mioglobina e hemoglobina de forma distinta, em função da cooperatividade exibida nesta última frente à sua estrutura quaternária. O modelo que segue exemplica essa interação, por uso da *equação de Hill*. 
+
+
+#### Equação: {.unnumbered}
+
+|   Para essa simulação não há uma equação direta, já que o algoritmo precisa decidir a carga em função da natureza básica ou ácido do resíduo em determinado valor de pH (observe o *script*). Assim:
+
+$$
+Y= \frac{pO_2^{nH}}{p_{50}^{nH} + pO_2^{nH}}
+$$
+*Onde*
+
+Y = grau de saturação de oxigênio na proteína
+
+pO$_{2}$ = pressão de oxigênio
+
+p$_{50}$ = pressão de oxigênio a 50% de saturação
+
+nH = coeficiente de Hill para a interação
+\
+
+
+[![](Eq/O2.png)](Eq/jsp_O2.html){target="_blank"}
+\
+<!---div class="jsplotly_sup-fundo"> --->
+
+### Sugestão: {.unnumbered}
+
+```{r, eval =FALSE}
+1. Rode o aplicativo ("add plot"). Veja que o valor de "nH" da constante de Hill é "1", ou seja, sem efeito de cooperatividade.
+
+2. Agora substitua o valor de "nH" pelo coeficiente de Hill para a hemoglobina, 2.8, e rode novamente !
+```
+\
 
 [Cinética enzimática]()
 
