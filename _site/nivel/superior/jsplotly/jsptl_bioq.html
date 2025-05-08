@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Exemplos de gráficos interativos com JSPlotly para Bioquímica</title>
+<title>Simulações Interativas Para Bioquímica</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -355,7 +355,8 @@ window.Quarto = {
   <li><a href="#equilíbrio-ácido-básico-e-sistema-tampão" id="toc-equilíbrio-ácido-básico-e-sistema-tampão" class="nav-link" data-scroll-target="#equilíbrio-ácido-básico-e-sistema-tampão"><span class="header-section-number">1</span> Equilíbrio ácido-básico e sistema tampão</a></li>
   <li><a href="#rede-de-carga-líquida-em-peptídios" id="toc-rede-de-carga-líquida-em-peptídios" class="nav-link" data-scroll-target="#rede-de-carga-líquida-em-peptídios"><span class="header-section-number">2</span> Rede de carga líquida em peptídios</a></li>
   <li><a href="#interação-de-oxigênio-com-mioglobina-e-hemoglobina" id="toc-interação-de-oxigênio-com-mioglobina-e-hemoglobina" class="nav-link" data-scroll-target="#interação-de-oxigênio-com-mioglobina-e-hemoglobina"><span class="header-section-number">3</span> Interação de oxigênio com mioglobina e hemoglobina</a></li>
-  <li><a href="#estabilidade-termodinâmica-de-ácidos-nucleicos" id="toc-estabilidade-termodinâmica-de-ácidos-nucleicos" class="nav-link" data-scroll-target="#estabilidade-termodinâmica-de-ácidos-nucleicos"><span class="header-section-number">4</span> Estabilidade termodinâmica de ácidos nucleicos</a></li>
+  <li><a href="#catálise-e-inibição-enzimática" id="toc-catálise-e-inibição-enzimática" class="nav-link" data-scroll-target="#catálise-e-inibição-enzimática"><span class="header-section-number">4</span> Catálise e inibição enzimática</a></li>
+  <li><a href="#estabilidade-termodinâmica-de-ácidos-nucleicos" id="toc-estabilidade-termodinâmica-de-ácidos-nucleicos" class="nav-link" data-scroll-target="#estabilidade-termodinâmica-de-ácidos-nucleicos"><span class="header-section-number">5</span> Estabilidade termodinâmica de ácidos nucleicos</a></li>
   </ul>
 </nav>
     </div>
@@ -364,7 +365,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../nivel/superior/jsplotly/jsplotly_geral.html">JSPlotly &amp; GSPlotly - simulação interativa</a></li><li class="breadcrumb-item"><a href="../../../nivel/superior/jsplotly/jsptl_bioq.html">JSPlotly em Bioquímica</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Exemplos de gráficos interativos com JSPlotly para Bioquímica</h1>
+<h1 class="title">Simulações Interativas Para Bioquímica</h1>
 </div>
 
 
@@ -390,20 +391,23 @@ window.Quarto = {
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Escolha um tema;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Clique no gráfico correspondente;</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Clique em <span class="st">"Add Plot"</span>;</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fl">4.</span> Use o mouse para interatividade e<span class="sc">/</span>ou edite o código.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fl">4.</span> Use o mouse para interatividade e<span class="sc">/</span>ou edite o código. </span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>Lembrete<span class="sc">:</span> o editor usa desfazer<span class="sc">/</span>refazer infinitos no código (Ctrl<span class="sc">+</span>Z <span class="sc">/</span> Shift<span class="sc">+</span>Ctrl<span class="sc">+</span>Z) <span class="sc">!</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="equilíbrio-ácido-básico-e-sistema-tampão" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="equilíbrio-ácido-básico-e-sistema-tampão"><span class="header-section-number">1</span> Equilíbrio ácido-básico e sistema tampão</h2>
 <section id="contexto" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="contexto">Contexto:</h4>
-<div class="line-block">&nbsp;&nbsp;O exemplo ilustra a adição de base num sistema contendo um ácido fraco e sua base conjugada. A equação de titulação refere-se a um <em>ácido triprótico</em>, o ácido fosfórico do tampão homônimo, mas serviria igualmente para outros tantos, como os presentes no ciclo de Krebs (citrato, isocitrato). O parâmetro <em>fa</em> representa a fração de ácido (grupos protonáveis</div>
+<div class="line-block">&nbsp;&nbsp;O exemplo ilustra a adição de base num sistema contendo um ácido fraco e sua base conjugada. A equação de titulação refere-se a um <em>ácido triprótico</em>, o ácido fosfórico do tampão homônimo, mas serviria igualmente para outros tantos, como os presentes no ciclo de Krebs (citrato, isocitrato).</div>
 </section>
 <section id="equação" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="equação">Equação:</h4>
 <p><span class="math display">\[
 fa= \frac{1}{1 + 10^{pKa1 - pH}} + \frac{1}{1 + 10^{pKa2 - pH}} + \frac{1}{1 + 10^{pKa3 - pH}}
-\]</span></p>
+\]</span> <em>Onde</em>, fa = fração de ácido (grupos protonáveis)<br>
+</p>
 <p><a href="Eq/jsp_acbase.html" target="_blank"><img src="Eq/tit_acbase.png" class="img-fluid"></a><br>
 <!---div class="jsplotly_sup-fundo"> ---></p>
 </section>
@@ -441,7 +445,9 @@ q =
 -\dfrac{1}{1 + 10^{pK_a - pH}} &amp; \text{(grupo ácido)} \\\\
 \dfrac{1}{1 + 10^{pH - pK_a}} &amp; \text{(grupo básico)}
 \end{cases}
-\]</span></p>
+\]</span><br>
+</p>
+<p><em>Onde</em>, pKa = valor do antilogarítmo de base 10 para a constante de equilíbrio de dissociação do ácido, Ka (ou log[Ka])</p>
 <p><a href="Eq/jsp_cargaAA.html" target="_blank"><img src="Eq/cargaAA.png" class="img-fluid"></a><br>
 <!---div class="jsplotly_sup-fundo"> ---></p>
 </section>
@@ -470,14 +476,15 @@ q =
 </section>
 <section id="equação-2" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="equação-2">Equação:</h4>
-<div class="line-block">&nbsp;&nbsp;Para essa simulação não há uma equação direta, já que o algoritmo precisa decidir a carga em função da natureza básica ou ácido do resíduo em determinado valor de pH (observe o <em>script</em>). Assim:</div>
 <p><span class="math display">\[
 Y= \frac{pO_2^{nH}}{p_{50}^{nH} + pO_2^{nH}}
-\]</span> <em>Onde</em></p>
-<p>Y = grau de saturação de oxigênio na proteína</p>
-<p>pO<span class="math inline">\(_{2}\)</span> = pressão de oxigênio</p>
-<p>p<span class="math inline">\(_{50}\)</span> = pressão de oxigênio a 50% de saturação</p>
-<p>nH = coeficiente de Hill para a interação<br>
+\]</span><br>
+</p>
+<p><em>Onde</em></p>
+<p>Y = grau de saturação de oxigênio na proteína;</p>
+<p>pO<span class="math inline">\(_{2}\)</span> = pressão de oxigênio;</p>
+<p>p<span class="math inline">\(_{50}\)</span> = pressão de oxigênio a 50% de saturação;</p>
+<p>nH = coeficiente de Hill para a interação;<br>
 </p>
 <p><a href="Eq/jsp_O2.html" target="_blank"><img src="Eq/O2.png" class="img-fluid"></a><br>
 <!---div class="jsplotly_sup-fundo"> ---></p>
@@ -491,12 +498,54 @@ Y= \frac{pO_2^{nH}}{p_{50}^{nH} + pO_2^{nH}}
 </div>
 <p><br>
 </p>
-<p><a href="">Cinética enzimática</a></p>
-<p><a href="">Inibição enzimática</a></p>
 </section>
 </section>
-<section id="estabilidade-termodinâmica-de-ácidos-nucleicos" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="estabilidade-termodinâmica-de-ácidos-nucleicos"><span class="header-section-number">4</span> Estabilidade termodinâmica de ácidos nucleicos</h2>
+<section id="catálise-e-inibição-enzimática" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="catálise-e-inibição-enzimática"><span class="header-section-number">4</span> Catálise e inibição enzimática</h2>
+<section id="contexto-3" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="contexto-3">Contexto:</h4>
+<div class="line-block">&nbsp;&nbsp;A simulação visa oferecer uma equação geral para estudos de inibição enzimática, que contemple os <em>modelos competitivo, incompetitivo e competitivo (puro ou misto)</em>, também permitindo o estudo de catálise enzimática na ausência de inibidor.</div>
+</section>
+<section id="equação-3" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="equação-3">Equação:</h4>
+<p><span class="math display">\[
+v=\frac{Vm*S}{Km(1+\frac{I}{Kic})+S(1+\frac{I}{Kiu})}
+\]</span> <em>Onde</em></p>
+<p>S = teor de substrato para reação;</p>
+<p>Vm = velocidade limite da reação (nos livros, velocidade máxima);</p>
+<p>Km = constante de Michaelis-Mentem;</p>
+<p>Kic = constante de equilíbrio de dissociação de inibidor para modelo competitivo;</p>
+<p>Kiu = constante de equilíbrio de dissociação de inibidor para modelo incompetitivo<br>
+</p>
+<p><a href="Eq/jsp_kin_inib.html" target="_blank"><img src="Eq/kin_inib.png" class="img-fluid"></a><br>
+<!---div class="jsplotly_sup-fundo"> ---></p>
+</section>
+<section id="sugestão-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="sugestão-3">Sugestão:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="st">"A. Catálise enzimática na ausência de inibidor."</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Basta rodar o aplicativo com a equação geral. Veja que os valores para Kic e Kiu estão <span class="fu">elevados</span> (<span class="fl">1e20</span>). Dessa forma, com <span class="st">"constantes de dissociação"</span> alta, a interação do inibidor com a enzima é irrelevante, retornando o modelo à equação clássica de Michaelis<span class="sc">-</span>Mentem.</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Experimente alterar os valores de Vm e Km, comparando gráficos.</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Use o recurso de coordenadas geográficas da barra de í<span class="fu">cones</span> (<span class="st">"Toggle Spike Lines"</span>), para consolidar o significado matemático de Km, bem como observar o efeito de valores distintos desse sobre a visualização do gráfico.</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="st">"B. Modelo de inibição competitiva."</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Para observar ou comparar o modelo michaeliano com o de inibição competitiva, basta substituir o valor de Kic para um número <span class="fu">consistente</span> (ex<span class="sc">:</span> <span class="at">Kic=</span> <span class="dv">3</span>).</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="st">"C. Modelo de inibição incompetitiva."</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> A mesma sugestão acima serve para o modelo incompetitivo, desta vez substituindo o valor para Kiu.</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="st">"D. Modelo de inibição não competitiva pura."</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Neste modelo, a simulação dá<span class="sc">-</span>se por valores iguais para Kic e Kiu.</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="st">"E. Modelo de inibição não competitiva mista."</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Para este modelo, basta alocar valores distintos para Kic e Kiu.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br>
+</p>
+</section>
+</section>
+<section id="estabilidade-termodinâmica-de-ácidos-nucleicos" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="estabilidade-termodinâmica-de-ácidos-nucleicos"><span class="header-section-number">5</span> Estabilidade termodinâmica de ácidos nucleicos</h2>
 
 
 </section>

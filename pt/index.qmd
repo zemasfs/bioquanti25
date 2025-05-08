@@ -17,7 +17,7 @@ publish: false
 
 ## Reconhecimento
 
-|       O website foi agraciado ao 2o. lugar junto ao *Prêmio Nacional de Ensino de Bioquímica e Biologia Molecular Bayardo Baptista Torres*, promovido pela *Sociedade Brasileira de Bioquímica e Biologia Molecular* (SBBq, 2023), e encontra-se referenciado como recurso educacional aberto junto ao [portal eduCAPES](https://educapes.capes.gov.br/handle/capes/748598). Recentemente, um aplicativo portável para simulação gráfica e interativa presente no site, *JSPlotly*, foi contemplado ao 1o. Lugar junto ao mesmo prêmio, e também encontra-se depositado no [eduCAPES](https://educapes.capes.gov.br/handle/capes/972869). Com muita honra e satisfação, também fomos classificados junto ao *Prêmio Nacional* em suas edições anteriores, desta vez para trabalhos experimentais em ensino e aprendizagem.
+|       O website foi agraciado ao 2o. lugar junto ao *Prêmio Nacional de Ensino de Bioquímica e Biologia Molecular Bayardo Baptista Torres*, promovido pela *Sociedade Brasileira de Bioquímica e Biologia Molecular* (SBBq, 2023), e encontra-se referenciado como recurso educacional aberto junto ao [portal eduCAPES](https://educapes.capes.gov.br/handle/capes/748598). Recentemente, um aplicativo portável para simulação gráfica e interativa presente no site, *JSPlotly*, foi contemplado ao 1o. Lugar junto ao mesmo prêmio, e também encontra-se depositado no [eduCAPES](https://educapes.capes.gov.br/handle/capes/972869). Com igual sentimento de honraria e satisfação, também fomos classificados junto ao *Prêmio Nacional* em suas edições anteriores, desta vez para trabalhos experimentais em ensino e aprendizagem.
 
 ::: {layout-ncol=5}
 

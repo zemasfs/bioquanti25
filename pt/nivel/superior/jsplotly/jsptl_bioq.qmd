@@ -1,5 +1,5 @@
 ---
-title: "Exemplos de gráficos interativos com JSPlotly para Bioquímica"
+title: "Simulações Interativas Para Bioquímica"
 format: html
 toc: true
 toc-depth: 2
@@ -18,7 +18,9 @@ lang: pt
 1. Escolha um tema;
 2. Clique no gráfico correspondente;
 3. Clique em "Add Plot";
-4. Use o mouse para interatividade e/ou edite o código.
+4. Use o mouse para interatividade e/ou edite o código. 
+
+Lembrete: o editor usa desfazer/refazer infinitos no código (Ctrl+Z / Shift+Ctrl+Z) !
 ```
 
 
@@ -26,7 +28,7 @@ lang: pt
 
 #### Contexto: {.unnumbered}
 
-|   O exemplo ilustra a adição de base num sistema contendo um ácido fraco e sua base conjugada. A equação de titulação refere-se a um *ácido triprótico*, o ácido fosfórico do tampão homônimo, mas serviria igualmente para outros tantos, como os presentes no ciclo de Krebs (citrato, isocitrato). O parâmetro *fa* representa a fração de ácido (grupos protonáveis
+|   O exemplo ilustra a adição de base num sistema contendo um ácido fraco e sua base conjugada. A equação de titulação refere-se a um *ácido triprótico*, o ácido fosfórico do tampão homônimo, mas serviria igualmente para outros tantos, como os presentes no ciclo de Krebs (citrato, isocitrato). 
 
 
 #### Equação: {.unnumbered}
@@ -34,7 +36,9 @@ lang: pt
 $$
 fa= \frac{1}{1 + 10^{pKa1 - pH}} + \frac{1}{1 + 10^{pKa2 - pH}} + \frac{1}{1 + 10^{pKa3 - pH}}
 $$
-
+*Onde*,
+fa = fração de ácido (grupos protonáveis)
+\
 
 [![](Eq/tit_acbase.png)](Eq/jsp_acbase.html){target="_blank"}
 \
@@ -76,7 +80,10 @@ q =
 \dfrac{1}{1 + 10^{pH - pK_a}} & \text{(grupo básico)}
 \end{cases}
 $$
+\
 
+*Onde*,
+pKa = valor do antilogarítmo de base 10 para a constante de equilíbrio de dissociação do ácido, Ka (ou log[Ka])
 
 
 [![](Eq/cargaAA.png)](Eq/jsp_cargaAA.html){target="_blank"}
@@ -108,20 +115,22 @@ $$
 
 #### Equação: {.unnumbered}
 
-|   Para essa simulação não há uma equação direta, já que o algoritmo precisa decidir a carga em função da natureza básica ou ácido do resíduo em determinado valor de pH (observe o *script*). Assim:
 
 $$
 Y= \frac{pO_2^{nH}}{p_{50}^{nH} + pO_2^{nH}}
 $$
+\
+
 *Onde*
 
-Y = grau de saturação de oxigênio na proteína
+Y = grau de saturação de oxigênio na proteína;
 
-pO$_{2}$ = pressão de oxigênio
 
-p$_{50}$ = pressão de oxigênio a 50% de saturação
+pO$_{2}$ = pressão de oxigênio;
 
-nH = coeficiente de Hill para a interação
+p$_{50}$ = pressão de oxigênio a 50% de saturação;
+
+nH = coeficiente de Hill para a interação;
 \
 
 
@@ -138,9 +147,58 @@ nH = coeficiente de Hill para a interação
 ```
 \
 
-[Cinética enzimática]()
+## Catálise e inibição enzimática
 
-[Inibição enzimática]()
+
+#### Contexto: {.unnumbered}
+
+|   A simulação visa oferecer uma equação geral para estudos de inibição enzimática, que contemple os *modelos competitivo, incompetitivo e competitivo (puro ou misto)*, também permitindo o estudo de catálise enzimática na ausência de inibidor. 
+
+#### Equação: {.unnumbered}
+
+
+$$
+v=\frac{Vm*S}{Km(1+\frac{I}{Kic})+S(1+\frac{I}{Kiu})}
+$$
+*Onde*
+
+S = teor de substrato para reação;
+
+Vm = velocidade limite da reação (nos livros, velocidade máxima);
+
+Km = constante de Michaelis-Mentem;
+
+Kic = constante de equilíbrio de dissociação de inibidor para modelo competitivo; 
+
+Kiu = constante de equilíbrio de dissociação de inibidor para modelo incompetitivo
+\
+
+
+[![](Eq/kin_inib.png)](Eq/jsp_kin_inib.html){target="_blank"}
+\
+<!---div class="jsplotly_sup-fundo"> --->
+
+### Sugestão: {.unnumbered}
+
+```{r, eval =FALSE}
+"A. Catálise enzimática na ausência de inibidor."
+1. Basta rodar o aplicativo com a equação geral. Veja que os valores para Kic e Kiu estão elevados (1e20). Dessa forma, com "constantes de dissociação" alta, a interação do inibidor com a enzima é irrelevante, retornando o modelo à equação clássica de Michaelis-Mentem.
+2. Experimente alterar os valores de Vm e Km, comparando gráficos.
+3. Use o recurso de coordenadas geográficas da barra de ícones ("Toggle Spike Lines"), para consolidar o significado matemático de Km, bem como observar o efeito de valores distintos desse sobre a visualização do gráfico.
+
+"B. Modelo de inibição competitiva."
+1. Para observar ou comparar o modelo michaeliano com o de inibição competitiva, basta substituir o valor de Kic para um número consistente (ex: Kic= 3).
+
+"C. Modelo de inibição incompetitiva."
+1. A mesma sugestão acima serve para o modelo incompetitivo, desta vez substituindo o valor para Kiu.
+ 
+"D. Modelo de inibição não competitiva pura."
+1. Neste modelo, a simulação dá-se por valores iguais para Kic e Kiu.
+
+"E. Modelo de inibição não competitiva mista."
+1. Para este modelo, basta alocar valores distintos para Kic e Kiu.
+```
+\
 
 ## Estabilidade termodinâmica de ácidos nucleicos
 
