@@ -2,21 +2,110 @@
 title: "Exemplos de gráficos interativos com JSPlotly para Bioquímica"
 format: html
 toc: true
+toc-depth: 2
+number-sections: true
 lang: pt
 ---
 
-|   Para ilustrar o potencial de uso do *JSPlotly* para Bioquímica e áreas correlatas, segue um elenco de temas apresentando gráficos interativos e códigos para visualização, estudo, e compartilhamento.
+|   Para ilustrar o potencial de uso do *JSPlotly* para Bioquímica e áreas correlatas, seguem alguns exemplos de simulações e cujos gráficos são frequentemente encontrados em livros-texto e conteúdos afins. Para um melhor aproveitamento de cada tema, experimente seguir as sugestões para *manipulação paramétrica* em cada tema. 
 \
 
-[Equilíbrio ácido-básico e tampões](js_tampao.qmd)
+## Instruções {.unnumbered}
 
-[Sequências biológicas - aminoácidos e nucleotídios]()
 
-[Proteínas]()
+```{r, eval=FALSE}
 
-[Interação de oxigênio com mioglobina e hemoglobina]()
+1. Escolha um tema;
+2. Clique no gráfico correspondente;
+3. Clique em "Add Plot";
+4. Use o mouse para interatividade e/ou edite o código.
+```
+
+
+## Equilíbrio ácido-básico e sistema tampão
+
+#### Contexto: {.unnumbered}
+
+|   O exemplo ilustra a adição de base num sistema contendo um ácido fraco e sua base conjugada. A equação de titulação refere-se a um *ácido triprótico*, o ácido fosfórico do tampão homônimo, mas serviria igualmente para outros tantos, como os presentes no ciclo de Krebs (citrato, isocitrato). O parâmetro *fa* representa a fração de ácido (grupos protonáveis
+
+
+#### Equação: {.unnumbered}
+
+$$
+fa= \frac{1}{1 + 10^{pKa1 - pH}} + \frac{1}{1 + 10^{pKa2 - pH}} + \frac{1}{1 + 10^{pKa3 - pH}}
+$$
+
+
+[![](Eq/tit_acbase.png)](Eq/jsp_acbase.html){target="_blank"}
+\
+<!---div class="jsplotly_sup-fundo"> --->
+
+### Sugestão: {.unnumbered}
+
+```{r, eval =FALSE}
+"A. Convertendo a curva de tampão fosfato (triprótico) para tampão bicarbonato (diprótico)"
+
+1. Altere os valores de pKa para o tampão bicarbonato: pKa1 =      6.1, e pKa2 = 10.3;
+2. Coloque um valor muito grande para pKa3 (ex:1e20). 
+3. Clique em "add plot".
+
+Explicação: pKa é um termo que representa o logaritmo de uma constante de dissociação (-log[Ka]). Com um valor extremo, o denominador torna-se igualmente imenso, anulando o termo que leva pKa3. Em JavaScript e outras linguagens, "e" representa a notação para potência de 10.
+
+"B. Convertendo a curva de tampão bicarbonato para acetato"
+
+1. Basta repetir o procedimento acima, com pKa1 = 4.75, e eliminando-se pKa2.
+
+```
+\
+
+## Rede de carga líquida em peptídios
+
+#### Contexto: {.unnumbered}
+
+|   O código refere-se à rede de carga líquida presente numa sequência qualquer de resíduos de aminoácidos. Aqui é ilustrada a *angiotensina II*, importante peptídio para regulação da pressão arterial e equilíbrio eletrolítico, e cuja enzima conversora está associada ao mecanismo de invasibilidade celular por SARS-CoV-2.
+
+
+#### Equação: {.unnumbered}
+
+|   Para essa simulação não há uma equação direta, já que o algoritmo precisa decidir a carga em função da natureza básica ou ácido do resíduo em determinado valor de pH (observe o *script*). Assim:
+
+$$
+q =
+\begin{cases}
+-\dfrac{1}{1 + 10^{pK_a - pH}} & \text{(grupo ácido)} \\\\
+\dfrac{1}{1 + 10^{pH - pK_a}} & \text{(grupo básico)}
+\end{cases}
+$$
+
+
+
+[![](Eq/cargaAA.png)](Eq/jsp_cargaAA.html){target="_blank"}
+\
+<!---div class="jsplotly_sup-fundo"> --->
+
+### Sugestão: {.unnumbered}
+
+```{r, eval =FALSE}
+1. Selecione a sequência peptídica abaixo, e observe a distribuição de cargas:
+  
+"Ala,Lys,Arg,Leu,Phe,Glu,Cys,Asp,His"
+
+2. Simule a condição de pH do estômago ("const pH = 1.5"), e verifique a alteração de cargas no peptídio. 
+
+3. Selecione um peptídio fisiológico (oxitocina, por ex), observe sua carga no sangue (pH 7.5), e reflita sobre seu potencial de interação eletrostática com componentes celulares.
+
+"Cys,Tyr,Ile,Gln,Asn,Cys,Pro,Leu,Gly"  - oxitocina
+```
+\
+
+
+## Interação de oxigênio com mioglobina e hemoglobina
+
+
 
 [Cinética enzimática]()
 
 [Inibição enzimática]()
+
+## Estabilidade termodinâmica de ácidos nucleicos
 

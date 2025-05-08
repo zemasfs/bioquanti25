@@ -565,25 +565,81 @@ function limparTudo() {
 
 
 // Definir a equação quadrática padrão
-var codigoPadrao = `// Curva de Titulação em Tampão Fosfato
+var codigoPadrao = 
+`
+// Rede de carga líquida em peptídios (angiotensina II)
 
-const pKa1 = 2.15;
-const pKa2 = 7.20;
-const pKa3 = 12.35;
-const x_values = Array.from({length: 200}, (_, i) => i * (14 / 199));
-const y_values = x_values.map(pH =>
-    (1 / (1 + Math.pow(10, pKa1 - pH))) + (1 / (1 + Math.pow(10, pKa2 - pH))) + 
-    (1 / (1 + Math.pow(10, pKa3 - pH)))
-);
-return {
-    x_values,
-    y_values,
-    layout: {
-        title: { text: "Titulação de tampão fosfato" },
-        xaxis: { title: { text: "pH" } },
-        yaxis: { title: { text: "mol de H+ dissociados" } }
+// pKa dos grupos ionizáveis laterais
+const pKa = {
+    Asp: 3.9, Glu: 4.1, His: 6.0,
+    Cys: 8.3, Tyr: 10.1, Lys: 10.5,
+    Arg: 12.5
+};
+
+// Classificação: ácido (-) ou base (+)
+const tipoGrupo = {
+    Asp: "acido",
+    Glu: "acido",
+    Cys: "acido",
+    Tyr: "acido",
+    His: "base",
+    Lys: "base",
+    Arg: "base"
+};
+
+// pH fixo para análise
+const pH = 7.5;
+
+// Entrada do usuário
+const sequenciaStr = "Asp,Arg,Val,Tyr,Ile,His,Pro,Phe";
+
+// Processar sequência
+const seq = sequenciaStr.replace(/s+/g, '').split(',');
+
+// Função para calcular carga de cada resíduo
+function carga(aa) {
+    if (!(aa in pKa)) return 0; // neutro
+
+    const pk = pKa[aa];
+    const tipo = tipoGrupo[aa];
+    const delta = tipo === "acido" ? pk - pH : pH - pk;
+    const carga = 1 / (1 + Math.pow(10, delta));
+    return tipo === "acido" ? -carga : +carga;
+}
+
+const y_values = seq.map(carga);
+const x_values = Array.from({ length: seq.length }, (_, i) => i + 1);
+
+// Objeto trace para pontos + linha
+const trace = {
+    x: x_values,
+    y: y_values,
+    mode: "lines+markers",
+    type: "scatter",
+    marker: {size: 12 }
+};
+
+// Layout do gráfico
+const layout = {
+title: "Carga de Resíduos Para Angiotensina II em pH " + pH,
+    xaxis: {
+        title: 'Posição na Sequência',
+        tickmode: 'array',
+        tickvals: x_values,
+        ticktext: seq,
+        tickangle: 45
+    },
+    yaxis: {
+        title: 'Carga Elétrica',
+        zeroline: true
     }
 };
+
+return { trace, layout };
+
+
+
+
 
 `;
 

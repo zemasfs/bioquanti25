@@ -565,23 +565,26 @@ function limparTudo() {
 
 
 // Definir a equação quadrática padrão
-var codigoPadrao = `// Curva de Titulação de Ácido Diprótico
+var codigoPadrao = `// Curva de Titulação em Tampão Fosfato
 
-const pKa1 = 4.85;
-const pKa2 = 9.22;
+const pKa1 = 2.15;
+const pKa2 = 7.20;
+const pKa3 = 12.35;
 const x_values = Array.from({length: 200}, (_, i) => i * (14 / 199));
 const y_values = x_values.map(pH =>
-    (1 / (1 + Math.pow(10, pKa1 - pH))) + (1 / (1 + Math.pow(10, pKa2 - pH)))
+    (1 / (1 + Math.pow(10, pKa1 - pH))) + (1 / (1 + Math.pow(10, pKa2 - pH))) + 
+    (1 / (1 + Math.pow(10, pKa3 - pH)))
 );
 return {
     x_values,
     y_values,
     layout: {
-        title: { text: "Titulação de ácido diprótico" },
+        title: { text: "Titulação de tampão fosfato" },
         xaxis: { title: { text: "pH" } },
         yaxis: { title: { text: "mol de H+ dissociados" } }
     }
 };
+
 `;
 
 
