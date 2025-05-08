@@ -1,5 +1,5 @@
 ---
-title: "Simulações Interativas Para Bioquímica"
+title: "Simulações Interativas Para Biofísico-química"
 format: html
 toc: true
 toc-depth: 2
@@ -147,10 +147,48 @@ nH = coeficiente de Hill para a interação;
 ```
 \
 
-## Catálise e inibição enzimática
+## Ponto Isoelétrico em Proteínas 
 
 
 #### Contexto: {.unnumbered}
+
+|   O *script* para esta simulação baseia-se na distribuição da rede de cargas para um polieletrólito, e a identificação do valor de pH em que essa rede é nula, ou seja o *ponto isoelétrico (ou isoiônico), pI*. O exemplo utiliza a sequência primária da lisozima, hidrolase que atua no rompimento da parede microbiana. 
+
+#### Equação: {.unnumbered}
+
+
+$$
+q_{\text{net}}(pH) = \sum_{i=1}^{N} \left[ n_i \cdot q_{B_i} + \frac{n_i}{1 + 10^{pH - pK_{a_i}}} \right]
+$$
+\
+*Onde*,
+
+qnet = carga líquida total;
+
+qB$_{i} = carga da forma básica para o resíduo i (por exemplo, +1 para Lys, 0 para Asp);
+
+n$_{i}$ = número de grupos do resíduo i.
+
+[![](Eq/pI.png)](Eq/jsp_pI.html)
+
+
+#### Sugestão: {.unnumbered}
+
+```{r, eval=FALSE}
+"Descobrindo o pI para outras proteínas"
+
+1. Pode-se verificar a titulação de qualquer outra proteína ou sequência peptídica por simples substituição da sequência primária contida no código. Uma forma ascertiva de realizar essa substituição envolve:
+  a. Procurar a sequência "FASTA" da proteína no NCBI ("https://www.ncbi.nlm.nih.gov/protein/") - ex: "papain";
+  b. Clicar em "FASTA" e copiar a sequência 1a. obtida;
+  c. Colar a sequência num site para quantificação de resíduos (ex: "https://www.protpi.ch/Calculator/ProteinTool");
+4. Substituir a sequência no código. 
+```
+\
+
+
+## Catálise e inibição enzimática
+
+### Contexto: {.unnumbered}
 
 |   A simulação visa oferecer uma equação geral para estudos de inibição enzimática, que contemple os *modelos competitivo, incompetitivo e competitivo (puro ou misto)*, também permitindo o estudo de catálise enzimática na ausência de inibidor. 
 
@@ -160,6 +198,7 @@ nH = coeficiente de Hill para a interação;
 $$
 v=\frac{Vm*S}{Km(1+\frac{I}{Kic})+S(1+\frac{I}{Kiu})}
 $$
+\
 *Onde*
 
 S = teor de substrato para reação;
@@ -201,4 +240,44 @@ Kiu = constante de equilíbrio de dissociação de inibidor para modelo incompet
 \
 
 ## Estabilidade termodinâmica de ácidos nucleicos
+
+### Contexto: {.unnumbered}
+
+|   Diversos fatores contribuem para a estabilidade termodinâmica de biopolímeros, estabilizantes ou desestabilizantes. Esta simulação trata de uma curva de desnaturação térmica para DNA na presença ou não de alguns desses compostos: trealose (osmólito estabilizante), e cloreto de guanidina (desestabilizante).
+\
+
+### Equação: {.unnumbered}
+
+$$
+y(T) = \frac{1}{1 + e^{-\frac{T - T_m}{\beta}}}
+$$
+\
+
+*Onde*,
+
+y(T): fração de DNA desnaturado a uma dada temperatura T;
+
+Tm: temperatura de transição (*melting*, temperatura para 50% das moléculas em fita dupla, e 50% em fita simples);
+
+β: parâmetro que ajusta a inclinação da curva (afetado por trehalose e guanidina).
+
+
+*Obs:* 
+
+1. Trehalose como estabilizante (reduz β);
+
+2. Guanidina como desnaturante (aumenta β);
+\
+
+[![](Eq/denat_DNA.png)](Eq/jsp_denat_DNA_no_osmol.html){target="_blank"}
+
+### Sugestão: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Experimente testar várias condições envolvidas na simulação, como:
+  a) variação de Tm;
+  b) variação do parâmetro $\beta$;
+  c) variação do teor de trealose;
+  d) variação do teor de cloreto de guanidina.
+```
 

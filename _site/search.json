@@ -647,13 +647,13 @@
   {
     "objectID": "nivel/superior/jsplotly/jsptl_bioq.html",
     "href": "nivel/superior/jsplotly/jsptl_bioq.html",
-    "title": "Simulações Interativas Para Bioquímica",
+    "title": "Simulações Interativas Para Biofísico-química",
     "section": "",
     "text": "Para ilustrar o potencial de uso do JSPlotly para Bioquímica e áreas correlatas, seguem alguns exemplos de simulações e cujos gráficos são frequentemente encontrados em livros-texto e conteúdos afins. Para um melhor aproveitamento de cada tema, experimente seguir as sugestões para manipulação paramétrica em cada tema.",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa",
-      "JSPlotly em Bioquímica"
+      "JSPlotly & GSPlotly - simulação interativa por IA",
+      "Simulações em Biofísico-química"
     ]
   },
   {
@@ -2163,8 +2163,8 @@
     "text": "De volta ao topo",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa",
-      "Simulações interativas na Escola"
+      "JSPlotly & GSPlotly - simulação interativa por IA",
+      "Simulações na Escola"
     ]
   },
   {
@@ -3234,8 +3234,8 @@
     "text": "Frente à inerente dificuldade para uso de uma linguagem de programação, como JavaScript, bem como de bibliotecas correlatas, e outras linguagens modernas para web (HTML - estrutura, CSS - estilo), buscou-se desenvolver um GPT personalizado para a criação instantânea de códigos, bem como para sua edição e personalização.\n\n\n\n\n\nTela do GSPlotly para criação de códigos ao simulador JSPlotly. Clique na imagem para acessá-lo !\n\n\n  A iniciativa denomina-se GSPlotly, e visa atuar como um gerador em linguagem natural para o simulador JSPlotly. Dessa forma, permite-se duplamente a geração de um código em qualquer tema que assistentes de IA são hoje alimentados, bem como o aprendizado subliminar das próprias linguagens envolvidas.\n\n  Teste o GPT personalizado para gráficos interativos clicando neste link para o\n\n GSPlotly \n\n  Para seu uso, peça ao assistente de IA uma simulação para um tema qualquer, embasada em uma função matemática para ciências naturais ou outra área do conhecimento. Depois é só copiar o código e colá-lo no JSPlotly.\n\n\n\n De volta ao topo",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa",
-      "GSPlotly - gerador de códigos de JSPlotly por IA"
+      "JSPlotly & GSPlotly - simulação interativa por IA",
+      "GSPlotly - gerador de códigos por IA"
     ]
   },
   {
@@ -3809,61 +3809,61 @@
   {
     "objectID": "nivel/superior/jsplotly/jsptl_bioq.html#instruções",
     "href": "nivel/superior/jsplotly/jsptl_bioq.html#instruções",
-    "title": "Simulações Interativas Para Bioquímica",
+    "title": "Simulações Interativas Para Biofísico-química",
     "section": "Instruções",
     "text": "Instruções\n\n1. Escolha um tema;\n2. Clique no gráfico correspondente;\n3. Clique em \"Add Plot\";\n4. Use o mouse para interatividade e/ou edite o código. \n\nLembrete: o editor usa desfazer/refazer infinitos no código (Ctrl+Z / Shift+Ctrl+Z) !",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa",
-      "JSPlotly em Bioquímica"
+      "JSPlotly & GSPlotly - simulação interativa por IA",
+      "Simulações em Biofísico-química"
     ]
   },
   {
     "objectID": "nivel/superior/jsplotly/jsptl_bioq.html#equilíbrio-ácido-básico-e-sistema-tampão",
     "href": "nivel/superior/jsplotly/jsptl_bioq.html#equilíbrio-ácido-básico-e-sistema-tampão",
-    "title": "Simulações Interativas Para Bioquímica",
+    "title": "Simulações Interativas Para Biofísico-química",
     "section": "1 Equilíbrio ácido-básico e sistema tampão",
     "text": "1 Equilíbrio ácido-básico e sistema tampão\n\nContexto:\n  O exemplo ilustra a adição de base num sistema contendo um ácido fraco e sua base conjugada. A equação de titulação refere-se a um ácido triprótico, o ácido fosfórico do tampão homônimo, mas serviria igualmente para outros tantos, como os presentes no ciclo de Krebs (citrato, isocitrato).\n\n\nEquação:\n\\[\nfa= \\frac{1}{1 + 10^{pKa1 - pH}} + \\frac{1}{1 + 10^{pKa2 - pH}} + \\frac{1}{1 + 10^{pKa3 - pH}}\n\\] Onde, fa = fração de ácido (grupos protonáveis)\n\n\n\n\n\nSugestão:\n\n\"A. Convertendo a curva de tampão fosfato (triprótico) para tampão bicarbonato (diprótico)\"\n\n1. Altere os valores de pKa para o tampão bicarbonato: pKa1 =      6.1, e pKa2 = 10.3;\n2. Coloque um valor muito grande para pKa3 (ex:1e20). \n3. Clique em \"add plot\".\n\nExplicação: pKa é um termo que representa o logaritmo de uma constante de dissociação (-log[Ka]). Com um valor extremo, o denominador torna-se igualmente imenso, anulando o termo que leva pKa3. Em JavaScript e outras linguagens, \"e\" representa a notação para potência de 10.\n\n\"B. Convertendo a curva de tampão bicarbonato para acetato\"\n\n1. Basta repetir o procedimento acima, com pKa1 = 4.75, e eliminando-se pKa2.",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa",
-      "JSPlotly em Bioquímica"
+      "JSPlotly & GSPlotly - simulação interativa por IA",
+      "Simulações em Biofísico-química"
     ]
   },
   {
     "objectID": "nivel/superior/jsplotly/jsptl_bioq.html#rede-de-carga-líquida-em-peptídios",
     "href": "nivel/superior/jsplotly/jsptl_bioq.html#rede-de-carga-líquida-em-peptídios",
-    "title": "Simulações Interativas Para Bioquímica",
+    "title": "Simulações Interativas Para Biofísico-química",
     "section": "2 Rede de carga líquida em peptídios",
     "text": "2 Rede de carga líquida em peptídios\n\nContexto:\n  O código refere-se à rede de carga líquida presente numa sequência qualquer de resíduos de aminoácidos. Aqui é ilustrada a angiotensina II, importante peptídio para regulação da pressão arterial e equilíbrio eletrolítico, e cuja enzima conversora está associada ao mecanismo de invasibilidade celular por SARS-CoV-2.\n\n\nEquação:\n  Para essa simulação não há uma equação direta, já que o algoritmo precisa decidir a carga em função da natureza básica ou ácido do resíduo em determinado valor de pH (observe o script). Assim:\n\\[\nq =\n\\begin{cases}\n-\\dfrac{1}{1 + 10^{pK_a - pH}} & \\text{(grupo ácido)} \\\\\\\\\n\\dfrac{1}{1 + 10^{pH - pK_a}} & \\text{(grupo básico)}\n\\end{cases}\n\\]\n\nOnde, pKa = valor do antilogarítmo de base 10 para a constante de equilíbrio de dissociação do ácido, Ka (ou log[Ka])\n\n\n\n\nSugestão:\n\n1. Selecione a sequência peptídica abaixo, e observe a distribuição de cargas:\n  \n\"Ala,Lys,Arg,Leu,Phe,Glu,Cys,Asp,His\"\n\n2. Simule a condição de pH do estômago (\"const pH = 1.5\"), e verifique a alteração de cargas no peptídio. \n\n3. Selecione um peptídio fisiológico (oxitocina, por ex), observe sua carga no sangue (pH 7.5), e reflita sobre seu potencial de interação eletrostática com componentes celulares.\n\n\"Cys,Tyr,Ile,Gln,Asn,Cys,Pro,Leu,Gly\"  - oxitocina",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa",
-      "JSPlotly em Bioquímica"
+      "JSPlotly & GSPlotly - simulação interativa por IA",
+      "Simulações em Biofísico-química"
     ]
   },
   {
     "objectID": "nivel/superior/jsplotly/jsptl_bioq.html#interação-de-oxigênio-com-mioglobina-e-hemoglobina",
     "href": "nivel/superior/jsplotly/jsptl_bioq.html#interação-de-oxigênio-com-mioglobina-e-hemoglobina",
-    "title": "Simulações Interativas Para Bioquímica",
+    "title": "Simulações Interativas Para Biofísico-química",
     "section": "3 Interação de oxigênio com mioglobina e hemoglobina",
     "text": "3 Interação de oxigênio com mioglobina e hemoglobina\n\nContexto:\n  A molécula de oxigênio pode combinar-se ao grupo heme de mioglobina e hemoglobina de forma distinta, em função da cooperatividade exibida nesta última frente à sua estrutura quaternária. O modelo que segue exemplica essa interação, por uso da equação de Hill.\n\n\nEquação:\n\\[\nY= \\frac{pO_2^{nH}}{p_{50}^{nH} + pO_2^{nH}}\n\\]\n\nOnde\nY = grau de saturação de oxigênio na proteína;\npO\\(_{2}\\) = pressão de oxigênio;\np\\(_{50}\\) = pressão de oxigênio a 50% de saturação;\nnH = coeficiente de Hill para a interação;\n\n\n\n\n\nSugestão:\n\n1. Rode o aplicativo (\"add plot\"). Veja que o valor de \"nH\" da constante de Hill é \"1\", ou seja, sem efeito de cooperatividade.\n\n2. Agora substitua o valor de \"nH\" pelo coeficiente de Hill para a hemoglobina, 2.8, e rode novamente !",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa",
-      "JSPlotly em Bioquímica"
+      "JSPlotly & GSPlotly - simulação interativa por IA",
+      "Simulações em Biofísico-química"
     ]
   },
   {
     "objectID": "nivel/superior/jsplotly/jsptl_bioq.html#estabilidade-termodinâmica-de-ácidos-nucleicos",
     "href": "nivel/superior/jsplotly/jsptl_bioq.html#estabilidade-termodinâmica-de-ácidos-nucleicos",
-    "title": "Simulações Interativas Para Bioquímica",
-    "section": "5 Estabilidade termodinâmica de ácidos nucleicos",
-    "text": "5 Estabilidade termodinâmica de ácidos nucleicos",
+    "title": "Simulações Interativas Para Biofísico-química",
+    "section": "6 Estabilidade termodinâmica de ácidos nucleicos",
+    "text": "6 Estabilidade termodinâmica de ácidos nucleicos\n\nContexto:\n  Diversos fatores contribuem para a estabilidade termodinâmica de biopolímeros, estabilizantes ou desestabilizantes. Esta simulação trata de uma curva de desnaturação térmica para DNA na presença ou não de alguns desses compostos: trealose (osmólito estabilizante), e cloreto de guanidina (desestabilizante).\n\n\n\n\nEquação:\n\\[\ny(T) = \\frac{1}{1 + e^{-\\frac{T - T_m}{\\beta}}}\n\\]\n\nOnde,\ny(T): fração de DNA desnaturado a uma dada temperatura T;\nTm: temperatura de transição (melting, temperatura para 50% das moléculas em fita dupla, e 50% em fita simples);\nβ: parâmetro que ajusta a inclinação da curva (afetado por trehalose e guanidina).\nObs:\n\nTrehalose como estabilizante (reduz β);\nGuanidina como desnaturante (aumenta β);\n\n\n\n\n\nSugestão:\n\n1. Experimente testar várias condições envolvidas na simulação, como:\n  a) variação de Tm;\n  b) variação do parâmetro $\\beta$;\n  c) variação do teor de trealose;\n  d) variação do teor de cloreto de guanidina.",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa",
-      "JSPlotly em Bioquímica"
+      "JSPlotly & GSPlotly - simulação interativa por IA",
+      "Simulações em Biofísico-química"
     ]
   },
   {
@@ -3881,13 +3881,25 @@
   {
     "objectID": "nivel/superior/jsplotly/jsptl_bioq.html#catálise-e-inibição-enzimática",
     "href": "nivel/superior/jsplotly/jsptl_bioq.html#catálise-e-inibição-enzimática",
-    "title": "Simulações Interativas Para Bioquímica",
-    "section": "4 Catálise e inibição enzimática",
-    "text": "4 Catálise e inibição enzimática\n\nContexto:\n  A simulação visa oferecer uma equação geral para estudos de inibição enzimática, que contemple os modelos competitivo, incompetitivo e competitivo (puro ou misto), também permitindo o estudo de catálise enzimática na ausência de inibidor.\n\n\nEquação:\n\\[\nv=\\frac{Vm*S}{Km(1+\\frac{I}{Kic})+S(1+\\frac{I}{Kiu})}\n\\] Onde\nS = teor de substrato para reação;\nVm = velocidade limite da reação (nos livros, velocidade máxima);\nKm = constante de Michaelis-Mentem;\nKic = constante de equilíbrio de dissociação de inibidor para modelo competitivo;\nKiu = constante de equilíbrio de dissociação de inibidor para modelo incompetitivo\n\n\n\n\n\nSugestão:\n\n\"A. Catálise enzimática na ausência de inibidor.\"\n1. Basta rodar o aplicativo com a equação geral. Veja que os valores para Kic e Kiu estão elevados (1e20). Dessa forma, com \"constantes de dissociação\" alta, a interação do inibidor com a enzima é irrelevante, retornando o modelo à equação clássica de Michaelis-Mentem.\n2. Experimente alterar os valores de Vm e Km, comparando gráficos.\n3. Use o recurso de coordenadas geográficas da barra de ícones (\"Toggle Spike Lines\"), para consolidar o significado matemático de Km, bem como observar o efeito de valores distintos desse sobre a visualização do gráfico.\n\n\"B. Modelo de inibição competitiva.\"\n1. Para observar ou comparar o modelo michaeliano com o de inibição competitiva, basta substituir o valor de Kic para um número consistente (ex: Kic= 3).\n\n\"C. Modelo de inibição incompetitiva.\"\n1. A mesma sugestão acima serve para o modelo incompetitivo, desta vez substituindo o valor para Kiu.\n \n\"D. Modelo de inibição não competitiva pura.\"\n1. Neste modelo, a simulação dá-se por valores iguais para Kic e Kiu.\n\n\"E. Modelo de inibição não competitiva mista.\"\n1. Para este modelo, basta alocar valores distintos para Kic e Kiu.",
+    "title": "Simulações Interativas Para Biofísico-química",
+    "section": "5 Catálise e inibição enzimática",
+    "text": "5 Catálise e inibição enzimática\n\nContexto:\n  A simulação visa oferecer uma equação geral para estudos de inibição enzimática, que contemple os modelos competitivo, incompetitivo e competitivo (puro ou misto), também permitindo o estudo de catálise enzimática na ausência de inibidor.\n\nEquação:\n\\[\nv=\\frac{Vm*S}{Km(1+\\frac{I}{Kic})+S(1+\\frac{I}{Kiu})}\n\\]\nOnde\nS = teor de substrato para reação;\nVm = velocidade limite da reação (nos livros, velocidade máxima);\nKm = constante de Michaelis-Mentem;\nKic = constante de equilíbrio de dissociação de inibidor para modelo competitivo;\nKiu = constante de equilíbrio de dissociação de inibidor para modelo incompetitivo\n\n\n\n\n\n\nSugestão:\n\n\"A. Catálise enzimática na ausência de inibidor.\"\n1. Basta rodar o aplicativo com a equação geral. Veja que os valores para Kic e Kiu estão elevados (1e20). Dessa forma, com \"constantes de dissociação\" alta, a interação do inibidor com a enzima é irrelevante, retornando o modelo à equação clássica de Michaelis-Mentem.\n2. Experimente alterar os valores de Vm e Km, comparando gráficos.\n3. Use o recurso de coordenadas geográficas da barra de ícones (\"Toggle Spike Lines\"), para consolidar o significado matemático de Km, bem como observar o efeito de valores distintos desse sobre a visualização do gráfico.\n\n\"B. Modelo de inibição competitiva.\"\n1. Para observar ou comparar o modelo michaeliano com o de inibição competitiva, basta substituir o valor de Kic para um número consistente (ex: Kic= 3).\n\n\"C. Modelo de inibição incompetitiva.\"\n1. A mesma sugestão acima serve para o modelo incompetitivo, desta vez substituindo o valor para Kiu.\n \n\"D. Modelo de inibição não competitiva pura.\"\n1. Neste modelo, a simulação dá-se por valores iguais para Kic e Kiu.\n\n\"E. Modelo de inibição não competitiva mista.\"\n1. Para este modelo, basta alocar valores distintos para Kic e Kiu.",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa",
-      "JSPlotly em Bioquímica"
+      "JSPlotly & GSPlotly - simulação interativa por IA",
+      "Simulações em Biofísico-química"
+    ]
+  },
+  {
+    "objectID": "nivel/superior/jsplotly/jsptl_bioq.html#ponto-isoelétrico-em-proteínas",
+    "href": "nivel/superior/jsplotly/jsptl_bioq.html#ponto-isoelétrico-em-proteínas",
+    "title": "Simulações Interativas Para Biofísico-química",
+    "section": "4 Ponto Isoelétrico em Proteínas",
+    "text": "4 Ponto Isoelétrico em Proteínas\n\nContexto:\n  O script para esta simulação baseia-se na distribuição da rede de cargas para um polieletrólito, e a identificação do valor de pH em que essa rede é nula, ou seja o ponto isoelétrico (ou isoiônico), pI. O exemplo utiliza a sequência primária da lisozima, hidrolase que atua no rompimento da parede microbiana.\n\n\nEquação:\n\\[\nq_{\\text{net}}(pH) = \\sum_{i=1}^{N} \\left[ n_i \\cdot q_{B_i} + \\frac{n_i}{1 + 10^{pH - pK_{a_i}}} \\right]\n\\]\nOnde,\nqnet = carga líquida total;\nqB$_{i} = carga da forma básica para o resíduo i (por exemplo, +1 para Lys, 0 para Asp);\nn\\(_{i}\\) = número de grupos do resíduo i.\n\n\n\nSugestão:\n\n\"Descobrindo o pI para outras proteínas\"\n\n1. Pode-se verificar a titulação de qualquer outra proteína ou sequência peptídica por simples substituição da sequência primária contida no código. Uma forma ascertiva de realizar essa substituição envolve:\n  a. Procurar a sequência \"FASTA\" da proteína no NCBI (\"https://www.ncbi.nlm.nih.gov/protein/\") - ex: \"papain\";\n  b. Clicar em \"FASTA\" e copiar a sequência 1a. obtida;\n  c. Colar a sequência num site para quantificação de resíduos (ex: \"https://www.protpi.ch/Calculator/ProteinTool\");\n4. Substituir a sequência no código.",
+    "crumbs": [
+      "Sobre",
+      "JSPlotly & GSPlotly - simulação interativa por IA",
+      "Simulações em Biofísico-química"
     ]
   }
 ]
