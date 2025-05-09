@@ -83,7 +83,8 @@ $$
 \
 
 *Onde*,
-pKa = valor do antilogarítmo de base 10 para a constante de equilíbrio de dissociação do ácido, Ka (ou log[Ka])
+
+- pKa = valor do antilogarítmo de base 10 para a constante de equilíbrio de dissociação do ácido, Ka (ou log[Ka]).
 
 
 [![](Eq/cargaAA.png)](Eq/jsp_cargaAA.html){target="_blank"}
@@ -126,11 +127,9 @@ $$
 Y = grau de saturação de oxigênio na proteína;
 
 
-pO$_{2}$ = pressão de oxigênio;
-
-p$_{50}$ = pressão de oxigênio a 50% de saturação;
-
-nH = coeficiente de Hill para a interação;
+- pO$_{2}$ = pressão de oxigênio;
+- p$_{50}$ = pressão de oxigênio a 50% de saturação;
+- nH = coeficiente de Hill para a interação;
 \
 
 
@@ -163,11 +162,9 @@ $$
 \
 *Onde*,
 
-qnet = carga líquida total;
-
-qB$_{i} = carga da forma básica para o resíduo i (por exemplo, +1 para Lys, 0 para Asp);
-
-n$_{i}$ = número de grupos do resíduo i.
+- qnet = carga líquida total;
+- qB$_{i} = carga da forma básica para o resíduo i (por exemplo, +1 para Lys, 0 para Asp);
+- n$_{i}$ = número de grupos do resíduo *i*.
 
 [![](Eq/pI.png)](Eq/jsp_pI.html)
 
@@ -201,15 +198,11 @@ $$
 \
 *Onde*
 
-S = teor de substrato para reação;
-
-Vm = velocidade limite da reação (nos livros, velocidade máxima);
-
-Km = constante de Michaelis-Mentem;
-
-Kic = constante de equilíbrio de dissociação de inibidor para modelo competitivo; 
-
-Kiu = constante de equilíbrio de dissociação de inibidor para modelo incompetitivo
+- S = teor de substrato para reação;
+- Vm = velocidade limite da reação (nos livros, velocidade máxima);
+- Km = constante de Michaelis-Mentem;
+- Kic = constante de equilíbrio de dissociação de inibidor para modelo competitivo; 
+- Kiu = constante de equilíbrio de dissociação de inibidor para modelo incompetitivo
 \
 
 
@@ -244,30 +237,27 @@ Kiu = constante de equilíbrio de dissociação de inibidor para modelo incompet
 ### Contexto: {.unnumbered}
 
 |   Diversos fatores contribuem para a estabilidade termodinâmica de biopolímeros, estabilizantes ou desestabilizantes. Esta simulação trata de uma curva de desnaturação térmica para DNA na presença ou não de alguns desses compostos: trealose (osmólito estabilizante), e cloreto de guanidina (desestabilizante).
-\
+
 
 ### Equação: {.unnumbered}
 
 $$
 y(T) = \frac{1}{1 + e^{-\frac{T - T_m}{\beta}}}
 $$
-\
+
 
 *Onde*,
 
-y(T): fração de DNA desnaturado a uma dada temperatura T;
-
-Tm: temperatura de transição (*melting*, temperatura para 50% das moléculas em fita dupla, e 50% em fita simples);
-
-β: parâmetro que ajusta a inclinação da curva (afetado por trehalose e guanidina).
+- y(T): fração de DNA desnaturado a uma dada temperatura T;
+- Tm: temperatura de transição (*melting*, temperatura para 50% das moléculas em fita dupla, e 50% em fita simples);
+- $\beta$: parâmetro que ajusta a inclinação da curva (afetado por trehalose e guanidina).
 
 
 *Obs:* 
 
-1. Trehalose como estabilizante (reduz β);
+1. Trehalose como estabilizante (reduz $\beta$);
+2. Guanidina como desnaturante (aumenta $\beta$);
 
-2. Guanidina como desnaturante (aumenta β);
-\
 
 [![](Eq/denat_DNA.png)](Eq/jsp_denat_DNA_no_osmol.html){target="_blank"}
 
@@ -279,5 +269,39 @@ Tm: temperatura de transição (*melting*, temperatura para 50% das moléculas e
   b) variação do parâmetro $\beta$;
   c) variação do teor de trealose;
   d) variação do teor de cloreto de guanidina.
+```
+
+
+## Equilíbrio de produção de ATP a partir de reagentes, temperatura, e pH
+
+### Contexto: {.unnumbered}
+
+|   A produção de ATP intracelular envolve a relação clássica de equilíbrio químico entre reagentes e produtos em função da temperatura de reação, e ajustada para determinado valor de pH. Variando-se um e/ou outro teor de reagente, ou parâmetro físico-químico, é possível quantificar o produto pela reação termodinâmica que segue:
+
+
+### Equação: {.unnumbered}
+
+$$
+\Delta G = \Delta G^{\circ'} + RT \ln\left(\frac{[\text{ADP}] \cdot [\text{P}_i]}{[\text{ATP}]}\right) + 2{,}303 \cdot RT \cdot n_H \cdot \text{pH}
+$$
+
+*Onde*,
+
+- $\Delta$G = energia de Gibbs da reação (positivo para síntese espontaneamente desfavorável, kJ/mol);
+- $\Delta$G$^{o'}$ = 30,5 kJ/mol energia de Gibbs padrão biológica para a síntese de ATP;
+- R = 8,314 J/mol/K (constante geral dos gases);
+- T=310 K (temperatura fisiológica);
+- nH$^{+}$ = 1 (número de prótons envolvidos na reação);
+- [ADP], [Pi], [ATP] = concentrações molares de reagentes e produto
+
+
+[![](Eq/ATP.png)](Eq/jsp_ATP.html){target="_blank"}
+
+
+
+### Sugestão: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Altere as quantidades envolvidas na expressão, e compare com visualizações precedentes. Exemplificando, temperatura, pH, e teores de ADP e Pi.
 ```
 

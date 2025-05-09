@@ -174,10 +174,6 @@ window.Quarto = {
 <span class="menu-text">Ensino Reprodutível</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../ferramentas.html"> 
-<span class="menu-text">Ferramentas</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../../../producao.html"> 
 <span class="menu-text">Publicações</span></a>
   </li>  
@@ -231,13 +227,13 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../nivel/superior/jsplotly/jsplotly_geral.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">JSPlotly - simulador por gráficos</span></a>
+ <span class="menu-text">JSPlotly - simulação por gráficos em JavaScript</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../nivel/superior/jsplotly/gsplotly.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">GSPlotly - gerador de códigos por IA</span></a>
+ <span class="menu-text">GSPlotly - gerador de códigos por IA para JSPlotly</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -301,13 +297,13 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../nivel/superior/ScriptRplot/scriptrplot.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">scriptRplot: gráficos elegantes</span></a>
+ <span class="menu-text">scriptRplot: gráficos elegantes com <code>ggplot2</code></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../nivel/basico/Curso/index_r_bas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">R na Escola</span></a>
+ <span class="menu-text">R &amp; RStudio na Escola</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -358,6 +354,7 @@ window.Quarto = {
   <li><a href="#ponto-isoelétrico-em-proteínas" id="toc-ponto-isoelétrico-em-proteínas" class="nav-link" data-scroll-target="#ponto-isoelétrico-em-proteínas"><span class="header-section-number">4</span> Ponto Isoelétrico em Proteínas</a></li>
   <li><a href="#catálise-e-inibição-enzimática" id="toc-catálise-e-inibição-enzimática" class="nav-link" data-scroll-target="#catálise-e-inibição-enzimática"><span class="header-section-number">5</span> Catálise e inibição enzimática</a></li>
   <li><a href="#estabilidade-termodinâmica-de-ácidos-nucleicos" id="toc-estabilidade-termodinâmica-de-ácidos-nucleicos" class="nav-link" data-scroll-target="#estabilidade-termodinâmica-de-ácidos-nucleicos"><span class="header-section-number">6</span> Estabilidade termodinâmica de ácidos nucleicos</a></li>
+  <li><a href="#equilíbrio-de-produção-de-atp-a-partir-reagente-temperatura-e-ph" id="toc-equilíbrio-de-produção-de-atp-a-partir-reagente-temperatura-e-ph" class="nav-link" data-scroll-target="#equilíbrio-de-produção-de-atp-a-partir-reagente-temperatura-e-ph"><span class="header-section-number">7</span> Equilíbrio de produção de ATP a partir reagente, temperatura, e pH</a></li>
   </ul>
 </nav>
     </div>
@@ -448,7 +445,10 @@ q =
 \end{cases}
 \]</span><br>
 </p>
-<p><em>Onde</em>, pKa = valor do antilogarítmo de base 10 para a constante de equilíbrio de dissociação do ácido, Ka (ou log[Ka])</p>
+<p><em>Onde</em>,</p>
+<ul>
+<li>pKa = valor do antilogarítmo de base 10 para a constante de equilíbrio de dissociação do ácido, Ka (ou log[Ka]).</li>
+</ul>
 <p><a href="Eq/jsp_cargaAA.html" target="_blank"><img src="Eq/cargaAA.png" class="img-fluid"></a><br>
 <!---div class="jsplotly_sup-fundo"> ---></p>
 </section>
@@ -483,10 +483,12 @@ Y= \frac{pO_2^{nH}}{p_{50}^{nH} + pO_2^{nH}}
 </p>
 <p><em>Onde</em></p>
 <p>Y = grau de saturação de oxigênio na proteína;</p>
-<p>pO<span class="math inline">\(_{2}\)</span> = pressão de oxigênio;</p>
-<p>p<span class="math inline">\(_{50}\)</span> = pressão de oxigênio a 50% de saturação;</p>
-<p>nH = coeficiente de Hill para a interação;<br>
-</p>
+<ul>
+<li>pO<span class="math inline">\(_{2}\)</span> = pressão de oxigênio;</li>
+<li>p<span class="math inline">\(_{50}\)</span> = pressão de oxigênio a 50% de saturação;</li>
+<li>nH = coeficiente de Hill para a interação;<br>
+</li>
+</ul>
 <p><a href="Eq/jsp_O2.html" target="_blank"><img src="Eq/O2.png" class="img-fluid"></a><br>
 <!---div class="jsplotly_sup-fundo"> ---></p>
 </section>
@@ -513,9 +515,11 @@ Y= \frac{pO_2^{nH}}{p_{50}^{nH} + pO_2^{nH}}
 q_{\text{net}}(pH) = \sum_{i=1}^{N} \left[ n_i \cdot q_{B_i} + \frac{n_i}{1 + 10^{pH - pK_{a_i}}} \right]
 \]</span><br>
 <em>Onde</em>,</p>
-<p>qnet = carga líquida total;</p>
-<p>qB$_{i} = carga da forma básica para o resíduo i (por exemplo, +1 para Lys, 0 para Asp);</p>
-<p>n<span class="math inline">\(_{i}\)</span> = número de grupos do resíduo i.</p>
+<ul>
+<li>qnet = carga líquida total;</li>
+<li>qB$_{i} = carga da forma básica para o resíduo i (por exemplo, +1 para Lys, 0 para Asp);</li>
+<li>n<span class="math inline">\(_{i}\)</span> = número de grupos do resíduo <em>i</em>.</li>
+</ul>
 <p><a href="Eq/jsp_pI.html"><img src="Eq/pI.png" class="img-fluid"></a></p>
 </section>
 <section id="sugestão-3" class="level4 unnumbered">
@@ -544,12 +548,14 @@ q_{\text{net}}(pH) = \sum_{i=1}^{N} \left[ n_i \cdot q_{B_i} + \frac{n_i}{1 + 10
 v=\frac{Vm*S}{Km(1+\frac{I}{Kic})+S(1+\frac{I}{Kiu})}
 \]</span><br>
 <em>Onde</em></p>
-<p>S = teor de substrato para reação;</p>
-<p>Vm = velocidade limite da reação (nos livros, velocidade máxima);</p>
-<p>Km = constante de Michaelis-Mentem;</p>
-<p>Kic = constante de equilíbrio de dissociação de inibidor para modelo competitivo;</p>
-<p>Kiu = constante de equilíbrio de dissociação de inibidor para modelo incompetitivo<br>
-</p>
+<ul>
+<li>S = teor de substrato para reação;</li>
+<li>Vm = velocidade limite da reação (nos livros, velocidade máxima);</li>
+<li>Km = constante de Michaelis-Mentem;</li>
+<li>Kic = constante de equilíbrio de dissociação de inibidor para modelo competitivo;</li>
+<li>Kiu = constante de equilíbrio de dissociação de inibidor para modelo incompetitivo<br>
+</li>
+</ul>
 <p><a href="Eq/jsp_kin_inib.html" target="_blank"><img src="Eq/kin_inib.png" class="img-fluid"></a><br>
 <!---div class="jsplotly_sup-fundo"> ---></p>
 </section>
@@ -583,24 +589,22 @@ v=\frac{Vm*S}{Km(1+\frac{I}{Kic})+S(1+\frac{I}{Kiu})}
 <section id="contexto-5" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="contexto-5">Contexto:</h3>
 <div class="line-block">&nbsp;&nbsp;Diversos fatores contribuem para a estabilidade termodinâmica de biopolímeros, estabilizantes ou desestabilizantes. Esta simulação trata de uma curva de desnaturação térmica para DNA na presença ou não de alguns desses compostos: trealose (osmólito estabilizante), e cloreto de guanidina (desestabilizante).</div>
-<p><br>
-</p>
 </section>
 <section id="equação-5" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="equação-5">Equação:</h3>
 <p><span class="math display">\[
 y(T) = \frac{1}{1 + e^{-\frac{T - T_m}{\beta}}}
-\]</span><br>
-</p>
+\]</span></p>
 <p><em>Onde</em>,</p>
-<p>y(T): fração de DNA desnaturado a uma dada temperatura T;</p>
-<p>Tm: temperatura de transição (<em>melting</em>, temperatura para 50% das moléculas em fita dupla, e 50% em fita simples);</p>
-<p>β: parâmetro que ajusta a inclinação da curva (afetado por trehalose e guanidina).</p>
+<ul>
+<li>y(T): fração de DNA desnaturado a uma dada temperatura T;</li>
+<li>Tm: temperatura de transição (<em>melting</em>, temperatura para 50% das moléculas em fita dupla, e 50% em fita simples);</li>
+<li><span class="math inline">\(\beta\)</span>: parâmetro que ajusta a inclinação da curva (afetado por trehalose e guanidina).</li>
+</ul>
 <p><em>Obs:</em></p>
 <ol type="1">
-<li><p>Trehalose como estabilizante (reduz β);</p></li>
-<li><p>Guanidina como desnaturante (aumenta β);<br>
-</p></li>
+<li>Trehalose como estabilizante (reduz <span class="math inline">\(\beta\)</span>);</li>
+<li>Guanidina como desnaturante (aumenta <span class="math inline">\(\beta\)</span>);</li>
 </ol>
 <p><a href="Eq/jsp_denat_DNA_no_osmol.html" target="_blank"><img src="Eq/denat_DNA.png" class="img-fluid"></a></p>
 </section>
@@ -612,6 +616,35 @@ y(T) = \frac{1}{1 + e^{-\frac{T - T_m}{\beta}}}
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  b<span class="er">)</span> variação do parâmetro <span class="sc">$</span>\beta<span class="sc">$</span>;</span>
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  c<span class="er">)</span> variação do teor de trealose;</span>
 <span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  d<span class="er">)</span> variação do teor de cloreto de guanidina.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="equilíbrio-de-produção-de-atp-a-partir-reagente-temperatura-e-ph" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="equilíbrio-de-produção-de-atp-a-partir-reagente-temperatura-e-ph"><span class="header-section-number">7</span> Equilíbrio de produção de ATP a partir reagente, temperatura, e pH</h2>
+<section id="contexto-6" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="contexto-6">Contexto:</h3>
+<div class="line-block">&nbsp;&nbsp;A produção de ATP intracelular envolve a relação clássica de equilíbrio químico entre reagentes e produtos em função da temperatura de reação, e ajustada para determinado valor de pH. Variando-se um e/ou outro teor de reagente, ou parâmetro físico-químico, é possível quantificar o produto pela reação termodinâmica que segue:</div>
+</section>
+<section id="equação-6" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="equação-6">Equação:</h3>
+<p><span class="math display">\[
+\Delta G = \Delta G^{\circ'} + RT \ln\left(\frac{[\text{ADP}] \cdot [\text{P}_i]}{[\text{ATP}]}\right) + 2{,}303 \cdot RT \cdot n_H \cdot \text{pH}
+\]</span></p>
+<p><em>Onde</em>,</p>
+<ul>
+<li><span class="math inline">\(\Delta\)</span>G = energia de Gibbs da reação (positivo para síntese espontaneamente desfavorável, kJ/mol);</li>
+<li><span class="math inline">\(\Delta\)</span>G<span class="math inline">\(^{o'}\)</span> = 30,5 kJ/mol energia de Gibbs padrão biológica para a síntese de ATP;</li>
+<li>R = 8,314 J/mol/K (constante geral dos gases);</li>
+<li>T=310 K (temperatura fisiológica);</li>
+<li>nH<span class="math inline">\(^{+}\)</span> = 1 (número de prótons envolvidos na reação);</li>
+<li>[ADP], [Pi], [ATP] = concentrações molares de reagentes e produto</li>
+</ul>
+<p><a href="Eq/jsp_ATP.html" target="_blank"><img src="Eq/ATP.png" class="img-fluid"></a></p>
+</section>
+<section id="sugestão-6" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="sugestão-6">Sugestão:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Altere as quantidades envolvidas na expressão, e compare com visualizações precedentes. Exemplificando, temperatura, pH, e teores de ADP e Pi.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 
@@ -1020,8 +1053,8 @@ y(T) = \frac{1}{1 + e^{-\frac{T - T_m}{\beta}}}
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../nivel/superior/jsplotly/gsplotly.html" class="pagination-link" aria-label="GSPlotly - gerador de códigos por IA">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">GSPlotly - gerador de códigos por IA</span>
+      <a href="../../../nivel/superior/jsplotly/gsplotly.html" class="pagination-link" aria-label="GSPlotly - gerador de códigos por IA para JSPlotly">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">GSPlotly - gerador de códigos por IA para JSPlotly</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

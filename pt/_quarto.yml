@@ -14,11 +14,10 @@ website:
   sidebar:
     contents:
       - section: "JSPlotly & GSPlotly - simulação interativa por IA"
-      # "JSPlotly & GSPlotly - simulação interativa e IA"
         contents:
-          - text: "JSPlotly - simulador por gráficos"
+          - text: "JSPlotly - simulação por gráficos em JavaScript"
             href: nivel/superior/jsplotly/jsplotly_geral.qmd
-          - text: "GSPlotly - gerador de códigos por IA"
+          - text: "GSPlotly - gerador de códigos por IA para JSPlotly"
             href: nivel/superior/jsplotly/gsplotly.qmd
           - text: "Simulações em Biofísico-química"
             href: nivel/superior/jsplotly/jsptl_bioq.qmd
@@ -39,9 +38,9 @@ website:
         contents:
           - text: "Cálculos e gráficos em Biofísico-química"
             href: nivel/superior/r/index_r.qmd
-          - text: "scriptRplot: gráficos elegantes"
+          - text: "scriptRplot: gráficos elegantes com `ggplot2`"
             href: nivel/superior/ScriptRplot/scriptrplot.qmd
-          - text: "R na Escola"
+          - text: "R & RStudio na Escola"
             href: nivel/basico/Curso/index_r_bas.qmd
           - text: "Gráficos e mapas interativos na Escola"
             href:  nivel/basico/R/index_OIER.qmd
@@ -72,9 +71,9 @@ website:
         #   - text: "Características de ER"
         #     href: "#"
          
-      - text: "Ferramentas"
-        id: sup-menu
-        href: ferramentas.qmd
+      # - text: "Ferramentas"
+      #   id: sup-menu
+      #   href: ferramentas.qmd
         # menu: 
         #   - text: "Possibilides"
         #     href: "#"
