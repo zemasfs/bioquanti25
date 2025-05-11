@@ -209,3 +209,18 @@ $$
 
 ```
 
+
+## Linguagens
+
+### Contexto - Gírias faladas no Brasil de 1980-2020 (EF89LP19, EM13LGG102)
+
+|   Esta simulação é direcionada para uma estimativa do uso de gírias faladas no Brasil durante os últimos 40 anos. A representação dá-se num gráfico de pizza, e a seleção por década num menu suspenso.
+\
+
+[![](Eq/linguag_pizza.png)](Eq/linguag_pizza.html){target="_blank"}
+
+```{r, eval=FALSE}
+1. Pode-se usar a passagem de mouse para observar o "tip" (dica) apresentada para cada dado no gráfico.
+```
+
+

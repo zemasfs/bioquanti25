@@ -4011,5 +4011,17 @@
       "JSPlotly & GSPlotly - simulação interativa por IA",
       "Simulações em Bioquímico-física"
     ]
+  },
+  {
+    "objectID": "nivel/basico/jsplotly/jsplotly_bas.html#linguagens",
+    "href": "nivel/basico/jsplotly/jsplotly_bas.html#linguagens",
+    "title": "JSPlotly e GSPlotly na Escola",
+    "section": "7 Linguagens",
+    "text": "7 Linguagens\n\n7.1 Contexto - Gírias faladas no Brasil de 1980-2020 (EF89LP19, EM13LGG102)\n  Esta simulação é direcionada para uma estimativa do uso de gírias faladas no Brasil durante os últimos 40 anos. A representação dá-se num gráfico de pizza, e a seleção por década num menu suspenso.\n\n\n\n\n1. Pode-se usar a passagem de mouse para observar o \"tip\" (dica) apresentada para cada dado no gráfico.",
+    "crumbs": [
+      "Sobre",
+      "JSPlotly & GSPlotly - simulação interativa por IA",
+      "Simulações na Escola"
+    ]
   }
 ]
