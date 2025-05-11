@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -80,6 +115,35 @@ gtag('js', new Date());
 gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../../styles.css">
 </head>
@@ -175,7 +239,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../nivel/superior/jsplotly/jsptl_bioq.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Simulações em Biofísico-química</span></a>
+ <span class="menu-text">Simulações em Bioquímico-física</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -227,13 +291,13 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../nivel/superior/r/index_r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Cálculos e gráficos em Biofísico-química</span></a>
+ <span class="menu-text">Cálculos e gráficos em Bioquímico-física</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../nivel/superior/ScriptRplot/scriptrplot.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">scriptRplot: gráficos elegantes com <code>ggplot2</code></span></a>
+ <span class="menu-text">scriptRplot: gráficos elegantes com ggplot2</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -253,7 +317,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
- <span class="menu-text">Sisma - diagramas dinâmicos interativos</span></a>
+ <span class="menu-text">Sisma - diagramas dinâmicos</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -278,8 +342,20 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul class="collapse">
+  <li><a href="#instruções" id="toc-instruções" class="nav-link active" data-scroll-target="#instruções">Instruções</a></li>
+  <li><a href="#matemática" id="toc-matemática" class="nav-link" data-scroll-target="#matemática"><span class="header-section-number">1</span> Matemática</a></li>
+  <li><a href="#física" id="toc-física" class="nav-link" data-scroll-target="#física"><span class="header-section-number">2</span> Física</a></li>
+  <li><a href="#química" id="toc-química" class="nav-link" data-scroll-target="#química"><span class="header-section-number">3</span> Química</a></li>
+  <li><a href="#biologia" id="toc-biologia" class="nav-link" data-scroll-target="#biologia"><span class="header-section-number">4</span> Biologia</a></li>
+  <li><a href="#geografia" id="toc-geografia" class="nav-link" data-scroll-target="#geografia"><span class="header-section-number">5</span> Geografia</a></li>
+  <li><a href="#história" id="toc-história" class="nav-link" data-scroll-target="#história"><span class="header-section-number">6</span> História</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -303,8 +379,144 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </header>
 
 
+<div class="line-block">&nbsp;&nbsp;Para ilustrar o potencial de uso do <em>JSPlotly</em> para o ensino fundamental e médio, seguem alguns exemplos de simulações e cujos gráficos são frequentemente encontrados em livros-texto e conteúdos afins. Para um melhor aproveitamento de cada tema, experimente seguir as sugestões para <em>manipulação paramétrica</em> em cada tema.</div>
+<p><br>
+</p>
+<section id="instruções" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="instruções">Instruções</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Escolha um tema;</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Clique no gráfico correspondente;</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Clique em <span class="st">"Add Plot"</span>;</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fl">4.</span> Use o mouse para interatividade e<span class="sc">/</span>ou edite o código. </span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>Lembrete<span class="sc">:</span> o editor usa desfazer<span class="sc">/</span>refazer infinitos no código (Ctrl<span class="sc">+</span>Z <span class="sc">/</span> Shift<span class="sc">+</span>Ctrl<span class="sc">+</span>Z) <span class="sc">!</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br>
+</p>
+</section>
+<section id="matemática" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="matemática"><span class="header-section-number">1</span> Matemática</h2>
+<section id="contexto---trigonometria-em13mat306-em13mat308-em13mat307" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="contexto---trigonometria-em13mat306-em13mat308-em13mat307">Contexto - Trigonometria (EM13MAT306, EM13MAT308, EM13MAT307)</h3>
+<div class="line-block">&nbsp;&nbsp;A simulação a seguir objetiva facilitar a visualização para alguns conceitos em trigonometria, <em>seno, cosseno e tangente</em>. O código permite usar um <em>menu suspenso</em> para cada função trigonométrica, bem como um <em>slider</em> para alterar a frequência em radianos.</div>
+</section>
+<section id="equação" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="equação">Equação:</h3>
+<p><strong>1. Função seno:</strong></p>
+<p><span class="math display">\[
+y = \sin(\omega x)
+\]</span></p>
+<p><strong>2. Função cosseno:</strong></p>
+<p><span class="math display">\[
+y = \cos(\omega x)
+\]</span></p>
+<p><strong>3. Função tangente:</strong></p>
+<p><span class="math display">\[
+y = \tan(\omega x)
+\]</span><br>
+</p>
+<p><a href="Eq/jsp_trigonom.html" target="_blank"><img src="Eq/trigonom.png" class="img-fluid"></a></p>
+</section>
+<section id="sugestão" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="sugestão">Sugestão:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Selecione, alternativamente, a função seno, cosseno, e tangente, utilizando<span class="sc">-</span>se o <span class="st">"menu suspenso"</span>;</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Experimente o efeito de se alterar a frequência da função na barra <span class="fu">deslizante</span> (<span class="st">"slider"</span>);</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Sobreponha um gráfico de seno e um de cosseno para observar suas diferenças;</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fl">4.</span> Repita o mesmo para o gráfico de tangente.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="física" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="física"><span class="header-section-number">2</span> Física</h2>
+<section id="contexto---movimento-de-corpos-em13cnt102" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="contexto---movimento-de-corpos-em13cnt102">Contexto - Movimento de corpos (EM13CNT102):</h3>
+<div class="line-block">&nbsp;&nbsp;O código a seguir ilustra a trajetória de um lançamento oblíquo com ângulo ajustável por uma barra deslizante (<em>slider</em>), útil para explorar os conceitos de cinemática.</div>
+</section>
+<section id="equação-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="equação-1">Equação:</h3>
+<p><strong>1. Equação geral</strong></p>
+<p><span class="math display">\[
+y(x) = x \cdot \tan(\theta) - \frac{g}{2 v_0^2 \cos^2(\theta)} \cdot x^2
+\]</span></p>
+<p><em>Onde:</em></p>
+<ul>
+<li>y(x): altura em função da distância horizontal;</li>
+<li>x: posição horizontal (m);</li>
+<li><span class="math inline">\(\theta\)</span>: ângulo de lançamento em relação à horizontal (radianos ou graus);</li>
+<li>v0: velocidade inicial do projétil (m/s);</li>
+<li>g: aceleração da gravidade (9,8 m/s²<span class="math inline">\(^{2}\)</span>)</li>
+</ul>
+<p><strong>2. Tempo total de vôo:</strong></p>
+<p><span class="math display">\[
+t_{\text{total}} = \frac{2 v_0 \sin(\theta)}{g}
+\]</span></p>
+<p><strong>3. Posição Horizontal ao longo do tempo</strong></p>
+<p><span class="math display">\[
+x(t) = v_0 \cos(\theta) \cdot t
+\]</span></p>
+<p><a href="Eq/jsp_fis_pedra.html" target="_blank"><img src="Eq/fis_pedra.png" class="img-fluid"></a></p>
+</section>
+<section id="sugestão-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="sugestão-1">Sugestão:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Veja que há uma barra deslizante para ângulos iniciais na simulação. Arraste a barra para outro ângulo e adicione o gráfico, comparando o efeito dessa modificação.</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Altere a velocidade inicial no código, e observe o efeito no gráfico.</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Simule uma <span class="st">"condição lunar"</span> para a trajetória, e cuja gravidade é em torno de <span class="dv">1</span><span class="sc">/</span><span class="dv">6</span> a da <span class="fu">Terra</span> (<span class="sc">~</span><span class="fl">1.6</span> m<span class="sc">/</span>s²).</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="química" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="química"><span class="header-section-number">3</span> Química</h2>
+<section id="contexto" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="contexto">Contexto:</h3>
+</section>
+<section id="equação-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="equação-2">Equação:</h3>
+</section>
+<section id="sugestão-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="sugestão-2">Sugestão:</h3>
+</section>
+</section>
+<section id="biologia" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="biologia"><span class="header-section-number">4</span> Biologia</h2>
+<section id="contexto-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="contexto-1">Contexto:</h3>
+</section>
+<section id="equação-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="equação-3">Equação:</h3>
+</section>
+<section id="sugestão-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="sugestão-3">Sugestão:</h3>
+</section>
+</section>
+<section id="geografia" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="geografia"><span class="header-section-number">5</span> Geografia</h2>
+<section id="contexto-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="contexto-2">Contexto:</h3>
+</section>
+<section id="equação-4" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="equação-4">Equação:</h3>
+</section>
+<section id="sugestão-4" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="sugestão-4">Sugestão:</h3>
+</section>
+</section>
+<section id="história" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="história"><span class="header-section-number">6</span> História</h2>
+<section id="contexto-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="contexto-3">Contexto:</h3>
+</section>
+<section id="equação-5" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="equação-5">Equação:</h3>
+</section>
+<section id="sugestão-5" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="sugestão-5">Sugestão:</h3>
 
 
+</section>
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -708,8 +920,8 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../nivel/superior/jsplotly/jsptl_bioq.html" class="pagination-link" aria-label="Simulações em Biofísico-química">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Simulações em Biofísico-química</span>
+      <a href="../../../nivel/superior/jsplotly/jsptl_bioq.html" class="pagination-link" aria-label="Simulações em Bioquímico-física">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Simulações em Bioquímico-física</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
