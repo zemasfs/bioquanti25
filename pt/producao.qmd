@@ -9,7 +9,7 @@ title: ""
 <!--    - ScriptRplot -->
 <!--    - JSPlotly -->
 
-## Livros
+## Livro
 
 - Schneedorf, J.M. Bioquanti: Vivificando conteúdos para o ensino básico. In: Recursos Educacionais Abertos na UNIFAL-MG.  Org: Mafra, L.A.S; Silva, L.E; Schneedorf, J.M. Ed. Pimenta Cultural, 84p. 2025 (no prelo). 
 
@@ -21,7 +21,7 @@ title: ""
 
 - Schneedorf, J.M. [Bioquímica Estrutural Guiada Por Jmol](http://dx.doi.org/10.13140/RG.2.2.29268.10882). 145p., 2019. ISBN: 978-85-63473-42-4. 
 
-## Capítulos
+## Capítulo
 
 
 - Oliveira, G. A. V. ; Lemes, N. H. T. ; Sindra, L. V. ; Schneedorf, J.M. . Binding of Molecules Followed by Electroanalytical Techniques. In: Ana Clarissa dos Santos Pires; Luis Henrique Mendes da Silva. (Org.). Methods and Protocols in Food Science - Characterization of Molecular Interactions. 1ed.New York: Springer Nature, 2025, v. 13, p. 1-12.
@@ -60,7 +60,7 @@ para a elaboração de jogos educacionais online.  In: Tecnologias Emergentes em
 - Tecnologias digitais e a coprodução do bem público: interatividade e participação na construção de Recursos Educacionais Abertos. Mafra, L.A.S, Gozzi, W.P., Santos, A.G.S., Silva, L.E., Schneedorf, J.M. In: Abordagens Multidisciplinares na cultura digital. Org: Costa, C.T.O.P. V & V Editora, Santo André (SP), 2025 (no prelo).
 
 
-## Artigos
+## Artigo
 
 - Schneedorf, J.M. JSPlotly: um aplicativo para gráficos interativos em Bioquímica para visualizadores HTML. Revista de Ensino de Bioquímica. 2025 (no prelo).
 
@@ -68,6 +68,13 @@ para a elaboração de jogos educacionais online.  In: Tecnologias Emergentes em
 
 - Schneedorf, J.M. Bioquanti, um website interativo para ensino-aprendizagem em Bioquímica." Revista de Ensino de Bioquímica 21.1 (2023): 110-124.
 
+## Software
+
+- Macedo, J.A.; Matos, N.; Paula, M.M.V.; Silva, L.E.; Schneedorf, J.M. SISMA: Sistema de Mapas Autocatalíticos. Programa de Computador. Registro INPI no. 08869-3 (19/05/2008).
+
+- Schneedorf, J.M. JSPlotly: simulador portável para gráficos interativos e dinâmicos (2025). CC-BY-NC-SA.
+
+- Schneedorf, J.M. GSPlotly: gerador de scripts interativos para JSPlotly. OpenAI GPT customizado. Disponível em: https://chat.openai.com/g/g-6819fbb8d2d08191bf7d50a3dbeadb0d-gsplotly. Acesso em: 11 maio 2025.
 
 
 

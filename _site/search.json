@@ -744,8 +744,8 @@
     "objectID": "nivel/superior/jsplotly/jsptl_bioq.html#equilíbrio-de-produção-de-atp-a-partir-de-reagentes-temperatura-e-ph",
     "href": "nivel/superior/jsplotly/jsptl_bioq.html#equilíbrio-de-produção-de-atp-a-partir-de-reagentes-temperatura-e-ph",
     "title": "Simulações Interativas Para Biofísico-química com JSPlotly & GSPlotly",
-    "section": "7 Equilíbrio de produção de ATP a partir de reagentes, temperatura, e pH",
-    "text": "7 Equilíbrio de produção de ATP a partir de reagentes, temperatura, e pH\n\nContexto:\n  A produção de ATP intracelular envolve a relação clássica de equilíbrio químico entre reagentes e produtos em função da temperatura de reação, e ajustada para determinado valor de pH. Variando-se um e/ou outro teor de reagente, ou parâmetro físico-químico, é possível quantificar o produto pela reação termodinâmica que segue:\n\n\nEquação:\n\\[\n\\Delta G = \\Delta G^{\\circ'} + RT \\ln\\left(\\frac{[\\text{ADP}] \\cdot [\\text{P}_i]}{[\\text{ATP}]}\\right) + 2{,}303 \\cdot RT \\cdot n_H \\cdot \\text{pH}\n\\]\nOnde,\n\n\\(\\Delta\\)G = energia de Gibbs da reação (positivo para síntese espontaneamente desfavorável, kJ/mol);\n\\(\\Delta\\)G\\(^{o'}\\) = 30,5 kJ/mol energia de Gibbs padrão biológica para a síntese de ATP;\nR = 8,314 J/mol/K (constante geral dos gases);\nT=310 K (temperatura fisiológica);\nnH\\(^{+}\\) = 1 (número de prótons envolvidos na reação);\n[ADP], [Pi], [ATP] = concentrações molares de reagentes e produto\n\n\n\n\nSugestão:\n\n1. Altere as quantidades envolvidas na expressão, e compare com visualizações precedentes. Exemplificando, temperatura, pH, e teores de ADP e Pi.",
+    "section": "8 Equilíbrio de produção de ATP a partir de reagentes, temperatura, e pH",
+    "text": "8 Equilíbrio de produção de ATP a partir de reagentes, temperatura, e pH\n\nContexto:\n  A produção de ATP intracelular envolve a relação clássica de equilíbrio químico entre reagentes e produtos em função da temperatura de reação, e ajustada para determinado valor de pH. Variando-se um e/ou outro teor de reagente, ou parâmetro físico-químico, é possível quantificar o produto pela reação termodinâmica que segue:\n\n\nEquação:\n\\[\n\\Delta G = \\Delta G^{\\circ'} + RT \\ln\\left(\\frac{[\\text{ADP}] \\cdot [\\text{P}_i]}{[\\text{ATP}]}\\right) + 2{,}303 \\cdot RT \\cdot n_H \\cdot \\text{pH}\n\\]\nOnde,\n\n\\(\\Delta\\)G = energia de Gibbs da reação (positivo para síntese espontaneamente desfavorável, kJ/mol);\n\\(\\Delta\\)G\\(^{o'}\\) = 30,5 kJ/mol energia de Gibbs padrão biológica para a síntese de ATP;\nR = 8,314 J/mol/K (constante geral dos gases);\nT=310 K (temperatura fisiológica);\nnH\\(^{+}\\) = 1 (número de prótons envolvidos na reação);\n[ADP], [Pi], [ATP] = concentrações molares de reagentes e produto\n\n\n\n\nSugestão:\n\n1. Altere as quantidades envolvidas na expressão, e compare com visualizações precedentes. Exemplificando, temperatura, pH, e teores de ADP e Pi.",
     "crumbs": [
       "Sobre",
       "JSPlotly & GSPlotly - simulação interativa por IA",
@@ -3929,7 +3929,7 @@
     "href": "nivel/basico/jsplotly/jsplotly_bas.html#química",
     "title": "JSPlotly e GSPlotly na Escola",
     "section": "3 Química",
-    "text": "3 Química\n\nContexto:\n\n\nEquação:\n\n\nSugestão:",
+    "text": "3 Química\n\nContexto - Capacidade Calorífica (EF09CI06, EM13CNT104, EM13CNT203)\n  A simulação que segue visa observar a relação entre o calor trocado (Q), a massa (m), a capacidade calorífica (c) e a variação de temperatura (\\(\\Delta\\)T).\n\n\nEquação:\n\\[\nQ = c \\cdot m \\cdot \\Delta T\n\\]\n\n\n\n\nSugestão:\n\n1. Experimente variar inicialmente a temperatura, sobrepondo alguns gráficos;\n2. Varie também a massa no editor de códigos, para comparação.",
     "crumbs": [
       "Sobre",
       "JSPlotly & GSPlotly - simulação interativa por IA",
@@ -3941,7 +3941,7 @@
     "href": "nivel/basico/jsplotly/jsplotly_bas.html#biologia",
     "title": "JSPlotly e GSPlotly na Escola",
     "section": "4 Biologia",
-    "text": "4 Biologia\n\nContexto:\n\n\nEquação:\n\n\nSugestão:",
+    "text": "4 Biologia\n\nContexto - Modelo de Crescimento Populacional com Fase Lag (EM13CNT102)\n  Este modelo apresenta uma função logística que simula o crescimento populacional (microorganismos, células, por ex), acompanhado por um componente de retardo. Variando-se os parâmetros no editor, é possível estimar diversos perfis de crescimento populacional.\n\n\nEquação:\n\\[\nN(t) = \\frac{K}{1 + \\left(\\frac{K - N_0}{N_0}\\right) \\cdot e^{-r \\cdot A(t) \\cdot t}}, \\quad \\text{com } A(t) = \\frac{1}{1 + e^{-k(t - t_0)}}\n\\]\nOnde:\n\nK = capacidade de suporte ambiental;\nN0 = população inicial;\nr = taxa intrínseca de crescimento;\nA(t) = fator de ativação do crescimento com atraso (fase lag);\nt0 = ponto médio de transição entre fase lag e fase log;\nk = constante de suavidade do retardo (fixado como 0.5 no código)\n\n\n\n\nSugestão:\n\n1. Experimente variar os parâmetros da equação, combinando alguns, e comparando seus efeitos sobre os gráficos:\n  a. Capacidade de suporte;\n  b. População inicial;\n  c. Taxa de crescimento;\n  d. Retardo (fase lag);",
     "crumbs": [
       "Sobre",
       "JSPlotly & GSPlotly - simulação interativa por IA",
@@ -3953,7 +3953,7 @@
     "href": "nivel/basico/jsplotly/jsplotly_bas.html#geografia",
     "title": "JSPlotly e GSPlotly na Escola",
     "section": "5 Geografia",
-    "text": "5 Geografia\n\nContexto:\n\n\nEquação:\n\n\nSugestão:",
+    "text": "5 Geografia\n\nContexto: Mapa do Brasil e Capitais (EM13CHS101, EM13CHS202, EM13CHS301)\n  Não apenas de equações vive o JSPlotly ! Com a biblioteca Plotly.js que o compõe, é possível produzir também mapas interativos, como o da simulação que segue.\n\n\n\nSugestão:\n\n1. Experimente usar o botão de rolagem do mouse e ícone \"pan\" da barra superior, para interagir com o mapa.",
     "crumbs": [
       "Sobre",
       "JSPlotly & GSPlotly - simulação interativa por IA",
@@ -3965,11 +3965,51 @@
     "href": "nivel/basico/jsplotly/jsplotly_bas.html#história",
     "title": "JSPlotly e GSPlotly na Escola",
     "section": "6 História",
-    "text": "6 História\n\nContexto:\n\n\nEquação:\n\n\nSugestão:",
+    "text": "6 História\n\nContexto - Distribuição de escravizados nas Américas no período de 1500–1888 (EF08HI06, EM13CHS104, EM13CHS503):\n   Esta simulação apresenta um gráfico de barras interativo para seleção de período por menu suspenso, e tangente à quantidade estimada de africanos escravizados desembarcados nas principais regiões da América. Os dados são estimativas aproximadas para ilustrar o potencial de visualização do aplicativo, embora servindo como ponto de partida para discussões educacionais mais precisas. Fontes passíveis de consulta incluem Slave Voyages.\n\n\n\n\n\nSugestão:\n\n1. Experimente alterar entre os períodos no menu suspenso, comparando as estimativas de tráfico escravo;\n2. Selecione um período, crie o gráfico, selecione outro período, e adicione outro gráfico. Isso permite comparar o quantitativo de escravos aportados pelas barras duplas formadas, e passagem do mouse sobre cada barra.",
     "crumbs": [
       "Sobre",
       "JSPlotly & GSPlotly - simulação interativa por IA",
       "Simulações na Escola"
+    ]
+  },
+  {
+    "objectID": "producao.html#software",
+    "href": "producao.html#software",
+    "title": "",
+    "section": "Software",
+    "text": "Software\n\nMacedo, J.A.; Matos, N.; Paula, M.M.V.; Silva, L.E.; Schneedorf, J.M. SISMA: Sistema de Mapas Autocatalíticos. Programa de Computador. Registro INPI no. 08869-3 (19/05/2008).\nSchneedorf, J.M. JSPlotly: simulador portável para gráficos interativos e dinâmicos (2025). CC-BY-NC-SA.\nSchneedorf, J.M. GSPlotly: gerador de scripts interativos para JSPlotly. OpenAI GPT customizado. Disponível em: https://chat.openai.com/g/g-6819fbb8d2d08191bf7d50a3dbeadb0d-gsplotly. Acesso em: 11 maio 2025."
+  },
+  {
+    "objectID": "producao.html#livro",
+    "href": "producao.html#livro",
+    "title": "",
+    "section": "",
+    "text": "Schneedorf, J.M. Bioquanti: Vivificando conteúdos para o ensino básico. In: Recursos Educacionais Abertos na UNIFAL-MG. Org: Mafra, L.A.S; Silva, L.E; Schneedorf, J.M. Ed. Pimenta Cultural, 84p. 2025 (no prelo).\nSchneedorf, J.M., Rodrigues, K.L. Bioquímica básica, de gente, de bicho, e de planta. 353p., 2024. ISBN: 978-65-00-90366-9.\nSchneedorf, J.M. Bioquímica Quantitativa & R. 152p., 2022. ISBN: 978-65-00-52125-2. .\nSchneedorf, J.M. SISMA - Visualização Dinâmica em Catálise & Metabolismo. 95p., 2022. ISBN: 978-65-00-52124-5.\nSchneedorf, J.M. Bioquímica Estrutural Guiada Por Jmol. 145p., 2019. ISBN: 978-85-63473-42-4."
+  },
+  {
+    "objectID": "producao.html#capítulo",
+    "href": "producao.html#capítulo",
+    "title": "",
+    "section": "Capítulo",
+    "text": "Capítulo\n\nOliveira, G. A. V. ; Lemes, N. H. T. ; Sindra, L. V. ; Schneedorf, J.M. . Binding of Molecules Followed by Electroanalytical Techniques. In: Ana Clarissa dos Santos Pires; Luis Henrique Mendes da Silva. (Org.). Methods and Protocols in Food Science - Characterization of Molecular Interactions. 1ed.New York: Springer Nature, 2025, v. 13, p. 1-12.\nFerreira, M. P. ; Galhardo, B. R. ; Lemes, N. H. T. ; Coelho, Y. L. ; Schneedorf, J.M. ; Sindra, L. V. Application of Quartz Crystal Microbalance to Study Intermolecular Interactions. In: Ana Clarissa dos Santos Pires; Luis Henrique Mendes da Silva. (Org.). Methods and Protocols in Food Science - Characterization of Molecular Interactions. 1ed.New York: Springer Nature, 2025, v. 13, p. 29-38.\nAndrade, R. J. ; Lemes, N. H. T. ; Sindra, L. V. ; Schneedorf, J.M. . Difference Spectra Absorption Spectrophotometry Applied to Molecular Interactions. In: Ana Clarissa dos Santos Pires; Luis Henrique Mendes da Silva. (Org.). Methods and Protocols in Food Science - Characterization of Molecular Interactions. 1ed.New York: Springer Nature, 2025, v. 13, p. 14-28.\nSchneedorf, J.M. JSPlotly - um aplicativo prático e portável para simulações gráficas interativas ao ensino reprodutível. In: Recursos Educacionais Abertos na UNIFAL-MG. Org: Mafra, L.A.S; Silva, L.E; Schneedorf, J.M. Ed. Pimenta Cultural. 2025 (no prelo).\nSchneedorf, J.M. ScriptRplot - um script de R para produção de gráficos elegantes com ggplot2. In: Recursos Educacionais Abertos na UNIFAL-MG. Org: Mafra, L.A.S; Silva, L.E; Schneedorf, J.M. Ed. Pimenta Cultural. 2025 (no prelo).\nSchneedorf, J.M. R e RStudio: uma plataforma para implementação de ensino reprodutível. In: Aprendizagem Ativa: da Educação Básica ao Ensino Superior. Org: Sindiany Suelen Caduda dos Santos, Débora Moreira de Oliveira. V & V Editora, Santo André (SP), 2025 (no prelo).\nSchneedorf, J.M., Nogueira, M.G.F., Mafra, L.A.S., Silva, E.L. Jardim de Moléculas: um catálogo virtual para ensino reprodutível de modelos atômicos ao ensino básico. In: Aprendizagem Ativa: da Educação Básica ao Ensino Superior. Org: Sindiany Suelen Caduda dos Santos, Débora Moreira de Oliveira. V & V Editora, Santo André (SP), 2025 (no prelo).\nSchneedorf, J.M. Pacotes do R para criação de objetos de aprendizagem ativos em ensino reprodutível. In: Aprendizagem Ativa: da Educação Básica ao Ensino Superior. Org: Sindiany Suelen Caduda dos Santos, Débora Moreira de Oliveira. V & V Editora, Santo André (SP), 2025 (no prelo).\nSchneedorf, J.M., Hornink, G.G. Desenvolvimento De Competências Digitais No Ensino Superior A Partir De Aprendizagem Baseada Em Projetos Com R e Rstudio.In: Aprendizagem Ativa: da Educação Básica ao Ensino Superior. Org: Sindiany Suelen Caduda dos Santos, Débora Moreira de Oliveira. V & V Editora, Santo André (SP), 2025 (no prelo).\nSilva, L.E., Alves, L.P.O., Vespucio, N.M.B., Schneedorf, J.M. Sisma, um aplicativo para simulação de diagramas dinâmicos para o ensino-aprendizagem e sua adaptação para ambiente online (SismaWeb). In: Aprendizagem Ativa: da Educação Básica ao Ensino Superior. Org: Sindiany Suelen Caduda dos Santos, Débora Moreira de Oliveira. V & V Editora, Santo André (SP), 2025 (no prelo).\nSchneedorf, J.M. Documentos Dinâmicos em Ensino Reprodutível com R & Rstudio. In: Tecnologias Emergentes em Educação. V & V Editora, Santo André (SP), 2025 (no prelo).\nSchneedorf, J.M. Ensino reprodutível como metodologia ativa em ensino-aprendizagem. In: Tecnologias Emergentes em Educação. V & V Editora, Santo André (SP), 2025 (no prelo).\nSchneedorf, J.M., Rodrigues, B.S., Hornink, G.G. OIER - Objetos Interativos em Ensino Reprodutível: uma abordagem com R. In: Tecnologias Emergentes em Educação. V & V Editora, Santo André (SP), 2025 (no prelo).\nSchneedorf, J.M. Literacia de prompts na produção de objetos didáticos interativos em ensino reprodutível para R & RStudio. In: Reflexões e Relatos sobre Inteligência Artificial. Org: Carolei, P., Rosalen, M. V & V Editora, Santo André (SP), 2025 (no prelo).\nSchneedorf, J.M. Avaliação de assistentes de IA na criação de códigos de R para objetos interativos em ensino reprodutível. In: Reflexões e Relatos sobre Inteligência Artificial. Org: Carolei, P., Rosalen, M. V & V Editora, Santo André (SP), 2025 (no prelo).\nSilva, L.E., Lima, D.C., Isgrignero, I., França, J.G., Lage, R.M., Schneedorf, J.M., Mafra, L.A.S. Tales Ludos: aprimorando a experiência dos usuários para a elaboração de jogos educacionais online. In: Tecnologias Emergentes em Educação. V & V Editora, Santo André (SP), 2025 (no prelo).\nTecnologias digitais e a coprodução do bem público: interatividade e participação na construção de Recursos Educacionais Abertos. Mafra, L.A.S, Gozzi, W.P., Santos, A.G.S., Silva, L.E., Schneedorf, J.M. In: Abordagens Multidisciplinares na cultura digital. Org: Costa, C.T.O.P. V & V Editora, Santo André (SP), 2025 (no prelo)."
+  },
+  {
+    "objectID": "producao.html#artigo",
+    "href": "producao.html#artigo",
+    "title": "",
+    "section": "Artigo",
+    "text": "Artigo\n\nSchneedorf, J.M. JSPlotly: um aplicativo para gráficos interativos em Bioquímica para visualizadores HTML. Revista de Ensino de Bioquímica. 2025 (no prelo).\nSchneedorf, J.M. Livros vivos: uma proposta de ensino reprodutível com R & Rstudio. Revista Eletrônica Casa de Makunaima. 2025 (no prelo).\nSchneedorf, J.M. Bioquanti, um website interativo para ensino-aprendizagem em Bioquímica.” Revista de Ensino de Bioquímica 21.1 (2023): 110-124."
+  },
+  {
+    "objectID": "nivel/superior/jsplotly/jsptl_bioq.html#equação-de-van-der-waals-para-gases-ideais",
+    "href": "nivel/superior/jsplotly/jsptl_bioq.html#equação-de-van-der-waals-para-gases-ideais",
+    "title": "Simulações Interativas Para Biofísico-química com JSPlotly & GSPlotly",
+    "section": "7 Equação de van der Waals para gases ideais",
+    "text": "7 Equação de van der Waals para gases ideais\n\nContexto:\n  Uma adaptação que relaciona as quantidades termodinâmicas de pressão, volume e temperatura para gases ideais, é a equação de van der Waals. Nessa são computados coeficientes que estimam a existência de um volume e de interações inter-partículas. Dessa forma, a equação de van der Waals corrije a de gases ideais considerando um termo para compensação de forças intermoleculares (a/V\\(^{2}\\)) e o volume disponível, esse descontando o volume ocupado pelas próprias moléculas do gás.\n  Na simulação é oferecida uma interatividade adicional pela presença de sliders (controles deslizantes) para temperatura, e para os coeficientes de volume finito (b) e interação entre partículas (a).\n\n\nEquação:\n\\[\nP = \\frac{RT}{V - b} - \\frac{a}{V^2}\n\\]\n\nP = pressão do gás (atm);\nV = volume molar (L);\nT = temperatura (K);\nR = 0,0821 = constante dos gases ideais (L·atm/mol·K);\na = constante de atração intermolecular (L\\(^{2}\\)·atm/mol$^{2})\nb = constante de volume excluído (L/mol)\n\n\n\n\nSugestão:\n\n1. Experimente variar os parâmetros da equação por meio do \"slider\" para temperatura, bem como para os coeficientes \"a e b\".\n2. Discorra sobre qual dos coeficientes possui maior efeito no perfil da curva, e a razão para isso.",
+    "crumbs": [
+      "Sobre",
+      "JSPlotly & GSPlotly - simulação interativa por IA",
+      "Simulações em Bioquímico-física"
     ]
   }
 ]

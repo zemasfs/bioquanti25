@@ -175,7 +175,7 @@ window.Quarto = {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../../producao.html"> 
-<span class="menu-text">Publicações</span></a>
+<span class="menu-text">Produção</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../../contato.html"> 
@@ -469,50 +469,88 @@ x(t) = v_0 \cos(\theta) \cdot t
 </section>
 <section id="química" class="level2" data-number="3">
 <h2 data-number="3" class="anchored" data-anchor-id="química"><span class="header-section-number">3</span> Química</h2>
-<section id="contexto" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="contexto">Contexto:</h3>
+<section id="contexto---capacidade-calorífica-ef09ci06-em13cnt104-em13cnt203" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="contexto---capacidade-calorífica-ef09ci06-em13cnt104-em13cnt203">Contexto - Capacidade Calorífica (EF09CI06, EM13CNT104, EM13CNT203)</h3>
+<div class="line-block">&nbsp;&nbsp;A simulação que segue visa observar a relação entre o calor trocado (<em>Q</em>), a massa (<em>m</em>), a capacidade calorífica (<em>c</em>) e a variação de temperatura (<em><span class="math inline">\(\Delta\)</span>T</em>).</div>
 </section>
 <section id="equação-2" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="equação-2">Equação:</h3>
+<p><span class="math display">\[
+Q = c \cdot m \cdot \Delta T
+\]</span><br>
+</p>
+<p><a href="Eq/jsp_cp.html" target="_blank"><img src="Eq/cp.png" class="img-fluid"></a></p>
 </section>
 <section id="sugestão-2" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="sugestão-2">Sugestão:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Experimente variar inicialmente a temperatura, sobrepondo alguns gráficos;</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Varie também a massa no editor de códigos, para comparação.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
 </section>
 <section id="biologia" class="level2" data-number="4">
 <h2 data-number="4" class="anchored" data-anchor-id="biologia"><span class="header-section-number">4</span> Biologia</h2>
-<section id="contexto-1" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="contexto-1">Contexto:</h3>
+<section id="contexto---modelo-de-crescimento-populacional-com-fase-lag-em13cnt102" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="contexto---modelo-de-crescimento-populacional-com-fase-lag-em13cnt102">Contexto - Modelo de Crescimento Populacional com Fase Lag (EM13CNT102)</h3>
+<div class="line-block">&nbsp;&nbsp;Este modelo apresenta uma função logística que simula o crescimento populacional (microorganismos, células, por ex), acompanhado por um componente de retardo. Variando-se os parâmetros no editor, é possível estimar diversos perfis de crescimento populacional.</div>
 </section>
 <section id="equação-3" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="equação-3">Equação:</h3>
+<p><span class="math display">\[
+N(t) = \frac{K}{1 + \left(\frac{K - N_0}{N_0}\right) \cdot e^{-r \cdot A(t) \cdot t}}, \quad \text{com } A(t) = \frac{1}{1 + e^{-k(t - t_0)}}
+\]</span></p>
+<p><em>Onde:</em></p>
+<ul>
+<li>K = capacidade de suporte ambiental;</li>
+<li>N0 = população inicial;</li>
+<li>r = taxa intrínseca de crescimento;</li>
+<li>A(t) = fator de ativação do crescimento com atraso (fase lag);</li>
+<li>t0 = ponto médio de transição entre fase lag e fase log;</li>
+<li>k = constante de suavidade do retardo (fixado como 0.5 no código)</li>
+</ul>
+<p><a href="Eq/jsp_crescim.html" target="_blank"><img src="Eq/crescim.png" class="img-fluid"></a></p>
 </section>
 <section id="sugestão-3" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="sugestão-3">Sugestão:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Experimente variar os parâmetros da equação, combinando alguns, e comparando seus efeitos sobre os gráficos<span class="sc">:</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  a. Capacidade de suporte;</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  b. População inicial;</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  c. Taxa de crescimento;</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  d. <span class="fu">Retardo</span> (fase lag);</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
 </section>
 <section id="geografia" class="level2" data-number="5">
 <h2 data-number="5" class="anchored" data-anchor-id="geografia"><span class="header-section-number">5</span> Geografia</h2>
-<section id="contexto-2" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="contexto-2">Contexto:</h3>
-</section>
-<section id="equação-4" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="equação-4">Equação:</h3>
+<section id="contexto-mapa-do-brasil-e-capitais-em13chs101-em13chs202-em13chs301" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="contexto-mapa-do-brasil-e-capitais-em13chs101-em13chs202-em13chs301">Contexto: Mapa do Brasil e Capitais (EM13CHS101, EM13CHS202, EM13CHS301)</h3>
+<div class="line-block">&nbsp;&nbsp;Não apenas de equações vive o <em>JSPlotly</em> ! Com a biblioteca <em>Plotly.js</em> que o compõe, é possível produzir também mapas interativos, como o da simulação que segue.</div>
+<p><a href="Eq/jsp_geogr.html" target="_blank"><img src="Eq/geogr.png" class="img-fluid"></a></p>
 </section>
 <section id="sugestão-4" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="sugestão-4">Sugestão:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Experimente usar o botão de rolagem do mouse e ícone <span class="st">"pan"</span> da barra superior, para interagir com o mapa.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
 </section>
 <section id="história" class="level2" data-number="6">
 <h2 data-number="6" class="anchored" data-anchor-id="história"><span class="header-section-number">6</span> História</h2>
-<section id="contexto-3" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="contexto-3">Contexto:</h3>
-</section>
-<section id="equação-5" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="equação-5">Equação:</h3>
+<section id="contexto---distribuição-de-escravizados-nas-américas-no-período-de-15001888-ef08hi06-em13chs104-em13chs503" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="contexto---distribuição-de-escravizados-nas-américas-no-período-de-15001888-ef08hi06-em13chs104-em13chs503">Contexto - Distribuição de escravizados nas Américas no período de 1500–1888 (EF08HI06, EM13CHS104, EM13CHS503):</h3>
+<div class="line-block">&nbsp;&nbsp;&nbsp;Esta simulação apresenta um <em>gráfico de barras</em> interativo para seleção de período por <em>menu suspenso</em>, e tangente à quantidade estimada de africanos escravizados desembarcados nas principais regiões da América. Os dados são estimativas aproximadas para ilustrar o potencial de visualização do aplicativo, embora servindo como ponto de partida para discussões educacionais mais precisas. Fontes passíveis de consulta incluem <a href="https://www.slavevoyages.org/past/database/african-origins">Slave Voyages</a>.</div>
+<p><br>
+</p>
+<p><a href="Eq/jsp_escravos.html" target="_blank"><img src="Eq/escravos.png" class="img-fluid"></a></p>
 </section>
 <section id="sugestão-5" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="sugestão-5">Sugestão:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Experimente alterar entre os períodos no menu suspenso, comparando as estimativas de tráfico escravo;</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Selecione um período, crie o gráfico, selecione outro período, e adicione outro gráfico. Isso permite comparar o quantitativo de escravos aportados pelas barras duplas formadas, e passagem do mouse sobre cada barra.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 
 
 </section>

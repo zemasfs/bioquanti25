@@ -88,7 +88,7 @@ website:
       #   #   - text: "Exemplos"
       #   #     href: "#"
 
-      - text: "Publicações"
+      - text: "Produção"
         href: producao.qmd
 
       - text: "Contato"

@@ -272,6 +272,45 @@ $$
 ```
 
 
+## Equação de van der Waals para gases ideais
+
+
+### Contexto: {.unnumbered}
+
+|   Uma adaptação que relaciona as quantidades termodinâmicas de pressão, volume e temperatura para gases ideais, é a *equação de van der Waals*. Nessa são computados coeficientes que estimam a existência de um volume e de interações inter-partículas. Dessa forma, a equação de van der Waals corrije a de gases ideais considerando um termo para compensação de forças intermoleculares (a/V$^{2}$) e o volume disponível, esse descontando o volume ocupado pelas próprias moléculas do gás.
+
+
+|   Na simulação é oferecida uma interatividade adicional pela presença de *sliders* (controles deslizantes) para temperatura, e para os coeficientes de volume finito (*b*) e interação entre partículas (*a*).
+
+### Equação: {.unnumbered}
+
+
+$$
+P = \frac{RT}{V - b} - \frac{a}{V^2}
+$$
+
+- P = pressão do gás (atm);
+- V = volume molar (L);
+- T = temperatura (K);
+- R = 0,0821 = constante dos gases ideais (L·atm/mol·K);
+- a = constante de atração intermolecular (L$^{2}$·atm/mol$^{2})
+- b = constante de volume excluído (L/mol)
+
+
+
+[![](Eq/vanderWaals.png)](Eq/jsp_vanderWaals.html){target="_blank"}
+
+
+### Sugestão: {.unnumbered}
+
+```{r, eval=FALSE}
+
+1. Experimente variar os parâmetros da equação por meio do "slider" para temperatura, bem como para os coeficientes "a e b".
+2. Discorra sobre qual dos coeficientes possui maior efeito no perfil da curva, e a razão para isso.
+
+```
+\
+
 ## Equilíbrio de produção de ATP a partir de reagentes, temperatura, e pH
 
 ### Contexto: {.unnumbered}
