@@ -741,6 +741,7 @@ body {
     width: 100%;
 }
 
+
 .geo-fundo2 {
   background-color: #4682B4; /* Lilás Suave */
   padding: 15px;             /* Espaçamento interno */
@@ -750,8 +751,33 @@ body {
     width: 100%;
 }
 
+/* ######################################### */
 
+/* COR E QUADRO DE FUNDO PARA O JSPLOTLY - Superior*/
 
+/* Quadro do gráfico clicável */
+
+.jsplotly_sup-fundo {
+  background-color: #d8dbf9; /* Lilás Suave */
+  padding: 15px;             /* Espaçamento interno */
+    border-left: 5px solid #cbceee; /* Barra lateral  */
+    border-radius: 5px;        /* Bordas arredondadas */
+    margin-bottom: 0px;       /* Espaçamento inferior */
+    width: 100%;
+}
+
+/* Quadro de sugestões */
+
+.jsplotly_sup-fundo2 { 
+  background-color: #cbceee; /* Lilás Suave */
+  padding: 15px;             /* Espaçamento interno */
+    border-left: 5px solid #d8dbf9; /* Barra lateral  */
+    border-radius: 5px;        /* Bordas arredondadas */
+    margin-bottom: 0px;       /* Espaçamento inferior */
+    width: 100%;
+}
+
+/* ################################################### */
 
 /* Imagem de fundo pra Introdução do Jardim 
 

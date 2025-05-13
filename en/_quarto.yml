@@ -137,7 +137,7 @@ website:
             href: nivel/basico/Jardim/toxicol_en.qmd
           - text: "Nutritional"
             href: nivel/basico/Jardim/nutri_en.qmd
-          - text: Flavors"
+          - text: "Flavors"
             href: nivel/basico/Jardim/sabores_en.qmd
           - text: "Environmental"
             href: nivel/basico/Jardim/ambiental_en.qmd
