@@ -55,6 +55,9 @@ a:hover {
 .navbar-brand {
   height: 48px !important;  /* ou 40px, 48px, etc. */
   margin-right: 0px;
+  margin-left: 0px !important;    /* Remove espaço à esquerda */
+  margin-right: 0.5rem !important;  /* Pequeno respiro à direita, opcional */
+  padding-left: 0 !important;
 }
 
 
@@ -66,7 +69,7 @@ a:hover {
   border-bottom: 1px solid #379CD4;
 }
 
-/* ############## Cores de separação Superior e Básico ########*/
+/* ############## Cores de separação ########*/
 
 
 /* Aplica uma cor diferente aos itens da navbar, por ordem */
@@ -91,24 +94,10 @@ a:hover {
 }
 
 .navbar-nav > li:nth-child(5) > a {
-  background-color: #E57145; /* laranja - Ensino Básico */
+  background-color: #379CD4; /* laranja - Ensino Básico */
   color: white !important;
 }
 
-.navbar-nav > li:nth-child(6) > a {
-  background-color: #E57145; /* laranja - Ensino Básico */
-  color: white !important;
-}
-
-.navbar-nav > li:nth-child(7) > a {
-  background-color: #E57145; /* laranja - Ensino Básico */
-  color: white !important;
-}
-
-.navbar-nav > li:nth-child(8) > a {
-  background-color: #E57145; /* laranja - Ensino Básico */
-  color: white !important;
-}
 
 
 /* Bordas entre seções */
@@ -129,6 +118,16 @@ a:hover {
  /* text-decoration: underline; */
 }
 
+/* DESLOCAMENTO DA NAVBAR */
+
+/* Desloca os menus da navbar para a direita em 100px */
+.navbar-collapse {
+  margin-left: 2rem;
+
+}
+
+
+
 /* ########## HOVER mais destacado na navbar ##########
 
 /* Navbar - Estilo base */
@@ -139,15 +138,11 @@ a:hover {
   transition: background-color 0.2s ease-in-out;
 }
 
-/* Itens azuis - hover mais escuro */
-.navbar-nav > li:nth-of-type(1):hover > a,
-.navbar-nav > li:nth-of-type(2):hover > a,
-.navbar-nav > li:nth-of-type(3):hover > a {
-  background-color: #1e4e79 !important; /* azul escuro */
-  color: white !important;
-}
 
 /* Itens laranja - hover mais escuro */
+.navbar-nav > li:nth-of-type(1):hover > a,
+.navbar-nav > li:nth-of-type(2):hover > a,
+.navbar-nav > li:nth-of-type(3):hover > a,
 .navbar-nav > li:nth-of-type(4):hover > a,
 .navbar-nav > li:nth-of-type(5):hover > a {
   background-color: #cc4d1f !important; /* laranja escuro */
@@ -187,14 +182,27 @@ a:hover {
 .navbar {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+  height: 64px !important;     /* ou 72px, 80px, etc. */
   min-height: 40px; /* Altura mínima */
 }
+
+/* ############## LOGO DO SITE ################# */
 
 .navbar-brand,
 .navbar-nav .nav-link {
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
-  font-size: 0.95rem; /* Fonte um pouco menor (opcional) */
+  font-size: 1.1rem; /* tamanho de fonte */
+}
+/* 1rem	padrão (16px)
+1.1rem	~17.6px
+1.2rem	~19.2px
+1.3rem	~20.8px */
+
+/* ############ DISTÂNCIA DE ÍCONES DA NAVBAR - DIREITA ###### */
+
+.navbar .navbar-collapse .navbar-nav:last-child {
+  margin-right: 1rem;  /* ou 20px, 32px, etc. */
 }
 
 
@@ -210,11 +218,13 @@ a:hover {
   flex-direction: row;
 }
 
+
+
 /* ######################  SIDEBAR (menu lateral)  ##################### */
 
 /*  Cores de blocos e plano de fundo individuais
 
-/*  BLOCO 1: bioQuanti */
+/*  BLOCO 1: JSPLOTLY */
 /* Fundo laranja com links azuis e hover laranja escuro */
 .sidebar-item-section:nth-of-type(1) {
   background-color: #E57145 !important; /* laranja */
@@ -250,7 +260,7 @@ a:hover {
 
 
 
-/* BLOCO 2: Jmol & R no Ensino Básico (compacto como o bloco 1) */
+/* BLOCO 2: JMOL */
 .sidebar-item-section:nth-of-type(2) {
   background-color: #379CD4 !important;
   border-radius: 10px;
@@ -279,6 +289,113 @@ a:hover {
 
 .sidebar-item-section:nth-of-type(2) a:hover {
   background-color: #1e4e79 !important;
+  color: white !important;
+}
+
+
+/* BLOCO3:  R & RSTUDIO */
+
+/* Fundo laranja com links azuis e hover laranja escuro */
+.sidebar-item-section:nth-of-type(3) {
+  background-color: #E57145 !important; /* laranja */
+  color: white;
+  border-radius: 4px;
+  padding: 2px;
+  margin-bottom: 4px;
+}
+
+.sidebar-item-section:nth-of-type(3) .sidebar-section-title {
+  background-color: #2a6fb3 !important;  /* azul escuro no título apenas */
+  color: white !important;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+.sidebar-item-section:nth-of-type(3) a {
+  background-color: #379CD4 !important;  /* azul */
+  color: white !important;
+  display: block;
+  padding: 6px 10px;
+  margin-bottom: 4px;
+  border-radius: 4px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.sidebar-item-section:nth-of-type(3) a:hover {
+  background-color: #cc4d1f !important;  /* laranja escuro */
+  color: white !important;
+}
+
+
+/* BLOCO 4: SISMA */
+
+
+.sidebar-item-section:nth-of-type(4) {
+  background-color: #379CD4 !important;
+  border-radius: 10px;
+  padding: 2px; /* mesmo padding do bloco 1 */
+  margin-bottom: 4px;
+}
+
+.sidebar-item-section:nth-of-type(4) .sidebar-section-title {
+  background-color: #c6541d !important;
+  color: white !important;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.sidebar-item-section:nth-of-type(4) a {
+  background-color: #E57145 !important;
+  color: white !important;
+  display: block;
+  padding: 6px 10px;          /* igual ao bloco 1 */
+  margin-bottom: 4px;         /* igual ao bloco 1 */
+  border-radius: 4px;         /* igual ao bloco 1 */
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.sidebar-item-section:nth-of-type(4) a:hover {
+  background-color: #1e4e79 !important;
+  color: white !important;
+}
+
+
+/*  BLOCO 5: SCRIPTRPLOT */
+
+/* Fundo laranja com links azuis e hover laranja escuro */
+.sidebar-item-section:nth-of-type(5) {
+  background-color: #E57145 !important; /* laranja */
+  color: white;
+  border-radius: 4px;
+  padding: 2px;
+  margin-bottom: 4px;
+}
+
+.sidebar-item-section:nth-of-type(5) .sidebar-section-title {
+  background-color: #2a6fb3 !important;  /* azul escuro no título apenas */
+  color: white !important;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+.sidebar-item-section:nth-of-type(5) a {
+  background-color: #379CD4 !important;  /* azul */
+  color: white !important;
+  display: block;
+  padding: 6px 10px;
+  margin-bottom: 4px;
+  border-radius: 4px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.sidebar-item-section:nth-of-type(5) a:hover {
+  background-color: #cc4d1f !important;  /* laranja escuro */
   color: white !important;
 }
 
@@ -624,6 +741,7 @@ body {
     width: 100%;
 }
 
+
 .geo-fundo2 {
   background-color: #4682B4; /* Lilás Suave */
   padding: 15px;             /* Espaçamento interno */
@@ -633,8 +751,33 @@ body {
     width: 100%;
 }
 
+/* ######################################### */
 
+/* COR E QUADRO DE FUNDO PARA O JSPLOTLY - Superior*/
 
+/* Quadro do gráfico clicável */
+
+.jsplotly_sup-fundo {
+  background-color: #d8dbf9; /* Lilás Suave */
+  padding: 15px;             /* Espaçamento interno */
+    border-left: 5px solid #cbceee; /* Barra lateral  */
+    border-radius: 5px;        /* Bordas arredondadas */
+    margin-bottom: 0px;       /* Espaçamento inferior */
+    width: 100%;
+}
+
+/* Quadro de sugestões */
+
+.jsplotly_sup-fundo2 { 
+  background-color: #cbceee; /* Lilás Suave */
+  padding: 15px;             /* Espaçamento interno */
+    border-left: 5px solid #d8dbf9; /* Barra lateral  */
+    border-radius: 5px;        /* Bordas arredondadas */
+    margin-bottom: 0px;       /* Espaçamento inferior */
+    width: 100%;
+}
+
+/* ################################################### */
 
 /* Imagem de fundo pra Introdução do Jardim 
 
@@ -669,5 +812,3 @@ div.sourceCode {
 code, pre, kbd, samp {
   font-family: 'Fira Code', monospace;
 }
-
-

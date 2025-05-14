@@ -1,25 +1,41 @@
 ---
 title: ""
+publish: false
 ---
-
 
 ![](logo-bioquanti_fullname.png){width="40%" fig-align="left"}
 
 
-|     Implemented in October 2022, the **bioQuanti** website was designed to contribute to reproducible and self-instructional teaching. *Reproducible teaching* is understood to be an active teaching-learning methodology based on programming codes, inherited from Donald Knuth's concepts of [literate programming](https://academic.oup.com/comjnl/article-abstract/27/2/97/343244?login=true) and reproducible research, and aimed at producing and sharing dynamic documents and teaching objects. Originally conceived for the study of topics in *Quantitative Biochemistry* using programming codes, the site now has content for basic education, also based on programming languages.
+| Launched in October 2022, the **Bioquanti** website was designed to contribute to reproducible and self-instructional teaching. *Reproducible teaching* is understood as an active teaching-learning methodology based on programming codes, inherited from Donald Knuth's concepts of [literate programming](https://academic.oup.com/comjnl/article-abstract/27/2/97/343244?login=true) and *reproducible research*, and aimed at the production and sharing of *dynamic documents* and *teaching objects*. Originally designed for the study of topics in *Quantitative Biochemistry* with the aid of programming codes, the site now features content for basic education, also based on programming languages.
 
-|   In general, the website uses three programs, one for graphics, analysis and tables, simulations and animations ([R` & RStudio](https://bioquanti.netlify.app/uploads/biqbook/)), another for the study and three-dimensional visualization of atomic models ([Jmol](https://bioquanti.netlify.app/uploads/jmolbook/)), and a third for the dynamic observation of the structure and interaction of elements in networks ([SISMA](https://bioquanti.netlify.app/uploads/sismabook/)), this one developed at UNIFAL-MG. The detailed contents of the portal, as well as its application to higher education, can be seen [here](https://www.bioquimica.org.br/index.php/REB/article/view/1058). 
+| In general, the *website* addresses the use of four programs, two developed at UNIFAL-MG: *JSPlotly* for interactive graphics and *AI* simulation, and *SISMA* for dynamic observation of the structure and interaction of elements in networks. The other open-source programs include the use of the *R & RStudio* platform for graphics, analysis, tables, simulations, and animations, and *Jmol* for the study and three-dimensional visualization of atomic models. Part of the detailed content of the portal, as well as its application to higher education, can be viewed [here](https://www.bioquimica.org.br/index.php/REB/article/view/1058). 
 
-|   The portal has 4 freely distributed *ebooks* for studies in Biochemistry and related areas, namely: [Dynamic Visualization in Catalysis & Metabolism](http://dx.doi.org/10.13140/RG.2.2.25027.92964), [Quantitative Biochemistry & R](http://dx.doi.org/10.13140/RG.2.2.36090.40644), [Basic, People, Animal, and Plant Biochemistry](http://dx.doi.org/10.13140/RG.2.2.32623.55208), and [Jmol-Guided Structural Biochemistry](http://dx.doi.org/10.13140/RG.2.2.29268.10882). 
+| The portal has four freely distributed ebooks for studies in biochemistry and related areas, namely: [Dynamic Visualization in Catalysis & Metabolism](http://dx.doi.org/10.13140/RG.2.2.25027.92964), [Quantitative Biochemistry & R](http://dx.doi.org/10.13140/RG.2.2.36090.40644), and [Jmol-Guided Structural Biochemistry](http://dx.doi.org/10.13140/RG.2.2.29268.10882), all with codes for reproduction.
 
-|   The website was awarded 2nd place in the Bayardo Baptista Torres National Prize for Biochemistry and Molecular Biology Teaching, promoted by the Brazilian Society of Biochemistry and Molecular Biology (SBBq, 2023), and is listed as an open educational resource on the [eduCAPES portal](https://educapes.capes.gov.br/handle/capes/748598). 
+| The website also features the *ebook* [Basic Biochemistry, People, Animals, and Plants](/nivel/superior/biqTxT/index_txt_en.qmd), a basic text for undergraduate students in the field, for reference on various topics, but without code.
+\
 
-[![](logo_premioBayardo.png){width="15%"}](https://www2.sbbq.org.br/reuniao/reuniao-2023.html)
+## Recognition
 
-|   The site **bioQuanti** currently has higher education topics for Biochemistry, Physical Chemistry, Chemistry, Biophysics, Descriptive and Inferential Statistics, Experimental Planning, Linear Algebra, Integral Calculus, Differential Calculus, computational modeling, molecular modeling, among others; it has language aimed at university professors and researchers, and at undergraduate and postgraduate levels. 
+| The website was awarded 2nd place in the *Bayardo Baptista Torres National Award for Teaching Biochemistry and Molecular Biology*, held every two years since 2017 by the *Brazilian Society of Biochemistry and Molecular Biology* (SBBq, 2023), and is referenced as an open educational resource on the [eduCAPES portal](https://educapes.capes.gov.br/handle/capes/748598). Recently, a portable application for graphic and interactive simulation available on the website, *JSPlotly*, was awarded first place in the same award and is also available on [eduCAPES](https://educapes.capes.gov.br/handle/capes/972869). With equal honor and satisfaction, we were also classified in the *National Award* in its previous editions, this time for experimental work in teaching and learning.
 
-|   Also related to *Biochemistry*, the site has another ebook, [Bioquímica Básica, de Gente, de Bicho, e de Planta](nivel/superior/biqTxT/index_txt_en.qmd), this one without reproduction codes, and focused on an undergraduate overview to the area.
+::: {layout-ncol=5}
 
-### **BioQuanti** for High School
+[![](premio1lugar_bg.png)](https://www.bioquimica.org.br/index.php/REB/announcement/view/57)
 
-|   For a basic education, the site offers a range of instructional content and teaching objects for the final years of primary and secondary education. Its content has also been designed under the principles of *reproducible teaching* (RE) and involves interactive teaching objects for curricular content (*OIER*). The site has a tutorial on the practical use of *Jmol* for 3D molecules and interactivity, and another for *R in the RStudio* environment, for interactive graphics and maps. The tools are presented in their cloud versions, eliminating the need for installation or configuration, although there is guidance for installing the program on a machine. The tutorial is illustrated with examples taken from *MAPA (Pedagogical Support Material for Learning in Minas Gerais)*. The portal also offers a collection of interactive atomic models included in a *“Garden of Molecules”* and a repository for interactive graphics and maps such as OIERs. The *Garden of Molecules* is organized into classes, and has a collection of atomic models for visualization and three-dimensional study. 
+[![](premio2lugar_bg.png)](https://www2.sbbq.org.br/reuniao/reuniao-2023.html)
+
+[![](premio1lugar2019_bg.png)](https://www2.sbbq.org.br/reuniao/bayardo2019.html)
+
+[![](premio2lugar2017_bg.png)](https://www2.sbbq.org.br/reuniao/premiobayardo2017.html)
+:::
+
+| **Bioquanti** currently offers topics for higher education in biochemistry, although due to its quantitative nature, it also includes content on *physical chemistry, chemistry, biophysics, descriptive and inferential statistics, experimental design, linear algebra, integral calculus, differential calculus, computational modeling, molecular modeling, among others*; The language is geared toward university professors and researchers, as well as undergraduate and graduate students.
+\
+
+### **Bioquanti** for elementary and secondary education
+
+| For elementary and secondary education, the website offers a set of instructional content and teaching objects for the last years of elementary school and high school. Its content was also designed according to the principles of *reproducible teaching* (RT) and involves interactive teaching objects for curricular content (*OIER*). The website has a practical tutorial on using *Jmol* for 3D molecules and interactivity, and another for *R in the RStudio environment* for interactive graphics and maps. The tools are presented in their cloud versions, eliminating the need for installation or configuration, although there are instructions for installing the program on a computer. The tutorial is illustrated with examples taken from *MAPA (Pedagogical Support Material for Learning in Minas Gerais)*. The portal also provides a collection of interactive atomic models included in a *"Molecule Garden"* and a repository for interactive graphics and maps such as OIERs. The *Molecule Garden* is organized into classes and has a collection of atomic models for three-dimensional visualization and study. 
+
+
+

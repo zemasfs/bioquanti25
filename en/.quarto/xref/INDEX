@@ -412,5 +412,116 @@
   },
   "nivel/basico/Curso/jsplt_curso_en.qmd": {
     "jsplt_curso_en.html": "cf6ab6f3"
+  },
+  "jsplotly_bas_en.qmd": {
+    "jsplotly_bas_en.html": "ab8d42e1"
+  },
+  "nivel/basico/jsplotly/jsplotly_bas_en.qmd": {
+    "jsplotly_bas_en.html": "cd3cc19a"
+  },
+  "nivel/superior/ScriptRplot/scriptrplot_en.qmd": {
+    "scriptrplot_en.html": "78afde8f"
+  },
+  "nivel/superior/jsplotly/gsplotly_en.qmd": {
+    "gsplotly_en.html": "be102d6a"
+  },
+  "nivel/superior/jsplotly/jsptl_bioq_en.qmd": {
+    "jsptl_bioq_en.html": "0b4210dc"
+  },
+  "nivel/superior/jsplotly/jsplotly_geral_en.qmd": {
+    "jsplotly_geral_en.html": "8881d2db"
+  },
+  "nivel/basico/Curso/index_r_bas.qmd": {
+    "index_r_bas.html": "0fa21f82"
+  },
+  "nivel/basico/Curso/index_jmol_bas_en.qmd": {
+    "index_jmol_bas_en.html": "47a607f9"
+  },
+  "nivel/basico/R/index_r_bas_en.qmd": {
+    "index_r_bas_en.html": "b2e70074"
+  },
+  "nivel/basico/Curso/r_maisinteract.qmd": {
+    "r_maisinteract.html": "c504715f"
+  },
+  "nivel/basico/Curso/r_pacotes.qmd": {
+    "r_pacotes.html": "df39429d"
+  },
+  "nivel/basico/Curso/textoXmouse.qmd": {
+    "textoXmouse.html": "f3fcf62a"
+  },
+  "nivel/basico/Curso/jmol_uso.qmd": {
+    "jmol_uso.html": "d534bc62"
+  },
+  "nivel/basico/Curso/r_outros_plots.qmd": {
+    "r_outros_plots.html": "c6745fb4"
+  },
+  "nivel/basico/Curso/r_install.qmd": {
+    "r_install.html": "53aefd1f"
+  },
+  "nivel/basico/Curso/r_anim.qmd": {
+    "r_anim.html": "a4f22f03"
+  },
+  "nivel/basico/Curso/index_jmol_bas.qmd": {
+    "index_jmol_bas.html": "2b49e73a"
+  },
+  "nivel/basico/Curso/comandosJmol.qmd": {
+    "comandosJmol.html": "d61834f4"
+  },
+  "nivel/basico/Curso/r_mapas.qmd": {
+    "r_mapas.html": "cb2fea88"
+  },
+  "nivel/basico/Curso/jmol_curso_index.qmd": {
+    "jmol_curso_index.html": "5dfe1528"
+  },
+  "nivel/basico/Curso/jmol_oficina.qmd": {
+    "jmol_oficina.html": "dafcbe3a"
+  },
+  "nivel/basico/Curso/r_comandos.qmd": {
+    "r_comandos.html": "1523bf65"
+  },
+  "nivel/basico/Curso/r_plotly.qmd": {
+    "r_plotly.html": "2ecbd3f8"
+  },
+  "nivel/basico/Curso/index_r_bas_en.qmd": {
+    "index_r_bas_en.html": "37fcd0a3"
+  },
+  "nivel/basico/Curso/anima_Jmol.qmd": {
+    "anima_Jmol.html": "d0c59660"
+  },
+  "nivel/basico/Curso/r_install_en.qmd": {
+    "r_install_en.html": "eef94604"
+  },
+  "nivel/basico/Curso/r_comandos_en.qmd": {
+    "r_comandos_en.html": "574fb236"
+  },
+  "nivel/basico/Curso/jmol_oficina_en.qmd": {
+    "jmol_oficina_en.html": "bd29aa12"
+  },
+  "nivel/basico/Curso/jmol_curso_index_en.qmd": {
+    "jmol_curso_index_en.html": "58231f0d"
+  },
+  "nivel/basico/Curso/textoXmouse_en.qmd": {
+    "textoXmouse_en.html": "2bfaf3c4"
+  },
+  "nivel/basico/Curso/jmol_uso_en.qmd": {
+    "jmol_uso_en.html": "13b91703"
+  },
+  "nivel/basico/Curso/anima_Jmol_en.qmd": {
+    "anima_Jmol_en.html": "523eb171"
+  },
+  "nivel/basico/Curso/r_pacotes_en.qmd": {
+    "r_pacotes_en.html": "d4c99e3e"
+  },
+  "nivel/basico/Curso/r_maisinteract_en.qmd": {
+    "r_maisinteract_en.html": "3fd31bb5"
+  },
+  "nivel/basico/Curso/r_plotly_en.qmd": {
+    "r_plotly_en.html": "85116bbe"
+  },
+  "nivel/basico/Curso/r_mapas_en.qmd": {
+    "r_mapas_en.html": "1af1d1ba"
+  },
+  "nivel/basico/Curso/r_anim_en.qmd": {
+    "r_anim_en.html": "205cf234"
   }
 }

@@ -90,10 +90,10 @@ datLQC <-data.frame(x,yLin,yQuad,yCub) # criação da planilha de dados
 
 ```{r}
 plot_ly(datLQC, x = ~x, y = ~yLin, type = "scatter", mode = "line", name = "Linear") %>%
-  add_trace(x = ~x, y = ~yQuad, mode = "line", name = "Quadrático") %>%
-  add_trace(x = ~x, y = ~yCub, mode = "line", name = "Cúbico") %>%
+  add_trace(x = ~x, y = ~yQuad, mode = "line", name = "Quadratic") %>%
+  add_trace(x = ~x, y = ~yCub, mode = "line", name = "Cubic") %>%
   layout(
-    title = "Gráficos de potência",
+    title = "Power Graphs",
     xaxis = list(title = "x"),
     yaxis = list(title = "x^n"),
     updatemenus = list(

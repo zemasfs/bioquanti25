@@ -46,4 +46,4 @@ knitr::kable(tabela2, "pipe",
 ## *ERЯƎ* ... {.unnumbered}
 \
 
-|     O acrônimo ERЯƎ sugere as iniciais para *Ensino Reprodutível*, com disposição das fontes em palíndromo, e com a clara intenção de sugerir o exercício do *erro libertário*. Também intenciona um arranjo lúdico à analogia de princípios de desenvolvimento responsável e sustentável dos *3 Rs*. Aqui, por tratar-se de códigos para conteúdos em *ER*, com o significado de *reutilizar (cópia), e reciclar (alteração) ou reinventar (recriação)*.
+|     O acrônimo ERЯƎ sugere as iniciais para *Ensino Reprodutível*, com disposição das fontes em palíndromo, e com a clara intenção de sugerir o exercício do *erro libertário*. Também intenciona um arranjo lúdico à analogia de princípios de desenvolvimento responsável e sustentável dos *3 Rs*. Aqui, por tratar-se de códigos para conteúdos em *ER*, com o significado de *reutilizar (cópia), e reciclar (alteração) ou reinventar (recriação)*. Ah! E os olhinhos no "RЯ"...apenas para associar a sabedoria da coruja, ou o foco e precisão de uma ave de rapina ! 
