@@ -13,9 +13,9 @@ website:
 
   sidebar:
     contents:
-      - section: "JSPlotly & GSPlotly - simulação interativa por IA"
+      - section: "JSPlotly & GSPlotly - Simulação gráfica interativa & IA"
         contents:
-          - text: "JSPlotly - simulação por gráficos em JavaScript"
+          - text: "JSPlotly - Simulação gráfica com JavaScript"
             href: nivel/superior/jsplotly/jsplotly_geral.qmd
           - text: "GSPlotly - gerador de códigos por IA para JSPlotly"
             href: nivel/superior/jsplotly/gsplotly.qmd
@@ -31,12 +31,12 @@ website:
             href: nivel/superior/jmol/index_jmol.qmd
           - text: "Moléculas 3D na Escola"
             href: nivel/basico/Curso/index_jmol_bas.qmd
-          - text: "Jardim de Moléculas"
+          - text: "Um Jardim de Moléculas"
             href: nivel/basico/Jardim/index_Jardim.qmd
 
-      - section: "R - cálculos e visualizações"
+      - section: "R - Cálculos e visualizações"
         contents:
-          - text: "Cálculos e gráficos em Biofísico-química"
+          - text: "R em Biofísico-química"
             href: nivel/superior/r/index_r.qmd
           - text: "scriptRplot: gráficos elegantes com ggplot2"
             href: nivel/superior/ScriptRplot/scriptrplot.qmd
@@ -65,28 +65,6 @@ website:
       - text: "Ensino Reprodutível"
         id: bas-menu
         href: erre.qmd
-        # menu: 
-        #   - text: "ER"
-        #     href: erre.qmd
-        #   - text: "Características de ER"
-        #     href: "#"
-         
-      # - text: "Ferramentas"
-      #   id: sup-menu
-      #   href: ferramentas.qmd
-        # menu: 
-        #   - text: "Possibilides"
-        #     href: "#"
-        #   - text: "Objetos"
-        #     href: "#"
-            
-      # - text: "Ensino Básico"
-      #   id: bas-menu
-      #   # menu: 
-      #   #   - text: "Possibilidades"
-      #   #     href: "#"
-      #   #   - text: "Exemplos"
-      #   #     href: "#"
 
       - text: "Produção"
         href: producao.qmd

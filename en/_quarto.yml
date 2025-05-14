@@ -13,9 +13,9 @@ website:
 
   sidebar:
     contents:
-      - section: "JSPlotly & GSPlotly - interactive simulation by AI"
+      - section: "JSPlotly & GSPlotly - Interactive Graphics & AI"
         contents:
-          - text: "JSPlotly - simulation using JavaScript graphics"
+          - text: "JSPlotly - Graphical simulation with JavaScript"
             href: nivel/superior/jsplotly/jsplotly_geral_en.qmd
           - text: "GSPlotly - AI code generator for JSPlotly"
             href: nivel/superior/jsplotly/gsplotly_en.qmd
@@ -27,18 +27,18 @@ website:
             
       - section: "Jmol - 3D molecules"
         contents:
-          - text: "Atomic models in biochemistry"
+          - text: "Atomic models in Biochemistry"
             href: nivel/superior/jmol/index_jmol_en.qmd
-          - text: "3D molecules at school"
+          - text: "3D molecules at School"
             href: nivel/basico/Curso/index_jmol_bas_en.qmd
-          - text: "Molecule Garden"
+          - text: "A Molecule Garden"
             href: nivel/basico/Jardim/index_Jardim_en.qmd
 
-      - section: "R - calculations and visualizations"
+      - section: "R - Maths and visualization"
         contents:
-          - text: "Calculations and graphs in Biochemical Physics"
+          - text: "R in Biochemical Physics"
             href: nivel/superior/r/index_r_en.qmd
-          - text: "scriptRplot: gráficos elegantes com ggplot2"
+          - text: "scriptRplot: elegant graphics with ggplot2"
             href: nivel/superior/ScriptRplot/scriptrplot_en.qmd
           - text: "R & RStudio at School"
             href: nivel/basico/Curso/index_r_bas_en.qmd
@@ -48,10 +48,9 @@ website:
 
       - section: "Sisma - dynamic diagrams"
         contents:
-          - text: "Dynamic flows in biochemistry"
+          - text: "Dynamic flows in Biochemistry"
             href: nivel/superior/sisma/index_sisma_en.qmd
-          - text: "Diagramas interativos na Escola"
-            href: "#"
+
 
   navbar:
     search: true
