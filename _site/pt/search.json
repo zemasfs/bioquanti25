@@ -652,8 +652,8 @@
     "text": "Para ilustrar o potencial de uso do JSPlotly para Bioquímica e áreas correlatas, seguem alguns exemplos de simulações e cujos gráficos são frequentemente encontrados em livros-texto e conteúdos afins. Para um melhor aproveitamento de cada tema, experimente seguir as sugestões para manipulação paramétrica em cada tema.",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa por IA",
-      "Simulações em Bioquímico-física"
+      "JSPlotly & GSPlotly - Simulação gráfica interativa & IA",
+      "Simulações em Biofísico-química"
     ]
   },
   {
@@ -664,8 +664,8 @@
     "text": "Instruções\n\n1. Escolha um tema;\n2. Clique no gráfico correspondente;\n3. Clique em \"Add Plot\";\n4. Use o mouse para interatividade e/ou edite o código. \n\nLembrete: o editor usa desfazer/refazer infinitos no código (Ctrl+Z / Shift+Ctrl+Z) !",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa por IA",
-      "Simulações em Bioquímico-física"
+      "JSPlotly & GSPlotly - Simulação gráfica interativa & IA",
+      "Simulações em Biofísico-química"
     ]
   },
   {
@@ -676,8 +676,8 @@
     "text": "1 Equilíbrio ácido-básico e sistema tampão\n\nContexto:\n  O exemplo ilustra a adição de base num sistema contendo um ácido fraco e sua base conjugada. A equação de titulação refere-se a um ácido triprótico, o ácido fosfórico do tampão homônimo, mas serviria igualmente para outros tantos, como os presentes no ciclo de Krebs (citrato, isocitrato).\n\n\nEquação:\n\\[\nfa= \\frac{1}{1 + 10^{pKa1 - pH}} + \\frac{1}{1 + 10^{pKa2 - pH}} + \\frac{1}{1 + 10^{pKa3 - pH}}\n\\] Onde, fa = fração de ácido (grupos protonáveis)\n\n\n\n\n\nSugestão:\n\n\"A. Convertendo a curva de tampão fosfato (triprótico) para tampão bicarbonato (diprótico)\"\n\n1. Altere os valores de pKa para o tampão bicarbonato: pKa1 =      6.1, e pKa2 = 10.3;\n2. Coloque um valor muito grande para pKa3 (ex:1e20). \n3. Clique em \"add plot\".\n\nExplicação: pKa é um termo que representa o logaritmo de uma constante de dissociação (-log[Ka]). Com um valor extremo, o denominador torna-se igualmente imenso, anulando o termo que leva pKa3. Em JavaScript e outras linguagens, \"e\" representa a notação para potência de 10.\n\n\"B. Convertendo a curva de tampão bicarbonato para acetato\"\n\n1. Basta repetir o procedimento acima, com pKa1 = 4.75, e eliminando-se pKa2.",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa por IA",
-      "Simulações em Bioquímico-física"
+      "JSPlotly & GSPlotly - Simulação gráfica interativa & IA",
+      "Simulações em Biofísico-química"
     ]
   },
   {
@@ -688,8 +688,8 @@
     "text": "2 Rede de carga líquida em peptídios\n\nContexto:\n  O código refere-se à rede de carga líquida presente numa sequência qualquer de resíduos de aminoácidos. Aqui é ilustrada a angiotensina II, importante peptídio para regulação da pressão arterial e equilíbrio eletrolítico, e cuja enzima conversora está associada ao mecanismo de invasibilidade celular por SARS-CoV-2.\n\n\nEquação:\n  Para essa simulação não há uma equação direta, já que o algoritmo precisa decidir a carga em função da natureza básica ou ácido do resíduo em determinado valor de pH (observe o script). Assim:\n\\[\nq =\n\\begin{cases}\n-\\dfrac{1}{1 + 10^{pK_a - pH}} & \\text{(grupo ácido)} \\\\\\\\\n\\dfrac{1}{1 + 10^{pH - pK_a}} & \\text{(grupo básico)}\n\\end{cases}\n\\]\n\nOnde,\n\npKa = valor do antilogarítmo de base 10 para a constante de equilíbrio de dissociação do ácido, Ka (ou log[Ka]).\n\n\n\n\n\nSugestão:\n\n1. Selecione a sequência peptídica abaixo, e observe a distribuição de cargas:\n  \n\"Ala,Lys,Arg,Leu,Phe,Glu,Cys,Asp,His\"\n\n2. Simule a condição de pH do estômago (\"const pH = 1.5\"), e verifique a alteração de cargas no peptídio. \n\n3. Selecione um peptídio fisiológico (oxitocina, por ex), observe sua carga no sangue (pH 7.5), e reflita sobre seu potencial de interação eletrostática com componentes celulares.\n\n\"Cys,Tyr,Ile,Gln,Asn,Cys,Pro,Leu,Gly\"  - oxitocina",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa por IA",
-      "Simulações em Bioquímico-física"
+      "JSPlotly & GSPlotly - Simulação gráfica interativa & IA",
+      "Simulações em Biofísico-química"
     ]
   },
   {
@@ -700,8 +700,8 @@
     "text": "3 Interação de oxigênio com mioglobina e hemoglobina\n\nContexto:\n  A molécula de oxigênio pode combinar-se ao grupo heme de mioglobina e hemoglobina de forma distinta, em função da cooperatividade exibida nesta última frente à sua estrutura quaternária. O modelo que segue exemplica essa interação, por uso da equação de Hill.\n\n\nEquação:\n\\[\nY= \\frac{pO_2^{nH}}{p_{50}^{nH} + pO_2^{nH}}\n\\]\n\nOnde\nY = grau de saturação de oxigênio na proteína;\n\npO\\(_{2}\\) = pressão de oxigênio;\np\\(_{50}\\) = pressão de oxigênio a 50% de saturação;\nnH = coeficiente de Hill para a interação;\n\n\n\n\n\n\nSugestão:\n\n1. Rode o aplicativo (\"add plot\"). Veja que o valor de \"nH\" da constante de Hill é \"1\", ou seja, sem efeito de cooperatividade.\n\n2. Agora substitua o valor de \"nH\" pelo coeficiente de Hill para a hemoglobina, 2.8, e rode novamente !",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa por IA",
-      "Simulações em Bioquímico-física"
+      "JSPlotly & GSPlotly - Simulação gráfica interativa & IA",
+      "Simulações em Biofísico-química"
     ]
   },
   {
@@ -712,8 +712,8 @@
     "text": "4 Ponto Isoelétrico em Proteínas\n\nContexto:\n  O script para esta simulação baseia-se na distribuição da rede de cargas para um polieletrólito, e a identificação do valor de pH em que essa rede é nula, ou seja o ponto isoelétrico (ou isoiônico), pI. O exemplo utiliza a sequência primária da lisozima, hidrolase que atua no rompimento da parede microbiana.\n\n\nEquação:\n\\[\nq_{\\text{net}}(pH) = \\sum_{i=1}^{N} \\left[ n_i \\cdot q_{B_i} + \\frac{n_i}{1 + 10^{pH - pK_{a_i}}} \\right]\n\\]\nOnde,\n\nqnet = carga líquida total;\nqB$_{i} = carga da forma básica para o resíduo i (por exemplo, +1 para Lys, 0 para Asp);\nn\\(_{i}\\) = número de grupos do resíduo i.\n\n\n\n\nSugestão:\n\n\"Descobrindo o pI para outras proteínas\"\n\n1. Pode-se verificar a titulação de qualquer outra proteína ou sequência peptídica por simples substituição da sequência primária contida no código. Uma forma ascertiva de realizar essa substituição envolve:\n  a. Procurar a sequência \"FASTA\" da proteína no NCBI (\"https://www.ncbi.nlm.nih.gov/protein/\") - ex: \"papain\";\n  b. Clicar em \"FASTA\" e copiar a sequência 1a. obtida;\n  c. Colar a sequência num site para quantificação de resíduos (ex: \"https://www.protpi.ch/Calculator/ProteinTool\");\n4. Substituir a sequência no código.",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa por IA",
-      "Simulações em Bioquímico-física"
+      "JSPlotly & GSPlotly - Simulação gráfica interativa & IA",
+      "Simulações em Biofísico-química"
     ]
   },
   {
@@ -724,8 +724,8 @@
     "text": "5 Catálise e inibição enzimática\n\nContexto:\n  A simulação visa oferecer uma equação geral para estudos de inibição enzimática, que contemple os modelos competitivo, incompetitivo e competitivo (puro ou misto), também permitindo o estudo de catálise enzimática na ausência de inibidor.\n\nEquação:\n\\[\nv=\\frac{Vm*S}{Km(1+\\frac{I}{Kic})+S(1+\\frac{I}{Kiu})}\n\\]\nOnde\n\nS = teor de substrato para reação;\nVm = velocidade limite da reação (nos livros, velocidade máxima);\nKm = constante de Michaelis-Mentem;\nKic = constante de equilíbrio de dissociação de inibidor para modelo competitivo;\nKiu = constante de equilíbrio de dissociação de inibidor para modelo incompetitivo\n\n\n\n\n\n\n\nSugestão:\n\n\"A. Catálise enzimática na ausência de inibidor.\"\n1. Basta rodar o aplicativo com a equação geral. Veja que os valores para Kic e Kiu estão elevados (1e20). Dessa forma, com \"constantes de dissociação\" alta, a interação do inibidor com a enzima é irrelevante, retornando o modelo à equação clássica de Michaelis-Mentem.\n2. Experimente alterar os valores de Vm e Km, comparando gráficos.\n3. Use o recurso de coordenadas geográficas da barra de ícones (\"Toggle Spike Lines\"), para consolidar o significado matemático de Km, bem como observar o efeito de valores distintos desse sobre a visualização do gráfico.\n\n\"B. Modelo de inibição competitiva.\"\n1. Para observar ou comparar o modelo michaeliano com o de inibição competitiva, basta substituir o valor de Kic para um número consistente (ex: Kic= 3).\n\n\"C. Modelo de inibição incompetitiva.\"\n1. A mesma sugestão acima serve para o modelo incompetitivo, desta vez substituindo o valor para Kiu.\n \n\"D. Modelo de inibição não competitiva pura.\"\n1. Neste modelo, a simulação dá-se por valores iguais para Kic e Kiu.\n\n\"E. Modelo de inibição não competitiva mista.\"\n1. Para este modelo, basta alocar valores distintos para Kic e Kiu.",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa por IA",
-      "Simulações em Bioquímico-física"
+      "JSPlotly & GSPlotly - Simulação gráfica interativa & IA",
+      "Simulações em Biofísico-química"
     ]
   },
   {
@@ -736,8 +736,8 @@
     "text": "6 Estabilidade termodinâmica de ácidos nucleicos\n\nContexto:\n  Diversos fatores contribuem para a estabilidade termodinâmica de biopolímeros, estabilizantes ou desestabilizantes. Esta simulação trata de uma curva de desnaturação térmica para DNA na presença ou não de alguns desses compostos: trealose (osmólito estabilizante), e cloreto de guanidina (desestabilizante).\n\n\nEquação:\n\\[\ny(T) = \\frac{1}{1 + e^{-\\frac{T - T_m}{\\beta}}}\n\\]\nOnde,\n\ny(T): fração de DNA desnaturado a uma dada temperatura T;\nTm: temperatura de transição (melting, temperatura para 50% das moléculas em fita dupla, e 50% em fita simples);\n\\(\\beta\\): parâmetro que ajusta a inclinação da curva (afetado por trehalose e guanidina).\n\nObs:\n\nTrehalose como estabilizante (reduz \\(\\beta\\));\nGuanidina como desnaturante (aumenta \\(\\beta\\));\n\n\n\n\nSugestão:\n\n1. Experimente testar várias condições envolvidas na simulação, como:\n  a) variação de Tm;\n  b) variação do parâmetro $\\beta$;\n  c) variação do teor de trealose;\n  d) variação do teor de cloreto de guanidina.",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa por IA",
-      "Simulações em Bioquímico-física"
+      "JSPlotly & GSPlotly - Simulação gráfica interativa & IA",
+      "Simulações em Biofísico-química"
     ]
   },
   {
@@ -748,8 +748,8 @@
     "text": "7 Equação de van der Waals para gases ideais\n\nContexto:\n  Uma adaptação que relaciona as quantidades termodinâmicas de pressão, volume e temperatura para gases ideais, é a equação de van der Waals. Nessa são computados coeficientes que estimam a existência de um volume e de interações inter-partículas. Dessa forma, a equação de van der Waals corrije a de gases ideais considerando um termo para compensação de forças intermoleculares (a/V\\(^{2}\\)) e o volume disponível, esse descontando o volume ocupado pelas próprias moléculas do gás.\n  Na simulação é oferecida uma interatividade adicional pela presença de sliders (controles deslizantes) para temperatura, e para os coeficientes de volume finito (b) e interação entre partículas (a).\n\n\nEquação:\n\\[\nP = \\frac{RT}{V - b} - \\frac{a}{V^2}\n\\]\n\nP = pressão do gás (atm);\nV = volume molar (L);\nT = temperatura (K);\nR = 0,0821 = constante dos gases ideais (L·atm/mol·K);\na = constante de atração intermolecular (L\\(^{2}\\)·atm/mol$^{2})\nb = constante de volume excluído (L/mol)\n\n\n\n\nSugestão:\n\n1. Experimente variar os parâmetros da equação por meio do \"slider\" para temperatura, bem como para os coeficientes \"a e b\".\n2. Discorra sobre qual dos coeficientes possui maior efeito no perfil da curva, e a razão para isso.",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa por IA",
-      "Simulações em Bioquímico-física"
+      "JSPlotly & GSPlotly - Simulação gráfica interativa & IA",
+      "Simulações em Biofísico-química"
     ]
   },
   {
@@ -760,8 +760,8 @@
     "text": "8 Equilíbrio de produção de ATP a partir de reagentes, temperatura, e pH\n\nContexto:\n  A produção de ATP intracelular envolve a relação clássica de equilíbrio químico entre reagentes e produtos em função da temperatura de reação, e ajustada para determinado valor de pH. Variando-se um e/ou outro teor de reagente, ou parâmetro físico-químico, é possível quantificar o produto pela reação termodinâmica que segue:\n\n\nEquação:\n\\[\n\\Delta G = \\Delta G^{\\circ'} + RT \\ln\\left(\\frac{[\\text{ADP}] \\cdot [\\text{P}_i]}{[\\text{ATP}]}\\right) + 2{,}303 \\cdot RT \\cdot n_H \\cdot \\text{pH}\n\\]\nOnde,\n\n\\(\\Delta\\)G = energia de Gibbs da reação (positivo para síntese espontaneamente desfavorável, kJ/mol);\n\\(\\Delta\\)G\\(^{o'}\\) = 30,5 kJ/mol energia de Gibbs padrão biológica para a síntese de ATP;\nR = 8,314 J/mol/K (constante geral dos gases);\nT=310 K (temperatura fisiológica);\nnH\\(^{+}\\) = 1 (número de prótons envolvidos na reação);\n[ADP], [Pi], [ATP] = concentrações molares de reagentes e produto\n\n\n\n\nSugestão:\n\n1. Altere as quantidades envolvidas na expressão, e compare com visualizações precedentes. Exemplificando, temperatura, pH, e teores de ADP e Pi.",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa por IA",
-      "Simulações em Bioquímico-física"
+      "JSPlotly & GSPlotly - Simulação gráfica interativa & IA",
+      "Simulações em Biofísico-química"
     ]
   },
   {
@@ -772,7 +772,7 @@
     "text": "ScriptRplot, uma corruptela para script com R para a produção de plots, permite a produção de gráficos com o pacote ggplot2 do R por comandos de texto, embora sem o conhecimento da sintaxe da linguagem ou do pacote.\nDiferentemente da sintaxe convencional de programação de R e do sistema gráfico do pacote, o ScriptRplot oferece ao usuário os ajustes necessários à plotagem em linguagem natural. Não obstante, também fornece a linha completa de comandos para a compilação do gráfico pretendido.\n### Estrutura de camadas para o ScriptRplot\n\n1. Data load - carregamento de dados;\n2. Reshape - conversão facultativa de dados de formato Wide para Long exigido pelo pacote;\n3. Preamble - transformações prévias no conjuto de dados (atualmente, somente uma conversão facultativa de variável numérica em categórica);\n4. Dataset- atribuição de variáveis dependente e independente\n5. Grouping - atribuição de variável de grupo;\n6. Error bar - barra de erros e formatação;\n7. Symbol - tipo e atribuições para símbolos;\n8. Line - tipo e atribuições para linhas;\n9. Curve - linhas matemáticas de tendência e formatação;\n10. Other plots - atribuições facultativas para barras, histogramas, gráfico de matriz de dados, simulação de curvas matemáticas, e apresentação de paineis;\n11. Axis - atribuição dos eixos (primário e secundário);\n12. Linhas - adição e formatação de linhas verticais e horizontais;\n13. Zoom - nível de cobertura dos eixos do gráfico;\n14. Additional colour scale - paletas adicionais de cores;\n15. Additional expression - expressões aditivas facultativas;\n16. Legend - formatação de legendas;\n17. Caption - formatação de rótulos (títulos, subtítulos);\n18. Text - inserção e posicionamento de texto;\nComponentes gráficos para o ScriptRplot junto à gramática de gráficos do pacote gglot2 para R.\n\n\n\n\n\n\n\nElemento\nObjeto\nComando\n\n\n\n\nMapping\nmain\nggplot(data=dataset, mapping)\n\n\nTítulo e Legenda\ntitles\ntheme(plot.title = …, plot.caption = …)\n\n\nRótulos\nlabels\nlabs(x=…, y=…, title=…, …)\n\n\nBarras de erro\nerror_bar\ngeom_errorbar(… aes(ymin=y-error_down, ymax=y+error_up))\n\n\nLegenda\nplot_legend\ntheme(legend.title=…, legend.position=…, …)\n\n\nGuias\nlegend_guide\nguides(colour=…, size=…, …)\n\n\nAnotação de texto\nannotation\nannotate(“text”, x=…, y=…, label=…, parse=TRUE)\n\n\nValores dos eixos\naxis_values\ntheme(axis.text.x=…, axis.text.y=…)\n\n\nRótulos dos eixos\naxis_labels\ntheme(axis.title.x=…, axis.title.y=…)\n\n\nZoom\naxis_lim\ncoord_cartesian(xlim=c(x_min,x_max), ylim=c(y_min,y_max))\n\n\nLinha horizontal\nline_add_horiz\ngeom_hline(yintercept=…, …)\n\n\nLinha vertical\nline_add_vert\ngeom_vline(xintercept=…, …)\n\n\nLinha inclinada\nline_add_incl\ngeom_abline(intercept=…, slope=…, …)\n\n\nTipo 1 - Todos os pontos\ntype_allpoints\nallpoints(shape=…, colour=…, …)\n\n\nTipo 2 - Agrupamento\ntype_group\ngrouping(stroke=…, aes(shape=…, …))\n\n\nResumo estatístico\nsummary_stats\nstat_summary(fun.data=…, fun=…, …)\n\n\nLinha 1 - Todos os pontos\nline_all\ngeom_line(size=…, alpha=…, …)\n\n\nLinha 2 - Agrupamento\nline_group\ngeom_line(size=…, aes(…))\n\n\nCurva 1 - Todos os pontos\ncurve_all\ngeom_smooth(data=subset(…), method=…, aes(…))\n\n\nCurva 2 - Agrupamento\ncurve_group\ngeom_smooth(data=subset(…), method=…, aes(…))\n\n\nBarra/Histograma\nbar_hist\nhist_bar(stat=…, bins=…, aes(…))\n\n\nSimulação\nsimul\nsimulation(fun=…, geom=…, …)\n\n\nComando Principal\np_main\nmain + theme_plot + … + bar_hist + …\n\n\nComplementos\np\np_main + axis_inversion + … + simul + legend_inversion",
     "crumbs": [
       "Sobre",
-      "R - cálculos e visualizações",
+      "R - Cálculos e visualizações",
       "scriptRplot: gráficos elegantes com ggplot2"
     ]
   },
@@ -784,7 +784,7 @@
     "text": "Código-fonte para o ScriptRplot\n  Segue o código para livre distribuição e adaptação junto ao ScriptRplot. O código permite a construção de um gráfico a partir de dados carregados pelo usuário no próprio script, e fornecidos abaixo. Lembre-se: é necessário que os dados para o gráfico estejam no mesmo diretório de sessão do RStudio, e juntamente ao script.\n\nDownload\nScriptRplot versão 1.0\nDados para o gráfico\n\n  Quando compilado, o script resulta no gráfico que segue, para visualização da atividade cinética em ensaio de inibição com puromicina.\n  Observe que o gráfico apresenta a inserção de 1) dados multivariados, com 2) símbolos e 3) espessura definida, 4) tipos distintos, 5) preenchimento e 6) cores distintas para cada subconjunto, 7) barras de erro, 8) disposição em painel, 9) configuração e tema específicos, e 10) ajuste não linear em subconjuntos para cada nível dos dados, e por equação introduzida pelo usuário.\n\n\n\nSaída gráfica do ScriptRplot (versão 1.0) para os dados atividade enzimática sob ação do antibiótico puromicina.\n\n\n  E o mais importante: à despeito da complexidade envolvida na visualização dos dados, o scriptRplot permite a construção do gráfico sem necessidade de conhecimento da sintaxe da linguagem R de programação, bem como do pacote envolvido (ggplot2). Dessa forma, basta “rodar” o script, embora seja plausível e desejável sua modificação. Todas essas características ímpares coadunam para a oferta de um Ensino Reprodutível voltado à construção de gráficos elegantes.",
     "crumbs": [
       "Sobre",
-      "R - cálculos e visualizações",
+      "R - Cálculos e visualizações",
       "scriptRplot: gráficos elegantes com ggplot2"
     ]
   },
@@ -796,7 +796,7 @@
     "text": "Notas de rodapé\n\n\nWickham, Hadley. “A layered grammar of graphics.” Journal of computational and graphical statistics 19.1 (2010): 3-28.↩︎",
     "crumbs": [
       "Sobre",
-      "R - cálculos e visualizações",
+      "R - Cálculos e visualizações",
       "scriptRplot: gráficos elegantes com ggplot2"
     ]
   },
@@ -1725,7 +1725,7 @@
     "href": "nivel/basico/Curso/r_maisinteract.html#emissão-de-co_2-e-o-efeito-estufa",
     "title": "Mais interatividade !",
     "section": "Emissão de CO\\(_{2}\\) e o efeito estufa",
-    "text": "Emissão de CO\\(_{2}\\) e o efeito estufa\n      As emissões de CO\\(_{2}\\) e outros gases pela queima de combustíveis fósseis tem grande responsabilidade sobre o efeito de estufa, incidindo diretamente sobre as alterações climáticas. Para reduzir essas emissões é necessário transformar a matriz energética atual, indústria e sistemas alimentares.\n\n\n      Para compreender a emissão de CO\\(_{2}\\) observada no Brasil no período de 1890 a 2022, execute o trecho de código que segue em um script do `R (ou seja, copie, cole, e execute), a partir da fonte Our World in Data.\n\n\n\n\n\nlibrary(readr) # biblioteca de importação de dados\nlibrary(dplyr) # biblioteca para uso do operador pipe \"%&gt;%\"\nlibrary(plotly)\n\n# Carregamento dos dados da internet\nurl &lt;- \"https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-data.csv\"\nco2_data &lt;- read.csv(url)\n\n# Filtragem dos dados para o Brasil usando subset()\nco2_brasil &lt;- subset(co2_data, country == \"Brazil\")\n\n# Criação do gráfico interativo com plot_ly\nco2_plot &lt;- plot_ly(data = co2_brasil, x = ~year, y = ~co2, type = 'scatter', mode = 'lines+markers') %&gt;%\n  layout(title = \"Emissões de CO2 no Brasil ao longo dos anos\",\n         xaxis = list(title = \"Ano\"),\n         yaxis = list(title = \"Emissão de CO2 (milhões de toneladas)\"))\n\n      Agora, a cereja do bolo. A inserção de um controle deslizante, para a seleção de faixas para um estudo mais focado.\n\nco2_plot %&gt;%\n  rangeslider()\n\n\n\n\n\n\n\n      Você pode copiar e colar os scripts na sequência para sua execução, ou apenas adicionar o comando rangeslider() com o operador pipe %&gt;% ao final.\n      Experimente agora posicionar o mouse num dos dois marcadores laterais do gráfico inferior, arrastando-o em seguida, e observe o resultado. O controle deslizante pode ser útil quando se deseja focar em determinada região do gráfico. Por exemplo, ajustar a emissão de CO\\(_{2}\\) para os últimos anos.\n\nAdicionando um menu suspenso\n      Menus suspensos (dropdown menu) permitem observar um gráfico diferente a cada opção selecionada. Para exemplificar esse recurso interativos, vamos primeiramente elaborar um conjunto de dados (dataframe) que possua a resposta linear, quadrática, e cúbica a uma variável independente, tal como segue:\n\nx = 1:10 # vetor da variável independente \"x\"\nyLin = x\nyQuad = x^2 # criação da variável dependente quadrática \nyCub = x^3 # criação da variável dependente cúbica \n\ndatLQC &lt;-data.frame(x,yLin,yQuad,yCub) # criação da planilha de dados\n\n      Agora podemos inserir o menu suspenso para opção das tendências matemáticas:\n\nplot_ly(datLQC, x = ~x, y = ~yLin, type = \"scatter\", mode = \"line\", name = \"Linear\") %&gt;%\n  add_trace(x = ~x, y = ~yQuad, mode = \"line\", name = \"Quadrático\") %&gt;%\n  add_trace(x = ~x, y = ~yCub, mode = \"line\", name = \"Cúbico\") %&gt;%\n  layout(\n    title = \"Gráficos de potência\",\n    xaxis = list(title = \"x\"),\n    yaxis = list(title = \"x^n\"),\n    updatemenus = list(\n      list(\n        buttons = list(\n          list(label = \"yLin\", method = \"update\", args = list(list(visible = c(TRUE, FALSE, FALSE)))),\n          list(label = \"yQuad\", method = \"update\", args = list(list(visible = c(FALSE, TRUE, FALSE)))),\n          list(label = \"yCub\", method = \"update\", args = list(list(visible = c(FALSE, FALSE, TRUE))))\n        )\n      )\n    )\n  )\n\n\n\n\n\n      Ainda que você possa achar meio complicado o trecho de código acima, apenas copie-o, cole-o num script, e execute-o. Isso exemplifica a essência inerente ao Ensino Reprodutível, desde a simples reprodução do código, até sua alteração e mesmo a criação de novos. Sentindo curiosidade, você pode alterar alguns termos do código acima, como as etiquetas (label, substitua um nome, por ex) que surgem no menu suspenso, o tipo de gráfico pretendido (substitua scatter por bar, por exemplo), ou o título do gráfico (title).\n\n\n      Em relação à interatividade produzida, adiciona-se às que já estavam presentes pelo comando plot_ly, a seleção do tipo de potência a representar pelo menu suspenso.\n\n\n      Assim como para vários pacotes do R, existe um número significativo de comandos e widgets interativos com o plotly, e que, nesse caso específico, daria “pano pra manga” pra uma obra literária isolada. Mas você pode consultar inúmeros sites sobre o plotly para um aprendizado mais abrangente, os links abaixo, e mesmo um livro online gratuito, com códigos e gráficos correlatos. Para observar a imensa riqueza de gráficos interativos, dê uma olhada no website do plotly para o R.\n\n\n\nGeral\nManual\nTutorial"
+    "text": "Emissão de CO\\(_{2}\\) e o efeito estufa\n      As emissões de CO\\(_{2}\\) e outros gases pela queima de combustíveis fósseis tem grande responsabilidade sobre o efeito de estufa, incidindo diretamente sobre as alterações climáticas. Para reduzir essas emissões é necessário transformar a matriz energética atual, indústria e sistemas alimentares.\n\n\n      Para compreender a emissão de CO\\(_{2}\\) observada no Brasil no período de 1890 a 2022, execute o trecho de código que segue em um script do `R (ou seja, copie, cole, e execute), a partir da fonte Our World in Data.\n\n\n\n\n\nlibrary(readr) # biblioteca de importação de dados\nlibrary(dplyr) # biblioteca para uso do operador pipe \"%&gt;%\"\nlibrary(plotly)\n\n# Carregamento dos dados da internet\nurl &lt;- \"https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-data.csv\"\nco2_data &lt;- read.csv(url)\n\n# Filtragem dos dados para o Brasil usando subset()\nco2_brasil &lt;- subset(co2_data, country == \"Brazil\")\n\n# Criação do gráfico interativo com plot_ly\nco2_plot &lt;- plot_ly(data = co2_brasil, x = ~year, y = ~co2, type = 'scatter', mode = 'lines+markers') %&gt;%\n  layout(title = \"Emissões de CO2 no Brasil ao longo dos anos\",\n         xaxis = list(title = \"Ano\"),\n         yaxis = list(title = \"Emissão de CO2 (milhões de toneladas)\"))\n\n      Agora, a cereja do bolo. A inserção de um controle deslizante, para a seleção de faixas para um estudo mais focado.\n\nco2_plot %&gt;%\n  rangeslider()\n\n\n\n\n\n\n\n      Você pode copiar e colar os scripts na sequência para sua execução, ou apenas adicionar o comando rangeslider() com o operador pipe %&gt;% ao final.\n      Experimente agora posicionar o mouse num dos dois marcadores laterais do gráfico inferior, arrastando-o em seguida, e observe o resultado. O controle deslizante pode ser útil quando se deseja focar em determinada região do gráfico. Por exemplo, ajustar a emissão de CO\\(_{2}\\) para os últimos anos.\n\nAdicionando um menu suspenso\n      Menus suspensos (dropdown menu) permitem observar um gráfico diferente a cada opção selecionada. Para exemplificar esse recurso interativos, vamos primeiramente elaborar um conjunto de dados (dataframe) que possua a resposta linear, quadrática, e cúbica a uma variável independente, tal como segue:\n\nx = 1:10 # vetor da variável independente \"x\"\nyLin = x\nyQuad = x^2 # criação da variável dependente quadrática \nyCub = x^3 # criação da variável dependente cúbica \n\ndatLQC &lt;-data.frame(x,yLin,yQuad,yCub) # criação da planilha de dados\n\n      Agora podemos inserir o menu suspenso para opção das tendências matemáticas:\n\nplot_ly(datLQC, x = ~x, y = ~yLin, type = \"scatter\", mode = \"line\", name = \"Linear\") %&gt;%\n  add_trace(x = ~x, y = ~yQuad, mode = \"line\", name = \"Quadratic\") %&gt;%\n  add_trace(x = ~x, y = ~yCub, mode = \"line\", name = \"Cubic\") %&gt;%\n  layout(\n    title = \"Power Graphs\",\n    xaxis = list(title = \"x\"),\n    yaxis = list(title = \"x^n\"),\n    updatemenus = list(\n      list(\n        buttons = list(\n          list(label = \"yLin\", method = \"update\", args = list(list(visible = c(TRUE, FALSE, FALSE)))),\n          list(label = \"yQuad\", method = \"update\", args = list(list(visible = c(FALSE, TRUE, FALSE)))),\n          list(label = \"yCub\", method = \"update\", args = list(list(visible = c(FALSE, FALSE, TRUE))))\n        )\n      )\n    )\n  )\n\n\n\n\n\n      Ainda que você possa achar meio complicado o trecho de código acima, apenas copie-o, cole-o num script, e execute-o. Isso exemplifica a essência inerente ao Ensino Reprodutível, desde a simples reprodução do código, até sua alteração e mesmo a criação de novos. Sentindo curiosidade, você pode alterar alguns termos do código acima, como as etiquetas (label, substitua um nome, por ex) que surgem no menu suspenso, o tipo de gráfico pretendido (substitua scatter por bar, por exemplo), ou o título do gráfico (title).\n\n\n      Em relação à interatividade produzida, adiciona-se às que já estavam presentes pelo comando plot_ly, a seleção do tipo de potência a representar pelo menu suspenso.\n\n\n      Assim como para vários pacotes do R, existe um número significativo de comandos e widgets interativos com o plotly, e que, nesse caso específico, daria “pano pra manga” pra uma obra literária isolada. Mas você pode consultar inúmeros sites sobre o plotly para um aprendizado mais abrangente, os links abaixo, e mesmo um livro online gratuito, com códigos e gráficos correlatos. Para observar a imensa riqueza de gráficos interativos, dê uma olhada no website do plotly para o R.\n\n\n\nGeral\nManual\nTutorial"
   },
   {
     "objectID": "nivel/basico/Jardim/aromas.html",
@@ -1750,7 +1750,7 @@
     "crumbs": [
       "Sobre",
       "Jmol - Moléculas em 3D",
-      "Jardim de Moléculas"
+      "Um Jardim de Moléculas"
     ]
   },
   {
@@ -1817,7 +1817,7 @@
     "text": "Para ilustrar o potencial de uso do JSPlotly para o ensino fundamental e médio, seguem alguns exemplos de simulações e cujos gráficos são frequentemente encontrados em livros-texto e conteúdos afins. Para um melhor aproveitamento de cada tema, experimente seguir as sugestões para manipulação paramétrica em cada tema.",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa por IA",
+      "JSPlotly & GSPlotly - Simulação gráfica interativa & IA",
       "Simulações na Escola"
     ]
   },
@@ -1829,7 +1829,7 @@
     "text": "Instruções\n\n1. Escolha um tema;\n2. Clique no gráfico correspondente;\n3. Clique em \"Add Plot\";\n4. Use o mouse para interatividade e/ou edite o código. \n\nLembrete: o editor usa desfazer/refazer infinitos no código (Ctrl+Z / Shift+Ctrl+Z) !",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa por IA",
+      "JSPlotly & GSPlotly - Simulação gráfica interativa & IA",
       "Simulações na Escola"
     ]
   },
@@ -1841,7 +1841,7 @@
     "text": "1 Matemática\n\nContexto - Trigonometria (EM13MAT306, EM13MAT308, EM13MAT307)\n  A simulação a seguir objetiva facilitar a visualização para alguns conceitos em trigonometria, seno, cosseno e tangente. O código permite usar um menu suspenso para cada função trigonométrica, bem como um slider para alterar a frequência em radianos.\n\n\nEquação:\n1. Função seno:\n\\[\ny = \\sin(\\omega x)\n\\]\n2. Função cosseno:\n\\[\ny = \\cos(\\omega x)\n\\]\n3. Função tangente:\n\\[\ny = \\tan(\\omega x)\n\\]\n\n\n\n\nSugestão:\n\n1. Selecione, alternativamente, a função seno, cosseno, e tangente, utilizando-se o \"menu suspenso\";\n2. Experimente o efeito de se alterar a frequência da função na barra deslizante (\"slider\");\n3. Sobreponha um gráfico de seno e um de cosseno para observar suas diferenças;\n4. Repita o mesmo para o gráfico de tangente.",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa por IA",
+      "JSPlotly & GSPlotly - Simulação gráfica interativa & IA",
       "Simulações na Escola"
     ]
   },
@@ -1853,7 +1853,7 @@
     "text": "2 Física\n\nContexto - Movimento de corpos (EM13CNT102):\n  O código a seguir ilustra a trajetória de um lançamento oblíquo com ângulo ajustável por uma barra deslizante (slider), útil para explorar os conceitos de cinemática.\n\n\nEquação:\n1. Equação geral\n\\[\ny(x) = x \\cdot \\tan(\\theta) - \\frac{g}{2 v_0^2 \\cos^2(\\theta)} \\cdot x^2\n\\]\nOnde:\n\ny(x): altura em função da distância horizontal;\nx: posição horizontal (m);\n\\(\\theta\\): ângulo de lançamento em relação à horizontal (radianos ou graus);\nv0: velocidade inicial do projétil (m/s);\ng: aceleração da gravidade (9,8 m/s²\\(^{2}\\))\n\n2. Tempo total de vôo:\n\\[\nt_{\\text{total}} = \\frac{2 v_0 \\sin(\\theta)}{g}\n\\]\n3. Posição Horizontal ao longo do tempo\n\\[\nx(t) = v_0 \\cos(\\theta) \\cdot t\n\\]\n\n\n\nSugestão:\n\n1. Veja que há uma barra deslizante para ângulos iniciais na simulação. Arraste a barra para outro ângulo e adicione o gráfico, comparando o efeito dessa modificação.\n2. Altere a velocidade inicial no código, e observe o efeito no gráfico.\n3. Simule uma \"condição lunar\" para a trajetória, e cuja gravidade é em torno de 1/6 a da Terra (~1.6 m/s²).",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa por IA",
+      "JSPlotly & GSPlotly - Simulação gráfica interativa & IA",
       "Simulações na Escola"
     ]
   },
@@ -1865,7 +1865,7 @@
     "text": "3 Química\n\nContexto - Capacidade Calorífica (EF09CI06, EM13CNT104, EM13CNT203)\n  A simulação que segue visa observar a relação entre o calor trocado (Q), a massa (m), a capacidade calorífica (c) e a variação de temperatura (\\(\\Delta\\)T).\n\n\nEquação:\n\\[\nQ = c \\cdot m \\cdot \\Delta T\n\\]\n\n\n\n\nSugestão:\n\n1. Experimente variar inicialmente a temperatura, sobrepondo alguns gráficos;\n2. Varie também a massa no editor de códigos, para comparação.",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa por IA",
+      "JSPlotly & GSPlotly - Simulação gráfica interativa & IA",
       "Simulações na Escola"
     ]
   },
@@ -1877,7 +1877,7 @@
     "text": "4 Biologia\n\nContexto - Modelo de Crescimento Populacional com Fase Lag (EM13CNT102)\n  Este modelo apresenta uma função logística que simula o crescimento populacional (microorganismos, células, por ex), acompanhado por um componente de retardo. Variando-se os parâmetros no editor, é possível estimar diversos perfis de crescimento populacional.\n\n\nEquação:\n\\[\nN(t) = \\frac{K}{1 + \\left(\\frac{K - N_0}{N_0}\\right) \\cdot e^{-r \\cdot A(t) \\cdot t}}, \\quad \\text{com } A(t) = \\frac{1}{1 + e^{-k(t - t_0)}}\n\\]\nOnde:\n\nK = capacidade de suporte ambiental;\nN0 = população inicial;\nr = taxa intrínseca de crescimento;\nA(t) = fator de ativação do crescimento com atraso (fase lag);\nt0 = ponto médio de transição entre fase lag e fase log;\nk = constante de suavidade do retardo (fixado como 0.5 no código)\n\n\n\n\nSugestão:\n\n1. Experimente variar os parâmetros da equação, combinando alguns, e comparando seus efeitos sobre os gráficos:\n  a. Capacidade de suporte;\n  b. População inicial;\n  c. Taxa de crescimento;\n  d. Retardo (fase lag);",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa por IA",
+      "JSPlotly & GSPlotly - Simulação gráfica interativa & IA",
       "Simulações na Escola"
     ]
   },
@@ -1889,7 +1889,7 @@
     "text": "5 Geografia\n\nContexto: Mapa do Brasil e Capitais (EM13CHS101, EM13CHS202, EM13CHS301)\n  Não apenas de equações vive o JSPlotly ! Com a biblioteca Plotly.js que o compõe, é possível produzir também mapas interativos, como o da simulação que segue.\n\n\n\nSugestão:\n\n1. Experimente usar o botão de rolagem do mouse e ícone \"pan\" da barra superior, para interagir com o mapa.",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa por IA",
+      "JSPlotly & GSPlotly - Simulação gráfica interativa & IA",
       "Simulações na Escola"
     ]
   },
@@ -1901,7 +1901,7 @@
     "text": "6 História\n\nContexto - Distribuição de escravizados nas Américas no período de 1500–1888 (EF08HI06, EM13CHS104, EM13CHS503):\n   Esta simulação apresenta um gráfico de barras interativo para seleção de período por menu suspenso, e tangente à quantidade estimada de africanos escravizados desembarcados nas principais regiões da América. Os dados são estimativas aproximadas para ilustrar o potencial de visualização do aplicativo, embora servindo como ponto de partida para discussões educacionais mais precisas. Fontes passíveis de consulta incluem Slave Voyages.\n\n\n\n\n\nSugestão:\n\n1. Experimente alterar entre os períodos no menu suspenso, comparando as estimativas de tráfico escravo;\n2. Selecione um período, crie o gráfico, selecione outro período, e adicione outro gráfico. Isso permite comparar o quantitativo de escravos aportados pelas barras duplas formadas, e passagem do mouse sobre cada barra.",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa por IA",
+      "JSPlotly & GSPlotly - Simulação gráfica interativa & IA",
       "Simulações na Escola"
     ]
   },
@@ -1913,7 +1913,7 @@
     "text": "7 Linguagens\n\n7.1 Contexto - Gírias faladas no Brasil de 1980-2020 (EF89LP19, EM13LGG102)\n  Esta simulação é direcionada para uma estimativa do uso de gírias faladas no Brasil durante os últimos 40 anos. A representação dá-se num gráfico de pizza, e a seleção por década num menu suspenso.\n\n\n\n\n1. Pode-se usar a passagem de mouse para observar o \"tip\" (dica) apresentada para cada dado no gráfico.",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa por IA",
+      "JSPlotly & GSPlotly - Simulação gráfica interativa & IA",
       "Simulações na Escola"
     ]
   },
@@ -1925,7 +1925,7 @@
     "text": "Este material pretende oferecer um conjunto de gráficos e mapas, interativos e de animação, para alguns tópicos encontrados em disciplinas do ensino médio. Esses objetos didáticos utilizam pacotes interativos do R, principalmente plotly e gganimate.",
     "crumbs": [
       "Sobre",
-      "R - cálculos e visualizações",
+      "R - Cálculos e visualizações",
       "Gráficos e mapas interativos na Escola"
     ]
   },
@@ -1937,7 +1937,7 @@
     "text": "Objetos Interativos de Ensino Reprodutível (OIER) desenvolvidos para o ensino básico\n      A parte de Gráficos & Mapas do Bioquanti possui um repositório de objetos didáticos homônimos acompanhados de seus trechos de código comentados, permitindo fácil reprodução, personalização, e criação de novos materiais para compartilhamento. O repositório aborda as áreas de Matemática, Ciências da Natureza, Ciências Humanas e Linguagens. Encontra-se dividido em classes, cada qual com alguns Objetos Interativos de Ensino Reprodutível (OIER) ilustrativos: Matemática, Física, Química, Biologia, Humanas, História, Geografia, e Linguagens. Cada OIER está referenciado ao título juntamente a alguns códigos correlatos da BNCC. A fim de simplificar a produção de cada OIER para gráficos e mapas relativos ao ensino básico, bem como facilitar o uso do R em ambiente RStudio, privilegiou-se o emprego da biblioteca plotly.\n      Ocasionalmente foi utilizada a biblioteca ggplot2 para gráficos mais elaborados, e subsequente conversão à interatividade de plotly com uso da função ggplotly do pacote. Por vezes também foi utilizado o pacote gganimate, o qual permite criar uma animação por representação sequencial de gráficos de ggplot2, assim como alguns pacotes específicos a determinada situação.\n\n\n      Cada OIER está estruturado em 3 partes:\n\n1. O OIER propriamente dito, com título e códigos da BNCC;\n\n2. O código-fonte usado para gerar o objeto;\n\n3. Sugestões para modificações do código-fonte para obtenção de um objeto final distinto do original.",
     "crumbs": [
       "Sobre",
-      "R - cálculos e visualizações",
+      "R - Cálculos e visualizações",
       "Gráficos e mapas interativos na Escola"
     ]
   },
@@ -1949,7 +1949,7 @@
     "text": "Objetos didáticos e códigos\n1. Matemática\n\n2. Física\n\n3. Biologia\n\n4. Humanas\n\n5. História\n\n6. Geografia\n\n7. Linguagens",
     "crumbs": [
       "Sobre",
-      "R - cálculos e visualizações",
+      "R - Cálculos e visualizações",
       "Gráficos e mapas interativos na Escola"
     ]
   },
@@ -2105,14 +2105,7 @@
     "href": "erre.html#erяǝ",
     "title": "O que é Ensino Reprodutível",
     "section": "ERЯƎ …",
-    "text": "ERЯƎ …\n\n\n    O acrônimo ERЯƎ sugere as iniciais para Ensino Reprodutível, com disposição das fontes em palíndromo, e com a clara intenção de sugerir o exercício do erro libertário. Também intenciona um arranjo lúdico à analogia de princípios de desenvolvimento responsável e sustentável dos 3 Rs. Aqui, por tratar-se de códigos para conteúdos em ER, com o significado de reutilizar (cópia), e reciclar (alteração) ou reinventar (recriação)."
-  },
-  {
-    "objectID": "jsplotly_bas.html",
-    "href": "jsplotly_bas.html",
-    "title": "JSPlotly na Escola",
-    "section": "",
-    "text": "Em construção !!\n\n\n\n De volta ao topo"
+    "text": "ERЯƎ …\n\n\n    O acrônimo ERЯƎ sugere as iniciais para Ensino Reprodutível, com disposição das fontes em palíndromo, e com a clara intenção de sugerir o exercício do erro libertário. Também intenciona um arranjo lúdico à analogia de princípios de desenvolvimento responsável e sustentável dos 3 Rs. Aqui, por tratar-se de códigos para conteúdos em ER, com o significado de reutilizar (cópia), e reciclar (alteração) ou reinventar (recriação). Ah! E os olhinhos no “RЯ”…apenas para associar a sabedoria da coruja, ou o foco e precisão de uma ave de rapina !"
   },
   {
     "objectID": "index.html#reconhecimento",
@@ -2120,13 +2113,6 @@
     "title": "",
     "section": "Reconhecimento",
     "text": "Reconhecimento\n      O website foi agraciado ao 2o. lugar junto ao Prêmio Nacional de Ensino de Bioquímica e Biologia Molecular Bayardo Baptista Torres, promovido a cada dois anos pela Sociedade Brasileira de Bioquímica e Biologia Molecular (SBBq, 2023), e encontra-se referenciado como recurso educacional aberto junto ao portal eduCAPES. Recentemente, um aplicativo portável para simulação gráfica e interativa presente no site, JSPlotly, foi contemplado ao 1o. Lugar junto ao mesmo prêmio, e também encontra-se depositado no eduCAPES. Com igual sentimento de honraria e satisfação, também fomos classificados junto ao Prêmio Nacional em suas edições anteriores, desta vez para trabalhos experimentais em ensino e aprendizagem.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n      O Bioquanti conta atualmente com temas para ensino superior em Bioquímica, embora incluindo por sua natureza quantitativa, conteúdos de Físico-Química, Química, Biofísica, Estatística descritiva e inferencial, Planejamento Experimental, Álgebra Linear, Cálculo Integral, Cálculo Diferencial, modelagem computacional, modelagem molecular, entre outros; possui linguagem voltada à professores e pesquisadores universitários, e para graduação e pós-graduação.\n\n\n\nBioquanti para o ensino básico\n      Para o ensino básico o site arrisca um conjunto de conteúdos instrucionais e objetos didáticos para os últimos anos do fundamental e o ensino médio. Seus conteúdos também foram idealizados sob princípios de ensino reprodutível (ER) e envolvem objetos didáticos interativos para conteúdos curriculares (OIER). O site possui um tutorial de uso prático de Jmol para moléculas em 3D e interatividade, e outro para R em ambiente RStudio, para gráficos e mapas interativos. As ferramentas são apresentadas em suas versões em nuvem, eliminando a necessidade de instalação ou configuração, embora haja orientação para instalação do programa em máquina. O tutorial é ilustrado com exemplos extraídos do MAPA (Material de Apoio Pedagógico para Aprendizagens de Minas Gerais). O portal também disponibiliza uma coleção de modelos atômicos interativos incluídos num “Jardim de Moléculas” e um repositório para gráficos e mapas interativos como OIERs. O Jardim de Moléculas é organizado em classes, e possui uma coleção de modelos atômicos para visualização e estudo tridimensional."
-  },
-  {
-    "objectID": "ferramentas.html",
-    "href": "ferramentas.html",
-    "title": "Ferramentas",
-    "section": "",
-    "text": "Back to top"
   },
   {
     "objectID": "nivel/basico/R/geografia.html",
@@ -2430,7 +2416,7 @@
     "text": "O R permite uma série de objetos didáticos interativos, aqui compilados principalmente a partir de uma biblioteca instalada chamada plotly.\n\n\n\n  Como demonstração, assista esse VIDEO 1 curtíssimo para ver o um gráfico interativo com plotly pra R em ação, e esse outro VIDEO 2 tão “grande” quanto, para ver o um mapa interativo com plotly !\n\n\n1. Como instalar R e RStudio\n\n2. Comandos básicos no R\n\n3. Pacotes do R e plotly\n\n4. Gráficos interativos com plotly\n\n5. Mais interatividade\n\n6. Animações gráficas\n\n7. Mapas interativos com plotly\n\n\n\n\n De volta ao topo",
     "crumbs": [
       "Sobre",
-      "R - cálculos e visualizações",
+      "R - Cálculos e visualizações",
       "R & RStudio na Escola"
     ]
   },
@@ -3345,8 +3331,8 @@
     "text": "JSPlotly é um aplicativo para criação de gráficos interativos e dinâmicos à simulação de fenômenos naturais baseados em equações e visualização de dados. Seu nome deve-se à principal linguagem utilizada em sua construção bem como para a produção dos gráficos, JavaScritpt, bem como a biblioteca envolvida nessa, Plotly.js.",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa por IA",
-      "JSPlotly - simulação por gráficos em JavaScript"
+      "JSPlotly & GSPlotly - Simulação gráfica interativa & IA",
+      "JSPlotly - Simulação gráfica com JavaScript"
     ]
   },
   {
@@ -3357,8 +3343,8 @@
     "text": "1 Características do JSPlotly\n  O programa possui diversas características encontradas em outros tantos no mercado, bem como algumas habilidades que o distinguem desses, a saber:\n\n1. Não requer instalação;\n2. Não requer requisitos complementares (ex: bibliotecas \".NET Microsoft\", \"Java\");\n3. Não requer conexão de rede;\n4. Não requer configuração de máquina de mínimo desempenho (ex: memória RAM);\n5. Pode ser carregado a partir de um simples visualizador de HTML (\"Firefox\", \"Edge\", \"Safari\", \"Chrome\");\n6. Não requer um editor específico para construção, podendo ser elaborado a partir de um simples bloco de notas;\n7. Possui código-fonte e produto contidos em um mesmo arquivo, facilitando armazenamento e compartilhamento;\n8. Pode ser carregado a partir de computador, dispositivos móveis (smartphone) ou removíveis (pendrive);\n9. É interpretado a partir de um código de texto simples, utilizando memória física desprezível (20kB), ainda que permita a elaboração de gráficos sofisticados, interativos e dinâmicos (atualização por evento de usuário ou em tempo real);\n10. Por ser passível de construção em editor simples de texto, possui compartilhamento irrestrito de seu código-fonte;\n11. É capaz de produzir gráficos 2D e 3D interativos instantaneamente, e tanto a partir de equações, como de dados inseridos pelo usuário;\n12. É capaz de produzir mapas interativos, elevando a extensão de uso para aplicações não matemáticas;\n13. Correlaciona-se diretamente ao uso de linguagens de programação, tal como requerido pela \"4a. e 5a. Revolução Industrial\", e respectivamente  espelhados nas competências digitais da \"Educação 4 e 5.0\"; \n14. Por sua simplicidade como arquivo único em HTML, pode ser incorporado em páginas da web ou ambientes virtuais, permitindo seu uso para qualquer modalidade de ensino-aprendizagem (ex: presencial, híbrido, remoto, EaD);\n15. Insere-se nos conceitos de \"pesquisa reproduzível\" bem como de \"ensino reprodutível\", alicerçados pelo acesso e compartilhamento abertos, facilitados e documentados, para ferramentas digitais direcionadas a conteúdos científico, bem como das matrizes curriculares;\n16. Permite que se incorpore no código-fonte outras bibliotecas em \"JavaScript\", complementares à produção e manejo gráficos (ex: \"numjs\" para computação numérica e álgebra linear, \"jsmath\" para notações matemáticas complexas, \"jStat\" para computação estatística);\n18. Possui diversas ações interativas por cliques de mouse, e que pontuam um grau lúdico à experimentação de funções matemáticas;\n19. Renderiza gráficos a partir de linguagem de programação moderna e largamente utilizada, o que também permite ao aprendiz sua inserção paulatina em técnicas de programação contidos em outras linguagens recorrentes (\"Python\", \"R\"), e do mundo \"geek\" (Arduino - \"C/C++\").\n20. Pode ser livremente editado e compartilhado para fins específicos junto à licença Creative Commons CC BY-NC 4.0.",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa por IA",
-      "JSPlotly - simulação por gráficos em JavaScript"
+      "JSPlotly & GSPlotly - Simulação gráfica interativa & IA",
+      "JSPlotly - Simulação gráfica com JavaScript"
     ]
   },
   {
@@ -3369,8 +3355,8 @@
     "text": "2 Uso e funcionalidades do JSPlotly\n  O aplicativo é intuitivo, possuindo em sua interface apenas uma janela dividida entre um editor de códigos e o ecrã gráfico. Abaixo do editor existem botões autoexplicativos, permitindo-se:\n\n1. Adicionar um gráfico (\"add plot\");\n2. Remover o último gráfico (\"remove last\");\n3. Limpar a área gráfica (\"clean plot\");\n4. Salvar o gráfico em formato interativo (\"save HTML\");\n5. Salvar o código (\"save script\");\n6. Limpar o editor (\"clean script\")\n\n  Segue uma imagem da tela de abertura do programa (e única, também !)\n\n\n\nTela principal do JSPlotly, apresentando a área gráfica e o editor de códigos.\n\n\n  Na parte superior existem ícones padrão da saída gráfica de Plotly.js. Contudo, ao produzir o gráfico default do aplicativo, surgem mais quatro ícones específicos. Da direita para a esquerda:\n\n1. Ícone para mudança de cor da curva (\"change color\");\n2. Ícone para armazenamento opcional da figura (\"PNG or SVG\");\n3. Ícone para visualização de linha pontilhadas das\n   coordenadas do dado (\"Toggle Spike Lines\");\n4. Ícone para modificar o gráfico no editor online próprio do desenvolvedor (\"Edit in Chart Studio\")\n\n\n\n  Frente ao propósito de permitir interatividade para a ferramenta, acrescenta-se à sua funcionalidade:\n\n1. Rolagem dos eixos cartesianos (direita ou esquerda);\n2. Ampliação ou redução do gráfico por rolagem com botão\n   do meio do mouse;\n3. Etiquetagem de eixos gráficos por simples clique nos títulos;\n4. Modo escuro opcional (canto sup. esquerdo).\n\n\n2.1 Detalhes\n  Como produto de fusão da linguagem “JavaScript com sua biblioteca gráfica Plotly.js, o programa possui diversas funcionalidades comuns a essas para a construção de um gráfico interativo, e outras tantas agregadas, destacando-se:\n\n1. Efeito de afastamento/aproximação visual 1. geral ou de área específica (\"zoom\");\n2. Arraste do ecrã de visualização (\"pan\", panorâmica);\n3. Deslocamento individual de eixos;\n4. Retorno à configuração original (\"reset\");\n5. Seleção de dados/pontos individuais ou coletivos por (\"box\" ou \"lasso\");\n6. Informações por passagem de mouse (\"hover\" ou \"mouse over\"; ex: exibição dinâmica de valores);\n7. Dicas customizáveis de ferramentas (\"tooltips\");\n8. Legendas interativas;\n9. Gráficos dinâmicos (atualização automática em fluxo);\n10. Navegação detalhada (\"drill1.down\"; exploração em área específica);\n11. Botões personalizados no  (\"buttons\");\n12. Eventos personalizados por mouse ou ação de usuário (\"callbacks\", atualização de página por interação);\n13. Deslizadores (\"sliders\") e menus para filtragem de informações;\n14. Marcação de dados por linhas pontilhadas nos eixos gráficos e \"hover\" (\"Toggle Spike Lines\");\n15. Menu de ícones para interatividade padrão (\"Mode bar\");\n16. Personalização do \"Mode bar\" (ex: exportação da imagem em SVG, cópia de dados do gráfico para a área de transferência);\n17. Animações em \"layout\" ou transição de dados;\n18. Facetas interativas (\"facets\", gráficos lado a lado);\n19. Sincronização entre gráficos interconectados (\"zoom\" e seleção de dados);\n20. Criação de paineis dinâmicos interativos (\"dashboards\");\n21. Integração com bibliotecas interativas (\"D3.js\" e \"React.js\") ou analíticas (ex: \"numjs\", \"mathjs\", \"jstat\").\n\n\n\n  Além disso, dada as peculiaridades da linguagem e da biblioteca, também permite:\n\n1. Observar a sintaxe da biblioteca \"Plotly.js\" por meio de uma equação pré-definida no carregamento do arquivo HTML do aplicativo (\"função quadrática\");\n2. Carregar uma nova função para plotagem (\"browser\");\n3. Editar parâmetros da equação, tanto de sua função matemática e das variáveis inseridas, quanto da configuração do plot; \n4. Plotar o gráfico (\"Add Plot\") e observar seus dados interativamente, por \"hover\" de mouse; \n6. Alterar alguma informação no editor (variáveis, parâmetros, função matemática, eixos, por ex), e superimpor um novo gráfico, para visualização das diferenças propostas e estudo do comportamento da função (\"Add Plot\");\n6. Alterar a cor do último plot por simples clique de mouse em ícone (\"change color\") em barra de ferramentas;\n7. Excluir da área gráfica a última equação (\"Remove Last\"), para novos ajustes e superimposição de outra curva;\n8. Limpar a área gráfica (\"Clean Plot\");\n9. Armazenar o gráfico como um arquivo HTML autônomo (\"self-contained\"), preservando a interatividade da biblioteca \"Plotly.js\" para estudo posterior ou compartilhamento do(s) gráfico(s) representados (\"Save Plot\");\n10. Armazenar a equação como um \"script\" de \"JavaScript\" e \"Plotly.js\", para carregamento posterior ou compartilhamento (\"Save Script\");\n11 Armazenar o plot alternativamete como PNG (rasterizada - web, documentos) ou SVG (vetorial - qualidade de publicação, edição) por clique de mouse em ícone da barra;\n12. Excluir todos os elementos gráficos e de \"script\" para uma nova edição (\"Clean All\");\n13. Desfazer/refazer em níveis ilimitados para comandos de edição de um gráfico;\n14. Inserir um cursor de coordenadas por linha pontilhada no gráfico (\"Toggle Spike Lines\") por ícone da barra de ferramentas;\n15. Autoescalonar o gráfico por ícone da barra (\"Autoscale\"), ou por clique duplo do mouse no ecrã;\n16. Deslocar o gráfico no ecrã por ícone da barra (\"Pan\");\n17. Ampliar qualquer área retangular sobre o gráfico por ícone da barra (\"Zoom\");\n18. Deslocar o eixo \"x\" ou \"y\" por arraste de mouse;\n19. Ampliar ou reduzir o gráfico pelo botão \"scroll\" do mouse (rolagem);\n20. Inserir rótulos para título e eixos, por simples clique nas respectivas áreas do gráfico;\n21. Clicar na legenda para ocultar/apresentar cada linha/dados do gráfico;\n22. Optar por visual claro/escuro (ícone de lua/sol);\n23. Editar o gráfico em aplicativo web [Plotly Chart Studio](https://chart-studio.plotly.com/create/#/) \n  do desenvolvedor da biblioteca por ícone da barra de ferramentas (\"Edit in Chart Studio\").",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa por IA",
-      "JSPlotly - simulação por gráficos em JavaScript"
+      "JSPlotly & GSPlotly - Simulação gráfica interativa & IA",
+      "JSPlotly - Simulação gráfica com JavaScript"
     ]
   },
   {
@@ -3381,8 +3367,8 @@
     "text": "3 Download\n\n JSPlotly_v1",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa por IA",
-      "JSPlotly - simulação por gráficos em JavaScript"
+      "JSPlotly & GSPlotly - Simulação gráfica interativa & IA",
+      "JSPlotly - Simulação gráfica com JavaScript"
     ]
   },
   {
@@ -3393,8 +3379,8 @@
     "text": "4 Uso do JSPlotly no site Bioquanti\n\n1. Selecione a opção para gráficos correlatos à \"Bioquímica\" ou ao \"Ensino Básico\" no menu lateral;\n2. Escolha um tema de interesse, e clique no gráfico para visualizar o aplicativo. Uma nova janela se abrirá contendo o \"JSPlotly\" específico para o tema escolhido;\n4. Agora basta clicar em \"Add Plot\" para visualizar o gráfico e testar as várias possibilidades de interatividade;\n5. Siga as sugestões do \"Quadro\" para um melhor aproveitamento do tema escolhido.",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa por IA",
-      "JSPlotly - simulação por gráficos em JavaScript"
+      "JSPlotly & GSPlotly - Simulação gráfica interativa & IA",
+      "JSPlotly - Simulação gráfica com JavaScript"
     ]
   },
   {
@@ -3405,8 +3391,8 @@
     "text": "Notas de rodapé\n\n\nSchneedorf, J.M. JSPlotly: um aplicativo para gráficos interativos em Bioquímica para visualizadores HTML. Revista de Ensino de Bioquímica. 2025 (no prelo).↩︎",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa por IA",
-      "JSPlotly - simulação por gráficos em JavaScript"
+      "JSPlotly & GSPlotly - Simulação gráfica interativa & IA",
+      "JSPlotly - Simulação gráfica com JavaScript"
     ]
   },
   {
@@ -3417,7 +3403,7 @@
     "text": "Frente à inerente dificuldade para uso de uma linguagem de programação, como JavaScript, bem como de bibliotecas correlatas, e outras linguagens modernas para web (HTML - estrutura, CSS - estilo), buscou-se desenvolver um GPT personalizado para a criação instantânea de códigos, bem como para sua edição e personalização.\n\n\n\n\n\nTela do GSPlotly para criação de códigos ao simulador JSPlotly. Clique na imagem para acessá-lo !\n\n\n  A iniciativa denomina-se GSPlotly, e visa atuar como um gerador em linguagem natural para o simulador JSPlotly. Dessa forma, permite-se duplamente a geração de um código em qualquer tema que assistentes de IA são hoje alimentados, bem como o aprendizado subliminar das próprias linguagens envolvidas.\n\n  Teste o GPT personalizado para gráficos interativos clicando neste link para o\n\n GSPlotly \n\n  Para seu uso, peça ao assistente de IA uma simulação para um tema qualquer, embasada em uma função matemática para ciências naturais ou outra área do conhecimento. Depois é só copiar o código e colá-lo no JSPlotly.\n\n\n\n De volta ao topo",
     "crumbs": [
       "Sobre",
-      "JSPlotly & GSPlotly - simulação interativa por IA",
+      "JSPlotly & GSPlotly - Simulação gráfica interativa & IA",
       "GSPlotly - gerador de códigos por IA para JSPlotly"
     ]
   },
@@ -3835,8 +3821,8 @@
     "text": "R é um software gratuito desenvolvido para computação estatística e gráficos. Roda-se o R em diversas interfaces de usuário (GUI), dentre as quais destaca-se o RStudio, um ambiente de desenvolvimento integrado (IDE) também gratuito. O Rstudio possui também uma versão online gratuita, acessível pelo sítio Posit Cloud.",
     "crumbs": [
       "Sobre",
-      "R - cálculos e visualizações",
-      "Cálculos e gráficos em Bioquímico-física"
+      "R - Cálculos e visualizações",
+      "R em Biofísico-química"
     ]
   },
   {
@@ -3847,8 +3833,8 @@
     "text": "Bioquímica\n      Para acessar os conteúdos desenvolvidos com R e RStudio para Bioquímica e temas afins pode-se alternativamente descarregar o ebook Bioquímica Quantitativa & R, ou acessar os tópicos individuais abaixo.\n  Assim, é possível reproduzir as atividades em qualquer tema tratado, bastando-se clicar no canto superior direito do trecho de código contendo um ícone de cópia , e colando-o em uma sessão instalada do RStudio, ou em sua versão online RStudio Cloud. Este tutorial rápido em vídeo ilustra a dica.\n      São muitas as características que possibilitam o uso do R & RStudio para o ensino e aprendizagem em Bioquímica. Parte dessas características residem na Pesquisa Reproduzível (Gandrud, 2018), o qual é resumidamente norteada pela:\n\n1)  Disponibilização dos dados originais;\n2)  Existência de um código para processar esses dados e analisá-los;\n3)  Documentação dos dados e do código, possibilitando sua reprodutibilidade;\n4)  Distribuição e acessibilidade do código.\n\n      Nesse sentido, a produção de textos, tabelas, gráficos, análise de dados e simulações, podem perfeitamente ajustar-se ao ensino-aprendizagem pelo uso de tais princípios e da simultaneidade de texto e códigos, tangenciando um Ensino Reproduzível. Tal abordagem permite ao leitor o estudo dos diversos temas tratados por leitura e interpretação, como também de sua apropriação mais convergente, pela execução, modificação, e criação de códigos pertinentes em cada tema. Na presente obra, essas concepções são aplicadas ao conteúdo quantitativo e às relações matemáticas dos temas abordados em Bioquímica.\n\n      Essas relações estão presentes nos livros-texto de Bioquímica e abrangem, por exemplo, curvas de titulação de ácidos fracos e aminoácidos, estudo de cargas efetivas em biomoléculas, características físico-químicas de proteínas e ácidos nucleicos previstas por análise de sequência, cinética de enzimas e sua inibição, quantidades termodinâmicas e Bioenergética, interação ligante-biopolímero, estequiometria de reações bioquímicas, rotas bioquímicas e redes metabólicas, dentre outros.\n      De modo geral, os temas acima são abordados neste material com auxílio do R & RStudio. Não obstante, seu conteúdo não possui a pretensão de abordar, para além da superfície, o uso do R, do RStudio, e mesmo dos temas de Bioquímica propostos. Para esses, recomenda-se as fontes tradicionais de tutoriais, livros-texto e internete. E tampouco se arrisca a adentrar no universo da Bioinformática, tradicional ou estrutural, como na Biologia de Sistemas, alinhamento de sequências, predição estrutural, modelagem, dinâmica e atracamento moleculares, ou nas várias faces dos estudos ômicos.\n      Em resumo, objetiva-se apenas abordar os conteúdos quantitativos e relações matemáticas presentes em parte da Bioquímica, tal como descrito acima, utilizando o R & Rstudio. Essa abordagem tangencia a solução de problemas e simulações por sistema linear de equações, álgebra linear, ajuste linear, não linear, polinomial, linear múltiplo, otimização, minimização, equações diferenciais simples, e análise de sequências, dentre outros.\n      Secundariamente, objetiva-se permitir que o leitor possa, a partir da repetição ou modificação de trechos simples de códigos e de scripts, reproduzir cálculos, gráficos e/ou tabelas pertinentes aos conteúdos elencados.",
     "crumbs": [
       "Sobre",
-      "R - cálculos e visualizações",
-      "Cálculos e gráficos em Bioquímico-física"
+      "R - Cálculos e visualizações",
+      "R em Biofísico-química"
     ]
   },
   {
@@ -3859,8 +3845,8 @@
     "text": "Bioquímica Quantitativa com R & RStudio\n  Para o estudo de Bioquímica e temas afins com auxílio da plataforma R & RStudio, pode-se acessar os temas individuais abaixo, e que se encontram também espelhados no livro Bioquímica Quantitativa & R.\n\n\n\n\n\nI. INTRODUÇÃO\n1. Biomoléculas\n2. Sistemas tampão\nII. ESTRUTURA E FUNÇÃO\n3. Aminoácidos\n4. Proteínas\n5. Enzimas\n6. Inibição enzimática\n7. Interação molecular\n8. Ácidos nuleicos\n9. Biomembranas\nIII. METABOLISMO\n10. Biotermodinâmica\n11. Metabolismo\n12. Redes metabólicas\nIV. OUTROS\n13. Planejamento experimental\nReferências",
     "crumbs": [
       "Sobre",
-      "R - cálculos e visualizações",
-      "Cálculos e gráficos em Bioquímico-física"
+      "R - Cálculos e visualizações",
+      "R em Biofísico-química"
     ]
   },
   {
@@ -3994,6 +3980,13 @@
     "href": "producao.html#software",
     "title": "",
     "section": "Software",
-    "text": "Software\n\nMacedo, J.A.; Matos, N.; Paula, M.M.V.; Silva, L.E.; Schneedorf, J.M. SISMA: Sistema de Mapas Autocatalíticos. Programa de Computador. Registro INPI no. 08869-3 (19/05/2008).\nSchneedorf, J.M. JSPlotly: simulador portável para gráficos interativos e dinâmicos (2025). CC-BY-NC-SA.\nSchneedorf, J.M. GSPlotly: gerador de scripts interativos para JSPlotly. OpenAI GPT customizado. Disponível em: https://chat.openai.com/g/g-6819fbb8d2d08191bf7d50a3dbeadb0d-gsplotly. Acesso em: 11 maio 2025."
+    "text": "Software\n\nMacedo, J.A.; Matos, N.; Paula, M.M.V.; Silva, L.E.; Schneedorf, J.M. SISMA: Sistema de Mapas Autocatalíticos. Programa de Computador. Registro INPI no. 08869-3 (19/05/2008).\nSchneedorf, J.M. JSPlotly: simulador portável para gráficos interativos e dinâmicos (2025). CC-BY-NC-SA."
+  },
+  {
+    "objectID": "producao.html#gpt-personalizado",
+    "href": "producao.html#gpt-personalizado",
+    "title": "",
+    "section": "GPT personalizado",
+    "text": "GPT personalizado\n\nSchneedorf, J.M. GSPlotly: gerador de scripts interativos para JSPlotly. OpenAI GPT customizado. Disponível em: https://chat.openai.com/g/g-6819fbb8d2d08191bf7d50a3dbeadb0d-gsplotly. Acesso em: 11 maio 2025."
   }
 ]

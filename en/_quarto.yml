@@ -53,8 +53,17 @@ website:
 
 
   navbar:
-    search: true
     logo: logo-bioquanti.png
+    search: true
+    tools:
+      - icon: true
+        html: |
+          <a href="https://www.unifal-mg.edu.br" target="_blank">
+            <img src="../images/logo-unifal.png" alt="UNIFAL" style="height:40px; vertical-align:middle; margin-right:15px;"></a>
+      - icon: true
+        html: |
+          <a href="https://www.capes.gov.br" target="_blank">
+            <img src="../images/logo-capes.png" alt="CAPES" style   ="height:40px; vertical-align:middle; margin-left:15px;"></a>
 
     left:
     

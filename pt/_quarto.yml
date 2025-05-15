@@ -58,6 +58,9 @@ website:
     logo: logo-bioquanti.png
 
     left:
+      # 
+      # - text: ""
+      #   href: images/logo-unifal.png
     
       - text: "Sobre"
         id: sup-menu
@@ -73,6 +76,7 @@ website:
         href: contato.qmd
          
     right:
+    
       - text: "EN"
         href: ../en/index.html
 
