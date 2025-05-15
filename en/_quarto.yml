@@ -19,7 +19,7 @@ website:
             href: nivel/superior/jsplotly/jsplotly_geral_en.qmd
           - text: "GSPlotly - AI code generator for JSPlotly"
             href: nivel/superior/jsplotly/gsplotly_en.qmd
-          - text: "Simulations in Biochemical Physics"
+          - text: "Simulations in Biophysical Chemistry"
             href: nivel/superior/jsplotly/jsptl_bioq_en.qmd
           - text: "Simulations at School"
             href: nivel/basico/jsplotly/jsplotly_bas_en.qmd
@@ -36,7 +36,7 @@ website:
 
       - section: "R - Maths and visualization"
         contents:
-          - text: "R in Biochemical Physics"
+          - text: "R in Biophysical Chemistry"
             href: nivel/superior/r/index_r_en.qmd
           - text: "scriptRplot: elegant graphics with ggplot2"
             href: nivel/superior/ScriptRplot/scriptrplot_en.qmd
