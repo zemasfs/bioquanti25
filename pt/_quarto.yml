@@ -1,6 +1,13 @@
 project:
   type: website
   output-dir: ../_site/pt
+  resources:
+    - nivel/superior/jsplotly/sbbq/vdw3D.html
+    - nivel/superior/jsplotly/sbbq/buffer_slider.html
+    - nivel/superior/jsplotly/sbbq/cargaPept_slider.html
+    - nivel/superior/jsplotly/sbbq/gibbs.html
+    - nivel/superior/jsplotly/sbbq/nyquist.html
+
 
 website:
   page-navigation: true
