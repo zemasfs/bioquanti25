@@ -3,34 +3,31 @@ title: ""
 
 ---
 
-<!-- --Websites -->
-<!-- --Applications -->
-<!-- - Sisma -->
-<!-- - ScriptRplot -->
-<!-- - JSPlotly -->
-
 ## Book
 
-- Schneedorf, J.M. Bioquanti: Bringing content to life for basic education. In: Open Educational Resources at UNIFAL-MG. Org: Mafra, L.A.S; Silva, L.E; Schneedorf, J.M. Ed. Pimenta Cultural, 84p. 2025 (in press). 
+- Schneedorf, J.M. Vivificando Conteúdos Para o Ensino Básico: Moléculas, Gráficos, e Mapas Interativos (Bringing Content to Life for Basic Education: Molecules, Graphs, and Interactive Maps). Ed. Pimenta Cultural, 84p. 2025 (in press).
 
-- Schneedorf, J.M., Rodrigues, K.L. [Basic biochemistry of humans, animals, and plants](http://dx.doi.org/10.13140/RG.2.2.32623.55208). 353p., 2024. ISBN: 978-65-00-90366-9.
+- Schneedorf, J.M., Rodrigues, K.L. [Basic Biochemistry of People, Animals, and Plants](http://dx.doi.org/10.13140/RG.2.2.32623.55208). 353p., 2024. ISBN: 978-65-00-90366-9.
 
 - Schneedorf, J.M. [Quantitative Biochemistry](http://dx.doi.org/10.13140/RG.2.2.36090.40644) & R. 152p., 2022. ISBN: 978-65-00-52125-2. .
 
 - Schneedorf, J.M. [SISMA - Dynamic Visualization in Catalysis & Metabolism](http://dx.doi.org/10.13140/RG.2.2.25027.92964). 95p., 2022. ISBN: 978-65-00-52124-5.
 
-- Schneedorf, J.M. [Structural Biochemistry Guided by Jmol](http://dx.doi.org/10.13140/RG.2.2.29268.10882). 145p., 2019. ISBN: 978-85-63473-42-4.
+- Schneedorf, J.M. [Structural Biochemistry: guided by Jmol](http://dx.doi.org/10.13140/RG.2.2.29268.10882). 140p., 2019. ISBN 978-85-63-47342-4. Unifal-MG.
+
 
 ## Chapter
 
+- Oliveira, G. A. V.; Lemes, N. H. T.; Sindra, L. V.; Schneedorf, J.M. [Binding of Molecules Followed by Electroanalytical Techniques] (https://link.springer.com/chapter/10.1007/978-1-0716-4294-8_12). In: Ana Clarissa dos Santos Pires; Luis Henrique Mendes da Silva. (Org.). Methods and Protocols in Food Science - Characterization of Molecular Interactions. 1st ed. New York: Springer Nature, 2025, v. 13, p. 1-12.
 
-- Oliveira, G. A. V.; Lemes, N. H. T.; Sindra, L. V.; Schneedorf, J.M. Binding of Molecules Followed by Electroanalytical Techniques. In: Ana Clarissa dos Santos Pires; Luis Henrique Mendes da Silva. (Org.). Methods and Protocols in Food Science - Characterization of Molecular Interactions. 1st ed. New York: Springer Nature, 2025, v. 13, p. 1-12.
+- Ferreira, M. P.; Galhardo, B. R.; Lemes, N. H. T.; Coelho, Y. L.; Schneedorf, J.M.; Sindra, L. V. [Application of Quartz Crystal Microbalance to Study Intermolecular Interactions] (https://link.springer.com/chapter/10.1007/978-1-0716-4294-8_14). In: Ana Clarissa dos Santos Pires; Luis Henrique Mendes da Silva. (Org.). Methods and Protocols in Food Science - Characterization of Molecular Interactions. 1st ed. New York: Springer Nature, 2025, v. 13, p. 29-38.
 
-- Ferreira, M. P.; Galhardo, B. R.; Lemes, N. H. T.; Coelho, Y. L.; Schneedorf, J.M.; Sindra, L. V. Application of Quartz Crystal Microbalance to Study Intermolecular Interactions. In: Ana Clarissa dos Santos Pires; Luis Henrique Mendes da Silva. (Org.). Methods and Protocols in Food Science - Characterization of Molecular Interactions. 1st ed. New York: Springer Nature, 2025, v. 13, p. 29-38.
+- Andrade, R. J.; Lemes, N. H. T.; Sindra, L. V.; Schneedorf, J.M. [Difference Spectra Absorption Spectrophotometry Applied to Molecular Interactions] (https://link.springer.com/chapter/10.1007/978-1-0716-4294-8_12). In: Ana Clarissa dos Santos Pires; Luis Henrique Mendes da Silva. (Org.). Methods and Protocols in Food Science - Characterization of Molecular Interactions. 1st ed. New York: Springer Nature, 2025, v. 13, p. 14-28.
+ 
 
-- Andrade, R. J.; Lemes, N. H. T.; Sindra, L. V.; Schneedorf, J.M. Difference Spectra Absorption Spectrophotometry Applied to Molecular Interactions. In: Ana Clarissa dos Santos Pires; Luis Henrique Mendes da Silva. (Org.). Methods and Protocols in Food Science - Characterization of Molecular Interactions. 1st ed. New York: Springer Nature, 2025, v. 13, p. 14-28. 
+- Schneedorf, J.M. JSPlotly - a practical and portable application for interactive graphical simulations for reproducible teaching. In: Open Educational Resources at UNIFAL-MG. Edited by Mafra, L.A.S; Silva, L.E; Schneedorf, J.M. Pimenta Cultural. 2025 (in press).
 
-- Schneedorf, J.M. JSPlotly - a practical and portable application for interactive graphical simulations for reproducible teaching. In: Open Educational Resources at UNIFAL-MG. Org: Mafra, L.A.S; Silva, L.E; Schneedorf, J.M. Ed. Pimenta Cultural. 2025 (in press).
+- Schneedorf, J.M. Bioquanti: a website for reproducible teaching of codes for content. In: Unifal Interativa: Digital Education Projects at the Federal University of Alfenas. Org: Mafra, L.A.S; Silva, L.E; Schneedorf, J.M. Ed. Pimenta Cultural. 2025 (in press).
 
 - Schneedorf, J.M. ScriptRplot - an R script for producing elegant graphics with ggplot2. In: Open Educational Resources at UNIFAL-MG. Org: Mafra, L.A.S; Silva, L.E; Schneedorf, J.M. Ed. Pimenta Cultural. 2025 (in press).
 
@@ -54,27 +51,41 @@ title: ""
 
 - Schneedorf, J.M. Evaluation of AI assistants in the creation of R codes for interactive objects in reproducible teaching. In: Reflections and Reports on Artificial Intelligence. Edited by Carolei, P., Rosalen, M. V & V Editora, Santo André (SP), 2025 (in press).
 
-- Silva, L.E., Lima, D.C., Isgrignero, I., França, J.G., Lage, R.M., Schneedorf, J.M., Mafra, L.A.S. Tales Ludos: improving the user experience 
-in the development of online educational games. In: Emerging Technologies in Education. V & V Editora, Santo André (SP), 2025 (in press).
+- Silva, L.E., Lima, D.C., Isgrignero, I., França, J.G., Lage, R.M., Schneedorf, J.M., Mafra, L.A.S. Tales Ludos: improving the user experience
+ 
+for the development of online educational games. In: Emerging Technologies in Education. V & V Editora, Santo André (SP), 2025 (in press).
 
-- Digital technologies and the co-production of public goods: interactivity and participation in the construction of Open Educational Resources. Mafra, L.A.S, Gozzi, W.P., Santos, A.G.S., Silva, L.E., Schneedorf, J.M. In: Multidisciplinary Approaches in Digital Culture. Edited by Costa, C.T.O.P. V & V Editora, Santo André (SP), 2025 (in press).
+- Digital technologies and the co-production of public goods: interactivity and participation in the construction of Open Educational Resources. Mafra, L.A.S, Gozzi, W.P., Santos, A.G.S., Silva, L.E., Schneedorf, J.M. In: Multidisciplinary Approaches to Digital Culture. Org: Costa, C.T.O.P. V & V Editora, Santo André (SP), 2025 (in press).
 
 
 ## Article
 
 - Schneedorf, J.M. JSPlotly: an application for interactive graphics in Biochemistry for HTML viewers. Journal of Biochemistry Teaching. 2025 (in press).
 
-- Schneedorf, J.M. Living books: a proposal for reproducible teaching with R & Rstudio. Casa de Makunaima Electronic Journal. 2025 (in press).
+- Schneedorf, J.M. Living books: a proposal for reproducible teaching with R & Rstudio. Revista Eletrônica Casa de Makunaima. 2025 (in press).
 
 - Schneedorf, J.M. Bioquanti, an interactive website for teaching and learning biochemistry. Journal of Biochemistry Teaching 21.1 (2023): 110-124.
 
+- Oliveira, Schneedorf. A Simple, Fast and Portable Method for Electrochemical Detection of Adenine Released by Ricin Enzymatic Activity. v. 13, p. 238. Toxins. 2021.
+
+## Patent
+
+- Oliveira, G.A.V., Schneedorf, J.M. Method for the detection of ricin and characterization of its enzymatic activity in real time by electrochemistry. INPI, registration no. BR1020200206532. 2020.
+
+- Cavalcanti, M. H. S.; Virtuoso, L. S.; Mendes, A. A.; Schneedorf, J.M. Process for immobilizing enzymes on magnetic nanoparticle supports. INPI, registration no. BR10202002016.
+
+
 ## Software
 
-- Macedo, J.A.; Matos, N.; Paula, M.M.V.; Silva, L.E.; Schneedorf, J.M. SISMA: Autocatalytic Map System. Computer Program. INPI Registration No. 08869-3 (May 19, 2008).
+- Macedo, J.A.; Matos, N.; Paula, M.M.V.; Silva, L.E.; Schneedorf, J.M. SISMA: Autocatalytic Map System. Computer program. INPI registration no. 08869-3 (May 19, 2008).
 
-- Schneedorf, J.M. JSPlotly: portable simulator for interactive and dynamic graphics (2025). CC-BY-NC-SA.
+- Schneedorf, J.M. JSPlotly & GSPlotly: AI application and code generator for interactive graphics in HTML viewer (2025). Filed on the eduCAPES portal, registration no. 972869.
 
-## Custom GPT
+## Website
+
+- Schneedorf, J.M. Bioquanti (2022). Deposited on the eduCAPES portal, registration no. 748598.
+
+## Customized GPT
 
 - Schneedorf, J.M. GSPlotly: interactive script generator for JSPlotly. Customized OpenAI GPT. Available at: https://chat.openai.com/g/g-6819fbb8d2d08191bf7d50a3dbeadb0d-gsplotly. Accessed on: May 11, 2025.
 

@@ -3,15 +3,9 @@ title: ""
 
 ---
 
-<!-- --Websites -->
-<!-- --Aplicativos -->
-<!--    - Sisma  -->
-<!--    - ScriptRplot -->
-<!--    - JSPlotly -->
-
 ## Livro
 
-- Schneedorf, J.M. Bioquanti: Vivificando conteúdos para o ensino básico. In: Recursos Educacionais Abertos na UNIFAL-MG.  Org: Mafra, L.A.S; Silva, L.E; Schneedorf, J.M. Ed. Pimenta Cultural, 84p. 2025 (no prelo). 
+- Schneedorf, J.M. Vivificando Conteúdos Para o Ensino Básico: Moléculas, Gráficos, e Mapas Interativos. Ed. Pimenta Cultural, 84p. 2025 (no prelo). 
 
 - Schneedorf, J.M., Rodrigues, K.L. [Bioquímica básica, de gente, de bicho, e de planta](http://dx.doi.org/10.13140/RG.2.2.32623.55208). 353p., 2024. ISBN: 978-65-00-90366-9.
 
@@ -19,18 +13,20 @@ title: ""
 
 - Schneedorf, J.M. [SISMA - Visualização Dinâmica em Catálise & Metabolismo](http://dx.doi.org/10.13140/RG.2.2.25027.92964). 95p., 2022. ISBN: 978-65-00-52124-5.
 
-- Schneedorf, J.M. [Bioquímica Estrutural Guiada Por Jmol](http://dx.doi.org/10.13140/RG.2.2.29268.10882). 145p., 2019. ISBN: 978-85-63473-42-4. 
+- Schneedorf, J.M. [Bioquímica Estrutural: guiada por Jmol](http://dx.doi.org/10.13140/RG.2.2.29268.10882). 140p., 2019. ISBN 978-85-63-47342-4. Unifal-MG.
+
 
 ## Capítulo
 
+- Oliveira, G. A. V. ; Lemes, N. H. T. ; Sindra, L. V. ; Schneedorf, J.M. . [Binding of Molecules Followed by Electroanalytical Techniques](https://link.springer.com/chapter/10.1007/978-1-0716-4294-8_12). In: Ana Clarissa dos Santos Pires; Luis Henrique Mendes da Silva. (Org.). Methods and Protocols in Food Science - Characterization of Molecular Interactions. 1ed.New York: Springer Nature, 2025, v. 13, p. 1-12.
 
-- Oliveira, G. A. V. ; Lemes, N. H. T. ; Sindra, L. V. ; Schneedorf, J.M. . Binding of Molecules Followed by Electroanalytical Techniques. In: Ana Clarissa dos Santos Pires; Luis Henrique Mendes da Silva. (Org.). Methods and Protocols in Food Science - Characterization of Molecular Interactions. 1ed.New York: Springer Nature, 2025, v. 13, p. 1-12.
+- Ferreira, M. P. ; Galhardo, B. R. ; Lemes, N. H. T. ; Coelho, Y. L. ; Schneedorf, J.M. ; Sindra, L. V. [Application of Quartz Crystal Microbalance to Study Intermolecular Interactions](https://link.springer.com/chapter/10.1007/978-1-0716-4294-8_14). In: Ana Clarissa dos Santos Pires; Luis Henrique Mendes da Silva. (Org.). Methods and Protocols in Food Science - Characterization of Molecular Interactions. 1ed.New York: Springer Nature, 2025, v. 13, p. 29-38.
 
-- Ferreira, M. P. ; Galhardo, B. R. ; Lemes, N. H. T. ; Coelho, Y. L. ; Schneedorf, J.M. ; Sindra, L. V. Application of Quartz Crystal Microbalance to Study Intermolecular Interactions. In: Ana Clarissa dos Santos Pires; Luis Henrique Mendes da Silva. (Org.). Methods and Protocols in Food Science - Characterization of Molecular Interactions. 1ed.New York: Springer Nature, 2025, v. 13, p. 29-38.
-
-- Andrade, R. J. ; Lemes, N. H. T. ; Sindra, L. V. ; Schneedorf, J.M. . Difference Spectra Absorption Spectrophotometry Applied to Molecular Interactions. In: Ana Clarissa dos Santos Pires; Luis Henrique Mendes da Silva. (Org.). Methods and Protocols in Food Science - Characterization of Molecular Interactions. 1ed.New York: Springer Nature, 2025, v. 13, p. 14-28. 
+- Andrade, R. J. ; Lemes, N. H. T. ; Sindra, L. V. ; Schneedorf, J.M. . [Difference Spectra Absorption Spectrophotometry Applied to Molecular Interactions](https://link.springer.com/chapter/10.1007/978-1-0716-4294-8_12). In: Ana Clarissa dos Santos Pires; Luis Henrique Mendes da Silva. (Org.). Methods and Protocols in Food Science - Characterization of Molecular Interactions. 1ed.New York: Springer Nature, 2025, v. 13, p. 14-28. 
 
 - Schneedorf, J.M. JSPlotly - um aplicativo prático e portável para simulações gráficas interativas ao ensino reprodutível. In: Recursos Educacionais Abertos na UNIFAL-MG. Org: Mafra, L.A.S; Silva, L.E; Schneedorf, J.M. Ed. Pimenta Cultural. 2025 (no prelo).
+
+- Schneedorf, J.M. Bioquanti: um website para ensino reprodutível de códigos para conteúdosIn: Unifal Interativa: Projetos de Educação Digital da Universidade Federal de Alfenas. Org: Mafra, L.A.S; Silva, L.E; Schneedorf, J.M. Ed. Pimenta Cultural. 2025 (no prelo).
 
 - Schneedorf, J.M. ScriptRplot - um script de R para produção de gráficos elegantes com ggplot2. In: Recursos Educacionais Abertos na UNIFAL-MG. Org: Mafra, L.A.S; Silva, L.E; Schneedorf, J.M. Ed. Pimenta Cultural. 2025 (no prelo).
 
@@ -68,11 +64,24 @@ para a elaboração de jogos educacionais online.  In: Tecnologias Emergentes em
 
 - Schneedorf, J.M. Bioquanti, um website interativo para ensino-aprendizagem em Bioquímica." Revista de Ensino de Bioquímica 21.1 (2023): 110-124.
 
+- Oliveira, Schneedorf. A Simple, Fast and Portable Method for Electrochemical Detection of Adenine Released by Ricin Enzymatic Activity. v. 13, p. 238. Toxins. 2021.
+
+## Patente
+
+- Oliveira, G.A.V., Schneedorf, J.M. Método para detecção de ricina e caracterização de sua atividade enzimática em tempo real por eletroquímica. INPI, registro no. BR1020200206532. 2020.
+
+- Cavalcanti, M. H. S.; Virtuoso, L. S.; Mendes, A. A.; Schneedorf, J.M. Processo para imobilização de enzima em suporte nanoparticulado magnético. INPI, registro no. BR10202002016.
+
+
 ## Software
 
 - Macedo, J.A.; Matos, N.; Paula, M.M.V.; Silva, L.E.; Schneedorf, J.M. SISMA: Sistema de Mapas Autocatalíticos. Programa de Computador. Registro INPI no. 08869-3 (19/05/2008).
 
-- Schneedorf, J.M. JSPlotly: simulador portável para gráficos interativos e dinâmicos (2025). CC-BY-NC-SA.
+- Schneedorf, J.M. JSPlotly & GSPlotly: aplicativo e gerador de códigos por IA para gráficos interativos em visualizador HTML(2025). Depositado no portal eduCAPES, registro no. 972869.
+
+## Website
+
+- Schneedorf, J.M. Bioquanti (2022). Depositado no portal eduCAPES, registro no. 748598.
 
 ## GPT personalizado
 
