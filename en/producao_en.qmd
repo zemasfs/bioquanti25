@@ -68,6 +68,8 @@ for the development of online educational games. In: Emerging Technologies in Ed
 
 - Oliveira, Schneedorf. A Simple, Fast and Portable Method for Electrochemical Detection of Adenine Released by Ricin Enzymatic Activity. v. 13, p. 238. Toxins. 2021.
 
+- Oliveira, G. A. V.; Schneedorf, J. M. An Electrochemical Approach to Follow and Evaluate the Kinetic Catalysis of Ricin on hsDNA. v. 11(5), p. 405. Life. 2021.
+
 ## Patent
 
 - Oliveira, G.A.V., Schneedorf, J.M. Method for the detection of ricin and characterization of its enzymatic activity in real time by electrochemistry. INPI, registration no. BR1020200206532. 2020.
