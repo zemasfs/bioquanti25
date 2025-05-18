@@ -43,47 +43,47 @@ website:
             href: nivel/basico/Curso/index_jmol_bas.qmd
           - text: "Jardim de Moléculas"
             href: nivel/basico/Jardim/index_Jardim.qmd
-
-      - section: "R - Cálculos e visualizações"
-        contents:
-          - text: "R em Bioquímica"
-            href: nivel/superior/r/index_r.qmd
-          - text: "scriptRplot: gráficos elegantes com ggplot2"
-            href: nivel/superior/ScriptRplot/scriptrplot.qmd
-          - text: "R & RStudio na Escola"
-            href: nivel/basico/Curso/index_r_bas.qmd
-          - text: "Gráficos e mapas interativos na Escola"
-            href:  nivel/basico/R/index_OIER.qmd
-
-
-      - section: "Sisma - diagramas dinâmicos"
-        contents:
-          - text: "Fluxos dinâmicos em Bioquímica"
-            href: nivel/superior/sisma/index_sisma.qmd
-          - text: "Diagramas interativos na Escola"
-            href: nivel/basico/sisma/index_sisma_bas.qmd    
-
-  navbar:
-    search: true
-    logo: logo-bioquanti.png
-
-    left:
-      # 
-      # - text: ""
-      #   href: images/logo-unifal.png
-    
-      - text: "Sobre"
-        id: sup-menu
-        href: index.html
-      - text: "Ensino Reprodutível"
-        id: bas-menu
-        href: erre.qmd
-
-      - text: "Produção"
-        href: producao.qmd
-
-      - text: "Contato"
-        href: contato.qmd
+# 
+#       - section: "R - Cálculos e visualizações"
+#         contents:
+#           - text: "R em Bioquímica"
+#             href: nivel/superior/r/index_r.qmd
+#           - text: "scriptRplot: gráficos elegantes com ggplot2"
+#             href: nivel/superior/ScriptRplot/scriptrplot.qmd
+#           - text: "R & RStudio na Escola"
+#             href: nivel/basico/Curso/index_r_bas.qmd
+#           - text: "Gráficos e mapas interativos na Escola"
+#             href:  nivel/basico/R/index_OIER.qmd
+# 
+# 
+#       - section: "Sisma - diagramas dinâmicos"
+#         contents:
+#           - text: "Fluxos dinâmicos em Bioquímica"
+#             href: nivel/superior/sisma/index_sisma.qmd
+#           - text: "Diagramas interativos na Escola"
+#             href: nivel/basico/sisma/index_sisma_bas.qmd    
+# 
+#   navbar:
+#     search: true
+#     logo: logo-bioquanti.png
+# 
+#     left:
+#       # 
+#       # - text: ""
+#       #   href: images/logo-unifal.png
+#     
+#       - text: "Sobre"
+#         id: sup-menu
+#         href: index.html
+#       - text: "Ensino Reprodutível"
+#         id: bas-menu
+#         href: erre.qmd
+# 
+#       - text: "Produção"
+#         href: producao.qmd
+# 
+#       - text: "Contato"
+#         href: contato.qmd
          
     right:
     
