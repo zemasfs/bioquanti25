@@ -150,7 +150,7 @@ $$
 
 #### Contexto: {.unnumbered}
 
-|   Algumas condições fisiológicas ou patológicas podem alterar a afinidade de ligação do oxigênio com a hemoglobina, tais como a temperatura, alguns metabólitos (2,3-BPG), e o pH.
+|   Algumas condições fisiológicas ou patológicas podem alterar a afinidade de ligação do oxigênio com a hemoglobina, tais como a temperatura, alguns metabólitos (2,3-BPG), e o teor hidrogeneiônico da solução.
 
 #### Equação: {.unnumbered}
 

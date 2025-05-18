@@ -41,7 +41,7 @@ website:
             href: nivel/superior/jmol/index_jmol.qmd
           - text: "Moléculas 3D na Escola"
             href: nivel/basico/Curso/index_jmol_bas.qmd
-          - text: "Jardim de Moléculas"
+          - text: "Um Jardim de Moléculas"
             href: nivel/basico/Jardim/index_Jardim.qmd
 
       - section: "R - Cálculos e visualizações"
