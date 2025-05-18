@@ -12,7 +12,7 @@ title: "Examples of dynamic maps with *Sisma*"
 
 [T-R equilibrium in enzyme](maps/eqTR.sis)
 
-[Induced adjustment](maps/induced_adjustment.sis)
+[Induced fit](maps/induced_adjustment.sis)
 
 [Negative allosteric effector](maps/neg_effector.sis)
 

@@ -301,7 +301,7 @@
     "href": "nivel/superior/sisma/sisma_ex_en.html",
     "title": "Examples of dynamic maps with Sisma",
     "section": "",
-    "text": "Steady-state Briggs-Haldane condition\nEffect of Vm and Km\nEffect of enzyme content\nInhibition by substrate\nT-R equilibrium in enzyme\nInduced adjustment\nNegative allosteric effector\nPositive allosteric effector\nGlycolysis\nMetabolism of carbohydrates\nFatty acid beta-oxidation\nMetabolic Map\n\n\n\n Back to top"
+    "text": "Steady-state Briggs-Haldane condition\nEffect of Vm and Km\nEffect of enzyme content\nInhibition by substrate\nT-R equilibrium in enzyme\nInduced fit\nNegative allosteric effector\nPositive allosteric effector\nGlycolysis\nMetabolism of carbohydrates\nFatty acid beta-oxidation\nMetabolic Map\n\n\n\n Back to top"
   },
   {
     "objectID": "nivel/superior/jmol/index_jmol_en.html",
@@ -4249,42 +4249,72 @@
     "href": "nivel/basico/sisma/index_sisma_bas_en.html",
     "title": "SISMA at School",
     "section": "",
-    "text": "The examples below illustrate some possible uses for Sisma in a school context for Basic Education. For simplicity, the flow equations do not correspond to precise mathematical models, serving only to “bring to life” some ideas contained in textbooks on the subjects. However, it is possible to insert more accurate equations related to each model (see ebook."
+    "text": "The examples below illustrate some possible uses for Sisma in a school context for Basic Education. For simplicity, the flow equations do not correspond to precise mathematical models, serving only to “bring to life” some ideas contained in textbooks on the subjects. However, it is possible to insert more accurate equations related to each model (see ebook.",
+    "crumbs": [
+      "About",
+      "Sisma - dynamic diagrams",
+      "Interactive diagrams at School"
+    ]
   },
   {
     "objectID": "nivel/basico/sisma/index_sisma_bas_en.html#prey-predator-relationship",
     "href": "nivel/basico/sisma/index_sisma_bas_en.html#prey-predator-relationship",
     "title": "SISMA at School",
     "section": "1. Prey-Predator Relationship",
-    "text": "1. Prey-Predator Relationship"
+    "text": "1. Prey-Predator Relationship",
+    "crumbs": [
+      "About",
+      "Sisma - dynamic diagrams",
+      "Interactive diagrams at School"
+    ]
   },
   {
     "objectID": "nivel/basico/sisma/index_sisma_bas_en.html#food-chain",
     "href": "nivel/basico/sisma/index_sisma_bas_en.html#food-chain",
     "title": "SISMA at School",
     "section": "2. Food Chain",
-    "text": "2. Food Chain"
+    "text": "2. Food Chain",
+    "crumbs": [
+      "About",
+      "Sisma - dynamic diagrams",
+      "Interactive diagrams at School"
+    ]
   },
   {
     "objectID": "nivel/basico/sisma/index_sisma_bas_en.html#water-cycle",
     "href": "nivel/basico/sisma/index_sisma_bas_en.html#water-cycle",
     "title": "SISMA at School",
     "section": "3. Water Cycle",
-    "text": "3. Water Cycle"
+    "text": "3. Water Cycle",
+    "crumbs": [
+      "About",
+      "Sisma - dynamic diagrams",
+      "Interactive diagrams at School"
+    ]
   },
   {
     "objectID": "nivel/basico/sisma/index_sisma_bas_en.html#learning",
     "href": "nivel/basico/sisma/index_sisma_bas_en.html#learning",
     "title": "SISMA at School",
     "section": "4. Learning",
-    "text": "4. Learning"
+    "text": "4. Learning",
+    "crumbs": [
+      "About",
+      "Sisma - dynamic diagrams",
+      "Interactive diagrams at School"
+    ]
   },
   {
     "objectID": "nivel/basico/sisma/index_sisma_bas_en.html#hypercycle",
     "href": "nivel/basico/sisma/index_sisma_bas_en.html#hypercycle",
     "title": "SISMA at School",
     "section": "5. Hypercycle",
-    "text": "5. Hypercycle"
+    "text": "5. Hypercycle",
+    "crumbs": [
+      "About",
+      "Sisma - dynamic diagrams",
+      "Interactive diagrams at School"
+    ]
   },
   {
     "objectID": "nivel/superior/sisma/index_sisma_en.html#features-of-sisma",
