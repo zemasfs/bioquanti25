@@ -50,6 +50,8 @@ website:
         contents:
           - text: "Dynamic flows in Biochemistry"
             href: nivel/superior/sisma/index_sisma_en.qmd
+          - text: "Interactive diagrams at school"
+            href: nivel/basico/sisma/index_sisma_bas_en.qmd
 
 
   navbar:
