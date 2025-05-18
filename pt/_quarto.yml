@@ -61,7 +61,7 @@ website:
           - text: "Fluxos dinâmicos em Bioquímica"
             href: nivel/superior/sisma/index_sisma.qmd
           - text: "Diagramas interativos na Escola"
-            href: "#"
+            href: nivel/basico/sisma/index_sisma_bas.qmd    
 
   navbar:
     search: true

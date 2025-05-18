@@ -3679,11 +3679,11 @@
     "href": "nivel/superior/sisma/index_sisma_en.html",
     "title": "SISMA - Visual Dynamics of Transformations",
     "section": "",
-    "text": "SISMA Features\nExample of screens",
+    "text": "The program was written in Java and allows you to dynamically visualize and evaluate the transformation of reactants and products in an isolated reaction, a metabolic flow, or complex maps. The name Sisma refers to the acronym for Autocatalytic Map System. The program performs a visual and quantitative simulation on a reaction map, by perceiving variations in the hue of the objects involved in each transformation, either from a default equation or one introduced by the user. The program is registered under no. 08869-3 with the National Institute of Industrial Property (INPI).",
     "crumbs": [
-      "Sobre",
-      "Sisma - diagramas dinâmicos",
-      "Fluxos dinâmicos em Bioquímica"
+      "About",
+      "Sisma - dynamic diagrams",
+      "Dynamic flows in Biochemistry"
     ]
   },
   {
@@ -3691,11 +3691,11 @@
     "href": "nivel/superior/sisma/index_sisma_en.html#download",
     "title": "SISMA - Visual Dynamics of Transformations",
     "section": "Download",
-    "text": "Download\nThe compressed file containing the program is obtained from this LINK",
+    "text": "Download\nThe compressed file containing the program can be obtained at this LINK",
     "crumbs": [
-      "Sobre",
-      "Sisma - diagramas dinâmicos",
-      "Fluxos dinâmicos em Bioquímica"
+      "About",
+      "Sisma - dynamic diagrams",
+      "Dynamic flows in Biochemistry"
     ]
   },
   {
@@ -3703,11 +3703,11 @@
     "href": "nivel/superior/sisma/index_sisma_en.html#quick-tip-for-use",
     "title": "SISMA - Visual Dynamics of Transformations",
     "section": "Quick tip for use !",
-    "text": "Quick tip for use !\nTo use Sisma, download the file from the link above and unzip it on your PC. The program does not require installation, only a JAVA virtual machine. To run it, go to the “dist” folder and click on the Java executable file (“Sisma_Realese_1.jar”).\nThis quick tutorial in video illustrates the usage described below.\nRight-click and select Object to insert a compound. Repeat the last procedure in another location on the blank sheet of the program, but this time reducing the color intensity on the scroll bar. Now connect the two objects by clicking on a vertex of one of them and dragging the mouse to the vertex of the other. Finally, click OK and run the simulation using the Play icon to view the conversion of hues from the first to the second object.",
+    "text": "Quick tip for use !\nTo use Sisma, download the file from the link above and unzip it on your PC. The program does not require installation, only a virtual machine JAVA. To run it, go to the “dist” folder and click on the Java executable file (“Sisma_Realese_1.jar”).\nThis quick tutorial in video illustrates the use described below.\nRight-click and select Object to insert a compound. Repeat the last procedure in another location on the blank sheet of the program, but this time reduce the color intensity in the scroll bar. Now connect the two objects by clicking on one of their vertices and dragging the mouse to the vertex of the other. Finally, click OK and run the simulation using the Play icon to view the conversion of hues from the first to the second object.",
     "crumbs": [
-      "Sobre",
-      "Sisma - diagramas dinâmicos",
-      "Fluxos dinâmicos em Bioquímica"
+      "About",
+      "Sisma - dynamic diagrams",
+      "Dynamic flows in Biochemistry"
     ]
   },
   {
@@ -3715,11 +3715,11 @@
     "href": "nivel/superior/sisma/index_sisma_en.html#ebook",
     "title": "SISMA - Visual Dynamics of Transformations",
     "section": "Ebook",
-    "text": "Ebook\nTo insert objects and paths in Sisma, as well as to develop, simulate and evaluate enzymatic reactions, chains or dynamic metabolic networks, download the book SISMA - Visualização Dinâmica em Cataálise & Metabolismo. Below are some example files for dynamic transformations with Sisma.",
+    "text": "Ebook\n\n\n\nTo insert objects and paths in Sisma, as well as to design, simulate, and evaluate enzymatic reactions, chains, or dynamic metabolic networks, download the book SISMA - Dynamic Visualization in Catalysis & Metabolism. Here are some examples of files for dynamic transformations with Sisma.\n\n\n\nExamples of dynamic maps with Sisma\n\n\n\n\nBriggs-Haldane condition\n\n\n\n\nEffect of Vm and Km\n\n\n\n\nEffector and positive cooperativity\n\n\n\n\nNegative modulator\n\n\n\n\nInduced adjustment\n\n\n\n\nGlycolysis\n\n\n\n\nCarbohydrate metabolism\n\n\n\n\nMetabolic map\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSteady-state simulation for Briggs-Haldane condition in enzyme kinetics. Note the maintenance of the ES complex content throughout the reaction.",
     "crumbs": [
-      "Sobre",
-      "Sisma - diagramas dinâmicos",
-      "Fluxos dinâmicos em Bioquímica"
+      "About",
+      "Sisma - dynamic diagrams",
+      "Dynamic flows in Biochemistry"
     ]
   },
   {
@@ -4243,5 +4243,179 @@
     "title": "",
     "section": "Customized GPT",
     "text": "Customized GPT\n\nSchneedorf, J.M. GSPlotly: interactive script generator for JSPlotly. Customized OpenAI GPT. Available at: https://chat.openai.com/g/g-6819fbb8d2d08191bf7d50a3dbeadb0d-gsplotly. Accessed on: May 11, 2025."
+  },
+  {
+    "objectID": "nivel/basico/sisma/index_sisma_bas_en.html",
+    "href": "nivel/basico/sisma/index_sisma_bas_en.html",
+    "title": "SISMA at School",
+    "section": "",
+    "text": "The examples below illustrate some possible uses for Sisma in a school context for Basic Education. For simplicity, the flow equations do not correspond to precise mathematical models, serving only to “bring to life” some ideas contained in textbooks on the subjects. However, it is possible to insert more accurate equations related to each model (see ebook."
+  },
+  {
+    "objectID": "nivel/basico/sisma/index_sisma_bas_en.html#prey-predator-relationship",
+    "href": "nivel/basico/sisma/index_sisma_bas_en.html#prey-predator-relationship",
+    "title": "SISMA at School",
+    "section": "1. Prey-Predator Relationship",
+    "text": "1. Prey-Predator Relationship"
+  },
+  {
+    "objectID": "nivel/basico/sisma/index_sisma_bas_en.html#food-chain",
+    "href": "nivel/basico/sisma/index_sisma_bas_en.html#food-chain",
+    "title": "SISMA at School",
+    "section": "2. Food Chain",
+    "text": "2. Food Chain"
+  },
+  {
+    "objectID": "nivel/basico/sisma/index_sisma_bas_en.html#water-cycle",
+    "href": "nivel/basico/sisma/index_sisma_bas_en.html#water-cycle",
+    "title": "SISMA at School",
+    "section": "3. Water Cycle",
+    "text": "3. Water Cycle"
+  },
+  {
+    "objectID": "nivel/basico/sisma/index_sisma_bas_en.html#learning",
+    "href": "nivel/basico/sisma/index_sisma_bas_en.html#learning",
+    "title": "SISMA at School",
+    "section": "4. Learning",
+    "text": "4. Learning"
+  },
+  {
+    "objectID": "nivel/basico/sisma/index_sisma_bas_en.html#hypercycle",
+    "href": "nivel/basico/sisma/index_sisma_bas_en.html#hypercycle",
+    "title": "SISMA at School",
+    "section": "5. Hypercycle",
+    "text": "5. Hypercycle"
+  },
+  {
+    "objectID": "nivel/superior/sisma/index_sisma_en.html#features-of-sisma",
+    "href": "nivel/superior/sisma/index_sisma_en.html#features-of-sisma",
+    "title": "SISMA - Visual Dynamics of Transformations",
+    "section": "Features of SISMA",
+    "text": "Features of SISMA\nFor the study of the relationships between reactants and products, the program allows the insertion of compounds (Object), paths (Path), figures and annotations on the map, storage and reading of maps, simulation of variations in the relative contents of each compound by point and line graphs simultaneously with those occurring on the map itself, pause, interruption, backward and forward viewing at any time during the simulation, automatically generating and exporting spreadsheets containing the numerical values of each object transformed at each instant, and instantly printing the map at the point of a desired transformation. In this way, the program makes the visualization of forces and flows that are presented statically in diagrams and maps dynamic, both in Biochemistry and for any subject involving this type of representation.\nDespite its ease of use with a mouse, without the need to enter text commands, Sisma allows the modification of all elements of the map (objects, paths, equations, names, colors, positions) by editing the map file in Notepad, adding value to Reproducible Teaching with the tool.\nThe program was developed in partnership with Prof. Dr. Luiz Eduardo da Silva, from the Department of Computer Science (DCC/UNIFAL-MG), and undergraduate students.\n\n\nExample screens",
+    "crumbs": [
+      "About",
+      "Sisma - dynamic diagrams",
+      "Dynamic flows in Biochemistry"
+    ]
+  },
+  {
+    "objectID": "nivel/superior/sisma/index_sisma_en.html#examples-of-dynamic-maps-with-sisma",
+    "href": "nivel/superior/sisma/index_sisma_en.html#examples-of-dynamic-maps-with-sisma",
+    "title": "SISMA - Visual Dynamics of Transformations",
+    "section": "Examples of dynamic maps with Sisma",
+    "text": "Examples of dynamic maps with Sisma",
+    "crumbs": [
+      "About",
+      "Sisma - dynamic diagrams",
+      "Dynamic flows in Biochemistry"
+    ]
+  },
+  {
+    "objectID": "nivel/superior/sisma/index_sisma_en.html#briggs-haldane-condition",
+    "href": "nivel/superior/sisma/index_sisma_en.html#briggs-haldane-condition",
+    "title": "SISMA - Visual Dynamics of Transformations",
+    "section": "Briggs-Haldane condition",
+    "text": "Briggs-Haldane condition",
+    "crumbs": [
+      "About",
+      "Sisma - dynamic diagrams",
+      "Dynamic flows in Biochemistry"
+    ]
+  },
+  {
+    "objectID": "nivel/superior/sisma/index_sisma_en.html#effect-of-vm-and-km",
+    "href": "nivel/superior/sisma/index_sisma_en.html#effect-of-vm-and-km",
+    "title": "SISMA - Visual Dynamics of Transformations",
+    "section": "Effect of Vm and Km",
+    "text": "Effect of Vm and Km",
+    "crumbs": [
+      "About",
+      "Sisma - dynamic diagrams",
+      "Dynamic flows in Biochemistry"
+    ]
+  },
+  {
+    "objectID": "nivel/superior/sisma/index_sisma_en.html#effector-and-positive-cooperativity",
+    "href": "nivel/superior/sisma/index_sisma_en.html#effector-and-positive-cooperativity",
+    "title": "SISMA - Visual Dynamics of Transformations",
+    "section": "Effector and positive cooperativity",
+    "text": "Effector and positive cooperativity",
+    "crumbs": [
+      "About",
+      "Sisma - dynamic diagrams",
+      "Dynamic flows in Biochemistry"
+    ]
+  },
+  {
+    "objectID": "nivel/superior/sisma/index_sisma_en.html#negative-modulator",
+    "href": "nivel/superior/sisma/index_sisma_en.html#negative-modulator",
+    "title": "SISMA - Visual Dynamics of Transformations",
+    "section": "Negative modulator",
+    "text": "Negative modulator",
+    "crumbs": [
+      "About",
+      "Sisma - dynamic diagrams",
+      "Dynamic flows in Biochemistry"
+    ]
+  },
+  {
+    "objectID": "nivel/superior/sisma/index_sisma_en.html#induced-adjustment",
+    "href": "nivel/superior/sisma/index_sisma_en.html#induced-adjustment",
+    "title": "SISMA - Visual Dynamics of Transformations",
+    "section": "Induced adjustment",
+    "text": "Induced adjustment",
+    "crumbs": [
+      "About",
+      "Sisma - dynamic diagrams",
+      "Dynamic flows in Biochemistry"
+    ]
+  },
+  {
+    "objectID": "nivel/superior/sisma/index_sisma_en.html#glycolysis",
+    "href": "nivel/superior/sisma/index_sisma_en.html#glycolysis",
+    "title": "SISMA - Visual Dynamics of Transformations",
+    "section": "Glycolysis",
+    "text": "Glycolysis",
+    "crumbs": [
+      "About",
+      "Sisma - dynamic diagrams",
+      "Dynamic flows in Biochemistry"
+    ]
+  },
+  {
+    "objectID": "nivel/superior/sisma/index_sisma_en.html#carbohydrate-metabolism",
+    "href": "nivel/superior/sisma/index_sisma_en.html#carbohydrate-metabolism",
+    "title": "SISMA - Visual Dynamics of Transformations",
+    "section": "Carbohydrate metabolism",
+    "text": "Carbohydrate metabolism",
+    "crumbs": [
+      "About",
+      "Sisma - dynamic diagrams",
+      "Dynamic flows in Biochemistry"
+    ]
+  },
+  {
+    "objectID": "nivel/superior/sisma/index_sisma_en.html#metabolic-map",
+    "href": "nivel/superior/sisma/index_sisma_en.html#metabolic-map",
+    "title": "SISMA - Visual Dynamics of Transformations",
+    "section": "Metabolic map",
+    "text": "Metabolic map",
+    "crumbs": [
+      "About",
+      "Sisma - dynamic diagrams",
+      "Dynamic flows in Biochemistry"
+    ]
+  },
+  {
+    "objectID": "nivel/superior/sisma/index_sisma_en.html#sisma-online---sismaweb",
+    "href": "nivel/superior/sisma/index_sisma_en.html#sisma-online---sismaweb",
+    "title": "SISMA - Visual Dynamics of Transformations",
+    "section": "SISMA online - SismaWeb !!!",
+    "text": "SISMA online - SismaWeb !!!\nDespite its usability, the SISMA program requires it to be loaded onto a computer, which reduces its potential for use in an era of mobile devices and online access. In this sense, a cloud version is being developed by the team, using JavaScript with the P5.js library, preserving the existing features of the standalone version of SISMA and adding other capabilities.\nA draft for a future prototype can be viewed at SismaWeb.",
+    "crumbs": [
+      "About",
+      "Sisma - dynamic diagrams",
+      "Dynamic flows in Biochemistry"
+    ]
   }
 ]
