@@ -1,5 +1,13 @@
+
 [build]
-  command = "echo 'Site already built'"
-  publish = "_site"
+  command = "quarto render pt"
+  publish = "pt/_site"
+
+
+
+
+# [build]
+#  command = "echo 'Site already built'"
+#  publish = "_site"
 
 # Isso diz ao Netlify: “Não construa nada. Apenas publique _site como está.”
