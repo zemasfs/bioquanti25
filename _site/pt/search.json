@@ -801,6 +801,18 @@
     ]
   },
   {
+    "objectID": "nivel/superior/jsplotly/jsptl_bioq.html#efeito-de-bohr-em-hemoglobina-ph",
+    "href": "nivel/superior/jsplotly/jsptl_bioq.html#efeito-de-bohr-em-hemoglobina-ph",
+    "title": "Simulações Interativas Para Biofísico-química com JSPlotly & GSPlotly",
+    "section": "4 Efeito de Bohr em hemoglobina (pH)",
+    "text": "4 Efeito de Bohr em hemoglobina (pH)\n\nContexto:\n  Algumas condições fisiológicas ou patológicas podem alterar a afinidade de ligação do oxigênio com a hemoglobina, tais como a temperatura, alguns metabólitos (2,3-BPG), e o teor hidrogeneiônico da solução.\n\n\nEquação:\n\\[\nY(pO_2) = \\frac{{pO_2^n}}{{P_{50}^n + pO_2^n}}, \\quad \\text{com } P_{50} = P_{50,\\text{ref}} + \\alpha (pH_{\\text{ref}} - pH)\n\\]\nOnde,\n\nY = saturação da hemoglobina,\npO\\(_{2}\\) = pressão parcial de oxigênio (em mmHg),\nP\\(_{50}\\) = pressão de O\\(_{2}\\) na qual a hemoglobina está 50% saturada,\nP\\(_{50,ref}\\) = 26 mmHg (valor padrão),\n\\(\\alpha\\) = 50 (intensidade do efeito de Bohr),\npH\\(_{ref}\\) = 7,4,\nn = 2,8 = coeficiente de Hill para a hemoglobina.",
+    "crumbs": [
+      "Sobre",
+      "JSPlotly & GSPlotly - Simulação gráfica interativa & IA",
+      "Simulações em Bioquímica"
+    ]
+  },
+  {
     "objectID": "nivel/superior/jsplotly/jsptl_bioq.html#ponto-isoelétrico-em-proteínas",
     "href": "nivel/superior/jsplotly/jsptl_bioq.html#ponto-isoelétrico-em-proteínas",
     "title": "Simulações Interativas Para Biofísico-química com JSPlotly & GSPlotly",
@@ -2468,7 +2480,7 @@
     "crumbs": [
       "Sobre",
       "Jmol - Moléculas em 3D",
-      "Um Jardim de Moléculas"
+      "Jardim de Moléculas"
     ]
   },
   {
@@ -4247,17 +4259,5 @@
     "title": "",
     "section": "7 GPT personalizado",
     "text": "7 GPT personalizado\n\nSchneedorf, J.M. GSPlotly: gerador de scripts interativos para JSPlotly. OpenAI GPT customizado. Disponível em: https://chat.openai.com/g/g-6819fbb8d2d08191bf7d50a3dbeadb0d-gsplotly. Acesso em: 11 maio 2025."
-  },
-  {
-    "objectID": "nivel/superior/jsplotly/jsptl_bioq.html#efeito-de-bohr-em-hemoglobina-ph",
-    "href": "nivel/superior/jsplotly/jsptl_bioq.html#efeito-de-bohr-em-hemoglobina-ph",
-    "title": "Simulações Interativas Para Biofísico-química com JSPlotly & GSPlotly",
-    "section": "4 Efeito de Bohr em hemoglobina (pH)",
-    "text": "4 Efeito de Bohr em hemoglobina (pH)\n\nContexto:\n  Algumas condições fisiológicas ou patológicas podem alterar a afinidade de ligação do oxigênio com a hemoglobina, tais como a temperatura, alguns metabólitos (2,3-BPG), e o teor hidrogeneiônico da solução.\n\n\nEquação:\n\\[\nY(pO_2) = \\frac{{pO_2^n}}{{P_{50}^n + pO_2^n}}, \\quad \\text{com } P_{50} = P_{50,\\text{ref}} + \\alpha (pH_{\\text{ref}} - pH)\n\\]\nOnde,\n\nY = saturação da hemoglobina,\npO\\(_{2}\\) = pressão parcial de oxigênio (em mmHg),\nP\\(_{50}\\) = pressão de O\\(_{2}\\) na qual a hemoglobina está 50% saturada,\nP\\(_{50,ref}\\) = 26 mmHg (valor padrão),\n\\(\\alpha\\) = 50 (intensidade do efeito de Bohr),\npH\\(_{ref}\\) = 7,4,\nn = 2,8 = coeficiente de Hill para a hemoglobina.",
-    "crumbs": [
-      "Sobre",
-      "JSPlotly & GSPlotly - Simulação gráfica interativa & IA",
-      "Simulações em Bioquímica"
-    ]
   }
 ]
