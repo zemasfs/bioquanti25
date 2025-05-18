@@ -1,7 +1,7 @@
 
 [build]
   command = "quarto render pt"
-  publish = "pt/_site"
+  publish = "_site"
 
 
 
