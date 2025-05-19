@@ -353,11 +353,12 @@ window.Quarto = {
   <li><a href="#acid-base-equilibrium-and-buffer-systems" id="toc-acid-base-equilibrium-and-buffer-systems" class="nav-link" data-scroll-target="#acid-base-equilibrium-and-buffer-systems"><span class="header-section-number">1</span> Acid-base equilibrium and buffer systems</a></li>
   <li><a href="#net-charge-network-in-peptides" id="toc-net-charge-network-in-peptides" class="nav-link" data-scroll-target="#net-charge-network-in-peptides"><span class="header-section-number">2</span> Net charge network in peptides</a></li>
   <li><a href="#interaction-of-oxygen-with-myoglobin-and-hemoglobin" id="toc-interaction-of-oxygen-with-myoglobin-and-hemoglobin" class="nav-link" data-scroll-target="#interaction-of-oxygen-with-myoglobin-and-hemoglobin"><span class="header-section-number">3</span> Interaction of oxygen with myoglobin and hemoglobin</a></li>
-  <li><a href="#isoelectric-point-in-proteins" id="toc-isoelectric-point-in-proteins" class="nav-link" data-scroll-target="#isoelectric-point-in-proteins"><span class="header-section-number">4</span> Isoelectric Point in Proteins</a></li>
-  <li><a href="#catalysis-and-enzyme-inhibition" id="toc-catalysis-and-enzyme-inhibition" class="nav-link" data-scroll-target="#catalysis-and-enzyme-inhibition"><span class="header-section-number">5</span> Catalysis and enzyme inhibition</a></li>
-  <li><a href="#thermodynamic-stability-of-nucleic-acids" id="toc-thermodynamic-stability-of-nucleic-acids" class="nav-link" data-scroll-target="#thermodynamic-stability-of-nucleic-acids"><span class="header-section-number">6</span> Thermodynamic stability of nucleic acids</a></li>
-  <li><a href="#van-der-waals-equation-for-ideal-gases" id="toc-van-der-waals-equation-for-ideal-gases" class="nav-link" data-scroll-target="#van-der-waals-equation-for-ideal-gases"><span class="header-section-number">7</span> Van der Waals equation for ideal gases</a></li>
-  <li><a href="#equilibrium-of-atp-production-from-reactants-temperature-and-ph" id="toc-equilibrium-of-atp-production-from-reactants-temperature-and-ph" class="nav-link" data-scroll-target="#equilibrium-of-atp-production-from-reactants-temperature-and-ph"><span class="header-section-number">8</span> Equilibrium of ATP production from reactants, temperature, and pH</a></li>
+  <li><a href="#bohr-effect-on-hemoglobin-ph" id="toc-bohr-effect-on-hemoglobin-ph" class="nav-link" data-scroll-target="#bohr-effect-on-hemoglobin-ph"><span class="header-section-number">4</span> Bohr effect on hemoglobin (pH)</a></li>
+  <li><a href="#isoelectric-point-in-proteins" id="toc-isoelectric-point-in-proteins" class="nav-link" data-scroll-target="#isoelectric-point-in-proteins"><span class="header-section-number">5</span> Isoelectric Point in Proteins</a></li>
+  <li><a href="#catalysis-and-enzyme-inhibition" id="toc-catalysis-and-enzyme-inhibition" class="nav-link" data-scroll-target="#catalysis-and-enzyme-inhibition"><span class="header-section-number">6</span> Catalysis and enzyme inhibition</a></li>
+  <li><a href="#thermodynamic-stability-of-nucleic-acids" id="toc-thermodynamic-stability-of-nucleic-acids" class="nav-link" data-scroll-target="#thermodynamic-stability-of-nucleic-acids"><span class="header-section-number">7</span> Thermodynamic stability of nucleic acids</a></li>
+  <li><a href="#van-der-waals-equation-for-ideal-gases" id="toc-van-der-waals-equation-for-ideal-gases" class="nav-link" data-scroll-target="#van-der-waals-equation-for-ideal-gases"><span class="header-section-number">8</span> Van der Waals equation for ideal gases</a></li>
+  <li><a href="#equilibrium-of-atp-production-from-reactants-temperature-and-ph" id="toc-equilibrium-of-atp-production-from-reactants-temperature-and-ph" class="nav-link" data-scroll-target="#equilibrium-of-atp-production-from-reactants-temperature-and-ph"><span class="header-section-number">9</span> Equilibrium of ATP production from reactants, temperature, and pH</a></li>
   </ul>
 </nav>
     </div>
@@ -506,14 +507,38 @@ Y= \frac{pO_2^{nH}}{p_{50}^{nH} + pO_2^{nH}}
 </p>
 </section>
 </section>
-<section id="isoelectric-point-in-proteins" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="isoelectric-point-in-proteins"><span class="header-section-number">4</span> Isoelectric Point in Proteins</h2>
+<section id="bohr-effect-on-hemoglobin-ph" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="bohr-effect-on-hemoglobin-ph"><span class="header-section-number">4</span> Bohr effect on hemoglobin (pH)</h2>
 <section id="context-3" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="context-3">Context:</h4>
-<div class="line-block">The <em>script</em> for this simulation is based on the distribution of the charge network for a polyelectrolyte, and the identification of the pH value at which this network is zero, i.e., the <em>isoelectric point (or isoionic point), pI</em>. The example uses the primary sequence of lysozyme, a hydrolase that acts to break down the microbial wall.</div>
+<div class="line-block">Some physiological or pathological conditions can alter the binding affinity of oxygen to hemoglobin, such as temperature, certain metabolites (2,3-BPG), and the hydrogen ion content of the solution.</div>
 </section>
 <section id="equation-3" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="equation-3">Equation:</h4>
+<p><span class="math display">\[
+Y(pO_2) = \frac{{pO_2^n}}{{P_{50}^n + pO_2^n}}, \quad \text{with } P_{50} = P_{50,\text{ref}} + \alpha (pH_{\text{ref}} - pH)
+\]</span><br>
+<em>Where</em>,</p>
+<ul>
+<li>Y = hemoglobin saturation,</li>
+<li>pO<span class="math inline">\(_{2}\)</span> = partial pressure of oxygen (in mmHg),</li>
+<li>P<span class="math inline">\(_{50}\)</span> = pressure of O<span class="math inline">\(_{2}\)</span> at which hemoglobin is 50% saturated,</li>
+<li>P<span class="math inline">\(_{50,ref}\)</span> = 26 mmHg (standard value),</li>
+<li><span class="math inline">\(\alpha\)</span> = 50 (Bohr effect intensity),</li>
+<li>pH<span class="math inline">\(_{ref}\)</span> = 7.4,</li>
+<li>n = 2.8 = Hill coefficient for hemoglobin.</li>
+</ul>
+<p><a href="Eq/jspl_bohr.html"><img src="Eq/jspl_bohr.png" class="img-fluid"></a></p>
+</section>
+</section>
+<section id="isoelectric-point-in-proteins" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="isoelectric-point-in-proteins"><span class="header-section-number">5</span> Isoelectric Point in Proteins</h2>
+<section id="context-4" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="context-4">Context:</h4>
+<div class="line-block">The <em>script</em> for this simulation is based on the distribution of the charge network for a polyelectrolyte, and the identification of the pH value at which this network is zero, i.e., the <em>isoelectric point (or isoionic point), pI</em>. The example uses the primary sequence of lysozyme, a hydrolase that acts to break down the microbial wall.</div>
+</section>
+<section id="equation-4" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="equation-4">Equation:</h4>
 <p><span class="math display">\[
 q_{\text{net}}(pH) = \sum_{i=1}^{N} \left[ n_i \cdot q_{B_i} + \frac{n_i}{1 + 10^{pH - pK_{a_i}}} \right]
 \]</span><br>
@@ -540,13 +565,13 @@ q_{\text{net}}(pH) = \sum_{i=1}^{N} \left[ n_i \cdot q_{B_i} + \frac{n_i}{1 + 10
 </p>
 </section>
 </section>
-<section id="catalysis-and-enzyme-inhibition" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="catalysis-and-enzyme-inhibition"><span class="header-section-number">5</span> Catalysis and enzyme inhibition</h2>
-<section id="context-4" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="context-4">Context:</h3>
+<section id="catalysis-and-enzyme-inhibition" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="catalysis-and-enzyme-inhibition"><span class="header-section-number">6</span> Catalysis and enzyme inhibition</h2>
+<section id="context-5" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="context-5">Context:</h3>
 <div class="line-block">The simulation aims to provide a general equation for enzyme inhibition studies, covering <em>competitive, non-competitive, and competitive (pure or mixed) models</em>, also allowing the study of enzyme catalysis in the absence of an inhibitor.</div>
-<section id="equation-4" class="level4 unnumbered">
-<h4 class="unnumbered anchored" data-anchor-id="equation-4">Equation:</h4>
+<section id="equation-5" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="equation-5">Equation:</h4>
 <p><span class="math display">\[
 v=\frac{Vm*S}{Km(1+\frac{I}{Kic})+S(1+\frac{I}{Kiu})}
 \]</span><br>
@@ -587,14 +612,14 @@ v=\frac{Vm*S}{Km(1+\frac{I}{Kic})+S(1+\frac{I}{Kiu})}
 </p>
 </section>
 </section>
-<section id="thermodynamic-stability-of-nucleic-acids" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="thermodynamic-stability-of-nucleic-acids"><span class="header-section-number">6</span> Thermodynamic stability of nucleic acids</h2>
-<section id="context-5" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="context-5">Context:</h3>
+<section id="thermodynamic-stability-of-nucleic-acids" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="thermodynamic-stability-of-nucleic-acids"><span class="header-section-number">7</span> Thermodynamic stability of nucleic acids</h2>
+<section id="context-6" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="context-6">Context:</h3>
 <div class="line-block">Several factors contribute to the thermodynamic stability of biopolymers, either stabilizing or destabilizing them. This simulation deals with a thermal denaturation curve for DNA in the presence or absence of some of these compounds: trehalose (stabilizing osmolyte) and guanidine chloride (destabilizing).</div>
 </section>
-<section id="equation-5" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="equation-5">Equation:</h3>
+<section id="equation-6" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="equation-6">Equation:</h3>
 <p><span class="math display">\[
 y(T) = \frac{1}{1 + e^{-\frac{T - T_m}{\beta}}}
 \]</span></p>
@@ -622,15 +647,15 @@ y(T) = \frac{1}{1 + e^{-\frac{T - T_m}{\beta}}}
 </div>
 </section>
 </section>
-<section id="van-der-waals-equation-for-ideal-gases" class="level2" data-number="7">
-<h2 data-number="7" class="anchored" data-anchor-id="van-der-waals-equation-for-ideal-gases"><span class="header-section-number">7</span> Van der Waals equation for ideal gases</h2>
-<section id="context-6" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="context-6">Context:</h3>
+<section id="van-der-waals-equation-for-ideal-gases" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="van-der-waals-equation-for-ideal-gases"><span class="header-section-number">8</span> Van der Waals equation for ideal gases</h2>
+<section id="context-7" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="context-7">Context:</h3>
 <div class="line-block">An adaptation that relates the thermodynamic quantities of pressure, volume, and temperature for ideal gases is the <em>van der Waals equation</em>. In this equation, coefficients are calculated that estimate the existence of a volume and interparticle interactions. Thus, the van der Waals equation corrects the ideal gas equation by considering a term to compensate for intermolecular forces (a/V<span class="math inline">\(^{2}\)</span>) and the available volume, which discounts the volume occupied by the gas molecules themselves.</div>
 <div class="line-block">The simulation offers additional interactivity through the presence of sliders for temperature and for the finite volume coefficient (<em>b</em>) and particle interaction coefficient (<em>a</em>).</div>
 </section>
-<section id="equation-6" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="equation-6">Equation:</h3>
+<section id="equation-7" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="equation-7">Equation:</h3>
 <p><span class="math display">\[
 P = \frac{RT}{V - b} - \frac{a}{V^2}
 \]</span></p>
@@ -654,14 +679,14 @@ P = \frac{RT}{V - b} - \frac{a}{V^2}
 </p>
 </section>
 </section>
-<section id="equilibrium-of-atp-production-from-reactants-temperature-and-ph" class="level2" data-number="8">
-<h2 data-number="8" class="anchored" data-anchor-id="equilibrium-of-atp-production-from-reactants-temperature-and-ph"><span class="header-section-number">8</span> Equilibrium of ATP production from reactants, temperature, and pH</h2>
-<section id="context-7" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="context-7">Context:</h3>
+<section id="equilibrium-of-atp-production-from-reactants-temperature-and-ph" class="level2" data-number="9">
+<h2 data-number="9" class="anchored" data-anchor-id="equilibrium-of-atp-production-from-reactants-temperature-and-ph"><span class="header-section-number">9</span> Equilibrium of ATP production from reactants, temperature, and pH</h2>
+<section id="context-8" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="context-8">Context:</h3>
 <div class="line-block">Intracellular ATP production involves the classic chemical equilibrium relationship between reactants and products as a function of reaction temperature, adjusted to a specific pH value. By varying one or both reactant concentrations or physical-chemical parameters, it is possible to quantify the product using the following thermodynamic reaction:</div>
 </section>
-<section id="equation-7" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="equation-7">Equation:</h3>
+<section id="equation-8" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="equation-8">Equation:</h3>
 <p><span class="math display">\[
 \Delta G = \Delta G^{\circ'} + RT \ln\left(\frac{[\text{ADP}] \cdot [\text{P}_i]}{[\text{ATP}]}\right) + 2{,}303 \cdot RT \cdot n_H \cdot \text{pH}
 \]</span></p>

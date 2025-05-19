@@ -146,6 +146,36 @@ Y = degree of oxygen saturation in the protein;
 ```
 \
 
+
+## Bohr effect on hemoglobin (pH)
+
+
+#### Context: {.unnumbered}
+
+| Some physiological or pathological conditions can alter the binding affinity of oxygen to hemoglobin, such as temperature, certain metabolites (2,3-BPG), and the hydrogen ion content of the solution.
+
+#### Equation: {.unnumbered}
+
+$$
+Y(pO_2) = \frac{{pO_2^n}}{{P_{50}^n + pO_2^n}}, \quad \text{with } P_{50} = P_{50,\text{ref}} + \alpha (pH_{\text{ref}} - pH)
+$$
+\
+*Where*,
+
+- Y = hemoglobin saturation,
+- pO$_{2}$ = partial pressure of oxygen (in mmHg),
+- P$_{50}$ = pressure of O$_{2}$ at which hemoglobin is 50% saturated,
+- P$_{50,ref}$ = 26 mmHg (standard value),
+- $\alpha$ = 50 (Bohr effect intensity),
+- pH$_{ref}$ = 7.4,
+- n = 2.8 = Hill coefficient for hemoglobin.
+
+
+
+[![](Eq/jspl_bohr.png)](Eq/jspl_bohr.html)
+
+
+
 ## Isoelectric Point in Proteins
 
 
