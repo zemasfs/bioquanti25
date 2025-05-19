@@ -1,6 +1,6 @@
 ---
 title: "Introduction"
-bibliography: references.bib
+bibliography: referencias.bib
 csl: associacao-brasileira-de-normas-tecnicas-ufrgs-initials2023.csl
 ---
 
