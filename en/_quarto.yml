@@ -85,7 +85,7 @@ website:
          
     right:
       - text: "PT"
-        href: ../pt/index.html
+        href: /pt/index.html
 
 
 format:

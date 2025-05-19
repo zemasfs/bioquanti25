@@ -85,7 +85,7 @@ website:
     right:
     
       - text: "EN"
-        href: ../en/index.html
+        href: /en/index.html
 
 
 format:
