@@ -523,5 +523,8 @@
   },
   "nivel/basico/sisma/index_sisma_bas.qmd": {
     "index_sisma_bas.html": "440d41f4"
+  },
+  "nivel/superior/jsplotly/jsplt_bioq.qmd": {
+    "jsplt_bioq.html": "2e3917f7"
   }
 }

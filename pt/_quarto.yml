@@ -27,7 +27,7 @@ website:
           - text: "GSPlotly - gerador de códigos por IA para JSPlotly"
             href: nivel/superior/jsplotly/gsplotly.qmd
           - text: "Simulações em Bioquímica"
-            href: nivel/superior/jsplotly/jsptl_bioq.qmd
+            href: nivel/superior/jsplotly/jsplt_bioq.qmd
           - text: "Simulações na Escola"
             href: nivel/basico/jsplotly/jsplotly_bas.qmd
           
