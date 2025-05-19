@@ -159,18 +159,18 @@ lang: pt
 
 
 
-## Download 
+## [JSlotly  -  Download](JSPlotly.html)
 
-:::{.html}
-<a href="JSPlotly_v1.html"
-   target="_blank"
-   onclick="gtag('event', 'JSPlotly_Download', {
-       'event_category': 'Downloads',
-       'event_label': 'JSPlotly_v1'
-   });">
-   JSPlotly_v1
-</a>
-:::
+<!-- :::{.html} -->
+<!-- <a href="JSPlotly.html" -->
+<!--    target="_blank" -->
+<!--    onclick="gtag('event', 'JSPlotly_Download', { -->
+<!--        'event_category': 'Downloads', -->
+<!--        'event_label': 'JSPlotly' -->
+<!--    });"> -->
+<!--    JSPlotly -->
+<!-- </a> -->
+<!-- ::: -->
 
 
 
