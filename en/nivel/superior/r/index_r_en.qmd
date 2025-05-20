@@ -46,40 +46,40 @@ csl: associacao-brasileira-de-normas-tecnicas-ufrgs-initials2023.csl
 
 **I. INTRODUCTION**
 
-[1. Biomolecules](biomolecules.qmd)
+[1. Biomolecules](biomoleculas_en.qmd)
 
-[2. Buffer systems](buffers.qmd)
+[2. Buffer systems](tampoes_en.qmd)
 
 **II. STRUCTURE AND FUNCTION**
 
-[3. Amino acids](aminoacid.qmd)
+[3. Amino acids](aminoacid_en.qmd)
 
-[4. Proteins](proteins.qmd)
+[4. Proteins](proteinas_en.qmd)
 
-[5. Enzymes](enzymes.qmd)
+[5. Enzymes](enzimas_en.qmd)
 
-[6. Enzyme inhibition](enzInhib.qmd)
+[6. Enzyme inhibition](enzInib_en.qmd)
 
-[7. Molecular interaction](binding.qmd)
+[7. Molecular interaction](binding_en.qmd)
 
-[8. Nucleic acids](acnucleic.qmd)
+[8. Nucleic acids](acnucleic_en.qmd)
 
-[9. Biomembranes](membranas.qmd)
+[9. Biomembranes](membranas_en.qmd)
 
 
 **III. METABOLISM**
 
-[10. Biothermodynamics](biotermodin.qmd)
+[10. Biothermodynamics](biotermodin_en.qmd)
 
-[11. Metabolism](metabolismo.qmd)
+[11. Metabolism](metabolismo_en.qmd)
 
-[12. Metabolic networks](redes.qmd)
+[12. Metabolic networks](redes_en.qmd)
 
 **IV. OTHERS**
 
-[13. Experimental planning](planejExper.qmd)
+[13. Experimental planning](planejExper_en.qmd)
 
-[References](referencias.qmd)
+[References](referencias_en.qmd)
 
 
 
