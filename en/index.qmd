@@ -19,7 +19,7 @@ publish: false
 
 | The website was awarded 2nd place in the *Bayardo Baptista Torres National Award for Teaching Biochemistry and Molecular Biology*, held every two years since 2017 by the *Brazilian Society of Biochemistry and Molecular Biology* (SBBq, 2023), and is referenced as an open educational resource on the [eduCAPES portal](https://educapes.capes.gov.br/handle/capes/748598). Recently, a portable application for graphic and interactive simulation available on the website, *JSPlotly*, was awarded first place in the same award and is also available on [eduCAPES](https://educapes.capes.gov.br/handle/capes/972869). With equal honor and satisfaction, we were also classified in the *National Award* in its previous editions, this time for experimental work in teaching and learning.
 
-::: {layout-ncol=10}
+::: {layout-ncol=5}
 
 [![](premio1lugar_bg.png)](https://www.bioquimica.org.br/index.php/REB/announcement/view/57)
 

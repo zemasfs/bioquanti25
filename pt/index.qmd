@@ -19,7 +19,7 @@ publish: false
 
 |       O website foi contemplado com o 2o. lugar no *Prêmio Nacional de Ensino de Bioquímica e Biologia Molecular Bayardo Baptista Torres*, promovido a cada dois anos pela *Sociedade Brasileira de Bioquímica e Biologia Molecular* (SBBq, 2023), e encontra-se referenciado como recurso educacional aberto junto ao [portal eduCAPES](https://educapes.capes.gov.br/handle/capes/748598). Recentemente, um aplicativo portável para simulação gráfica e interativa presente no site, *JSPlotly*, foi contemplado ao 1o. Lugar junto ao mesmo prêmio, e também encontra-se depositado no [eduCAPES](https://educapes.capes.gov.br/handle/capes/972869). Com igual sentimento de honraria e satisfação, também fomos classificados junto ao *Prêmio Nacional* em suas edições anteriores, desta vez para trabalhos experimentais em ensino e aprendizagem.
 
-::: {layout-ncol=10}
+::: {layout-ncol=5}
 
 [![](premio1lugar_bg.png)](https://www.bioquimica.org.br/index.php/REB/announcement/view/57)
 
