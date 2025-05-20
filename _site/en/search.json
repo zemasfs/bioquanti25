@@ -1622,7 +1622,7 @@
     "href": "nivel/basico/Jardim/industrial_en.html",
     "title": "Molecules of industrial interest",
     "section": "",
-    "text": "##Molecules of Industrial Interest\n\n\n\nAmmonia is used in the production of fertilizers.\n\n\n\nWikipedia\n\n\n\n\nMethanol is used as a solvent and in the production of formaldehyde.\n\n\n\nWikipedia\n\n\n\n\nPolyethylene is the most common plastic in the world.\n\n\n\nWikipedia\n\n\n\n\nVinyl chloride is used in the production of PVC.\n\n\n\nWikipedia\n\n\n\n\n Back to top"
+    "text": "Ammonia is used in the production of fertilizers.\n\n\n\nWikipedia\n\n\n\n\nMethanol is used as a solvent and in the production of formaldehyde.\n\n\n\nWikipedia\n\n\n\n\nPolyethylene is the most common plastic in the world.\n\n\n\nWikipedia\n\n\n\n\nVinyl chloride is used in the production of PVC.\n\n\n\nWikipedia\n\n\n\n\n Back to top"
   },
   {
     "objectID": "nivel/basico/Jardim/inorganica_en.html",
@@ -2249,7 +2249,7 @@
     "href": "nivel/basico/Jardim/index_Jardim_en.html",
     "title": "Initiative",
     "section": "",
-    "text": "This Molecule Garden under development aims to assist in the interactive learning of molecules with the help of three-dimensional atomic models together with codes for compilation of specific observations, colors, calculations, varied rendering of atomic structures, and animation, among others.\n\n\n\n Back to top",
+    "text": "This Molecule Garden aims to assist in the interactive learning of molecules for three-dimensional atomic models, along with codes for compiling specific observations, colors, calculations, varied rendering of atomic structures, and animation, among others.\nThe Garden contains specimens distributed into arbitrary classes, intentionally listed to encourage learning about atomic models with the tool. They are as follows:\n\n\n\n\n\nHave fun !!\n\n\n1. Organic\n2. Inorganic\n3. Biomolecules\n4. Pharmaceutical\n5. Medicinal\n6. Toxicological\n7. Nutritional\n8. Flavors\n9. Environmental\n10. Venoms\n11. Aromas\n12. Industrial\n13. Toxic plants\n14. Supramolecular\n\n\n\n Back to top",
     "crumbs": [
       "About",
       "Jmol - 3D molecules",
@@ -4180,5 +4180,12 @@
     "title": "Contact",
     "section": "",
     "text": "José Maurício Schneedorf Ferreira da Silva (Full Professor, Biochemistry Dept.)\n\nemail: jose.dasilva@unifal-mg.edu.br\nPhone: 55 - (35) - 3291-1928\nAddress: Department of Biochemistry, Institute of Biomedical Sciences, Federal University of Alfenas, UNIFAL-MG. Building E, room 209. Alfenas, MG. Zip code: ‘37.130-001’, Brazil\n\n\n\n\n\n\n\n\n\n Site under Creative Commons license CC BY-NC-ND 4.0\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "nivel/basico/Jardim/industrial_en.html#molecules-of-industrial-interest",
+    "href": "nivel/basico/Jardim/industrial_en.html#molecules-of-industrial-interest",
+    "title": "Molecules of industrial interest",
+    "section": "",
+    "text": "Ammonia is used in the production of fertilizers.\n\n\n\nWikipedia\n\n\n\n\nMethanol is used as a solvent and in the production of formaldehyde.\n\n\n\nWikipedia\n\n\n\n\nPolyethylene is the most common plastic in the world.\n\n\n\nWikipedia\n\n\n\n\nVinyl chloride is used in the production of PVC.\n\n\n\nWikipedia"
   }
 ]

@@ -5,23 +5,23 @@ title: "Molecules of environmental interest"
 [![Carbon dioxide is a greenhouse gas, and is the main cause of global warming.](dioxido%20de%20carbono.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C(=O)=O)
 
 <p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/Di%C3%B3xido_de_carbono)
+[Wikipedia](https://wikipedia.org/wiki/Di%C3%B3xido_de_carbono)
 </p>
 
 [![Sulfur dioxide is a gas that contributes to rain acid.](dióxido de enxofre.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=O=S=O)
 
 <p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/Di%C3%B3xido_de_enxofre)
+[Wikipedia](https://wikipedia.org/wiki/Di%C3%B3xido_de_enxofre)
 </p>
 
 [![Nitrate is present in fertilizers, contributes to the eutrophication of water bodies.](Nitrato.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=%5BN+%5D(=O)(%5BO-%5D)%5BO-%5D%5D)
 
 <p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/Nitrate)
+[Wikipedia](https://wikipedia.org/wiki/Nitrate)
 </p>
 
 [![Ozone is a gas present in the stratosphere, it protects against UV radiation, but it is a pollutant in the troposphere.](ozonio.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=%5BO-%5D%5BO+%5D=O)
 
 <p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/Oz%C3%B4nio)
+[Wikipedia](https://wikipedia.org/wiki/Oz%C3%B4nio)
 </p>

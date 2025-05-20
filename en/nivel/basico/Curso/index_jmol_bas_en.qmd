@@ -19,7 +19,7 @@ title: "3D molecule visualization and animations - Jmol"
 
 In addition, *Jmol* can be accessed via the internet, without the need for files on your computer. Among the various websites that have the JSmol applet that allows this access, we suggest **clicking on the image below**, which will direct you to the applet on the St. Olaf College website (https://chemapps.stolaf.edu/jmol/jmol.php?), illustrating a water molecule:
 
-[![](jmol_bg.png){width="10%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=water) <!-- &script=Console -->
+[![](agua2.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=water) <!-- &script=Console -->
 
 
 | **Watch this short [VIDEO](https://youtu.be/WQN_Gg-s9uA) to see *JSmol* online in action!**

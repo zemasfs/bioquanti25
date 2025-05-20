@@ -2,8 +2,6 @@
 title: "Molecules of industrial interest"
 ---
 
-##Molecules of Industrial Interest
-
 [![Ammonia is used in the production of fertilizers.](amoníaco.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=N)
 
 <p style="text-align:right;">
