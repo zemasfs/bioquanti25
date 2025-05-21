@@ -26,9 +26,11 @@ lang: pt
 
 - Andrade, R. J. ; Lemes, N. H. T. ; Sindra, L. V. ; Schneedorf, J.M. . [Difference Spectra Absorption Spectrophotometry Applied to Molecular Interactions](https://link.springer.com/chapter/10.1007/978-1-0716-4294-8_12). In: Ana Clarissa dos Santos Pires; Luis Henrique Mendes da Silva. (Org.). Methods and Protocols in Food Science - Characterization of Molecular Interactions. 1ed.New York: Springer Nature, 2025, v. 13, p. 14-28. 
 
+- Schneedorf, J.M. Um aplicativo para gráficos interativos e dinâmicos para navegadores HTML, e GPT personalizado para seu códigos. In: Sumariva, G. Robótica, Inovação e Educação: conexões para o futuro. V & V Editora, Santo André (SP), 2025 (in press).
+
 - Schneedorf, J.M. JSPlotly - um aplicativo prático e portável para simulações gráficas interativas ao ensino reprodutível. In: Recursos Educacionais Abertos na UNIFAL-MG. Org: Mafra, L.A.S; Silva, L.E; Schneedorf, J.M. Ed. Pimenta Cultural. 2025 (no prelo).
 
-- Schneedorf, J.M. Bioquanti: um website para ensino reprodutível de códigos para conteúdosIn: Unifal Interativa: Projetos de Educação Digital da Universidade Federal de Alfenas. Org: Mafra, L.A.S; Silva, L.E; Schneedorf, J.M. Ed. Pimenta Cultural. 2025 (no prelo).
+- Schneedorf, J.M. Bioquanti: um website para ensino reprodutível de códigos para conteúdos. In: Unifal Interativa: Projetos de Educação Digital da Universidade Federal de Alfenas. Org: Mafra, L.A.S; Silva, L.E; Schneedorf, J.M. Ed. Pimenta Cultural. 2025 (no prelo).
 
 - Schneedorf, J.M. ScriptRplot - um script de R para produção de gráficos elegantes com ggplot2. In: Recursos Educacionais Abertos na UNIFAL-MG. Org: Mafra, L.A.S; Silva, L.E; Schneedorf, J.M. Ed. Pimenta Cultural. 2025 (no prelo).
 
