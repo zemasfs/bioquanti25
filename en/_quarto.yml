@@ -76,6 +76,16 @@ website:
         id: bas-menu
         href: erre_en.qmd
 
+      - text: "Cheatsheets"
+        id: sup-menu
+        menu: 
+          - text: "Plotly"
+            href: cheatsheet/plotly.pdf
+          - text: "Jmol"
+            href: cheatsheet/jmol_cheat.pt.pdf
+          - text: "R"
+            href: cheatsheet/r_cheat.pt.pdf
+          
 
       - text: "Works"
         href: producao_en.qmd

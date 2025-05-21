@@ -75,6 +75,17 @@ website:
       - text: "Ensino Reprodutível"
         id: bas-menu
         href: erre.qmd
+        
+      - text: "Folhas de dicas"
+        id: sup-menu
+        menu: 
+          - text: "Plotly"
+            href: cheatsheet/plotly.pdf
+          - text: "Jmol"
+            href: cheatsheet/jmol_cheat.pt.pdf
+          - text: "R"
+            href: cheatsheet/r_cheat.pt.pdf
+          
 
       - text: "Produção"
         href: producao.qmd
