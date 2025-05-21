@@ -1819,79 +1819,121 @@
   {
     "objectID": "nivel/basico/Jardim/organica.html",
     "href": "nivel/basico/Jardim/organica.html",
-    "title": "Moléculas orgânicas",
+    "title": "Moléculas Orgânicas",
     "section": "",
-    "text": "Metano é utilizado na fabricação de resinas acrílicas e fibras de poliéster e na indústria farmacêutica.\n\n\n\nWikipedia\n\n\nwireframe only; wireframe 0.2\n\n\n\n\nEtano é usado como biocombustível, fonte de energia elétrica ou como matéria-prima para gerar subprodutos.\n\n\n\nrotate x 10\n\n\nWikipedia\n\n\n\n\nPropano é presente em alguns combustíveis utilizados nos automóveis, como a gasolina e o álcool.\n\n\n\nspin on\n\n\nWikipedia\n\n\n\n\nButano é utilizado como combustível de isqueiros, como matéria-prima na produção de borracha sintética.\n\n\n\n isosurface vdw\n\n\nWikipedia\n\n\n\n\nHexadecano é um composto de alta pureza amplamente utilizado em diversas aplicações laboratoriais e industriais.\n\n\n\nmoveto 2.0 {1 1 1 90}\n\n\nWikipedia\n\n\n\n\n\n\n\nEtileno é produzido durante o amadurecimento das frutas, acelrando tal processo de outras frutas que se encontram em contato com as frutas maduras.\n\n\n\nselect atomno=1,2 \ncolor atoms yellow\n\n\nWikipedia\n\n\n\n\nPropileno é utilizado como fixador de perfumes, veículo de alguns ingredientes em medicamentos tópicos e também hidratante umectante em cosméticos diversos.\n\n\n\nbondOrder double\n\n\nWikipedia\n\n\n\n\nPenteno é uma molécula utilizada como solvente, aditivo de combustíveis, e na produção de polímeros.\n\n\n\ncolor bonds red\n\n\nWikipedia\n\n\n\n\nBenzeno é empregado na produção de lubrificantes, borrachas, corantes, solventes e pesticidas.\n\n\n\nfor (var i=0; i&lt;10; i++) {\n   rotate y 30\n   color atoms random\n   delay 0.5\n}\n\n\nWikipedia\n\n\n\n\nHexeno é muito comum verificar seu uso na indústria química, petroquímica e postos de gasolina.\n\n\n\ncolor bonds blue\n\n\nWikipedia\n\n      Links:\n\nAlcanos e alcenos\n\n\n\n\n\n\n\nAcetileno é utilizado na fabricação de explosivos, solventes e plásticos.\n\n\n\n color bonds yellow\n\n\nWikipedia\n\n\n\n\nPropino é utilizado em soldadura.\n\n\n\nselect bond(triple);C2, C3\n\n\nWikipedia\n\n\n\n\n2-butino o principal uso é a síntese do butadieno para a borracha artificial.\n\n\n\nload \"SMILES:CCCC#C\"\n\n\nWikipedia"
+    "text": "Metano: utilizado como combustível e matéria-prima na indústria de plásticos e farmacêutica.\n\n  \n\nEtano: empregado como combustível e como insumo na produção de eteno e outros derivados químicos.\n\n  \n\nPropano: presente no GLP (gás de cozinha) e em combustíveis automotivos.\n\n  \n\nButano: utilizado como combustível em isqueiros e como matéria-prima na produção de borrachas sintéticas.\n\n  \n\nHexadecano: também conhecido como cetano. Usado como padrão em estudos sobre combustíveis diesel."
   },
   {
-    "objectID": "nivel/basico/Jardim/organica.html#alcano",
-    "href": "nivel/basico/Jardim/organica.html#alcano",
-    "title": "Moléculas orgânicas",
+    "objectID": "nivel/basico/Jardim/organica.html#alcanos",
+    "href": "nivel/basico/Jardim/organica.html#alcanos",
+    "title": "Moléculas Orgânicas",
     "section": "",
-    "text": "Metano é utilizado na fabricação de resinas acrílicas e fibras de poliéster e na indústria farmacêutica.\n\n\n\nWikipedia\n\n\nwireframe only; wireframe 0.2\n\n\n\n\nEtano é usado como biocombustível, fonte de energia elétrica ou como matéria-prima para gerar subprodutos.\n\n\n\nrotate x 10\n\n\nWikipedia\n\n\n\n\nPropano é presente em alguns combustíveis utilizados nos automóveis, como a gasolina e o álcool.\n\n\n\nspin on\n\n\nWikipedia\n\n\n\n\nButano é utilizado como combustível de isqueiros, como matéria-prima na produção de borracha sintética.\n\n\n\n isosurface vdw\n\n\nWikipedia\n\n\n\n\nHexadecano é um composto de alta pureza amplamente utilizado em diversas aplicações laboratoriais e industriais.\n\n\n\nmoveto 2.0 {1 1 1 90}\n\n\nWikipedia"
+    "text": "Metano: utilizado como combustível e matéria-prima na indústria de plásticos e farmacêutica.\n\n  \n\nEtano: empregado como combustível e como insumo na produção de eteno e outros derivados químicos.\n\n  \n\nPropano: presente no GLP (gás de cozinha) e em combustíveis automotivos.\n\n  \n\nButano: utilizado como combustível em isqueiros e como matéria-prima na produção de borrachas sintéticas.\n\n  \n\nHexadecano: também conhecido como cetano. Usado como padrão em estudos sobre combustíveis diesel."
   },
   {
-    "objectID": "nivel/basico/Jardim/organica.html#alceno",
-    "href": "nivel/basico/Jardim/organica.html#alceno",
-    "title": "Moléculas orgânicas",
-    "section": "",
-    "text": "Etileno é produzido durante o amadurecimento das frutas, acelrando tal processo de outras frutas que se encontram em contato com as frutas maduras.\n\n\n\nselect atomno=1,2 \ncolor atoms yellow\n\n\nWikipedia\n\n\n\n\nPropileno é utilizado como fixador de perfumes, veículo de alguns ingredientes em medicamentos tópicos e também hidratante umectante em cosméticos diversos.\n\n\n\nbondOrder double\n\n\nWikipedia\n\n\n\n\nPenteno é uma molécula utilizada como solvente, aditivo de combustíveis, e na produção de polímeros.\n\n\n\ncolor bonds red\n\n\nWikipedia\n\n\n\n\nBenzeno é empregado na produção de lubrificantes, borrachas, corantes, solventes e pesticidas.\n\n\n\nfor (var i=0; i&lt;10; i++) {\n   rotate y 30\n   color atoms random\n   delay 0.5\n}\n\n\nWikipedia\n\n\n\n\nHexeno é muito comum verificar seu uso na indústria química, petroquímica e postos de gasolina.\n\n\n\ncolor bonds blue\n\n\nWikipedia\n\n      Links:\n\nAlcanos e alcenos"
+    "objectID": "nivel/basico/Jardim/organica.html#alcenos",
+    "href": "nivel/basico/Jardim/organica.html#alcenos",
+    "title": "Moléculas Orgânicas",
+    "section": "Alcenos",
+    "text": "Alcenos\n\n  \n\nEtileno: hormônio vegetal que acelera o amadurecimento de frutas. É também base para polímeros como o polietileno.\n\n  \n\nPropileno: usado em cosméticos, perfumes, medicamentos tópicos e produção de plásticos.\n\n  \n\nPenteno: utilizado como solvente, aditivo de combustíveis e na produção de polímeros industriais."
   },
   {
-    "objectID": "nivel/basico/Jardim/organica.html#alcino",
-    "href": "nivel/basico/Jardim/organica.html#alcino",
-    "title": "Moléculas orgânicas",
-    "section": "",
-    "text": "Acetileno é utilizado na fabricação de explosivos, solventes e plásticos.\n\n\n\n color bonds yellow\n\n\nWikipedia\n\n\n\n\nPropino é utilizado em soldadura.\n\n\n\nselect bond(triple);C2, C3\n\n\nWikipedia\n\n\n\n\n2-butino o principal uso é a síntese do butadieno para a borracha artificial.\n\n\n\nload \"SMILES:CCCC#C\"\n\n\nWikipedia"
+    "objectID": "nivel/basico/Jardim/organica.html#alcinos",
+    "href": "nivel/basico/Jardim/organica.html#alcinos",
+    "title": "Moléculas Orgânicas",
+    "section": "Alcinos",
+    "text": "Alcinos\n\n  \n\nAcetileno: utilizado na fabricação de explosivos, solventes e plásticos.\n\n  \n\nPropino: usado em processos de solda e síntese química.\n\n  \n\n2-Butino: importante intermediário na produção de borracha sintética como o butadieno."
+  },
+  {
+    "objectID": "nivel/basico/Jardim/organica.html#álcoois",
+    "href": "nivel/basico/Jardim/organica.html#álcoois",
+    "title": "Moléculas Orgânicas",
+    "section": "Álcoois",
+    "text": "Álcoois\n\n  \n\nEtanol: usado como biocombustível, solvente e em bebidas alcoólicas.\n\n  \n\nEtilenoglicol: usado como anticongelante e na fabricação de poliésteres."
+  },
+  {
+    "objectID": "nivel/basico/Jardim/organica.html#fenóis",
+    "href": "nivel/basico/Jardim/organica.html#fenóis",
+    "title": "Moléculas Orgânicas",
+    "section": "Fenóis",
+    "text": "Fenóis\n\n  \n\nFenol: aplicado na produção de resinas, plásticos, medicamentos e desinfetantes.\n\n  \n\nResveratrol: antioxidante encontrado em uvas e vinhos. Estudado por seu potencial na redução do colesterol LDL."
+  },
+  {
+    "objectID": "nivel/basico/Jardim/organica.html#éteres",
+    "href": "nivel/basico/Jardim/organica.html#éteres",
+    "title": "Moléculas Orgânicas",
+    "section": "Éteres",
+    "text": "Éteres\n\n  \n\nÉter etílico: usado como solvente e em anestesia no passado. Também participa da fabricação de explosivos e seda artificial."
+  },
+  {
+    "objectID": "nivel/basico/Jardim/organica.html#aldeídos",
+    "href": "nivel/basico/Jardim/organica.html#aldeídos",
+    "title": "Moléculas Orgânicas",
+    "section": "Aldeídos",
+    "text": "Aldeídos\n\n  \n\nAcetaldeído: composto usado como intermediário na produção de ácido acético e perfumes. Inflamável e com odor característico.\n\n  \n\nFormaldeído: gás tóxico, muito utilizado na conservação de tecidos biológicos e na fabricação de desinfetantes e resinas."
+  },
+  {
+    "objectID": "nivel/basico/Jardim/organica.html#cetonas",
+    "href": "nivel/basico/Jardim/organica.html#cetonas",
+    "title": "Moléculas Orgânicas",
+    "section": "Cetonas",
+    "text": "Cetonas\n\n  \n\nAcetona: solvente orgânico usado na limpeza de materiais de laboratório, em cosméticos e na síntese de outras substâncias.\n\n  \n\nCiclopentanona: composto com odor semelhante à menta. Utilizado como intermediário na produção de fragrâncias e produtos químicos."
+  },
+  {
+    "objectID": "nivel/basico/Jardim/organica.html#ácidos-carboxílicos",
+    "href": "nivel/basico/Jardim/organica.html#ácidos-carboxílicos",
+    "title": "Moléculas Orgânicas",
+    "section": "Ácidos carboxílicos",
+    "text": "Ácidos carboxílicos\n\n  \n\nÁcido acetilsalicílico: conhecido como aspirina. Atua como analgésico, antitérmico e anti-inflamatório.\n\n  \n\nÁcido ascórbico (vitamina C): antioxidante que auxilia na absorção de ferro e reforça o sistema imunológico."
   },
   {
     "objectID": "nivel/basico/Jardim/medicin.html",
     "href": "nivel/basico/Jardim/medicin.html",
-    "title": "Moléculas de interesse medicinal",
+    "title": "Moléculas de Interesse Medicinal",
     "section": "",
-    "text": "Penicilina é um antibiótico descoberto por Alexander Fleming.\n\n\n\nWikipedia\n\n\n\n\nMorfina é um analgésico opioide derivado da planta papoula.\n\n\n\nWikipedia\n\n\n\n\nWarfarina atua como anticoagulante.\n\n\n\nWikipedia\n\n\n\n\nAtorvastatina é utlizada para redução de colesterol.\n\n\n\nWikipedia\n\n\n\n\n De volta ao topo"
+    "text": "Penicilina: antibiótico natural descoberto por Alexander Fleming. Foi um marco no combate a infecções bacterianas.\n\n  \n\nMorfina: analgésico derivado da papoula. Atua no sistema nervoso, reduzindo dores intensas.\n\n  \n\nWarfarina: anticoagulante usado na prevenção de coágulos e embolias. Requer controle médico rigoroso.\n\n  \n\nAtorvastatina: reduz os níveis de colesterol no sangue e ajuda na prevenção de doenças cardiovasculares.\n\n\n\n\n\n De volta ao topo"
   },
   {
     "objectID": "nivel/basico/Jardim/nutri.html",
     "href": "nivel/basico/Jardim/nutri.html",
-    "title": "Moléculas de interesse nutricional",
+    "title": "Moléculas de Interesse Nutricional",
     "section": "",
-    "text": "Curcumina é um corante amarelo derivado da cúrcuma\n\n\n\nWikipedia\n\n\n\n\nBetacaroteno é um corante laranja derivado da cenoura\n\n\n\nWikipedia\n\n\n\n\nLicopeno é um corante vermelho presente no tomate\n\n\n\nWikipedia\n\n\n\n\nClorofila é um corante verde presente nas folha\n\n\n\nWikipedia\n\n\n\n\n De volta ao topo"
+    "text": "Curcumina: pigmento amarelo presente na cúrcuma. Atua como antioxidante e anti-inflamatório natural.\n\n  \n\nBetacaroteno: corante laranja encontrado em cenouras. É um precursor da vitamina A e importante para a visão e imunidade.\n\n  \n\nLicopeno: pigmento vermelho do tomate. Atua como antioxidante, ajudando na proteção das células.\n\n  \n\nClorofila: pigmento verde das plantas, essencial na fotossíntese. Também possui propriedades antioxidantes e desintoxicantes.\n\n\n\n\n\n De volta ao topo"
   },
   {
     "objectID": "nivel/basico/Jardim/ambiental.html",
     "href": "nivel/basico/Jardim/ambiental.html",
-    "title": "Moléculas de interesse ambiental",
+    "title": "Moléculas de Interesse Ambiental",
     "section": "",
-    "text": "Dióxido de Carbono (CO₂): gás natural presente na atmosfera. Em excesso, contribui para o efeito estufa e o aquecimento global.\n\n  \n\nDióxido de Enxofre (SO₂): gás poluente liberado por atividades industriais e queimadas. Pode causar chuva ácida ao se dissolver na água da chuva.\n\n  \n\nNitrato (NO₃⁻): presente em fertilizantes. Em excesso, causa eutrofização — crescimento excessivo de algas que prejudica a vida aquática.\n\n  \n\nOzônio (O₃): protege contra a radiação UV na estratosfera, mas atua como poluente na troposfera, podendo afetar a saúde respiratória.\n\n\n\n\n\n Back to top"
+    "text": "Dióxido de carbono (CO₂): gás de efeito estufa. É o principal responsável pelo aquecimento global.\n\n  \n\nDióxido de enxofre (SO₂): gás poluente que contribui para a formação da chuva ácida.\n\n  \n\nNitrato (NO₃⁻): presente em fertilizantes. Em excesso, causa eutrofização de rios e lagos.\n\n  \n\nOzônio (O₃): protege contra a radiação UV na estratosfera, mas atua como poluente na troposfera.\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "nivel/basico/Jardim/biomol.html",
     "href": "nivel/basico/Jardim/biomol.html",
     "title": "Biomoléculas",
     "section": "",
-    "text": "Obs: Para um conjunto mais extenso desta classe, visite a parte do site sobre biomoléculas\n\n\n\n  \n\nDióxido de Carbono (CO₂): gás natural presente na atmosfera. Em excesso, contribui para o efeito estufa e o aquecimento global.\n\n  \n\nDióxido de Enxofre (SO₂): gás poluente liberado por atividades industriais e queimadas. Pode causar chuva ácida ao se dissolver na água da chuva.\n\n  \n\nNitrato (NO₃⁻): presente em fertilizantes. Em excesso, causa eutrofização — crescimento excessivo de algas que prejudica a vida aquática.\n\n  \n\nOzônio (O₃): protege contra a radiação UV na estratosfera, mas atua como poluente na troposfera, podendo afetar a saúde respiratória.\n\n\n\n\n\n Back to top"
+    "text": "Tirosina: aminoácido utilizado na síntese de neurotransmissores como a dopamina e a adrenalina.\n\n  \n\nGlicose: carboidrato fundamental no metabolismo energético. Fornece energia para as células.\n\n  \n\nLecitina: fosfolipídio com função de emulsificante natural. É usada nas indústrias alimentícia e farmacêutica.\n\n  \n\nInsulina: hormônio regulador da glicose no sangue. Estimula a entrada de glicose nas células.\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "nivel/basico/Jardim/supramol.html",
     "href": "nivel/basico/Jardim/supramol.html",
-    "title": "Polímeros, complexos supramoleculares, e vírus",
+    "title": "Polímeros, Complexos Supramoleculares e Vírus",
     "section": "",
-    "text": "Nylon 66, uma estrutura formada por poliaminas sintéticas, semelhantes às proteínas (poliamidas). Abra a imagem no Jmol/JSmol.\n\n\n\nWikipedia\n\n\n\n\nUm exemplo de vírus. Abra a imagem no Jmol/JSmol.\n\n\n\nWikipedia\n\n\n\n\n De volta ao topo"
+    "text": "Nylon 66: polímero sintético formado por cadeias de poliamidas, semelhante às proteínas naturais. É usado em tecidos, escovas e peças plásticas.\n\n  \n\nVírus: estruturas organizadas formadas por proteínas e material genético. Não são considerados seres vivos completos, mas podem infectar células e se replicar.\n\n\n\n\n\n De volta ao topo"
   },
   {
     "objectID": "nivel/basico/Jardim/toxicol.html",
     "href": "nivel/basico/Jardim/toxicol.html",
-    "title": "Moléculas de interesse toxicológico",
+    "title": "Moléculas de Interesse Toxicológico",
     "section": "",
-    "text": "Formaldeído subatância de caracter Cancerígeno, usado na conservação de tecido.\n\n\n\nWikipedia\n\n\n\n\nMercúrio é um metal tóxico com efeito cumulativo.\n\n\n\nWikipedia\n\n\n\n\nChumbo é um dos mais perigosos metais tóxicos pela quantidade e severidade dos seus efeitos.\n\n\n\nWikipedia\n\n\n\n\nDioxina é um dos mais potentes carcinogênicos.\n\n\n\nWikipedia\n\n\n\n\n De volta ao topo"
+    "text": "Formaldeído: substância de uso industrial e laboratorial com potencial cancerígeno. É usada na conservação de tecidos biológicos.\n\n  \n\nMercúrio (Hg): metal tóxico com efeito cumulativo. Pode causar danos ao sistema nervoso e aos rins.\n\n  \n\nChumbo (Pb): um dos metais mais perigosos, principalmente para o sistema nervoso de crianças. Presente em tintas, soldas e encanamentos antigos.\n\n  \n\nDioxina: substância altamente tóxica, gerada por processos de combustão industrial. Associada a câncer, problemas hormonais e reprodutivos.\n\n\n\n\n\n De volta ao topo"
   },
   {
     "objectID": "nivel/basico/Jardim/sabores.html",
     "href": "nivel/basico/Jardim/sabores.html",
-    "title": "Moléculas de interesse para sabores",
+    "title": "Moléculas de Interesse para Sabores",
     "section": "",
-    "text": "Glutamato monossódico é utilizado para realça o sabor umami.\n\n\n\nWikipedia\n\n\n\n\nCafeína é presente em café e dá sabor amargo.\n\n\n\nWikipedia\n\n\n\n\nCapsaicina é responsável pelo sabor picante em pimentas.\n\n\n\nWikipedia\n\n\n\n\nÁcido cítrico é o sabor ácido presente nos cítricos.\n\n\n\nWikipedia\n\n\n\n\n De volta ao topo"
+    "text": "Glutamato monossódico: realçador de sabor presente em alimentos industrializados. Estimula o paladar umami, associado a caldos e carnes.\n\n  \n\nCafeína: composto de sabor amargo presente no café, chá e chocolate. Também atua como estimulante do sistema nervoso.\n\n  \n\nCapsaicina: responsável pela ardência das pimentas. Ativa receptores de calor, provocando sensação de picância.\n\n  \n\nÁcido cítrico: presente em frutas cítricas como limão e laranja. Confere sabor ácido e refrescante.\n\n\n\n\n\n De volta ao topo"
   },
   {
     "objectID": "nivel/basico/R/linguagens.html",
@@ -2418,58 +2460,58 @@
   {
     "objectID": "nivel/basico/Jardim/farmac.html",
     "href": "nivel/basico/Jardim/farmac.html",
-    "title": "Moléculas de interesse farmacológico",
+    "title": "Moléculas de Interesse Farmacológico",
     "section": "",
-    "text": "Paracetamol é classificado como um analgésico leve para alivio de de dores.\n\n\n\nWikipedia\n\n\n\n\nIbuprofeno pode ser utilizado para o alívio sintomático de enxaquecas e atua como antiinflamatório.\n\n\n\nWikipedia\n\n\n\n\nAmoxicilina é um antibiótico usado no tratamento de diversas infeções bacterianas.\n\n\n\nWikipedia\n\n\n\n\nMetformina é utilizada no tratamento da diabetes tipo 2.\n\n\n\nWikipedia\n\n\n\n\n Back to top"
+    "text": "Paracetamol: analgésico e antipirético leve. Utilizado no alívio de dores e febre.\n\n  \n\nIbuprofeno: anti-inflamatório não esteroidal. Alivia dores, febre e inflamações, inclusive em enxaquecas.\n\n  \n\nAmoxicilina: antibiótico do grupo das penicilinas. Usado no tratamento de infecções bacterianas.\n\n  \n\nMetformina: medicamento oral para o controle da diabetes tipo 2. Reduz a produção hepática de glicose.\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "nivel/basico/Jardim/inorganica.html",
     "href": "nivel/basico/Jardim/inorganica.html",
     "title": "Moléculas Inorgânicas",
     "section": "",
-    "text": "Acido sulfúrico os usos principais incluem produção de fertilizantes,refinamento de petróleo, tratamento de águas residuais e síntese química.\n\n\n\nWikipedia\n\n\n\n\nAcido cloridrico é frequentemente usado em análises químicas para preparar amostras “digeridas” para análise.\n\n\n\nWikipedia"
+    "text": "Ácido sulfúrico: usado na fabricação de fertilizantes, tratamento de águas, baterias e refino de petróleo.\n\n  \n\nÁcido clorídrico: presente no suco gástrico e utilizado em indústrias químicas e laboratórios analíticos."
   },
   {
     "objectID": "nivel/basico/Jardim/inorganica.html#ácidos",
     "href": "nivel/basico/Jardim/inorganica.html#ácidos",
     "title": "Moléculas Inorgânicas",
     "section": "",
-    "text": "Acido sulfúrico os usos principais incluem produção de fertilizantes,refinamento de petróleo, tratamento de águas residuais e síntese química.\n\n\n\nWikipedia\n\n\n\n\nAcido cloridrico é frequentemente usado em análises químicas para preparar amostras “digeridas” para análise.\n\n\n\nWikipedia"
+    "text": "Ácido sulfúrico: usado na fabricação de fertilizantes, tratamento de águas, baterias e refino de petróleo.\n\n  \n\nÁcido clorídrico: presente no suco gástrico e utilizado em indústrias químicas e laboratórios analíticos."
   },
   {
     "objectID": "nivel/basico/Jardim/inorganica.html#bases",
     "href": "nivel/basico/Jardim/inorganica.html#bases",
     "title": "Moléculas Inorgânicas",
     "section": "Bases",
-    "text": "Bases\n\n\n\nHidróxido de sódio é usado na indústria, principalmente como base química, no fabrico de papel, tecidos, detergentes, alimentos e biodiesel.\n\n\n\nWikipedia\n\n\n\n\nHidróxido de amonio é uma base solúvel, só existe em solução aquosa quando faz-se o borbulhamento de amônia (NH3) em água.\n\n\n\nWikipedia"
+    "text": "Bases\n\n  \n\nHidróxido de sódio: base forte usada na fabricação de sabões, papel, tecidos e na limpeza industrial.\n\n  \n\nHidróxido de amônio: formado ao se dissolver amônia em água. Usado em produtos de limpeza e fertilizantes."
   },
   {
     "objectID": "nivel/basico/Jardim/inorganica.html#sais",
     "href": "nivel/basico/Jardim/inorganica.html#sais",
     "title": "Moléculas Inorgânicas",
     "section": "Sais",
-    "text": "Sais\n\n\n\nCloreto de sódio é utilizado em larga escala na produção de hidróxido de sódio, cloro, hidrogênio e indiretamente ácido clorídrico por eletrólise de sua solução aquosa (processo cloro-álcali).\n\n\n\nWikipedia\n\n\n\n\nHipoclorito de sódio é usado na desinfecção de água potável na concentração de 1 L de lixívia doméstica para cada 4000 L de água.\n\n\n\nWikipedia"
+    "text": "Sais\n\n  \n\nCloreto de sódio: o sal de cozinha. Essencial para a vida e usado em processos químicos industriais.\n\n  \n\nHipoclorito de sódio: substância desinfetante usada na purificação da água e na limpeza doméstica."
   },
   {
     "objectID": "nivel/basico/Jardim/inorganica.html#óxidos",
     "href": "nivel/basico/Jardim/inorganica.html#óxidos",
     "title": "Moléculas Inorgânicas",
     "section": "Óxidos",
-    "text": "Óxidos\n\n\n\nDióxido de carbono é um material industrial versátil, utilizado, por exemplo, como gás inerte em soldagem e extintores de incêndio.\n\n\n\nWikipedia\n\n\n\n\nÓxido de cálcio é utilizado na construção civil para elaboração de argamassas e preparação dos processos de pintura.\n\n\n\nWikipedia"
+    "text": "Óxidos\n\n  \n\nDióxido de carbono: gás gerado na respiração e na queima de combustíveis. Usado em extintores e bebidas gaseificadas.\n\n  \n\nÓxido de cálcio: conhecido como cal viva. Usado na construção civil e na correção do pH do solo."
   },
   {
     "objectID": "nivel/basico/Jardim/industrial.html",
     "href": "nivel/basico/Jardim/industrial.html",
-    "title": "Moleculas de interesse industrial",
+    "title": "Moléculas de Interesse Industrial",
     "section": "",
-    "text": "##Moléculas de Interesse Industrial\n\n\n\nAmoníaco é utilizado na produção de fertilizantes.\n\n\n\nWikipedia\n\n\n\n\nMetanol é utilizado como solvente e na produção de formaldeído.\n\n\n\nWikipedia\n\n\n\n\nPolietileno é o plástico mais comum do mundo.\n\n\n\nWikipedia\n\n\n\n\nCloreto de Vinila é utilizado na produção de PVC.\n\n\n\nWikipedia\n\n\n\n\n De volta ao topo"
+    "text": "Amoníaco (NH₃): utilizado na fabricação de fertilizantes, produtos de limpeza e como agente refrigerante.\n\n  \n\nMetanol (CH₃OH): solvente orgânico usado na produção de formaldeído e como combustível alternativo.\n\n  \n\nPolietileno: o plástico mais utilizado no mundo. Presente em embalagens, sacolas e utensílios do dia a dia.\n\n  \n\nCloreto de vinila: matéria-prima para a produção do PVC, usado em tubos, pisos e materiais de construção.\n\n\n\n\n\n De volta ao topo"
   },
   {
     "objectID": "nivel/basico/Jardim/plantasToxicas.html",
     "href": "nivel/basico/Jardim/plantasToxicas.html",
-    "title": "Moléculas de plantas tóxicas",
+    "title": "Moléculas de Plantas Tóxicas",
     "section": "",
-    "text": "Atropina é um alcaloide presente em plantas como a beladona (Atropabelladonna).\n\n\n\nWikipedia\n\n\n\n\nTetrodotoxina está presente em certas plantas marinhas, como algas tóxicas.\n\n\n\nWikipedia\n\n\n\n\nEstricnina é um alcaloide presente na Strychnos nux-vomica, altamente tóxica.\n\n\n\nWikipedia\n\n\n\n\nRicina é uma toxina presente na mamona (Ricinus communis), altamente letal.\n\n\n\nWikipedia\n\n\n\n\n De volta ao topo"
+    "text": "Atropina: alcaloide presente na beladona (Atropa belladonna). Afeta o sistema nervoso, sendo usada em medicina com controle rigoroso.\n\n  \n\nTetrodotoxina: neurotoxina letal presente em algas marinhas e animais como baiacus. Bloqueia canais de sódio, paralisando os músculos.\n\n  \n\nEstricnina: substância altamente tóxica da planta Strychnos nux-vomica. Atua no sistema nervoso central causando convulsões intensas.\n\n  \n\nRicina: toxina presente nas sementes da mamona (Ricinus communis). Inibe a síntese de proteínas e é considerada extremamente letal.\n\n\n\n\n\n De volta ao topo"
   },
   {
     "objectID": "nivel/basico/Jardim/index_Jardim.html",
@@ -2486,16 +2528,16 @@
   {
     "objectID": "nivel/basico/Jardim/peconhentos.html",
     "href": "nivel/basico/Jardim/peconhentos.html",
-    "title": "Moléculas de animais peçonhentos",
+    "title": "Moléculas de Animais Peçonhentos",
     "section": "",
-    "text": "Alfa-bungarotoxinas, são encontradas no veneno de cobras do gênero Bungarus.\n\n\n\nWikipedia\n\n\n\n\nHialuronidase é um enzima que facilita a disseminação do veneno em tecidos, presente em venenos de cobras e aranhas.\n\n\n\nWikipedia\n\n\n\n\nConotoxinas,conotoxinas são um grupo de péptidos neurotóxicos, isolados a partir do veneno de caracóis marinhos do gênero Conus.\n\n\n\nWikipedia\n\n\n\n\n De volta ao topo"
+    "text": "Alfa-bungarotoxina: toxina presente no veneno de cobras do gênero Bungarus. Atua bloqueando receptores neuromusculares, podendo causar paralisia.\n\n\n\n\n\n  \n\nConotoxina: grupo de peptídeos neurotóxicos encontrados nos caracóis marinhos do gênero Conus. Afetam canais iônicos, causando paralisia muscular.\n\n\n\n\n\n De volta ao topo"
   },
   {
     "objectID": "nivel/basico/Jardim/aromas.html",
     "href": "nivel/basico/Jardim/aromas.html",
-    "title": "Aromas",
+    "title": "Moléculas de Interesse para Aromas",
     "section": "",
-    "text": "Limoneno (C10H16): encontrado nas cascas de frutas cítricas como laranja e limão, é responsável por seu aroma característico.\n\n  \n\nVanilina (C8H8O3): principal composto responsável pelo aroma da baunilha, extraída da fava ou sintetizada em laboratório.\n\n  \n\nGeraniol (C10H18O): presente em flores como rosas e gerânios, possui aroma floral suave e é usado em perfumes.\n\n  \n\nEugenol (C10H12O2): encontrado no cravo-da-índia, é responsável por seu aroma marcante e tem aplicações medicinais.\n\n\n\n\n\n Back to top"
+    "text": "Limoneno: encontrado nas cascas de frutas cítricas como laranja e limão. Tem aroma fresco e cítrico.\n\n  \n\nVanilina: responsável pelo aroma característico da baunilha. Muito usada em confeitaria e perfumaria.\n\n  \n\nGeraniol: presente em rosas e outras flores. Possui fragrância floral doce, comum em cosméticos.\n\n  \n\nEugenol: composto do cravo-da-índia. Tem aroma quente e picante, usado em perfumes e analgésicos dentários.\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "nivel/basico/Curso/r_maisinteract.html",
