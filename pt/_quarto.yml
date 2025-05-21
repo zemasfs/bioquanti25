@@ -82,7 +82,7 @@ website:
           - text: "Plotly"
             href: cheatsheet/plotly.pdf
           - text: "Jmol"
-            href: cheatsheet/jmol_cheat.pt.pdf
+            href: cheatsheet/jmol_cheat.pt2.pdf
           - text: "R"
             href: cheatsheet/r_cheat.pt.pdf
           
