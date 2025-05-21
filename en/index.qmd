@@ -51,7 +51,7 @@ publish: false
 </div>
 
 
-| **Bioquanti** currently offers topics for higher education in biochemistry, although due to its quantitative nature, it also includes content on *physical chemistry, chemistry, biophysics, descriptive and inferential statistics, experimental design, linear algebra, integral calculus, differential calculus, computational modeling, molecular modeling, among others*; The language is geared toward university professors and researchers, as well as undergraduate and graduate students.
+| **Bioquanti** currently offers topics for higher education in biochemistry, although due to its quantitative nature, it also includes content on *physical chemistry, chemistry, biophysics, descriptive and inferential statistics, experimental design, linear algebra, integral calculus, differential calculus, and computational modeling, among others*; The language is geared toward university professors and researchers, as well as undergraduate and graduate students.
 \
 
 ### **Bioquanti** for elementary and secondary education

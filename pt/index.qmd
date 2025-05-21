@@ -51,7 +51,7 @@ publish: false
 
 </div>
 
-|       O **Bioquanti** conta atualmente com temas para ensino superior em  Bioquímica, embora incluindo por sua natureza quantitativa, conteúdos de *Físico-Química, Química, Biofísica, Estatística descritiva e inferencial, Planejamento Experimental, Álgebra Linear, Cálculo Integral, Cálculo Diferencial, modelagem computacional, modelagem molecular, entre outros*; possui linguagem voltada à professores e pesquisadores universitários, e para graduação e pós-graduação.
+|       O **Bioquanti** conta atualmente com temas para ensino superior em  Bioquímica, embora incluindo por sua natureza quantitativa, conteúdos de *Físico-Química, Química, Biofísica, Estatística descritiva e inferencial, Planejamento Experimental, Álgebra Linear, Cálculo Integral, Cálculo Diferencial, e modelagem computacional, entre outros*; possui linguagem voltada à professores e pesquisadores universitários, e para graduação e pós-graduação.
 \
 
 ### **Bioquanti** para o ensino básico
