@@ -19,16 +19,37 @@ publish: false
 
 | The website was awarded 2nd place in the *Bayardo Baptista Torres National Award for Teaching Biochemistry and Molecular Biology*, held every two years since 2017 by the *Brazilian Society of Biochemistry and Molecular Biology* (SBBq, 2023), and is referenced as an open educational resource on the [eduCAPES portal](https://educapes.capes.gov.br/handle/capes/748598). Recently, a portable application for graphic and interactive simulation available on the website, *JSPlotly*, was awarded first place in the same award and is also available on [eduCAPES](https://educapes.capes.gov.br/handle/capes/972869). With equal honor and satisfaction, we were also classified in the *National Award* in its previous editions, this time for experimental work in teaching and learning.
 
-::: {layout-ncol=5}
+<!-- ::: {layout-ncol=5} -->
 
-[![](premio1lugar_bg.png)](https://www.bioquimica.org.br/index.php/REB/announcement/view/57)
+<!-- [![](premio1lugar_bg.png)](https://www.bioquimica.org.br/index.php/REB/announcement/view/57) -->
 
-[![](premio2lugar_bg.png)](https://www2.sbbq.org.br/reuniao/reuniao-2023.html)
+<!-- [![](premio2lugar_bg.png)](https://www2.sbbq.org.br/reuniao/reuniao-2023.html) -->
 
-[![](premio1lugar2019_bg.png)](https://www2.sbbq.org.br/reuniao/bayardo2019.html)
+<!-- [![](premio1lugar2019_bg.png)](https://www2.sbbq.org.br/reuniao/bayardo2019.html) -->
 
-[![](premio2lugar2017_bg.png)](https://www2.sbbq.org.br/reuniao/premiobayardo2017.html)
-:::
+<!-- [![](premio2lugar2017_bg.png)](https://www2.sbbq.org.br/reuniao/premiobayardo2017.html) -->
+<!-- ::: -->
+
+<div class="d-flex flex-wrap justify-content-center gap-3">
+
+<a href="https://www.bioquimica.org.br/index.php/REB/announcement/view/57">
+  <img src="premio1lugar_bg.png" alt="Prêmio 1º lugar" style="max-width:100px; height:auto;">
+</a>
+
+<a href="https://www2.sbbq.org.br/reuniao/reuniao-2023.html">
+  <img src="premio2lugar_bg.png" alt="Prêmio 2º lugar" style="max-width:100px; height:auto;">
+</a>
+
+<a href="https://www2.sbbq.org.br/reuniao/bayardo2019.html">
+  <img src="premio1lugar2019_bg.png" alt="Prêmio 1º lugar 2019" style="max-width:100px; height:auto;">
+</a>
+
+<a href="https://www2.sbbq.org.br/reuniao/premiobayardo2017.html">
+  <img src="premio2lugar2017_bg.png" alt="Prêmio 2º lugar 2017" style="max-width:100px; height:auto;">
+</a>
+
+</div>
+
 
 | **Bioquanti** currently offers topics for higher education in biochemistry, although due to its quantitative nature, it also includes content on *physical chemistry, chemistry, biophysics, descriptive and inferential statistics, experimental design, linear algebra, integral calculus, differential calculus, computational modeling, molecular modeling, among others*; The language is geared toward university professors and researchers, as well as undergraduate and graduate students.
 \
