@@ -1,22 +1,20 @@
 ---
-title: "Polímeros, complexos supramoleculares, e vírus"
+title: "Polímeros, Complexos Supramoleculares e Vírus"
 publish: false
 toc: true
 lang: pt
 ---
 
+<div class="supramoleculares d-flex flex-wrap justify-content-center gap-4">
 
-[![Nylon 66, uma estrutura formada por poliaminas sintéticas, semelhantes às proteínas (poliamidas). Abra a imagem no Jmol/JSmol.](ny6.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?script=Console&source=https://errre.netlify.app/Portfolio/Jardim/ny6.png)
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?script=Console&source=https://errre.netlify.app/Portfolio/Jardim/ny6.png">
+  <img src="ny6.png" alt="Nylon 66" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Nylon 66:</strong> polímero sintético formado por cadeias de poliamidas, semelhante às proteínas naturais. É usado em tecidos, escovas e peças plásticas.</p>
 
-<p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/N%C3%A1ilon)
-</p> 
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?script=Console&source=https://errre.netlify.app/Portfolio/Jardim/virus.png">
+  <img src="virus.png" alt="Vírus" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Vírus:</strong> estruturas organizadas formadas por proteínas e material genético. Não são considerados seres vivos completos, mas podem infectar células e se replicar.</p>
 
-
-[![Um exemplo de vírus. Abra a imagem no Jmol/JSmol.](virus.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?script=Console&source=https://errre.netlify.app/Portfolio/Jardim/virus.png)
-
-
-<p style="text-align:right;">
-[Wikipedia]( https://pt.wikipedia.org/wiki/V%C3%ADrus)
-</p> 
-
+</div>

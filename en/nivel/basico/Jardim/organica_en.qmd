@@ -1,287 +1,173 @@
 ---
-title: "Organic molecules"
+title: "Moléculas Orgânicas"
+publish: false
+toc: true
+lang: pt
 ---
 
-# Hydrocarbon
+## Alcanos
 
-## Alkane
+<div class="alcanos d-flex flex-wrap justify-content-center gap-4">
 
-[![Methane is used in the manufacture of acrylic resins and polyester fibers and in the pharmaceutical industry.](metano){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C)
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=C">
+  <img src="metano.png" alt="Metano" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Metano:</strong> utilizado como combustível e matéria-prima na indústria de plásticos e farmacêutica.</p>
 
-<p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/metano)
-</p>
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CC">
+  <img src="etano.png" alt="Etano" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Etano:</strong> empregado como combustível e como insumo na produção de eteno e outros derivados químicos.</p>
 
-```{r, eval=FALSE}
-wireframe only; wireframe 0.2
-```
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CCC">
+  <img src="propano.png" alt="Propano" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Propano:</strong> presente no GLP (gás de cozinha) e em combustíveis automotivos.</p>
 
-[![Ethane is used as a biofuel, a source of electrical energy, or as a raw material to generate byproducts.](etano){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC)
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CCCC">
+  <img src="butano.png" alt="Butano" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Butano:</strong> utilizado como combustível em isqueiros e como matéria-prima na produção de borrachas sintéticas.</p>
 
-```{r, eval=FALSE}
-rotate x 10
-```
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CCCCCCCCCCCCCCCC">
+  <img src="hexadecano.png" alt="Hexadecano" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Hexadecano:</strong> também conhecido como cetano. Usado como padrão em estudos sobre combustíveis diesel.</p>
 
-<p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/etano)
-</p>
+</div>
 
-[![Propane is present in some fuels used in automobiles, such as gasoline and alcohol.](propano.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CCC)
+## Alcenos
 
-```{r, eval=FALSE}
-spin on
+<div class="alcenos d-flex flex-wrap justify-content-center gap-4">
 
-```
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=C=C">
+  <img src="etileno.png" alt="Etileno" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Etileno:</strong> hormônio vegetal que acelera o amadurecimento de frutas. É também base para polímeros como o polietileno.</p>
 
-<p style="text-align:right;">
-[Wikipedia](https://en.wikipedia.org/wiki/Propane)
-</p>
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CC=C">
+  <img src="propileno.png" alt="Propileno" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Propileno:</strong> usado em cosméticos, perfumes, medicamentos tópicos e produção de plásticos.</p>
 
-[![Butane is used as a fuel for lighters and as a raw material in the production of synthetic rubber.](butano.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CCCC)
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CCCC=C">
+  <img src="penteno.png" alt="Penteno" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Penteno:</strong> utilizado como solvente, aditivo de combustíveis e na produção de polímeros industriais.</p>
 
-```{r, eval=FALSE}
-isosurface vdw
+</div>
 
-```
 
-<p style="text-align:right;">
-[Wikipedia](https://en.wikipedia.org/wiki/Butane)
-</p>
+## Alcinos
 
-[![Hexadecane is a high-purity compound widely used in various laboratory and pharmaceutical applications. industrial.](hexadecano.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CCCCCCCCCCCCCCC)
+<div class="alcinos d-flex flex-wrap justify-content-center gap-4">
 
-```{r, eval=FALSE}
-moveto 2.0 {1 1 1 90}
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=acetylene">
+  <img src="acetileno.png" alt="Acetileno" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Acetileno:</strong> utilizado na fabricação de explosivos, solventes e plásticos.</p>
 
-```
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CC#C">
+  <img src="propino.png" alt="Propino" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Propino:</strong> usado em processos de solda e síntese química.</p>
 
-<p style="text-align:right;">
-[Wikipedia](: https://pt.wikipedia.org/wiki/Alcano)
-</p>
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CC#CC">
+  <img src="2-butino.png" alt="2-butino" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>2-Butino:</strong> importante intermediário na produção de borracha sintética como o butadieno.</p>
 
-## Alkene
+</div>
 
-[![Ethylene is produced during the ripening of fruits, accelerating this process in other fruits that are in contact with ripe fruits.](etileno.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C=C)
+## Álcoois
 
-```{r, eval=FALSE}
-select atomno=1,2
-color atoms yellow
+<div class="alcoois d-flex flex-wrap justify-content-center gap-4">
 
-```
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CCO">
+  <img src="etanol.png" alt="Etanol" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Etanol:</strong> usado como biocombustível, solvente e em bebidas alcoólicas.</p>
 
-<p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/Ethylene)
-</p>
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=C(CO)O">
+  <img src="etilenoglicol.png" alt="Etilenoglicol" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Etilenoglicol:</strong> usado como anticongelante e na fabricação de poliésteres.</p>
 
-[![Propylene is used as a fixative in perfumes, a vehicle for some ingredients in topical medications, and also a moisturizing humectant in various cosmetics.](propileno.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC=C)
+</div>
 
-```{r, eval=FALSE}
-bondOrder double
-```
+## Fenóis
 
-<p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/Propylene)
-</p>
+<div class="fenois d-flex flex-wrap justify-content-center gap-4">
 
-[![Pentene is a molecule used as a solvent, fuel additive, and in the production of polymers.](penteno.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CCCC=C)
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=C1=CC=C(C=C1)O">
+  <img src="fenol.png" alt="Fenol" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Fenol:</strong> aplicado na produção de resinas, plásticos, medicamentos e desinfetantes.</p>
 
-```{r, eval=FALSE}
-color bonds red
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=C1=CC(=CC=C1/C=C/C2=CC(=CC(=C2)O)O)O">
+  <img src="resveratrol.png" alt="Resveratrol" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Resveratrol:</strong> antioxidante encontrado em uvas e vinhos. Estudado por seu potencial na redução do colesterol LDL.</p>
 
-```
+</div>
 
-<p style="text-align:right;">
-[Wikipedia](https://en.wikibooks.org/wiki/Introduction_to_Chemistry/Hydrocarbons)
-</p>
+## Éteres
 
-[![Benzene is used in the production of lubricants, rubbers, dyes, solvents, and pesticides.](benzeno.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C1=CC=CC=C1)
+<div class="eteres d-flex flex-wrap justify-content-center gap-4">
 
-```{r, eval=FALSE}
-for (var i=0; i<10; i++) {
-rotate y 30
-color atoms random
-delay 0.5
-}
-```
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CCOCC">
+  <img src="eter etilico.png" alt="Éter etílico" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Éter etílico:</strong> usado como solvente e em anestesia no passado. Também participa da fabricação de explosivos e seda artificial.</p>
 
-<p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/benzene)
-</p>
+</div>
 
-[![Hexene is very commonly used in the chemical and petrochemical industries and gas stations.](hexeno.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CCCCC=C)
+## Aldeídos
 
-```{r, eval=FALSE}
-color bonds blue
-```
+<div class="aldeidos d-flex flex-wrap justify-content-center gap-4">
 
-<p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/hexene)
-</p>
-| Links:
-1. [Alkanes and alkenes](https://www.echalk.co.uk/3Dmolecules/alkanes_alkenes/alkanes.htm)
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CC=O">
+  <img src="acetaldeido.png" alt="Acetaldeído" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Acetaldeído:</strong> composto usado como intermediário na produção de ácido acético e perfumes. Inflamável e com odor característico.</p>
 
-## Alkyne
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=C=O">
+  <img src="formaldeido.png" alt="Formaldeído" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Formaldeído:</strong> gás tóxico, muito utilizado na conservação de tecidos biológicos e na fabricação de desinfetantes e resinas.</p>
 
-[![Acetylene is used in the manufacture of explosives, solvents and plastics.](acetileno.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=
-acetylene)
+</div>
 
-```{r, eval=FALSE}
-color bonds yellow
-```
+## Cetonas
 
-<p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/Acetylene)
-</p>
+<div class="cetonas d-flex flex-wrap justify-content-center gap-4">
 
-[![Propylene is used in welding.](propino.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC#C)
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CC(=O)C">
+  <img src="acetona.png" alt="Acetona" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Acetona:</strong> solvente orgânico usado na limpeza de materiais de laboratório, em cosméticos e na síntese de outras substâncias.</p>
 
-```{r, eval=FALSE}
-select bond(triple);C2, C3
-```
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=C1CCC(=O)C1">
+  <img src="ciclopentanona.png" alt="Ciclopentanona" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Ciclopentanona:</strong> composto com odor semelhante à menta. Utilizado como intermediário na produção de fragrâncias e produtos químicos.</p>
 
+</div>
 
-<p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/propino)
-</p>
+## Ácidos carboxílicos
 
-[![2-butyne the main use is the synthesis of butadiene for artificial rubber.](2-butino.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC#CC)
+<div class="acidos d-flex flex-wrap justify-content-center gap-4">
 
-```{r, eval=FALSE}
-load "SMILES:CCCC#C"
-```
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CC(=O)OC1=CC=CC=C1C(=O)O">
+  <img src="ac.acetilsalicilico.png" alt="Ácido acetilsalicílico" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Ácido acetilsalicílico:</strong> conhecido como aspirina. Atua como analgésico, antitérmico e anti-inflamatório.</p>
 
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=C([C@@H]([C@@H]1C(=C(C(=O)O1)O)O)O)O">
+  <img src="acido ascorbico.png" alt="Ácido ascórbico" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Ácido ascórbico (vitamina C):</strong> antioxidante que auxilia na absorção de ferro e reforça o sistema imunológico.</p>
 
-<p style="text-align:right;">
-[Wikipedia](https://en.wikipedia.org/wiki/Ethylacethylene)
-</p>
+</div>
 
-# Arene
 
-# Alcohol
-
-[![Ethanol is used as a biofuel, a source of electrical energy or as a raw material to generate by-products.](etanol.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CCO)
-
-```{r, eval=FALSE}
-cylinder 50
-
-```
-
-<p style="text-align:right;">
-[Wikipedia](https://en.wikipedia.org/wiki/Ethanol)
-</p>
-
-[![Ethylene glycol is a chemical compound widely used in the composition of antifreezes.](etilenoglicol.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C(CO)O)
-
-```{r, eval=FALSE}
-spacefill 20
-```
-
-<p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/etilenoglicol)
-</p>
-
-# Phenol
-
-[![Phenol has applications such as; precursor or reagent in the production of resins, plastics, medicines, herbicides and disinfectants.](fenol.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C1=CC=C(C=C1)O)
-
-```{r, eval=FALSE}
-select aromatic
-color blue
-```
-
-<p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/fenol)
-</p>
-
-[![Resveratrol is used to reduce levels of LDL.](resveratrol.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C1=CC(=CC=C1/C=C/C2=CC(=CC(=C2)O)O)O)
-
-```{r, eval=FALSE}
-select aromatic
-wireframe 100
-```
-
-<p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/resveratrol)
-</p>
-
-# Ether
-
-[![Ethyl ether is used as a solvent for resins and oils, as well as in the preparation of gunpowder and artificial silk.](eter etilico.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CCOCC)
-
-```{r, eval=FALSE}
-select O C
-wireframe 100
-```
-
-<p style="text-align:right;">
-[Wikipedia](https://en.wikipedia.org/wiki/%C3%89ter_et%C3%ADlico)
-</p>
-
-# Aldehyde
-
-[![Acetaldehyde is an intermediate in the manufacture of other substances, such as acetic acid.](acetaldeido.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC=O)
-
-```{r, eval=FALSE}
-select C=O
-wireframe 100
-```
-
-<p style="text-align:right;">
-[Wikipedia](https://en.wikipedia.org/wiki/Acetaldehyde)
-</p>
-
-[![Formaldehyde is used in industry, it can be used to manufacture disinfectants.](formaldeido.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C=O)
-
-```{r, eval=FALSE}
-wireframe 50
-```
-
-<p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/Methanal)
-</p>
-
-# Ketone
-
-[![Acetone is used as a solvent and intermediate in the manufacture of other chemical substances.](acetona.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC(=O)C)
-```{r, eval=FALSE}
-isosurface solvent; color isosurface red blue
-```
-
-<p style="text-align:right;">
-[Wikipedia](https://en.wikipedia.org/wiki/Acetone)
-</p>
-
-[![Cyclopentanone is a colorless liquid organic compound with an odor similar to the smell of peppermint.](ciclopentanona.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model= C1CCC(=O)C1)
-
-```{r, eval=FALSE}
-select carbonyl
-color yellow
-```
-
-<p style="text-align:right;">
-[Wikipedia](https://en.wikipedia.org/wiki/Cyclopentanone)
-</p>
-
-# Carboxylic acid
-
-[![Acetylsalicylic acid is used as a medication to treat pain (analgesic), fever (antipyretic) and inflammation (anti-inflammatory). ](ac.acetilsalicilico.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model= CC(=O)OC1=CC=CC=C1C(=O)O)
-
-```{r, eval=FALSE}
-dihedral
-```
-
-<p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/%C3%81cido_acetilsalic%C3%ADlico)
-</p>
-
-[![Ascorbic acid increases the gastrointestinal absorption of iron; and acts as a urine acidifier.](acido ascorbico.png){width=40%}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C([C@@H]([C@@H]1C(=C(C(=O)O1)O)O)O)O)
-
-```{r, eval=FALSE}
-show atoms
-show bonds
-```
-
-
-<p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/%C3%81cido_asc%C3%B3rbico)
-</p>

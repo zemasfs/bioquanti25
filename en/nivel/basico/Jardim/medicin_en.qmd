@@ -1,27 +1,30 @@
 ---
-title: "Molecules of medicinal interest"
+title: "Moléculas de Interesse Medicinal"
+publish: false
+toc: true
+lang: pt
 ---
 
-[![Penicillin is an antibiotic discovered by Alexander Fleming.](Penicilina.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC1(%5BC@@H%5D(N2%5BC@H%5D(S1)%5BC@@H%5D(C2=O)NC(=O)CC3=CC=CC=C3)C(=O)O)C)
+<div class="medicinais d-flex flex-wrap justify-content-center gap-4">
 
-<p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/Penicillin)
-</p>
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CC1(%5BC@@H%5D(N2%5BC@H%5D(S1)%5BC@@H%5D(C2=O)NC(=O)CC3=CC=CC=C3)C(=O)O)C">
+  <img src="Penicilina.png" alt="Penicilina" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Penicilina:</strong> antibiótico natural descoberto por Alexander Fleming. Foi um marco no combate a infecções bacterianas.</p>
 
-[![Morphine is an opioid analgesic derived from the plant poppy.](morfina.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?mode l=CN1CC%5BC@%5D23%5BC@@H%5D4%5BC@H%5D1CC5=C2C(=C(C=C5)O)O%5BC@H%5D3%5BC@H%5D(C=C4)O)
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CN1CC%5BC@%5D23%5BC@@H%5D4%5BC@H%5D1CC5=C2C(=C(C=C5)O)O%5BC@H%5D3%5BC@H%5D(C=C4)O">
+  <img src="morfina.png" alt="Morfina" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Morfina:</strong> analgésico derivado da papoula. Atua no sistema nervoso, reduzindo dores intensas.</p>
 
-<p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/Morfina)
-</p>
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CC(=O)CC(C1=CC=CC=C1)C2=C(C3=CC=CC=C3OC2=O)O">
+  <img src="Warfarina.png" alt="Warfarina" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Warfarina:</strong> anticoagulante usado na prevenção de coágulos e embolias. Requer controle médico rigoroso.</p>
 
-[![Warfarin acts as anticoagulant.](Warfarina.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=:%20CC(=O)CC(C1=CC=CC=C1)C2=C(C3=CC=CC=C3OC2=O)O)
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CC(C)C1=C(C(=C(N1CC%5BC@H%5D(C%5BC@H%5D(CC(=O)O)O)O)C2=CC=C(C=C2)F)C3=CC=CC=C3)C(=O)NC4=CC=CC=C4">
+  <img src="Atorvastatina.png" alt="Atorvastatina" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Atorvastatina:</strong> reduz os níveis de colesterol no sangue e ajuda na prevenção de doenças cardiovasculares.</p>
 
-<p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/Warfarin)
-</p>
-
-[![Atorvastatin is used to reduce cholesterol.](Atorvastatina.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C C(C)C1=C(C(=C(N1CC%5BC@H%5D(C%5BC@H%5D(CC(=O)O)O)O)C2=CC=C(C=C2)F)C3=CC=CC=C3)C(=O)NC4=CC=CC=C4)
-
-<p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/Atorvastatina)
-</p>
+</div>

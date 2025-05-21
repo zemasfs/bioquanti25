@@ -1,32 +1,30 @@
 ---
-title: "Moleculas de interesse industrial"
+title: "Moléculas de Interesse Industrial"
 publish: false
 toc: true
 lang: pt
 ---
 
-##Moléculas de Interesse Industrial
+<div class="industrial d-flex flex-wrap justify-content-center gap-4">
 
-[![Amoníaco é utilizado na produção de fertilizantes.](amoníaco.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=N)
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=N">
+  <img src="amoníaco.png" alt="Amoníaco" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Amoníaco (NH₃):</strong> utilizado na fabricação de fertilizantes, produtos de limpeza e como agente refrigerante.</p>
 
-<p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/Amoníaco)
-</p>
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CO">
+  <img src="Metanol.png" alt="Metanol" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Metanol (CH₃OH):</strong> solvente orgânico usado na produção de formaldeído e como combustível alternativo.</p>
 
-[![Metanol é utilizado como solvente e na produção de formaldeído.](Metanol.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CO)
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=C=C">
+  <img src="polietileno.png" alt="Polietileno" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Polietileno:</strong> o plástico mais utilizado no mundo. Presente em embalagens, sacolas e utensílios do dia a dia.</p>
 
-<p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/Metanol)
-</p>
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=C=CCl">
+  <img src="cloreto de vinila.png" alt="Cloreto de vinila" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Cloreto de vinila:</strong> matéria-prima para a produção do PVC, usado em tubos, pisos e materiais de construção.</p>
 
-[![Polietileno é o plástico mais comum do mundo.](polietileno.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=%20C=C)
-
-<p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/Polietileno)
-</p>
-
-[![Cloreto de Vinila é utilizado na produção de PVC.](cloreto%20de%20vinila.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C=CCl)
-
-<p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/Cloreto_de_vinila)
-</p>
+</div>

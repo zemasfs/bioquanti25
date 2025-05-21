@@ -1,27 +1,30 @@
 ---
-title: "Molecules of interest for flavors"
+title: "Moléculas de Interesse para Sabores"
+publish: false
+toc: true
+lang: pt
 ---
 
-[![Monosodium glutamate is used to enhance the umami flavor.](glutamato monossodico.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C(CC(=O)O)%5BC@@H%5D(C(=O)%5BO-%5D)N.%5BNa+%5D)
+<div class="sabores d-flex flex-wrap justify-content-center gap-4">
 
-<p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/%C3%81acido_glut%C3%A2mico)
-</p>
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=C(CC(=O)O)%5BC@@H%5D(C(=O)%5BO-%5D)N.%5BNa+%5D">
+  <img src="glutamato monossodico.png" alt="Glutamato monossódico" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Glutamato monossódico:</strong> realçador de sabor presente em alimentos industrializados. Estimula o paladar umami, associado a caldos e carnes.</p>
 
-[![Caffeine is present in coffee and gives flavor bitter.](cafeína.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CN1C=NC2=C1C(=O)N(C(=O)N2C)C)
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CN1C=NC2=C1C(=O)N(C(=O)N2C)C">
+  <img src="cafeína.png" alt="Cafeína" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Cafeína:</strong> composto de sabor amargo presente no café, chá e chocolate. Também atua como estimulante do sistema nervoso.</p>
 
-<p style="text-align:right;">
-[Wikipedia](https://en.wikipedia.org/wiki/Caffeine)
-</p>
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CC(C)/C=C/CCCCC(=O)NCC1=CC(=C(C=C1)O)OC">
+  <img src="caps.png" alt="Capsaicina" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Capsaicina:</strong> responsável pela ardência das pimentas. Ativa receptores de calor, provocando sensação de picância.</p>
 
-[![Capsaicin is responsible for the spicy flavor in chili peppers.](caps.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC(C)/C=C/CCCCC(=O)NCC1=CC(=C(C=C1)O)OC)
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=C(C(=O)O)C(CC(=O)O)(C(=O)O)O">
+  <img src="ácido citrico.png" alt="Ácido cítrico" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Ácido cítrico:</strong> presente em frutas cítricas como limão e laranja. Confere sabor ácido e refrescante.</p>
 
-<p style="text-align:right;">
-[Wikipedia](https://en.wikipedia.org/wiki/Capsaicin)
-</p>
-
-[![Citric acid is the sour flavor found in citrus fruits.](ácido citrico.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C(C(=O)O)C(CC(=O)O)(C(=O)O)O)
-
-<p style="text-align:right;">
-[Wikipedia](https://en.wikipedia.org/wiki/Ácido%20citrico)
-</p>
+</div>

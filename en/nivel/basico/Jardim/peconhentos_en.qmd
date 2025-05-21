@@ -1,27 +1,25 @@
 ---
-title: "Molecules of venomous animals"
+title: "Moléculas de Animais Peçonhentos"
+publish: false
+toc: true
+lang: pt
 ---
 
-[![Alpha-bungarotoxins are found in the venom of snakes of the genus Bungarus.](alfabungarotoxina.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?&pdbid=1IK8)
+<div class="peconhentos d-flex flex-wrap justify-content-center gap-4">
 
-<p style="text-align:right;">
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?&pdbid=1IK8">
+  <img src="alfabungarotoxina.png" alt="Alfa-bungarotoxina" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Alfa-bungarotoxina:</strong> toxina presente no veneno de cobras do gênero <em>Bungarus</em>. Atua bloqueando receptores neuromusculares, podendo causar paralisia.</p>
 
-[Wikipedia](https://gl.wikipedia.org/wiki/Bungarotoxin)
+<!-- <a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CC1(C(=C)N(C2=CC=CC=C21)CCCCCC(=O)O)C.Br"> -->
+<!--   <img src="hialuronidase.png" alt="Hialuronidase" style="max-width: 150px; height: auto;"> -->
+<!-- </a> -->
+<!-- <p><strong>Hialuronidase:</strong> enzima que facilita a penetração e disseminação do veneno nos tecidos. Comum em venenos de cobras, aranhas e abelhas.</p> -->
 
-</p>
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?&pdbid=1CNL">
+  <img src="conotoxina.png" alt="Conotoxina" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Conotoxina:</strong> grupo de peptídeos neurotóxicos encontrados nos caracóis marinhos do gênero <em>Conus</em>. Afetam canais iônicos, causando paralisia muscular.</p>
 
-[![Hyaluronidase is an enzyme that facilitates the dissemination of venom in tissues, present in snake venoms and spiders.](hialuronidase.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=%20CC1(C(=C)N(C2=CC=CC=C21)CCCCCC(=O)O)C.Br)
-
-<p style="text-align:right;">
-
-[Wikipedia](https://pt.wikipedia.org/wiki/Hyaluronidase)
-
-</p>
-
-[![Conotoxins, conotoxins are a group of neurotoxic peptides, isolated from the venom of marine snails of the genus Conus.](conotoxina.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?&pdbid=1CNL)
-
-<p style="text-align:right;">
-
-[Wikipedia](https://pt.wikipedia.org/wiki/Conotoxin)
-
-</p>
+</div>

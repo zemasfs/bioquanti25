@@ -1,28 +1,28 @@
 ---
-title: "Moléculas de interesse para aromas"
+title: "Moléculas de Interesse para Aromas"
 publish: false
 ---
 
-[![Limoneno está presente nos aromas citrícos nas cascas de laranja.](limoneno.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC1=CCC(CC1)C(=C)C)
+<div class="aromas d-flex flex-wrap justify-content-center gap-4">
 
-<p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/Limoneno)
-</p>
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CC1=CCC(CC1)C(=C)C">
+  <img src="limoneno.png" alt="Limoneno" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Limoneno:</strong> encontrado nas cascas de frutas cítricas como laranja e limão. Tem aroma fresco e cítrico.</p>
 
-[![Vanilina está presente no aroma de baunilha.](vanilina.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=COC1=C(C=CC(=C1)C=O)O)
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=COC1=C(C=CC(=C1)C=O)O">
+  <img src="vanilina.png" alt="Vanilina" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Vanilina:</strong> responsável pelo aroma característico da baunilha. Muito usada em confeitaria e perfumaria.</p>
 
-<p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/Vanilina)
-</p>
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CC(=CCC/C(=C/CO)/C)C">
+  <img src="geraniol.png" alt="Geraniol" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Geraniol:</strong> presente em rosas e outras flores. Possui fragrância floral doce, comum em cosméticos.</p>
 
-[![Geraniol está presente no aroma de rosas.](geraniol.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC(=CCC/C(=C/CO)/C)C)
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=COC1=C(C=CC(=C1)CC=C)O">
+  <img src="eugenol.png" alt="Eugenol" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Eugenol:</strong> composto do cravo-da-índia. Tem aroma quente e picante, usado em perfumes e analgésicos dentários.</p>
 
-<p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/Geraniol)
-</p>
-
-[![Eugenol está presente no aroma de cravos.](eugenol.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=COC1=C(C=CC(=C1)CC=C)O)
-
-<p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/Eugenol)
-</p>
+</div>

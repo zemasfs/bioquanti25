@@ -1,27 +1,28 @@
 ---
-title: "Molecules of pharmacological interest"
+title: "Moléculas de Interesse Farmacológico"
+publish: false
 ---
 
-[![Paracetamol is classified as a mild analgesic for pain relief.](paracetamol.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC(=O)NC1=CC=C(C=C1)O)
+<div class="farmacos d-flex flex-wrap justify-content-center gap-4">
 
-<p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/Paracetamol)
-</p>
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CC(=O)NC1=CC=C(C=C1)O">
+  <img src="paracetamol.png" alt="Paracetamol" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Paracetamol:</strong> analgésico e antipirético leve. Utilizado no alívio de dores e febre.</p>
 
-[![Ibuprofen can be used for symptomatic relief of migraines and acts as a anti-inflammatory.](ibuprofeno.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC(C)CC1=CC=C(C=C1)C(C)C(=O)O)
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CC(C)CC1=CC=C(C=C1)C(C)C(=O)O">
+  <img src="ibuprofeno.png" alt="Ibuprofeno" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Ibuprofeno:</strong> anti-inflamatório não esteroidal. Alivia dores, febre e inflamações, inclusive em enxaquecas.</p>
 
-<p style="text-align:right;">
-[Wikipedia](https://en.wikipedia.org/wiki/Ibuprofen)
-</p>
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CC1(%5BC@@H%5D(N2%5BC@H%5D(S1)%5BC@@H%5D(C2=O)NC(=O)%5BC@@H%5D(C3=CC=C(C=C3)O)N)C(=O)O)C">
+  <img src="amoxicilina.png" alt="Amoxicilina" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Amoxicilina:</strong> antibiótico do grupo das penicilinas. Usado no tratamento de infecções bacterianas.</p>
 
-[![Amoxicillin is an antibiotic used to treat a variety of bacterial infections.](amoxicilina.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?mode l=CC1(%5BC@@H%5D(N2%5BC@H%5D(S1)%5BC@@H%5D(C2=O)NC(=O)%5BC@@H%5D(C3=CC=C(C=C3)O)N)C(=O)O)C)
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CN(C)C(=N)N=C(N)N">
+  <img src="metformina.png" alt="Metformina" style="max-width: 150px; height: auto;">
+</a>
+<p><strong>Metformina:</strong> medicamento oral para o controle da diabetes tipo 2. Reduz a produção hepática de glicose.</p>
 
-<p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/Amoxicillin)
-</p>
-
-[![Metformin is used in the treatment of type 2 diabetes.](metformina.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CN(C)C(=N)N=C(N)N)
-
-<p style="text-align:right;">
-[Wikipedia](https://pt.wikipedia.org/wiki/Metformina)
-</p>
+</div>
