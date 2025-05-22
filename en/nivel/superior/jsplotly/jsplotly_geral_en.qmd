@@ -7,9 +7,14 @@ lang: pt
 ---
 
 | *JSPlotly* is an application for creating interactive and dynamic graphs for simulating natural phenomena based on equations and data visualization. Its name comes from the main language used in its construction and for the production of graphics, [JavaScript](https://www.javascript.com/), as well as the library involved in it, [Plotly.js](https://plotly.com/javascript/basic-charts/). 
+\
 
+## Presention Video for JSPlotly
 
-| It allows the reproduction, modification, creation, and sharing of interactive 2D or 3D graphics and dashboards, along with their code. It was designed as a simple, fast, open, playful, reproducible, and shareable alternative for teaching, learning, and research. 
+| Here is a short [video presentation of JSPlotly and GSPlotly (code generator)](https://youtu.be/2oWedC6X7YM), highlighting some of its features.
+\
+
+| JSPlotly allows the reproduction, modification, creation, and sharing of interactive 2D or 3D graphics and dashboards, along with their code. It was designed as a simple, fast, open, playful, reproducible, and shareable alternative for teaching, learning, and research. 
 
 | It promotes literacy and appropriation for scientific expressions involved in natural phenomena, through visualization resulting from parametric manipulation of the simulation. The application is less than 20 kB, can be customized in a text editor, does not require a connection, runs on any operating system, and for both desktops and mobile devices, exports the graph while preserving its interactivity, and allows insertion into web pages. 
 
