@@ -1,23 +1,23 @@
 ---
-title: "Moléculas Inorgânicas"
+title: "Inorganic Molecules"
 publish: false
 toc: true
 lang: pt
 ---
 
-## Ácidos
+## Acids
 
 <div class="acidos d-flex flex-wrap justify-content-center gap-4">
 
 <a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=OS(=O)(=O)O">
   <img src="acido sulfurico.png" alt="Ácido sulfúrico" style="max-width: 150px; height: auto;">
 </a>
-<p><strong>Ácido sulfúrico:</strong> usado na fabricação de fertilizantes, tratamento de águas, baterias e refino de petróleo.</p>
+<p><strong>Sulfuric acid:</strong> used in the manufacture of fertilizers, water treatment, batteries, and oil refining.</p>
 
 <a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=Cl">
   <img src="acido cloridrico.png" alt="Ácido clorídrico" style="max-width: 150px; height: auto;">
 </a>
-<p><strong>Ácido clorídrico:</strong> presente no suco gástrico e utilizado em indústrias químicas e laboratórios analíticos.</p>
+<p><strong>Hydrochloric acid:</strong> present in gastric juice and used in chemical industries and analytical laboratories.</p>
 
 </div>
 
@@ -28,43 +28,43 @@ lang: pt
 <a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=naoh">
   <img src="hidroxido de sodio.png" alt="Hidróxido de sódio" style="max-width: 150px; height: auto;">
 </a>
-<p><strong>Hidróxido de sódio:</strong> base forte usada na fabricação de sabões, papel, tecidos e na limpeza industrial.</p>
+<p><strong>Sodium hydroxide:</strong> a strong base used in the manufacture of soaps, paper, fabrics, and industrial cleaning.</p>
 
 <a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=NH4OH">
   <img src="hidróxido de amonio.png" alt="Hidróxido de amônio" style="max-width: 150px; height: auto;">
 </a>
-<p><strong>Hidróxido de amônio:</strong> formado ao se dissolver amônia em água. Usado em produtos de limpeza e fertilizantes.</p>
+<p><strong>Ammonium hydroxide:</strong> formed when ammonia dissolves in water. Used in cleaning products and fertilizers.</p>
 
 </div>
 
-## Sais
+## Salts
 
 <div class="sais d-flex flex-wrap justify-content-center gap-4">
 
 <a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=nacl">
   <img src="cloreto de sodio.png" alt="Cloreto de sódio" style="max-width: 150px; height: auto;">
 </a>
-<p><strong>Cloreto de sódio:</strong> o sal de cozinha. Essencial para a vida e usado em processos químicos industriais.</p>
+<p><strong>Sodium chloride: </strong> able salt. Essential for life and used in industrial chemical processes.</p>
 
 <a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=naclo">
   <img src="Hipoclorito de sodio.png" alt="Hipoclorito de sódio" style="max-width: 150px; height: auto;">
 </a>
-<p><strong>Hipoclorito de sódio:</strong> substância desinfetante usada na purificação da água e na limpeza doméstica.</p>
+<p><strong>Sodium hypochlorite: </strong> a disinfectant used in water purification and household cleaning.</p>
 
 </div>
 
-## Óxidos
+## Oxides
 
 <div class="oxidos d-flex flex-wrap justify-content-center gap-4">
 
 <a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=C(=O)=O">
   <img src="dióxido de carbono.png" alt="Dióxido de carbono" style="max-width: 150px; height: auto;">
 </a>
-<p><strong>Dióxido de carbono:</strong> gás gerado na respiração e na queima de combustíveis. Usado em extintores e bebidas gaseificadas.</p>
+<p><strong>Carbon dioxide:</strong> a gas produced by respiration and the burning of fuels. Used in fire extinguishers and carbonated beverages.</p>
 
 <a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=cao">
   <img src="óxido de calcio.png" alt="Óxido de cálcio" style="max-width: 150px; height: auto;">
 </a>
-<p><strong>Óxido de cálcio:</strong> conhecido como cal viva. Usado na construção civil e na correção do pH do solo.</p>
+<p><strong>Calcium oxide: </strong> known as quicklime. Used in construction and to correct soil pH.</p>
 
 </div>

@@ -32,7 +32,7 @@ publish: false
 
 [7. Nutritional](nutri_en.qmd)
 
-[8. Flavors](sabores.qmd)
+[8. Flavors](sabores_en.qmd)
 
 [9. Environmental](ambiental_en.qmd)
 
