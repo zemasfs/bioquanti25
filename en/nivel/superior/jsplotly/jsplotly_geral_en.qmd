@@ -11,7 +11,7 @@ lang: pt
 
 ## Presention Video for JSPlotly
 
-| Here is a short [video presentation of JSPlotly and GSPlotly (code generator)](https://youtu.be/wd1P5Q63wnk), highlighting some of its features.
+| Here is a short [video presentation of JSPlotly and GSPlotly (code generator)](https://youtu.be/0gVYrZdUxQw), highlighting some of its features.
 \
 
 | JSPlotly allows the reproduction, modification, creation, and sharing of interactive 2D or 3D graphics and dashboards, along with their code. It was designed as a simple, fast, open, playful, reproducible, and shareable alternative for teaching, learning, and research. 

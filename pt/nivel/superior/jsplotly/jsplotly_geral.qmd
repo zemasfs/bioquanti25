@@ -11,7 +11,7 @@ lang: pt
 
 ## Vídeo de apresentação
 
-|   Segue um pequeno [vídeo de apresentação do JSPlotly e do GSPlotly (gerador de códigos)](https://youtu.be/wd1P5Q63wnk), pontuando algumas de suas habilidades.
+|   Segue um pequeno [vídeo de apresentação do JSPlotly e do GSPlotly (gerador de códigos)](https://youtu.be/0gVYrZdUxQw), pontuando algumas de suas habilidades.
 \
 
 |   O JSPlotlsy permite a reprodução, modificação, criação e compartilhamento de gráficos e painéis interativos em 2D ou 3D, juntamente a seus códigos. Foi concebido como uma alternativa simples, rápida, aberta, lúdica, reprodutível e compartilhável ao ensino-aprendizagem e pesquisa. 
