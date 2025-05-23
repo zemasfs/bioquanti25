@@ -28,6 +28,9 @@ lang: pt
 
 - Schneedorf, J.M. Um aplicativo para gráficos interativos e dinâmicos para navegadores HTML, e GPT personalizado para seu códigos. In: Sumariva, G. Robótica, Inovação e Educação: conexões para o futuro. V & V Editora, Santo André (SP), 2025 (in press).
 
+- Schneedorf, J.M. JSPlotly: um aplicativo aberto para gráficos interativos e dinâmicos no ensino e
+aprendizagem de Ciências. In: Gerolin, E., Crisafulli, U. Papo de Professores: desafios, inovações e práticas no ensino de Ciências. V & V Editora, Santo André (SP), 2025 (in press).
+
 - Schneedorf, J.M. JSPlotly - um aplicativo prático e portável para simulações gráficas interativas ao ensino reprodutível. In: Recursos Educacionais Abertos na UNIFAL-MG. Org: Mafra, L.A.S; Silva, L.E; Schneedorf, J.M. Ed. Pimenta Cultural. 2025 (no prelo).
 
 - Schneedorf, J.M. Bioquanti: um website para ensino reprodutível de códigos para conteúdos. In: Unifal Interativa: Projetos de Educação Digital da Universidade Federal de Alfenas. Org: Mafra, L.A.S; Silva, L.E; Schneedorf, J.M. Ed. Pimenta Cultural. 2025 (no prelo).
