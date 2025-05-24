@@ -55,7 +55,27 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -395,7 +415,7 @@ a_1-a_2 = b_2*x-b_1*x\\
 a_1-a_2 = x(b_2-b_1)\\
 x = \frac{a_1-a_2}{b2-b1}
 \tag{1}\]</span></span></p>
-<div class="line-block">The intersection point can be obtained manually, using the <em>locator</em> command mentioned above, or automatically. In this case, the <em>R</em> example that illustrates this calculation is based on spectrophotometric results obtained for a dye, acid yellow 29 <span class="citation" data-cites="duff1972spectrophotometric">[@duff1972spectrophotometric]</span>.</div>
+<div class="line-block">The intersection point can be obtained manually, using the <em>locator</em> command mentioned above, or automatically. In this case, the <em>R</em> example that illustrates this calculation is based on spectrophotometric results obtained for a dye, acid yellow 29 <span class="citation" data-cites="duff1972spectrophotometric">(<a href="#ref-duff1972spectrophotometric" role="doc-biblioref">Duff and Giles 1972</a>)</span>.</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Determination of critical micelle concentration (CMC)</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -477,9 +497,14 @@ v_{transp}=\frac{V_{max}*S_{out}}{K_{transp}+S_{out}}
 <div class="line-block">Where, similarly, V<span class="math inline">\(_{max}\)</span> represents the maximum (or limit) transport speed of the substrate, S<span class="math inline">\(_{out}\)</span> the substrate content transported, and K<span class="math inline">\(_{transp}\)</span> the dissociation constant of the protein-substrate complex (or substrate concentration at half saturation of the transporter).</div>
 
 
+
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-duff1972spectrophotometric" class="csl-entry" role="listitem">
+Duff, DG, and CH Giles. 1972. <span>“Spectrophotometric Determination of the Critical Micelle Concentration of Surfactants.”</span> <em>Journal of Colloid and Interface Science</em> 41 (3): 407–14.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

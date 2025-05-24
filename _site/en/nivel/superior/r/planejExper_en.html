@@ -55,7 +55,27 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -442,7 +462,7 @@ y = b_0+b_1*x_1+b_2*x_2+b_{11}*x_1^2+b_{22}*x_2^2+b_{12}*x_1*x_2, \, quadratic \
 </section>
 <section id="reaction-yield-factorial-design-22" class="level2">
 <h2 class="anchored" data-anchor-id="reaction-yield-factorial-design-22">Reaction Yield &amp; Factorial Design 2<span class="math inline">\(^{2}\)</span></h2>
-<div class="line-block">The simplest <em>factorial experiment</em> is the one that evaluates the <em>response</em> of an experiment (yield, for example) in which two <em>factors</em> (temperature and type of catalyst, for example) are varied at two <em>levels</em> each (low and high). The table prepared in the excerpt below from the data provided by Neto et al <span class="citation" data-cites="neto2010fazer">[@neto2010fazer]</span> exemplifies this situation.</div>
+<div class="line-block">The simplest <em>factorial experiment</em> is the one that evaluates the <em>response</em> of an experiment (yield, for example) in which two <em>factors</em> (temperature and type of catalyst, for example) are varied at two <em>levels</em> each (low and high). The table prepared in the excerpt below from the data provided by Neto et al <span class="citation" data-cites="neto2010fazer">(<a href="#ref-neto2010fazer" role="doc-biblioref">Neto, Scarminio, and Bruns 2010</a>)</span> exemplifies this situation.</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Factorial design</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -552,7 +572,7 @@ y=67.75+22.5*T-13.5*C-8.5*T*C
 <section id="response-surface-methodology-rsm" class="level2">
 <h2 class="anchored" data-anchor-id="response-surface-methodology-rsm">Response Surface Methodology (RSM)</h2>
 <div class="line-block">This multivariate statistical technique is also commonly used in modeling responses influenced by more than one factor, sometimes associated with factorial design, and with a view to optimizing a response without the need to evaluate all possible combinations. This can be particularly useful when one wants to optimize a test whose response depends, for example, on scalar predictors, such as the concentration range of a given reagent and the pH conditions.<br>
-For example, for a <em>linear response surface</em> <span class="citation" data-cites="neto2010fazer">[@neto2010fazer]</span>, in a test in which one wishes to verify the best yield (<em>rend, %</em>) of a reaction by varying 3 levels of reagent concentration (<em>conc, %</em>) and three magnetic stirring speeds (<em>agit, rpm</em>), one can, as before, prepare the <em>contrast matrix</em> from the information in the following table:</div>
+For example, for a <em>linear response surface</em> <span class="citation" data-cites="neto2010fazer">(<a href="#ref-neto2010fazer" role="doc-biblioref">Neto, Scarminio, and Bruns 2010</a>)</span>, in a test in which one wishes to verify the best yield (<em>rend, %</em>) of a reaction by varying 3 levels of reagent concentration (<em>conc, %</em>) and three magnetic stirring speeds (<em>agit, rpm</em>), one can, as before, prepare the <em>contrast matrix</em> from the information in the following table:</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Data for response surface methodology</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -835,10 +855,15 @@ y=89.00+1.51*x_1-2.36*x_2-2.81*x_1^2-2.81*x_2^2+1.75*x_1*x_2
 <div class="line-block">However, there are some packages for <code>R</code> for three-dimensional representation of data and functions (<code>rgl</code>, <code>plot3D</code>, <code>scatterplot3d</code>), as well as for factorial design analysis (<code>agricolae</code>, <code>afex</code>, <code>FMC</code>), and response surface methodology (<code>rsm</code>).</div>
 
 
+
 </section>
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-neto2010fazer" class="csl-entry" role="listitem">
+Neto, Benı́cio Barros, Ieda Spacino Scarminio, and Roy Edward Bruns. 2010. <em>Como Fazer Experimentos-: Pesquisa e Desenvolvimento Na Ci<span>ê</span>ncia e Na Ind<span>ú</span>stria</em>. Bookman Editora.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

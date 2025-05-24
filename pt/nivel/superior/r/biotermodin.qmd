@@ -2,6 +2,7 @@
 title: "Biotermodinâmica"
 toc: true
 lang: pt
+bibliography: referencias.bib
 ---
 
 

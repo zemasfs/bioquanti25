@@ -1,5 +1,6 @@
 ---
 title: "Nucleic Acids"
+bibliography: referencias.bib
 ---
 
 ## Sequence Analysis {#acNucl}

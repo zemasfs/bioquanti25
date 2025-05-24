@@ -2,6 +2,7 @@
 title: "Redes Metabólicas"
 toc: true
 lang: pt
+bibliography: referencias.bib
 ---
 
 ## Vias bioquímicas do metabolismo {#redesMet}

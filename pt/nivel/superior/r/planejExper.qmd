@@ -2,6 +2,7 @@
 title: "Planejamento experimental"
 toc: true
 lang: pt
+bibliography: referencias.bib
 ---
 
 ## Sistema matricial

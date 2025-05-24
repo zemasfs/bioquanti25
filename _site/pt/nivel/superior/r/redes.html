@@ -55,7 +55,27 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -907,7 +927,7 @@ _{k5}\\
 </section>
 <section id="cinética-do-metabolismo-de-6-mercaptopurina" class="level2">
 <h2 class="anchored" data-anchor-id="cinética-do-metabolismo-de-6-mercaptopurina">Cinética do metabolismo de 6-mercaptopurina</h2>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Elevando um pouco a complexidade de redes metabólicas, pode-se exemplificar o metabolismo celular da 6-mercaptopurina (6-MP) em função do teor de ATP celular <span class="citation" data-cites="lavrova2017ordinary">[@lavrova2017ordinary]</span>. Como antagonista da purina, o fármaco é empregado na quimioterapia para o tratamento de leucemia linfocítica, interrompendo o crescimento celular, embora produzindo efeitos colaterais citotóxicos advindos de reações com o grupo tiol.</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Elevando um pouco a complexidade de redes metabólicas, pode-se exemplificar o metabolismo celular da 6-mercaptopurina (6-MP) em função do teor de ATP celular <span class="citation" data-cites="lavrova2017ordinary">(<a href="#ref-lavrova2017ordinary" role="doc-biblioref">Lavrova et al. 2017</a>)</span>. Como antagonista da purina, o fármaco é empregado na quimioterapia para o tratamento de leucemia linfocítica, interrompendo o crescimento celular, embora produzindo efeitos colaterais citotóxicos advindos de reações com o grupo tiol.</div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A <a href="#fig-fig6MP" class="quarto-xref">Figura&nbsp;2</a> representa um esquema simplificado do metabolismo de 6-MP. As concentrações das espécies e constantes cinéticas originam-se dos valores de concentração em <span class="math inline">\(\mu\)</span>mol/mL, e tempo em dias.</div>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
@@ -923,7 +943,7 @@ Figura&nbsp;2: Metabolismo esquemático simplificado para o metabolismo de 6-mer
 </div>
 </div>
 </div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para as 10 reações referentes às ODEs que compõem a representação do metabolismo de 6-MP <span class="citation" data-cites="lavrova2017ordinary">[@lavrova2017ordinary]</span>, o trecho de código abaixo implementa a solução por Runge-Kutta de 4a. ordem pela função <code>lsoda</code>:</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para as 10 reações referentes às ODEs que compõem a representação do metabolismo de 6-MP <span class="citation" data-cites="lavrova2017ordinary">(<a href="#ref-lavrova2017ordinary" role="doc-biblioref">Lavrova et al. 2017</a>)</span>, o trecho de código abaixo implementa a solução por Runge-Kutta de 4a. ordem pela função <code>lsoda</code>:</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#  Degradação de 6-mercaptopurina e solução de Runge-Kutta</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -1060,9 +1080,14 @@ Figura&nbsp;2: Metabolismo esquemático simplificado para o metabolismo de 6-mer
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Observe que, com a redução de 10x no teor de ATP, TGMP e TIMP mantiveram teores mais estáveis ao longo do período.</div>
 
 
+
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Referências</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-lavrova2017ordinary" class="csl-entry" role="listitem">
+Lavrova, Anastasia I, Eugene B Postnikov, Andrey Yu Zyubin, e Svetlana V Babak. 2017. <span>«Ordinary differential equations and Boolean networks in application to modelling of 6-mercaptopurine metabolism»</span>. <em>Royal Society Open Science</em> 4 (4): 160872.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

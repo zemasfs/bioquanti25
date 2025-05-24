@@ -55,7 +55,27 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -435,7 +455,7 @@ window.Quarto = {
 <section id="versatilidade-estrutural-em-biopolímeros" class="level2">
 <h2 class="anchored" data-anchor-id="versatilidade-estrutural-em-biopolímeros">Versatilidade estrutural em biopolímeros</h2>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Biopolímeros, ou biomacromoléculas, podem ser considerados polímeros com unidades monoméricas compostas por biomoléculas. Assim, proteínas, ácidos nucleicos ou glicanos (polissacarídios) são respectivamente formados por aminoácidos (20 tipos codificáveis em proteínas, a partir de 64 códons do código genético), bases nitrogenadas (4 tipos com citosina do DNA substituida por uracila no RNA) e monossacarídios (inferior a 6 tipos).<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do ponto de vista da variabilidade estrutural, tomando-se por base apenas a combinação de monômeros, é possível prever o número de estruturas distintas pela simples relação <span class="citation" data-cites="otaki2005availability">[@otaki2005availability]</span>:</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do ponto de vista da variabilidade estrutural, tomando-se por base apenas a combinação de monômeros, é possível prever o número de estruturas distintas pela simples relação <span class="citation" data-cites="otaki2005availability">(<a href="#ref-otaki2005availability" role="doc-biblioref">Otaki et al. 2005</a>)</span>:</div>
 <p><span id="eq-variab"><span class="math display">\[
 no. biopolímeros = {monômeros}^{sequência}
 \tag{1}\]</span></span></p>
@@ -463,9 +483,14 @@ no. biopolímeros = {monômeros}^{sequência}
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Em contrapartida, esses cálculos simples também não levam em conta que biomoléculas podem apresentar diversos tipos de <em>isomeria</em>, como óptica (D/L), posicional, geométrica (cis/trans), configuracional (syn/anti), ou conformacional (bote/cadeira), o que eleva consideravelmente o número de estruturas possíveis na Natureza.</div>
 
 
+
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Referências</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-otaki2005availability" class="csl-entry" role="listitem">
+Otaki, Joji M, Shunsuke Ienaka, Tomonori Gotoh, e Haruhiko Yamamoto. 2005. <span>«Availability of short amino acid sequences in proteins»</span>. <em>Protein science</em> 14 (3): 617–25.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

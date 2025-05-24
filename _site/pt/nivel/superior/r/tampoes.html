@@ -55,7 +55,27 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -384,7 +404,7 @@ window.Quarto = {
 
 <section id="sistema-acetato" class="level2">
 <h2 class="anchored" data-anchor-id="sistema-acetato">Sistema acetato</h2>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A titulação de um ácido fraco é baseada na equação de Henderson-Hasselbach como segue <span class="citation" data-cites="po2001henderson">[@po2001henderson]</span> :</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A titulação de um ácido fraco é baseada na equação de Henderson-Hasselbach como segue <span class="citation" data-cites="po2001henderson">(<a href="#ref-po2001henderson" role="doc-biblioref">Po and Senozan 2001</a>)</span> :</div>
 <p><span class="math display">\[\begin{equation}
 pH = pKa + log\frac{[A^-]}{[HA]}
 \label{hender-hassel}
@@ -607,11 +627,16 @@ fa = \frac{1}{1+10^{(pH-pKa1)}}+ \frac{1}{1+10^{(pH-pK2)}}+\frac{1}{1+10^{(pH-pK
 </div>
 
 
+
 </section>
 </section>
 
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-po2001henderson" class="csl-entry" role="listitem">
+Po, Henry N, and NM Senozan. 2001. <span>“The Henderson-Hasselbalch Equation: Its History and Limitations.”</span> <em>Journal of Chemical Education</em> 78 (11): 1499.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p>Obs: o valor de pKa do sistema bicarbonato é de 6,8 quando considerado o <span class="math inline">\(CO_2\)</span> como fonte de ácido carbônico <span class="math inline">\(H_2CO_3\)</span> em sua reação com <span class="math inline">\(H_2O\)</span>, como por exemplo, para determinação de parâmetros arteriais em analisador hospitalar (<span class="math inline">\(CO_2\)</span>, <span class="math inline">\(HCO_3^-\)</span>, <span class="math inline">\(O_2\)</span>).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>

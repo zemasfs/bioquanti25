@@ -1,5 +1,6 @@
 ---
 title: "Biothermodynamics"
+bibliography: referencias.bib
 ---
 
 ## Bioenergetics {#sec-Bioenerg}

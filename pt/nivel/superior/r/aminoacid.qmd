@@ -2,6 +2,7 @@
 title: "Aminoácidos"
 toc: true
 lang: pt
+bibliography: referencias.bib
 ---
 
 

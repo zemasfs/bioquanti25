@@ -55,7 +55,27 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -1044,11 +1064,11 @@ y=\frac{pO_2^{nH}} {K_{50}^{nH}+pO_2^{nH}}
 </div>
 </div>
 </div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;Como mencionado no parágrafo anterior, aos quatro centros de ligação com oxigênio molecular reportam-se quatro constantes microscópicas de equilíbrio de dissociação, de <em>K1</em> a <em>K4</em>. Simplificando o valor de pO<span class="math inline">\(_{2}\)</span> para <em>L</em>, ligante, é possível também representar a ligação de O<span class="math inline">\(_{2}\)</span> à hemoglobina pela equação de Adair <span class="citation" data-cites="pauling1935oxygen">[@pauling1935oxygen]</span>:</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;Como mencionado no parágrafo anterior, aos quatro centros de ligação com oxigênio molecular reportam-se quatro constantes microscópicas de equilíbrio de dissociação, de <em>K1</em> a <em>K4</em>. Simplificando o valor de pO<span class="math inline">\(_{2}\)</span> para <em>L</em>, ligante, é possível também representar a ligação de O<span class="math inline">\(_{2}\)</span> à hemoglobina pela equação de Adair <span class="citation" data-cites="pauling1935oxygen">(<a href="#ref-pauling1935oxygen" role="doc-biblioref">Pauling 1935</a>)</span>:</div>
 <p><span id="eq-HbKmicro"><span class="math display">\[
 y=\frac{K1*L+2*K2*K1*L^2+3*K3*K2*K1*L^3+4*K4*K3*K2*K1*L^4} {4*(1+K1*L+2*K2*K1*L^2+3*K3*K2*K1*L^3+4*K4*K3*K2*K1*L^4)}
 \tag{3}\]</span></span></p>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;Ocorre que existe um efeito estatístico associado à interação em estudo, já que o O<span class="math inline">\(_{2}\)</span> possui 4 sítios iniciais de interação à hemoglobina <span class="citation" data-cites="tyuma1973analysis">[@tyuma1973analysis]</span>, valores que reduzem até a saturação dos 4 sítios. Dessa forma, é necessário contabilizar as constantes microscópicas <em>Ki</em> em razão desse comprometimento estatístico:</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;Ocorre que existe um efeito estatístico associado à interação em estudo, já que o O<span class="math inline">\(_{2}\)</span> possui 4 sítios iniciais de interação à hemoglobina <span class="citation" data-cites="tyuma1973analysis">(<a href="#ref-tyuma1973analysis" role="doc-biblioref">Tyuma, Imai, e Shimizu 1973</a>)</span>, valores que reduzem até a saturação dos 4 sítios. Dessa forma, é necessário contabilizar as constantes microscópicas <em>Ki</em> em razão desse comprometimento estatístico:</div>
 <p><span id="eq-HbKSta"><span class="math display">\[
 Ki_{corr} = \frac{i}{N-1+i}*Ki
 \tag{4}\]</span></span></p>
@@ -1082,7 +1102,7 @@ Ki_{corr} = \frac{i}{N-1+i}*Ki
 </div>
 </div>
 </div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Por fim, também é possível obter a curva de ligação utilizando-se uma variação de <em>loop for</em> na qual a <a href="#eq-HbKmicro" class="quarto-xref">Equação&nbsp;3</a> é produzida por iteração, como segue <span class="citation" data-cites="bloomfield2009computer">[@bloomfield2009computer]</span>:</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Por fim, também é possível obter a curva de ligação utilizando-se uma variação de <em>loop for</em> na qual a <a href="#eq-HbKmicro" class="quarto-xref">Equação&nbsp;3</a> é produzida por iteração, como segue <span class="citation" data-cites="bloomfield2009computer">(<a href="#ref-bloomfield2009computer" role="doc-biblioref">Bloomfield 2009</a>)</span>:</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Cálculo de y em cada L</span></span>
 <span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>Yi <span class="ot">&lt;-</span> <span class="cf">function</span>(L, Kcorr) {</span>
@@ -1209,10 +1229,21 @@ $Pi
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Entre pacotes mais direcionados ao estudo comparativo e visualização de estruturas, bem como para descritores de bioinformática e quimiogenômica vale mencionar <code>Bio3d</code>, <code>Autoplotprotein</code>, <code>protr</code>, <code>BioMedR</code>, e <code>UniprotR</code>, entre muitos.</div>
 
 
+
 </section>
 
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Notas de rodapé</h2>
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Referências</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-bloomfield2009computer" class="csl-entry" role="listitem">
+Bloomfield, Victor. 2009. <em>Computer simulation and data analysis in molecular biology and biophysics: an introduction using R</em>. Springer Science &amp; Business Media.
+</div>
+<div id="ref-pauling1935oxygen" class="csl-entry" role="listitem">
+Pauling, Linus. 1935. <span>«The oxygen equilibrium of hemoglobin and its structural interpretation»</span>. <em>Proceedings of the National Academy of Sciences of the United States of America</em> 21 (4): 186.
+</div>
+<div id="ref-tyuma1973analysis" class="csl-entry" role="listitem">
+Tyuma, Itiro, Kiyohiro Imai, e Katsuhiko Shimizu. 1973. <span>«Analysis of oxygen equilibrium of hemoglobin and control mechanism of organic phosphates»</span>. <em>Biochemistry</em> 12 (8): 1491–98.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Notas de rodapé</h2>
 
 <ol>
 <li id="fn1"><p>Algumas práticas de programação (<em>Best Codes</em>): 1) organizar um projeto em pastas (ex: dados,figuras,scripts) ou criar um pacote do R como opção; 2) criar seções num código pra facilitar localização; 3) nomear os <em>code chunks</em> (pedaços de código); 4) colocar no início do código as bibliotecas utilizadas, fontes, e chamada de dados (evita procurar algo necessário pro <em>script</em> rodar ao longo do código); 5) identar, preferivelmente com 1 ou 2 comandos por linha; 6) parâmetros de função sempre dentro de função; 7) evitar parâmetros globais; 8) não usar ‘attach’; 8) usar parâmetros com nomes intuitivos (e não x e y; ex: nome_função); 9) atribuir nomes à objetos com uma das três convenções nominais (ex: KiCompet, ki_compet, ki.compet).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>

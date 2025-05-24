@@ -1,5 +1,6 @@
 ---
 title: "Metabolic Networks"
+bibliography: referencias.bib
 ---
 
 ## Biochemical pathways of metabolism {#redesMet}

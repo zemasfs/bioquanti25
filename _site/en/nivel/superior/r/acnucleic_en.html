@@ -55,7 +55,27 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -521,7 +541,7 @@ window.Quarto = {
 </section>
 <section id="dna-thermostability" class="level2">
 <h2 class="anchored" data-anchor-id="dna-thermostability">DNA thermostability</h2>
-<div class="line-block">Regarding the physicochemical properties of nucleic acids, the relationship between the thermostability of duplex DNA and the GC pair content is well known, as explained by the empirical relationship <span class="citation" data-cites="creighton2010biophysical">[@creighton2010biophysical]</span>:</div>
+<div class="line-block">Regarding the physicochemical properties of nucleic acids, the relationship between the thermostability of duplex DNA and the GC pair content is well known, as explained by the empirical relationship <span class="citation" data-cites="creighton2010biophysical">(<a href="#ref-creighton2010biophysical" role="doc-biblioref">Creighton et al. 2010</a>)</span>:</div>
 <p><span id="eq-DNAgc"><span class="math display">\[
 Tm=(81.5+16.6*log(\frac{[Na^+]}{1+0.7*[Na^+]})+41*f_{GC}-\frac{500}{L}-0.63\%_f)
 \tag{1}\]</span></span></p>
@@ -658,10 +678,15 @@ In this way, it is possible to predict the value of <em>Tm</em> (“melting temp
 <div class="line-block">Note how the difference in GC content has a direct effect on the thermostability of double-stranded DNA. One note: although the range of Tm values reported in the literature for lysozyme is around 74<span class="math inline">\(^o\)</span>C, this value refers to the cooperative denaturation of the enzyme in aqueous solution, and not to the unfolding of its duplex DNA gene sequence.</div>
 
 
+
 </section>
 
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-creighton2010biophysical" class="csl-entry" role="listitem">
+Creighton, Thomas E et al. 2010. <em>Biophysical Chemistry of Nucleic Acids &amp; Proteins</em>. Distributed by Gardners Books.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p>NCBI. https://www.ncbi.nlm.nih.gov/protein<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>

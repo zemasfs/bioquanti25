@@ -2,6 +2,7 @@
 title: "Metabolismo celular"
 toc: true
 lang: pt
+bibliography: referencias.bib
 ---
 
 

@@ -1,5 +1,6 @@
 ---
 title: "Sistema tampão biológicos"
+bibliography: referencias.bib
 ---
 
 ## Sistema acetato

@@ -55,7 +55,27 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -453,7 +473,7 @@ y = b_0+b_1*x_1+b_2*x_2+b_{11}*x_1^2+b_{22}*x_2^2+b_{12}*x_1*x_2, \, metodologia
 </section>
 <section id="rendimento-de-reação-planejamento-fatorial-22" class="level2">
 <h2 class="anchored" data-anchor-id="rendimento-de-reação-planejamento-fatorial-22">Rendimento de Reação &amp; Planejamento Fatorial 2<span class="math inline">\(^{2}\)</span></h2>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O <em>experimento fatorial</em> mais simples é o que se avalia a <em>resposta</em> de um experimento (rendimento, por ex) em que se variam dois <em>fatores</em> (temperatura e tipo de catalisador, por ex) em dois <em>níveis</em> cada (baixo e alto). A tabela elaborada no trecho abaixo a partir dos dados explicitados por Neto e cols <span class="citation" data-cites="neto2010fazer">[@neto2010fazer]</span> exemplifica essa situação.</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O <em>experimento fatorial</em> mais simples é o que se avalia a <em>resposta</em> de um experimento (rendimento, por ex) em que se variam dois <em>fatores</em> (temperatura e tipo de catalisador, por ex) em dois <em>níveis</em> cada (baixo e alto). A tabela elaborada no trecho abaixo a partir dos dados explicitados por Neto e cols <span class="citation" data-cites="neto2010fazer">(<a href="#ref-neto2010fazer" role="doc-biblioref">Neto, Scarminio, e Bruns 2010</a>)</span> exemplifica essa situação.</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#  Planejamento fatorial</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -564,7 +584,7 @@ y=67,75+22,5*T-13,5*C-8,5*T*C
 <section id="metodologia-de-superfície-de-resposta-msr" class="level2">
 <h2 class="anchored" data-anchor-id="metodologia-de-superfície-de-resposta-msr">Metodologia de Superfície de Resposta (MSR)</h2>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Esta técnica estatística multivariável também é comumente empregada na modelagem de respostas influenciadas por mais de um fator, por vezes associada ao planejamento fatorial, e com vistas à otimização de uma resposta sem a necessidade de se avaliar todas as combinações possíveis. Isso pode ser particularmente útil quando se deseja otimizar um ensaio cuja resposta depende, por exemplo, de preditores escalares, como a faixa de concentração de determinado reagente e as condições de pH.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exemplificando para uma <em>superfície de resposta linear</em> <span class="citation" data-cites="neto2010fazer">[@neto2010fazer]</span>, num ensaio em que se deseja verificar o melhor rendimento (<em>rend, %</em>) de uma reação variando-se 3 níveis de concentração de reagente (<em>conc, %</em>) e três velocidades de agitação magnética (<em>agit, rpm</em>), pode-se como dantes elaborar a <em>matriz de contrastes</em> a partir das informações da tabela que segue:</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exemplificando para uma <em>superfície de resposta linear</em> <span class="citation" data-cites="neto2010fazer">(<a href="#ref-neto2010fazer" role="doc-biblioref">Neto, Scarminio, e Bruns 2010</a>)</span>, num ensaio em que se deseja verificar o melhor rendimento (<em>rend, %</em>) de uma reação variando-se 3 níveis de concentração de reagente (<em>conc, %</em>) e três velocidades de agitação magnética (<em>agit, rpm</em>), pode-se como dantes elaborar a <em>matriz de contrastes</em> a partir das informações da tabela que segue:</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Dados para metodologia de superfície de resposta</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -847,10 +867,15 @@ y=89,00+1,51*x_1-2,36*x_2-2,81*x_1^2-2,81*x_2^2+1,75*x_1*x_2
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Não obstante, existem para o <code>R</code> alguns pacotes para representação tridimensional de dados e funções (<code>rgl</code>, <code>plot3D</code>, <code>scatterplot3d), como também para análise de planejamento fatorial (</code>agricolae<code>,</code>afex<code>,</code>FMC<code>), e de metodologia de superfície de resposta (</code>rsm`).</div>
 
 
+
 </section>
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Referências</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-neto2010fazer" class="csl-entry" role="listitem">
+Neto, Benı́cio Barros, Ieda Spacino Scarminio, e Roy Edward Bruns. 2010. <em>Como Fazer Experimentos-: Pesquisa e Desenvolvimento na Ci<span>ê</span>ncia e na Ind<span>ú</span>stria</em>. Bookman Editora.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

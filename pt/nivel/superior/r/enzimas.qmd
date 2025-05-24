@@ -2,6 +2,7 @@
 title: "Enzimas"
 toc: true
 lang: pt
+bibliography: referencias.bib
 ---
 
 ## Cinética Enzimática {#sec-Enzima}

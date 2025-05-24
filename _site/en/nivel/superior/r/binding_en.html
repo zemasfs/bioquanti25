@@ -55,7 +55,27 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -448,7 +468,7 @@ Maintaining this similarity with the formalism of the <em>Michaelis-Menten equat
 <p><span id="eq-eqKdK"><span class="math display">\[
 K = \frac{1}{Kd}
 \tag{5}\]</span></span></p>
-<div class="line-block">The <em>binding site heterogeneity</em> model assumes that there is one more site in the protein with distinct affinities for the ligand <span class="citation" data-cites="dahlquist197813">[@dahlquist197813]</span>. Formally, this model can be exemplified for 2 sets of binding sites, as follows:</div>
+<div class="line-block">The <em>binding site heterogeneity</em> model assumes that there is one more site in the protein with distinct affinities for the ligand <span class="citation" data-cites="dahlquist197813">(<a href="#ref-dahlquist197813" role="doc-biblioref">Dahlquist 1978</a>)</span>. Formally, this model can be exemplified for 2 sets of binding sites, as follows:</div>
 <p><span id="eq-eqHeterSit"><span class="math display">\[
 \nu=\frac{K1*[L]}{1+K1*[L]} + \frac{K2*[L]}{1+K2*[L]}
 \tag{6}\]</span></span></p>
@@ -481,7 +501,7 @@ K = \frac{1}{Kd}
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># n1+n2=ntot no Hill</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">1</span>)) <span class="co"># return to normal graph window</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="line-block">The <em>one-site creator</em> model <span class="citation" data-cites="parsons1978theoretical">[@parsons1978theoretical]</span> establishes a positive cooperativity resulting from the production of new sites for the ligand in the protein. The following is the exemplified model and its resulting linearizations.</div>
+<div class="line-block">The <em>one-site creator</em> model <span class="citation" data-cites="parsons1978theoretical">(<a href="#ref-parsons1978theoretical" role="doc-biblioref">Parsons and Vallner 1978</a>)</span> establishes a positive cooperativity resulting from the production of new sites for the ligand in the protein. The following is the exemplified model and its resulting linearizations.</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># New site creation under ligand interaction</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -538,7 +558,7 @@ K = \frac{1}{Kd}
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># n1+n2=ntot no Hill</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">1</span>)) <span class="co"># return to normal graphics window</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="line-block">In <em>positive cooperativity</em>, a second ligand molecule interacts with the protein with greater affinity than the first molecule <span class="citation" data-cites="parsons1978theoretical">[@parsons1978theoretical]</span>:</div>
+<div class="line-block">In <em>positive cooperativity</em>, a second ligand molecule interacts with the protein with greater affinity than the first molecule <span class="citation" data-cites="parsons1978theoretical">(<a href="#ref-parsons1978theoretical" role="doc-biblioref">Parsons and Vallner 1978</a>)</span>:</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Positive cooperativity in ligand binding</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -655,8 +675,8 @@ Achieved convergence tolerance: 1.554e-06</code></pre>
 <section id="graphics-systems-in-r" class="level2">
 <h2 class="anchored" data-anchor-id="graphics-systems-in-r">Graphics Systems in R</h2>
 <div class="line-block">The last simulation curve obtained was from the standard library for manipulating graphics in the ‘R’ installation, <strong>Graphics</strong>. This is a broad set of functions also used by several other packages in the environment. However, there are several other libraries in ‘R’ for creating graphs, among which it is worth highlighting <em>Lattice</em>, also included in the standard installation, and <em>ggplot2</em>. Both systems generate results with better aesthetics and graphic flexibility than the standard <em>Graphics</em> library, and have different uses and semantics.<br>
-The <em>Lattice</em> system <span class="citation" data-cites="sarkar2008lattice">[@sarkar2008lattice]</span> is based on the <em>Trellis</em> system for graphical representation of multivariate data. Its strength lies in the representation of data in panels containing subgroups and, although it has a less intuitive and sometimes more elaborate syntax than the <em>Graphics</em> package, it produces a superior graph with just a few keyboard clicks. In general, <em>Lattice</em> produces the graph within the algorithm itself, in a different way to the <em>Graphics</em> systems (successive lines of modification to the graph can be accumulated) or <em>ggplot2</em>.<br>
-On the other hand, the <em>ggplot2</em> library is based on the graphics grammar <span class="citation" data-cites="wickham2011ggplot2">[@wickham2011ggplot2]</span>, and produces the graph using a single command line that combines overlapping layers, similar to image manipulation applications (e.g.&nbsp;<em>Inkscape</em>, <em>Gimp</em>, <em>Corel Draw</em>, <em>Photoshop</em>). This way, it is possible to change each item of the graph in its specific layers (theme, coordinates, facets, statistics, geometry, aesthetics, data). Exemplifying the graphical result of the simulation curve above <em>binding</em> for <em>Lattice</em> and <em>ggplot2</em>:</div>
+The <em>Lattice</em> system <span class="citation" data-cites="sarkar2008lattice">(<a href="#ref-sarkar2008lattice" role="doc-biblioref">Sarkar 2008</a>)</span> is based on the <em>Trellis</em> system for graphical representation of multivariate data. Its strength lies in the representation of data in panels containing subgroups and, although it has a less intuitive and sometimes more elaborate syntax than the <em>Graphics</em> package, it produces a superior graph with just a few keyboard clicks. In general, <em>Lattice</em> produces the graph within the algorithm itself, in a different way to the <em>Graphics</em> systems (successive lines of modification to the graph can be accumulated) or <em>ggplot2</em>.<br>
+On the other hand, the <em>ggplot2</em> library is based on the graphics grammar <span class="citation" data-cites="wickham2011ggplot2">(<a href="#ref-wickham2011ggplot2" role="doc-biblioref">Wickham 2011</a>)</span>, and produces the graph using a single command line that combines overlapping layers, similar to image manipulation applications (e.g.&nbsp;<em>Inkscape</em>, <em>Gimp</em>, <em>Corel Draw</em>, <em>Photoshop</em>). This way, it is possible to change each item of the graph in its specific layers (theme, coordinates, facets, statistics, geometry, aesthetics, data). Exemplifying the graphical result of the simulation curve above <em>binding</em> for <em>Lattice</em> and <em>ggplot2</em>:</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The lattice and ggplot2 systems</span></span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -1112,9 +1132,23 @@ Net \, rates:
 </div>
 
 
+
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-dahlquist197813" class="csl-entry" role="listitem">
+Dahlquist, FW. 1978. <span>“[13] the Meaning of Scatchard and Hill Plots.”</span> <em>Methods in Enzymology</em> 48: 270–99.
+</div>
+<div id="ref-parsons1978theoretical" class="csl-entry" role="listitem">
+Parsons, DL, and JJ Vallner. 1978. <span>“Theoretical Models for Cooperative Binding—i. One-Site Creator of Binding Sites.”</span> <em>Mathematical Biosciences</em> 41 (3-4): 189–215.
+</div>
+<div id="ref-sarkar2008lattice" class="csl-entry" role="listitem">
+Sarkar, Deepayan. 2008. <em>Lattice: Multivariate Data Visualization with r</em>. Springer Science &amp; Business Media.
+</div>
+<div id="ref-wickham2011ggplot2" class="csl-entry" role="listitem">
+Wickham, Hadley. 2011. <span>“Ggplot2.”</span> <em>Wiley Interdisciplinary Reviews: Computational Statistics</em> 3 (2): 180–85.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

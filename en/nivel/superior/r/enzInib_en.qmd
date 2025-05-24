@@ -1,5 +1,6 @@
 ---
 title: "Enzyme inhibition"
+bibliography: referencias.bib
 ---
 
 ## Types of inhibition

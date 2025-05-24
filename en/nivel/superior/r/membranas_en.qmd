@@ -1,5 +1,6 @@
 ---
 title: "Biological membranes"
+bibliography: referencias.bib
 ---
 
 ## Critical micelle concentration (CMC)

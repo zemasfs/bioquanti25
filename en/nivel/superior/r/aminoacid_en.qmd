@@ -1,5 +1,6 @@
 ---
 title: "Amino acids"
+bibliography: referencias.bib
 ---
 
 ## Isoelectric point & amino acids {#secAAcido}

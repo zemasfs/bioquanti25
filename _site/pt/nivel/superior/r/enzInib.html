@@ -55,7 +55,27 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -596,7 +616,7 @@ Figura&nbsp;2: Curva de Michaelis-Mentem na presença de inibidores de comportam
 <section id="ki-ic_50" class="level4">
 <h4 class="anchored" data-anchor-id="ki-ic_50">Ki &amp; IC<span class="math inline">\(_{50}\)</span></h4>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A concentração inibitória a 50% do teor de inibidor, definida como <em>IC<span class="math inline">\(_{50}\)</span></em>, pode ser determinada empiricamente sem o conhecimento dos parâmetros de catálise enzimática envolvidos. Para isso, basta se obter um valor de inibição relativa num ensaio a concentração fixa de <em>S</em>, variando-se o teor de inibidor. De fato, análogos ao <em>IC<span class="math inline">\(_{50}\)</span></em> existem em ampla gama nas Ciências Naturais, não envolvendo necessariamente qualquer informação cinética ou termodinâmica dos compostos envolvidos, mas tão somente a informação empírica do resultado. Exemplificando, os parâmetros <em>DE<span class="math inline">\(_{50}\)</span></em> (dose efetiva) ou <em>DL<span class="math inline">\(_{50}\)</span></em> (dose letal), e mesmo projeções de <em>X<span class="math inline">\(_{50}\)</span></em>, tal como <em>Tm</em> (temperatura de desnaturação a 50%), e o valor de <em>pKa</em> em tampões (pH em que as espécies encontram-se 50% ionizadas/protonadas em solução).<br>
-&nbsp;&nbsp;No entanto, existe uma relação útil entre a constante de equilíbrio de dissociação do inibidor <em>Ki</em> e o valor de <em>IC<span class="math inline">\(_{50}\)</span></em> que permite sua permuta, desde que conhecido o modelo de inibição <span class="citation" data-cites="yung1973relationship">[@yung1973relationship]</span>. Generalizando para os modelos de inibição, pode-se definir uma equação geral pra relação de Cheng-Prusoff como:</div>
+&nbsp;&nbsp;No entanto, existe uma relação útil entre a constante de equilíbrio de dissociação do inibidor <em>Ki</em> e o valor de <em>IC<span class="math inline">\(_{50}\)</span></em> que permite sua permuta, desde que conhecido o modelo de inibição <span class="citation" data-cites="yung1973relationship">(<a href="#ref-yung1973relationship" role="doc-biblioref">Yung-Chi e Prusoff 1973</a>)</span>. Generalizando para os modelos de inibição, pode-se definir uma equação geral pra relação de Cheng-Prusoff como:</div>
 <p><span id="eq-eqCPrusso"><span class="math display">\[
 IC_{50} = \frac{(1+\frac{S}{Km})}{(\frac{1}{Kic})+(\frac{1}{Km*Kiu})}
 \tag{7}\]</span></span></p>
@@ -604,7 +624,7 @@ IC_{50} = \frac{(1+\frac{S}{Km})}{(\frac{1}{Kic})+(\frac{1}{Km*Kiu})}
 <p><span id="eq-eqPrusfComp"><span class="math display">\[
 IC_{50} = Kic(1+\frac{S}{Km})
 \tag{8}\]</span></span></p>
-<div class="line-block">&nbsp;&nbsp;&nbsp;Como acima mencionado, o valor de <em>IC<span class="math inline">\(_{50}\)</span></em> pode ser obtido a partir de dados experimentais de inibição relativa (<em>v/Vm</em>, por ex) em diferentes concentrações de inibidor fixando um valor de <em>S</em>. Nesse caso, podemos ilustrar no <code>R</code> a obtenção de <em>IC<span class="math inline">\(_{50}\)</span></em>, utilizando-se um ajuste não linear para a equação de quatro parâmetros que segue (<em>curva de Rodbard</em>, <span class="citation" data-cites="delean1978simultaneous">@delean1978simultaneous</span>).</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;Como acima mencionado, o valor de <em>IC<span class="math inline">\(_{50}\)</span></em> pode ser obtido a partir de dados experimentais de inibição relativa (<em>v/Vm</em>, por ex) em diferentes concentrações de inibidor fixando um valor de <em>S</em>. Nesse caso, podemos ilustrar no <code>R</code> a obtenção de <em>IC<span class="math inline">\(_{50}\)</span></em>, utilizando-se um ajuste não linear para a equação de quatro parâmetros que segue (<em>curva de Rodbard</em>, <span class="citation" data-cites="delean1978simultaneous">DeLean, Munson, e Rodbard (<a href="#ref-delean1978simultaneous" role="doc-biblioref">1978</a>)</span>).</div>
 <p><span class="math display">\[
 ativ. residual \, \% =\frac{v}{Vm} = inf+\frac{sup-inf}{1+log(\frac{I}{IC_{50}})^{nH}})
 \]</span> {#eq:eqRodb}</p>
@@ -696,7 +716,7 @@ Algorithm "port", convergence message: relative convergence (4)</code></pre>
 </section>
 <section id="diagnóstico-estatístico-de-inibição-enzimática" class="level2">
 <h2 class="anchored" data-anchor-id="diagnóstico-estatístico-de-inibição-enzimática">Diagnóstico estatístico de inibição enzimática</h2>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Em paralelo à inspeção visual dos gráficos de linearização para inibição enzimática, é possível validar-se um modelo sobre outro por uma análise de dispersão de erros dos modelos. Mas também é possível o emprego da função <code>BIC</code> ou da função <code>AIC</code> do <code>R</code>, e que respectivamente calculam valores para o <em>Critério de Informação Bayseiano</em> <span class="citation" data-cites="spiess2010evaluation">[@spiess2010evaluation]</span> ou do <em>Critério de Informação de Akaike</em> <span class="citation" data-cites="akaike1974new">[@akaike1974new]</span>. Em comum esse parâmetros calculam um valor relativo de informação não computada por um modelo avaliado. O menor valor encontrado para ambos espelha a solução do melhor modelo de ajuste.<br>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Em paralelo à inspeção visual dos gráficos de linearização para inibição enzimática, é possível validar-se um modelo sobre outro por uma análise de dispersão de erros dos modelos. Mas também é possível o emprego da função <code>BIC</code> ou da função <code>AIC</code> do <code>R</code>, e que respectivamente calculam valores para o <em>Critério de Informação Bayseiano</em> <span class="citation" data-cites="spiess2010evaluation">(<a href="#ref-spiess2010evaluation" role="doc-biblioref">Spiess e Neumeyer 2010</a>)</span> ou do <em>Critério de Informação de Akaike</em> <span class="citation" data-cites="akaike1974new">(<a href="#ref-akaike1974new" role="doc-biblioref">Akaike 1974</a>)</span>. Em comum esse parâmetros calculam um valor relativo de informação não computada por um modelo avaliado. O menor valor encontrado para ambos espelha a solução do melhor modelo de ajuste.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Matematicamente, <em>BIC</em> e <em>AIC</em> podem ser expressos como:</div>
 <p><span id="eq-BICAIC"><span class="math display">\[
 BIC = p*ln(n)-2*ln(RSE)\\
@@ -801,8 +821,8 @@ noncomp  4 192.8915</code></pre>
 </section>
 <section id="cinética-de-estado-pré-estacionário" class="level2">
 <h2 class="anchored" data-anchor-id="cinética-de-estado-pré-estacionário">Cinética de estado pré-estacionário</h2>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Existem basicamente três tipos de comportamentos cinéticos para as enzimas: comportamento de <em>Henry-Michaelis-Mentem-Briggs-Haldane</em>, sucintamente denominado por <em>michaeliano</em> ou de <em>estado estacionário (steady-state)</em>, comportamento de <em>fase lag</em> (quando o substrato leva algum tempo para ser convertido em produto), e comportamento de <em>burst</em>, <em>transiente</em>, ou de <em>estado pré-estacionário</em> (quando uma fase com rápida liberação de produto precede o estado estacionário). Algumas enzimas trabalham seguindo a cinética de <em>burst</em>, entre as quais algumas nucleosidades e glicosidases, e dehalogenases <span class="citation" data-cites="johnson19921">[@johnson19921,@tang2003kinetic]</span>.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A cinética de estado pré-estacionário segue um formalismo um pouco distinto, e que depende do quantitativo de etapas reacionais. Exemplificando abaixo para uma reação de 3 etapas <span class="citation" data-cites="johnson19921">[@johnson19921]</span>:</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Existem basicamente três tipos de comportamentos cinéticos para as enzimas: comportamento de <em>Henry-Michaelis-Mentem-Briggs-Haldane</em>, sucintamente denominado por <em>michaeliano</em> ou de <em>estado estacionário (steady-state)</em>, comportamento de <em>fase lag</em> (quando o substrato leva algum tempo para ser convertido em produto), e comportamento de <em>burst</em>, <em>transiente</em>, ou de <em>estado pré-estacionário</em> (quando uma fase com rápida liberação de produto precede o estado estacionário). Algumas enzimas trabalham seguindo a cinética de <em>burst</em>, entre as quais algumas nucleosidades e glicosidases, e dehalogenases <span class="citation" data-cites="johnson19921">Tang et al. (<a href="#ref-tang2003kinetic" role="doc-biblioref">2003</a>)</span>.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A cinética de estado pré-estacionário segue um formalismo um pouco distinto, e que depende do quantitativo de etapas reacionais. Exemplificando abaixo para uma reação de 3 etapas <span class="citation" data-cites="johnson19921">(<a href="#ref-johnson19921" role="doc-biblioref">Johnson 1992</a>)</span>:</div>
 <p><span id="eq-burst"><span class="math display">\[
 E+S \begin{array}{c}
 _{k1}\\
@@ -931,9 +951,29 @@ $estim.precis
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A contemplar um capítulo ainda que extenso sobre cinética enzimática, existem inúmeros tópicos deixados de lado, dado o foco principal do emprego do <code>R</code> na solução de problemas quantitativos em biofísico-química. Dessa forma, omitimos diversos conceitos, tais como <em>cinética lenta de interação de substrato (slow binding), cinética de múltiplos substratos (reação sequencial e ping-pong), equação integrada de Michaelis-Menten e curvas progressivas, ativação de moduladores, influência de pH e temperatura na catálise, e enzimas multisítios</em>, entre vários.</div>
 
 
+
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Referências</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-akaike1974new" class="csl-entry" role="listitem">
+Akaike, Hirotugu. 1974. <span>«A new look at the statistical model identification»</span>. <em>IEEE transactions on automatic control</em> 19 (6): 716–23.
+</div>
+<div id="ref-delean1978simultaneous" class="csl-entry" role="listitem">
+DeLean, A, PJ Munson, e Dl Rodbard. 1978. <span>«Simultaneous analysis of families of sigmoidal curves: application to bioassay, radioligand assay, and physiological dose-response curves.»</span> <em>American Journal of Physiology-Endocrinology And Metabolism</em> 235 (2): E97.
+</div>
+<div id="ref-johnson19921" class="csl-entry" role="listitem">
+Johnson, Kenneth A. 1992. <span>«1 transient-state kinetic analysis of enzyme reaction pathways»</span>. Em <em>The enzymes</em>, 20:1–61. Elsevier.
+</div>
+<div id="ref-spiess2010evaluation" class="csl-entry" role="listitem">
+Spiess, Andrej-Nikolai, e Natalie Neumeyer. 2010. <span>«An evaluation of R2 as an inadequate measure for nonlinear models in pharmacological and biochemical research: a Monte Carlo approach»</span>. <em>BMC pharmacology</em> 10 (1): 1–11.
+</div>
+<div id="ref-tang2003kinetic" class="csl-entry" role="listitem">
+Tang, Lixia, Jeffrey H Lutje Spelberg, Marco W Fraaije, e Dick B Janssen. 2003. <span>«Kinetic mechanism and enantioselectivity of halohydrin dehalogenase from Agrobacterium radiobacter»</span>. <em>Biochemistry</em> 42 (18): 5378–86.
+</div>
+<div id="ref-yung1973relationship" class="csl-entry" role="listitem">
+Yung-Chi, Cheng, e William H Prusoff. 1973. <span>«Relationship between the inhibition constant (KI) and the concentration of inhibitor which causes 50 per cent inhibition (I50) of an enzymatic reaction»</span>. <em>Biochemical pharmacology</em> 22 (23): 3099–3108.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

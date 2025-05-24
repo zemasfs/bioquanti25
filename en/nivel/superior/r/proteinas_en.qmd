@@ -1,5 +1,6 @@
 ---
 title: "Proteins"
+bibliography: referencias.bib
 ---
 
 ## Amino acid composition {#sec-Proteins}

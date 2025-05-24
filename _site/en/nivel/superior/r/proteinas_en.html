@@ -55,7 +55,27 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -1029,11 +1049,11 @@ y=\frac{pO_2^{nH}} {K_{50}^{nH}+pO_2^{nH}}
 </div>
 </div>
 </div>
-<div class="line-block">As mentioned in the previous paragraph, the four binding centers with molecular oxygen are related to four microscopic dissociation equilibrium constants, from <em>K1</em> to <em>K4</em>. Simplifying the value of pO<span class="math inline">\(_{2}\)</span> to <em>L</em>, ligand, it is also possible to represent the binding of O<span class="math inline">\(_{2}\)</span> to hemoglobin by the Adair equation <span class="citation" data-cites="pauling1935oxygen">[@pauling1935oxygen]</span>:</div>
+<div class="line-block">As mentioned in the previous paragraph, the four binding centers with molecular oxygen are related to four microscopic dissociation equilibrium constants, from <em>K1</em> to <em>K4</em>. Simplifying the value of pO<span class="math inline">\(_{2}\)</span> to <em>L</em>, ligand, it is also possible to represent the binding of O<span class="math inline">\(_{2}\)</span> to hemoglobin by the Adair equation <span class="citation" data-cites="pauling1935oxygen">(<a href="#ref-pauling1935oxygen" role="doc-biblioref">Pauling 1935</a>)</span>:</div>
 <p><span id="eq-HbKmicro"><span class="math display">\[
 y=\frac{K1*L+2*K2*K1*L^2+3*K3*K2*K1*L^3+4*K4*K3*K2*K1*L^4} {4*(1+K1*L+2*K2*K1*L^2+3*K3*K2*K1*L^3+4*K4*K3*K2*K1*L^4)}
 \tag{3}\]</span></span></p>
-<div class="line-block">It turns out that there is a statistical effect associated with the interaction under study, since O<span class="math inline">\(_{2}\)</span> has 4 initial sites of interaction with hemoglobin <span class="citation" data-cites="tyuma1973analysis">[@tyuma1973analysis]</span>, values ​​that reduce until the saturation of the 4 sites. Thus, it is necessary to account for the microscopic constants <em>Ki</em> due to this statistical compromise:</div>
+<div class="line-block">It turns out that there is a statistical effect associated with the interaction under study, since O<span class="math inline">\(_{2}\)</span> has 4 initial sites of interaction with hemoglobin <span class="citation" data-cites="tyuma1973analysis">(<a href="#ref-tyuma1973analysis" role="doc-biblioref">Tyuma, Imai, and Shimizu 1973</a>)</span>, values ​​that reduce until the saturation of the 4 sites. Thus, it is necessary to account for the microscopic constants <em>Ki</em> due to this statistical compromise:</div>
 <p><span id="eq-HbKSta"><span class="math display">\[
 Ki_{corr} = \frac{i}{N-1+i}*Ki
 \tag{4}\]</span></span></p>
@@ -1067,7 +1087,7 @@ Ki_{corr} = \frac{i}{N-1+i}*Ki
 </div>
 </div>
 </div>
-<div class="line-block">Finally, it is also possible to obtain the binding curve using a variation of <em>for</em> loop in which the <a href="#eq-HbKmicro" class="quarto-xref">Equation&nbsp;3</a> is produced by iteration, as follows <span class="citation" data-cites="bloomfield2009computer">[@bloomfield2009computer]</span>:</div>
+<div class="line-block">Finally, it is also possible to obtain the binding curve using a variation of <em>for</em> loop in which the <a href="#eq-HbKmicro" class="quarto-xref">Equation&nbsp;3</a> is produced by iteration, as follows <span class="citation" data-cites="bloomfield2009computer">(<a href="#ref-bloomfield2009computer" role="doc-biblioref">Bloomfield 2009</a>)</span>:</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculation of y in each L</span></span>
 <span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>Yi <span class="ot">&lt;-</span> <span class="cf">function</span>(L, Kcorr) {</span>
@@ -1192,10 +1212,21 @@ Another interesting R package for studying proteins is <em>Peptides</em> <a href
 Among the packages more focused on comparative studies and visualization of structures, as well as for bioinformatics and chemogenomics descriptors, it is worth mentioning <code>Bio3d</code>, <code>Autoplotprotein</code>, <code>protr</code>, <code>BioMedR</code>, and <code>UniprotR</code>, among many others.</div>
 
 
+
 </section>
 
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-bloomfield2009computer" class="csl-entry" role="listitem">
+Bloomfield, Victor. 2009. <em>Computer Simulation and Data Analysis in Molecular Biology and Biophysics: An Introduction Using r</em>. Springer Science &amp; Business Media.
+</div>
+<div id="ref-pauling1935oxygen" class="csl-entry" role="listitem">
+Pauling, Linus. 1935. <span>“The Oxygen Equilibrium of Hemoglobin and Its Structural Interpretation.”</span> <em>Proceedings of the National Academy of Sciences of the United States of America</em> 21 (4): 186.
+</div>
+<div id="ref-tyuma1973analysis" class="csl-entry" role="listitem">
+Tyuma, Itiro, Kiyohiro Imai, and Katsuhiko Shimizu. 1973. <span>“Analysis of Oxygen Equilibrium of Hemoglobin and Control Mechanism of Organic Phosphates.”</span> <em>Biochemistry</em> 12 (8): 1491–98.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p>Some programming practices (<em>Best Codes</em>): 1) organize a project into folders (e.g.: data, figures, scripts) or create an R package as an option; 2) create sections in a code to make it easier to find; 3) name the <em>code chunks</em> (pieces of code); 4) place the libraries used, sources, and data calls at the beginning of the code (avoids searching for something necessary for the <em>script</em> to run throughout the code); 5) indent, preferably with 1 or 2 commands per line; 6) always use function parameters inside the function; 7) avoid global parameters; 8) do not use ‘attach’; 8) use parameters with intuitive names (and not x and y; e.g.: function_name); 9) assign names to objects with one of the three naming conventions (e.g.: KiCompet, ki_compet, ki.compet).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>

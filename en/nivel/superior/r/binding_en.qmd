@@ -1,5 +1,6 @@
 ---
 title: "Molecular interaction"
+bibliography: referencias.bib
 ---
 
 ## Ligand-biopolymer interaction {#Binding}

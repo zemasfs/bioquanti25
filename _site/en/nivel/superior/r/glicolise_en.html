@@ -55,7 +55,27 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -394,7 +414,7 @@ window.Quarto = {
 <!-- balanceamento de pilhas metabólicas -->
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O metabolismo se dá por uma intrincada rede de reações químicas catalisadas (ou não) por enzimas diversas, resultando numa rede equilibrada e dinâmica de processos autocatalíticos. Por vezes essa teia de reações pode ser observada no sem número dos chamados <em>mapas metabólicos</em> disponíveis, impressos ou na internet. Não obstante, os caminhos metabólicos são classificados para melhor compreensão em subconjuntos de reações pertinentes a determinado grupo de nutrientes ou compostos biológicos, como carboidratos, lipídios e ácidos nucleicos, por ex.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E numa visão mais ampliada desses subconjuntos, uma classificação ulterior resulta por diversas em reações bioquímicas sequenciais e interdependentes, as chamadas <em>vias ou rotas metabólicas</em>. Essas vias metabólicas sumarizam processos <em>catabólicos</em> ou <em>anabólicos</em> envolvendo substratos, produtos, enzimas, cofatores e coenzimas, tal como ilustrado na <em>glicólise, gliconeogênese, glicogenólise, ciclo do ácido cítrico, cadeia respiratória, via das pentoses, <span class="math inline">\(\beta\)</span>-oxidação de ácidos graxos,</em> entre outras.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dessa forma pode-se considerar uma rota metabólica como uma <em>combinação linear de reações</em> catalisadas enzimaticamente (ex: glicólise anaeróbia). Em adição, também pode-se considerar as <em>reações bioquímicas como equações bioquímicas</em>, e portanto como um <em>sistema linear de equações</em> bioqumímicas com resolução por <em>álgebra linear</em>. Assim, pode-se empregar <em>relações matriciais</em> para solucionar o balanceamento estequiométrico (massa e carga), obtendo-se a reação líquida final a partir de um conjunto de reações conhecidas. Em síntese, <em>equações bioquímicas</em> como <em>equações matriciais</em> <span class="citation" data-cites="alberty1991chemical">[@alberty1991chemical]</span>.</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dessa forma pode-se considerar uma rota metabólica como uma <em>combinação linear de reações</em> catalisadas enzimaticamente (ex: glicólise anaeróbia). Em adição, também pode-se considerar as <em>reações bioquímicas como equações bioquímicas</em>, e portanto como um <em>sistema linear de equações</em> bioqumímicas com resolução por <em>álgebra linear</em>. Assim, pode-se empregar <em>relações matriciais</em> para solucionar o balanceamento estequiométrico (massa e carga), obtendo-se a reação líquida final a partir de um conjunto de reações conhecidas. Em síntese, <em>equações bioquímicas</em> como <em>equações matriciais</em> <span class="citation" data-cites="alberty1991chemical">(<a href="#ref-alberty1991chemical" role="doc-biblioref">Alberty 1991</a>)</span>.</div>
 </section>
 <section id="operação-matricial" class="level2">
 <h2 class="anchored" data-anchor-id="operação-matricial">Operação matricial</h2>
@@ -434,7 +454,7 @@ A * b = y
 <section id="vetor-de-rota-metabólica-para-a-glicólise-aeróbia" class="level3">
 <h3 class="anchored" data-anchor-id="vetor-de-rota-metabólica-para-a-glicólise-aeróbia">Vetor de rota metabólica para a glicólise aeróbia:</h3>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Supondo-se conhecer a reação líquida resumida para um conjunto de reações metabólicas, como a glicólise aeróbia (por sua vez agregando glicólise anaeróbia, ciclo do ácido cítrico e fosforilação oxidativa), pode-se facilmente obter-se o vetor de rotas. A partir desse vetor de rotas calculado, é possível obter-se o a reação líquida final do conjunto reações mais detalhado. Na prática, esse detalhamento envolve a participação de coenzimas de oxi-redução, ADP, ATP, e Pi.</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exemplificando, considere as reações abaixo, referentes à um resumo da glicólise <span class="citation" data-cites="alberty1996calculation">[@alberty1996calculation]</span>:</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exemplificando, considere as reações abaixo, referentes à um resumo da glicólise <span class="citation" data-cites="alberty1996calculation">(<a href="#ref-alberty1996calculation" role="doc-biblioref">Alberty 1996</a>)</span>:</div>
 <span class="math display">\[\begin{equation}
 glicose \rightleftarrows 2\,piruvato \\
 piruvato + CoA \rightleftarrows acetil \, CoA + CO_2 \\
@@ -524,7 +544,7 @@ NADH+ \frac{1}{2}O_2+3Pi+3ADP \rightleftarrows NAD^++4H_2O+3ATP \, ,\\
 oxidação \, fosforilativa
 (\#eq:eqGlicoPlus)
 \end{equation}\]</span>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vale ressaltar uma simplificação pela substituição de GTP e GDP por ATP e ADP (ciclo de Krebs), uma vez que são interconversíveis no metabolismo. Também se assume para simplificação a interconversão de FAD e NAD na reação líquida <span class="citation" data-cites="alberty1996calculation">[@alberty1996calculation]</span> :</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vale ressaltar uma simplificação pela substituição de GTP e GDP por ATP e ADP (ciclo de Krebs), uma vez que são interconversíveis no metabolismo. Também se assume para simplificação a interconversão de FAD e NAD na reação líquida <span class="citation" data-cites="alberty1996calculation">(<a href="#ref-alberty1996calculation" role="doc-biblioref">Alberty 1996</a>)</span> :</div>
 <span class="math display">\[\begin{equation}
 FADH + NAD^+ \rightleftarrows FAD + NADH
 (\#eq:eqNadFad)
@@ -577,10 +597,18 @@ glicose + 6O_2 + 40 ADP + 40 Pi \rightleftarrows 6CO_2+ 40ATP
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O exemplo acima ilustra o emprego de álgebra matricial para a solução de problemas de balanceamento de reações bioquímicas. Por sua natureza trata-se de método abrangente e de natureza algorítmica (portanto, programável), embora não seja o único. Outras propostas de solução para o balanceamento e conservação de massa e carga englobam a <em>inspeção direta</em> por triagem e erro a partir de regras mnemônicas, o balanceamento por <em>método de meia-equação</em>, e o <em>método de número de oxidação</em>, não discutidos aqui.</div>
 
 
+
 </section>
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-alberty1991chemical" class="csl-entry" role="listitem">
+Alberty, Robert A. 1991. <span>“Chemical Equations Are Actually Matrix Equations.”</span> <em>Journal of Chemical Education</em> 68 (12): 984.
+</div>
+<div id="ref-alberty1996calculation" class="csl-entry" role="listitem">
+———. 1996. <span>“Calculation of Biochemical Net Reactions and Pathways by Using Matrix Operations.”</span> <em>Biophysical Journal</em> 71 (1): 507–15.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

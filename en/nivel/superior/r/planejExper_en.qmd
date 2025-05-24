@@ -1,5 +1,6 @@
 ---
 title: "Experimental design"
+bibliography: referencias.bib
 ---
 
 ## Matrix system

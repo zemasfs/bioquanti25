@@ -55,7 +55,27 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -482,7 +502,7 @@ Figura&nbsp;2: Curvas de Michaelis-Menten com variação iterativa para Km de 0.
 </div>
 </div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As curvas representadas nas figuras <a href="#fig-MM" class="quarto-xref">Figura&nbsp;1</a> e <a href="#fig-Km50" class="quarto-xref">Figura&nbsp;2</a>) foram produzidas com a <a href="#eq-eqMM" class="quarto-xref">Equação&nbsp;2</a>, sendo possível extrair os parâmetros cinéticos <em>Vm</em> e <em>Km</em> facilmente, já que não há desvios computados para a <em>velocidade inicial</em> da reação. Se, por outro lado, estivermos diante de valores experimentais de uma catálise de comportamento de michaelinano e desejarmos extrair os parâmetros cinéticos, melhor será ajustar a equação não-linear de Michaelis-Menten diretamente (algoritmos como Gauss-Newton, Simplex, Levenberg-Marquadt) ou, de modo mais simples, transformar as variáveis <em>S</em> e <em>v</em> de tal modo que permitam um ajuste linear por mínimos quadrados.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Não obstante, a função que descreve a equação de Michaelis-Mentem constitui uma hipérbole quadrática e, como tal, não possui assíntota matemática, apenas visual. De fato, os próprios autores do trabalho original, Leonor Michaelis e Maud Mentem, reportaram seus dados com a representação de <em>S</em> em eixo logaritmo permitindo melhor visualização da região assintótica do gráfico <span class="citation" data-cites="michaelisment1913">[@michaelisment1913]</span>.</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Não obstante, a função que descreve a equação de Michaelis-Mentem constitui uma hipérbole quadrática e, como tal, não possui assíntota matemática, apenas visual. De fato, os próprios autores do trabalho original, Leonor Michaelis e Maud Mentem, reportaram seus dados com a representação de <em>S</em> em eixo logaritmo permitindo melhor visualização da região assintótica do gráfico <span class="citation" data-cites="michaelisment1913">(<a href="#ref-michaelisment1913" role="doc-biblioref">Michaelis e Menten 1913</a>)</span>.</div>
 </section>
 <section id="obtenção-de-parâmetros-cinéticos-a-partir-de-dados-expermentais-simulados" class="level2">
 <h2 class="anchored" data-anchor-id="obtenção-de-parâmetros-cinéticos-a-partir-de-dados-expermentais-simulados">Obtenção de parâmetros cinéticos a partir de dados expermentais simulados</h2>
@@ -538,7 +558,7 @@ Figura&nbsp;4: Principais linearizações da equação de Michaelis-Menten.
 </div>
 </div>
 </div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dentre essas transformações lineares para cinética enzimática, as mais frequentemente encontradas são de <em>Lineweaver-Burk</em> (ou duplo-recíproco), e a de <em>Eadie-Hofstee</em>, sendo a primeira a mais comum na literatura. No entanto, a aplicação do formalismo de Eadie-Hofstee para interação ligante-proteína também é a mais reportada nessa área, embora seja tratada como representação de Scatchard <span class="citation" data-cites="scatchard1949attractions">[@scatchard1949attractions]</span>.</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dentre essas transformações lineares para cinética enzimática, as mais frequentemente encontradas são de <em>Lineweaver-Burk</em> (ou duplo-recíproco), e a de <em>Eadie-Hofstee</em>, sendo a primeira a mais comum na literatura. No entanto, a aplicação do formalismo de Eadie-Hofstee para interação ligante-proteína também é a mais reportada nessa área, embora seja tratada como representação de Scatchard <span class="citation" data-cites="scatchard1949attractions">(<a href="#ref-scatchard1949attractions" role="doc-biblioref">Scatchard 1949</a>)</span>.</div>
 <section id="linearização-por-transformação-de-lineweaver-burk" class="level3">
 <h3 class="anchored" data-anchor-id="linearização-por-transformação-de-lineweaver-burk">Linearização por transformação de Lineweaver-Burk</h3>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A forma linear para a equação de Linewaver-Burk é obtida a partir da transformação da equação de Michaelis-Menten que segue:</div>
@@ -919,7 +939,7 @@ Figura&nbsp;11: Distribuição de erros aleatórios para a equação de Michaeli
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pelo gráfico da <a href="#fig-figLinErr" class="quarto-xref">Figura&nbsp;11</a> fica evidente que as transformações de Lineweaver-Burk e de Eadie-Hofstee, ainda que tenham prevalência na literatura, são as que apresentam a maior variabilidade de erro a partir dos dados experimentais, o que converge para uma menor precisão na determinação de parâmetros cinéticos. Além disso, observa-se que a transformação de Hanes-Woolf é a que apresenta a menor dispersão de resíduos entre as demais, igualando-se aos erros experimentais da equação hiperbólica de Michaelis-Mentem. Apesar disso, a linearização de Hanes-Woolf é muito pouco reportada na literatura.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ainda que a representação dos duplos-recíprocos tenha em si algumas desvantagens, tais como a dispersão de erros principalmente em valores baixos de <em>S</em>, é a única dentre as mencionadas que permite um ajuste linear por mínimos quadrados, se considerarmos as premissas estatísticas desse.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para que se possa obter parâmetros de intercepto e inclinação a partir de uma regressão linear, é necessário que se cumpra as <em>premissas estatísticas</em> de 1) distribuição normal de resíduos, 2) homogeneidade de variâncias, e 3) independência das variáveis. Se observarmos as três linearizações, tanto a de Eadie-Hofstee como a de Hanes-Woolf não cumprem a premissa de independência, já que a variável dependente (y) é função da independente (x).<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para que uma transformação por duplos-recíprocos possa ser utilizada mais fielmente à obtenção de parâmetros cinéticos, contudo, pode-se adotar o cômputo de peso na fórmula de ajuste linear, tal como sugerido por Wilkinson <span class="citation" data-cites="wilkinson1961statistical">[@wilkinson1961statistical]</span>, considerando-o como o recíproco das variâncias estimadas. Nesse caso, o ajuste linear considerando o quadrado do vetor de erros aleatórios como variância e o peso como seu recíproco (1/s²), pode ser esboçado como:</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para que uma transformação por duplos-recíprocos possa ser utilizada mais fielmente à obtenção de parâmetros cinéticos, contudo, pode-se adotar o cômputo de peso na fórmula de ajuste linear, tal como sugerido por Wilkinson <span class="citation" data-cites="wilkinson1961statistical">(<a href="#ref-wilkinson1961statistical" role="doc-biblioref">Wilkinson 1961</a>)</span>, considerando-o como o recíproco das variâncias estimadas. Nesse caso, o ajuste linear considerando o quadrado do vetor de erros aleatórios como variância e o peso como seu recíproco (1/s²), pode ser esboçado como:</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Regressão linear ponderada de Lineweaver-Burk</span></span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -1065,7 +1085,7 @@ NULL</code></pre>
 </section>
 <section id="enzimas-alostéricas" class="level2">
 <h2 class="anchored" data-anchor-id="enzimas-alostéricas">Enzimas alostéricas</h2>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A <em>alosteria</em> constitui um dos principais recursos da metabolismo para a regulação dos níveis de compostos celulares. De etiologia grega (<em>allos = outro, stereos = estrutura</em>), uma <em>enzima alostérica</em> é aquela que altera seu perfil catalítico em função de transições conformacionais mediadas por moléculas que interagem fora de seu sítio ativo, sejam elas substrato, coenzimas, ou outros compostos <span class="citation" data-cites="traut2007allosteric">[@traut2007allosteric]</span>. O efeito resultante constitui em uma modulação da atividade enzimática, quer ativando-a ou inibindo-a. Enzimas alostérica comportam-se portanto como <em>enzimas regulatórias</em> em uma rota metabólica, e cuja atividade pode ser modulada em função de <em>retroinibição</em> ou <em>inibição por feedback</em>, bem como por <em>ativação pelo precursor</em> <span class="citation" data-cites="defundamentos">[@defundamentos]</span>.<br>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A <em>alosteria</em> constitui um dos principais recursos da metabolismo para a regulação dos níveis de compostos celulares. De etiologia grega (<em>allos = outro, stereos = estrutura</em>), uma <em>enzima alostérica</em> é aquela que altera seu perfil catalítico em função de transições conformacionais mediadas por moléculas que interagem fora de seu sítio ativo, sejam elas substrato, coenzimas, ou outros compostos <span class="citation" data-cites="traut2007allosteric">(<a href="#ref-traut2007allosteric" role="doc-biblioref">Traut 2007</a>)</span>. O efeito resultante constitui em uma modulação da atividade enzimática, quer ativando-a ou inibindo-a. Enzimas alostérica comportam-se portanto como <em>enzimas regulatórias</em> em uma rota metabólica, e cuja atividade pode ser modulada em função de <em>retroinibição</em> ou <em>inibição por feedback</em>, bem como por <em>ativação pelo precursor</em> <span class="citation" data-cites="defundamentos">(<a href="#ref-defundamentos" role="doc-biblioref">Leone 2021</a>)</span>.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A equação que define uma enzima alostérica em função do teor de seu substrato dada abaixo:</div>
 <p><span id="eq-alost"><span class="math display">\[
 v=\frac{Vm*S^n}{(Km^n+S^n)}
@@ -1118,9 +1138,26 @@ v=\frac{Vm*S^n}{(Km^n+S^n)}
 </div>
 
 
+
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Referências</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-defundamentos" class="csl-entry" role="listitem">
+Leone, Francisco de Assis. 2021. <em>Fundamentos de Cin<span>é</span>tica Enzim<span>á</span>tica</em>. Appris Ed.
+</div>
+<div id="ref-michaelisment1913" class="csl-entry" role="listitem">
+Michaelis, L., e ML Menten. 1913. <span>«Die Kinetik der Invertinwirkung»</span>. <em>Biochem Z</em> 49 (4): 333–69.
+</div>
+<div id="ref-scatchard1949attractions" class="csl-entry" role="listitem">
+Scatchard, George. 1949. <span>«The attractions of proteins for small molecules and ions»</span>. <em>Annals of the New York Academy of Sciences</em> 51 (4): 660–72.
+</div>
+<div id="ref-traut2007allosteric" class="csl-entry" role="listitem">
+Traut, Thomas W. 2007. <em>Allosteric regulatory enzymes</em>. Springer Science &amp; Business Media.
+</div>
+<div id="ref-wilkinson1961statistical" class="csl-entry" role="listitem">
+Wilkinson, GN. 1961. <span>«Statistical estimations in enzyme kinetics»</span>. <em>Biochemical Journal</em> 80 (2): 324–32.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

@@ -55,7 +55,27 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -583,7 +603,7 @@ Again, although linearization allows a better diagnosis of the type of inhibitio
 <section id="ki-ic_50" class="level4">
 <h4 class="anchored" data-anchor-id="ki-ic_50">Ki &amp; IC<span class="math inline">\(_{50}\)</span></h4>
 <div class="line-block">The inhibitory concentration at 50% of the inhibitor content, defined as <em>IC<span class="math inline">\(_{50}\)</span></em>, can be determined empirically without knowledge of the enzyme catalysis parameters involved. To do so, it is enough to obtain a relative inhibition value in a test at a fixed concentration of <em>S</em>, varying the inhibitor content. In fact, analogues to <em>IC<span class="math inline">\(_{50}\)</span></em> exist in a wide range in the Natural Sciences, not involving necessarily any kinetic or thermodynamic information of the compounds involved, but only the empirical information of the result. For example, the parameters <em>DE<span class="math inline">\(_{50}\)</span></em> (effective dose) or <em>DL<span class="math inline">\(_{50}\)</span></em> (lethal dose), and even projections of <em>X<span class="math inline">\(_{50}\)</span></em>, such as <em>Tm</em> (denaturation temperature at 50%), and the value of <em>pKa</em> in buffers (pH at which the species are 50% ionized/protonated in solution).</div>
-<div class="line-block">However, there is a useful relationship between the inhibitor dissociation equilibrium constant <em>Ki</em> and the value of <em>IC<span class="math inline">\(_{50}\)</span></em> that allows their exchange, as long as the inhibition model is known <span class="citation" data-cites="yung1973relationship">[@yung1973relationship]</span>. Generalizing to inhibition models, a general equation for the Cheng-Prusoff relation can be defined as:</div>
+<div class="line-block">However, there is a useful relationship between the inhibitor dissociation equilibrium constant <em>Ki</em> and the value of <em>IC<span class="math inline">\(_{50}\)</span></em> that allows their exchange, as long as the inhibition model is known <span class="citation" data-cites="yung1973relationship">(<a href="#ref-yung1973relationship" role="doc-biblioref">Yung-Chi and Prusoff 1973</a>)</span>. Generalizing to inhibition models, a general equation for the Cheng-Prusoff relation can be defined as:</div>
 <p><span id="eq-eqCPrusso"><span class="math display">\[
 IC_{50} = \frac{(1+\frac{S}{Km})}{(\frac{1}{Kic})+(\frac{1}{Km*Kiu})}
 \tag{7}\]</span></span></p>
@@ -591,7 +611,7 @@ IC_{50} = \frac{(1+\frac{S}{Km})}{(\frac{1}{Kic})+(\frac{1}{Km*Kiu})}
 <p><span id="eq-eqPrusfComp"><span class="math display">\[
 IC_{50} = Kic(1+\frac{S}{Km})
 \tag{8}\]</span></span></p>
-<div class="line-block">As mentioned above, the value of <em>IC<span class="math inline">\(_{50}\)</span></em> can be obtained from experimental data of relative inhibition (<em>v/Vm</em>, for example) at different inhibitor concentrations by setting a value of <em>S</em>. In this case, we can illustrate in <code>R</code> the obtaining of <em>IC<span class="math inline">\(_{50}\)</span></em>, using a non-linear fit to the following four-parameter equation (<em>Rodbard curve</em>, <span class="citation" data-cites="delean1978simultaneous">@delean1978simultaneous</span>).</div>
+<div class="line-block">As mentioned above, the value of <em>IC<span class="math inline">\(_{50}\)</span></em> can be obtained from experimental data of relative inhibition (<em>v/Vm</em>, for example) at different inhibitor concentrations by setting a value of <em>S</em>. In this case, we can illustrate in <code>R</code> the obtaining of <em>IC<span class="math inline">\(_{50}\)</span></em>, using a non-linear fit to the following four-parameter equation (<em>Rodbard curve</em>, <span class="citation" data-cites="delean1978simultaneous">DeLean, Munson, and Rodbard (<a href="#ref-delean1978simultaneous" role="doc-biblioref">1978</a>)</span>).</div>
 <p><span class="math display">\[
 residual act. \, \% =\frac{v}{Vm} = inf+\frac{sup-inf}{1+log(\frac{I}{IC_{50}})^{nH}})
 \]</span> {#eq:eqRodb}</p>
@@ -683,7 +703,7 @@ To do this, we can use two <code>R</code> functions to express quantitative resu
 </section>
 <section id="statistical-diagnosis-of-enzyme-inhibition" class="level2">
 <h2 class="anchored" data-anchor-id="statistical-diagnosis-of-enzyme-inhibition">Statistical diagnosis of enzyme inhibition</h2>
-<div class="line-block">In parallel with the visual inspection of linearization graphs for enzyme inhibition, it is possible to validate one model over another by analyzing the dispersion of model errors. But it is also possible to use the <code>BIC</code> function or the <code>AIC</code> function of <code>R</code>, which respectively calculate values ​​for the <em>Baysean Information Criterion</em> <span class="citation" data-cites="spiess2010evaluation">[@spiess2010evaluation]</span> or the <em>Akaike Information Criterion</em> <span class="citation" data-cites="akaike1974new">[@akaike1974new]</span>. In common, these parameters calculate a relative value of information not computed by an evaluated model. The lowest value found for both reflects the solution of the best fitting model.<br>
+<div class="line-block">In parallel with the visual inspection of linearization graphs for enzyme inhibition, it is possible to validate one model over another by analyzing the dispersion of model errors. But it is also possible to use the <code>BIC</code> function or the <code>AIC</code> function of <code>R</code>, which respectively calculate values ​​for the <em>Baysean Information Criterion</em> <span class="citation" data-cites="spiess2010evaluation">(<a href="#ref-spiess2010evaluation" role="doc-biblioref">Spiess and Neumeyer 2010</a>)</span> or the <em>Akaike Information Criterion</em> <span class="citation" data-cites="akaike1974new">(<a href="#ref-akaike1974new" role="doc-biblioref">Akaike 1974</a>)</span>. In common, these parameters calculate a relative value of information not computed by an evaluated model. The lowest value found for both reflects the solution of the best fitting model.<br>
 Mathematically, <em>BIC</em> and <em>AIC</em> can be expressed as:</div>
 <p><span id="eq-BICAIC"><span class="math display">\[
 BIC = p*ln(n)-2*ln(RSE)\\
@@ -788,8 +808,8 @@ noncomp  4 192.8915</code></pre>
 </section>
 <section id="pre-steady-state-kinetics" class="level2">
 <h2 class="anchored" data-anchor-id="pre-steady-state-kinetics">Pre-steady state kinetics</h2>
-<div class="line-block">There are basically three types of kinetic behavior for enzymes: Henry-Michaelis-Mentem-Briggs-Haldane behavior, succinctly called Michaelian or steady-state behavior, lag-phase behavior (when the substrate takes some time to be converted to product), and burst, transient, or pre-steady-state behavior (when a phase with rapid product release precedes the steady state). Some enzymes work following burst kinetics, including some nucleosidases and glycosidases, and dehalogenases <span class="citation" data-cites="johnson19921">[@johnson19921,@tang2003kinetic]</span>.<br>
-Pre-steady-state kinetics follows a slightly different formalism, which depends on the number of reaction steps. Example below for a 3-step reaction <span class="citation" data-cites="johnson19921">[@johnson19921]</span>:</div>
+<div class="line-block">There are basically three types of kinetic behavior for enzymes: Henry-Michaelis-Mentem-Briggs-Haldane behavior, succinctly called Michaelian or steady-state behavior, lag-phase behavior (when the substrate takes some time to be converted to product), and burst, transient, or pre-steady-state behavior (when a phase with rapid product release precedes the steady state). Some enzymes work following burst kinetics, including some nucleosidases and glycosidases, and dehalogenases <span class="citation" data-cites="johnson19921">Tang et al. (<a href="#ref-tang2003kinetic" role="doc-biblioref">2003</a>)</span>.<br>
+Pre-steady-state kinetics follows a slightly different formalism, which depends on the number of reaction steps. Example below for a 3-step reaction <span class="citation" data-cites="johnson19921">(<a href="#ref-johnson19921" role="doc-biblioref">Johnson 1992</a>)</span>:</div>
 <p><span id="eq-burst"><span class="math display">\[
 E+S \begin{array}{c}
 _{k1}\\
@@ -916,9 +936,29 @@ $estim.precis
 <div class="line-block">Considering an extensive chapter on enzyme kinetics, there are numerous topics left out, given the main focus of using <code>R</code> in solving quantitative problems in biophysical chemistry. Thus, we omit several concepts, such as <em>slow kinetics of substrate interaction (slow binding), kinetics of multiple substrates (sequential and ping-pong reactions), integrated Michaelis-Menten equation and progressive curves, activation of modulators, influence of pH and temperature on catalysis, and multisite enzymes</em>, among others.</div>
 
 
+
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-akaike1974new" class="csl-entry" role="listitem">
+Akaike, Hirotugu. 1974. <span>“A New Look at the Statistical Model Identification.”</span> <em>IEEE Transactions on Automatic Control</em> 19 (6): 716–23.
+</div>
+<div id="ref-delean1978simultaneous" class="csl-entry" role="listitem">
+DeLean, A, PJ Munson, and Dl Rodbard. 1978. <span>“Simultaneous Analysis of Families of Sigmoidal Curves: Application to Bioassay, Radioligand Assay, and Physiological Dose-Response Curves.”</span> <em>American Journal of Physiology-Endocrinology And Metabolism</em> 235 (2): E97.
+</div>
+<div id="ref-johnson19921" class="csl-entry" role="listitem">
+Johnson, Kenneth A. 1992. <span>“1 Transient-State Kinetic Analysis of Enzyme Reaction Pathways.”</span> In <em>The Enzymes</em>, 20:1–61. Elsevier.
+</div>
+<div id="ref-spiess2010evaluation" class="csl-entry" role="listitem">
+Spiess, Andrej-Nikolai, and Natalie Neumeyer. 2010. <span>“An Evaluation of R2 as an Inadequate Measure for Nonlinear Models in Pharmacological and Biochemical Research: A Monte Carlo Approach.”</span> <em>BMC Pharmacology</em> 10 (1): 1–11.
+</div>
+<div id="ref-tang2003kinetic" class="csl-entry" role="listitem">
+Tang, Lixia, Jeffrey H Lutje Spelberg, Marco W Fraaije, and Dick B Janssen. 2003. <span>“Kinetic Mechanism and Enantioselectivity of Halohydrin Dehalogenase from Agrobacterium Radiobacter.”</span> <em>Biochemistry</em> 42 (18): 5378–86.
+</div>
+<div id="ref-yung1973relationship" class="csl-entry" role="listitem">
+Yung-Chi, Cheng, and William H Prusoff. 1973. <span>“Relationship Between the Inhibition Constant (KI) and the Concentration of Inhibitor Which Causes 50 Per Cent Inhibition (I50) of an Enzymatic Reaction.”</span> <em>Biochemical Pharmacology</em> 22 (23): 3099–3108.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

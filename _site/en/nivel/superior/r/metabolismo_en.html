@@ -55,7 +55,27 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -394,7 +414,7 @@ window.Quarto = {
 <!-- balancing metabolic cells -->
 <div class="line-block">Metabolism is an intricate network of chemical reactions catalyzed (or not) by various enzymes, resulting in a balanced and dynamic network of autocatalytic processes. Sometimes this web of reactions can be observed in the countless so-called <em>metabolic maps</em> available, printed or on the internet. However, metabolic pathways are classified for better understanding into subsets of reactions relevant to a certain group of nutrients or biological compounds, such as carbohydrates, lipids and nucleic acids, for example.<br>
 And in a broader view of these subsets, a further classification results in several sequential and interdependent biochemical reactions, the so-called <em>metabolic pathways or routes</em>. These metabolic pathways summarize <em>catabolic</em> or <em>anabolic</em> processes involving substrates, products, enzymes, cofactors and coenzymes, as illustrated in <em>glycolysis, gluconeogenesis, glycogenolysis, citric acid cycle, respiratory chain, pentose pathway, </em>fatty acid beta-oxidation, among others.<br>
-Thus, a metabolic pathway can be considered as a <em>linear combination of enzymatically catalyzed reactions</em> (e.g.&nbsp;anaerobic glycolysis). In addition, one can also consider <em>biochemical reactions as biochemical equations</em>, and therefore as a <em>linear system of biochemical equations</em> with resolution by <em>linear algebra</em>. Thus, one can use <em>matrix relations</em> to solve the stoichiometric balance (mass and charge), obtaining the final net reaction from a set of known reactions. In short, <em>biochemical equations</em> as <em>matrix equations</em> <span class="citation" data-cites="alberty1991chemical">[@alberty1991chemical]</span>.</div>
+Thus, a metabolic pathway can be considered as a <em>linear combination of enzymatically catalyzed reactions</em> (e.g.&nbsp;anaerobic glycolysis). In addition, one can also consider <em>biochemical reactions as biochemical equations</em>, and therefore as a <em>linear system of biochemical equations</em> with resolution by <em>linear algebra</em>. Thus, one can use <em>matrix relations</em> to solve the stoichiometric balance (mass and charge), obtaining the final net reaction from a set of known reactions. In short, <em>biochemical equations</em> as <em>matrix equations</em> <span class="citation" data-cites="alberty1991chemical">(<a href="#ref-alberty1991chemical" role="doc-biblioref">Alberty 1991</a>)</span>.</div>
 </section>
 <section id="matrix-operation" class="level2">
 <h2 class="anchored" data-anchor-id="matrix-operation">Matrix operation</h2>
@@ -432,7 +452,7 @@ A * b = y
 <section id="obtaining-the-metabolic-pathway-vector-for-aerobic-glycolysis" class="level3">
 <h3 class="anchored" data-anchor-id="obtaining-the-metabolic-pathway-vector-for-aerobic-glycolysis">Obtaining the metabolic pathway vector for aerobic glycolysis:</h3>
 <div class="line-block">Assuming that we know the summarized net reaction for a set of metabolic reactions, such as aerobic glycolysis (in turn including anaerobic glycolysis, the citric acid cycle, and oxidative phosphorylation), we can easily obtain the pathway vector. From this calculated pathway vector, we can obtain the final net reaction of the more detailed set of reactions. In practice, this detailing involves the participation of oxidation-reduction coenzymes, ADP, ATP, and Pi.</div>
-<div class="line-block">For example, consider the reactions below, related to a glycolysis synthesis <span class="citation" data-cites="alberty1996calculation">[@alberty1996calculation]</span>:</div>
+<div class="line-block">For example, consider the reactions below, related to a glycolysis synthesis <span class="citation" data-cites="alberty1996calculation">(<a href="#ref-alberty1996calculation" role="doc-biblioref">Alberty 1996</a>)</span>:</div>
 <p><span id="eq-eqGlicoSimp"><span class="math display">\[
 glucose \rightleftarrows 2\,pyruvate \\
 pyruvate + CoA \rightleftarrows acetyl \, CoA + CO_2
@@ -530,7 +550,7 @@ acetyl-CoA + 4NAD^++ADP+Pi+2H_2O \rightleftarrows2CO_2+4NADH+ATP+CoA, \,
 NADH+ \frac{1}{2}O_2+3Pi+3ADP \rightleftarrows NAD^++4H_2O+3ATP \, ,\\
 oxidation \, phosphorylative
 \tag{8}\]</span></span></p>
-<div class="line-block">It is worth mentioning a simplification by replacing GTP and GDP with ATP and ADP (Krebs cycle), since they are interconvertible in metabolism. For simplification, the interconversion of FAD and NAD in the net reaction is also assumed <span class="citation" data-cites="alberty1996calculation">[@alberty1996calculation]</span> :</div>
+<div class="line-block">It is worth mentioning a simplification by replacing GTP and GDP with ATP and ADP (Krebs cycle), since they are interconvertible in metabolism. For simplification, the interconversion of FAD and NAD in the net reaction is also assumed <span class="citation" data-cites="alberty1996calculation">(<a href="#ref-alberty1996calculation" role="doc-biblioref">Alberty 1996</a>)</span> :</div>
 <p><span id="eq-eqNadFad"><span class="math display">\[
 FADH + NAD^+ \rightleftarrows FAD + NADH
 \tag{9}\]</span></span></p>
@@ -587,10 +607,18 @@ glucose + 6O_2 + 40 ADP + 40 Pi \rightleftarrows 6CO_2+ 40ATP
 <div class="line-block">The example above illustrates the use of matrix algebra to solve problems of balancing biochemical reactions. By its nature, it is a comprehensive and algorithmic method (therefore, programmable), although it is not the only one. Other proposed solutions for balancing and conservation of mass and charge include <em>direct inspection</em> by screening and error based on mnemonic rules, balancing by <em>half-equation method</em>, and the <em>oxidation number method</em>, not discussed here.</div>
 
 
+
 </section>
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-alberty1991chemical" class="csl-entry" role="listitem">
+Alberty, Robert A. 1991. <span>“Chemical Equations Are Actually Matrix Equations.”</span> <em>Journal of Chemical Education</em> 68 (12): 984.
+</div>
+<div id="ref-alberty1996calculation" class="csl-entry" role="listitem">
+———. 1996. <span>“Calculation of Biochemical Net Reactions and Pathways by Using Matrix Operations.”</span> <em>Biophysical Journal</em> 71 (1): 507–15.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

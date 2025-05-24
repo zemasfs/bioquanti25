@@ -1,5 +1,6 @@
 ---
 title: "Enzymes"
+bibliography: referencias.bib
 ---
 
 ## Enzyme Kinetics {#sec-Enzyme}

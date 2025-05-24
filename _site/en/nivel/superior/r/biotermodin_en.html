@@ -55,7 +55,27 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -403,7 +423,7 @@ window.Quarto = {
 <p><span id="eq-eqGibbs"><span class="math display">\[
 \Delta G = \Delta H - T * \Delta S
 \tag{1}\]</span></span></p>
-<div class="line-block">Examples of this are the transformations in the values ​​of <span class="math inline">\(\Delta\)</span>H and <span class="math inline">\(\Delta\)</span>S that can be extracted from a conformational transition that accompanies the thermal denaturation of a protein <span class="citation" data-cites="cooper2004thermodynamics">[@cooper2004thermodynamics]</span>.</div>
+<div class="line-block">Examples of this are the transformations in the values ​​of <span class="math inline">\(\Delta\)</span>H and <span class="math inline">\(\Delta\)</span>S that can be extracted from a conformational transition that accompanies the thermal denaturation of a protein <span class="citation" data-cites="cooper2004thermodynamics">(<a href="#ref-cooper2004thermodynamics" role="doc-biblioref">Cooper 2004</a>)</span>.</div>
 <div class="line-block">To do this, it is necessary to determine the value of <span class="math inline">\(\Delta\)</span>G of the <em>phase transition</em>, which can be done in several ways, and using equally diverse methodology. Thus, through spectroscopic measurements (<em>molecular absorption, fluorescence, luminescence</em>), hydrodynamic measurements (<em>viscosity</em>, <em>sedimentation coefficient</em>, <em>osmotic pressure</em>), electrochemical measurements (<em>potentiometry, voltammetry</em>), or biological activity measurements, among many others, it is possible to quantify the thermodynamic parameter <span class="math inline">\(\Delta\)</span>G. This, in turn, can be extracted from the following relations, considering a <em>two-state transition</em>:</div>
 <p><span id="eq-eqND"><span class="math display">\[
 N \rightleftarrows D
@@ -670,7 +690,7 @@ ln(\frac{kcat*h}{K_B*T})=-\frac{1}{RT}*\Delta H^\ddagger + \frac{1}{R}*\Delta S^
 \end{cases}
 \tag{12}\]</span></span></p>
 <p>Where the terms with <span class="math inline">\(\ddagger\)</span> symbolize the variations of quantities related to the activation (or deactivation) of the enzyme (<em>transition state of the activated complex</em>), <em><span class="math inline">\(K_{B}\)</span></em> represents the Boltzmann constant (1.381x10<span class="math inline">\(^{-23}\)</span> JK<span class="math inline">\(^{-1}\)</span>), <em>h</em> the Planck constant (6.686x10<span class="math inline">\(^{-34}\)</span> J*s), and <em>R</em> the general gas constant (8.314 JK<span class="math inline">\(^{-1}\)</span> mol<span class="math inline">\(^{-1}\)</span>). It is not always possible to converge a matrix solution by simply using cross multiplication (<em>dot product</em>).</p>
-<div class="line-block">The code snippet below exemplifies this attempt, based on the data published by Riaz et al <span class="citation" data-cites="bhatti2007effect">[@bhatti2007effect]</span> below, and previously considering the matrices <em>A</em> and <em>b</em> as a function of the parameters specified by the authors:</div>
+<div class="line-block">The code snippet below exemplifies this attempt, based on the data published by Riaz et al <span class="citation" data-cites="bhatti2007effect">(<a href="#ref-bhatti2007effect" role="doc-biblioref">Bhatti et al. 2007</a>)</span> below, and previously considering the matrices <em>A</em> and <em>b</em> as a function of the parameters specified by the authors:</div>
 <p><span id="eq-Bhatti"><span class="math display">\[
 \Delta G^{\ddagger}=65920\, J\,mol^{-1} \\
 T = 328 K \\
@@ -798,7 +818,7 @@ Mathematically, <em>Hess’s Law</em> can be expressed as:</div>
 \Delta_fH^o = \sum_{n=1}^{\infty} \nu \Delta_fH^o_P - \sum_{n=1}^{\infty} \nu \Delta_fH^o_R
 \tag{18}\]</span></span></p>
 <p>Where <span class="math inline">\(\nu\)</span> represents the <em>stoichiometry</em> of the reaction, that is, the number of <em>moles</em> of each compound/element, while <em>P</em> and <em>R</em> refer to the <em>Product</em> and <em>Reactant</em>.</p>
-<div class="line-block">Returning to the <a href="#eq-eqReac" class="quarto-xref">Equation&nbsp;17</a> example, what we want is to obtain the value of the <em>reaction enthalpy</em> for ethane (<em><span class="math inline">\(C_2H_6\)</span></em>), based on the reaction enthalpy values ​​of the related species <span class="citation" data-cites="khalil2000calculating">[@khalil2000calculating]</span>. There are at least three possible solutions, in which the reaction enthalpy can be determined by the <em>bond enthalpy</em>, by the <em>formation enthalpy</em> itself, and by <em>Hess’s Law</em>, which can be calculated using matrices.<br>
+<div class="line-block">Returning to the <a href="#eq-eqReac" class="quarto-xref">Equation&nbsp;17</a> example, what we want is to obtain the value of the <em>reaction enthalpy</em> for ethane (<em><span class="math inline">\(C_2H_6\)</span></em>), based on the reaction enthalpy values ​​of the related species <span class="citation" data-cites="khalil2000calculating">(<a href="#ref-khalil2000calculating" role="doc-biblioref">Khalil 2000</a>)</span>. There are at least three possible solutions, in which the reaction enthalpy can be determined by the <em>bond enthalpy</em>, by the <em>formation enthalpy</em> itself, and by <em>Hess’s Law</em>, which can be calculated using matrices.<br>
 To do this, it is necessary to 1) compose the matrices <em>A</em> and <em>b</em>, 2) calculate the vector of coefficients <em>beta</em>, and 3) perform the scalar product (%*%) of <em>beta</em> with a matrix formed by the formation enthalpy values. The rationale for composing the matrices involves listing each compound with its reaction stoichiometry, and requires that a negative value be given to <em>reactants</em>, while a positive value is given to products.<br>
 The table below illustrates this construction for the problem in question.</div>
 <div class="cell">
@@ -898,7 +918,7 @@ The table below illustrates this construction for the problem in question.</div>
 <h2 class="anchored" data-anchor-id="thermodynamic-quantities-by-polynomial-fit">Thermodynamic Quantities by Polynomial Fit</h2>
 <div class="line-block">As seen in the previous sections of this chapter and in the <em>Enzymes</em> chapter, <em>linear relations</em> allow the extraction of kinetic or thermodynamic parameters associated with biophysical-chemical phenomena, such as in the study of ligand associations with biopolymers, self-association of biomacromolecules, enzyme kinetics, or thermodynamic stability equilibrium of biopolymers. Regarding the latter, <a href="#eq-eqVHoff" class="quarto-xref">Equation&nbsp;10</a> illustrates the linear relationship between a thermodynamic parameter monitored during the experiment, such as <em><span class="math inline">\(K_{eq}\)</span></em> or <em><span class="math inline">\(\Delta\)</span>G</em>, and temperature (although other perturbations could also be viable, such as pH, denaturant content, ionic strength, etc.).<br>
 However, we could not use linear matrix relationships or linear fits to solve quantitative parameters in situations that do not rely on linear behavior between variables, as reported by <a href="#eq-eqVHoff" class="quarto-xref">Equation&nbsp;10</a>, for example.</div>
-<div class="line-block">To illustrate, the relationship between temperature and the value for <span class="math inline">\(\Delta\)</span>G of the self-association of apolipoprotein Apo A-II present in HDL lipoprotein does not exhibit a linear profile, and can be obtained from the literature with the help of the following code snippet: <span class="citation" data-cites="waelbroeck1979thermodynamics">[@waelbroeck1979thermodynamics]</span>.</div>
+<div class="line-block">To illustrate, the relationship between temperature and the value for <span class="math inline">\(\Delta\)</span>G of the self-association of apolipoprotein Apo A-II present in HDL lipoprotein does not exhibit a linear profile, and can be obtained from the literature with the help of the following code snippet: <span class="citation" data-cites="waelbroeck1979thermodynamics">(<a href="#ref-waelbroeck1979thermodynamics" role="doc-biblioref">Waelbroeck, Van Obberghen, and De Meyts 1979</a>)</span>.</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Dependence of T on deltaG for insulin and receptor</span></span>
 <span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -1049,7 +1069,7 @@ Now just apply the same matrix relation of <a href="#eq-eqAm1xb" class="quarto-x
 </div>
 </div>
 <div class="line-block">Although the polynomial fit, either by the <code>R</code> eigenfunction (<code>lm</code>) or by the matrix solution above, reveals good adherence of the model to the experimental data, as represented by <a href="#fig-TdG" class="quarto-xref">Figure&nbsp;2</a> and the results table above, there is no correlation of thermodynamic parameters, since it is an empirical mathematical model, and not an analytical one for the system.<br>
-However, it is possible to obtain a good approximation of the quantities <span class="math inline">\(\Delta\)</span>H (enthalpy), <span class="math inline">\(\Delta\)</span>S (entropy) and <span class="math inline">\(\Delta\)</span>Cp (heat capacity) that phenomenologically model the thermodynamic behavior at a given temperature, by specific relations between these quantities <span class="citation" data-cites="edelhoch1976thermodynamic">[@edelhoch1976thermodynamic]</span>.</div>
+However, it is possible to obtain a good approximation of the quantities <span class="math inline">\(\Delta\)</span>H (enthalpy), <span class="math inline">\(\Delta\)</span>S (entropy) and <span class="math inline">\(\Delta\)</span>Cp (heat capacity) that phenomenologically model the thermodynamic behavior at a given temperature, by specific relations between these quantities <span class="citation" data-cites="edelhoch1976thermodynamic">(<a href="#ref-edelhoch1976thermodynamic" role="doc-biblioref">Edelhoch and Osborne Jr 1976</a>)</span>.</div>
 <p><span id="eq-eqdS"><span class="math display">\[
 \Delta S = -(\frac{\partial \Delta G}{\partial T})_p
 \tag{19}\]</span></span></p>
@@ -1083,7 +1103,7 @@ However, it is possible to obtain a good approximation of the quantities <span c
 <p><span id="eq-eqdCpEmp"><span class="math display">\[
 \Delta Cp = -2cT-6dT^2
 \tag{27}\]</span></span></p>
-<div class="line-block">Although they are approximations, the thermodynamic parameters thus obtained reflect the possibility of describing a phenomenon, such as the interaction of insulin with its receptor (<span class="citation" data-cites="waelbroeck1979thermodynamics">@waelbroeck1979thermodynamics</span>), from the perspective of preponderant weak bonds, such as hydrogen bonds, van der Waals forces, salt effect, electrostatic interactions and hydrophobic effect <span class="citation" data-cites="ross1981thermodynamics">[@ross1981thermodynamics]</span>, only by monitoring an equilibrium constant with temperature. The code snippet below solves the thermodynamic parameters for the complexation of insulin with its receptor at 25<span class="math inline">\(^o\)</span>C by the method described.</div>
+<div class="line-block">Although they are approximations, the thermodynamic parameters thus obtained reflect the possibility of describing a phenomenon, such as the interaction of insulin with its receptor (<span class="citation" data-cites="waelbroeck1979thermodynamics">Waelbroeck, Van Obberghen, and De Meyts (<a href="#ref-waelbroeck1979thermodynamics" role="doc-biblioref">1979</a>)</span>), from the perspective of preponderant weak bonds, such as hydrogen bonds, van der Waals forces, salt effect, electrostatic interactions and hydrophobic effect <span class="citation" data-cites="ross1981thermodynamics">(<a href="#ref-ross1981thermodynamics" role="doc-biblioref">Ross and Subramanian 1981</a>)</span>, only by monitoring an equilibrium constant with temperature. The code snippet below solves the thermodynamic parameters for the complexation of insulin with its receptor at 25<span class="math inline">\(^o\)</span>C by the method described.</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Polynomial solution of thermodynamic parameters for interaction of</span></span>
 <span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a><span class="co"># insulin with receptor</span></span>
@@ -1125,7 +1145,7 @@ However, it is possible to obtain a good approximation of the quantities <span c
 <pre><code>deltaCp value:  -537.5956 cal/mol/K </code></pre>
 </div>
 </div>
-<div class="line-block">The values ​​found for the interaction are very close to those reported by the authors at 25<span class="math inline">\(^o\)</span>C (<span class="citation" data-cites="waelbroeck1979thermodynamics">@waelbroeck1979thermodynamics</span>), although they used a fit with a 2nd degree polynomial. If you change the code snippet above to a polynomial of the same degree and omit the terms of the thermodynamic equations that identify the coefficient <em>d</em>, a value of <span class="math inline">\(\Delta\)</span>Cp of -735 kcal/mol should be observed, very similar to the reported value of -766 kcal/mol.</div>
+<div class="line-block">The values ​​found for the interaction are very close to those reported by the authors at 25<span class="math inline">\(^o\)</span>C (<span class="citation" data-cites="waelbroeck1979thermodynamics">Waelbroeck, Van Obberghen, and De Meyts (<a href="#ref-waelbroeck1979thermodynamics" role="doc-biblioref">1979</a>)</span>), although they used a fit with a 2nd degree polynomial. If you change the code snippet above to a polynomial of the same degree and omit the terms of the thermodynamic equations that identify the coefficient <em>d</em>, a value of <span class="math inline">\(\Delta\)</span>Cp of -735 kcal/mol should be observed, very similar to the reported value of -766 kcal/mol.</div>
 </section>
 <section id="thermodynamic-stability-of-biopolymers" class="level2">
 <h2 class="anchored" data-anchor-id="thermodynamic-stability-of-biopolymers">Thermodynamic Stability of Biopolymers</h2>
@@ -1161,7 +1181,7 @@ K_D = \frac{f_D}{1-f_D}
 \Delta G_D = -RT*ln\;K_D
 \tag{34}\]</span></span></p>
 <div class="line-block">In this way, it is possible to evaluate the thermodynamic stability of a biopolymer by its <em>stability curve</em>, contrasting the <em>perturbant</em> against the value of <em><span class="math inline">\(\Delta\)</span>G<span class="math inline">\(_D\)</span></em> obtained by the above procedures.</div>
-<div class="line-block">Analytically, a stability curve can be generated from the constant parameters in the <em>integrated Gibbs-Helmholtz equation</em> (<span class="citation" data-cites="licata2011analysis">@licata2011analysis</span>):</div>
+<div class="line-block">Analytically, a stability curve can be generated from the constant parameters in the <em>integrated Gibbs-Helmholtz equation</em> (<span class="citation" data-cites="licata2011analysis">LiCata and Liu (<a href="#ref-licata2011analysis" role="doc-biblioref">2011</a>)</span>):</div>
 <p><span id="eq-eqGibHelm"><span class="math display">\[
 \Delta G(T) = \Delta H_m(\frac{Tm-T}{Tm})-\Delta Cp[Tm-T(1-ln \; \frac{Tm}{T})])
 \tag{35}\]</span></span></p>
@@ -1188,7 +1208,7 @@ K_D = \frac{f_D}{1-f_D}
 </section>
 <section id="quantitative-structure-function-relationship-qsar-and-multilinear-fitting" class="level2">
 <h2 class="anchored" data-anchor-id="quantitative-structure-function-relationship-qsar-and-multilinear-fitting">Quantitative Structure-Function Relationship (QSAR) and Multilinear Fitting</h2>
-<div class="line-block">The same procedures employed to solve matrix problems, specifically with <a href="#eq-linMatr" class="quarto-xref">Equation&nbsp;11</a>, can also accommodate a QSAR (Quantitative Structure-Function Relationship) analysis of interest. For example, benzodiazepinone derivatives (TIBO) are known to inhibit reverse transcriptase <span class="citation" data-cites="tong2018qsar">[@tong2018qsar]</span>, an enzyme that catalyzes the conversion of RNA into viral DNA in acquired immune deficiency syndrome (AIDS). In this sense, observations derived from the QSAR study can contribute to the design of potential HIV transcriptase inhibitors. Thus, Tong et al.&nbsp;proposed a multilinear predictive model relating some properties of TIBO analogues with biological activity, as follows:</div>
+<div class="line-block">The same procedures employed to solve matrix problems, specifically with <a href="#eq-linMatr" class="quarto-xref">Equation&nbsp;11</a>, can also accommodate a QSAR (Quantitative Structure-Function Relationship) analysis of interest. For example, benzodiazepinone derivatives (TIBO) are known to inhibit reverse transcriptase <span class="citation" data-cites="tong2018qsar">(<a href="#ref-tong2018qsar" role="doc-biblioref">Tong et al. 2018</a>)</span>, an enzyme that catalyzes the conversion of RNA into viral DNA in acquired immune deficiency syndrome (AIDS). In this sense, observations derived from the QSAR study can contribute to the design of potential HIV transcriptase inhibitors. Thus, Tong et al.&nbsp;proposed a multilinear predictive model relating some properties of TIBO analogues with biological activity, as follows:</div>
 <p><span class="math display">\[
 pIC_{50}=x_0+x_1*S+x_2*W
 \]</span> {#eq:eqTIBO}</p>
@@ -1370,10 +1390,36 @@ y = \sum_{n=1}^{\infty} (x_1*x_2)
 \tag{38}\]</span></span></p>
 
 
+
 </section>
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-bhatti2007effect" class="csl-entry" role="listitem">
+Bhatti, Haq Nawaz, M Hamid Rashid, Rakhshanda Nawaz, A Mukhtar Khalid, Muhammad Asgher, and A Jabbar. 2007. <span>“Effect of Aniline Coupling on Kinetic and Thermodynamic Properties of Fusarium Solani Glucoamylase.”</span> <em>Applied Microbiology and Biotechnology</em> 73 (6): 1290–98.
+</div>
+<div id="ref-cooper2004thermodynamics" class="csl-entry" role="listitem">
+Cooper, Alan. 2004. <span>“Thermodynamics and Interactions.”</span> In <em>Biophysical Chemistry</em>, 99–122.
+</div>
+<div id="ref-edelhoch1976thermodynamic" class="csl-entry" role="listitem">
+Edelhoch, Harold, and James C Osborne Jr. 1976. <span>“The Thermodynamic Basis of the Stability of Proteins, Nucleic Acids, and Membranes.”</span> <em>Advances in Protein Chemistry</em> 30: 183–250.
+</div>
+<div id="ref-khalil2000calculating" class="csl-entry" role="listitem">
+Khalil, Mutasim I. 2000. <span>“Calculating Enthalpy of Reaction by a Matrix Method.”</span> <em>Journal of Chemical Education</em> 77 (2): 185.
+</div>
+<div id="ref-licata2011analysis" class="csl-entry" role="listitem">
+LiCata, Vince J, and Chin-Chi Liu. 2011. <span>“Analysis of Free Energy Versus Temperature Curves in Protein Folding and Macromolecular Interactions.”</span> <em>Methods in Enzymology</em> 488: 219–38.
+</div>
+<div id="ref-ross1981thermodynamics" class="csl-entry" role="listitem">
+Ross, Philip D, and S Subramanian. 1981. <span>“Thermodynamics of Protein Association Reactions: Forces Contributing to Stability.”</span> <em>Biochemistry</em> 20 (11): 3096–3102.
+</div>
+<div id="ref-tong2018qsar" class="csl-entry" role="listitem">
+Tong, Jianbo, Shan Lei, Shangshang Qin, and Yang Wang. 2018. <span>“QSAR Studies of TIBO Derivatives as HIV-1 Reverse Transcriptase Inhibitors Using HQSAR, CoMFA and CoMSIA.”</span> <em>Journal of Molecular Structure</em> 1168: 56–64.
+</div>
+<div id="ref-waelbroeck1979thermodynamics" class="csl-entry" role="listitem">
+Waelbroeck, Magali, E Van Obberghen, and P De Meyts. 1979. <span>“Thermodynamics of the Interaction of Insulin with Its Receptor.”</span> <em>Journal of Biological Chemistry</em> 254 (16): 7736–40.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
