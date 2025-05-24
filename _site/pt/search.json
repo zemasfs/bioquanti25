@@ -4313,5 +4313,17 @@
       "JSPlotly & GSPlotly - Simulação gráfica interativa & IA",
       "JSPlotly - Simulação gráfica com JavaScript"
     ]
+  },
+  {
+    "objectID": "nivel/superior/sisma/index_sisma.html#experimentos-virtuais-de-metabolismo",
+    "href": "nivel/superior/sisma/index_sisma.html#experimentos-virtuais-de-metabolismo",
+    "title": "Exemplos de mapas dinâmicos com Sisma",
+    "section": "Experimentos Virtuais de Metabolismo",
+    "text": "Experimentos Virtuais de Metabolismo\n  Segue uma sequência de alguns experimentos virtuais que passíveis de execução e estudo pelo Sisma.\n1. Controle Metabólico\n2. Metabolismo de Carboidratos\n3. Metabolismo de Carboidratos e Lipídios\n4. Metabolismo de Aminoácidos & Nucleotídeos",
+    "crumbs": [
+      "Sobre",
+      "Sisma - diagramas dinâmicos",
+      "Fluxos dinâmicos em Bioquímica"
+    ]
   }
 ]

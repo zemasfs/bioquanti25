@@ -131,6 +131,21 @@ The program was written in Java and allows you to dynamically visualize and eval
 
 :::
 
+
+## Virtual Metabolism Experiments
+
+| Below is a sequence of virtual experiments that can be performed and studied using *Sisma*.
+
+
+
+[1. Metabolic Control](prat/contr.pdf)
+
+[2. Carbohydrate Metabolism](prat/carb.pdf)
+
+[3. Carbohydrate and Lipid Metabolism](prat/carb_lip.pdf)
+
+[4. Amino Acid & Nucleotide Metabolism](prat/aa_nucl.pdf)
+
 ## SISMA online - SismaWeb !!!
 
 

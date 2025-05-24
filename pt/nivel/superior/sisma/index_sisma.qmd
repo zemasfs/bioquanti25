@@ -132,6 +132,20 @@ title: "Exemplos de mapas dinâmicos com *Sisma*"
 
 :::
 
+## Experimentos Virtuais de Metabolismo
+
+|   Segue uma sequência de alguns experimentos virtuais que passíveis de execução e estudo pelo *Sisma*. 
+
+[1. Controle Metabólico](prat/contr.pdf)
+
+[2. Metabolismo de Carboidratos](prat/carb.pdf)
+
+[3. Metabolismo de Carboidratos e Lipídios](prat/carb_lip.pdf)
+
+[4. Metabolismo de Aminoácidos & Nucleotídeos](prat/aa_nucl.pdf)
+
+
+
 ## SISMA online - SismaWeb !!!
 
 
