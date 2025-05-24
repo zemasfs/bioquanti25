@@ -85,7 +85,7 @@ $$
 - i: interest rate per period (in decimal)
 - t: number of periods (e.g., months)
 
-[![](Eq/juros.png)](Eq/jslp_juros.html)
+[![](Eq/juros.png)](Eq/jsp_juros.html)
 
 
 ### Suggestion: {.unnumbered}

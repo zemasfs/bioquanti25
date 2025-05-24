@@ -86,7 +86,7 @@ $$
 - i: taxa de juros por período (em decimal)
 - t: número de períodos (ex: meses)
 
-[![](Eq/juros.png)](Eq/jslp_juros.html)
+[![](Eq/juros.png)](Eq/jsp_juros.html)
 
 
 ### Sugestão: {.unnumbered}
