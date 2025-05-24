@@ -16,6 +16,12 @@ The program was written in Java and allows you to dynamically visualize and eval
 | For the study of the relationships between reactants and products, the program allows the insertion of compounds (*Object*), paths (*Path*), figures and annotations on the map, storage and reading of maps, simulation of variations in the relative contents of each compound by point and line graphs simultaneously with those occurring on the map itself, pause, interruption, backward and forward viewing at any time during the simulation, automatically generating and exporting spreadsheets containing the numerical values of each object transformed at each instant, and instantly printing the map at the point of a desired transformation. In this way, the program makes the visualization of *forces and flows* that are presented statically in diagrams and maps dynamic, both in *Biochemistry* and for any subject involving this type of representation.
 
 | Despite its ease of use with a mouse, without the need to enter text commands, *Sisma* allows the modification of all elements of the map (objects, paths, equations, names, colors, positions) by editing the map file in Notepad, adding value to *Reproducible Teaching* with the tool.
+\
+
+| Despite its ease of use with a mouse, without the need to enter text commands, *Sisma* allows all elements of the map (objects, paths, equations, names, colors, positions) to be modified by editing the map file in Notepad, adding value to *Reproducible Teaching* with the tool. The figure below illustrates a *Sisma* file opened in a notepad for editing.
+\
+
+![Structure of a map in *Sisma*](sismaTxt.png)
 
 | The program was developed in partnership with Prof. Dr. Luiz Eduardo da Silva, from the Department of Computer Science (DCC/UNIFAL-MG), and undergraduate students.
 

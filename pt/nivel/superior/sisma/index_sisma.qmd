@@ -13,8 +13,13 @@ title: "SISMA - Dinâmica Visual de Transformações"
 ## Características do SISMA
 
 |       Para o estudo das relações entre reagentes e produtos o programa permite a inserção de compostos (*Object*), caminhos (*Path*), figuras e anotações no mapa, armazenamento e leitura de mapas, simulação das variações nos teores relativos de cada composto por gráfico de pontos e linhas simultaneamente às que ocorrem no próprio mapa, pausa, interrupção, retrocesso e avanço da visualização a qualquer momento da simulação, geração automática e exportação de planilha contendo os valores numéricos de cada objeto transformado em cada instante, e impressão instantânea do mapa no ponto de uma transformação desejada. Dessa forma, o programa torna dinâmica a visualização de *forças e de fluxos* que são apresentados de forma estática em diagramas e mapas, tanto em *Bioquímica*, como para qualquer tema que envolva esse tipo de representação.
+\
 
-|   À despeito da usabilidade facilitada por mouse, sem a necessidade de inserção de comandos de texto, o *Sisma* faculta a modificação de todos os elementos do mapa (objetos, caminhos, equações, nomes, cores, posições) por edição do arquivo do mapa em bloco de notas, agregando valor a um *Ensino Reprodutível* com a ferramenta.
+|   À despeito da usabilidade facilitada por mouse, sem a necessidade de inserção de comandos de texto, o *Sisma* faculta a modificação de todos os elementos do mapa (objetos, caminhos, equações, nomes, cores, posições) por edição do arquivo do mapa em bloco de notas, agregando valor a um *Ensino Reprodutível* com a ferramenta. A figura abaixo ilustra um arquivo do *Sisma* aberto num bloco de anotações para edição.
+\
+
+![Estrutura de um mapa no *Sisma*](sismaTxt.png)
+\
 
 |       O programa foi desenvolvido em parceria com o Prof. Dr. Luiz Eduardo da Silva, do Departamento de Ciência da Computação (DCC/UNIFAL-MG), e discentes de Iniciação Científica.
 
