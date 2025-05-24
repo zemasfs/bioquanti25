@@ -65,6 +65,40 @@ $$
 ```
 
 
+## Matemática Financeira
+
+### Contexto - Juros Compostos (EM13MAT402): {.unnumbered}
+
+|   Também conhecido pela máxima *"juros sobre juros"*, os juros compostos incorporam valor ao capital ao longo do tempo, resultando no cresimento do montante final.  
+
+
+### Equação: {.unnumbered}
+
+$$
+M = C \cdot (1 + i)^t
+$$
+
+
+*Onde,*
+
+- M: montante final
+- C: capital inicial
+- i: taxa de juros por período (em decimal)
+- t: número de períodos (ex: meses)
+
+[![](Eq/juros.png)](Eq/jslp_juros.html)
+
+
+### Sugestão: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Varie o período de contratação, a taxa mensal de juros ou o montante inicial.
+2. Experimente combinar os parâmetros na variação.
+3. Avalie a diferença visual entre um investimento e um empréstimo, inserido valor positivo de capital inicial para o 1o. e negativo para o 2o. 
+4. Observe a curva descendente para um empréstimo simulado com capital inicial negativo. Os valores remanescentes referem-se à dívida faltante para quitar o empréstimo.
+```
+
+
 ## Física
 
 ### Contexto - Movimento de corpos (EM13CNT102): {.unnumbered}

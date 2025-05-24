@@ -64,6 +64,40 @@ $$
 ```
 
 
+## Financial Mathematics
+
+### Context - Compound Interest (EM13MAT402): {.unnumbered}
+
+| Also known as *“interest on interest”*, compound interest adds value to capital over time, resulting in the growth of the final amount.
+
+
+### Equation: {.unnumbered}
+
+$$
+M = C \cdot (1 + i)^t
+$$
+
+
+*Where,*
+
+- M: final amount
+- C: initial capital
+- i: interest rate per period (in decimal)
+- t: number of periods (e.g., months)
+
+[![](Eq/juros.png)](Eq/jslp_juros.html)
+
+
+### Suggestion: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Vary the contract period, the monthly interest rate, or the initial amount.
+2. Try combining the parameters in the variation.
+3. Evaluate the visual difference between an investment and a loan by entering a positive initial capital value for the former and a negative value for the latter.
+4. Observe the downward curve for a simulated loan with negative initial capital. The remaining values refer to the outstanding debt to pay off the loan.
+```
+
+
 ## Physics
 
 ### Context - Motion of bodies (EM13CNT102): {.unnumbered}

@@ -2113,8 +2113,8 @@
     "objectID": "nivel/basico/jsplotly/jsplotly_bas_en.html#physics",
     "href": "nivel/basico/jsplotly/jsplotly_bas_en.html#physics",
     "title": "JSPlotly and GSPlotly at School",
-    "section": "2 Physics",
-    "text": "2 Physics\n\nContext - Motion of bodies (EM13CNT102):\nThe following code illustrates the trajectory of an oblique launch with an angle adjustable by a slider, useful for exploring the concepts of kinematics.\n\n\nEquation:\n1. General equation\n\\[\ny(x) = x \\cdot \\tan(\\theta) - \\frac{g}{2 v_0^2 \\cos^2(\\theta)} \\cdot x^2\n\\]\nWhere:\n\ny(x): height as a function of horizontal distance;\nx: horizontal position (m);\n\\(\\theta\\): angle of launch relative to the horizontal (radians or degrees);\nv0: initial velocity of the projectile (m/s);\ng: acceleration due to gravity (9.8 m/s²\\(^{2}\\))\n\n2. Total flight time:\n\\[\nt_{\\text{total}} = \\frac{2 v_0 \\sin(\\theta)}{g}\n\\]\n3. Horizontal position over time\n\\[\nx(t) = v_0 \\cos(\\theta) \\cdot t\n\\]\n\n\n\nSuggestion:\n\n1. Notice that there is a slider for initial angles in the simulation. Drag the slider to another angle and add the graph, comparing the effect of this modification.\n2. Change the initial velocity in the code and observe the effect on the graph.\n3. Simulate a \"lunar condition\" for the trajectory, with gravity around 1/6 that of Earth (~1.6 m/s²).",
+    "section": "3 Physics",
+    "text": "3 Physics\n\nContext - Motion of bodies (EM13CNT102):\nThe following code illustrates the trajectory of an oblique launch with an angle adjustable by a slider, useful for exploring the concepts of kinematics.\n\n\nEquation:\n1. General equation\n\\[\ny(x) = x \\cdot \\tan(\\theta) - \\frac{g}{2 v_0^2 \\cos^2(\\theta)} \\cdot x^2\n\\]\nWhere:\n\ny(x): height as a function of horizontal distance;\nx: horizontal position (m);\n\\(\\theta\\): angle of launch relative to the horizontal (radians or degrees);\nv0: initial velocity of the projectile (m/s);\ng: acceleration due to gravity (9.8 m/s²\\(^{2}\\))\n\n2. Total flight time:\n\\[\nt_{\\text{total}} = \\frac{2 v_0 \\sin(\\theta)}{g}\n\\]\n3. Horizontal position over time\n\\[\nx(t) = v_0 \\cos(\\theta) \\cdot t\n\\]\n\n\n\nSuggestion:\n\n1. Notice that there is a slider for initial angles in the simulation. Drag the slider to another angle and add the graph, comparing the effect of this modification.\n2. Change the initial velocity in the code and observe the effect on the graph.\n3. Simulate a \"lunar condition\" for the trajectory, with gravity around 1/6 that of Earth (~1.6 m/s²).",
     "crumbs": [
       "About",
       "JSPlotly & GSPlotly - Interactive Graphics & AI",
@@ -2125,8 +2125,8 @@
     "objectID": "nivel/basico/jsplotly/jsplotly_bas_en.html#chemistry",
     "href": "nivel/basico/jsplotly/jsplotly_bas_en.html#chemistry",
     "title": "JSPlotly and GSPlotly at School",
-    "section": "3 Chemistry",
-    "text": "3 Chemistry\n\nContext - Heat Capacity (EF09CI06, EM13CNT104, EM13CNT203)\nThe following simulation aims to observe the relationship between heat exchanged (Q), mass (m), heat capacity (c), and temperature variation (\\(\\Delta\\)T).\n\n\nEquation:\n\\[\nQ = c \\cdot m \\cdot \\Delta T\n\\]\n\n\n\n\nSuggestion:\n\n1. Try varying the temperature initially, overlaying some graphs;\n2. Also vary the mass in the code editor for comparison.",
+    "section": "4 Chemistry",
+    "text": "4 Chemistry\n\nContext - Heat Capacity (EF09CI06, EM13CNT104, EM13CNT203)\nThe following simulation aims to observe the relationship between heat exchanged (Q), mass (m), heat capacity (c), and temperature variation (\\(\\Delta\\)T).\n\n\nEquation:\n\\[\nQ = c \\cdot m \\cdot \\Delta T\n\\]\n\n\n\n\nSuggestion:\n\n1. Try varying the temperature initially, overlaying some graphs;\n2. Also vary the mass in the code editor for comparison.",
     "crumbs": [
       "About",
       "JSPlotly & GSPlotly - Interactive Graphics & AI",
@@ -2137,8 +2137,8 @@
     "objectID": "nivel/basico/jsplotly/jsplotly_bas_en.html#biology",
     "href": "nivel/basico/jsplotly/jsplotly_bas_en.html#biology",
     "title": "JSPlotly and GSPlotly at School",
-    "section": "4 Biology",
-    "text": "4 Biology\n\nContext - Population Growth Model with Lag Phase (EM13CNT102)\nThis model presents a logistic function that simulates population growth (e.g., microorganisms, cells), accompanied by a delay component. By varying the parameters in the editor, it is possible to estimate various population growth profiles.\n\n\nEquation:\n\\[\nN(t) = \\frac{K}{1 + \\left(\\frac{K - N_0}{N_0}\\right) \\cdot e^{-r \\cdot A(t) \\cdot t}}, \\quad \\text{with } A(t) = \\frac{1}{1 + e^{-k(t - t_0)}}\n\\]\nWhere:\n\nK = environmental carrying capacity;\nN0 = initial population;\nr = intrinsic growth rate;\nA(t) = growth activation factor with delay (lag phase);\nt0 = midpoint of transition between lag phase and log phase;\nk = delay smoothing constant (set to 0.5 in the code)\n\n\n\n\nSuggestion:\n\n1. Try varying the parameters of the equation, combining some and comparing their effects on the graphs:\na. Carrying capacity;\nb. Initial population;\nc. Growth rate;\nd. Delay (lag phase);",
+    "section": "5 Biology",
+    "text": "5 Biology\n\nContext - Population Growth Model with Lag Phase (EM13CNT102)\nThis model presents a logistic function that simulates population growth (e.g., microorganisms, cells), accompanied by a delay component. By varying the parameters in the editor, it is possible to estimate various population growth profiles.\n\n\nEquation:\n\\[\nN(t) = \\frac{K}{1 + \\left(\\frac{K - N_0}{N_0}\\right) \\cdot e^{-r \\cdot A(t) \\cdot t}}, \\quad \\text{with } A(t) = \\frac{1}{1 + e^{-k(t - t_0)}}\n\\]\nWhere:\n\nK = environmental carrying capacity;\nN0 = initial population;\nr = intrinsic growth rate;\nA(t) = growth activation factor with delay (lag phase);\nt0 = midpoint of transition between lag phase and log phase;\nk = delay smoothing constant (set to 0.5 in the code)\n\n\n\n\nSuggestion:\n\n1. Try varying the parameters of the equation, combining some and comparing their effects on the graphs:\na. Carrying capacity;\nb. Initial population;\nc. Growth rate;\nd. Delay (lag phase);",
     "crumbs": [
       "About",
       "JSPlotly & GSPlotly - Interactive Graphics & AI",
@@ -2149,8 +2149,8 @@
     "objectID": "nivel/basico/jsplotly/jsplotly_bas_en.html#geography",
     "href": "nivel/basico/jsplotly/jsplotly_bas_en.html#geography",
     "title": "JSPlotly and GSPlotly at School",
-    "section": "5 Geography",
-    "text": "5 Geography\n\nContext: Map of Brazil and Capital Cities (EM13CHS101, EM13CHS202, EM13CHS301)\nJSPlotly is not just about equations! With the Plotly.js library that composes it, you can also produce interactive maps, such as the simulation below.\n\n\n\nSuggestion:\n\n1. Try using the mouse scroll wheel and the \"pan\" icon on the top bar to interact with the map.",
+    "section": "6 Geography",
+    "text": "6 Geography\n\nContext: Map of Brazil and Capital Cities (EM13CHS101, EM13CHS202, EM13CHS301)\nJSPlotly is not just about equations! With the Plotly.js library that composes it, you can also produce interactive maps, such as the simulation below.\n\n\n\nSuggestion:\n\n1. Try using the mouse scroll wheel and the \"pan\" icon on the top bar to interact with the map.",
     "crumbs": [
       "About",
       "JSPlotly & GSPlotly - Interactive Graphics & AI",
@@ -2161,8 +2161,8 @@
     "objectID": "nivel/basico/jsplotly/jsplotly_bas_en.html#history",
     "href": "nivel/basico/jsplotly/jsplotly_bas_en.html#history",
     "title": "JSPlotly and GSPlotly at School",
-    "section": "6 History",
-    "text": "6 History\n\nContext - Distribution of slaves in the Americas from 1500 to 1888 (EF08HI06, EM13CHS104, EM13CHS503):\nThis simulation presents an interactive bar chart for selecting a period from a drop-down menu, tangent to the estimated number of enslaved Africans landed in the main regions of the Americas. The data are rough estimates to illustrate the visualization potential of the application, although they serve as a starting point for more accurate educational discussions. Sources for consultation include Slave Voyages.\n\n\n\n\n\nSuggestion:\n\n1. Try switching between periods in the drop-down menu, comparing estimates of slave traffic;\n2. Select a period, create the graph, select another period, and add another graph. This allows you to compare the number of slaves brought in by the double bars formed, and hover your mouse over each bar.",
+    "section": "7 History",
+    "text": "7 History\n\nContext - Distribution of slaves in the Americas from 1500 to 1888 (EF08HI06, EM13CHS104, EM13CHS503):\nThis simulation presents an interactive bar chart for selecting a period from a drop-down menu, tangent to the estimated number of enslaved Africans landed in the main regions of the Americas. The data are rough estimates to illustrate the visualization potential of the application, although they serve as a starting point for more accurate educational discussions. Sources for consultation include Slave Voyages.\n\n\n\n\n\nSuggestion:\n\n1. Try switching between periods in the drop-down menu, comparing estimates of slave traffic;\n2. Select a period, create the graph, select another period, and add another graph. This allows you to compare the number of slaves brought in by the double bars formed, and hover your mouse over each bar.",
     "crumbs": [
       "About",
       "JSPlotly & GSPlotly - Interactive Graphics & AI",
@@ -2173,8 +2173,8 @@
     "objectID": "nivel/basico/jsplotly/jsplotly_bas_en.html#languages",
     "href": "nivel/basico/jsplotly/jsplotly_bas_en.html#languages",
     "title": "JSPlotly and GSPlotly at School",
-    "section": "7 Languages",
-    "text": "7 Languages\n\n7.1 Context - Slang spoken in Brazil from 1980 to 2020 (EF89LP19, EM13LGG102)\nThis simulation is intended to estimate the use of slang spoken in Brazil over the last 40 years. The representation is in a pie chart, and the selection by decade is in a drop-down menu.\n\n\n\n\n1. You can use the mouse to hover over each bar to see the \"tip\" (hint) for that data point in the chart.",
+    "section": "8 Languages",
+    "text": "8 Languages\n\n8.1 Context - Slang spoken in Brazil from 1980 to 2020 (EF89LP19, EM13LGG102)\nThis simulation is intended to estimate the use of slang spoken in Brazil over the last 40 years. The representation is in a pie chart, and the selection by decade is in a drop-down menu.\n\n\n\n\n1. You can use the mouse to hover over each bar to see the \"tip\" (hint) for that data point in the chart.",
     "crumbs": [
       "About",
       "JSPlotly & GSPlotly - Interactive Graphics & AI",
@@ -4239,5 +4239,17 @@
     "title": "Contact",
     "section": "",
     "text": "José Maurício Schneedorf Ferreira da Silva (Full Professor, Biochemistry Dept.)\n\nemail: jose.dasilva@unifal-mg.edu.br\nPhone: 55 - (35) - 3291-1928\nAddress: Department of Biochemistry, Institute of Biomedical Sciences, Federal University of Alfenas, UNIFAL-MG. Building E, room 209. Alfenas, MG. Zip code: ‘37.130-001’, Brazil\n\n\n\n\n\n\n\n\n\n Site under Creative Commons license CC BY-NC-ND 4.0\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "nivel/basico/jsplotly/jsplotly_bas_en.html#financial-mathematics",
+    "href": "nivel/basico/jsplotly/jsplotly_bas_en.html#financial-mathematics",
+    "title": "JSPlotly and GSPlotly at School",
+    "section": "2 Financial Mathematics",
+    "text": "2 Financial Mathematics\n\nContext - Compound Interest (EM13MAT402):\nAlso known as “interest on interest”, compound interest adds value to capital over time, resulting in the growth of the final amount.\n\n\nEquation:\n\\[\nM = C \\cdot (1 + i)^t\n\\]\nWhere,\n\nM: final amount\nC: initial capital\ni: interest rate per period (in decimal)\nt: number of periods (e.g., months)\n\n\n\n\nSuggestion:\n\n1. Vary the contract period, the monthly interest rate, or the initial amount.\n2. Try combining the parameters in the variation.\n3. Evaluate the visual difference between an investment and a loan by entering a positive initial capital value for the former and a negative value for the latter.\n4. Observe the downward curve for a simulated loan with negative initial capital. The remaining values refer to the outstanding debt to pay off the loan.",
+    "crumbs": [
+      "About",
+      "JSPlotly & GSPlotly - Interactive Graphics & AI",
+      "Simulations at School"
+    ]
   }
 ]
