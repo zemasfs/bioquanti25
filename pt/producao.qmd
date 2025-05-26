@@ -65,7 +65,7 @@ para a elaboração de jogos educacionais online.  In: Tecnologias Emergentes em
 
 ## Artigo
 
-<!-- - Schneedorf, J.M. JSPlotly: um aplicativo para gráficos interativos em Bioquímica para visualizadores HTML. Revista de Ensino de Bioquímica. 2025 (no prelo). -->
+- Schneedorf, J.M. JSPlotly: um aplicativo para gráficos interativos em Bioquímica para visualizadores HTML. Revista de Ensino de Bioquímica. 2025 (no prelo).
 
 - Schneedorf, J.M. Livros vivos: uma proposta de ensino reprodutível com R & Rstudio. Revista Eletrônica Casa de Makunaima. 2025 (no prelo).
 
