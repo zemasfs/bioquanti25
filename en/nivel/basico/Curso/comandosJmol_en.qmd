@@ -133,4 +133,4 @@ color chain # coloring by protein "chains"
 ![Representation of the *spike* protein of the Sars-Cov-2 virus (coloring by number of chains).](spike.png)
 
 
-| Proteins, enzymes, nucleic acids, and macromolecular associations are more relevant to the study of structural *Biochemistry*. In this regard, I invite you to visit a section of the *website* that has detailed descriptions and representations of [Biochemistry](nivel/superior/jmol/index_jmol.html) structures with the help of *Jmol*.
+| Proteins, enzymes, nucleic acids, and macromolecular associations are more relevant to the study of structural *Biochemistry*. In this regard, I invite you to visit a section of the *website* that has detailed descriptions and representations of [Biochemistry](../../superior/jmol/index_jmol_en.html) structures with the help of *Jmol*.

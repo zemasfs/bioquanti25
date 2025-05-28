@@ -133,6 +133,6 @@ color chain #  coloração por "cadeias" da proteína
 ![Representação da proteína *spike* do vírus de Sars-Cov-2 (coloração por número de cadeias).](spike.png)
 
 
-|       Proteínas, enzimas, ácidos nucleicos, e associações macromoleculares são mais pertinentes ao estudo da *Bioquímica* estrutural. Nesse sentido lhe convido a visitar uma parte do *website* que possui descrições e representações detalhadas de estruturas da [Bioquímica](nivel/superior/jmol/index_jmol.html) com auxílio do *Jmol*.
+|       Proteínas, enzimas, ácidos nucleicos, e associações macromoleculares são mais pertinentes ao estudo da *Bioquímica* estrutural. Nesse sentido lhe convido a visitar uma parte do *website* que possui descrições e representações detalhadas de estruturas da [Bioquímica](../../superior/jmol/index_jmol.html) com auxílio do *Jmol*.
 
 
