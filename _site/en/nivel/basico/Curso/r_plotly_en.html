@@ -126,7 +126,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <link rel="stylesheet" href="../../../styles.css">
 </head>
 
-<body class="nav-sidebar floating nav-fixed fullcontent quarto-light">
+<body class="nav-sidebar floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -341,7 +341,17 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#creating-an-interactive-graph" id="toc-creating-an-interactive-graph" class="nav-link active" data-scroll-target="#creating-an-interactive-graph"><span class="header-section-number">1</span> Creating an interactive graph</a></li>
+  <li><a href="#saving-the-graph" id="toc-saving-the-graph" class="nav-link" data-scroll-target="#saving-the-graph"><span class="header-section-number">2</span> Saving the graph</a></li>
+  <li><a href="#working-with-mathematical-relationships-in-variables" id="toc-working-with-mathematical-relationships-in-variables" class="nav-link" data-scroll-target="#working-with-mathematical-relationships-in-variables"><span class="header-section-number">3</span> Working with mathematical relationships in variables</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -383,8 +393,8 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </div>
 <p><br>
 </p>
-<section id="creating-an-interactive-graph" class="level2">
-<h2 class="anchored" data-anchor-id="creating-an-interactive-graph">Creating an interactive graph</h2>
+<section id="creating-an-interactive-graph" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="creating-an-interactive-graph"><span class="header-section-number">1</span> Creating an interactive graph</h2>
 <div class="line-block">Let’s start by creating the data from an equation applied to a <em>vector.</em> To do this, we need…the vector! Think of a vector as a column (or row) in Excel. In <code>R</code>, vectors are created by <em>concatenating</em> values separated by <em>commas</em>, as follows:</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>) <span class="co"># a vector; the "c" indicates "concatenation"</span></span>
@@ -439,8 +449,8 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <li>By selecting an icon in the upper right corner of the graph, you can, in sequence from the left, download the plot as an image, zoom in, move the axes, select points within a box or within a loop, zoom in, zoom out, scale to the original size, realign the axes to those of the original plot, view the coordinates (x and y), view only the y coordinate, and return to the beginning.</li>
 </ul>
 </section>
-<section id="saving-the-graph" class="level2">
-<h2 class="anchored" data-anchor-id="saving-the-graph">Saving the graph</h2>
+<section id="saving-the-graph" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="saving-the-graph"><span class="header-section-number">2</span> Saving the graph</h2>
 <div class="line-block">Now a <span style="color:orange;"><strong>very interesting feature of <code>plotly</code>: you can save the graph while maintaining all its interactivity in an HTML file</strong>. This way, anyone will be able to open your graph in an internet browser (Firefox, Chrome, Edge, for example), allowing them to observe the details and interactive action on any computer, notebook, tablet, or smartphone!!!</span></div>
 <div class="line-block">And saving <strong>your first interactive graph</strong> is very simple:</div>
 <div class="cell">
@@ -450,8 +460,8 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </div>
 <div class="line-block">Now just locate the file on your computer, open the file automatically in a browser, and check that its interactivity has been maintained. <strong>And to share it, if you wish, just send the interactive graph file to someone or display it on a multimedia projector</strong>.</div>
 </section>
-<section id="working-with-mathematical-relationships-in-variables" class="level2">
-<h2 class="anchored" data-anchor-id="working-with-mathematical-relationships-in-variables">Working with mathematical relationships in variables</h2>
+<section id="working-with-mathematical-relationships-in-variables" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="working-with-mathematical-relationships-in-variables"><span class="header-section-number">3</span> Working with mathematical relationships in variables</h2>
 <div class="line-block">When constructing a graph, it is sometimes useful to be able to perform a calculation on a variable without having to create a new vector. Let’s illustrate this with an <em>isothermal transformation in the study of gases (Boyle-Mariotte’s law)</em>, as follows:</div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">

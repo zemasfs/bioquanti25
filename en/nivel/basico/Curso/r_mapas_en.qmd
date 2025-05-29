@@ -2,7 +2,8 @@
 title: "7 - Interactive maps with `plotly`"
 format: html
 toc: true
-lang: pt
+number-sections: true
+lang: en
 ---
 
 <div class = "reminder-objetivos">

@@ -1,5 +1,9 @@
 ---
 title: "Physics"
+number-sections: true
+toc: true
+lang: en
+class: fundo-basico
 ---
 
 <!-- ############## ELECTRIC FIELD AND DISTANCE ################ -->

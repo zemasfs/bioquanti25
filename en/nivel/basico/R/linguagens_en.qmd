@@ -1,5 +1,9 @@
 ---
 title: "Languages"
+number-sections: true
+toc: true
+lang: en
+class: fundo-basico
 ---
 
 <div class="ling-fundo">

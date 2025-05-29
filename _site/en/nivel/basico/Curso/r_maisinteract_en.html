@@ -375,11 +375,11 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#adding-a-range-slider" id="toc-adding-a-range-slider" class="nav-link active" data-scroll-target="#adding-a-range-slider">Adding a range slider</a>
+  <li><a href="#adding-a-range-slider" id="toc-adding-a-range-slider" class="nav-link active" data-scroll-target="#adding-a-range-slider"><span class="header-section-number">1</span> Adding a range slider</a>
   <ul class="collapse">
-  <li><a href="#co_2-emissions-and-the-greenhouse-effect" id="toc-co_2-emissions-and-the-greenhouse-effect" class="nav-link" data-scroll-target="#co_2-emissions-and-the-greenhouse-effect">CO<span class="math inline">\(_{2}\)</span> emissions and the greenhouse effect</a>
+  <li><a href="#co_2-emissions-and-the-greenhouse-effect" id="toc-co_2-emissions-and-the-greenhouse-effect" class="nav-link" data-scroll-target="#co_2-emissions-and-the-greenhouse-effect"><span class="header-section-number">1.1</span> CO<span class="math inline">\(_{2}\)</span> emissions and the greenhouse effect</a>
   <ul class="collapse">
-  <li><a href="#adding-a-drop-down-menu" id="toc-adding-a-drop-down-menu" class="nav-link" data-scroll-target="#adding-a-drop-down-menu">Adding a drop-down menu</a></li>
+  <li><a href="#adding-a-drop-down-menu" id="toc-adding-a-drop-down-menu" class="nav-link" data-scroll-target="#adding-a-drop-down-menu"><span class="header-section-number">1.1.1</span> Adding a drop-down menu</a></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -416,12 +416,12 @@ window.Quarto = {
 <div class="line-block">So far, we have only <em>“scratched the surface”</em> of the graphical interactivity potential of the <code>plotly</code> package. As already mentioned, this library allows for a wide range of user actions, such as sliders, drop-down menus, and buttons, among many others.</div>
 <p><br>
 </p>
-<section id="adding-a-range-slider" class="level1">
-<h1>Adding a range slider</h1>
+<section id="adding-a-range-slider" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Adding a range slider</h1>
 <div class="line-block">A slider of this nature allows you to choose a data window for a more detailed study in that region. In this case, it is possible to add a range slider to a simple graph.</div>
 <div class="line-block">We can illustrate its use by observing greenhouse gases, and in particular, <em>carbon dioxide emissions in Brazil</em> from an internet database. To do this, you will learn how to <em>obtain a file from an internet database, filter it to a desired subset, and draw the resulting graph with an additional slider</em>.</div>
-<section id="co_2-emissions-and-the-greenhouse-effect" class="level2">
-<h2 class="anchored" data-anchor-id="co_2-emissions-and-the-greenhouse-effect">CO<span class="math inline">\(_{2}\)</span> emissions and the greenhouse effect</h2>
+<section id="co_2-emissions-and-the-greenhouse-effect" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="co_2-emissions-and-the-greenhouse-effect"><span class="header-section-number">1.1</span> CO<span class="math inline">\(_{2}\)</span> emissions and the greenhouse effect</h2>
 <div class="line-block">Emissions of CO<span class="math inline">\(_{2}\)</span> and other gases from the burning of fossil fuels are largely responsible for the greenhouse effect, directly affecting climate change. To reduce these emissions, it is necessary to transform the current energy matrix, industry, and food systems.</div>
 <p><br>
 </p>
@@ -461,8 +461,8 @@ window.Quarto = {
 </p>
 <div class="line-block">You can copy and paste the <em>scripts</em> in sequence for execution, or just add the command <code>rangeslider()</code> with the <em>pipe</em> operator %&gt;% at the end.</div>
 <div class="line-block">Now try positioning the mouse on one of the two side markers of the lower graph, dragging it, and observe the result. The slider can be useful when you want to focus on a specific region of the graph. For example, to adjust CO₂ emissions for the last few years.</div>
-<section id="adding-a-drop-down-menu" class="level3">
-<h3 class="anchored" data-anchor-id="adding-a-drop-down-menu">Adding a drop-down menu</h3>
+<section id="adding-a-drop-down-menu" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="adding-a-drop-down-menu"><span class="header-section-number">1.1.1</span> Adding a drop-down menu</h3>
 <div class="line-block">Dropdown menus allow you to view a different graph for each option selected. To illustrate this interactive feature, let’s first create a dataset that has linear, quadratic, and cubic responses to an independent variable, as follows:</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span> <span class="co"># vector of the independent variable "x"</span></span>

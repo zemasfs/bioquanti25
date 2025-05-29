@@ -1,7 +1,9 @@
 ---
 title: "Some commands to venture into flying molecules"
+format: html
 toc: true
-lang: pt
+number-sections: true
+lang: en
 ---
 
 <div class="reminder-objetivos">

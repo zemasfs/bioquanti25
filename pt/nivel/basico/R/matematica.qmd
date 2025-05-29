@@ -1,6 +1,8 @@
 ---
+number-sections: true
 toc: true
 lang: pt
+class: fundo-basico
 ---
 
 # Matemática {.unnumbered}

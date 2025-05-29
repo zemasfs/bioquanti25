@@ -2,7 +2,8 @@
 title: "4 - How to use Jmol"
 format: html
 toc: true
-lang: pt
+number-sections: true
+lang: en
 ---
 
 

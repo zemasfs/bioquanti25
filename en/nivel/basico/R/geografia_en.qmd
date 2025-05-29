@@ -1,5 +1,9 @@
 ---
 title: "Geography"
+number-sections: true
+toc: true
+lang: en
+class: fundo-basico
 ---
 
 <!-- ############# SOCIOECONOMIC DATA - MAP ################# --->

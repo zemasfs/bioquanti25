@@ -1,8 +1,9 @@
 ---
 title: "Geografia"
-publish: false
+number-sections: true
 toc: true
 lang: pt
+class: fundo-basico
 ---
 
 <!-- ############# DADOS SOCIOECONÔMICOS - MAPA  ################ --->

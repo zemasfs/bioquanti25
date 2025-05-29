@@ -1,8 +1,9 @@
 ---
 title: "Linguagens"
-publish: false
+number-sections: true
 toc: true
 lang: pt
+class: fundo-basico
 ---
 
 <div class="ling-fundo">

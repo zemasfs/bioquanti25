@@ -1,6 +1,8 @@
 ---
 title: "5 - Oficina de moléculas"
+format: html
 toc: true
+number-sections: true
 lang: pt
 ---
 

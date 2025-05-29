@@ -1,6 +1,8 @@
 ---
 title: "2 - Mouse clicks *versus* command text"
+format: html
 toc: true
+number-sections: true
 lang: en
 ---
 

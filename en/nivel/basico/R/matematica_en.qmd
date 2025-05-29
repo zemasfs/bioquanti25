@@ -1,8 +1,10 @@
 ---
+title: "Math"
+number-sections: true
 toc: true
+lang: en
+class: fundo-basico
 ---
-
-# Math {.unnumbered}
 
 <!-- ######### EXPONENTIAL versus LOGARITHM ########## -->
 

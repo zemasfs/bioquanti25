@@ -1,6 +1,9 @@
 ---
 title: "4 - Interactive graphs with `plotly`"
 format: html
+toc: true
+number-sections: true
+lang: en
 ---
 
 <div class = "reminder-objetivos">

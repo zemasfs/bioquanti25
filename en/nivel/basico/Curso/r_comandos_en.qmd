@@ -2,7 +2,8 @@
 title: "2 - Basic R commands"
 format: html
 toc: true
-lang: pt
+number-sections: true
+lang: en
 ---
 
 

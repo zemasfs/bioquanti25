@@ -2,7 +2,8 @@
 title: "3 - R packages and `plotly`"
 format: html
 toc: true
-lang: pt
+number-sections: true
+lang: en
 ---
 
 

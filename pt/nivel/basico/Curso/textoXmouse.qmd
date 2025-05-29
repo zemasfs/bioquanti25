@@ -1,6 +1,7 @@
 ---
 title: "2 - Cliques de mouse *versus* texto de comando"
 toc: true
+number-sections: true
 lang: pt
 ---
 

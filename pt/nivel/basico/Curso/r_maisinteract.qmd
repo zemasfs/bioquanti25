@@ -2,6 +2,7 @@
 title: "Mais interatividade !"
 format: html
 toc: true
+number-sections: true
 lang: pt
 ---
 

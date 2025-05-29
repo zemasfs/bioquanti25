@@ -2,6 +2,7 @@
 title: "7 - Mapas interativos com `plotly`"
 format: html
 toc: true
+number-sections: true
 lang: pt
 ---
 

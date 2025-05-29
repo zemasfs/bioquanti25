@@ -1,8 +1,9 @@
 ---
 title: "Chemistry"
 number-sections: true
+toc: true
+lang: en
 class: fundo-basico
-publish: false
 ---
 
 <!-- ########### IDEAL GAS LAW ################## -->

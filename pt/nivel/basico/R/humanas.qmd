@@ -1,8 +1,9 @@
 ---
 title: "Ciências Humanas"
-publish: false
+number-sections: true
 toc: true
 lang: pt
+class: fundo-basico
 ---
 
 <!-- ############# ÁREA E POPULAÇÃO BRASILEIRA ################ --->

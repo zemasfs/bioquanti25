@@ -2,7 +2,8 @@
 title: "6 - Graphic animations"
 format: html
 toc: true
-lang: pt
+number-sections: true
+lang: en
 ---
 
 

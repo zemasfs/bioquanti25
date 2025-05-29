@@ -1,5 +1,9 @@
 ---
 title: "Biology"
+number-sections: true
+toc: true
+lang: en
+class: fundo-basico
 ---
 
 <div class="biol-fundo"> <!--modifies for each area-->

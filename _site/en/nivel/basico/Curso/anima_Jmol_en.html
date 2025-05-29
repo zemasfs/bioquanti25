@@ -337,11 +337,11 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#animate-the-molecules." id="toc-animate-the-molecules." class="nav-link active" data-scroll-target="#animate-the-molecules.">Animate the molecules.</a>
+  <li><a href="#animate-the-molecules." id="toc-animate-the-molecules." class="nav-link active" data-scroll-target="#animate-the-molecules."><span class="header-section-number">1</span> Animate the molecules.</a>
   <ul class="collapse">
-  <li><a href="#spin" id="toc-spin" class="nav-link" data-scroll-target="#spin">Spin</a></li>
-  <li><a href="#zoomto-resize" id="toc-zoomto-resize" class="nav-link" data-scroll-target="#zoomto-resize">ZoomTo (resize)</a></li>
-  <li><a href="#delay" id="toc-delay" class="nav-link" data-scroll-target="#delay">Delay</a></li>
+  <li><a href="#spin" id="toc-spin" class="nav-link" data-scroll-target="#spin"><span class="header-section-number">1.1</span> Spin</a></li>
+  <li><a href="#zoomto-resize" id="toc-zoomto-resize" class="nav-link" data-scroll-target="#zoomto-resize"><span class="header-section-number">1.2</span> ZoomTo (resize)</a></li>
+  <li><a href="#delay" id="toc-delay" class="nav-link" data-scroll-target="#delay"><span class="header-section-number">1.3</span> Delay</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -374,20 +374,20 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 2. Use the molecule animation console<br>
 </p>
 </div>
-<section id="animate-the-molecules." class="level2">
-<h2 class="anchored" data-anchor-id="animate-the-molecules.">Animate the molecules.</h2>
+<section id="animate-the-molecules." class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="animate-the-molecules."><span class="header-section-number">1</span> Animate the molecules.</h2>
 <div class="line-block">And we have reached the last part of the <em>Course</em> with <em>Jmol</em>, to present a very interesting educational effect of the program: <em>molecule animation</em>.</div>
 <div class="line-block">You may want to show a molecule with different styles during a certain period, or make a slow transition between colors in specific atoms, or even controlled enlargement, reduction, or rotation effects. And many others that your imagination and technical rigor allow you to study.</div>
 <div class="line-block">In these cases, it is interesting to know and apply a few animation commands explained below. The examples have been selected to simplify each command. But don’t be fooled by the capabilities of <em>Jmol</em>, because for each command there are always several complementary options. And if you want to know anything about any <em>Jmol</em> command, visit the <a href="https://chemapps.stolaf.edu/jmol/docs/">reference website</a>.</div>
-<section id="spin" class="level3">
-<h3 class="anchored" data-anchor-id="spin">Spin</h3>
+<section id="spin" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="spin"><span class="header-section-number">1.1</span> Spin</h3>
 <div class="line-block">Simple command to rotate the molecule.</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>load <span class="sc">$</span>glucose; spin <span class="dv">30</span> <span class="co"># the value refers to the rotation speed</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="zoomto-resize" class="level3">
-<h3 class="anchored" data-anchor-id="zoomto-resize">ZoomTo (resize)</h3>
+<section id="zoomto-resize" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="zoomto-resize"><span class="header-section-number">1.2</span> ZoomTo (resize)</h3>
 <div class="line-block">This command is impressive because it allows for controlled magnification or reduction over time. Its syntax is:</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="sc">*</span>zoomTo<span class="sc">*</span> <span class="er">:</span> <span class="fu">time</span> (optional expression) size</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -403,8 +403,8 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>Focus on a biopolymer ligand with <span class="dv">4</span>x magnification, half a second at a time<span class="sc">:</span> zoomto <span class="fl">0.5</span>(ligand)<span class="sc">*</span> <span class="dv">4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="delay" class="level3">
-<h3 class="anchored" data-anchor-id="delay">Delay</h3>
+<section id="delay" class="level3" data-number="1.3">
+<h3 data-number="1.3" class="anchored" data-anchor-id="delay"><span class="header-section-number">1.3</span> Delay</h3>
 <div class="line-block">This is a <strong>key command</strong> for any animation, as it allows the image of the molecule in <em>Jmol</em> to pause (in seconds) before the next action. It is normally used in the sequence of commands by the <em>Console</em> throughout a <em>script</em>.</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>delay <span class="dv">3</span> <span class="co"># waits 3 seconds before the next action</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>

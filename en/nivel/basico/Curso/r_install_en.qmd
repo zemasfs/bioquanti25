@@ -1,6 +1,8 @@
 ---
 title: "1 - How to install R and RStudio"
+format: html
 toc: true
+number-sections: true
 lang: en
 ---
 

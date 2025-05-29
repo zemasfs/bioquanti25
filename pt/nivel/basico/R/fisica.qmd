@@ -1,8 +1,9 @@
 ---
 title: "Física"
-publish: false
+number-sections: true
 toc: true
 lang: pt
+class: fundo-basico
 ---
 
 

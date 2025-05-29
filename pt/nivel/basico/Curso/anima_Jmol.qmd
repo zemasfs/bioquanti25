@@ -1,6 +1,8 @@
 ---
 title: "6 - Algumas animações com Jmol"
+format: html
 toc: true
+number-sections: true
 lang: pt
 ---
 

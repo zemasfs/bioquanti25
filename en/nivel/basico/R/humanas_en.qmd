@@ -1,6 +1,9 @@
 ---
 title: "Human Sciences"
+number-sections: true
 toc: true
+lang: en
+class: fundo-basico
 ---
 
 <!-- ############# BRAZILIAN AREA AND POPULATION ################# --->

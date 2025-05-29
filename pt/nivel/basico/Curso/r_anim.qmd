@@ -2,6 +2,7 @@
 title: "6 - Animações gráficas"
 format: html
 toc: true
+number-sections: true
 lang: pt
 ---
 

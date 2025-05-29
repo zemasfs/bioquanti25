@@ -2,6 +2,7 @@
 title: "5 - Outros gráficos com `plotly`"
 format: html
 toc: true
+number-sections: true
 lang: pt
 ---
 

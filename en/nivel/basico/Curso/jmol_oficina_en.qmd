@@ -1,6 +1,8 @@
 ---
 title: "5 - Molecule workshop"
+format: html
 toc: true
+number-sections: true
 lang: en
 ---
 

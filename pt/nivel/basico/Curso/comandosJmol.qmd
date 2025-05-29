@@ -1,6 +1,8 @@
 ---
 title: "Alguns comandos pra se aventurar nas moléculas voadoras"
+format: html
 toc: true
+number-sections: true
 lang: pt
 ---
 

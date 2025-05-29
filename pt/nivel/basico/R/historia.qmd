@@ -1,8 +1,9 @@
 ---
 title: "História"
-publish: false
+number-sections: true
 toc: true
 lang: pt
+class: fundo-basico
 ---
 
 <!-- ############# ALGUNS CONFLITOS - MAPA  ################ --->
