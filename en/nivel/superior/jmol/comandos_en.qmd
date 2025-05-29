@@ -1,5 +1,6 @@
 ---
 title: "Commands"
+toc: true
 ---
 
 <!-- Google tag (gtag.js)-->
@@ -77,6 +78,30 @@ present the 2nd. model: model 2 or model 2.1
 show all models: model* or frame*
 Together: load append "1a2t.pdb" "1aay.pdb"
 ```
+
+
+## Building simple molecules using SMILES
+
+| *SMILES*, an abbreviation for *“Simplified molecular-input line-entry system”*, allows you to represent the structure of atomic models using symbols and text (ASCII characters).
+
+
+| Try this formatting at the address below.
+
+```{r, eval=FALSE}
+https://chemapps.stolaf.edu/jmol/jmol.php?model=C
+```
+
+
+| Then replace the *model* in the *link*, *“model=”* with the following *SMILES* codes, alternatively:
+```{r, eval=FALSE}
+
+1. Single bond: CC, CN, CO
+2. Double bond: C=C, C=N, C=O
+3. Triple bond: N%23N, CC%23C
+
+Note: the code for the triple bond is intended to bypass the *SMILES* command, *“#”*, which is interpreted differently in internet addresses.
+```
+
 
 ## Displaying models:
 

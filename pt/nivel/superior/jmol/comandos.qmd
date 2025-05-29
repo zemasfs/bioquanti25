@@ -94,6 +94,30 @@ Separados: load files "1a2t.pdb" "1aay.pdb"
 Juntos: load append "1a2t.pdb" "1aay.pdb"
 ```
 
+
+## Construindo moléculas simples por SMILES
+
+|   *SMILES*, uma abreviação para *"Simplified molecular-input line-entry system"*, permite representar a estrutura de modelos atômicos utilizando-se símbolos e texto (caracteres ASCII).
+
+
+|   Experimente essa formatação no endereço abaixo. 
+
+```{r, eval=FALSE}
+https://chemapps.stolaf.edu/jmol/jmol.php?model=C
+```
+
+
+|   Em seguida, substitua o *modelo* do *link*,  *"model="* pelos códigos *SMILES* que seguem, alternativamente:
+```{r, eval=FALSE}
+
+1. Ligação simples: CC, CN, CO
+2. Ligação dupla: C=C, C=N, C=O
+3. Ligação tripla: N%23N, CC%23C
+
+Obs: o código para a ligação tripla visa contornar o comando do *SMILES*, *"#"*, e que é interpretado de modo diferente em endereço de internet.
+```
+
+
 ## Visualizando os modelos:
 
 ``` {r, eval=FALSE}        

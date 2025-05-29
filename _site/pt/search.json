@@ -4281,5 +4281,12 @@
       "JSPlotly & GSPlotly - Simulação gráfica interativa & IA",
       "Simulações na Escola"
     ]
+  },
+  {
+    "objectID": "nivel/superior/jmol/comandos.html#construindo-moléculas-simples-por-smiles",
+    "href": "nivel/superior/jmol/comandos.html#construindo-moléculas-simples-por-smiles",
+    "title": "Comandos",
+    "section": "Construindo moléculas simples por SMILES",
+    "text": "Construindo moléculas simples por SMILES\n  SMILES, uma abreviação para “Simplified molecular-input line-entry system”, permite representar a estrutura de modelos atômicos utilizando-se símbolos e texto (caracteres ASCII).\n  Experimente essa formatação no endereço abaixo.\n\nhttps://chemapps.stolaf.edu/jmol/jmol.php?model=C\n\n  Em seguida, substitua o modelo do link, “model=” pelos códigos SMILES que seguem, alternativamente:\n\n1. Ligação simples: CC, CN, CO\n2. Ligação dupla: C=C, C=N, C=O\n3. Ligação tripla: N%23N, CC%23C\n\nObs: o código para a ligação tripla visa contornar o comando do *SMILES*, *\"#\"*, e que é interpretado de modo diferente em endereço de internet."
   }
 ]

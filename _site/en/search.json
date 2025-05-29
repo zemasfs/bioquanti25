@@ -4251,5 +4251,12 @@
     "title": "Contact",
     "section": "",
     "text": "José Maurício Schneedorf Ferreira da Silva (Full Professor, Biochemistry Dept.)\n\nemail: jose.dasilva@unifal-mg.edu.br\nPhone: 55 - (35) - 3291-1928\nAddress: Department of Biochemistry, Institute of Biomedical Sciences, Federal University of Alfenas, UNIFAL-MG. Building E, room 209. Alfenas, MG. Zip code: ‘37.130-001’, Brazil\n\n\n\n\n\n\n\n\n\n Site under Creative Commons license CC BY-NC-ND 4.0\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "nivel/superior/jmol/comandos_en.html#building-simple-molecules-using-smiles",
+    "href": "nivel/superior/jmol/comandos_en.html#building-simple-molecules-using-smiles",
+    "title": "Commands",
+    "section": "Building simple molecules using SMILES",
+    "text": "Building simple molecules using SMILES\nSMILES, an abbreviation for “Simplified molecular-input line-entry system”, allows you to represent the structure of atomic models using symbols and text (ASCII characters).\nTry this formatting at the address below.\n\nhttps://chemapps.stolaf.edu/jmol/jmol.php?model=C\n\nThen replace the model in the link, “model=” with the following SMILES codes, alternatively:\n\n1. Single bond: CC, CN, CO\n2. Double bond: C=C, C=N, C=O\n3. Triple bond: N%23N, CC%23C\n\nNote: the code for the triple bond is intended to bypass the *SMILES* command, *“#”*, which is interpreted differently in internet addresses."
   }
 ]
