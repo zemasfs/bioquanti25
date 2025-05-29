@@ -31,7 +31,7 @@ lang: pt
 <p><strong>Hidróxido de sódio:</strong> base forte usada na fabricação de sabões, papel, tecidos e na limpeza industrial.</p>
 
 <a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=NH4OH">
-  <img src="hidróxido de amonio.png" alt="Hidróxido de amônio" style="max-width: 150px; height: auto;">
+  <img src="NH4OH.png" alt="Hidróxido de amônio" style="max-width: 150px; height: auto;">
 </a>
 <p><strong>Hidróxido de amônio:</strong> formado ao se dissolver amônia em água. Usado em produtos de limpeza e fertilizantes.</p>
 
@@ -41,8 +41,8 @@ lang: pt
 
 <div class="sais d-flex flex-wrap justify-content-center gap-4">
 
-<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=nacl">
-  <img src="cloreto de sodio.png" alt="Cloreto de sódio" style="max-width: 150px; height: auto;">
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?script=Console&source=https://bioquanti.netlify.app/en/nivel/basico/jardim/NaCl.png">
+  <img src="NaCl.png" alt="Cloreto de sódio" style="max-width: 150px; height: auto;">
 </a>
 <p><strong>Cloreto de sódio:</strong> o sal de cozinha. Essencial para a vida e usado em processos químicos industriais.</p>
 

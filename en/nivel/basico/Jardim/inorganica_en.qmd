@@ -42,7 +42,7 @@ lang: pt
 <div class="sais d-flex flex-wrap justify-content-center gap-4">
 
 <a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=nacl">
-  <img src="cloreto de sodio.png" alt="Cloreto de sódio" style="max-width: 150px; height: auto;">
+  <img src="NaCl.png" alt="Cloreto de sódio" style="max-width: 150px; height: auto;">
 </a>
 <p><strong>Sodium chloride: </strong> able salt. Essential for life and used in industrial chemical processes.</p>
 
