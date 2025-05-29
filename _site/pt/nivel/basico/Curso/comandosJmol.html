@@ -338,6 +338,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
   <li><a href="#como-carregar-uma-molécula-no-jsmol" id="toc-como-carregar-uma-molécula-no-jsmol" class="nav-link active" data-scroll-target="#como-carregar-uma-molécula-no-jsmol">Como carregar uma molécula no JSmol</a>
   <ul class="collapse">
   <li><a href="#carregando-a-molécula-com-o-mouse" id="toc-carregando-a-molécula-com-o-mouse" class="nav-link" data-scroll-target="#carregando-a-molécula-com-o-mouse">Carregando a molécula com o <em>mouse</em></a></li>
+  <li><a href="#construindo-a-molécula-por-smiles" id="toc-construindo-a-molécula-por-smiles" class="nav-link" data-scroll-target="#construindo-a-molécula-por-smiles">Construindo a molécula por SMILES</a></li>
   <li><a href="#carregando-biopolímeros-proteínas-enzimas-ácidos-nucleicos-por-linha-de-comando" id="toc-carregando-biopolímeros-proteínas-enzimas-ácidos-nucleicos-por-linha-de-comando" class="nav-link" data-scroll-target="#carregando-biopolímeros-proteínas-enzimas-ácidos-nucleicos-por-linha-de-comando">Carregando biopolímeros (proteínas, enzimas, ácidos nucleicos) por linha de comando</a></li>
   </ul></li>
   </ul>
@@ -432,31 +433,47 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Você pode tentar com outras moléculas, como <em>aspirin</em>, <em>cholesterol</em>, <em>phenol</em> etc (nomes em inglês, por conta do banco de dados). Para recuperar uma linha de comando que foi escrita antes, basta <em>navegar entre os comandos que foram utilizados com as setas para cima e para baixo do teclado (histórico de comandos)</em>.</div>
 <p>Os modelos moleculares são carregados a partir do banco de dados <a href="https://cactus.nci.nih.gov/chemical/structure">Cactus - CADD Group Chemoinformatics Tools and User Services</a>.</p>
 </section>
+<section id="construindo-a-molécula-por-smiles" class="level3">
+<h3 class="anchored" data-anchor-id="construindo-a-molécula-por-smiles">Construindo a molécula por SMILES</h3>
+<div class="line-block">&nbsp;&nbsp;Não, não é a tradução literal para <em>“sorrisos”</em>, e sim uma codificação de estruturas para texto. Nessa formatação, dá pra carregar uma molécula por códigos <em>SMILES</em>, e o sistema preenche com átomos de hidrogênio complementares.</div>
+<div class="line-block">&nbsp;&nbsp;Experimente essa formatação no endereço abaixo.</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>https<span class="sc">:</span><span class="er">//</span>chemapps.stolaf.edu<span class="sc">/</span>jmol<span class="sc">/</span>jmol.php?model<span class="ot">=</span>C</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="line-block">&nbsp;&nbsp;Em seguida, substitua o <em>modelo</em> do <em>link</em>, <em>“model=”</em> pelos códigos <em>SMILES</em> que seguem, alternativamente:</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Ligação simples<span class="sc">:</span> CC, CN, CO</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Ligação dupla<span class="sc">:</span> C<span class="ot">=</span>C, C<span class="ot">=</span>N, C<span class="ot">=</span>O</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Ligação tripla<span class="sc">:</span> N<span class="sc">%23N, CC%</span><span class="dv">23</span>C</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>Obs<span class="sc">:</span> Apesar de parecer <span class="fu">estranho</span> (e é <span class="sc">!</span>), o código para a ligação tripla visa contornar o comando do <span class="sc">*</span>SMILES<span class="sc">*</span>, <span class="sc">*</span><span class="st">"#"</span><span class="sc">*</span>, e que é interpretado de modo diferente em endereço de internet.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
 <section id="carregando-biopolímeros-proteínas-enzimas-ácidos-nucleicos-por-linha-de-comando" class="level3">
 <h3 class="anchored" data-anchor-id="carregando-biopolímeros-proteínas-enzimas-ácidos-nucleicos-por-linha-de-comando">Carregando biopolímeros (proteínas, enzimas, ácidos nucleicos) por linha de comando</h3>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Como mecionado acima, o carregamento de macromoléculas biológicas dá-se por identificação de um código alfanumérico da mesma frente ao banco de dados <a href="https://www.rcsb.org/">PDB-Protein Data Bank</a>. Após obter esse código, você poderá carregar o biopolímero pelo <em>link online</em> ou pelo <em>Console</em>. Mas saiba que são instruções diferentes (e não me pergunte por quê?!):</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>Pelo Console<span class="sc">:</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  load<span class="ot">=</span>XXXX <span class="co"># onde XXXX é o código da macromolécula</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Obs: Perceba que o sinal de "$" é trocado por "=" para o PDB</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>Pelo link online<span class="sc">:</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  pdbid<span class="ot">=</span>XXXX</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Obs: Como para o link é mais "truquento", segue um exemplo completo para a bungarotoxina, um veneno proteico de serpentes:</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co">#      https://chemapps.stolaf.edu/jmol/jmol.php?&amp;pdbid=1ik8</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>Pelo Console<span class="sc">:</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  load<span class="ot">=</span>XXXX <span class="co"># onde XXXX é o código da macromolécula</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Obs: Perceba que o sinal de "$" é trocado por "=" para o PDB</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>Pelo link online<span class="sc">:</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  pdbid<span class="ot">=</span>XXXX</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Obs: Como para o link é mais "truquento", segue um exemplo completo para a bungarotoxina, um veneno proteico de serpentes:</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co">#      https://chemapps.stolaf.edu/jmol/jmol.php?&amp;pdbid=1ik8</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Isso pode ser ilustrado por carregamento remoto da proteína espícula (<em>spike</em>) do vírus Sars-Cov-2, tal como segue:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Entre no site do PDB<span class="sc">-</span>Protein Data Bank <span class="sc">-</span> https<span class="sc">:</span><span class="er">//</span>www.rcsb.org<span class="sc">/</span> ; </span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> No campo de busca, digite <span class="st">"spike sars-cov-2"</span> ;</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Selecione a <span class="dv">1</span>a opção (o site vai direcionar para várias estruturas da proteína espícula) ;</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fl">4.</span> Memorize o código da <span class="dv">1</span>a. opção (embora qualquer uma também sirva), ou seja, <span class="st">"7FCD"</span> ;</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fl">5.</span> Digite a linha para carregar a proteína<span class="sc">:</span> <span class="st">"load=7FCD"</span> (tanto faz se maiúsculas ou minúsculas)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Entre no site do PDB<span class="sc">-</span>Protein Data Bank <span class="sc">-</span> https<span class="sc">:</span><span class="er">//</span>www.rcsb.org<span class="sc">/</span> ; </span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> No campo de busca, digite <span class="st">"spike sars-cov-2"</span> ;</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Selecione a <span class="dv">1</span>a opção (o site vai direcionar para várias estruturas da proteína espícula) ;</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="fl">4.</span> Memorize o código da <span class="dv">1</span>a. opção (embora qualquer uma também sirva), ou seja, <span class="st">"7FCD"</span> ;</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="fl">5.</span> Digite a linha para carregar a proteína<span class="sc">:</span> <span class="st">"load=7FCD"</span> (tanto faz se maiúsculas ou minúsculas)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A representação padrão para proteínas no <em>Jmol</em> é a de arame (“<em>wireframe</em>”). Para visualizar a proteína do vírus de modo mais “amigável” e semelhante ao que aparece em textos ou na internet, digite os comandos abaixo, sua <strong>primeira sequência em linguagem de programação</strong>.</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>cartoon only  <span class="co"># representação exclusiva de desenho da estrutura de biopolímeros</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>color chain <span class="co">#  coloração por "cadeias" da proteína</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>cartoon only  <span class="co"># representação exclusiva de desenho da estrutura de biopolímeros</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>color chain <span class="co">#  coloração por "cadeias" da proteína</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">

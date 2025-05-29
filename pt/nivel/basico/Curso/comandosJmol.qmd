@@ -92,6 +92,29 @@ load $alkane
 Os modelos moleculares são carregados a partir do banco de dados [Cactus - CADD Group Chemoinformatics Tools and User Services](https://cactus.nci.nih.gov/chemical/structure).
 
 
+### Construindo a molécula por SMILES
+
+|   Não, não é a tradução literal para *"sorrisos"*, e sim uma codificação de estruturas para texto. Nessa formatação, dá pra carregar uma molécula por códigos *SMILES*, e o sistema preenche com átomos de hidrogênio complementares. 
+
+
+|   Experimente essa formatação no endereço abaixo. 
+
+```{r, eval=FALSE}
+https://chemapps.stolaf.edu/jmol/jmol.php?model=C
+```
+
+
+|   Em seguida, substitua o *modelo* do *link*,  *"model="* pelos códigos *SMILES* que seguem, alternativamente:
+```{r, eval=FALSE}
+
+1. Ligação simples: CC, CN, CO
+2. Ligação dupla: C=C, C=N, C=O
+3. Ligação tripla: N%23N, CC%23C
+
+Obs: Apesar de parecer estranho (e é !), o código para a ligação tripla visa contornar o comando do *SMILES*, *"#"*, e que é interpretado de modo diferente em endereço de internet.
+```
+
+
 ### Carregando biopolímeros (proteínas, enzimas, ácidos nucleicos) por linha de comando
 
 |       Como mecionado acima, o carregamento de macromoléculas biológicas dá-se por identificação de um código alfanumérico da mesma frente ao banco de dados [PDB-Protein Data Bank](https://www.rcsb.org/). Após obter esse código, você poderá carregar o biopolímero pelo  *link online* ou pelo *Console*. Mas saiba que são instruções diferentes (e não me pergunte por quê?!):

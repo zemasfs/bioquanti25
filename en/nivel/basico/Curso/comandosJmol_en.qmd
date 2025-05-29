@@ -89,7 +89,31 @@ load $alkane
 
 | You can try with other molecules, such as *aspirin*, *cholesterol*, *phenol*, etc. (names in English, due to the database). To retrieve a command line that was written previously, simply *navigate between the commands that were used with the up and down arrows on the keyboard (command history)*.
 
-Molecular models are loaded from the database [Cactus - CADD Group Chemoinformatics Tools and User Services](https://cactus.nci.nih.gov/chemical/structure).
+Molecular models are loaded from the database [Cactus - CADD Group Chemoinformatics Tools and User Services](https://cactus.nci.nih.gov/chemical/structure)
+
+
+### Building the molecule using SMILES
+
+| No, it is not a literal translation of *“smiles”*, but rather a coding of structures for text. In this format, you can load a molecule using *SMILES* codes, and the system fills in the complementary hydrogen atoms. 
+
+
+| Try this formatting at the address below. 
+
+```{r, eval=FALSE}
+https://chemapps.stolaf.edu/jmol/jmol.php?model=C
+```
+
+
+| Then replace the *model* of the *link*, *“model=”* with the following *SMILES* codes, alternatively:
+```{r, eval=FALSE}
+
+1. Single bond: CC, CN, CO
+2. Double bond: C=C, C=N, C=O
+3. Triple bond: N%23N, CC%23C
+
+Note: Although it seems strange (and it is!), the code for the triple bond is intended to circumvent the *SMILES* command, *“#”*, which is interpreted differently in internet addresses.
+```
+
 
 
 ### Loading biopolymers (proteins, enzymes, nucleic acids) via command line
