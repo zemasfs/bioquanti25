@@ -62,9 +62,9 @@ lang: pt
 </a>
 <p><strong>Carbon dioxide:</strong> gas produced during respiration and the burning of fuels. Used in fire extinguishers and carbonated beverages.
 
-<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=cao">
-<img src="oxidoCa.png" alt="Calcium oxide" style="max-width: 150px; height: auto;">
-</a>
-<p><strong>Calcium oxide:</strong> known as quicklime. Used in construction and to correct soil pH.
+<!-- <a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=cao"> -->
+<!-- <img src="oxidoCa.png" alt="Calcium oxide" style="max-width: 150px; height: auto;"> -->
+<!-- </a> -->
+<!-- <p><strong>Calcium oxide:</strong> known as quicklime. Used in construction and to correct soil pH. -->
 
 </div>
