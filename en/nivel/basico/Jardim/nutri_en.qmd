@@ -12,17 +12,17 @@ lang: pt
 </a>
 <p><strong>Curcumin:</strong> yellow pigment found in turmeric. Acts as a natural antioxidant and anti-inflammatory.</p>
 
-<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=">
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?script=Console&source=https://bioquanti.netlify.app/pt/nivel/basico/jardim/betacaroteno.png">
   <img src="bcaroteno.png" alt="Betacaroteno" style="max-width: 150px; height: auto;">
 </a>
 <p><strong>Beta-carotene:</strong> orange pigment found in carrots. It is a precursor to vitamin A and important for vision and immunity.</p>
 
-<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CC(=CCC/C(=C/C=C/C(=C/C=C/C(=C/C=C/C=C(/C=C/C=C(/C=C/C=C(/CCC=C(C)C)\\C)\\C)\\C)/C)/C)/C)C">
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?script=Console&source=https://bioquanti.netlify.app/en/nivel/basico/jardim/licopeno.png">
   <img src="licopeno.png" alt="Licopeno" style="max-width: 150px; height: auto;">
 </a>
 <p><strong>Lycopene:</strong> red pigment found in tomatoes. Acts as an antioxidant, helping to protect cells.</p>
 
-<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CCC1=C(C2=NC1=CC3=C(C4=C(C(C(=C4%5BN-%5D3)C5=NC(=CC6=NC(=C2)C(=C6C)C=C)C(C5CCC(=O)OCC=C(C)CCCC(C)CCCC(C)CCCC(C)C)C)C(=O)OC)%5BO-%5D)C)C.%5BMg+2%5D">
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?script=Console&source=https://bioquanti.netlify.app/en/nivel/basico/jardim/clorofila.png">
   <img src="clorofila.png" alt="Clorofila" style="max-width: 150px; height: auto;">
 </a>
 <p><strong>Chlorophyll:</strong> green pigment found in plants, essential for photosynthesis. It also has antioxidant and detoxifying properties.</p>

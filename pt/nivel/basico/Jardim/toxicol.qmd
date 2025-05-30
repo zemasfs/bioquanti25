@@ -12,10 +12,10 @@ lang: pt
 </a>
 <p><strong>Formaldeído:</strong> substância de uso industrial e laboratorial com potencial cancerígeno. É usada na conservação de tecidos biológicos.</p>
 
-<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=%5BHg%5D">
-  <img src="Mercúrio.png" alt="Mercúrio" style="max-width: 150px; height: auto;">
-</a>
-<p><strong>Mercúrio (Hg):</strong> metal tóxico com efeito cumulativo. Pode causar danos ao sistema nervoso e aos rins.</p>
+<!-- <a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=%5BHg%5D"> -->
+<!--   <img src="Mercúrio.png" alt="Mercúrio" style="max-width: 150px; height: auto;"> -->
+<!-- </a> -->
+<!-- <p><strong>Mercúrio (Hg):</strong> metal tóxico com efeito cumulativo. Pode causar danos ao sistema nervoso e aos rins.</p> -->
 
 <a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=%5BPb%5D">
   <img src="chumbo.png" alt="Chumbo" style="max-width: 150px; height: auto;">

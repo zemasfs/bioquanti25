@@ -28,3 +28,4 @@ lang: pt
 <p><strong>Atorvastatina:</strong> reduz os níveis de colesterol no sangue e ajuda na prevenção de doenças cardiovasculares.</p>
 
 </div>
+
