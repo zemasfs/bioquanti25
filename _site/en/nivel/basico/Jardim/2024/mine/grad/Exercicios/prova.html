@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Biomolecules</title>
+<title>prova</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../../">
-<link href="../../../avatar.png" rel="icon" type="image/png">
-<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7b4406b7675125bc2ba204020e191172.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-4b957b30fffc5edb70387ff4d75203a6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../../../../">
+<link href="../../../../../../../avatar.png" rel="icon" type="image/png">
+<script src="../../../../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../../../../site_libs/quarto-html/quarto-syntax-highlighting-7b4406b7675125bc2ba204020e191172.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../../../../site_libs/bootstrap/bootstrap-4b957b30fffc5edb70387ff4d75203a6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -78,8 +78,37 @@ gtag('js', new Date());
 gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="../../../styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../../../../../styles.css">
 </head>
 
 <body class="nav-sidebar floating nav-fixed fullcontent quarto-light">
@@ -89,8 +118,8 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../../logo-bioquanti.png" alt="" class="navbar-logo">
+    <a href="../../../../../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../../../../../logo-bioquanti.png" alt="" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -100,11 +129,11 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../index.html"> 
+    <a class="nav-link" href="../../../../../../../index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../erre_en.html"> 
+    <a class="nav-link" href="../../../../../../../erre_en.html"> 
 <span class="menu-text">Reproducible Teaching</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -113,31 +142,31 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-cheatsheets">    
         <li>
-    <a class="dropdown-item" href="../../../cheatsheet/plotly.pdf">
+    <a class="dropdown-item" href="../../../../../../../cheatsheet/plotly.pdf">
  <span class="dropdown-text">Plotly</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../cheatsheet/jmol_cheat.pt.pdf">
+    <a class="dropdown-item" href="../../../../../../../cheatsheet/jmol_cheat.pt.pdf">
  <span class="dropdown-text">Jmol</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../cheatsheet/r_cheat.pt.pdf">
+    <a class="dropdown-item" href="../../../../../../../cheatsheet/r_cheat.pt.pdf">
  <span class="dropdown-text">R</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../../producao_en.html"> 
+    <a class="nav-link" href="../../../../../../../producao_en.html"> 
 <span class="menu-text">Works</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../contato_en.html"> 
+    <a class="nav-link" href="../../../../../../../contato_en.html"> 
 <span class="menu-text">Contact</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../../pt/index.html"> 
+    <a class="nav-link" href="../../../../../../../../pt/index.html"> 
 <span class="menu-text">PT</span></a>
   </li>  
 </ul>
@@ -158,7 +187,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Biomolecules</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -181,25 +210,25 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../nivel/superior/jsplotly/jsplotly_geral_en.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../../../../nivel/superior/jsplotly/jsplotly_geral_en.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">JSPlotly - Graphical simulation with JavaScript</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../nivel/superior/jsplotly/gsplotly_en.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../../../../nivel/superior/jsplotly/gsplotly_en.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">GSPlotly - AI code generator for JSPlotly</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../nivel/superior/jsplotly/jsptl_bioq_en.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../../../../nivel/superior/jsplotly/jsptl_bioq_en.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Simulations in Biophysical Chemistry</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../nivel/basico/jsplotly/jsplotly_bas_en.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../../../../nivel/basico/jsplotly/jsplotly_bas_en.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Simulations at School</span></a>
   </div>
 </li>
@@ -216,19 +245,19 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../nivel/superior/jmol/index_jmol_en.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../../../../nivel/superior/jmol/index_jmol_en.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Atomic models in Biochemistry</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../nivel/basico/Curso/index_jmol_bas_en.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../../../../nivel/basico/Curso/index_jmol_bas_en.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">3D molecules at School</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../nivel/basico/Jardim/index_Jardim_en.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../../../../nivel/basico/Jardim/index_Jardim_en.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">A Molecule Garden</span></a>
   </div>
 </li>
@@ -245,25 +274,25 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../nivel/superior/r/index_r_en.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../../../../nivel/superior/r/index_r_en.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">R in Biophysical Chemistry</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../nivel/superior/ScriptRplot/scriptrplot_en.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../../../../nivel/superior/ScriptRplot/scriptrplot_en.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">scriptRplot: elegant graphics with ggplot2</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../nivel/basico/Curso/index_r_bas_en.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../../../../nivel/basico/Curso/index_r_bas_en.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">R &amp; RStudio at School</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../nivel/basico/R/index_OIER_en.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../../../../nivel/basico/R/index_OIER_en.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Interactive charts and maps at School</span></a>
   </div>
 </li>
@@ -280,13 +309,13 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../nivel/superior/sisma/index_sisma_en.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../../../../nivel/superior/sisma/index_sisma_en.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Dynamic flows in Biochemistry</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../nivel/basico/sisma/index_sisma_bas_en.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../../../../nivel/basico/sisma/index_sisma_bas_en.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Interactive diagrams at School</span></a>
   </div>
 </li>
@@ -299,47 +328,126 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Biomolecules</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section"><img src="unifal.png" class="img-fluid"></h2>
+</section>
+<section id="format-html" class="level2">
+<h2 class="anchored" data-anchor-id="format-html">format: html</h2>
+</section>
+<section id="exercícios-de-bioquímica-de-água-à-inibição-enzimática" class="level2">
+<h2 class="anchored" data-anchor-id="exercícios-de-bioquímica-de-água-à-inibição-enzimática">Exercícios de Bioquímica: de Água à Inibição Enzimática</h2>
+<section id="as-repostas-estão-sugeridas-para-raciocínio-junto-aos-capítulos-do-ebook-bioquímica-básica-de-gente-de-bicho-e-de-planta-httpsbioquanti.netlify.app" class="level5">
+<h5 class="anchored" data-anchor-id="as-repostas-estão-sugeridas-para-raciocínio-junto-aos-capítulos-do-ebook-bioquímica-básica-de-gente-de-bicho-e-de-planta-httpsbioquanti.netlify.app">As repostas estão sugeridas para raciocínio junto aos capítulos do <em>ebook</em> <a href="https://bioquanti.netlify.app/">Bioquímica básica, de gente, de bicho, e de planta</a> (https://bioquanti.netlify.app/)</h5>
+<table class="caption-top table">
+<caption>Valores de pKa de aminoácidos.</caption>
+<thead>
+<tr class="header">
+<th>Grupo</th>
+<th>COOH-t</th>
+<th>Asp</th>
+<th>Glu</th>
+<th>His</th>
+<th>Cys</th>
+<th>Lys</th>
+<th>NH2-t</th>
+<th>Tyr</th>
+<th>Arg</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>pKa</td>
+<td>2,1</td>
+<td>3,9</td>
+<td>4,1</td>
+<td>6,0</td>
+<td>8,1</td>
+<td>10,5</td>
+<td>9,5</td>
+<td>10,4</td>
+<td>12,5</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="questões" class="level2">
+<h2 class="anchored" data-anchor-id="questões">Questões</h2>
+<ol type="1">
+<li>Em relação ao composto abaixo:</li>
+</ol>
+<p><img src="solub.png" class="img-fluid" style="width:30.0%"></p>
+<ol type="a">
+<li><p>Faça um círculo nas funções químicas que conferem solubilidade sanguínea. <em>R: Identifique grupos que interajam com a água - veja em Funções Químicas (ebook).</em></p></li>
+<li><p>Mencione duas forças fracas de maior significância para sua solubilidade. <em>R: Lembre-se que existem 4 forças fracas principais - veja em Proteínas (ebook).</em></p></li>
+<li><p>Sabendo-se que esse composto possui um valor de pKa=4,1 para ácido carboxílico, justifique o seu estado de ionização no sangue (ionizado ou neutro). <em>R: Lembre-se que pKa mais baixo que pH sugere protonação do composto.</em></p></li>
+</ol>
+<ol start="2" type="1">
+<li><p>Por quê a expiração pulmonar pode reduzir a acidez do organismo ? <em>R: Veja em pH e Solução Tampão (ebook)</em></p></li>
+<li><p>Mencione dois derivados metabólicos de aminoácidos que contenham Trp, e explique o papel de cada um desses derivados no organismo. <em>R: Veja em Aminoácidos (ebook).</em></p></li>
+<li><p>Assinale V para Verdadeiro e F para Falso nas frases que seguem, justificando essas últimas:</p></li>
+</ol>
+<p>(___) A interação hidrofóbica permite que radicais arila se liguem a compostos iônicos. <em>R: Veja em Proteínas (ebook)</em></p>
+<p>(___) Quanto menor o valor de pKa, mais protonado estará o composto. <em>R: Veja em pH e Solução Tampão (ebook)</em></p>
+<p>(___) O ácido lático (pKa=3,5) é mais forte que o ácido pirúvico (pKa=2,7) no organismo.<em>R: Veja em pH e Solução Tampão (ebook)</em></p>
+<p>(___) A rotação da ligação peptídica ajuda a conferir flexibilidade estrutural às proteínas. <em>R: Veja em Peptídios (ebook)</em></p>
+<ol start="4" type="1">
+<li>O peptídio <em>Rad51</em> está envolvido na interação da proteína de supressão tumoral <em>p53</em>. Dadas as sequências de duas variantes do peptídio abaixo:</li>
+</ol>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NH2-t-Met-Phe-Gly-Glu-Phe-Arg-Thr-Gly-Lys-COOH-t (<em>peptídio Rad51-A</em>)</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NH2-t-Ser-Phe-Gly-Glu-Asp-Lys-Thr-Glu-Lys-COOH-t (<em>peptídio Rad51-B</em>)</div>
+<ol type="a">
+<li>Calcule o valor da rede de carga líquida para o peptídio RAd51B. <em>R: Vide tabela dada acima, exercícios de sala de aula e Aminoácidos (ebook)</em></li>
+<li>A estrutura dos peptídios sugere que sejam solúveis em água ou não ? Justifique. <em>R: Observe as cadeias laterais e veja em Aminoácidos (ebook)</em></li>
+<li>Considerando o valor de <em>pI</em>, ponto isoelétrico, para a proteína <em>p53</em> de 6,0, justifique se ela poderá interagir eletrostaticamente com uma proteína catiônica em pH fisiológico. <em>R: Veja em pH e Solução Tampão (ebook)</em></li>
+</ol>
+<ol start="5" type="1">
+<li>Descreva os tipos de ligação covalente naturalmente existentes nas proteínas. <em>R: Veja em Proteínas (ebook)</em></li>
+<li>Descreva a hierarquia estrutural da <em>depolimerase PHB</em> abaixo. <em>R: Veja em Proteínas (ebook)</em></li>
+</ol>
+<p><img src="insulin.png" class="img-fluid" style="width:30.0%"></p>
+<ol start="7" type="1">
+<li>Mencione três propriedades da <em>ligação peptídica</em>. <em>R: Veja em Peptídios (ebook)</em></li>
+<li>Desenhe um gráfico que contenha as curvas para duas enzimas: uma com alto <em>Km</em> e baixo <em>Vmax</em>, e outra com baixo <em>Km</em> e baixo <em>Vmax.</em> <em>R: Veja em Enzimas (ebook)</em></li>
+<li>Dados os valores catalíticos encontrados para a enzima selvagem e mutante da <em>depolimerase PHB</em>, a partir da modificação de um resíduo do sítio ativo indicado na tabela abaixo, justifique: <em>R: Para esta questão vide exercícios em sala de aula</em></li>
+</ol>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Enzimas</th>
+<th>Km, <span class="math inline">\(\mu\)</span>M</th>
+<th>kcat, <span class="math inline">\(\mu\)</span>M/min</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>PHB-His35 selvagem</td>
+<td>10</td>
+<td>140</td>
+</tr>
+<tr class="even">
+<td>PHB-Lys35 mutante</td>
+<td>7</td>
+<td>80</td>
+</tr>
+</tbody>
+</table>
+<ol type="a">
+<li>Qual a enzima com melhor performance catalítica.</li>
+<li>Qual característica foi mais significativa para a sua conclusão, a formação do complexo E*S, ou a hidrólise do substrato ?</li>
+</ol>
+<ol start="10" type="1">
+<li><p>Explique porque é bem mais complexo produzir um <em>inibidor incompetitivo</em> para um alvo enzimático, do que um <em>inibidor competitivo</em>. <em>R: Procure sobre a natureza de ligação dos dois tipos de inibidores</em></p></li>
+<li><p>Justifique porque um inibidor competitivo apresenta o mesmo valor de intercepto no eixo das ordenadas de um gráfico duplo-recíproco para a catálise realizada na sua ausência. <em>R: Veja o que representa esse valor de intercepto</em></p></li>
+</ol>
 
 
-</header>
-
-
-<div class="biomoleculas d-flex flex-wrap justify-content-center gap-4">
-<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=C1=CC(=CC=C1C%5BC@@H%5D(C(=O)O)N)O"> <img src="tirosina.png" alt="Tirosina" style="max-width: 150px; height: auto;"> </a>
-<p>
-<strong>Tyrosine:</strong> amino acid used in the synthesis of neurotransmitters such as dopamine and adrenaline.
-</p>
-<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=C(%5BC@@H%5D1%5BC@H%5D(%5BC@@H%5D(%5BC@H%5D(C(O1)O)O)O)O)O"> <img src="glicose.png" alt="Glicose" style="max-width: 150px; height: auto;"> </a>
-<p>
-<strong>Glucose:</strong> carbohydrate essential for energy metabolism. Provides energy for cells.
-</p>
-<a href="https://chemapps.stolaf.edu/jmol/jmol.php?script=Console&amp;source=https://bioquanti.netlify.app/en/nivel/basico/jardim/lecitina.png"> <img src="lecitina.png" alt="Lecitina" style="max-width: 150px; height: auto;"> </a>
-<p>
-<strong>Lecithin:</strong> phospholipid with a natural emulsifying function. Used in the food and pharmaceutical industries.
-</p>
-<a href="https://chemapps.stolaf.edu/jmol/jmol.php?&amp;pdbid=3i40"> <img src="insulina.png" alt="Insulina" style="max-width: 150px; height: auto;"> </a>
-<p>
-<strong>Insulin:</strong> hormone that regulates blood glucose. Stimulates the entry of glucose into cells.
-</p>
-</div>
-
-
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

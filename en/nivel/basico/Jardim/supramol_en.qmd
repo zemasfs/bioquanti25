@@ -7,7 +7,7 @@ lang: pt
 
 <div class="supramoleculares d-flex flex-wrap justify-content-center gap-4">
 
-<a href="https://chemapps.stolaf.edu/jmol/jmol.php?script=Console&source=https://errre.netlify.app/Portfolio/Jardim/ny6.png">
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?script=Console&source=https://bioquanti.netlify.app/en/nivel/basico/jardim/ny6.png">
   <img src="ny6.png" alt="Nylon 66" style="max-width: 150px; height: auto;">
 </a>
 <p><strong>Nylon 66:</strong> synthetic polymer formed by chains of polyamides, similar to natural proteins. It is used in fabrics, brushes, and plastic parts.</p>

@@ -22,7 +22,7 @@ lang: pt
 </a>
 <p><strong>Warfarina:</strong> anticoagulante usado na prevenção de coágulos e embolias. Requer controle médico rigoroso.</p>
 
-<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CC(C)C1=C(C(=C(N1CC%5BC@H%5D(C%5BC@H%5D(CC(=O)O)O)O)C2=CC=C(C=C2)F)C3=CC=CC=C3)C(=O)NC4=CC=CC=C4">
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?script=Console&source=https://bioquanti.netlify.app/en/nivel/basico/jardim/atorvastatina.png">
   <img src="Atorvastatina.png" alt="Atorvastatina" style="max-width: 150px; height: auto;">
 </a>
 <p><strong>Atorvastatina:</strong> reduz os níveis de colesterol no sangue e ajuda na prevenção de doenças cardiovasculares.</p>

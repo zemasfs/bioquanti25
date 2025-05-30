@@ -15,12 +15,12 @@ publish: false
 </a>
 <p><strong>Glicose:</strong> carboidrato fundamental no metabolismo energético. Fornece energia para as células.</p>
 
-<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CCCCCCCCCCCCCCCC(=O)OC%5BC@H%5D(COP(=O)(%5BO-%5D)OCC%5BN+%5D(C)(C)C)OC(=O)CCCCCCC/C=C\\C/C=C\\CCCCC">
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?script=Console&source=https://bioquanti.netlify.app/en/nivel/basico/jardim/lecitina.png">
   <img src="lecitina.png" alt="Lecitina" style="max-width: 150px; height: auto;">
 </a>
 <p><strong>Lecitina:</strong> fosfolipídio com função de emulsificante natural. É usada nas indústrias alimentícia e farmacêutica.</p>
 
-<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=">
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?&pdbid=3i40">
   <img src="insulina.png" alt="Insulina" style="max-width: 150px; height: auto;">
 </a>
 <p><strong>Insulina:</strong> hormônio regulador da glicose no sangue. Estimula a entrada de glicose nas células.</p>
