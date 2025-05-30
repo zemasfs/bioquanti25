@@ -63,7 +63,7 @@ lang: pt
 <p><strong>Dióxido de carbono:</strong> gás gerado na respiração e na queima de combustíveis. Usado em extintores e bebidas gaseificadas.</p>
 
 <a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=cao">
-  <img src="óxido de calcio.png" alt="Óxido de cálcio" style="max-width: 150px; height: auto;">
+  <img src="oxidoCa.png" alt="Óxido de cálcio" style="max-width: 150px; height: auto;">
 </a>
 <p><strong>Óxido de cálcio:</strong> conhecido como cal viva. Usado na construção civil e na correção do pH do solo.</p>
 

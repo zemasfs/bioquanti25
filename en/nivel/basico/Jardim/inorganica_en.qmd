@@ -47,7 +47,7 @@ lang: pt
 <p><strong>Sodium chloride:</strong> table salt. Essential for life and used in industrial chemical processes. </p>
 
 <a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=naclo">
-<img src="Sodium hypochlorite.png" alt="Sodium hypochlorite" style="max-width: 150px; height: auto;">
+<img src="HipocloritoNa.png" alt="Sodium hypochlorite" style="max-width: 150px; height: auto;">
 </a>
 <p><strong>Sodium hypochlorite:</strong> a disinfectant used in water purification and household cleaning. The atoms are represented separately to emphasize the ionic, non-covalent bond. </p>
 
@@ -63,7 +63,7 @@ lang: pt
 <p><strong>Carbon dioxide:</strong> gas produced during respiration and the burning of fuels. Used in fire extinguishers and carbonated beverages.
 
 <a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=cao">
-<img src="calcium oxide.png" alt="Calcium oxide" style="max-width: 150px; height: auto;">
+<img src="oxidoCa.png" alt="Calcium oxide" style="max-width: 150px; height: auto;">
 </a>
 <p><strong>Calcium oxide:</strong> known as quicklime. Used in construction and to correct soil pH.
 
