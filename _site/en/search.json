@@ -4258,5 +4258,17 @@
     "title": "Contact",
     "section": "",
     "text": "José Maurício Schneedorf Ferreira da Silva (Full Professor, Biochemistry Dept.)\n\nemail: jose.dasilva@unifal-mg.edu.br\nPhone: 55 - (35) - 3291-1928\nAddress: Department of Biochemistry, Institute of Biomedical Sciences, Federal University of Alfenas, UNIFAL-MG. Building E, room 209. Alfenas, MG. Zip code: ‘37.130-001’, Brazil\n\n\n\n\n\n\n\n\n\n Site under Creative Commons license CC BY-NC-ND 4.0\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "nivel/superior/jsplotly/jsptl_bioq_en.html#variation-of-gibbs-energy-with-temperature",
+    "href": "nivel/superior/jsplotly/jsptl_bioq_en.html#variation-of-gibbs-energy-with-temperature",
+    "title": "Interactive Simulations for Biophysical Chemistry with JSPlotly & GSPlotly",
+    "section": "10 Variation of Gibbs energy with temperature",
+    "text": "10 Variation of Gibbs energy with temperature\n\nContext:\nThe Gibbs-Helmholtz relation predicts that Gibbs energy varies nonlinearly with temperature in reactions involving a change in the heat capacity of the system (\\(\\Delta\\)Cp). This expanded form of the Gibbs equation for variable heat capacity is found in various biochemical phenomena, such as in the phase transition of biomembrane structures subjected to a compound challenge, or in the conformational change that accompanies the protein structure under heating. \\\n\n\nEquation:\n\\[\n\\Delta G(T) = \\Delta H^\\circ - T\\,\\Delta S^\\circ + \\Delta C_p \\left(T - T_0 - T \\ln\\left(\\frac{T}{T_0}\\right)\\right)\n\\]\nWhere,\n\n\\(\\Delta\\)G(T) = Gibbs energy of the reaction at each temperature value, kJ/mol);\n\\(\\Delta\\)H\\(^{o}\\) = standard enthalpy of the reaction at T\\(_{0}\\), normally 298 K (J/mol);\n\\(\\Delta\\)S\\(^{o}\\) = standard entropy of the reaction at T\\(_{0}\\);\n\\(\\Delta\\)Cp = variation in the heat capacity of the reaction (J/mol·K), assumed to be constant with temperature;\nT = temperature of interest (K);\nT\\(_{0}\\) = reference temperature, usually 298 K.\nR = 8.314 J/mol/K (universal gas constant);\n\n\n\n\nSuggestion:\n\n1. Try varying one or more parameters of the expression;\n2. Test the behavior of the Gibbs curve at a high reference temperature (simulation for extremophile organism);\n3. Simulate the situation where the variation in heat capacity is zero.",
+    "crumbs": [
+      "About",
+      "JSPlotly & GSPlotly - Interactive Graphics & AI",
+      "Simulations in Biophysical Chemistry"
+    ]
   }
 ]

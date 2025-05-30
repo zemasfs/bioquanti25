@@ -372,3 +372,40 @@ $$
 ```{r, eval=FALSE}
 1. Change the quantities involved in the expression and compare with previous visualizations. For example, temperature, pH, and ADP and Pi levels.
 ```
+
+
+## Variation of Gibbs energy with temperature
+
+
+### Context: {.unnumbered}
+
+| The Gibbs-Helmholtz relation predicts that Gibbs energy varies nonlinearly with temperature in reactions involving a change in the heat capacity of the system ($\Delta$Cp). This expanded form of the Gibbs equation for variable heat capacity is found in various biochemical phenomena, such as in the phase transition of biomembrane structures subjected to a compound challenge, or in the conformational change that accompanies the protein structure under heating. \
+
+### Equation: {.unnumbered}
+
+$$
+\Delta G(T) = \Delta H^\circ - T\,\Delta S^\circ + \Delta C_p \left(T - T_0 - T \ln\left(\frac{T}{T_0}\right)\right)
+$$
+
+*Where*,
+
+- $\Delta$G(T) = Gibbs energy of the reaction at each temperature value, kJ/mol);
+- $\Delta$H$^{o}$ = standard enthalpy of the reaction at T$_{0}$, normally 298 K (J/mol);
+- $\Delta$S$^{o}$ = standard entropy of the reaction at T$_{0}$;
+- $\Delta$Cp = variation in the heat capacity of the reaction (J/mol·K), assumed to be constant with temperature;
+- T = temperature of interest (K);
+- T$_{0}$ = reference temperature, usually 298 K.
+- R = 8.314 J/mol/K (universal gas constant);
+
+
+[![](Eq/gibbs.png)](Eq/jsp_gibbs.html){target=“_blank”}
+
+
+
+### Suggestion: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Try varying one or more parameters of the expression;
+2. Test the behavior of the Gibbs curve at a high reference temperature (simulation for extremophile organism);
+3. Simulate the situation where the variation in heat capacity is zero.
+```

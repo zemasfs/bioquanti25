@@ -4288,5 +4288,17 @@
     "title": "",
     "section": "7 GPT personalizado",
     "text": "7 GPT personalizado\n\nSchneedorf, J.M. GSPlotly: gerador de scripts interativos para JSPlotly. OpenAI GPT customizado. Disponível em: https://chat.openai.com/g/g-6819fbb8d2d08191bf7d50a3dbeadb0d-gsplotly. Acesso em: 11 maio 2025."
+  },
+  {
+    "objectID": "nivel/superior/jsplotly/jsplt_bioq.html#variação-da-energia-de-gibbs-com-a-temperatura",
+    "href": "nivel/superior/jsplotly/jsplt_bioq.html#variação-da-energia-de-gibbs-com-a-temperatura",
+    "title": "Simulações Interativas Para Biofísico-química com JSPlotly & GSPlotly",
+    "section": "10 Variação da energia de Gibbs com a temperatura",
+    "text": "10 Variação da energia de Gibbs com a temperatura\n\nContexto:\n  A relação de Gibbs-Helmholtz prevê que a energia de Gibbs varia de modo não linear com a temperatura, nas reações que envolvem mudança na capacidade calorífica do sistema (\\(\\Delta\\)Cp). Essa forma expandida da equação de Gibbs para capacidade calorífica variável é apresentada em diversos fenômenos bioquímicos, tais como na transição de fases da estrutura de biomembranas submetidas à um desafio de compostos, ou na mudança conformacional que acompanha a estrutura proteica sob aquecimento. \\\n\n\nEquação:\n\\[\n\\Delta G(T) = \\Delta H^\\circ - T\\,\\Delta S^\\circ + \\Delta C_p \\left(T - T_0 - T \\ln\\left(\\frac{T}{T_0}\\right)\\right)\n\\]\nOnde,\n\n\\(\\Delta\\)G(T) = energia de Gibbs da reação em cada valor de temperatura, kJ/mol);\n\\(\\Delta\\)H\\(^{o}\\) = entalpia padrão da reação a T\\(_{0}\\), normalmente 298 K (J/mol);\n\\(\\Delta\\)S\\(^{o}\\) = entropia padrão da reação a T\\(_{0}\\);\n\\(\\Delta\\)Cp = variação da capacidade calorífica da reação (J/mol·K), assumida constante com a temperatura;\nT = temperatura de interesse (K);\nT\\(_{0}\\) = temperatura de referência, geralmente 298 K.\nR = 8,314 J/mol/K (constante geral dos gases);\n\n\n\n\nSugestão:\n\n1. Experimente variar um ou mais parâmetros da expressão;\n2. Teste o comportamento da curva de Gibbs em uma temperatura de referência elevada (simulação para organismo extremófilo);\n3. Simule a situação onde a variação da capacidade calorífica é nula",
+    "crumbs": [
+      "Sobre",
+      "JSPlotly & GSPlotly - Simulação gráfica interativa & IA",
+      "Simulações em Bioquímica"
+    ]
   }
 ]

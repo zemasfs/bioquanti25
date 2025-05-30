@@ -378,6 +378,7 @@ window.Quarto = {
   <li><a href="#thermodynamic-stability-of-nucleic-acids" id="toc-thermodynamic-stability-of-nucleic-acids" class="nav-link" data-scroll-target="#thermodynamic-stability-of-nucleic-acids"><span class="header-section-number">7</span> Thermodynamic stability of nucleic acids</a></li>
   <li><a href="#van-der-waals-equation-for-ideal-gases" id="toc-van-der-waals-equation-for-ideal-gases" class="nav-link" data-scroll-target="#van-der-waals-equation-for-ideal-gases"><span class="header-section-number">8</span> Van der Waals equation for ideal gases</a></li>
   <li><a href="#equilibrium-of-atp-production-from-reactants-temperature-and-ph" id="toc-equilibrium-of-atp-production-from-reactants-temperature-and-ph" class="nav-link" data-scroll-target="#equilibrium-of-atp-production-from-reactants-temperature-and-ph"><span class="header-section-number">9</span> Equilibrium of ATP production from reactants, temperature, and pH</a></li>
+  <li><a href="#variation-of-gibbs-energy-with-temperature" id="toc-variation-of-gibbs-energy-with-temperature" class="nav-link" data-scroll-target="#variation-of-gibbs-energy-with-temperature"><span class="header-section-number">10</span> Variation of Gibbs energy with temperature</a></li>
   </ul>
 </nav>
     </div>
@@ -724,6 +725,38 @@ P = \frac{RT}{V - b} - \frac{a}{V^2}
 <h3 class="unnumbered anchored" data-anchor-id="suggestion-7">Suggestion:</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Change the quantities involved <span class="cf">in</span> the expression and compare with previous visualizations. For example, temperature, pH, and ADP and Pi levels.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="variation-of-gibbs-energy-with-temperature" class="level2" data-number="10">
+<h2 data-number="10" class="anchored" data-anchor-id="variation-of-gibbs-energy-with-temperature"><span class="header-section-number">10</span> Variation of Gibbs energy with temperature</h2>
+<section id="context-9" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="context-9">Context:</h3>
+<div class="line-block">The Gibbs-Helmholtz relation predicts that Gibbs energy varies nonlinearly with temperature in reactions involving a change in the heat capacity of the system (<span class="math inline">\(\Delta\)</span>Cp). This expanded form of the Gibbs equation for variable heat capacity is found in various biochemical phenomena, such as in the phase transition of biomembrane structures subjected to a compound challenge, or in the conformational change that accompanies the protein structure under heating. \</div>
+</section>
+<section id="equation-9" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="equation-9">Equation:</h3>
+<p><span class="math display">\[
+\Delta G(T) = \Delta H^\circ - T\,\Delta S^\circ + \Delta C_p \left(T - T_0 - T \ln\left(\frac{T}{T_0}\right)\right)
+\]</span></p>
+<p><em>Where</em>,</p>
+<ul>
+<li><span class="math inline">\(\Delta\)</span>G(T) = Gibbs energy of the reaction at each temperature value, kJ/mol);</li>
+<li><span class="math inline">\(\Delta\)</span>H<span class="math inline">\(^{o}\)</span> = standard enthalpy of the reaction at T<span class="math inline">\(_{0}\)</span>, normally 298 K (J/mol);</li>
+<li><span class="math inline">\(\Delta\)</span>S<span class="math inline">\(^{o}\)</span> = standard entropy of the reaction at T<span class="math inline">\(_{0}\)</span>;</li>
+<li><span class="math inline">\(\Delta\)</span>Cp = variation in the heat capacity of the reaction (J/mol·K), assumed to be constant with temperature;</li>
+<li>T = temperature of interest (K);</li>
+<li>T<span class="math inline">\(_{0}\)</span> = reference temperature, usually 298 K.</li>
+<li>R = 8.314 J/mol/K (universal gas constant);</li>
+</ul>
+<p><a href="Eq/jsp_gibbs.html" target="“_blank”"><img src="Eq/gibbs.png" class="img-fluid"></a></p>
+</section>
+<section id="suggestion-8" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="suggestion-8">Suggestion:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Try varying one or more parameters of the expression;</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Test the behavior of the Gibbs curve at a high reference <span class="fu">temperature</span> (simulation <span class="cf">for</span> extremophile organism);</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Simulate the situation where the variation <span class="cf">in</span> heat capacity is zero.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 

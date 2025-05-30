@@ -372,3 +372,40 @@ $$
 1. Altere as quantidades envolvidas na expressão, e compare com visualizações precedentes. Exemplificando, temperatura, pH, e teores de ADP e Pi.
 ```
 
+
+## Variação da energia de Gibbs com a temperatura
+
+
+### Contexto: {.unnumbered}
+
+|   A relação de Gibbs-Helmholtz prevê que a energia de Gibbs varia de modo não linear com a temperatura, nas reações que envolvem mudança na capacidade calorífica do sistema ($\Delta$Cp). Essa forma expandida da equação de Gibbs para capacidade calorífica variável é apresentada em diversos fenômenos bioquímicos, tais como na transição de fases da estrutura de biomembranas submetidas à um desafio de compostos, ou na mudança conformacional que acompanha a estrutura proteica sob aquecimento. \
+
+### Equação: {.unnumbered}
+
+$$
+\Delta G(T) = \Delta H^\circ - T\,\Delta S^\circ + \Delta C_p \left(T - T_0 - T \ln\left(\frac{T}{T_0}\right)\right)
+$$
+
+*Onde*,
+
+- $\Delta$G(T) = energia de Gibbs da reação em cada valor de temperatura, kJ/mol);
+- $\Delta$H$^{o}$ = entalpia padrão da reação a T$_{0}$, normalmente 298 K (J/mol);
+- $\Delta$S$^{o}$ = entropia padrão da reação a T$_{0}$;
+- $\Delta$Cp = variação da capacidade calorífica da reação (J/mol·K), assumida constante com a temperatura;
+- T = temperatura de interesse (K);
+- T$_{0}$ = temperatura de referência, geralmente 298 K. 
+- R = 8,314 J/mol/K (constante geral dos gases);
+
+
+[![](Eq/gibbs.png)](Eq/jsp_gibbs.html){target="_blank"}
+
+
+
+### Sugestão: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Experimente variar um ou mais parâmetros da expressão;
+2. Teste o comportamento da curva de Gibbs em uma temperatura de referência elevada (simulação para organismo extremófilo);
+3. Simule a situação onde a variação da capacidade calorífica é nula
+```
+
