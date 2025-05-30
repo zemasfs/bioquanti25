@@ -28,7 +28,7 @@ lang: pt
 <a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=naoh">
   <img src="hidroxido de sodio.png" alt="Hidróxido de sódio" style="max-width: 150px; height: auto;">
 </a>
-<p><strong>Hidróxido de sódio:</strong> base forte usada na fabricação de sabões, papel, tecidos e na limpeza industrial.</p>
+<p><strong>Hidróxido de sódio:</strong> base forte usada na fabricação de sabões, papel, tecidos e na limpeza industrial. Os átomos estão representados separadamente, para reforçar a ligação iônica, não covalente.</p>
 
 <a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=NH4OH">
   <img src="NH4OH.png" alt="Hidróxido de amônio" style="max-width: 150px; height: auto;">
@@ -44,12 +44,12 @@ lang: pt
 <a href="https://chemapps.stolaf.edu/jmol/jmol.php?script=Console&source=https://bioquanti.netlify.app/en/nivel/basico/jardim/NaCl.png">
   <img src="NaCl.png" alt="Cloreto de sódio" style="max-width: 150px; height: auto;">
 </a>
-<p><strong>Cloreto de sódio:</strong> o sal de cozinha. Essencial para a vida e usado em processos químicos industriais.</p>
+<p><strong>Cloreto de sódio:</strong> o sal de cozinha. Essencial para a vida e usado em processos químicos industriais. </p>
 
 <a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=naclo">
-  <img src="Hipoclorito de sodio.png" alt="Hipoclorito de sódio" style="max-width: 150px; height: auto;">
+  <img src="HipocloritoNa.png" alt="Hipoclorito de sódio" style="max-width: 150px; height: auto;">
 </a>
-<p><strong>Hipoclorito de sódio:</strong> substância desinfetante usada na purificação da água e na limpeza doméstica.</p>
+<p><strong>Hipoclorito de sódio:</strong> substância desinfetante usada na purificação da água e na limpeza doméstica. Os átomos são representados separadamente, pra reforçar a ligação iônica, não covalente.</p>
 
 </div>
 
