@@ -7,7 +7,7 @@ lang: pt
 
 <div class="sabores d-flex flex-wrap justify-content-center gap-4">
 
-<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=C(CC(=O)O)%5BC@@H%5D(C(=O)%5BO-%5D)N.%5BNa+%5D">
+<a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=glutamate">
   <img src="glutamato monossodico.png" alt="Glutamato monossódico" style="max-width: 150px; height: auto;">
 </a>
 <p><strong>Glutamato monossódico:</strong> realçador de sabor presente em alimentos industrializados. Estimula o paladar umami, associado a caldos e carnes.</p>
