@@ -27,8 +27,12 @@ title: "SISMA - Dinâmica Visual de Transformações"
 
 ### Exemplo de telas
 
-![ ](estacion.png){width=40%}
 ![ ](RP1.png){width=40%}
+
+
+
+![ ](estacion.png){width=40%}
+
 ![ ](rede.png){width=40%}
 ![ ](achase.png){width=30%}
 
@@ -65,9 +69,16 @@ title: "Exemplos de mapas dinâmicos com *Sisma*"
 [![](mapas/briggsHald.png)](mapas/briggsHald.sis)
 \
 
+|   Assista ao [vídeo](https://youtu.be/zCwiILL7PzY) da reação.
+\
+
+
 ## Efeito de Vm e Km
 
 [![](mapas/Vm_Km.png)](mapas/Vm_Km.sis)
+\
+
+|   Assista ao [vídeo](https://youtu.be/hdl6EZyYxDk) da reação.
 \
 
 ## Efetor e cooperatividade positiva
@@ -94,10 +105,17 @@ title: "Exemplos de mapas dinâmicos com *Sisma*"
 [![](mapas/mapaCHO.png)](mapas/mapaCHO.sis)
 \
 
+|   Assista ao [vídeo](https://youtu.be/k9Cc6XYYsbc) da reação.
+\
+
 ## Mapa metabólico
 
 [![](mapas/mapa.png)](mapas/mapa.sis)
 \
+
+|   Assista ao [vídeo](https://youtu.be/68Tm3wxtiNE) da reação.
+\
+
 
 <!-- [Condição de Briggs-Haldane do estado estacionário](mapas/briggsHald.sis) -->
 
@@ -129,7 +147,7 @@ title: "Exemplos de mapas dinâmicos com *Sisma*"
 
 [![](biqSisma.png){width="30%" fig-align="right"}](https://www.researchgate.net/publication/388871255_SISMA_-_Visualizacao_Dinamica_em_Catalise_Metabolismo?channel=doi&linkId=67ab3dba4c479b26c9dd001c&showFulltext=true)
 
-![Simulação de estado estacionário para condição de Briggs-Haldane em cinética enzimática. Observe a manutenção do teor do complexo ES ao longo da reação.](briggs.png)
+<!-- ![Simulação de estado estacionário para condição de Briggs-Haldane em cinética enzimática. Observe a manutenção do teor do complexo ES ao longo da reação.](briggs.png) -->
 
 
 
@@ -139,7 +157,7 @@ title: "Exemplos de mapas dinâmicos com *Sisma*"
 
 ## Experimentos Virtuais de Metabolismo
 
-|   Segue uma sequência de alguns experimentos virtuais que passíveis de execução e estudo pelo *Sisma*. 
+|   Segue uma sequência de alguns experimentos virtuais passíveis de execução e estudo pelo *Sisma*. 
 
 [1. Controle Metabólico](prat/contr.pdf)
 

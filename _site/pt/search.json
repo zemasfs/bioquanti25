@@ -299,7 +299,7 @@
     "href": "nivel/superior/sisma/index_sisma.html#ebook",
     "title": "Exemplos de mapas dinâmicos com Sisma",
     "section": "Ebook",
-    "text": "Ebook\n\n\n\n      Para inserir objetos e caminhos no Sisma, bem como elaborar, simular e avaliar reações enzimáticas, cadeias ou redes metabólicas dinâmicas, baixe o livro SISMA - Visualização Dinâmica em Catálise & Metabolismo. Seguem alguns exemplos de arquivos para transformações dinâmicas com o Sisma.\n \n\nExemplos de mapas dinâmicos com Sisma\n\n\n\n\nCondição de Briggs-Haldane\n\n\n\n\nEfeito de Vm e Km\n\n\n\n\nEfetor e cooperatividade positiva\n\n\n\n\nModulador negativo\n\n\n\n\nAjuste induzido\n\n\n\n\nGlicólise\n\n\n\n\nMetabolismo de carboidratos\n\n\n\n\nMapa metabólico\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSimulação de estado estacionário para condição de Briggs-Haldane em cinética enzimática. Observe a manutenção do teor do complexo ES ao longo da reação.",
+    "text": "Ebook\n\n\n\n      Para inserir objetos e caminhos no Sisma, bem como elaborar, simular e avaliar reações enzimáticas, cadeias ou redes metabólicas dinâmicas, baixe o livro SISMA - Visualização Dinâmica em Catálise & Metabolismo. Seguem alguns exemplos de arquivos para transformações dinâmicas com o Sisma.\n \n\nExemplos de mapas dinâmicos com Sisma\n\n\n\n\nCondição de Briggs-Haldane\n\n\n  Assista ao vídeo da reação.\n\n\n\n\nEfeito de Vm e Km\n\n\n  Assista ao vídeo da reação.\n\n\n\n\nEfetor e cooperatividade positiva\n\n\n\n\nModulador negativo\n\n\n\n\nAjuste induzido\n\n\n\n\nGlicólise\n\n\n\n\nMetabolismo de carboidratos\n\n\n  Assista ao vídeo da reação.\n\n\n\n\nMapa metabólico\n\n\n  Assista ao vídeo da reação.",
     "crumbs": [
       "Sobre",
       "Sisma - diagramas dinâmicos",
@@ -323,7 +323,7 @@
     "href": "nivel/superior/sisma/index_sisma.html#condição-de-briggs-haldane",
     "title": "Exemplos de mapas dinâmicos com Sisma",
     "section": "Condição de Briggs-Haldane",
-    "text": "Condição de Briggs-Haldane",
+    "text": "Condição de Briggs-Haldane\n\n\n  Assista ao vídeo da reação.",
     "crumbs": [
       "Sobre",
       "Sisma - diagramas dinâmicos",
@@ -335,7 +335,7 @@
     "href": "nivel/superior/sisma/index_sisma.html#efeito-de-vm-e-km",
     "title": "Exemplos de mapas dinâmicos com Sisma",
     "section": "Efeito de Vm e Km",
-    "text": "Efeito de Vm e Km",
+    "text": "Efeito de Vm e Km\n\n\n  Assista ao vídeo da reação.",
     "crumbs": [
       "Sobre",
       "Sisma - diagramas dinâmicos",
@@ -395,7 +395,7 @@
     "href": "nivel/superior/sisma/index_sisma.html#metabolismo-de-carboidratos",
     "title": "Exemplos de mapas dinâmicos com Sisma",
     "section": "Metabolismo de carboidratos",
-    "text": "Metabolismo de carboidratos",
+    "text": "Metabolismo de carboidratos\n\n\n  Assista ao vídeo da reação.",
     "crumbs": [
       "Sobre",
       "Sisma - diagramas dinâmicos",
@@ -407,7 +407,7 @@
     "href": "nivel/superior/sisma/index_sisma.html#mapa-metabólico",
     "title": "Exemplos de mapas dinâmicos com Sisma",
     "section": "Mapa metabólico",
-    "text": "Mapa metabólico",
+    "text": "Mapa metabólico\n\n\n  Assista ao vídeo da reação.",
     "crumbs": [
       "Sobre",
       "Sisma - diagramas dinâmicos",
@@ -419,7 +419,7 @@
     "href": "nivel/superior/sisma/index_sisma.html#experimentos-virtuais-de-metabolismo",
     "title": "Exemplos de mapas dinâmicos com Sisma",
     "section": "Experimentos Virtuais de Metabolismo",
-    "text": "Experimentos Virtuais de Metabolismo\n  Segue uma sequência de alguns experimentos virtuais que passíveis de execução e estudo pelo Sisma.\n1. Controle Metabólico\n2. Metabolismo de Carboidratos\n3. Metabolismo de Carboidratos e Lipídios\n4. Metabolismo de Aminoácidos & Nucleotídeos",
+    "text": "Experimentos Virtuais de Metabolismo\n  Segue uma sequência de alguns experimentos virtuais passíveis de execução e estudo pelo Sisma.\n1. Controle Metabólico\n2. Metabolismo de Carboidratos\n3. Metabolismo de Carboidratos e Lipídios\n4. Metabolismo de Aminoácidos & Nucleotídeos",
     "crumbs": [
       "Sobre",
       "Sisma - diagramas dinâmicos",

@@ -353,7 +353,7 @@
     "href": "nivel/superior/sisma/index_sisma_en.html#features-of-sisma",
     "title": "SISMA - Visual Dynamics of Transformations",
     "section": "Features of SISMA",
-    "text": "Features of SISMA\nFor the study of the relationships between reactants and products, the program allows the insertion of compounds (Object), paths (Path), figures and annotations on the map, storage and reading of maps, simulation of variations in the relative contents of each compound by point and line graphs simultaneously with those occurring on the map itself, pause, interruption, backward and forward viewing at any time during the simulation, automatically generating and exporting spreadsheets containing the numerical values of each object transformed at each instant, and instantly printing the map at the point of a desired transformation. In this way, the program makes the visualization of forces and flows that are presented statically in diagrams and maps dynamic, both in Biochemistry and for any subject involving this type of representation.\nDespite its ease of use with a mouse, without the need to enter text commands, Sisma allows the modification of all elements of the map (objects, paths, equations, names, colors, positions) by editing the map file in Notepad, adding value to Reproducible Teaching with the tool.\n\n\nDespite its ease of use with a mouse, without the need to enter text commands, Sisma allows all elements of the map (objects, paths, equations, names, colors, positions) to be modified by editing the map file in Notepad, adding value to Reproducible Teaching with the tool. The figure below illustrates a Sisma file opened in a notepad for editing.\n\n\n\n\n\nStructure of a map in Sisma\n\n\nThe program was developed in partnership with Prof. Dr. Luiz Eduardo da Silva, from the Department of Computer Science (DCC/UNIFAL-MG), and undergraduate students.\n\n\nExample screens",
+    "text": "Features of SISMA\nFor the study of the relationships between reactants and products, the program allows the insertion of compounds (Object), paths (Path), figures and annotations on the map, storage and reading of maps, simulation of variations in the relative contents of each compound by point and line graphs simultaneously with those occurring on the map itself, pause, interruption, backward and forward viewing at any time during the simulation, automatically generate and export spreadsheets containing the numerical values of each object transformed at each instant, and instantly print the map at the point of a desired transformation. In this way, the program makes the visualization of forces and flows that are presented statically in diagrams and maps dynamic, both in Biochemistry and for any subject involving this type of representation.\n\n\nDespite its ease of use with a mouse, without the need to enter text commands, Sisma allows the modification of all elements of the map (objects, paths, equations, names, colors, positions) by editing the map file in a notepad, adding value to Reproducible Teaching with the tool. The figure below illustrates a Sisma file opened in a notepad for editing.\n\n\n\n\nThe program was developed in partnership with Prof. Dr. Luiz Eduardo da Silva, from the Department of Computer Science (DCC/UNIFAL-MG), and undergraduate students.\n\n\nScreenshots",
     "crumbs": [
       "About",
       "Sisma - dynamic diagrams",
@@ -377,7 +377,7 @@
     "href": "nivel/superior/sisma/index_sisma_en.html#quick-tip-for-use",
     "title": "SISMA - Visual Dynamics of Transformations",
     "section": "Quick tip for use !",
-    "text": "Quick tip for use !\nTo use Sisma, download the file from the link above and unzip it on your PC. The program does not require installation, only a virtual machine JAVA. To run it, go to the “dist” folder and click on the Java executable file (“Sisma_Realese_1.jar”).\nThis quick tutorial in video illustrates the use described below.\nRight-click and select Object to insert a compound. Repeat the last procedure in another location on the blank sheet of the program, but this time reduce the color intensity in the scroll bar. Now connect the two objects by clicking on one of their vertices and dragging the mouse to the vertex of the other. Finally, click OK and run the simulation using the Play icon to view the conversion of hues from the first to the second object.",
+    "text": "Quick tip for use !\nTo use Sisma, download the file from the link above and unzip it on your PC. The program does not require installation, only a virtual machine JAVA. To run it, go to the “dist” folder and click on the Java executable file (“Sisma_Realese_1.jar”).\nThis quick tutorial video illustrates the usage described below.\nRight-click and select Object to insert a compound. Repeat the last procedure in another location on the blank sheet of the program, but this time reduce the color intensity in the scroll bar. Now connect the two objects by clicking on one of their vertices and dragging the mouse to the vertex of the other. Finally, click OK and run the simulation using the Play icon to view the conversion of hues from the first to the second object.",
     "crumbs": [
       "About",
       "Sisma - dynamic diagrams",
@@ -389,7 +389,7 @@
     "href": "nivel/superior/sisma/index_sisma_en.html#ebook",
     "title": "SISMA - Visual Dynamics of Transformations",
     "section": "Ebook",
-    "text": "Ebook\n\n\n\nTo insert objects and paths in Sisma, as well as to design, simulate, and evaluate enzymatic reactions, chains, or dynamic metabolic networks, download the book SISMA - Dynamic Visualization in Catalysis & Metabolism. Here are some examples of files for dynamic transformations with Sisma.\n\n\n\nExamples of dynamic maps with Sisma\n\n\n\n\nBriggs-Haldane condition\n\n\n\n\nEffect of Vm and Km\n\n\n\n\nEffector and positive cooperativity\n\n\n\n\nNegative modulator\n\n\n\n\nInduced adjustment\n\n\n\n\nGlycolysis\n\n\n\n\nCarbohydrate metabolism\n\n\n\n\nMetabolic map\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSteady-state simulation for Briggs-Haldane condition in enzyme kinetics. Note the maintenance of the ES complex content throughout the reaction.",
+    "text": "Ebook\n\n\n\nTo insert objects and paths in Sisma, as well as to design, simulate, and evaluate enzymatic reactions, chains, or dynamic metabolic networks, download the book SISMA - Dynamic Visualization in Catalysis & Metabolism. Here are some examples of files for dynamic transformations with Sisma.\n\n\n\nExamples of dynamic maps with Sisma\n\n\nBriggs-Haldane condition\n\n\nWatch the video of the reaction.\n\n\n\n\nEffect of Vm and Km\n\n\nWatch the video of the reaction.\n\n\n\n\nEffector and positive cooperativity\n\n\n\n\nNegative modulator\n\n\n\n\nInduced adjustment\n\n\n\n\nGlycolysis\n\n\n\n\nCarbohydrate metabolism\n\n\nWatch the video of the reaction.\n\n\n\n\nMetabolic map\n\n\nWatch the video of the reaction.",
     "crumbs": [
       "About",
       "Sisma - dynamic diagrams",
@@ -413,7 +413,7 @@
     "href": "nivel/superior/sisma/index_sisma_en.html#briggs-haldane-condition",
     "title": "SISMA - Visual Dynamics of Transformations",
     "section": "Briggs-Haldane condition",
-    "text": "Briggs-Haldane condition",
+    "text": "Briggs-Haldane condition\n\n\nWatch the video of the reaction.",
     "crumbs": [
       "About",
       "Sisma - dynamic diagrams",
@@ -425,7 +425,7 @@
     "href": "nivel/superior/sisma/index_sisma_en.html#effect-of-vm-and-km",
     "title": "SISMA - Visual Dynamics of Transformations",
     "section": "Effect of Vm and Km",
-    "text": "Effect of Vm and Km",
+    "text": "Effect of Vm and Km\n\n\nWatch the video of the reaction.",
     "crumbs": [
       "About",
       "Sisma - dynamic diagrams",
@@ -485,7 +485,7 @@
     "href": "nivel/superior/sisma/index_sisma_en.html#carbohydrate-metabolism",
     "title": "SISMA - Visual Dynamics of Transformations",
     "section": "Carbohydrate metabolism",
-    "text": "Carbohydrate metabolism",
+    "text": "Carbohydrate metabolism\n\n\nWatch the video of the reaction.",
     "crumbs": [
       "About",
       "Sisma - dynamic diagrams",
@@ -497,7 +497,7 @@
     "href": "nivel/superior/sisma/index_sisma_en.html#metabolic-map",
     "title": "SISMA - Visual Dynamics of Transformations",
     "section": "Metabolic map",
-    "text": "Metabolic map",
+    "text": "Metabolic map\n\n\nWatch the video of the reaction.",
     "crumbs": [
       "About",
       "Sisma - dynamic diagrams",

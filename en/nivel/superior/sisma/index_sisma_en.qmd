@@ -13,25 +13,28 @@ The program was written in Java and allows you to dynamically visualize and eval
 
 ## Features of SISMA
 
-| For the study of the relationships between reactants and products, the program allows the insertion of compounds (*Object*), paths (*Path*), figures and annotations on the map, storage and reading of maps, simulation of variations in the relative contents of each compound by point and line graphs simultaneously with those occurring on the map itself, pause, interruption, backward and forward viewing at any time during the simulation, automatically generating and exporting spreadsheets containing the numerical values of each object transformed at each instant, and instantly printing the map at the point of a desired transformation. In this way, the program makes the visualization of *forces and flows* that are presented statically in diagrams and maps dynamic, both in *Biochemistry* and for any subject involving this type of representation.
-
-| Despite its ease of use with a mouse, without the need to enter text commands, *Sisma* allows the modification of all elements of the map (objects, paths, equations, names, colors, positions) by editing the map file in Notepad, adding value to *Reproducible Teaching* with the tool.
+| For the study of the relationships between reactants and products, the program allows the insertion of compounds (*Object*), paths (*Path*), figures and annotations on the map, storage and reading of maps, simulation of variations in the relative contents of each compound by point and line graphs simultaneously with those occurring on the map itself, pause, interruption, backward and forward viewing at any time during the simulation, automatically generate and export spreadsheets containing the numerical values of each object transformed at each instant, and instantly print the map at the point of a desired transformation. In this way, the program makes the visualization of *forces and flows* that are presented statically in diagrams and maps dynamic, both in *Biochemistry* and for any subject involving this type of representation.
 \
 
-| Despite its ease of use with a mouse, without the need to enter text commands, *Sisma* allows all elements of the map (objects, paths, equations, names, colors, positions) to be modified by editing the map file in Notepad, adding value to *Reproducible Teaching* with the tool. The figure below illustrates a *Sisma* file opened in a notepad for editing.
+| Despite its ease of use with a mouse, without the need to enter text commands, *Sisma* allows the modification of all elements of the map (objects, paths, equations, names, colors, positions) by editing the map file in a notepad, adding value to *Reproducible Teaching* with the tool. The figure below illustrates a *Sisma* file opened in a notepad for editing.
 \
 
 ![Structure of a map in *Sisma*](sismaTxt.png)
+\
 
 | The program was developed in partnership with Prof. Dr. Luiz Eduardo da Silva, from the Department of Computer Science (DCC/UNIFAL-MG), and undergraduate students.
 
 <br />
 
-### Example screens
+### Screenshots
+
+![ ](RP1.png){width=40%}
+
 
 ![ ](estacion.png){width=40%}
-![ ](RP1.png){width=40%}
+
 ![ ](rede.png){width=40%}
+
 ![ ](achase.png){width=30%}
 
 ## Download
@@ -39,9 +42,10 @@ The program was written in Java and allows you to dynamically visualize and eval
 | The compressed file containing the program can be obtained at this [**LINK**](Sisma.zip)
 
 ## Quick tip for use ! 
-| To use **Sisma**, download the file from the *link* above and unzip it on your PC. The program does not require installation, only a virtual machine [*JAVA*](https://www.java.com/pt-BR/download/manual.jsp). To run it, go to the *"dist"* folder and click on the Java executable file (*"Sisma_Realese_1.jar"*).
 
-| This [**quick tutorial**](https://www.youtube.com/watch?v=MPr5zWlJqbY){target="\_blank"} in *video* illustrates the use described below.
+| To use **Sisma**, download the file from the *link* above and unzip it on your PC. The program does not require installation, only a virtual machine [*JAVA*](https://www.java.com/pt-BR/download/manual.jsp). To run it, go to the *“dist”* folder and click on the Java executable file (*“Sisma_Realese_1.jar”*).
+
+| This [**quick tutorial**](https://www.youtube.com/watch?v=MPr5zWlJqbY){target=“\_blank”} video illustrates the usage described below.
 
 | Right-click and select *Object* to insert a compound. Repeat the last procedure in another location on the *blank sheet* of the program, but this time reduce the color intensity in the scroll bar. Now connect the two objects by clicking on one of their vertices and dragging the mouse to the vertex of the other. Finally, click *OK* and run the simulation using the *Play* icon to view the conversion of hues from the first to the second object.
 
@@ -57,7 +61,6 @@ The program was written in Java and allows you to dynamically visualize and eval
 \
 
 ## Examples of dynamic maps with *Sisma*
-\
 
 
 ## Briggs-Haldane condition
@@ -65,9 +68,16 @@ The program was written in Java and allows you to dynamically visualize and eval
 [![](mapas/briggsHald.png)](mapas/briggsHald.sis)
 \
 
+| Watch the [video](https://youtu.be/zCwiILL7PzY) of the reaction.
+\
+
+
 ## Effect of Vm and Km
 
 [![](mapas/Vm_Km.png)](mapas/Vm_Km.sis)
+\
+
+| Watch the [video](https://youtu.be/hdl6EZyYxDk) of the reaction.
 \
 
 ## Effector and positive cooperativity
@@ -76,7 +86,7 @@ The program was written in Java and allows you to dynamically visualize and eval
 \
 
 ## Negative modulator
-[![](mapas/efetor_neg_exerc.png)](mapas/efetor_neg_exerc.sis)
+[![](mapas/efetor_neg_exerc.png)](maps/efetor_neg_exerc.sis)
 \
 
 ## Induced adjustment
@@ -86,18 +96,25 @@ The program was written in Java and allows you to dynamically visualize and eval
 
 ## Glycolysis
 
-[![](mapas/glicolise)](mapas/glicolise.sis)
+[![](mapas/glicolise.png)](mapas/glicolise.sis)
 \
 
 ## Carbohydrate metabolism
 
-[![](mapas/mapaCHO.png)](mapas/mapaCHO.sis)
+[![](mapas/mapaCHO.png)](maps/mapaCHO.sis)
+\
+
+| Watch the [video](https://youtu.be/k9Cc6XYYsbc) of the reaction.
 \
 
 ## Metabolic map
 
 [![](mapas/mapa.png)](mapas/mapa.sis)
 \
+
+| Watch the [video](https://youtu.be/68Tm3wxtiNE) of the reaction.
+\
+
 
 <!-- [Briggs-Haldane steady state condition](maps/briggsHald.sis) -->
 
@@ -107,42 +124,39 @@ The program was written in Java and allows you to dynamically visualize and eval
 
 <!-- [Substrate inhibition](maps/inhib_substr.sis) -->
 
-<!-- [T-R equilibrium in enzyme](maps/eqTR.sis) -->
+<!-- [T-R equilibrium in enzymes](maps/eqTR.sis) -->
 
-<!-- [Induced fit](maps/ajuste_induzido.sis) -->
+<!-- [Induced adjustment](maps/ajuste_induzido.sis) -->
 
-<!-- [Negative allosteric effector](maps/efetor_neg.sis) -->
+<!-- [Negative allosteric effector](maps/neg_effector.sis) -->
 
 <!-- [Positive allosteric effector](maps/pos_effector.sis) -->
 
 <!-- [Glycolysis](maps/glycolysis.sis) -->
 
-<!-- [Carbohydrate metabolism](maps/carb_map.sis) -->
+<!-- [Carbohydrate metabolism](maps/mapaCHO.sis) -->
 
 <!-- [Beta-oxidation of fatty acids](maps/betaoxid.sis) -->
 
-<!-- [Metabolic map](maps/metabmap.sis) -->
+<!-- [Metabolic map](maps/mapaMetab.sis) -->
 :::
 
 ::: {#second-column}
 
 
-[![](biqSisma.png){width="30%" fig-align="right"}](https://www.researchgate.net/publication/388871255_SISMA_-_Visualizacao_Dinamica_em_Catalise_Metabolismo?channel=doi&linkId=67ab3dba4c479b26c9dd001c&showFulltext=true)
+[![](biqSisma.png){width=“30%” fig-align=“right”}](https://www.researchgate.net/publication/388871255_SISMA_-_Visualizacao_Dinamica_em_Catalise_Metabolismo?channel=doi&linkId=67ab3dba4c479b26c9dd001c&showFulltext=true)
 
-![Steady-state simulation for Briggs-Haldane condition in enzyme kinetics. Note the maintenance of the ES complex content throughout the reaction.](briggs.png)
+<!-- ![Steady-state simulation for Briggs-Haldane condition in enzyme kinetics. Note the maintenance of the ES complex content throughout the reaction.](briggs.png) -->
 
 
-
-:::
 
 :::
 
+:::
 
 ## Virtual Metabolism Experiments
 
 | Below is a sequence of virtual experiments that can be performed and studied using *Sisma*.
-
-
 
 [1. Metabolic Control](prat/contr.pdf)
 
@@ -151,6 +165,8 @@ The program was written in Java and allows you to dynamically visualize and eval
 [3. Carbohydrate and Lipid Metabolism](prat/carb_lip.pdf)
 
 [4. Amino Acid & Nucleotide Metabolism](prat/aa_nucl.pdf)
+
+
 
 ## SISMA online - SismaWeb !!!
 
