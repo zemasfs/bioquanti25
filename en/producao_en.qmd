@@ -7,7 +7,7 @@ lang: pt
 
 ## Book
 
-- Schneedorf, J.M. Vivificando Conteúdos Para o Ensino Básico: Moléculas, Gráficos, e Mapas Interativos. Ed. Pimenta Cultural, 152p., 2025. ISBN 978-85-7221-397-4. 
+- Schneedorf, J.M. [Vivificando Conteúdos Para o Ensino Básico: Moléculas, Gráficos, e Mapas Interativos](https://www.pimentacultural.com/livro/vivificando-conteudos/). Ed. Pimenta Cultural, 132p., 2025. ISBN 978-85-7221-397-4. 
 
 - Schneedorf, J.M., Rodrigues, K.L. [Bioquímica básica, de gente, de bicho, e de planta](http://dx.doi.org/10.13140/RG.2.2.32623.55208). 353p., 2024. ISBN: 978-65-00-90366-9.
 
