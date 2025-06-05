@@ -75,26 +75,18 @@ para a elaboração de jogos educacionais online.  In: Tecnologias Emergentes em
 
 - Oliveira, G. A. V.; Schneedorf, J. M. An Electrochemical Approach to Follow and Evaluate the Kinetic Catalysis of Ricin on hsDNA. v. 11(5), p. 405. Life. 2021.
 
-## Patent
-
-- Oliveira, G.A.V., Schneedorf, J.M. Método para detecção de ricina e caracterização de sua atividade enzimática em tempo real por eletroquímica. INPI, registro no. BR1020200206532. 2020.
-
-- Cavalcanti, M. H. S.; Virtuoso, L. S.; Mendes, A. A.; Schneedorf, J.M. Processo para imobilização de enzima em suporte nanoparticulado magnético. INPI, registro no. BR10202002016.
-
-
 ## Software
 
-- Macedo, J.A.; Matos, N.; Paula, M.M.V.; Silva, L.E.; Schneedorf, J.M. SISMA: Sistema de Mapas Autocatalíticos. Programa de Computador. Registro INPI no. 08869-3 (19/05/2008).
+- Macedo, J.A.; Matos, N.; Paula, M.M.V.; Silva, L.E.; Schneedorf, J.M. SISMA: Autocatalytic Map System. Computer program. INPI registration no. 08869-3 (May 19, 2008).
 
-- Schneedorf, J.M. JSPlotly & GSPlotly: aplicativo e gerador de códigos por IA para gráficos interativos em visualizador HTML(2025). Depositado no portal eduCAPES, registro no. 972869.
+- Schneedorf, J.M. JSPlotly & GSPlotly: AI application and code generator for interactive graphics in HTML viewer (2025). Filed on the eduCAPES portal, registration no. 972869.
 
 ## Website
 
-- Schneedorf, J.M. Bioquanti (2022). Depositado no portal eduCAPES, registro no. 748598.
+- Schneedorf, J.M. Bioquanti (2022). Deposited on the eduCAPES portal, registration no. 748598.
 
-## Custom GPT 
+## Customized GPT
 
-- Schneedorf, J.M. GSPlotly: gerador de scripts interativos para JSPlotly. OpenAI GPT customizado. Disponível em: https://chat.openai.com/g/g-6819fbb8d2d08191bf7d50a3dbeadb0d-gsplotly. Acesso em: 11 maio 2025.
-
+- Schneedorf, J.M. GSPlotly: interactive script generator for JSPlotly. Customized OpenAI GPT. Available at: https://chat.openai.com/g/g-6819fbb8d2d08191bf7d50a3dbeadb0d-gsplotly. Accessed on: May 11, 2025.
 
 
