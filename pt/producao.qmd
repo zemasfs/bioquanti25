@@ -31,11 +31,11 @@ lang: pt
 <!-- - Schneedorf, J.M. JSPlotly: um aplicativo aberto para gráficos interativos e dinâmicos no ensino e -->
 <!-- aprendizagem de Ciências. In: Gerolin, E., Crisafulli, U. Papo de Professores: desafios, inovações e práticas no ensino de Ciências. V & V Editora, Santo André (SP), 2025 (in press). -->
 
-<!-- - Schneedorf, J.M. JSPlotly - um aplicativo prático e portável para simulações gráficas interativas ao ensino reprodutível. In: Recursos Educacionais Abertos na UNIFAL-MG. Org: Mafra, L.A.S; Silva, L.E; Schneedorf, J.M. Ed. Pimenta Cultural. 2025 (no prelo). -->
+- Schneedorf, J.M. [JSPlotly - um aplicativo prático e portável para simulações gráficas interativas ao ensino reprodutível](https://www.pimentacultural.com/livro/recursos-educacionais/). In: Recursos Educacionais Abertos na UNIFAL-MG. Org: Mafra, L.A.S; Silva, L.E; Schneedorf, J.M. Ed. Pimenta Cultural. 2025. DOI: 10.31560/pimentacultural/978-85-7221-396-7.4.
 
-- Schneedorf, J.M. Bioquanti: um website para ensino reprodutível de códigos para conteúdos. In: Unifal Interativa: Projetos de Educação Digital da Universidade Federal de Alfenas. Org: Mafra, L.A.S; Silva, L.E; Schneedorf, J.M. Ed. Pimenta Cultural. 2025 (no prelo).
+- Schneedorf, J.M. [Bioquanti: um website para ensino reprodutível de códigos para conteúdos](https://www.pimentacultural.com/livro/unifal-interativa/). In: Unifal Interativa: Projetos de Educação Digital da Universidade Federal de Alfenas. Org: Mafra, L.A.S; Silva, L.E; Schneedorf, J.M. Ed. Pimenta Cultural. 2025. ISBN: 978-85-7221-395-0.
 
-- Schneedorf, J.M. ScriptRplot - um script de R para produção de gráficos elegantes com ggplot2. In: Recursos Educacionais Abertos na UNIFAL-MG. Org: Mafra, L.A.S; Silva, L.E; Schneedorf, J.M. Ed. Pimenta Cultural. 2025 (no prelo).
+- Schneedorf, J.M. [ScriptRplot - um script de R para produção de gráficos elegantes com ggplot2](https://www.pimentacultural.com/livro/recursos-educacionais/). In: Recursos Educacionais Abertos na UNIFAL-MG. Org: Mafra, L.A.S; Silva, L.E; Schneedorf, J.M. Ed. Pimenta Cultural. 2025. DOI: 10.31560/pimentacultural/978-85-7221-396-7.3.
 
 - Schneedorf, J.M. R e RStudio: uma plataforma para implementação de ensino reprodutível. In: Aprendizagem Ativa: da Educação Básica ao Ensino Superior. Org: Sindiany Suelen Caduda dos Santos, Débora Moreira de Oliveira. V & V Editora, Santo André (SP), 2025 (no prelo).
 
