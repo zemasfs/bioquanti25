@@ -10,14 +10,14 @@ publish: false
 
 | In general, the *website* addresses the use of four programs, two developed at UNIFAL-MG: *JSPlotly* for interactive graphics and *AI* simulation, and *SISMA* for dynamic observation of the structure and interaction of elements in networks. The other open-source programs include the use of the *R & RStudio* platform for graphics, analysis, tables, simulations, and animations, and *Jmol* for the study and three-dimensional visualization of atomic models. Part of the detailed content of the portal, as well as its application to higher education, can be viewed [here](https://www.bioquimica.org.br/index.php/REB/article/view/1058). 
 
-| The portal has four freely distributed ebooks for studies in biochemistry and related areas, namely: [Dynamic Visualization in Catalysis & Metabolism](http://dx.doi.org/10.13140/RG.2.2.25027.92964), [Quantitative Biochemistry & R](http://dx.doi.org/10.13140/RG.2.2.36090.40644), and [Jmol-Guided Structural Biochemistry](http://dx.doi.org/10.13140/RG.2.2.29268.10882), all with codes for reproduction.
+| The portal provides access to freely distributed ebooks for studies in biochemistry and related areas, namely: [Dynamic Visualization in Catalysis & Metabolism](http://dx.doi.org/10.13140/RG.2.2.25027.92964), [Quantitative Biochemistry & R](http://dx.doi.org/10.13140/RG.2.2.36090.40644), and [Jmol-Guided Structural Biochemistry](http://dx.doi.org/10.13140/RG.2.2.29268.10882), all with codes for reproduction.
 
 | The website also features the *ebook* [Basic Biochemistry, People, Animals, and Plants](/nivel/superior/biqTxT/index_txt_en.qmd), a basic text for undergraduate students in the field, for reference on various topics, but without code.
 \
 
 ## Recognition
 
-| The website was awarded 2nd place in the *Bayardo Baptista Torres National Award for Teaching Biochemistry and Molecular Biology*, held every two years since 2017 by the *Brazilian Society of Biochemistry and Molecular Biology* (SBBq, 2023), and is referenced as an open educational resource on the [eduCAPES portal](https://educapes.capes.gov.br/handle/capes/748598). Recently, a portable application for graphic and interactive simulation available on the website, *JSPlotly*, was awarded first place in the same award and is also available on [eduCAPES](https://educapes.capes.gov.br/handle/capes/972869). With equal honor and satisfaction, we were also classified in the *National Award* in its previous editions, this time for experimental work in teaching and learning.
+| The website was awarded 2nd place in the *Bayardo Baptista Torres National Award for Teaching Biochemistry and Molecular Biology*, held every two years since 2017 by the *Brazilian Society of Biochemistry and Molecular Biology* (SBBq, 2023), and is referenced as an open educational resource on the [eduCAPES portal](https://educapes.capes.gov.br/handle/capes/748598). Recently, a portable application for graphic and interactive simulation available on the website, *JSPlotly*, was awarded first place in the same award and is also available on [eduCAPES](https://educapes.capes.gov.br/handle/capes/972869). With equal honor and satisfaction, we also had works classified in the *National Award* in its previous editions, this time for experimental work in teaching and learning.
 
 <!-- ::: {layout-ncol=5} -->
 
