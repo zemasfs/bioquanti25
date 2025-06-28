@@ -1,0 +1,537 @@
+---
+title: "Simulações Interativas Para Biofísico-química com JSPlotly & GSPlotly"
+format: html
+toc: true
+toc-depth: 2
+number-sections: true
+lang: pt
+---
+
+|   Para ilustrar o potencial de uso do *JSPlotly* para Bioquímica e áreas correlatas, seguem alguns exemplos de simulações e análise de dados, e cujos gráficos são frequentemente encontrados em livros-texto e conteúdos afins. Para um melhor aproveitamento de cada tema, experimente seguir as sugestões para *manipulação paramétrica* em cada tema. 
+\
+
+## Instruções {.unnumbered}
+
+
+```{r, eval=FALSE}
+
+1. Escolha um tema;
+2. Clique no gráfico correspondente;
+3. Clique em "Add Plot";
+4. Use o mouse para interatividade e/ou edite o código. 
+
+Lembrete: o editor usa desfazer/refazer infinitos no código (Ctrl+Z / Shift+Ctrl+Z) !
+```
+
+
+## Equilíbrio ácido-básico e sistema tampão
+
+#### Contexto: {.unnumbered}
+
+|   O exemplo ilustra a adição de base num sistema contendo um ácido fraco e sua base conjugada. A equação de titulação refere-se a um *ácido triprótico*, o ácido fosfórico do tampão homônimo, mas serviria igualmente para outros tantos, como os presentes no ciclo de Krebs (citrato, isocitrato). 
+
+
+#### Equação: {.unnumbered}
+
+$$
+fa= \frac{1}{1 + 10^{pKa1 - pH}} + \frac{1}{1 + 10^{pKa2 - pH}} + \frac{1}{1 + 10^{pKa3 - pH}}
+$$
+*Onde*,
+fa = fração de ácido (grupos protonáveis)
+\
+
+[![](Eq/tit_acbase.png)](Eq/jsp_acbase.html){target="_blank"}
+\
+<!---div class="jsplotly_sup-fundo"> --->
+
+### Sugestão: {.unnumbered}
+
+```{r, eval =FALSE}
+"A. Convertendo a curva de tampão fosfato (triprótico) para tampão bicarbonato (diprótico)"
+
+1. Altere os valores de pKa para o tampão bicarbonato: pKa1 =      6.1, e pKa2 = 10.3;
+2. Coloque um valor muito grande para pKa3 (ex:1e20). 
+3. Clique em "add plot".
+
+Explicação: pKa é um termo que representa o logaritmo de uma constante de dissociação (-log[Ka]). Com um valor extremo, o denominador torna-se igualmente imenso, anulando o termo que leva pKa3. Em JavaScript e outras linguagens, "e" representa a notação para potência de 10.
+
+"B. Convertendo a curva de tampão bicarbonato para acetato"
+
+1. Basta repetir o procedimento acima, com pKa1 = 4.75, e eliminando-se pKa2.
+
+```
+\
+
+## Rede de carga líquida em peptídios
+
+#### Contexto: {.unnumbered}
+
+|   O código refere-se à rede de carga líquida presente numa sequência qualquer de resíduos de aminoácidos. Aqui é ilustrada a *angiotensina II*, importante peptídio para regulação da pressão arterial e equilíbrio eletrolítico, e cuja enzima conversora está associada ao mecanismo de invasibilidade celular por SARS-CoV-2.
+
+
+#### Equação: {.unnumbered}
+
+|   Para essa simulação não há uma equação direta, já que o algoritmo precisa decidir a carga em função da natureza básica ou ácido do resíduo em determinado valor de pH (observe o *script*). Assim:
+
+$$
+q =
+\begin{cases}
+-\dfrac{1}{1 + 10^{pK_a - pH}} & \text{(grupo ácido)} \\\\
+\dfrac{1}{1 + 10^{pH - pK_a}} & \text{(grupo básico)}
+\end{cases}
+$$
+\
+
+*Onde*,
+
+- pKa = valor do antilogarítmo de base 10 para a constante de equilíbrio de dissociação do ácido, Ka (ou log[Ka]).
+
+
+[![](Eq/cargaAA.png)](Eq/jsp_cargaAA.html){target="_blank"}
+\
+<!---div class="jsplotly_sup-fundo"> --->
+
+### Sugestão: {.unnumbered}
+
+```{r, eval =FALSE}
+1. Selecione a sequência peptídica abaixo, e observe a distribuição de cargas:
+  
+"Ala,Lys,Arg,Leu,Phe,Glu,Cys,Asp,His"
+
+2. Simule a condição de pH do estômago ("const pH = 1.5"), e verifique a alteração de cargas no peptídio. 
+
+3. Selecione um peptídio fisiológico (oxitocina, por ex), observe sua carga no sangue (pH 7.5), e reflita sobre seu potencial de interação eletrostática com componentes celulares.
+
+"Cys,Tyr,Ile,Gln,Asn,Cys,Pro,Leu,Gly"  - oxitocina
+```
+\
+
+
+## Interação de oxigênio com mioglobina e hemoglobina
+
+#### Contexto: {.unnumbered}
+
+|   A molécula de oxigênio pode combinar-se ao grupo *heme* de mioglobina e hemoglobina de forma distinta, em função da cooperatividade exibida nesta última frente à sua estrutura quaternária. O modelo que segue exemplica essa interação, por uso da *equação de Hill*. 
+
+
+#### Equação: {.unnumbered}
+
+
+$$
+Y= \frac{pO_2^{nH}}{p_{50}^{nH} + pO_2^{nH}}
+$$
+\
+
+*Onde*
+
+- Y = grau de saturação de oxigênio na proteína;
+- pO$_{2}$ = pressão de oxigênio;
+- p$_{50}$ = pressão de oxigênio a 50% de saturação;
+- nH = coeficiente de Hill para a interação;
+\
+
+
+[![](Eq/O2.png)](Eq/jsp_O2.html){target="_blank"}
+\
+<!---div class="jsplotly_sup-fundo"> --->
+
+### Sugestão: {.unnumbered}
+
+```{r, eval =FALSE}
+1. Rode o aplicativo ("add plot"). Veja que o valor de "nH" da constante de Hill é "1", ou seja, sem efeito de cooperatividade.
+
+2. Agora substitua o valor de "nH" pelo coeficiente de Hill para a hemoglobina, 2.8, e rode novamente !
+```
+\
+
+
+## Efeito de Bohr em hemoglobina (pH)
+
+
+#### Contexto: {.unnumbered}
+
+|   Algumas condições fisiológicas ou patológicas podem alterar a afinidade de ligação do oxigênio com a hemoglobina, tais como a temperatura, alguns metabólitos (2,3-BPG), e o teor hidrogeneiônico da solução.
+
+#### Equação: {.unnumbered}
+
+$$
+Y(pO_2) = \frac{{pO_2^n}}{{P_{50}^n + pO_2^n}}, \quad \text{com } P_{50} = P_{50,\text{ref}} + \alpha (pH_{\text{ref}} - pH)
+$$
+\
+*Onde*,
+
+- Y =  saturação da hemoglobina,
+- pO$_{2}$ =  pressão parcial de oxigênio (em mmHg),
+- P$_{50}$ = pressão de O$_{2}$ na qual a hemoglobina está 50% saturada,
+- P$_{50,ref}$ = 26 mmHg (valor padrão),
+- $\alpha$ = 50 (intensidade do efeito de Bohr),
+- pH$_{ref}$ = 7,4,
+- n = 2,8 = coeficiente de Hill para a hemoglobina.
+
+
+
+[![](Eq/jspl_bohr.png)](Eq/jspl_bohr.html)
+
+
+
+## Ponto Isoelétrico em Proteínas 
+
+
+#### Contexto: {.unnumbered}
+
+|   O *script* para esta simulação baseia-se na distribuição da rede de cargas para um polieletrólito, e a identificação do valor de pH em que essa rede é nula, ou seja o *ponto isoelétrico (ou isoiônico), pI*. O exemplo utiliza a sequência primária da lisozima, hidrolase que atua no rompimento da parede microbiana. 
+
+#### Equação: {.unnumbered}
+
+
+$$
+q_{\text{net}}(pH) = \sum_{i=1}^{N} \left[ n_i \cdot q_{B_i} + \frac{n_i}{1 + 10^{pH - pK_{a_i}}} \right]
+$$
+\
+*Onde*,
+
+- qnet = carga líquida total;
+- qB$_{i} = carga da forma básica para o resíduo i (por exemplo, +1 para Lys, 0 para Asp);
+- n$_{i}$ = número de grupos do resíduo *i*.
+
+[![](Eq/pI.png)](Eq/jsp_pI.html)
+
+
+#### Sugestão: {.unnumbered}
+
+```{r, eval=FALSE}
+"Descobrindo o pI para outras proteínas"
+
+1. Pode-se verificar a titulação de qualquer outra proteína ou sequência peptídica por simples substituição da sequência primária contida no código. Uma forma ascertiva de realizar essa substituição envolve:
+  a. Procurar a sequência "FASTA" da proteína no NCBI ("https://www.ncbi.nlm.nih.gov/protein/") - ex: "papain";
+  b. Clicar em "FASTA" e copiar a sequência 1a. obtida;
+  c. Colar a sequência num site para quantificação de resíduos (ex: "https://www.protpi.ch/Calculator/ProteinTool");
+4. Substituir a sequência no código. 
+```
+\
+
+
+## Catálise e inibição enzimática
+
+### Contexto: {.unnumbered}
+
+|   A simulação visa oferecer uma equação geral para estudos de inibição enzimática, que contemple os *modelos competitivo, incompetitivo e competitivo (puro ou misto)*, também permitindo o estudo de catálise enzimática na ausência de inibidor. 
+
+#### Equação: {.unnumbered}
+
+
+$$
+v=\frac{Vm*S}{Km(1+\frac{I}{Kic})+S(1+\frac{I}{Kiu})}
+$$
+\
+*Onde*
+
+- S = teor de substrato para reação;
+- Vm = velocidade limite da reação (nos livros, velocidade máxima);
+- Km = constante de Michaelis-Mentem;
+- Kic = constante de equilíbrio de dissociação de inibidor para modelo competitivo; 
+- Kiu = constante de equilíbrio de dissociação de inibidor para modelo incompetitivo
+\
+
+
+[![](Eq/kin_inib.png)](Eq/jsp_kin_inib.html){target="_blank"}
+\
+<!---div class="jsplotly_sup-fundo"> --->
+
+### Sugestão: {.unnumbered}
+
+```{r, eval =FALSE}
+"A. Catálise enzimática na ausência de inibidor."
+1. Basta rodar o aplicativo com a equação geral. Veja que os valores para Kic e Kiu estão elevados (1e20). Dessa forma, com "constantes de dissociação" alta, a interação do inibidor com a enzima é irrelevante, retornando o modelo à equação clássica de Michaelis-Mentem.
+2. Experimente alterar os valores de Vm e Km, comparando gráficos.
+3. Use o recurso de coordenadas geográficas da barra de ícones ("Toggle Spike Lines"), para consolidar o significado matemático de Km, bem como observar o efeito de valores distintos desse sobre a visualização do gráfico.
+
+"B. Modelo de inibição competitiva."
+1. Para observar ou comparar o modelo michaeliano com o de inibição competitiva, basta substituir o valor de Kic para um número consistente (ex: Kic= 3).
+
+"C. Modelo de inibição incompetitiva."
+1. A mesma sugestão acima serve para o modelo incompetitivo, desta vez substituindo o valor para Kiu.
+ 
+"D. Modelo de inibição não competitiva pura."
+1. Neste modelo, a simulação dá-se por valores iguais para Kic e Kiu.
+
+"E. Modelo de inibição não competitiva mista."
+1. Para este modelo, basta alocar valores distintos para Kic e Kiu.
+```
+\
+
+## Estabilidade termodinâmica de ácidos nucleicos
+
+### Contexto: {.unnumbered}
+
+|   Diversos fatores contribuem para a estabilidade termodinâmica de biopolímeros, estabilizantes ou desestabilizantes. Esta simulação trata de uma curva de desnaturação térmica para DNA na presença ou não de alguns desses compostos: trealose (osmólito estabilizante), e cloreto de guanidina (desestabilizante).
+
+
+### Equação: {.unnumbered}
+
+$$
+y(T) = \frac{1}{1 + e^{-\frac{T - T_m}{\beta}}}
+$$
+
+
+*Onde*,
+
+- y(T): fração de DNA desnaturado a uma dada temperatura T;
+- Tm: temperatura de transição (*melting*, temperatura para 50% das moléculas em fita dupla, e 50% em fita simples);
+- $\beta$: parâmetro que ajusta a inclinação da curva (afetado por trehalose e guanidina).
+
+
+*Obs:* 
+
+1. Trehalose como estabilizante (reduz $\beta$);
+2. Guanidina como desnaturante (aumenta $\beta$);
+
+
+[![](Eq/denat_DNA.png)](Eq/jsp_denat_DNA_no_osmol.html){target="_blank"}
+
+### Sugestão: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Experimente testar várias condições envolvidas na simulação, como:
+  a) variação de Tm;
+  b) variação do parâmetro $\beta$;
+  c) variação do teor de trealose;
+  d) variação do teor de cloreto de guanidina.
+```
+
+
+## Equação de van der Waals para gases ideais
+
+
+### Contexto: {.unnumbered}
+
+|   Uma adaptação que relaciona as quantidades termodinâmicas de pressão, volume e temperatura para gases ideais, é a *equação de van der Waals*. Nessa são computados coeficientes que estimam a existência de um volume e de interações inter-partículas. Dessa forma, a equação de van der Waals corrije a de gases ideais considerando um termo para compensação de forças intermoleculares (a/V$^{2}$) e o volume disponível, esse descontando o volume ocupado pelas próprias moléculas do gás.
+
+
+|   Na simulação é oferecida uma interatividade adicional pela presença de *sliders* (controles deslizantes) para temperatura, e para os coeficientes de volume finito (*b*) e interação entre partículas (*a*).
+
+### Equação: {.unnumbered}
+
+
+$$
+P = \frac{RT}{V - b} - \frac{a}{V^2}
+$$
+
+- P = pressão do gás (atm);
+- V = volume molar (L);
+- T = temperatura (K);
+- R = 0,0821 = constante dos gases ideais (L·atm/mol·K);
+- a = constante de atração intermolecular (L$^{2}$·atm/mol$^{2})
+- b = constante de volume excluído (L/mol)
+
+
+
+[![](Eq/vanderWaals.png)](Eq/jsp_vanderWaals.html){target="_blank"}
+
+
+### Sugestão: {.unnumbered}
+
+```{r, eval=FALSE}
+
+1. Experimente variar os parâmetros da equação por meio do "slider" para temperatura, bem como para os coeficientes "a e b".
+2. Discorra sobre qual dos coeficientes possui maior efeito no perfil da curva, e a razão para isso.
+
+```
+\
+
+## Equilíbrio de produção de ATP a partir de reagentes, temperatura, e pH
+
+### Contexto: {.unnumbered}
+
+|   A produção de ATP intracelular envolve a relação clássica de equilíbrio químico entre reagentes e produtos em função da temperatura de reação, e ajustada para determinado valor de pH. Variando-se um e/ou outro teor de reagente, ou parâmetro físico-químico, é possível quantificar o produto pela reação termodinâmica que segue:
+
+
+### Equação: {.unnumbered}
+
+$$
+\Delta G = \Delta G^{\circ'} + RT \ln\left(\frac{[\text{ADP}] \cdot [\text{P}_i]}{[\text{ATP}]}\right) + 2{,}303 \cdot RT \cdot n_H \cdot \text{pH}
+$$
+
+*Onde*,
+
+- $\Delta$G = energia de Gibbs da reação (positivo para síntese espontaneamente desfavorável, kJ/mol);
+- $\Delta$G$^{o'}$ = 30,5 kJ/mol energia de Gibbs padrão biológica para a síntese de ATP;
+- R = 8,314 J/mol/K (constante geral dos gases);
+- T=310 K (temperatura fisiológica);
+- nH$^{+}$ = 1 (número de prótons envolvidos na reação);
+- [ADP], [Pi], [ATP] = concentrações molares de reagentes e produto
+
+
+[![](Eq/ATP.png)](Eq/jsp_ATP.html){target="_blank"}
+
+
+
+### Sugestão: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Altere as quantidades envolvidas na expressão, e compare com visualizações precedentes. Exemplificando, temperatura, pH, e teores de ADP e Pi.
+```
+
+
+## Variação da energia de Gibbs com a temperatura
+
+
+### Contexto: {.unnumbered}
+
+|   A relação de Gibbs-Helmholtz prevê que a energia de Gibbs varia de modo não linear com a temperatura, nas reações que envolvem mudança na capacidade calorífica do sistema ($\Delta$Cp). Essa forma expandida da equação de Gibbs para capacidade calorífica variável é apresentada em diversos fenômenos bioquímicos, tais como na transição de fases da estrutura de biomembranas submetidas à um desafio de compostos, ou na mudança conformacional que acompanha a estrutura proteica sob aquecimento. \
+
+### Equação: {.unnumbered}
+
+$$
+\Delta G(T) = \Delta H^\circ - T\,\Delta S^\circ + \Delta C_p \left(T - T_0 - T \ln\left(\frac{T}{T_0}\right)\right)
+$$
+
+*Onde*,
+
+- $\Delta$G(T) = energia de Gibbs da reação em cada valor de temperatura, kJ/mol);
+- $\Delta$H$^{o}$ = entalpia padrão da reação a T$_{0}$, normalmente 298 K (J/mol);
+- $\Delta$S$^{o}$ = entropia padrão da reação a T$_{0}$;
+- $\Delta$Cp = variação da capacidade calorífica da reação (J/mol·K), assumida constante com a temperatura;
+- T = temperatura de interesse (K);
+- T$_{0}$ = temperatura de referência, geralmente 298 K. 
+- R = 8,314 J/mol/K (constante geral dos gases);
+
+
+[![](Eq/gibbs.png)](Eq/jsp_gibbs.html){target="_blank"}
+
+
+
+### Sugestão: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Experimente variar um ou mais parâmetros da expressão;
+2. Teste o comportamento da curva de Gibbs em uma temperatura de referência elevada (simulação para organismo extremófilo);
+3. Simule a situação onde a variação da capacidade calorífica é nula
+```
+
+
+## Inserção de dados do usuário
+
+|   Por vezes é interessante trabalhar-se com os próprios dados discretos, buscando-se uma relação de tendência, matemática ou simplesmente visual, para a relação de variáveis. Segue um exemplo de gráfico interativo com dados do usuário.
+\
+
+[![](Eq/dados.png)](Eq/jsp_dados.html){target="_blank"}
+
+### Sugestão: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Experimente alterar os dados inseridos, sobrepondo ou não o gráfico;
+2. Experimente alterar a representação de dados em "mode" e "type", para pontos, linhas, pontos+linhas, barras.
+```
+
+\
+
+
+## Ajuste linear de dados
+
+### Contexto: {.unnumbered}
+
+|   Em diversas situações da pesquisa experimental, faz-se necessário correlacionar os dados de uma variável dependente com uma variável preditora frente à equação que segue.
+
+
+### Equação: {.unnumbered}
+
+
+$$
+y = \alpha x + \beta + \varepsilon
+$$
+*Onde:*
+
+- y = variável dependente; 
+- x = variável independente; 
+- $\alpha$ = inclinação da reta ajustada (*slope*); 
+- $\beta$ = intercepto da reta ajustada;
+- $\epsilon$ = erro da medida.
+
+
+|   Pode-se obter os parâmetros de *inclinação e intercepto* por alguns procedimentos, como *mínimos quadrados*, *álgebra matricial*, ou por *somatórias* simples. Nesse último caso, o cálculo de parâmetros e de erro pode ser computado como segue:
+
+$$
+\alpha = \frac{n \sum x_i y_i - \sum x_i \sum y_i}{n \sum x_i^2 - \left( \sum x_i \right)^2}
+$$
+
+$$
+\beta = \frac{\sum y_i - \alpha \sum x_i}{n}
+$$
+
+$$
+\hat{y}_i = \alpha x_i + \beta
+$$
+
+$$
+\varepsilon_i = \left| y_i - \hat{y}_i \right|
+$$
+
+
+
+|   Uma representação para ajuste linear com dados arbitrários é fornecida abaixo:
+\
+
+[![](Eq/ajLin.png)](Eq/jsp_ajLin.html){target="_blank"}
+
+
+### Sugestão: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Apresente os pontos sobrepostos ou não à reta do ajuste. Para a sobreposição, escolha "mostrarPontos = true" e "mostrarReta = true";
+2. Altere os dados e realize novo ajuste, para obtenção de outros parâmetros da reta.
+```
+
+
+## Ajuste não linear de dados
+
+### Contexto: {.unnumbered}
+
+|   Modelagem é uma área de emprego comum nas ciências naturais, quando se deseja previsão ou correlação matemática de dados experimentais. Modelos podem constituir-se lineares ou não. Quando não lineares, podem ser aplicados de forma empírica para os dados (ex: funções quadráticas, logarítmicas, exponenciais ou de potência), ou a partir de uma função matemática explanatória do modelo. 
+
+|   Nesse caso são empregadas técnicas para ajuste não linear dos dados ao modelo, como *Simplex*,  *Gauss*, *Newton-Raphson*, *Levenberg-Marquadt*, ou *mínimos quadrados* por exemplo. Seja qual for o método, o ajuste não linear difere-se do linear em pressupostos e tratamento dos dados (veja uma rápida explicação [aqui](https://bioquanti.netlify.app/pt/nivel/superior/r/enzimas#ajuste-n%C3%A3o-linear). 
+
+|   O exemplo a seguir ilustra a aplicação de um ajuste não linear de dados de interação molecular por modelo de Langmuir, e tratamento por *minimização do erro quadrático por varredura manual*. Nesse tratamento, calcula-se a *soma dos erros quadráticos (RMSE)* para combinações de *a* e *b*, selecionando-se o par com menor erro calculado. Nesse caso, por simplificação, apesar o *JSPlotly* trabalhar com bibliotecas mais específicas, a regressão não linear dá-se por por mínimos quadrados, mas realizada por *grid search*, e não por métodos iterativos clássicos. Assim, um conjunto de valores é testado para o par 
+\
+
+### Equação: {.unnumbered}
+
+|   A equação de Langmuir é representada abaixo:
+
+$$
+Y = \frac{aX}{K_d + X}
+$$
+*Onde:*
+
+- Y = fração de sítios ocupados;
+- X = concentração do ligante livre;
+- *a* = valor de saturação (sítios de mesma afinidade completamente ocupados);
+- *Kd* = constante de equilíbrio de dissociação do complexo.
+
+
+
+|   Nesse caso, a função de mínimos quadrados não linear fica:
+
+$$
+SSR(a, K_d) = \sum_{i=1}^n \left( y_i - \frac{a x_i}{K_d + x_i} \right)^2
+$$
+
+
+*Onde:*
+
+*SSR* = soma dos quadrados dos resíduos (inversamente propocional à qualidade do ajuste)
+\
+
+
+[![](Eq/ajNonLin.png)](Eq/jsp_ajNonLin.html){target="_blank"}
+
+
+### Sugestão: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Como no exemplo anterior, apresente alternativamente os pontos e a curva de ajuste pela operação "booleana" ("mostrarPontos = true/false"; "mostrarCurva = true/false");
+2. Altere os dados e realize novo ajuste, para obtenção de outros parâmetros da equação (Kd, SSR, R², R² ajustado). Obs: R² adj corresponde ao valor de R² corrigido para o número de parâmetros do modelo (no caso, "2"), incidindo diretamente nos "graus de liberdade" para o ajuste.
+```
+
+                                                                                                                                                                                                          
+                                                                                                     

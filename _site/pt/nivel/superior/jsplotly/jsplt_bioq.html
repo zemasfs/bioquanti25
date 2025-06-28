@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.22">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Simulações Interativas Para Biofísico-química com JSPlotly &amp; GSPlotly</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../nivel/basico/jsplotly/jsplotly_bas.html" rel="next">
+<link href="../../../nivel/superior/jsplotly/gsplotly.html" rel="prev">
+<link href="../../../avatar.png" rel="icon" type="image/png">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7b4406b7675125bc2ba204020e191172.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-4b957b30fffc5edb70387ff4d75203a6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-S1L73VGCG5"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../logo-bioquanti.png" alt="" class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Procurar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Alternar de navegação" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html"> 
+<span class="menu-text">Sobre</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../erre.html"> 
+<span class="menu-text">Ensino Reprodutível</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-folhas-de-dicas" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Folhas de dicas</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-folhas-de-dicas">    
+        <li>
+    <a class="dropdown-item" href="../../../cheatsheet/plotly.pdf">
+ <span class="dropdown-text">Plotly</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../cheatsheet/jmol_cheat.pt2.pdf">
+ <span class="dropdown-text">Jmol</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../cheatsheet/r_cheat.pt.pdf">
+ <span class="dropdown-text">R</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../../producao.html"> 
+<span class="menu-text">Trabalhos</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../contato.html"> 
+<span class="menu-text">Contato</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../en/index.html"> 
+<span class="menu-text">EN</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo de leitor">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../nivel/superior/jsplotly/jsplotly_geral.html">JSPlotly &amp; GSPlotly - Simulação gráfica interativa &amp; IA</a></li><li class="breadcrumb-item"><a href="../../../nivel/superior/jsplotly/jsplt_bioq.html">Simulações em Biofísico-química</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">JSPlotly &amp; GSPlotly - Simulação gráfica interativa &amp; IA</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/superior/jsplotly/jsplotly_geral.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">JSPlotly - Simulação gráfica com JavaScript</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/superior/jsplotly/gsplotly.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">GSPlotly - gerador de códigos por IA para JSPlotly</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/superior/jsplotly/jsplt_bioq.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Simulações em Biofísico-química</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/basico/jsplotly/jsplotly_bas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulações na Escola</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Jmol - Moléculas em 3D</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/superior/jmol/index_jmol.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Modelos atômicos em Bioquímica</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/basico/Curso/index_jmol_bas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Moléculas 3D na Escola</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/basico/Jardim/index_Jardim.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Jardim de Moléculas</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">R - Cálculos e visualizações</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/superior/r/index_r.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R em Biofísico-química</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/superior/ScriptRplot/scriptrplot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">scriptRplot: gráficos elegantes com ggplot2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/basico/Curso/index_r_bas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R &amp; RStudio na Escola</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/basico/R/index_OIER.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Gráficos e mapas interativos na Escola</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Sisma - diagramas dinâmicos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/superior/sisma/index_sisma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fluxos dinâmicos em Bioquímica</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/basico/sisma/index_sisma_bas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Diagramas interativos na Escola</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul class="collapse">
+  <li><a href="#instruções" id="toc-instruções" class="nav-link active" data-scroll-target="#instruções">Instruções</a></li>
+  <li><a href="#equilíbrio-ácido-básico-e-sistema-tampão" id="toc-equilíbrio-ácido-básico-e-sistema-tampão" class="nav-link" data-scroll-target="#equilíbrio-ácido-básico-e-sistema-tampão"><span class="header-section-number">1</span> Equilíbrio ácido-básico e sistema tampão</a></li>
+  <li><a href="#rede-de-carga-líquida-em-peptídios" id="toc-rede-de-carga-líquida-em-peptídios" class="nav-link" data-scroll-target="#rede-de-carga-líquida-em-peptídios"><span class="header-section-number">2</span> Rede de carga líquida em peptídios</a></li>
+  <li><a href="#interação-de-oxigênio-com-mioglobina-e-hemoglobina" id="toc-interação-de-oxigênio-com-mioglobina-e-hemoglobina" class="nav-link" data-scroll-target="#interação-de-oxigênio-com-mioglobina-e-hemoglobina"><span class="header-section-number">3</span> Interação de oxigênio com mioglobina e hemoglobina</a></li>
+  <li><a href="#efeito-de-bohr-em-hemoglobina-ph" id="toc-efeito-de-bohr-em-hemoglobina-ph" class="nav-link" data-scroll-target="#efeito-de-bohr-em-hemoglobina-ph"><span class="header-section-number">4</span> Efeito de Bohr em hemoglobina (pH)</a></li>
+  <li><a href="#ponto-isoelétrico-em-proteínas" id="toc-ponto-isoelétrico-em-proteínas" class="nav-link" data-scroll-target="#ponto-isoelétrico-em-proteínas"><span class="header-section-number">5</span> Ponto Isoelétrico em Proteínas</a></li>
+  <li><a href="#catálise-e-inibição-enzimática" id="toc-catálise-e-inibição-enzimática" class="nav-link" data-scroll-target="#catálise-e-inibição-enzimática"><span class="header-section-number">6</span> Catálise e inibição enzimática</a></li>
+  <li><a href="#estabilidade-termodinâmica-de-ácidos-nucleicos" id="toc-estabilidade-termodinâmica-de-ácidos-nucleicos" class="nav-link" data-scroll-target="#estabilidade-termodinâmica-de-ácidos-nucleicos"><span class="header-section-number">7</span> Estabilidade termodinâmica de ácidos nucleicos</a></li>
+  <li><a href="#equação-de-van-der-waals-para-gases-ideais" id="toc-equação-de-van-der-waals-para-gases-ideais" class="nav-link" data-scroll-target="#equação-de-van-der-waals-para-gases-ideais"><span class="header-section-number">8</span> Equação de van der Waals para gases ideais</a></li>
+  <li><a href="#equilíbrio-de-produção-de-atp-a-partir-de-reagentes-temperatura-e-ph" id="toc-equilíbrio-de-produção-de-atp-a-partir-de-reagentes-temperatura-e-ph" class="nav-link" data-scroll-target="#equilíbrio-de-produção-de-atp-a-partir-de-reagentes-temperatura-e-ph"><span class="header-section-number">9</span> Equilíbrio de produção de ATP a partir de reagentes, temperatura, e pH</a></li>
+  <li><a href="#variação-da-energia-de-gibbs-com-a-temperatura" id="toc-variação-da-energia-de-gibbs-com-a-temperatura" class="nav-link" data-scroll-target="#variação-da-energia-de-gibbs-com-a-temperatura"><span class="header-section-number">10</span> Variação da energia de Gibbs com a temperatura</a></li>
+  <li><a href="#inserção-de-dados-do-usuário" id="toc-inserção-de-dados-do-usuário" class="nav-link" data-scroll-target="#inserção-de-dados-do-usuário"><span class="header-section-number">11</span> Inserção de dados do usuário</a></li>
+  <li><a href="#ajuste-linear-de-dados" id="toc-ajuste-linear-de-dados" class="nav-link" data-scroll-target="#ajuste-linear-de-dados"><span class="header-section-number">12</span> Ajuste linear de dados</a></li>
+  <li><a href="#ajuste-não-linear-de-dados" id="toc-ajuste-não-linear-de-dados" class="nav-link" data-scroll-target="#ajuste-não-linear-de-dados"><span class="header-section-number">13</span> Ajuste não linear de dados</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../nivel/superior/jsplotly/jsplotly_geral.html">JSPlotly &amp; GSPlotly - Simulação gráfica interativa &amp; IA</a></li><li class="breadcrumb-item"><a href="../../../nivel/superior/jsplotly/jsplt_bioq.html">Simulações em Biofísico-química</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Simulações Interativas Para Biofísico-química com JSPlotly &amp; GSPlotly</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="line-block">&nbsp;&nbsp;Para ilustrar o potencial de uso do <em>JSPlotly</em> para Bioquímica e áreas correlatas, seguem alguns exemplos de simulações e análise de dados, e cujos gráficos são frequentemente encontrados em livros-texto e conteúdos afins. Para um melhor aproveitamento de cada tema, experimente seguir as sugestões para <em>manipulação paramétrica</em> em cada tema.</div>
+<p><br>
+</p>
+<section id="instruções" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="instruções">Instruções</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Escolha um tema;</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Clique no gráfico correspondente;</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Clique em <span class="st">"Add Plot"</span>;</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fl">4.</span> Use o mouse para interatividade e<span class="sc">/</span>ou edite o código. </span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>Lembrete<span class="sc">:</span> o editor usa desfazer<span class="sc">/</span>refazer infinitos no código (Ctrl<span class="sc">+</span>Z <span class="sc">/</span> Shift<span class="sc">+</span>Ctrl<span class="sc">+</span>Z) <span class="sc">!</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="equilíbrio-ácido-básico-e-sistema-tampão" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="equilíbrio-ácido-básico-e-sistema-tampão"><span class="header-section-number">1</span> Equilíbrio ácido-básico e sistema tampão</h2>
+<section id="contexto" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="contexto">Contexto:</h4>
+<div class="line-block">&nbsp;&nbsp;O exemplo ilustra a adição de base num sistema contendo um ácido fraco e sua base conjugada. A equação de titulação refere-se a um <em>ácido triprótico</em>, o ácido fosfórico do tampão homônimo, mas serviria igualmente para outros tantos, como os presentes no ciclo de Krebs (citrato, isocitrato).</div>
+</section>
+<section id="equação" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="equação">Equação:</h4>
+<p><span class="math display">\[
+fa= \frac{1}{1 + 10^{pKa1 - pH}} + \frac{1}{1 + 10^{pKa2 - pH}} + \frac{1}{1 + 10^{pKa3 - pH}}
+\]</span> <em>Onde</em>, fa = fração de ácido (grupos protonáveis)<br>
+</p>
+<p><a href="Eq/jsp_acbase.html" target="_blank"><img src="Eq/tit_acbase.png" class="img-fluid"></a><br>
+<!---div class="jsplotly_sup-fundo"> ---></p>
+</section>
+<section id="sugestão" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="sugestão">Sugestão:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="st">"A. Convertendo a curva de tampão fosfato (triprótico) para tampão bicarbonato (diprótico)"</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Altere os valores de pKa para o tampão bicarbonato<span class="sc">:</span> pKa1 <span class="ot">=</span>      <span class="fl">6.1</span>, e pKa2 <span class="ot">=</span> <span class="fl">10.3</span>;</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Coloque um valor muito grande para <span class="fu">pKa3</span> (ex<span class="sc">:</span><span class="fl">1e20</span>). </span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Clique em <span class="st">"add plot"</span>.</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>Explicação<span class="sc">:</span> pKa é um termo que representa o logaritmo de uma constante de dissociação (<span class="sc">-</span>log[Ka]). Com um valor extremo, o denominador torna<span class="sc">-</span>se igualmente imenso, anulando o termo que leva pKa3. Em JavaScript e outras linguagens, <span class="st">"e"</span> representa a notação para potência de <span class="fl">10.</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="st">"B. Convertendo a curva de tampão bicarbonato para acetato"</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Basta repetir o procedimento acima, com pKa1 <span class="ot">=</span> <span class="fl">4.75</span>, e eliminando<span class="sc">-</span>se pKa2.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br>
+</p>
+</section>
+</section>
+<section id="rede-de-carga-líquida-em-peptídios" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="rede-de-carga-líquida-em-peptídios"><span class="header-section-number">2</span> Rede de carga líquida em peptídios</h2>
+<section id="contexto-1" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="contexto-1">Contexto:</h4>
+<div class="line-block">&nbsp;&nbsp;O código refere-se à rede de carga líquida presente numa sequência qualquer de resíduos de aminoácidos. Aqui é ilustrada a <em>angiotensina II</em>, importante peptídio para regulação da pressão arterial e equilíbrio eletrolítico, e cuja enzima conversora está associada ao mecanismo de invasibilidade celular por SARS-CoV-2.</div>
+</section>
+<section id="equação-1" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="equação-1">Equação:</h4>
+<div class="line-block">&nbsp;&nbsp;Para essa simulação não há uma equação direta, já que o algoritmo precisa decidir a carga em função da natureza básica ou ácido do resíduo em determinado valor de pH (observe o <em>script</em>). Assim:</div>
+<p><span class="math display">\[
+q =
+\begin{cases}
+-\dfrac{1}{1 + 10^{pK_a - pH}} &amp; \text{(grupo ácido)} \\\\
+\dfrac{1}{1 + 10^{pH - pK_a}} &amp; \text{(grupo básico)}
+\end{cases}
+\]</span><br>
+</p>
+<p><em>Onde</em>,</p>
+<ul>
+<li>pKa = valor do antilogarítmo de base 10 para a constante de equilíbrio de dissociação do ácido, Ka (ou log[Ka]).</li>
+</ul>
+<p><a href="Eq/jsp_cargaAA.html" target="_blank"><img src="Eq/cargaAA.png" class="img-fluid"></a><br>
+<!---div class="jsplotly_sup-fundo"> ---></p>
+</section>
+<section id="sugestão-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="sugestão-1">Sugestão:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Selecione a sequência peptídica abaixo, e observe a distribuição de cargas<span class="sc">:</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="st">"Ala,Lys,Arg,Leu,Phe,Glu,Cys,Asp,His"</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Simule a condição de pH do estômago (<span class="st">"const pH = 1.5"</span>), e verifique a alteração de cargas no peptídio. </span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Selecione um peptídio fisiológico (oxitocina, por ex), observe sua carga no <span class="fu">sangue</span> (pH <span class="fl">7.5</span>), e reflita sobre seu potencial de interação eletrostática com componentes celulares.</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="st">"Cys,Tyr,Ile,Gln,Asn,Cys,Pro,Leu,Gly"</span>  <span class="sc">-</span> oxitocina</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br>
+</p>
+</section>
+</section>
+<section id="interação-de-oxigênio-com-mioglobina-e-hemoglobina" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="interação-de-oxigênio-com-mioglobina-e-hemoglobina"><span class="header-section-number">3</span> Interação de oxigênio com mioglobina e hemoglobina</h2>
+<section id="contexto-2" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="contexto-2">Contexto:</h4>
+<div class="line-block">&nbsp;&nbsp;A molécula de oxigênio pode combinar-se ao grupo <em>heme</em> de mioglobina e hemoglobina de forma distinta, em função da cooperatividade exibida nesta última frente à sua estrutura quaternária. O modelo que segue exemplica essa interação, por uso da <em>equação de Hill</em>.</div>
+</section>
+<section id="equação-2" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="equação-2">Equação:</h4>
+<p><span class="math display">\[
+Y= \frac{pO_2^{nH}}{p_{50}^{nH} + pO_2^{nH}}
+\]</span><br>
+</p>
+<p><em>Onde</em></p>
+<ul>
+<li>Y = grau de saturação de oxigênio na proteína;</li>
+<li>pO<span class="math inline">\(_{2}\)</span> = pressão de oxigênio;</li>
+<li>p<span class="math inline">\(_{50}\)</span> = pressão de oxigênio a 50% de saturação;</li>
+<li>nH = coeficiente de Hill para a interação;<br>
+</li>
+</ul>
+<p><a href="Eq/jsp_O2.html" target="_blank"><img src="Eq/O2.png" class="img-fluid"></a><br>
+<!---div class="jsplotly_sup-fundo"> ---></p>
+</section>
+<section id="sugestão-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="sugestão-2">Sugestão:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Rode o <span class="fu">aplicativo</span> (<span class="st">"add plot"</span>). Veja que o valor de <span class="st">"nH"</span> da constante de Hill é <span class="st">"1"</span>, ou seja, sem efeito de cooperatividade.</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Agora substitua o valor de <span class="st">"nH"</span> pelo coeficiente de Hill para a hemoglobina, <span class="fl">2.8</span>, e rode novamente <span class="sc">!</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br>
+</p>
+</section>
+</section>
+<section id="efeito-de-bohr-em-hemoglobina-ph" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="efeito-de-bohr-em-hemoglobina-ph"><span class="header-section-number">4</span> Efeito de Bohr em hemoglobina (pH)</h2>
+<section id="contexto-3" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="contexto-3">Contexto:</h4>
+<div class="line-block">&nbsp;&nbsp;Algumas condições fisiológicas ou patológicas podem alterar a afinidade de ligação do oxigênio com a hemoglobina, tais como a temperatura, alguns metabólitos (2,3-BPG), e o teor hidrogeneiônico da solução.</div>
+</section>
+<section id="equação-3" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="equação-3">Equação:</h4>
+<p><span class="math display">\[
+Y(pO_2) = \frac{{pO_2^n}}{{P_{50}^n + pO_2^n}}, \quad \text{com } P_{50} = P_{50,\text{ref}} + \alpha (pH_{\text{ref}} - pH)
+\]</span><br>
+<em>Onde</em>,</p>
+<ul>
+<li>Y = saturação da hemoglobina,</li>
+<li>pO<span class="math inline">\(_{2}\)</span> = pressão parcial de oxigênio (em mmHg),</li>
+<li>P<span class="math inline">\(_{50}\)</span> = pressão de O<span class="math inline">\(_{2}\)</span> na qual a hemoglobina está 50% saturada,</li>
+<li>P<span class="math inline">\(_{50,ref}\)</span> = 26 mmHg (valor padrão),</li>
+<li><span class="math inline">\(\alpha\)</span> = 50 (intensidade do efeito de Bohr),</li>
+<li>pH<span class="math inline">\(_{ref}\)</span> = 7,4,</li>
+<li>n = 2,8 = coeficiente de Hill para a hemoglobina.</li>
+</ul>
+<p><a href="Eq/jspl_bohr.html"><img src="Eq/jspl_bohr.png" class="img-fluid"></a></p>
+</section>
+</section>
+<section id="ponto-isoelétrico-em-proteínas" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="ponto-isoelétrico-em-proteínas"><span class="header-section-number">5</span> Ponto Isoelétrico em Proteínas</h2>
+<section id="contexto-4" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="contexto-4">Contexto:</h4>
+<div class="line-block">&nbsp;&nbsp;O <em>script</em> para esta simulação baseia-se na distribuição da rede de cargas para um polieletrólito, e a identificação do valor de pH em que essa rede é nula, ou seja o <em>ponto isoelétrico (ou isoiônico), pI</em>. O exemplo utiliza a sequência primária da lisozima, hidrolase que atua no rompimento da parede microbiana.</div>
+</section>
+<section id="equação-4" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="equação-4">Equação:</h4>
+<p><span class="math display">\[
+q_{\text{net}}(pH) = \sum_{i=1}^{N} \left[ n_i \cdot q_{B_i} + \frac{n_i}{1 + 10^{pH - pK_{a_i}}} \right]
+\]</span><br>
+<em>Onde</em>,</p>
+<ul>
+<li>qnet = carga líquida total;</li>
+<li>qB$_{i} = carga da forma básica para o resíduo i (por exemplo, +1 para Lys, 0 para Asp);</li>
+<li>n<span class="math inline">\(_{i}\)</span> = número de grupos do resíduo <em>i</em>.</li>
+</ul>
+<p><a href="Eq/jsp_pI.html"><img src="Eq/pI.png" class="img-fluid"></a></p>
+</section>
+<section id="sugestão-3" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="sugestão-3">Sugestão:</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="st">"Descobrindo o pI para outras proteínas"</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Pode<span class="sc">-</span>se verificar a titulação de qualquer outra proteína ou sequência peptídica por simples substituição da sequência primária contida no código. Uma forma ascertiva de realizar essa substituição envolve<span class="sc">:</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  a. Procurar a sequência <span class="st">"FASTA"</span> da proteína no <span class="fu">NCBI</span> (<span class="st">"https://www.ncbi.nlm.nih.gov/protein/"</span>) <span class="sc">-</span> ex<span class="sc">:</span> <span class="st">"papain"</span>;</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  b. Clicar em <span class="st">"FASTA"</span> e copiar a sequência <span class="dv">1</span>a. obtida;</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  c. Colar a sequência num site para quantificação de resíduos (ex<span class="sc">:</span> <span class="st">"https://www.protpi.ch/Calculator/ProteinTool"</span>);</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="fl">4.</span> Substituir a sequência no código. </span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br>
+</p>
+</section>
+</section>
+<section id="catálise-e-inibição-enzimática" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="catálise-e-inibição-enzimática"><span class="header-section-number">6</span> Catálise e inibição enzimática</h2>
+<section id="contexto-5" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="contexto-5">Contexto:</h3>
+<div class="line-block">&nbsp;&nbsp;A simulação visa oferecer uma equação geral para estudos de inibição enzimática, que contemple os <em>modelos competitivo, incompetitivo e competitivo (puro ou misto)</em>, também permitindo o estudo de catálise enzimática na ausência de inibidor.</div>
+<section id="equação-5" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="equação-5">Equação:</h4>
+<p><span class="math display">\[
+v=\frac{Vm*S}{Km(1+\frac{I}{Kic})+S(1+\frac{I}{Kiu})}
+\]</span><br>
+<em>Onde</em></p>
+<ul>
+<li>S = teor de substrato para reação;</li>
+<li>Vm = velocidade limite da reação (nos livros, velocidade máxima);</li>
+<li>Km = constante de Michaelis-Mentem;</li>
+<li>Kic = constante de equilíbrio de dissociação de inibidor para modelo competitivo;</li>
+<li>Kiu = constante de equilíbrio de dissociação de inibidor para modelo incompetitivo<br>
+</li>
+</ul>
+<p><a href="Eq/jsp_kin_inib.html" target="_blank"><img src="Eq/kin_inib.png" class="img-fluid"></a><br>
+<!---div class="jsplotly_sup-fundo"> ---></p>
+</section>
+</section>
+<section id="sugestão-4" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="sugestão-4">Sugestão:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="st">"A. Catálise enzimática na ausência de inibidor."</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Basta rodar o aplicativo com a equação geral. Veja que os valores para Kic e Kiu estão <span class="fu">elevados</span> (<span class="fl">1e20</span>). Dessa forma, com <span class="st">"constantes de dissociação"</span> alta, a interação do inibidor com a enzima é irrelevante, retornando o modelo à equação clássica de Michaelis<span class="sc">-</span>Mentem.</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Experimente alterar os valores de Vm e Km, comparando gráficos.</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Use o recurso de coordenadas geográficas da barra de í<span class="fu">cones</span> (<span class="st">"Toggle Spike Lines"</span>), para consolidar o significado matemático de Km, bem como observar o efeito de valores distintos desse sobre a visualização do gráfico.</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="st">"B. Modelo de inibição competitiva."</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Para observar ou comparar o modelo michaeliano com o de inibição competitiva, basta substituir o valor de Kic para um número <span class="fu">consistente</span> (ex<span class="sc">:</span> <span class="at">Kic=</span> <span class="dv">3</span>).</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="st">"C. Modelo de inibição incompetitiva."</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> A mesma sugestão acima serve para o modelo incompetitivo, desta vez substituindo o valor para Kiu.</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="st">"D. Modelo de inibição não competitiva pura."</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Neste modelo, a simulação dá<span class="sc">-</span>se por valores iguais para Kic e Kiu.</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="st">"E. Modelo de inibição não competitiva mista."</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Para este modelo, basta alocar valores distintos para Kic e Kiu.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br>
+</p>
+</section>
+</section>
+<section id="estabilidade-termodinâmica-de-ácidos-nucleicos" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="estabilidade-termodinâmica-de-ácidos-nucleicos"><span class="header-section-number">7</span> Estabilidade termodinâmica de ácidos nucleicos</h2>
+<section id="contexto-6" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="contexto-6">Contexto:</h3>
+<div class="line-block">&nbsp;&nbsp;Diversos fatores contribuem para a estabilidade termodinâmica de biopolímeros, estabilizantes ou desestabilizantes. Esta simulação trata de uma curva de desnaturação térmica para DNA na presença ou não de alguns desses compostos: trealose (osmólito estabilizante), e cloreto de guanidina (desestabilizante).</div>
+</section>
+<section id="equação-6" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="equação-6">Equação:</h3>
+<p><span class="math display">\[
+y(T) = \frac{1}{1 + e^{-\frac{T - T_m}{\beta}}}
+\]</span></p>
+<p><em>Onde</em>,</p>
+<ul>
+<li>y(T): fração de DNA desnaturado a uma dada temperatura T;</li>
+<li>Tm: temperatura de transição (<em>melting</em>, temperatura para 50% das moléculas em fita dupla, e 50% em fita simples);</li>
+<li><span class="math inline">\(\beta\)</span>: parâmetro que ajusta a inclinação da curva (afetado por trehalose e guanidina).</li>
+</ul>
+<p><em>Obs:</em></p>
+<ol type="1">
+<li>Trehalose como estabilizante (reduz <span class="math inline">\(\beta\)</span>);</li>
+<li>Guanidina como desnaturante (aumenta <span class="math inline">\(\beta\)</span>);</li>
+</ol>
+<p><a href="Eq/jsp_denat_DNA_no_osmol.html" target="_blank"><img src="Eq/denat_DNA.png" class="img-fluid"></a></p>
+</section>
+<section id="sugestão-5" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="sugestão-5">Sugestão:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Experimente testar várias condições envolvidas na simulação, como<span class="sc">:</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  a<span class="er">)</span> variação de Tm;</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  b<span class="er">)</span> variação do parâmetro <span class="sc">$</span>\beta<span class="sc">$</span>;</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  c<span class="er">)</span> variação do teor de trealose;</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  d<span class="er">)</span> variação do teor de cloreto de guanidina.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="equação-de-van-der-waals-para-gases-ideais" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="equação-de-van-der-waals-para-gases-ideais"><span class="header-section-number">8</span> Equação de van der Waals para gases ideais</h2>
+<section id="contexto-7" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="contexto-7">Contexto:</h3>
+<div class="line-block">&nbsp;&nbsp;Uma adaptação que relaciona as quantidades termodinâmicas de pressão, volume e temperatura para gases ideais, é a <em>equação de van der Waals</em>. Nessa são computados coeficientes que estimam a existência de um volume e de interações inter-partículas. Dessa forma, a equação de van der Waals corrije a de gases ideais considerando um termo para compensação de forças intermoleculares (a/V<span class="math inline">\(^{2}\)</span>) e o volume disponível, esse descontando o volume ocupado pelas próprias moléculas do gás.</div>
+<div class="line-block">&nbsp;&nbsp;Na simulação é oferecida uma interatividade adicional pela presença de <em>sliders</em> (controles deslizantes) para temperatura, e para os coeficientes de volume finito (<em>b</em>) e interação entre partículas (<em>a</em>).</div>
+</section>
+<section id="equação-7" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="equação-7">Equação:</h3>
+<p><span class="math display">\[
+P = \frac{RT}{V - b} - \frac{a}{V^2}
+\]</span></p>
+<ul>
+<li>P = pressão do gás (atm);</li>
+<li>V = volume molar (L);</li>
+<li>T = temperatura (K);</li>
+<li>R = 0,0821 = constante dos gases ideais (L·atm/mol·K);</li>
+<li>a = constante de atração intermolecular (L<span class="math inline">\(^{2}\)</span>·atm/mol$^{2})</li>
+<li>b = constante de volume excluído (L/mol)</li>
+</ul>
+<p><a href="Eq/jsp_vanderWaals.html" target="_blank"><img src="Eq/vanderWaals.png" class="img-fluid"></a></p>
+</section>
+<section id="sugestão-6" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="sugestão-6">Sugestão:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Experimente variar os parâmetros da equação por meio do <span class="st">"slider"</span> para temperatura, bem como para os coeficientes <span class="st">"a e b"</span>.</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Discorra sobre qual dos coeficientes possui maior efeito no perfil da curva, e a razão para isso.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br>
+</p>
+</section>
+</section>
+<section id="equilíbrio-de-produção-de-atp-a-partir-de-reagentes-temperatura-e-ph" class="level2" data-number="9">
+<h2 data-number="9" class="anchored" data-anchor-id="equilíbrio-de-produção-de-atp-a-partir-de-reagentes-temperatura-e-ph"><span class="header-section-number">9</span> Equilíbrio de produção de ATP a partir de reagentes, temperatura, e pH</h2>
+<section id="contexto-8" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="contexto-8">Contexto:</h3>
+<div class="line-block">&nbsp;&nbsp;A produção de ATP intracelular envolve a relação clássica de equilíbrio químico entre reagentes e produtos em função da temperatura de reação, e ajustada para determinado valor de pH. Variando-se um e/ou outro teor de reagente, ou parâmetro físico-químico, é possível quantificar o produto pela reação termodinâmica que segue:</div>
+</section>
+<section id="equação-8" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="equação-8">Equação:</h3>
+<p><span class="math display">\[
+\Delta G = \Delta G^{\circ'} + RT \ln\left(\frac{[\text{ADP}] \cdot [\text{P}_i]}{[\text{ATP}]}\right) + 2{,}303 \cdot RT \cdot n_H \cdot \text{pH}
+\]</span></p>
+<p><em>Onde</em>,</p>
+<ul>
+<li><span class="math inline">\(\Delta\)</span>G = energia de Gibbs da reação (positivo para síntese espontaneamente desfavorável, kJ/mol);</li>
+<li><span class="math inline">\(\Delta\)</span>G<span class="math inline">\(^{o'}\)</span> = 30,5 kJ/mol energia de Gibbs padrão biológica para a síntese de ATP;</li>
+<li>R = 8,314 J/mol/K (constante geral dos gases);</li>
+<li>T=310 K (temperatura fisiológica);</li>
+<li>nH<span class="math inline">\(^{+}\)</span> = 1 (número de prótons envolvidos na reação);</li>
+<li>[ADP], [Pi], [ATP] = concentrações molares de reagentes e produto</li>
+</ul>
+<p><a href="Eq/jsp_ATP.html" target="_blank"><img src="Eq/ATP.png" class="img-fluid"></a></p>
+</section>
+<section id="sugestão-7" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="sugestão-7">Sugestão:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Altere as quantidades envolvidas na expressão, e compare com visualizações precedentes. Exemplificando, temperatura, pH, e teores de ADP e Pi.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="variação-da-energia-de-gibbs-com-a-temperatura" class="level2" data-number="10">
+<h2 data-number="10" class="anchored" data-anchor-id="variação-da-energia-de-gibbs-com-a-temperatura"><span class="header-section-number">10</span> Variação da energia de Gibbs com a temperatura</h2>
+<section id="contexto-9" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="contexto-9">Contexto:</h3>
+<div class="line-block">&nbsp;&nbsp;A relação de Gibbs-Helmholtz prevê que a energia de Gibbs varia de modo não linear com a temperatura, nas reações que envolvem mudança na capacidade calorífica do sistema (<span class="math inline">\(\Delta\)</span>Cp). Essa forma expandida da equação de Gibbs para capacidade calorífica variável é apresentada em diversos fenômenos bioquímicos, tais como na transição de fases da estrutura de biomembranas submetidas à um desafio de compostos, ou na mudança conformacional que acompanha a estrutura proteica sob aquecimento. \</div>
+</section>
+<section id="equação-9" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="equação-9">Equação:</h3>
+<p><span class="math display">\[
+\Delta G(T) = \Delta H^\circ - T\,\Delta S^\circ + \Delta C_p \left(T - T_0 - T \ln\left(\frac{T}{T_0}\right)\right)
+\]</span></p>
+<p><em>Onde</em>,</p>
+<ul>
+<li><span class="math inline">\(\Delta\)</span>G(T) = energia de Gibbs da reação em cada valor de temperatura, kJ/mol);</li>
+<li><span class="math inline">\(\Delta\)</span>H<span class="math inline">\(^{o}\)</span> = entalpia padrão da reação a T<span class="math inline">\(_{0}\)</span>, normalmente 298 K (J/mol);</li>
+<li><span class="math inline">\(\Delta\)</span>S<span class="math inline">\(^{o}\)</span> = entropia padrão da reação a T<span class="math inline">\(_{0}\)</span>;</li>
+<li><span class="math inline">\(\Delta\)</span>Cp = variação da capacidade calorífica da reação (J/mol·K), assumida constante com a temperatura;</li>
+<li>T = temperatura de interesse (K);</li>
+<li>T<span class="math inline">\(_{0}\)</span> = temperatura de referência, geralmente 298 K.</li>
+<li>R = 8,314 J/mol/K (constante geral dos gases);</li>
+</ul>
+<p><a href="Eq/jsp_gibbs.html" target="_blank"><img src="Eq/gibbs.png" class="img-fluid"></a></p>
+</section>
+<section id="sugestão-8" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="sugestão-8">Sugestão:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Experimente variar um ou mais parâmetros da expressão;</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Teste o comportamento da curva de Gibbs em uma temperatura de referência <span class="fu">elevada</span> (simulação para organismo extremófilo);</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Simule a situação onde a variação da capacidade calorífica é nula</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="inserção-de-dados-do-usuário" class="level2" data-number="11">
+<h2 data-number="11" class="anchored" data-anchor-id="inserção-de-dados-do-usuário"><span class="header-section-number">11</span> Inserção de dados do usuário</h2>
+<div class="line-block">&nbsp;&nbsp;Por vezes é interessante trabalhar-se com os próprios dados discretos, buscando-se uma relação de tendência, matemática ou simplesmente visual, para a relação de variáveis. Segue um exemplo de gráfico interativo com dados do usuário.</div>
+<p><br>
+</p>
+<p><a href="Eq/jsp_dados.html" target="_blank"><img src="Eq/dados.png" class="img-fluid"></a></p>
+<section id="sugestão-9" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="sugestão-9">Sugestão:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Experimente alterar os dados inseridos, sobrepondo ou não o gráfico;</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Experimente alterar a representação de dados em <span class="st">"mode"</span> e <span class="st">"type"</span>, para pontos, linhas, pontos<span class="sc">+</span>linhas, barras.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br>
+</p>
+</section>
+</section>
+<section id="ajuste-linear-de-dados" class="level2" data-number="12">
+<h2 data-number="12" class="anchored" data-anchor-id="ajuste-linear-de-dados"><span class="header-section-number">12</span> Ajuste linear de dados</h2>
+<section id="contexto-10" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="contexto-10">Contexto:</h3>
+<div class="line-block">&nbsp;&nbsp;Em diversas situações da pesquisa experimental, faz-se necessário correlacionar os dados de uma variável dependente com uma variável preditora frente à equação que segue.</div>
+</section>
+<section id="equação-10" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="equação-10">Equação:</h3>
+<p><span class="math display">\[
+y = \alpha x + \beta + \varepsilon
+\]</span> <em>Onde:</em></p>
+<ul>
+<li>y = variável dependente;</li>
+<li>x = variável independente;</li>
+<li><span class="math inline">\(\alpha\)</span> = inclinação da reta ajustada (<em>slope</em>);</li>
+<li><span class="math inline">\(\beta\)</span> = intercepto da reta ajustada;</li>
+<li><span class="math inline">\(\epsilon\)</span> = erro da medida.</li>
+</ul>
+<div class="line-block">&nbsp;&nbsp;Pode-se obter os parâmetros de <em>inclinação e intercepto</em> por alguns procedimentos, como <em>mínimos quadrados</em>, <em>álgebra matricial</em>, ou por <em>somatórias</em> simples. Nesse último caso, o cálculo de parâmetros e de erro pode ser computado como segue:</div>
+<p><span class="math display">\[
+\alpha = \frac{n \sum x_i y_i - \sum x_i \sum y_i}{n \sum x_i^2 - \left( \sum x_i \right)^2}
+\]</span></p>
+<p><span class="math display">\[
+\beta = \frac{\sum y_i - \alpha \sum x_i}{n}
+\]</span></p>
+<p><span class="math display">\[
+\hat{y}_i = \alpha x_i + \beta
+\]</span></p>
+<p><span class="math display">\[
+\varepsilon_i = \left| y_i - \hat{y}_i \right|
+\]</span></p>
+<div class="line-block">&nbsp;&nbsp;Uma representação para ajuste linear com dados arbitrários é fornecida abaixo:</div>
+<p><br>
+</p>
+<p><a href="Eq/jsp_ajLin.html" target="_blank"><img src="Eq/ajLin.png" class="img-fluid"></a></p>
+</section>
+<section id="sugestão-10" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="sugestão-10">Sugestão:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Apresente os pontos sobrepostos ou não à reta do ajuste. Para a sobreposição, escolha <span class="st">"mostrarPontos = true"</span> e <span class="st">"mostrarReta = true"</span>;</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Altere os dados e realize novo ajuste, para obtenção de outros parâmetros da reta.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="ajuste-não-linear-de-dados" class="level2" data-number="13">
+<h2 data-number="13" class="anchored" data-anchor-id="ajuste-não-linear-de-dados"><span class="header-section-number">13</span> Ajuste não linear de dados</h2>
+<section id="contexto-11" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="contexto-11">Contexto:</h3>
+<div class="line-block">&nbsp;&nbsp;Modelagem é uma área de emprego comum nas ciências naturais, quando se deseja previsão ou correlação matemática de dados experimentais. Modelos podem constituir-se lineares ou não. Quando não lineares, podem ser aplicados de forma empírica para os dados (ex: funções quadráticas, logarítmicas, exponenciais ou de potência), ou a partir de uma função matemática explanatória do modelo.</div>
+<div class="line-block">&nbsp;&nbsp;Nesse caso são empregadas técnicas para ajuste não linear dos dados ao modelo, como <em>Simplex</em>, <em>Gauss</em>, <em>Newton-Raphson</em>, <em>Levenberg-Marquadt</em>, ou <em>mínimos quadrados</em> por exemplo. Seja qual for o método, o ajuste não linear difere-se do linear em pressupostos e tratamento dos dados (veja uma rápida explicação <a href="https://bioquanti.netlify.app/pt/nivel/superior/r/enzimas#ajuste-n%C3%A3o-linear">aqui</a>.</div>
+<div class="line-block">&nbsp;&nbsp;O exemplo a seguir ilustra a aplicação de um ajuste não linear de dados de interação molecular por modelo de Langmuir, e tratamento por <em>minimização do erro quadrático por varredura manual</em>. Nesse tratamento, calcula-se a <em>soma dos erros quadráticos (RMSE)</em> para combinações de <em>a</em> e <em>b</em>, selecionando-se o par com menor erro calculado. Nesse caso, por simplificação, apesar o <em>JSPlotly</em> trabalhar com bibliotecas mais específicas, a regressão não linear dá-se por por mínimos quadrados, mas realizada por <em>grid search</em>, e não por métodos iterativos clássicos. Assim, um conjunto de valores é testado para o par</div>
+<p><br>
+</p>
+</section>
+<section id="equação-11" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="equação-11">Equação:</h3>
+<div class="line-block">&nbsp;&nbsp;A equação de Langmuir é representada abaixo:</div>
+<p><span class="math display">\[
+Y = \frac{aX}{K_d + X}
+\]</span> <em>Onde:</em></p>
+<ul>
+<li>Y = fração de sítios ocupados;</li>
+<li>X = concentração do ligante livre;</li>
+<li><em>a</em> = valor de saturação (sítios de mesma afinidade completamente ocupados);</li>
+<li><em>Kd</em> = constante de equilíbrio de dissociação do complexo.</li>
+</ul>
+<div class="line-block">&nbsp;&nbsp;Nesse caso, a função de mínimos quadrados não linear fica:</div>
+<p><span class="math display">\[
+SSR(a, K_d) = \sum_{i=1}^n \left( y_i - \frac{a x_i}{K_d + x_i} \right)^2
+\]</span></p>
+<p><em>Onde:</em></p>
+<p><em>SSR</em> = soma dos quadrados dos resíduos (inversamente propocional à qualidade do ajuste)<br>
+</p>
+<p><a href="Eq/jsp_ajNonLin.html" target="_blank"><img src="Eq/ajNonLin.png" class="img-fluid"></a></p>
+</section>
+<section id="sugestão-11" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="sugestão-11">Sugestão:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Como no exemplo anterior, apresente alternativamente os pontos e a curva de ajuste pela operação <span class="st">"booleana"</span> (<span class="st">"mostrarPontos = true/false"</span>; <span class="st">"mostrarCurva = true/false"</span>);</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Altere os dados e realize novo ajuste, para obtenção de outros parâmetros da equação (Kd, SSR, R², R² ajustado). Obs<span class="sc">:</span> R² adj corresponde ao valor de R² corrigido para o número de parâmetros do <span class="fu">modelo</span> (no caso, <span class="st">"2"</span>), incidindo diretamente nos <span class="st">"graus de liberdade"</span> para o ajuste.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+
+
+</section>
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../../nivel/superior/jsplotly/gsplotly.html" class="pagination-link" aria-label="GSPlotly - gerador de códigos por IA para JSPlotly">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">GSPlotly - gerador de códigos por IA para JSPlotly</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../../nivel/basico/jsplotly/jsplotly_bas.html" class="pagination-link" aria-label="Simulações na Escola">
+        <span class="nav-page-text">Simulações na Escola</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

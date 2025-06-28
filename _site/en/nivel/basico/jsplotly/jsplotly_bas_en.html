@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>JSPlotly and GSPlotly at School</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../nivel/superior/jmol/index_jmol_en.html" rel="next">
+<link href="../../../nivel/superior/jsplotly/jsptl_bioq_en.html" rel="prev">
+<link href="../../../avatar.png" rel="icon" type="image/png">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-056485e23718eb098d02f4d9d73b99ec.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-S1L73VGCG5"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../logo-bioquanti.png" alt="" class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Procurar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Alternar de navegação" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../erre_en.html"> 
+<span class="menu-text">Reproducible Teaching</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-cheatsheets" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Cheatsheets</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-cheatsheets">    
+        <li>
+    <a class="dropdown-item" href="../../../cheatsheet/plotly.pdf">
+ <span class="dropdown-text">Plotly</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../cheatsheet/jmol_cheat.pt.pdf">
+ <span class="dropdown-text">Jmol</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../cheatsheet/r_cheat.pt.pdf">
+ <span class="dropdown-text">R</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../../producao_en.html"> 
+<span class="menu-text">Works</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../contato_en.html"> 
+<span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../pt/index.html"> 
+<span class="menu-text">PT</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools tools-wide">
+    <a href="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-true"></i></a>
+    <a href="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-true"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo de leitor">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../nivel/superior/jsplotly/jsplotly_geral_en.html">JSPlotly &amp; GSPlotly - Interactive Graphics &amp; AI</a></li><li class="breadcrumb-item"><a href="../../../nivel/basico/jsplotly/jsplotly_bas_en.html">Simulations at School</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">JSPlotly &amp; GSPlotly - Interactive Graphics &amp; AI</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/superior/jsplotly/jsplotly_geral_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">JSPlotly - Graphical simulation with JavaScript</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/superior/jsplotly/gsplotly_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">GSPlotly - AI code generator for JSPlotly</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/superior/jsplotly/jsptl_bioq_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulations in Biophysical Chemistry</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/basico/jsplotly/jsplotly_bas_en.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Simulations at School</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Jmol - 3D molecules</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/superior/jmol/index_jmol_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Atomic models in Biochemistry</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/basico/Curso/index_jmol_bas_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3D molecules at School</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/basico/Jardim/index_Jardim_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">A Molecule Garden</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">R - Maths and visualization</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/superior/r/index_r_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R in Biophysical Chemistry</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/superior/ScriptRplot/scriptrplot_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">scriptRplot: elegant graphics with ggplot2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/basico/Curso/index_r_bas_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R &amp; RStudio at School</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/basico/R/index_OIER_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Interactive charts and maps at School</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Sisma - dynamic diagrams</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/superior/sisma/index_sisma_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dynamic flows in Biochemistry</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../nivel/basico/sisma/index_sisma_bas_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Interactive diagrams at School</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul class="collapse">
+  <li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions">Instructions</a></li>
+  <li><a href="#mathematics" id="toc-mathematics" class="nav-link" data-scroll-target="#mathematics"><span class="header-section-number">1</span> Mathematics</a></li>
+  <li><a href="#financial-mathematics" id="toc-financial-mathematics" class="nav-link" data-scroll-target="#financial-mathematics"><span class="header-section-number">2</span> Financial Mathematics</a></li>
+  <li><a href="#physics" id="toc-physics" class="nav-link" data-scroll-target="#physics"><span class="header-section-number">3</span> Physics</a></li>
+  <li><a href="#chemistry" id="toc-chemistry" class="nav-link" data-scroll-target="#chemistry"><span class="header-section-number">4</span> Chemistry</a></li>
+  <li><a href="#biology" id="toc-biology" class="nav-link" data-scroll-target="#biology"><span class="header-section-number">5</span> Biology</a></li>
+  <li><a href="#geography" id="toc-geography" class="nav-link" data-scroll-target="#geography"><span class="header-section-number">6</span> Geography</a></li>
+  <li><a href="#history" id="toc-history" class="nav-link" data-scroll-target="#history"><span class="header-section-number">7</span> History</a></li>
+  <li><a href="#languages" id="toc-languages" class="nav-link" data-scroll-target="#languages"><span class="header-section-number">8</span> Languages</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../nivel/superior/jsplotly/jsplotly_geral_en.html">JSPlotly &amp; GSPlotly - Interactive Graphics &amp; AI</a></li><li class="breadcrumb-item"><a href="../../../nivel/basico/jsplotly/jsplotly_bas_en.html">Simulations at School</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">JSPlotly and GSPlotly at School</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="line-block">To illustrate the potential use of <em>JSPlotly</em> for elementary and high school education, here are some examples of simulations whose graphs are often found in textbooks and related content. To get the most out of each topic, try following the suggestions for <em>parametric manipulation</em> in each topic.</div>
+<p><br>
+</p>
+<section id="instructions" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="instructions">Instructions</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Choose a topic;</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Click on the corresponding graph;</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Click on <span class="st">"Add Plot"</span>;</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fl">4.</span> Use the mouse <span class="cf">for</span> interactivity and<span class="sc">/</span>or edit the code.</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>Reminder<span class="sc">:</span> the editor uses infinite undo<span class="sc">/</span>redo <span class="cf">in</span> the <span class="fu">code</span> (Ctrl<span class="sc">+</span>Z <span class="sc">/</span> Shift<span class="sc">+</span>Ctrl<span class="sc">+</span>Z)<span class="sc">!</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br>
+</p>
+</section>
+<section id="mathematics" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="mathematics"><span class="header-section-number">1</span> Mathematics</h2>
+<section id="context---trigonometry-em13mat306-em13mat308-em13mat307" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="context---trigonometry-em13mat306-em13mat308-em13mat307">Context - Trigonometry (EM13MAT306, EM13MAT308, EM13MAT307)</h3>
+<div class="line-block">The following simulation aims to facilitate the visualization of some concepts in trigonometry, <em>sine, cosine, and tangent</em>. The code allows you to use a <em>drop-down menu</em> for each trigonometric function, as well as a <em>slider</em> to change the frequency in radians.</div>
+</section>
+<section id="equation" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="equation">Equation:</h3>
+<p><strong>1. Sine function:</strong></p>
+<p><span class="math display">\[
+y = \sin(\omega x)
+\]</span></p>
+<p><strong>2. Cosine function:</strong></p>
+<p><span class="math display">\[
+y = \cos(\omega x)
+\]</span></p>
+<p><strong>3. Tangent function:</strong></p>
+<p><span class="math display">\[
+y = \tan(\omega x)
+\]</span><br>
+</p>
+<p><a href="Eq/jsp_trigonom.html" target="_blank"><img src="Eq/trigonom.png" class="img-fluid"></a></p>
+</section>
+<section id="suggestion" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="suggestion">Suggestion:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Select the sine, cosine, and tangent functions using the drop<span class="sc">-</span>down menu.</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Try changing the frequency of the <span class="cf">function</span> using the slider.</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Overlay a sine graph and a cosine graph to observe their differences.</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fl">4.</span> Repeat the same <span class="cf">for</span> the tangent graph.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="financial-mathematics" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="financial-mathematics"><span class="header-section-number">2</span> Financial Mathematics</h2>
+<section id="context---compound-interest-em13mat402" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="context---compound-interest-em13mat402">Context - Compound Interest (EM13MAT402):</h3>
+<div class="line-block">Also known as <em>“interest on interest”</em>, compound interest adds value to capital over time, resulting in the growth of the final amount.</div>
+</section>
+<section id="equation-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="equation-1">Equation:</h3>
+<p><span class="math display">\[
+M = C \cdot (1 + i)^t
+\]</span></p>
+<p><em>Where,</em></p>
+<ul>
+<li>M: final amount</li>
+<li>C: initial capital</li>
+<li>i: interest rate per period (in decimal)</li>
+<li>t: number of periods (e.g., months)</li>
+</ul>
+<p><a href="Eq/jsp_juros.html"><img src="Eq/juros.png" class="img-fluid"></a></p>
+</section>
+<section id="suggestion-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="suggestion-1">Suggestion:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Vary the contract period, the monthly interest rate, or the initial amount.</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Try combining the parameters <span class="cf">in</span> the variation.</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Evaluate the visual difference between an investment and a loan by entering a positive initial capital value <span class="cf">for</span> the former and a negative value <span class="cf">for</span> the latter.</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fl">4.</span> Observe the downward curve <span class="cf">for</span> a simulated loan with negative initial capital. The remaining values refer to the outstanding debt to pay off the loan.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="physics" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="physics"><span class="header-section-number">3</span> Physics</h2>
+<section id="context---elastic-potential-energy-em13cnt102-em13cnt202-em13mat402" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="context---elastic-potential-energy-em13cnt102-em13cnt202-em13mat402"><span class="header-section-number">3.1</span> Context - Elastic potential energy (EM13CNT102, EM13CNT202, EM13MAT402)</h3>
+<div class="line-block">The deformation of an elastic material is directly proportional to the force exerted on it and limited to the properties of the material.</div>
+</section>
+<section id="equation-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="equation-2">Equation</h3>
+<div class="line-block">The behavior of an ideal spring is described by Hooke’s law below:</div>
+<p><span class="math display">\[
+F = -k*x
+\]</span></p>
+<p><em>Where:</em></p>
+<ul>
+<li>F = restoring force of the spring (N);</li>
+<li>k = spring constant (N/m);</li>
+<li>x = deformation (m).</li>
+</ul>
+<div class="line-block">On the other hand, the <em>elastic potential energy</em> involved is described by the following quadratic relationship:</div>
+<p><span class="math display">\[
+E = \frac{1}{2}*k*x^2
+\]</span></p>
+<p><em>Where:</em></p>
+<ul>
+<li>E = elastic potential energy (J).</li>
+</ul>
+<p><a href="Eq/jsp_fisica2.html" target="“_blank”"><img src="Eq/fisica2.png" class="img-fluid"></a></p>
+</section>
+<section id="suggestion-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="suggestion-2">Suggestion:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Try changing the value of the sprin´s elastic constant to highlight its effect, relating it to stiffer or less stiff springs;</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Change the spring´s deformation limits <span class="cf">in</span> the code´s <span class="st">"control structure"</span> (e.g., <span class="st">"for (let x = -0.7)"</span>), and observe the effect on the maximum potential energy;</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Note that, due to the quadratic operation on the deformation value, the potential energy is always positive.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="context---motion-of-bodies-em13cnt102" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="context---motion-of-bodies-em13cnt102">Context - Motion of bodies (EM13CNT102):</h3>
+<div class="line-block">The following code illustrates the trajectory of an oblique launch with an angle adjustable by a slider, useful for exploring the concepts of kinematics.</div>
+</section>
+<section id="equation-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="equation-3">Equation:</h3>
+<p><strong>1. General equation</strong></p>
+<p><span class="math display">\[
+y(x) = x \cdot \tan(\theta) - \frac{g}{2 v_0^2 \cos^2(\theta)} \cdot x^2
+\]</span></p>
+<p><em>Where:</em></p>
+<ul>
+<li>y(x): height as a function of horizontal distance;</li>
+<li>x: horizontal position (m);</li>
+<li><span class="math inline">\(\theta\)</span>: angle of launch relative to the horizontal (radians or degrees);</li>
+<li>v0: initial velocity of the projectile (m/s);</li>
+<li>g: acceleration due to gravity (9.8 m/s²<span class="math inline">\(^{2}\)</span>)</li>
+</ul>
+<p><strong>2. Total flight time:</strong></p>
+<p><span class="math display">\[
+t_{\text{total}} = \frac{2 v_0 \sin(\theta)}{g}
+\]</span></p>
+<p><strong>3. Horizontal position over time</strong></p>
+<p><span class="math display">\[
+x(t) = v_0 \cos(\theta) \cdot t
+\]</span></p>
+<p><a href="Eq/jsp_fis_pedra.html" target="_blank"><img src="Eq/fis_pedra.png" class="img-fluid"></a></p>
+</section>
+<section id="suggestion-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="suggestion-3">Suggestion:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Notice that there is a slider <span class="cf">for</span> initial angles <span class="cf">in</span> the simulation. Drag the slider to another angle and add the graph, comparing the effect of this modification.</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Change the initial velocity <span class="cf">in</span> the code and observe the effect on the graph.</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Simulate a <span class="st">"lunar condition"</span> <span class="cf">for</span> the trajectory, with gravity around <span class="dv">1</span><span class="sc">/</span><span class="dv">6</span> that of <span class="fu">Earth</span> (<span class="sc">~</span><span class="fl">1.6</span> m<span class="sc">/</span>s²).</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="chemistry" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="chemistry"><span class="header-section-number">4</span> Chemistry</h2>
+<section id="context---heat-capacity-ef09ci06-em13cnt104-em13cnt203" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="context---heat-capacity-ef09ci06-em13cnt104-em13cnt203">Context - Heat Capacity (EF09CI06, EM13CNT104, EM13CNT203)</h3>
+<div class="line-block">The following simulation aims to observe the relationship between heat exchanged (<em>Q</em>), mass (<em>m</em>), heat capacity (<em>c</em>), and temperature variation (<em><span class="math inline">\(\Delta\)</span>T</em>).</div>
+</section>
+<section id="equation-4" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="equation-4">Equation:</h3>
+<p><span class="math display">\[
+Q = c \cdot m \cdot \Delta T
+\]</span><br>
+</p>
+<p><a href="Eq/jsp_cp.html" target="_blank"><img src="Eq/cp.png" class="img-fluid"></a></p>
+</section>
+<section id="suggestion-4" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="suggestion-4">Suggestion:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Try varying the temperature initially, overlaying some graphs;</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Also vary the mass <span class="cf">in</span> the code editor <span class="cf">for</span> comparison.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="context-mixture-of-substances-in-an-exothermic-reaction---3d-graph-ef09ci02-em13cnt103-em13cnt103" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="context-mixture-of-substances-in-an-exothermic-reaction---3d-graph-ef09ci02-em13cnt103-em13cnt103"><span class="header-section-number">4.1</span> Context: Mixture of substances in an exothermic reaction - 3D graph (EF09CI02, EM13CNT103, EM13CNT103)</h3>
+<div class="line-block">Simulations can be performed without necessarily involving a mathematical relationship, as in the experimental observation of two variables, such as time and concentration, simulating an exothermic chemical reaction. Here is an interactive example in 3D.</div>
+<div class="line-block">In this case, the equation used in the editor involves a smooth variation of temperature over time, using the sine function and an initial temperature (see the code).</div>
+<p><br>
+</p>
+<p><a href="Eq/jsp_quim2.html" target="“_blank”"><img src="Eq/quim2.png" class="img-fluid"></a></p>
+</section>
+<section id="suggestion-5" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="suggestion-5">Suggestion:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Try varying the temperature initially, overlaying some graphs;</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Also vary the mass <span class="cf">in</span> the code editor <span class="cf">for</span> comparison.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="biology" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="biology"><span class="header-section-number">5</span> Biology</h2>
+<section id="context---population-growth-model-with-lag-phase-em13cnt102" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="context---population-growth-model-with-lag-phase-em13cnt102">Context - Population Growth Model with Lag Phase (EM13CNT102)</h3>
+<div class="line-block">This model presents a logistic function that simulates population growth (e.g., microorganisms, cells), accompanied by a delay component. By varying the parameters in the editor, it is possible to estimate various population growth profiles.</div>
+</section>
+<section id="equation-5" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="equation-5">Equation:</h3>
+<p><span class="math display">\[
+N(t) = \frac{K}{1 + \left(\frac{K - N_0}{N_0}\right) \cdot e^{-r \cdot A(t) \cdot t}}, \quad \text{with } A(t) = \frac{1}{1 + e^{-k(t - t_0)}}
+\]</span></p>
+<p><em>Where:</em></p>
+<ul>
+<li>K = environmental carrying capacity;</li>
+<li>N0 = initial population;</li>
+<li>r = intrinsic growth rate;</li>
+<li>A(t) = growth activation factor with delay (lag phase);</li>
+<li>t0 = midpoint of transition between lag phase and log phase;</li>
+<li>k = delay smoothing constant (set to 0.5 in the code)</li>
+</ul>
+<p><a href="Eq/jsp_crescim.html" target="_blank"><img src="Eq/crescim.png" class="img-fluid"></a></p>
+</section>
+<section id="suggestion-6" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="suggestion-6">Suggestion:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Try varying the parameters of the equation, combining some and comparing their effects on the graphs<span class="sc">:</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>a. Carrying capacity;</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>b. Initial population;</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>c. Growth rate;</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>d. <span class="fu">Delay</span> (lag phase);</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="geography" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="geography"><span class="header-section-number">6</span> Geography</h2>
+<section id="context-map-of-brazil-and-capital-cities-em13chs101-em13chs202-em13chs301" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="context-map-of-brazil-and-capital-cities-em13chs101-em13chs202-em13chs301">Context: Map of Brazil and Capital Cities (EM13CHS101, EM13CHS202, EM13CHS301)</h3>
+<div class="line-block"><em>JSPlotly</em> is not just about equations! With the <em>Plotly.js</em> library that composes it, you can also produce interactive maps, such as the simulation below.</div>
+<p><a href="Eq/jsp_geogr.html" target="_blank"><img src="Eq/geogr.png" class="img-fluid"></a></p>
+</section>
+<section id="suggestion-7" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="suggestion-7">Suggestion:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Try using the mouse scroll wheel and the <span class="st">"pan"</span> icon on the top bar to interact with the map.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="history" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="history"><span class="header-section-number">7</span> History</h2>
+<section id="context---distribution-of-slaves-in-the-americas-from-1500-to-1888-ef08hi06-em13chs104-em13chs503" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="context---distribution-of-slaves-in-the-americas-from-1500-to-1888-ef08hi06-em13chs104-em13chs503">Context - Distribution of slaves in the Americas from 1500 to 1888 (EF08HI06, EM13CHS104, EM13CHS503):</h3>
+<div class="line-block">This simulation presents an interactive <em>bar chart</em> for selecting a period from a <em>drop-down menu</em>, tangent to the estimated number of enslaved Africans landed in the main regions of the Americas. The data are rough estimates to illustrate the visualization potential of the application, although they serve as a starting point for more accurate educational discussions. Sources for consultation include <a href="https://www.slavevoyages.org/past/database/african-origins">Slave Voyages</a>.</div>
+<p><br>
+</p>
+<p><a href="Eq/jsp_escravos.html" target="_blank"><img src="Eq/escravos.png" class="img-fluid"></a></p>
+</section>
+<section id="suggestion-8" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="suggestion-8">Suggestion:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Try switching between periods <span class="cf">in</span> the drop<span class="sc">-</span>down menu, comparing estimates of slave traffic;</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Select a period, create the graph, select another period, and add another graph. This allows you to compare the number of slaves brought <span class="cf">in</span> by the double bars formed, and hover your mouse over each bar.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="languages" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="languages"><span class="header-section-number">8</span> Languages</h2>
+<section id="context---slang-spoken-in-brazil-from-1980-to-2020-ef89lp19-em13lgg102" class="level3" data-number="8.1">
+<h3 data-number="8.1" class="anchored" data-anchor-id="context---slang-spoken-in-brazil-from-1980-to-2020-ef89lp19-em13lgg102"><span class="header-section-number">8.1</span> Context - Slang spoken in Brazil from 1980 to 2020 (EF89LP19, EM13LGG102)</h3>
+<div class="line-block">This simulation is intended to estimate the use of slang spoken in Brazil over the last 40 years. The representation is in a pie chart, and the selection by decade is in a drop-down menu.</div>
+<p><br>
+</p>
+<p><a href="Eq/linguag_pizza.html" target="_blank"><img src="Eq/linguag_pizza.png" class="img-fluid"></a></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> You can use the mouse to hover over each bar to see the <span class="st">"tip"</span> (hint) <span class="cf">for</span> that data point <span class="cf">in</span> the chart.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+
+
+</section>
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../../nivel/superior/jsplotly/jsptl_bioq_en.html" class="pagination-link" aria-label="Simulations in Biophysical Chemistry">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Simulations in Biophysical Chemistry</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../../nivel/superior/jmol/index_jmol_en.html" class="pagination-link" aria-label="Atomic models in Biochemistry">
+        <span class="nav-page-text">Atomic models in Biochemistry</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -1,0 +1,122 @@
+project:
+  type: website
+  output-dir: ../_site/en
+  resources:
+    - nivel/superior/sisma/prat/contr.pdf
+    - nivel/superior/sisma/prat/carb.pdf
+    - nivel/superior/sisma/prat/carb_lip.pdf
+    - nivel/superior/sisma/prat/a_nucl.pdf
+    # - nivel/superior/jsplotly/sbbq/vdw3D.html
+    # - nivel/superior/jsplotly/sbbq/buffer_slider.html
+    # - nivel/superior/jsplotly/sbbq/cargaPept_slider.html
+    # - nivel/superior/jsplotly/sbbq/gibbs.html
+    # - nivel/superior/jsplotly/sbbq/nyquist2.html
+    # - nivel/superior/jsplotly/sbbq/3d.html
+
+website:
+  page-navigation: true
+  back-to-top-navigation: true
+  image: unifal-logo.png
+  reader-mode: true
+  google-analytics: "G-S1L73VGCG5"
+  title: ""
+  favicon: avatar.png
+
+  sidebar:
+    contents:
+      - section: "JSPlotly & GSPlotly - Interactive Graphics & AI"
+        contents:
+          - text: "JSPlotly - Graphical simulation with JavaScript"
+            href: nivel/superior/jsplotly/jsplotly_geral_en.qmd
+          - text: "GSPlotly - AI code generator for JSPlotly"
+            href: nivel/superior/jsplotly/gsplotly_en.qmd
+          - text: "Simulations in Biophysical Chemistry"
+            href: nivel/superior/jsplotly/jsptl_bioq_en.qmd
+          - text: "Simulations at School"
+            href: nivel/basico/jsplotly/jsplotly_bas_en.qmd
+          
+            
+      - section: "Jmol - 3D molecules"
+        contents:
+          - text: "Atomic models in Biochemistry"
+            href: nivel/superior/jmol/index_jmol_en.qmd
+          - text: "3D molecules at School"
+            href: nivel/basico/Curso/index_jmol_bas_en.qmd
+          - text: "A Molecule Garden"
+            href: nivel/basico/Jardim/index_Jardim_en.qmd
+
+      - section: "R - Maths and visualization"
+        contents:
+          - text: "R in Biophysical Chemistry"
+            href: nivel/superior/r/index_r_en.qmd
+          - text: "scriptRplot: elegant graphics with ggplot2"
+            href: nivel/superior/ScriptRplot/scriptrplot_en.qmd
+          - text: "R & RStudio at School"
+            href: nivel/basico/Curso/index_r_bas_en.qmd
+          - text: "Interactive charts and maps at School"
+            href:  nivel/basico/R/index_OIER_en.qmd
+
+
+      - section: "Sisma - dynamic diagrams"
+        contents:
+          - text: "Dynamic flows in Biochemistry"
+            href: nivel/superior/sisma/index_sisma_en.qmd
+          - text: "Interactive diagrams at School"
+            href: nivel/basico/sisma/index_sisma_bas_en.qmd
+
+
+  navbar:
+    logo: logo-bioquanti.png
+    search: true
+    tools:
+      - icon: true
+        html: |
+          <a href="https://www.unifal-mg.edu.br" target="_blank">
+            <img src="../images/logo-unifal.png" alt="UNIFAL" style="height:40px; vertical-align:middle; margin-right:15px;"></a>
+      - icon: true
+        html: |
+          <a href="https://www.capes.gov.br" target="_blank">
+            <img src="../images/logo-capes.png" alt="CAPES" style   ="height:40px; vertical-align:middle; margin-left:15px;"></a>
+
+    left:
+    
+      - text: "About"
+        id: sup-menu
+        href: index.html
+      - text: "Reproducible Teaching"
+        id: bas-menu
+        href: erre_en.qmd
+
+      - text: "Cheatsheets"
+        id: sup-menu
+        menu: 
+          - text: "Plotly"
+            href: cheatsheet/plotly.pdf
+          - text: "Jmol"
+            href: cheatsheet/jmol_cheat.pt.pdf
+          - text: "R"
+            href: cheatsheet/r_cheat.pt.pdf
+          
+
+      - text: "Works"
+        href: producao_en.qmd
+
+      - text: "Contact"
+        href: contato_en.qmd
+         
+    right:
+      - text: "PT"
+        href: ../pt/index.html
+
+
+format:
+  html:
+    theme: 
+      light: flatly
+    css: styles.css
+    code-overflow: wrap
+
+execute:
+  cache: true
+  message: false
+  warning: false

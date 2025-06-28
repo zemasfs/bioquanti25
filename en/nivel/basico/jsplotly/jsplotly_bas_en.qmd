@@ -1,0 +1,318 @@
+---
+title: "JSPlotly and GSPlotly at School"
+format: html
+toc: true
+toc-depth: 2
+number-sections: true
+lang: pt
+---
+
+
+| To illustrate the potential use of *JSPlotly* for elementary and high school education, here are some examples of simulations whose graphs are often found in textbooks and related content. To get the most out of each topic, try following the suggestions for *parametric manipulation* in each topic.
+\
+
+## Instructions {.unnumbered}
+
+
+```{r, eval=FALSE}
+
+1. Choose a topic;
+2. Click on the corresponding graph;
+3. Click on "Add Plot";
+4. Use the mouse for interactivity and/or edit the code.
+
+Reminder: the editor uses infinite undo/redo in the code (Ctrl+Z / Shift+Ctrl+Z)!
+```
+\
+
+## Mathematics
+
+### Context - Trigonometry (EM13MAT306, EM13MAT308, EM13MAT307) {.unnumbered}
+
+| The following simulation aims to facilitate the visualization of some concepts in trigonometry, *sine, cosine, and tangent*. The code allows you to use a *drop-down menu* for each trigonometric function, as well as a *slider* to change the frequency in radians.
+### Equation: {.unnumbered}
+
+**1. Sine function:**
+
+$$
+y = \sin(\omega x)
+$$
+
+**2. Cosine function:**
+
+$$
+y = \cos(\omega x)
+$$
+
+**3. Tangent function:**
+
+$$
+y = \tan(\omega x)
+$$
+\
+
+[![](Eq/trigonom.png)](Eq/jsp_trigonom.html){target="_blank"}
+
+
+### Suggestion: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Select the sine, cosine, and tangent functions using the drop-down menu.
+2. Try changing the frequency of the function using the slider.
+3. Overlay a sine graph and a cosine graph to observe their differences.
+4. Repeat the same for the tangent graph.
+```
+
+
+## Financial Mathematics
+
+### Context - Compound Interest (EM13MAT402): {.unnumbered}
+
+| Also known as *“interest on interest”*, compound interest adds value to capital over time, resulting in the growth of the final amount.
+
+
+### Equation: {.unnumbered}
+
+$$
+M = C \cdot (1 + i)^t
+$$
+
+
+*Where,*
+
+- M: final amount
+- C: initial capital
+- i: interest rate per period (in decimal)
+- t: number of periods (e.g., months)
+
+[![](Eq/juros.png)](Eq/jsp_juros.html)
+
+
+### Suggestion: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Vary the contract period, the monthly interest rate, or the initial amount.
+2. Try combining the parameters in the variation.
+3. Evaluate the visual difference between an investment and a loan by entering a positive initial capital value for the former and a negative value for the latter.
+4. Observe the downward curve for a simulated loan with negative initial capital. The remaining values refer to the outstanding debt to pay off the loan.
+```
+
+
+## Physics
+
+### Context - Elastic potential energy (EM13CNT102, EM13CNT202, EM13MAT402)
+
+| The deformation of an elastic material is directly proportional to the force exerted on it and limited to the properties of the material.
+
+### Equation {.unnumbered}
+
+| The behavior of an ideal spring is described by Hooke's law below:
+
+
+
+$$
+F = -k*x
+$$
+
+*Where:*
+
+- F = restoring force of the spring (N);
+- k = spring constant (N/m);
+- x = deformation (m).
+
+| On the other hand, the *elastic potential energy* involved is described by the following quadratic relationship:
+
+$$
+E = \frac{1}{2}*k*x^2
+$$
+
+*Where:*
+
+- E = elastic potential energy (J).
+
+[![](Eq/fisica2.png)](Eq/jsp_fisica2.html){target=“_blank”}
+
+
+### Suggestion: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Try changing the value of the sprin´s elastic constant to highlight its effect, relating it to stiffer or less stiff springs;
+2. Change the spring´s deformation limits in the code´s "control structure" (e.g., "for (let x = -0.7)"), and observe the effect on the maximum potential energy;
+3. Note that, due to the quadratic operation on the deformation value, the potential energy is always positive.
+```
+
+
+
+### Context - Motion of bodies (EM13CNT102): {.unnumbered}
+
+| The following code illustrates the trajectory of an oblique launch with an angle adjustable by a slider, useful for exploring the concepts of kinematics.
+
+### Equation: {.unnumbered}
+
+**1. General equation**
+
+$$
+y(x) = x \cdot \tan(\theta) - \frac{g}{2 v_0^2 \cos^2(\theta)} \cdot x^2
+$$
+
+*Where:*
+
+- y(x): height as a function of horizontal distance;
+- x: horizontal position (m);
+- $\theta$: angle of launch relative to the horizontal (radians or degrees);
+- v0: initial velocity of the projectile (m/s);
+- g: acceleration due to gravity (9.8 m/s²$^{2}$)
+
+**2. Total flight time:**
+
+$$
+t_{\text{total}} = \frac{2 v_0 \sin(\theta)}{g}
+$$
+
+
+**3. Horizontal position over time**
+
+$$
+x(t) = v_0 \cos(\theta) \cdot t
+$$
+
+
+[![](Eq/fis_pedra.png)](Eq/jsp_fis_pedra.html){target="_blank"}
+
+### Suggestion: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Notice that there is a slider for initial angles in the simulation. Drag the slider to another angle and add the graph, comparing the effect of this modification.
+2. Change the initial velocity in the code and observe the effect on the graph.
+3. Simulate a "lunar condition" for the trajectory, with gravity around 1/6 that of Earth (~1.6 m/s²).
+```
+
+
+
+## Chemistry
+
+### Context - Heat Capacity (EF09CI06, EM13CNT104, EM13CNT203) {.unnumbered}
+
+| The following simulation aims to observe the relationship between heat exchanged (*Q*), mass (*m*), heat capacity (*c*), and temperature variation (*$\Delta$T*).
+
+### Equation: {.unnumbered}
+
+
+$$
+Q = c \cdot m \cdot \Delta T
+$$
+\
+
+[![](Eq/cp.png)](Eq/jsp_cp.html){target="_blank"}
+
+### Suggestion: {.unnumbered}
+
+```{r,eval=FALSE}
+
+1. Try varying the temperature initially, overlaying some graphs;
+2. Also vary the mass in the code editor for comparison.
+```
+
+
+### Context: Mixture of substances in an exothermic reaction - 3D graph (EF09CI02, EM13CNT103, EM13CNT103)
+| Simulations can be performed without necessarily involving a mathematical relationship, as in the experimental observation of two variables, such as time and concentration, simulating an exothermic chemical reaction. Here is an interactive example in 3D.
+
+| In this case, the equation used in the editor involves a smooth variation of temperature over time, using the sine function and an initial temperature (see the code).
+\
+
+[![](Eq/quim2.png)](Eq/jsp_quim2.html){target=“_blank”}
+
+
+### Suggestion: {.unnumbered}
+
+
+```{r,eval=FALSE}
+
+1. Try varying the temperature initially, overlaying some graphs;
+2. Also vary the mass in the code editor for comparison.
+```
+
+
+## Biology
+
+### Context - Population Growth Model with Lag Phase (EM13CNT102) {.unnumbered}
+
+| This model presents a logistic function that simulates population growth (e.g., microorganisms, cells), accompanied by a delay component. By varying the parameters in the editor, it is possible to estimate various population growth profiles.
+
+### Equation: {.unnumbered}
+
+$$
+N(t) = \frac{K}{1 + \left(\frac{K - N_0}{N_0}\right) \cdot e^{-r \cdot A(t) \cdot t}}, \quad \text{with } A(t) = \frac{1}{1 + e^{-k(t - t_0)}}
+$$
+
+*Where:*
+
+- K = environmental carrying capacity;
+- N0 = initial population;
+- r = intrinsic growth rate;
+- A(t) = growth activation factor with delay (lag phase);
+- t0 = midpoint of transition between lag phase and log phase;
+- k = delay smoothing constant (set to 0.5 in the code)
+
+[![](Eq/crescim.png)](Eq/jsp_crescim.html){target="_blank"}
+
+### Suggestion: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Try varying the parameters of the equation, combining some and comparing their effects on the graphs:
+a. Carrying capacity;
+b. Initial population;
+c. Growth rate;
+d. Delay (lag phase);
+```
+
+
+
+## Geography
+
+### Context: Map of Brazil and Capital Cities (EM13CHS101, EM13CHS202, EM13CHS301) {.unnumbered}
+
+| *JSPlotly* is not just about equations! With the *Plotly.js* library that composes it, you can also produce interactive maps, such as the simulation below.
+
+[![](Eq/geogr.png)](Eq/jsp_geogr.html){target="_blank"}
+
+### Suggestion: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Try using the mouse scroll wheel and the "pan" icon on the top bar to interact with the map.
+```
+
+
+
+
+## History
+
+### Context - Distribution of slaves in the Americas from 1500 to 1888 (EF08HI06, EM13CHS104, EM13CHS503): {.unnumbered}
+
+| This simulation presents an interactive *bar chart* for selecting a period from a *drop-down menu*, tangent to the estimated number of enslaved Africans landed in the main regions of the Americas. The data are rough estimates to illustrate the visualization potential of the application, although they serve as a starting point for more accurate educational discussions. Sources for consultation include [Slave Voyages](https://www.slavevoyages.org/past/database/african-origins).
+\
+
+[![](Eq/escravos.png)](Eq/jsp_escravos.html){target="_blank"}
+
+### Suggestion: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Try switching between periods in the drop-down menu, comparing estimates of slave traffic;
+2. Select a period, create the graph, select another period, and add another graph. This allows you to compare the number of slaves brought in by the double bars formed, and hover your mouse over each bar.
+
+```
+
+
+## Languages
+
+### Context - Slang spoken in Brazil from 1980 to 2020 (EF89LP19, EM13LGG102)
+
+| This simulation is intended to estimate the use of slang spoken in Brazil over the last 40 years. The representation is in a pie chart, and the selection by decade is in a drop-down menu.
+\
+
+[![](Eq/linguag_pizza.png)](Eq/linguag_pizza.html){target="_blank"}
+
+```{r, eval=FALSE}
+1. You can use the mouse to hover over each bar to see the "tip" (hint) for that data point in the chart.
+```
+
