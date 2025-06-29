@@ -98,15 +98,16 @@ $$
 4. Observe a curva descendente para um empréstimo simulado com capital inicial negativo. Os valores remanescentes referem-se à dívida faltante para quitar o empréstimo.
 ```
 
-## Estatística (EM13MAT316, EM13MAT407, EM13MAT312)
+## Estatística 
 
-## Contexto - Curva de distribuição normal
+### Contexto - Curva de distribuição normal (EM13MAT316, EM13MAT407, EM13MAT312) 
+
 
 |       Amostragem e população são temas comuns para observação de dados em procedimentos analíticos. As curvas de distribuição estatísticas para isso envolvem a distribuição *t-Student*, *F-Snedecor*, *Chi-quadrado*, e *distribuição normal*. A curva de distribuição normal reflete o comportamento estatístico para fenômenos naturais em uma dada uma população de dados.
 
 |       O exemplo pretende ilustrar o uso da transformação *z*, o cálculo de valores críticos, e a interpretação da área sob a curva no estudo da distribuição normal e de inferência estatística.
 
-## Equação
+### Equação {.unnumbered}
 
 |       A função densidade da distribuição normal (ou Gaussiana) é dada abaixo?
 
