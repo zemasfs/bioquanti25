@@ -331,5 +331,113 @@
   },
   "nivel/basico/R/biologia.qmd": {
     "biologia.html": "3c8b0a58"
+  },
+  "nivel/basico/R/matematica.qmd": {
+    "matematica.html": "35b1e3af"
+  },
+  "nivel/basico/R/humanas.qmd": {
+    "humanas.html": "61d96bef"
+  },
+  "nivel/basico/R/fisica.qmd": {
+    "fisica.html": "ea1a45b0"
+  },
+  "nivel/basico/Jardim/farmac.qmd": {
+    "farmac.html": "aedc07d0"
+  },
+  "nivel/basico/Jardim/ambiental.qmd": {
+    "ambiental.html": "8b0db282"
+  },
+  "nivel/basico/Jardim/nutri.qmd": {
+    "nutri.html": "92a93bcc"
+  },
+  "nivel/basico/Jardim/supramol.qmd": {
+    "supramol.html": "69ffacbe"
+  },
+  "nivel/basico/Jardim/plantasToxicas.qmd": {
+    "plantasToxicas.html": "79b57a83"
+  },
+  "nivel/basico/Jardim/organica.qmd": {
+    "organica.html": "b05ca4fb"
+  },
+  "nivel/basico/Jardim/index_Jardim.qmd": {
+    "index_Jardim.html": "2268cd87"
+  },
+  "nivel/basico/Jardim/aromas.qmd": {
+    "aromas.html": "5d1f8454"
+  },
+  "nivel/basico/Jardim/medicin.qmd": {
+    "medicin.html": "29a2eea8"
+  },
+  "nivel/basico/Jardim/inorganica.qmd": {
+    "inorganica.html": "43ad7f0d"
+  },
+  "nivel/basico/Jardim/industrial.qmd": {
+    "industrial.html": "bd2c64a0"
+  },
+  "nivel/basico/Jardim/sabores.qmd": {
+    "sabores.html": "3a61cb71"
+  },
+  "nivel/basico/Jardim/peconhentos.qmd": {
+    "peconhentos.html": "5ad97a5d"
+  },
+  "nivel/basico/Jardim/biomol.qmd": {
+    "biomol.html": "f37d4006"
+  },
+  "nivel/basico/Jardim/toxicol.qmd": {
+    "toxicol.html": "e5fdc4b9"
+  },
+  "nivel/basico/Curso/jmol_uso.qmd": {
+    "jmol_uso.html": "83e35fce"
+  },
+  "nivel/basico/Curso/comandosJmol.qmd": {
+    "comandosJmol.html": "8cc8f985"
+  },
+  "nivel/basico/Curso/r_mapas.qmd": {
+    "r_mapas.html": "ee6df210"
+  },
+  "nivel/basico/Curso/textoXmouse.qmd": {
+    "textoXmouse.html": "8ac8e02b"
+  },
+  "nivel/basico/Curso/r_comandos.qmd": {
+    "r_comandos.html": "ad3d4139"
+  },
+  "nivel/basico/Curso/jmol_oficina.qmd": {
+    "jmol_oficina.html": "aed682a0"
+  },
+  "nivel/basico/Curso/index_jmol_bas.qmd": {
+    "index_jmol_bas.html": "c8652765"
+  },
+  "nivel/basico/Curso/anima_Jmol.qmd": {
+    "anima_Jmol.html": "2b5183a4"
+  },
+  "nivel/basico/Curso/r_maisinteract.qmd": {
+    "r_maisinteract.html": "e5753da9"
+  },
+  "nivel/basico/Curso/jmol_curso_index.qmd": {
+    "jmol_curso_index.html": "0297e039"
+  },
+  "nivel/basico/Curso/r_install.qmd": {
+    "r_install.html": "92fb3f66"
+  },
+  "nivel/basico/Curso/r_plotly.qmd": {
+    "r_plotly.html": "adb3d23a"
+  },
+  "nivel/basico/Curso/index_r_bas.qmd": {
+    "index_r_bas.html": "0b1b8c2b"
+  },
+  "nivel/basico/Curso/r_anim.qmd": {
+    "r_anim.html": "ff757870"
+  },
+  "nivel/basico/Curso/r_outros_plots.qmd": {
+    "r_outros_plots.html": "a43df01c"
+  },
+  "nivel/basico/Curso/r_pacotes.qmd": {
+    "r_pacotes.html": "d0313d6d"
+  },
+  "nivel/basico/sisma/index_sisma_bas.qmd": {
+    "index_sisma_bas.html": "39bf1d5b"
+  },
+  "producao.qmd": {
+    "producao.html": "f18dc3a6"
   }
 }

@@ -86,7 +86,7 @@ $$
 - i: taxa de juros por período (em decimal)
 - t: número de períodos (ex: meses)
 
-[![](Eq/juros.png)](Eq/jsp_juros.html)
+[![](Eq/juros.png)](Eq/jsp_juros.html){target="_blank"}
 
 
 ### Sugestão: {.unnumbered}
@@ -97,6 +97,53 @@ $$
 3. Avalie a diferença visual entre um investimento e um empréstimo, inserido valor positivo de capital inicial para o 1o. e negativo para o 2o. 
 4. Observe a curva descendente para um empréstimo simulado com capital inicial negativo. Os valores remanescentes referem-se à dívida faltante para quitar o empréstimo.
 ```
+
+## Estatística (EM13MAT316, EM13MAT407, EM13MAT312)
+
+## Contexto - Curva de distribuição normal
+
+|       Amostragem e população são temas comuns para observação de dados em procedimentos analíticos. As curvas de distribuição estatísticas para isso envolvem a distribuição *t-Student*, *F-Snedecor*, *Chi-quadrado*, e *distribuição normal*. A curva de distribuição normal reflete o comportamento estatístico para fenômenos naturais em uma dada uma população de dados.
+
+|       O exemplo pretende ilustrar o uso da transformação *z*, o cálculo de valores críticos, e a interpretação da área sob a curva no estudo da distribuição normal e de inferência estatística.
+
+## Equação
+
+|       A função densidade da distribuição normal (ou Gaussiana) é dada abaixo?
+
+
+$$
+f(x) = \frac{1}{\sigma \sqrt{2\pi}} \, e^{ -\frac{(x - \mu)^2}{2\sigma^2} }
+$$
+
+
+*Onde:*
+
+- $\mu$ = 0 (média da distribuição);
+- $\sigma$ = 1 (desvio padrão);
+- *x* = variável aleatória contínua;
+*f* = função de densidade da distribuição normal
+
+
+|       Da equação acima pode-se extrair *z*, o valor da variável aleatória padronizada para média nula e desvio-padrão unitário, representando o valor no eixo das abscissas:
+
+
+
+$$
+z = \frac{x - \mu}{\sigma}
+$$
+
+
+
+[![](Eq/estat.png)](Eq/jsp_estat.html){target="_blank"}
+
+
+### Sugestão: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Experimente alterar o valor de "p" e rodar o gráfico. Esse valor representa a probabilidade de se observar, sob a hipótese nula, um valor tão extremo ou mais extremo do que o observado — ou seja, mede a evidência contra a hipótese nula. No gráfico, representa a área sob a curva normal nas regiões críticas, indicando a chance de ocorrência do resultado observado por puro acaso.
+```
+
+
 
 
 ## Física
