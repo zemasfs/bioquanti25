@@ -4,7 +4,7 @@ format: html
 toc: true
 toc-depth: 2
 number-sections: true
-lang: pt
+lang: en
 ---
 
 
@@ -95,6 +95,54 @@ $$
 2. Try combining the parameters in the variation.
 3. Evaluate the visual difference between an investment and a loan by entering a positive initial capital value for the former and a negative value for the latter.
 4. Observe the downward curve for a simulated loan with negative initial capital. The remaining values refer to the outstanding debt to pay off the loan.
+```
+
+
+## Statistics
+
+### Context - Normal distribution curve (EM13MAT316, EM13MAT407, EM13MAT312)  {.unnumbered}
+
+
+| Sampling and population are common topics for data observation in analytical procedures. Statistical distribution curves for this involve the *t-Student*, *F-Snedecor*, *Chi-square*, and *normal distribution*. The normal distribution curve reflects the statistical behavior for natural phenomena in a given data population.
+
+| The example aims to illustrate the use of the *z* transformation, the calculation of critical values, and the interpretation of the area under the curve in the study of normal distribution and statistical inference.
+
+
+### Equation {.unnumbered}
+
+| The density function of the normal (or Gaussian) distribution is given below?
+
+
+$$
+f(x) = \frac{1}{\sigma \sqrt{2\pi}} \, e^{ -\frac{(x - \mu)^2}{2\sigma^2} }
+$$
+
+
+*Where:*
+
+- $\mu$ = 0 (mean of the distribution);
+- $\sigma$ = 1 (standard deviation);
+- *x* = continuous random variable;
+*f* = normal distribution density function
+
+
+| From the equation above, we can extract *z*, the value of the standardized random variable for zero mean and unit standard deviation, representing the value on the x-axis:
+
+
+
+$$
+z = \frac{x - \mu}{\sigma}
+$$
+
+
+
+[![](Eq/estat.png)](Eq/jsp_estat.html){target=“_blank”}
+
+
+### Suggestion: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Try changing the value of “p” and running the graph. This value represents the probability of observing, under the null hypothesis, a value as extreme or more extreme than the observed value — that is, it measures the evidence against the null hypothesis. In the graph, it represents the area under the normal curve in the critical regions, indicating the chance of the observed result occurring by pure chance.
 ```
 
 
@@ -267,6 +315,22 @@ d. Delay (lag phase);
 ```
 
 
+### Context - Energy efficiency and the food chain (EF06CI02, EM13CNT202, EM13CNT203) {.unnumbered}
+
+| Here is an example to illustrate energy transfer between different trophic levels in a food chain. Although there is no mathematical function that describes it, the [10% rule](https://en.wikipedia.org/wiki/Ecological_efficiency?) of ecological efficiency between levels of the chain can be applied, resulting in a logarithmic transfer relationship.
+
+
+[![](Eq/bio2.png)](Eq/jsp_bio2.html){target=“_blank”}
+
+
+### Suggestions {.unnumbered}
+
+```{r, eval=FALSE}
+1. Lindeman's rule, outlined in the reference above, establishes a variation of 5-20% energy efficiency in the ecosystem. So, try overlaying the curves with these rates;
+2. If you want to observe the logarithmic relationship of energy transfer, add the command “type: ‘log’,” just below “title: ‘Available energy (units)’,”.
+```
+
+
 
 ## Geography
 
@@ -302,10 +366,22 @@ d. Delay (lag phase);
 
 ```
 
+### Context - Timeline of events in the Middle Ages (EM13CHS101, EM13CHS102) {.unnumbered}
+
+
+[![](Eq/hist2.png)](Eq/jsp_hist2.html){target=“_blank”}
+Source: [Encyclopedia.com](https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/timeline-events-middle-ages?)
+
+### Suggestions: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Try changing events and periods in the code, and assign them to another period in human history.
+```
+
 
 ## Languages
 
-### Context - Slang spoken in Brazil from 1980 to 2020 (EF89LP19, EM13LGG102)
+### Context - Slang spoken in Brazil from 1980 to 2020 (EF89LP19, EM13LGG102) {.unnumbered}
 
 | This simulation is intended to estimate the use of slang spoken in Brazil over the last 40 years. The representation is in a pie chart, and the selection by decade is in a drop-down menu.
 \
@@ -316,3 +392,18 @@ d. Delay (lag phase);
 1. You can use the mouse to hover over each bar to see the "tip" (hint) for that data point in the chart.
 ```
 
+
+## Art
+
+### Context - Pitch, harmony, and timbre (EF15AR06, EM13ARH402) {.unnumbered}
+
+| The following example illustrates the concepts of pitch (frequency), harmony, and timbre (pure waves and harmonics) for a graph of musical tones (diatonic scale). 
+
+[![](Eq/musica.png)](Eq/jsp_musica.html){target=“_blank”}
+
+### Suggestion
+
+```{r, eval=FALSE}
+1. Test other keys (C, G, D, etc.), observing how the pure wave appears when the graphs are superimposed;
+2. Evaluate the difference between a pure wave and one produced with musical instruments, involving natural harmonics. To do this, replace the Boolean option “false” with ‘true’ in the variable “const ondaComposta”.
+```

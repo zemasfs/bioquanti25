@@ -100,7 +100,7 @@ $$
 
 ## Estatística 
 
-### Contexto - Curva de distribuição normal (EM13MAT316, EM13MAT407, EM13MAT312) 
+### Contexto - Curva de distribuição normal (EM13MAT316, EM13MAT407, EM13MAT312)  {.unnumbered}
 
 
 |       Amostragem e população são temas comuns para observação de dados em procedimentos analíticos. As curvas de distribuição estatísticas para isso envolvem a distribuição *t-Student*, *F-Snedecor*, *Chi-quadrado*, e *distribuição normal*. A curva de distribuição normal reflete o comportamento estatístico para fenômenos naturais em uma dada uma população de dados.
@@ -318,6 +318,23 @@ $$
 ```
 
 
+### Contexto - Eficiência energética e cadeia alimentar (EF06CI02, EM13CNT202, EM13CNT203) {.unnumbered}
+
+|       Segue um exemplo para retratar a transferëncia de energia entre diferentes níveis tróficos de uma cadeia alimentar. Embora não haja propriamente uma função matemática que a descreva, pode-se aplicar a [lei dos 10%](https://en.wikipedia.org/wiki/Ecological_efficiency?) de eficiência ecológica entre os níveis da cadeia, o que resulta numa relação logaritmica de transferência.
+
+
+[![](Eq/bio2.png)](Eq/jsp_bio2.html){target="_blank"}
+
+
+### Sugestão {.unnumbered}
+
+```{r, eval=FALSE}
+1. A regra de Lindeman, esboçada na referência acima, estabelece uma variação para 5-20% de eficiência energética no ecossistema. Assim, experimente sobrepor as curvas com tais taxas;
+2. Se quiser observar a relação logarítmica da transferência de energia, acrescente o comando "type: 'log'," , logo abaixo de "title: 'Energia disponível (unidades)',".
+```
+
+
+
 
 ## Geografia
 
@@ -364,9 +381,23 @@ $$
 ```
 
 
+### Contexto - Linha do tempo de eventos da Idade Média (EM13CHS101, EM13CHS102) {.unnumbered}
+
+
+[![](Eq/hist2.png)](Eq/jsp_hist2.html){target="_blank"}
+Fonte: [Encyclopedia.com](https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/timeline-events-middle-ages?)
+
+### Sugestão: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Experimente alterar no código eventos e períodos, e destinados a outro período da História humana.
+```
+
+
+
 ## Linguagens
 
-### Contexto - Gírias faladas no Brasil de 1980-2020 (EF89LP19, EM13LGG102)
+### Contexto - Gírias faladas no Brasil de 1980-2020 (EF89LP19, EM13LGG102)  {.unnumbered}
 
 |   Esta simulação é direcionada para uma estimativa do uso de gírias faladas no Brasil durante os últimos 40 anos. A representação dá-se num gráfico de pizza, e a seleção por década num menu suspenso.
 \
@@ -375,6 +406,22 @@ $$
 
 ```{r, eval=FALSE}
 1. Pode-se usar a passagem de mouse para observar o "tip" (dica) apresentada para cada dado no gráfico.
+```
+
+
+## Arte
+
+### Contexto -  Altura, harmonia e timbre de sons (EF15AR06, EM13ARH402) {.unnumbered}
+
+|       O exemplo a seguir ilustra os conceitos de altura (frequência), harmonia e timbre (ondas puras e harmônicos) para um gráfico de tonalidades musicais (escala diatônica). 
+
+[![](Eq/musica.png)](Eq/jsp_musica.html){target="_blank"}
+
+### Sugestão
+
+```{r, eval=FALSE}
+1. Teste outras tonalidades (C,G,D, etc), observando como se apresenta a onda pura sobrepondo os gráficos;
+2. Avalie a diferença entre uma onda pura e aquela produzida com instrumentos musicais, envolvendo harmônicos naturais. Para isso, substitua a opção booleana de "false" para "true" na variável "const ondaComposta".
 ```
 
 
