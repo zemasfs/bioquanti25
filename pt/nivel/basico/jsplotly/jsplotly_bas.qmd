@@ -27,7 +27,7 @@ Lembrete: o editor usa desfazer/refazer infinitos no código (Ctrl+Z / Shift+Ctr
 
 ## Matemática
 
-### Contexto - Trigonometria (EM13MAT306, EM13MAT308, EM13MAT307) {.unnumbered}
+### Contexto - Trigonometria (EM13MAT306, EM13MAT308, EM13MAT307) 
 
 |   A simulação a seguir objetiva facilitar a visualização para alguns conceitos em trigonometria, *seno, cosseno e tangente*. O código permite usar um *menu suspenso* para cada função trigonométrica, bem como um *slider* para alterar a frequência em radianos. 
 
@@ -67,7 +67,7 @@ $$
 
 ## Matemática Financeira
 
-### Contexto - Juros Compostos (EM13MAT402): {.unnumbered}
+### Contexto - Juros Compostos (EM13MAT402): 
 
 |   Também conhecido pela máxima *"juros sobre juros"*, os juros compostos incorporam valor ao capital ao longo do tempo, resultando no cresimento do montante final.  
 
@@ -100,7 +100,7 @@ $$
 
 ## Estatística 
 
-### Contexto - Curva de distribuição normal (EM13MAT316, EM13MAT407, EM13MAT312)  {.unnumbered}
+### Contexto - Curva de distribuição normal (EM13MAT316, EM13MAT407, EM13MAT312)  
 
 
 |       Amostragem e população são temas comuns para observação de dados em procedimentos analíticos. As curvas de distribuição estatísticas para isso envolvem a distribuição *t-Student*, *F-Snedecor*, *Chi-quadrado*, e *distribuição normal*. A curva de distribuição normal reflete o comportamento estatístico para fenômenos naturais em uma dada uma população de dados.
@@ -192,7 +192,7 @@ $$
 
 
 
-### Contexto - Movimento de corpos (EM13CNT102): {.unnumbered}
+### Contexto - Movimento de corpos (EM13CNT102): 
 
 |   O código a seguir ilustra a trajetória de um lançamento oblíquo com ângulo ajustável por uma barra deslizante (*slider*), útil para explorar os conceitos de cinemática.
 
@@ -240,7 +240,7 @@ $$
 
 ## Química
 
-### Contexto - Capacidade Calorífica (EF09CI06, EM13CNT104, EM13CNT203) {.unnumbered}
+### Contexto - Capacidade Calorífica (EF09CI06, EM13CNT104, EM13CNT203) 
 
 |   A simulação que segue visa observar a relação entre o calor trocado (*Q*), a massa (*m*), a capacidade calorífica (*c*) e a variação de temperatura (*$\Delta$T*).
 
@@ -286,7 +286,7 @@ $$
 
 ## Biologia
 
-### Contexto - Modelo de Crescimento Populacional com Fase Lag (EM13CNT102)  {.unnumbered}
+### Contexto - Modelo de Crescimento Populacional com Fase Lag (EM13CNT102)  
 
 |   Este modelo apresenta uma função logística que simula o crescimento populacional (microorganismos, células, por ex), acompanhado por um componente de retardo. Variando-se os parâmetros no editor, é possível estimar diversos perfis de crescimento populacional.
 
@@ -318,7 +318,7 @@ $$
 ```
 
 
-### Contexto - Eficiência energética e cadeia alimentar (EF06CI02, EM13CNT202, EM13CNT203) {.unnumbered}
+### Contexto - Eficiência energética e cadeia alimentar (EF06CI02, EM13CNT202, EM13CNT203) 
 
 |       Segue um exemplo para retratar a transferëncia de energia entre diferentes níveis tróficos de uma cadeia alimentar. Embora não haja propriamente uma função matemática que a descreva, pode-se aplicar a [lei dos 10%](https://en.wikipedia.org/wiki/Ecological_efficiency?) de eficiência ecológica entre os níveis da cadeia, o que resulta numa relação logaritmica de transferência.
 
@@ -338,7 +338,7 @@ $$
 
 ## Geografia
 
-### Contexto: Mapa do Brasil e Capitais (EM13CHS101, EM13CHS202, EM13CHS301) {.unnumbered}
+### Contexto: Mapa do Brasil e Capitais (EM13CHS101, EM13CHS202, EM13CHS301) 
 
 |   Não apenas de equações vive o *JSPlotly* ! Com a biblioteca *Plotly.js* que o compõe, é possível produzir também mapas interativos, como o da simulação que segue. 
 
@@ -365,7 +365,7 @@ $$
 
 ## História
 
-### Contexto - Distribuição de escravizados nas Américas no período de 1500–1888 (EF08HI06, EM13CHS104, EM13CHS503): {.unnumbered}
+### Contexto - Distribuição de escravizados nas Américas no período de 1500–1888 (EF08HI06, EM13CHS104, EM13CHS503):
 
 |    Esta simulação apresenta um *gráfico de barras* interativo para seleção de período por *menu suspenso*, e tangente à quantidade estimada de africanos escravizados desembarcados nas principais regiões da América. Os dados são estimativas aproximadas para ilustrar o potencial de visualização do aplicativo, embora servindo como ponto de partida para discussões educacionais mais precisas. Fontes passíveis de consulta incluem [Slave Voyages](https://www.slavevoyages.org/past/database/african-origins).
 \
@@ -381,7 +381,7 @@ $$
 ```
 
 
-### Contexto - Linha do tempo de eventos da Idade Média (EM13CHS101, EM13CHS102) {.unnumbered}
+### Contexto - Linha do tempo de eventos da Idade Média (EM13CHS101, EM13CHS102) 
 
 
 [![](Eq/hist2.png)](Eq/jsp_hist2.html){target="_blank"}
@@ -397,7 +397,7 @@ Fonte: [Encyclopedia.com](https://www.encyclopedia.com/history/encyclopedias-alm
 
 ## Linguagens
 
-### Contexto - Gírias faladas no Brasil de 1980-2020 (EF89LP19, EM13LGG102)  {.unnumbered}
+### Contexto - Gírias faladas no Brasil de 1980-2020 (EF89LP19, EM13LGG102)  
 
 |   Esta simulação é direcionada para uma estimativa do uso de gírias faladas no Brasil durante os últimos 40 anos. A representação dá-se num gráfico de pizza, e a seleção por década num menu suspenso.
 \
@@ -409,8 +409,7 @@ Fonte: [Encyclopedia.com](https://www.encyclopedia.com/history/encyclopedias-alm
 ```
 
 
-### Contexto - Frequência de palavras em texto (EM13LGG101, EM13LGG302, EM13LGG303) {.unnumbered}
-
+### Contexto - Frequência de palavras em texto (EM13LGG101, EM13LGG302, EM13LGG303) 
 
 [![](Eq/linguag2.png)](Eq/jsp_linguag2.html){target="_blank"}
 
@@ -429,7 +428,7 @@ Fonte: [Encyclopedia.com](https://www.encyclopedia.com/history/encyclopedias-alm
 
 ## Artes
 
-### Contexto -  Altura, harmonia e timbre de sons (EF15AR06, EM13ARH402) {.unnumbered}
+### Contexto -  Altura, harmonia e timbre de sons (EF15AR06, EM13ARH402) 
 
 |       O exemplo a seguir ilustra os conceitos de altura (frequência), harmonia e timbre (ondas puras e harmônicos) para um gráfico de tonalidades musicais (escala diatônica). 
 
@@ -445,14 +444,28 @@ Fonte: [Encyclopedia.com](https://www.encyclopedia.com/history/encyclopedias-alm
 
 ## STEAM
 
-### Contexto - Vaso em torno de oleiro (EM13MAT101, EM13MAT403, EM13CNT204, EM13AR01, EM13AR02) {.unnumbered}
-
+### Contexto - Vaso em torno de oleiro (EM13MAT101, EM13MAT403, EM13CNT204, EM13AR01, EM13AR02) 
 |       A plataforma também permite criações para a integração em Ciência, Tecnologia, Engenharia, Artes, e Matemática (*STEAM*). Segue um exemplo de simulação para torneamento cerâmico e moldagem manual de argila, e que permite experimentar formas simétricas e arredondadas, como vasos, tigelas e potes.
 
 [![](Eq/steam.png)](Eq/jsp_steam.html){target="_blank"}
 
 ```{r, eval=FALSE}
 1. Altere a altura do vaso, seu formato, e suas cores, editando o código nos campos específicos.
+```
+
+
+### Contexto - Mini CAD (EM13MAT301, EM13MAT503, EM13MAT402)
+
+|       Segue um exemplo de código para manipulação de formas geométricas em 3D (curvas ou retas) na elaboração de um mini CAD (*Computer-Aided Design*).
+
+
+[![](Eq/miniCAD)](Eq/jsp_miniCAD.html){target="_blank"}
+
+```{r, eval=FALSE}
+1. Experimente alterar os parâmetros base, altura e curvatura do código, variando também o sinal dos valores (positivo, negativo);
+2. Altere alguma função trigonométrica (linhaX ou linhaY, seno para tangente, por exemplo), e sobreponha ao plot;
+3. Sobreponha figuras geométricas com paleta de cores distintas.
+4. Crie figuras simétricas sobrepondo uma curva com parâmetro positivo a uma com mesmo parâmetro negativo.
 ```
 
 

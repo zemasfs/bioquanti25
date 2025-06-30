@@ -437,3 +437,20 @@ Source: [Encyclopedia.com](https://www.encyclopedia.com/history/encyclopedias-al
 ```{r, eval=FALSE}
 1. Change the height of the vase, its shape, and its colors by editing the code in the specific fields.
 ```
+
+
+### Context - Mini CAD (EM13MAT301, EM13MAT503, EM13MAT402)
+
+| Here is an example of code for manipulating 3D geometric shapes (curves or lines) when creating a mini CAD (*Computer-Aided Design*).
+
+
+[![](Eq/miniCAD)](Eq/jsp_miniCAD.html){target=“_blank”}
+
+```{r, eval=FALSE}
+1. Try changing the base, height, and curvature parameters of the code, also varying the sign of the values (positive, negative);
+2. Change a trigonometric function (lineX or lineY, sine to tangent, for example), and overlay it on the plot;
+3. Overlay geometric figures with different color palettes.
+4. Create symmetrical figures by overlaying a curve with a positive parameter on one with the same negative parameter.
+```
+
+
