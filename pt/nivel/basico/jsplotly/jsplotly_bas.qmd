@@ -409,6 +409,23 @@ Fonte: [Encyclopedia.com](https://www.encyclopedia.com/history/encyclopedias-alm
 ```
 
 
+### Contexto - Frequência de palavras em texto (EM13LGG101, EM13LGG302, EM13LGG303) {.unnumbered}
+
+
+[![](Eq/linguag2.png)](Eq/jsp_linguag2.html){target="_blank"}
+
+### Sugestão {.unnumbered}
+
+```{r, eval=FALSE}
+
+1. Experimente substituir o texto do código por outro;
+2. Experimente variar o quantitativo de termos mais frequentes na variável "const entradas" (opcionalmente, varie também no título do gráfico, para fazer sentido).
+
+```
+
+
+
+
 ## Arte
 
 ### Contexto -  Altura, harmonia e timbre de sons (EF15AR06, EM13ARH402) {.unnumbered}

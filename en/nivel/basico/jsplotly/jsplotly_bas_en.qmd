@@ -327,7 +327,7 @@ d. Delay (lag phase);
 
 ```{r, eval=FALSE}
 1. Lindeman's rule, outlined in the reference above, establishes a variation of 5-20% energy efficiency in the ecosystem. So, try overlaying the curves with these rates;
-2. If you want to observe the logarithmic relationship of energy transfer, add the command “type: ‘log’,” just below “title: ‘Available energy (units)’,”.
+2. If you want to observe the logarithmic relationship of energy transfer, add the command "type: 'log'," just below "title: 'Available energy (units)',".
 ```
 
 
@@ -393,6 +393,22 @@ Source: [Encyclopedia.com](https://www.encyclopedia.com/history/encyclopedias-al
 ```
 
 
+### Context - Frequency of words in text (EM13LGG101, EM13LGG302, EM13LGG303) {.unnumbered}
+
+
+[![](Eq/linguag2.png)](Eq/jsp_linguag2.html){target=“_blank”}
+
+### Suggestion {.unnumbered}
+
+```{r, eval=FALSE}
+
+1. Try replacing the code text with another;
+2. Try varying the number of most frequent terms in the variable "const entradas" (optionally, also vary in the graph title, to make sense).
+
+```
+
+
+
 ## Art
 
 ### Context - Pitch, harmony, and timbre (EF15AR06, EM13ARH402) {.unnumbered}
@@ -405,5 +421,5 @@ Source: [Encyclopedia.com](https://www.encyclopedia.com/history/encyclopedias-al
 
 ```{r, eval=FALSE}
 1. Test other keys (C, G, D, etc.), observing how the pure wave appears when the graphs are superimposed;
-2. Evaluate the difference between a pure wave and one produced with musical instruments, involving natural harmonics. To do this, replace the Boolean option “false” with ‘true’ in the variable “const ondaComposta”.
+2. Evaluate the difference between a pure wave and one produced with musical instruments, involving natural harmonics. To do this, replace the Boolean option "false" with "true" in the variable "const ondaComposta".
 ```
