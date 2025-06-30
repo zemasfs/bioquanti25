@@ -403,7 +403,8 @@ Source: [Encyclopedia.com](https://www.encyclopedia.com/history/encyclopedias-al
 ```{r, eval=FALSE}
 
 1. Try replacing the code text with another;
-2. Try varying the number of most frequent terms in the variable "const entradas" (optionally, also vary in the graph title, to make sense).
+2. Try varying the number of most frequent terms in the variable "const entradas" (optionally, also vary in the graph title, to make sense);
+3. Compare a text in Portuguese with its translation into English or another language.
 
 ```
 

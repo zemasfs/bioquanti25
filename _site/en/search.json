@@ -2186,7 +2186,7 @@
     "href": "nivel/basico/jsplotly/jsplotly_bas_en.html#languages",
     "title": "JSPlotly and GSPlotly at School",
     "section": "9 Languages",
-    "text": "9 Languages\n\nContext - Slang spoken in Brazil from 1980 to 2020 (EF89LP19, EM13LGG102)\nThis simulation is intended to estimate the use of slang spoken in Brazil over the last 40 years. The representation is in a pie chart, and the selection by decade is in a drop-down menu.\n\n\n\n\n1. You can use the mouse to hover over each bar to see the \"tip\" (hint) for that data point in the chart.\n\n\n\nContext - Frequency of words in text (EM13LGG101, EM13LGG302, EM13LGG303)\n\n\n\nSuggestion\n\n1. Try replacing the code text with another;\n2. Try varying the number of most frequent terms in the variable \"const entradas\" (optionally, also vary in the graph title, to make sense).",
+    "text": "9 Languages\n\nContext - Slang spoken in Brazil from 1980 to 2020 (EF89LP19, EM13LGG102)\nThis simulation is intended to estimate the use of slang spoken in Brazil over the last 40 years. The representation is in a pie chart, and the selection by decade is in a drop-down menu.\n\n\n\n\n1. You can use the mouse to hover over each bar to see the \"tip\" (hint) for that data point in the chart.\n\n\n\nContext - Frequency of words in text (EM13LGG101, EM13LGG302, EM13LGG303)\n\n\n\nSuggestion\n\n1. Try replacing the code text with another;\n2. Try varying the number of most frequent terms in the variable \"const entradas\" (optionally, also vary in the graph title, to make sense);\n3. Compare a text in Portuguese with its translation into English or another language.",
     "crumbs": [
       "About",
       "JSPlotly & GSPlotly - Interactive Graphics & AI",

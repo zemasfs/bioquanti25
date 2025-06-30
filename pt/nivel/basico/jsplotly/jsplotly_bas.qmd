@@ -419,7 +419,8 @@ Fonte: [Encyclopedia.com](https://www.encyclopedia.com/history/encyclopedias-alm
 ```{r, eval=FALSE}
 
 1. Experimente substituir o texto do código por outro;
-2. Experimente variar o quantitativo de termos mais frequentes na variável "const entradas" (opcionalmente, varie também no título do gráfico, para fazer sentido).
+2. Experimente variar o quantitativo de termos mais frequentes na variável "const entradas" (opcionalmente, varie também no título do gráfico, para fazer sentido);
+3. Compare um texto em português com sua tradução para inglês ou outra língua.
 
 ```
 
