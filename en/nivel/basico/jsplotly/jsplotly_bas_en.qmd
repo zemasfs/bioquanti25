@@ -409,21 +409,33 @@ Source: [Encyclopedia.com](https://www.encyclopedia.com/history/encyclopedias-al
 ```
 
 
+<!-- ### Context - Pitch, harmony, and timbre (EF15AR06, EM13ARH402)  -->
 
-## Art
+<!-- | The following example illustrates the concepts of pitch (frequency), harmony, and timbre (pure waves and harmonics) for a graph of musical tones (diatonic scale).  -->
 
-### Context - Pitch, harmony, and timbre (EF15AR06, EM13ARH402) 
+<!-- [![](Eq/musica2.png)](Eq/jsp_musica3.html){target=“_blank”} -->
 
-| The following example illustrates the concepts of pitch (frequency), harmony, and timbre (pure waves and harmonics) for a graph of musical tones (diatonic scale). 
+<!-- ### Suggestion -->
+
+<!-- ```{r, eval=FALSE} -->
+<!-- 1. Test other keys (C, G, D, etc.), observing how the pure wave appears when the graphs are superimposed; -->
+<!-- 2. Evaluate the difference between a pure wave and one produced with musical instruments, involving natural harmonics. To do this, replace the Boolean option "false" with "true" in the variable "const ondaComposta". -->
+<!-- ``` -->
+## Arts
+
+### Context - Music notation editor (EF15AR06, EF69AR22, EM13ARH402)
+
+| The following example illustrates the concepts of pitch (tonality) and duration for musical notes in the diatonic scale. The captions represent the duration values, and the tonalities are presented in their frequency values
 
 [![](Eq/musica2.png)](Eq/jsp_musica3.html){target=“_blank”}
 
-### Suggestion
-
 ```{r, eval=FALSE}
-1. Test other keys (C, G, D, etc.), observing how the pure wave appears when the graphs are superimposed;
-2. Evaluate the difference between a pure wave and one produced with musical instruments, involving natural harmonics. To do this, replace the Boolean option "false" with "true" in the variable "const ondaComposta".
+1. Try changing the melodic sequence of the code in the corresponding vector;
+2. Try changing the duration figures in the corresponding vector
+
 ```
+
+
 
 
 ## STEAM
