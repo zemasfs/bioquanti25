@@ -31,22 +31,22 @@
     "objectID": "producao_en.html#software",
     "href": "producao_en.html#software",
     "title": "",
-    "section": "4 Software",
-    "text": "4 Software\n\nMacedo, J.A.; Matos, N.; Paula, M.M.V.; Silva, L.E.; Schneedorf, J.M. SISMA: Autocatalytic Map System. Computer program. INPI registration no. 08869-3 (May 19, 2008).\nSchneedorf, J.M. JSPlotly & GSPlotly: AI application and code generator for interactive graphics in HTML viewer (2025). Filed on the eduCAPES portal, registration no. 972869."
+    "section": "5 Software",
+    "text": "5 Software\n\nMacedo, J.A.; Matos, N.; Paula, M.M.V.; Silva, L.E.; Schneedorf, J.M. SISMA: Autocatalytic Map System. Computer program. INPI registration no. 08869-3 (May 19, 2008).\nSchneedorf, J.M. JSPlotly & GSPlotly: AI application and code generator for interactive graphics in HTML viewer (2025). Filed on the eduCAPES portal, registration no. 972869."
   },
   {
     "objectID": "producao_en.html#website",
     "href": "producao_en.html#website",
     "title": "",
-    "section": "5 Website",
-    "text": "5 Website\n\nSchneedorf, J.M. Bioquanti (2022). Deposited on the eduCAPES portal, registration no. 748598."
+    "section": "6 Website",
+    "text": "6 Website\n\nSchneedorf, J.M. Bioquanti (2022). Deposited on the eduCAPES portal, registration no. 748598."
   },
   {
     "objectID": "producao_en.html#customized-gpt",
     "href": "producao_en.html#customized-gpt",
     "title": "",
-    "section": "6 Customized GPT",
-    "text": "6 Customized GPT\n\nSchneedorf, J.M. GSPlotly: interactive script generator for JSPlotly. Customized OpenAI GPT. Available at: https://chat.openai.com/g/g-6819fbb8d2d08191bf7d50a3dbeadb0d-gsplotly. Accessed on: May 11, 2025."
+    "section": "7 Customized GPT",
+    "text": "7 Customized GPT\n\nSchneedorf, J.M. GSPlotly: interactive script generator for JSPlotly. Customized OpenAI GPT. Available at: https://chat.openai.com/g/g-6819fbb8d2d08191bf7d50a3dbeadb0d-gsplotly. Accessed on: May 11, 2025."
   },
   {
     "objectID": "nivel/superior/r/glicolise_en.html",
@@ -4375,5 +4375,12 @@
       "JSPlotly & GSPlotly - Interactive Graphics & AI",
       "Simulations at School"
     ]
+  },
+  {
+    "objectID": "producao_en.html#patent",
+    "href": "producao_en.html#patent",
+    "title": "",
+    "section": "4 Patent",
+    "text": "4 Patent\n\nOliveira, G.A.V., Schneedorf, J.M. Método para detecção de ricina e caracterização de sua atividade enzimática em tempo real por eletroquímica. INPI, registro no. BR1020200206532. 2020.\nCavalcanti, M. H. S.; Virtuoso, L. S.; Mendes, A. A.; Schneedorf, J.M. Processo para imobilização de enzima em suporte nanoparticulado magnético. INPI, registro no. BR10202002016."
   }
 ]
