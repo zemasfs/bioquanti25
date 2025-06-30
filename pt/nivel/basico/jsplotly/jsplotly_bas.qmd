@@ -432,7 +432,7 @@ Fonte: [Encyclopedia.com](https://www.encyclopedia.com/history/encyclopedias-alm
 
 |       O exemplo a seguir ilustra os conceitos de altura (tonalidade) e duração para notas musicais em escala diatônica. As legendas representam os valores de duração, e as tonalidades são apresentadas em seus valores de frequência
 
-[![](Eq/musica2.png)](Eq/jsp_musica2.html){target="_blank"}
+[![](Eq/musica2.png)](Eq/jsp_musica3.html){target="_blank"}
 
 ```{r, eval=FALSE}
 1. Experimente alterar a sequência melódica do código no vetor correspondente;
@@ -459,8 +459,8 @@ Fonte: [Encyclopedia.com](https://www.encyclopedia.com/history/encyclopedias-alm
 
 ## STEAM
 
-### Contexto - Vaso em torno de oleiro (EM13MAT101, EM13MAT403, EM13CNT204, EM13AR01, EM13AR02) 
-|       A plataforma também permite criações para a integração em Ciência, Tecnologia, Engenharia, Artes, e Matemática (*STEAM*). Segue um exemplo de simulação para torneamento cerâmico e moldagem manual de argila, e que permite experimentar formas simétricas e arredondadas, como vasos, tigelas e potes.
+### Contexto - Vaso em torno de olaria (EM13MAT101, EM13MAT403, EM13CNT204, EM13AR01, EM13AR02) 
+|       A plataforma também permite criações para a integração em Ciência, Tecnologia, Engenharia, Artes, e Matemática (*STEAM*). Segue um exemplo de simulação para torneamento cerâmico e moldagem manual de argila, e que permite experimentar formas simétricas e arredondadas, como vasos, tigelas e potes, por ajuste em alguns parâmetros e nas funções trigonométricas do código.
 
 [![](Eq/steam.png)](Eq/jsp_steam.html){target="_blank"}
 

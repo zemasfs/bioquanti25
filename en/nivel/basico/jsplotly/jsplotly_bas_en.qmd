@@ -416,7 +416,7 @@ Source: [Encyclopedia.com](https://www.encyclopedia.com/history/encyclopedias-al
 
 | The following example illustrates the concepts of pitch (frequency), harmony, and timbre (pure waves and harmonics) for a graph of musical tones (diatonic scale). 
 
-[![](Eq/musica.png)](Eq/jsp_musica.html){target=“_blank”}
+[![](Eq/musica2.png)](Eq/jsp_musica3.html){target=“_blank”}
 
 ### Suggestion
 
@@ -430,7 +430,7 @@ Source: [Encyclopedia.com](https://www.encyclopedia.com/history/encyclopedias-al
 
 ### Context - Pottery wheel (EM13MAT101, EM13MAT403, EM13CNT204, EM13AR01, EM13AR02) 
 
-| The platform also allows creations for integration in Science, Technology, Engineering, Arts, and Mathematics (*STEAM*). Here is an example of a simulation for ceramic turning and manual clay molding, which allows you to experiment with symmetrical and rounded shapes, such as vases, bowls, and pots.
+| The platform also allows creations for integration in Science, Technology, Engineering, Arts, and Mathematics (*STEAM*). Here is an example of a simulation for ceramic turning and manual clay molding, which allows you to experiment with symmetrical and rounded shapes, such as vases, bowls, and pots, by adjusting some parameters and the trigonometric functions of the code.
 
 [![](Eq/steam.png)](Eq/jsp_steam.html){target=“_blank”}
 
