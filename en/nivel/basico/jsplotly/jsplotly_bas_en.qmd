@@ -27,7 +27,7 @@ Reminder: the editor uses infinite undo/redo in the code (Ctrl+Z / Shift+Ctrl+Z)
 
 ## Mathematics
 
-### Context - Trigonometry (EM13MAT306, EM13MAT308, EM13MAT307) {.unnumbered}
+### Context - Trigonometry (EM13MAT306, EM13MAT308, EM13MAT307) 
 
 | The following simulation aims to facilitate the visualization of some concepts in trigonometry, *sine, cosine, and tangent*. The code allows you to use a *drop-down menu* for each trigonometric function, as well as a *slider* to change the frequency in radians.
 ### Equation: {.unnumbered}
@@ -66,7 +66,7 @@ $$
 
 ## Financial Mathematics
 
-### Context - Compound Interest (EM13MAT402): {.unnumbered}
+### Context - Compound Interest (EM13MAT402): 
 
 | Also known as *“interest on interest”*, compound interest adds value to capital over time, resulting in the growth of the final amount.
 
@@ -100,7 +100,7 @@ $$
 
 ## Statistics
 
-### Context - Normal distribution curve (EM13MAT316, EM13MAT407, EM13MAT312)  {.unnumbered}
+### Context - Normal distribution curve (EM13MAT316, EM13MAT407, EM13MAT312) 
 
 
 | Sampling and population are common topics for data observation in analytical procedures. Statistical distribution curves for this involve the *t-Student*, *F-Snedecor*, *Chi-square*, and *normal distribution*. The normal distribution curve reflects the statistical behavior for natural phenomena in a given data population.
@@ -191,7 +191,7 @@ $$
 
 
 
-### Context - Motion of bodies (EM13CNT102): {.unnumbered}
+### Context - Motion of bodies (EM13CNT102): 
 
 | The following code illustrates the trajectory of an oblique launch with an angle adjustable by a slider, useful for exploring the concepts of kinematics.
 
@@ -239,7 +239,7 @@ $$
 
 ## Chemistry
 
-### Context - Heat Capacity (EF09CI06, EM13CNT104, EM13CNT203) {.unnumbered}
+### Context - Heat Capacity (EF09CI06, EM13CNT104, EM13CNT203) 
 
 | The following simulation aims to observe the relationship between heat exchanged (*Q*), mass (*m*), heat capacity (*c*), and temperature variation (*$\Delta$T*).
 
@@ -283,7 +283,7 @@ $$
 
 ## Biology
 
-### Context - Population Growth Model with Lag Phase (EM13CNT102) {.unnumbered}
+### Context - Population Growth Model with Lag Phase (EM13CNT102) 
 
 | This model presents a logistic function that simulates population growth (e.g., microorganisms, cells), accompanied by a delay component. By varying the parameters in the editor, it is possible to estimate various population growth profiles.
 
@@ -315,7 +315,7 @@ d. Delay (lag phase);
 ```
 
 
-### Context - Energy efficiency and the food chain (EF06CI02, EM13CNT202, EM13CNT203) {.unnumbered}
+### Context - Energy efficiency and the food chain (EF06CI02, EM13CNT202, EM13CNT203) 
 
 | Here is an example to illustrate energy transfer between different trophic levels in a food chain. Although there is no mathematical function that describes it, the [10% rule](https://en.wikipedia.org/wiki/Ecological_efficiency?) of ecological efficiency between levels of the chain can be applied, resulting in a logarithmic transfer relationship.
 
@@ -334,7 +334,7 @@ d. Delay (lag phase);
 
 ## Geography
 
-### Context: Map of Brazil and Capital Cities (EM13CHS101, EM13CHS202, EM13CHS301) {.unnumbered}
+### Context: Map of Brazil and Capital Cities (EM13CHS101, EM13CHS202, EM13CHS301)
 
 | *JSPlotly* is not just about equations! With the *Plotly.js* library that composes it, you can also produce interactive maps, such as the simulation below.
 
@@ -351,7 +351,7 @@ d. Delay (lag phase);
 
 ## History
 
-### Context - Distribution of slaves in the Americas from 1500 to 1888 (EF08HI06, EM13CHS104, EM13CHS503): {.unnumbered}
+### Context - Distribution of slaves in the Americas from 1500 to 1888 (EF08HI06, EM13CHS104, EM13CHS503): 
 
 | This simulation presents an interactive *bar chart* for selecting a period from a *drop-down menu*, tangent to the estimated number of enslaved Africans landed in the main regions of the Americas. The data are rough estimates to illustrate the visualization potential of the application, although they serve as a starting point for more accurate educational discussions. Sources for consultation include [Slave Voyages](https://www.slavevoyages.org/past/database/african-origins).
 \
@@ -366,7 +366,7 @@ d. Delay (lag phase);
 
 ```
 
-### Context - Timeline of events in the Middle Ages (EM13CHS101, EM13CHS102) {.unnumbered}
+### Context - Timeline of events in the Middle Ages (EM13CHS101, EM13CHS102) 
 
 
 [![](Eq/hist2.png)](Eq/jsp_hist2.html){target=“_blank”}
@@ -381,7 +381,7 @@ Source: [Encyclopedia.com](https://www.encyclopedia.com/history/encyclopedias-al
 
 ## Languages
 
-### Context - Slang spoken in Brazil from 1980 to 2020 (EF89LP19, EM13LGG102) {.unnumbered}
+### Context - Slang spoken in Brazil from 1980 to 2020 (EF89LP19, EM13LGG102) 
 
 | This simulation is intended to estimate the use of slang spoken in Brazil over the last 40 years. The representation is in a pie chart, and the selection by decade is in a drop-down menu.
 \
@@ -393,7 +393,7 @@ Source: [Encyclopedia.com](https://www.encyclopedia.com/history/encyclopedias-al
 ```
 
 
-### Context - Frequency of words in text (EM13LGG101, EM13LGG302, EM13LGG303) {.unnumbered}
+### Context - Frequency of words in text (EM13LGG101, EM13LGG302, EM13LGG303) 
 
 
 [![](Eq/linguag2.png)](Eq/jsp_linguag2.html){target=“_blank”}
@@ -412,7 +412,7 @@ Source: [Encyclopedia.com](https://www.encyclopedia.com/history/encyclopedias-al
 
 ## Art
 
-### Context - Pitch, harmony, and timbre (EF15AR06, EM13ARH402) {.unnumbered}
+### Context - Pitch, harmony, and timbre (EF15AR06, EM13ARH402) 
 
 | The following example illustrates the concepts of pitch (frequency), harmony, and timbre (pure waves and harmonics) for a graph of musical tones (diatonic scale). 
 
@@ -428,7 +428,7 @@ Source: [Encyclopedia.com](https://www.encyclopedia.com/history/encyclopedias-al
 
 ## STEAM
 
-### Context - Pottery wheel (EM13MAT101, EM13MAT403, EM13CNT204, EM13AR01, EM13AR02) {.unnumbered}
+### Context - Pottery wheel (EM13MAT101, EM13MAT403, EM13CNT204, EM13AR01, EM13AR02) 
 
 | The platform also allows creations for integration in Science, Technology, Engineering, Arts, and Mathematics (*STEAM*). Here is an example of a simulation for ceramic turning and manual clay molding, which allows you to experiment with symmetrical and rounded shapes, such as vases, bowls, and pots.
 

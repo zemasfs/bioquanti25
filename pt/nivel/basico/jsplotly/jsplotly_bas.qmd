@@ -428,18 +428,33 @@ Fonte: [Encyclopedia.com](https://www.encyclopedia.com/history/encyclopedias-alm
 
 ## Artes
 
-### Contexto -  Altura, harmonia e timbre de sons (EF15AR06, EM13ARH402) 
+### Contexto - Editor de notação musical (EF15AR06, EF69AR22, EM13ARH402)
 
-|       O exemplo a seguir ilustra os conceitos de altura (frequência), harmonia e timbre (ondas puras e harmônicos) para um gráfico de tonalidades musicais (escala diatônica). 
+|       O exemplo a seguir ilustra os conceitos de altura (tonalidade) e duração para notas musicais em escala diatônica. As legendas representam os valores de duração, e as tonalidades são apresentadas em seus valores de frequência
 
-[![](Eq/musica.png)](Eq/jsp_musica.html){target="_blank"}
-
-### Sugestão
+[![](Eq/musica2.png)](Eq/jsp_musica2.html){target="_blank"}
 
 ```{r, eval=FALSE}
-1. Teste outras tonalidades (C,G,D, etc), observando como se apresenta a onda pura sobrepondo os gráficos;
-2. Avalie a diferença entre uma onda pura e aquela produzida com instrumentos musicais, envolvendo harmônicos naturais. Para isso, substitua a opção booleana de "false" para "true" na variável "const ondaComposta".
+1. Experimente alterar a sequência melódica do código no vetor correspondente;
+2. Experimente alterar as figuras de duração no vetor correspondente
+
 ```
+
+
+
+
+<!-- ### Contexto -  Altura, harmonia e timbre de sons (EF15AR06, EM13ARH402)  -->
+
+<!-- |       O exemplo a seguir ilustra os conceitos de altura (frequência), harmonia e timbre (ondas puras e harmônicos) para um gráfico de tonalidades musicais (escala diatônica).  -->
+
+<!-- [![](Eq/musica.png)](Eq/jsp_musica.html){target="_blank"} -->
+
+<!-- ### Sugestão -->
+
+<!-- ```{r, eval=FALSE} -->
+<!-- 1. Teste outras tonalidades (C,G,D, etc), observando como se apresenta a onda pura sobrepondo os gráficos; -->
+<!-- 2. Avalie a diferença entre uma onda pura e aquela produzida com instrumentos musicais, envolvendo harmônicos naturais. Para isso, substitua a opção booleana de "false" para "true" na variável "const ondaComposta". -->
+<!-- ``` -->
 
 
 ## STEAM
