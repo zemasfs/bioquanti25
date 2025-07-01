@@ -749,13 +749,41 @@ N(t) = \frac{K}{1 + \left(\frac{K - N_0}{N_0}\right) \cdot e^{-r \cdot A(t) \cdo
 </section>
 <section id="artes" class="level2" data-number="10">
 <h2 data-number="10" class="anchored" data-anchor-id="artes"><span class="header-section-number">10</span> Artes</h2>
-<section id="contexto---editor-de-notação-musical-ef15ar06-ef69ar22-em13arh402" class="level3" data-number="10.1">
-<h3 data-number="10.1" class="anchored" data-anchor-id="contexto---editor-de-notação-musical-ef15ar06-ef69ar22-em13arh402"><span class="header-section-number">10.1</span> Contexto - Editor de notação musical (EF15AR06, EF69AR22, EM13ARH402)</h3>
+<section id="contexto---composição-fractal-em13mat301-em13mat305-em13mat401-em13arm502-ef09ma10" class="level3" data-number="10.1">
+<h3 data-number="10.1" class="anchored" data-anchor-id="contexto---composição-fractal-em13mat301-em13mat305-em13mat401-em13arm502-ef09ma10"><span class="header-section-number">10.1</span> Contexto - Composição fractal (EM13MAT301, EM13MAT305, EM13MAT401, EM13ARM502, EF09MA10)</h3>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fractais constituem objetos geométricos com simetria de escala, formando padrões que se repetem em partes menores do objeto original. As representações matemáticas mais comuns são os fractais de Mandelbrot e os fractais de Julia.</div>
+</section>
+<section id="equação-7" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="equação-7">Equação</h3>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fractais de Julia são formados em plano cartesiano complexo, pela somatória dos componentes real e imaginário. A fórmula básica para o conjunto de Julia é dada por:</div>
+<p><span class="math display">\[
+z_{n+1}=z_{n}^{2}+c
+\]</span></p>
+<p><em>Onde:</em></p>
+<ul>
+<li><p>z ∈ C: geralmente inicializado como o ponto do plano complexo;</p></li>
+<li><p>c ∈ C: fixo para cada conjunto de Julia.</p></li>
+</ul>
+<p><a href="Eq/jsp_julia.html" target="_blank"><img src="Eq/julia.png" class="img-fluid"></a></p>
+</section>
+<section id="sugestão-14" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="sugestão-14">Sugestão</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Experimente alterar os componentes Real e Imaginário da fórmula, para obter padrões artísticos distintos. Seguem sugestões<span class="sc">:</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  c <span class="ot">=</span> <span class="dv">0</span> <span class="sc">+</span> <span class="dv">0</span>i</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  c <span class="ot">=</span> <span class="sc">-</span><span class="fl">0.4</span> <span class="sc">+</span> <span class="fl">0.6</span>i</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>  c <span class="ot">=</span> <span class="fl">0.285</span> <span class="sc">+</span> <span class="dv">0</span>i</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>  c <span class="ot">=</span> <span class="sc">-</span><span class="fl">0.8</span> <span class="sc">+</span> <span class="fl">0.156</span>i</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>  c <span class="ot">=</span> <span class="fl">0.45</span> <span class="sc">+</span> <span class="fl">0.1428</span>i</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="contexto---editor-de-notação-musical-ef15ar06-ef69ar22-em13arh402" class="level3" data-number="10.2">
+<h3 data-number="10.2" class="anchored" data-anchor-id="contexto---editor-de-notação-musical-ef15ar06-ef69ar22-em13arh402"><span class="header-section-number">10.2</span> Contexto - Editor de notação musical (EF15AR06, EF69AR22, EM13ARH402)</h3>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O exemplo a seguir ilustra os conceitos de altura (tonalidade) e duração para notas musicais em escala diatônica. As legendas representam os valores de duração, e as tonalidades são apresentadas em seus valores de frequência</div>
 <p><a href="Eq/jsp_musica3.html" target="_blank"><img src="Eq/musica2.png" class="img-fluid"></a></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Experimente alterar a sequência melódica do código no vetor correspondente;</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Experimente alterar as figuras de duração no vetor correspondente</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Experimente alterar a sequência melódica do código no vetor correspondente;</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Experimente alterar as figuras de duração no vetor correspondente</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <!-- ### Contexto -  Altura, harmonia e timbre de sons (EF15AR06, EM13ARH402)  -->
 <!-- |       O exemplo a seguir ilustra os conceitos de altura (frequência), harmonia e timbre (ondas puras e harmônicos) para um gráfico de tonalidades musicais (escala diatônica).  -->
@@ -774,7 +802,7 @@ N(t) = \frac{K}{1 + \left(\frac{K - N_0}{N_0}\right) \cdot e^{-r \cdot A(t) \cdo
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A plataforma também permite criações para a integração em Ciência, Tecnologia, Engenharia, Artes, e Matemática (<em>STEAM</em>). Segue um exemplo de simulação para torneamento cerâmico e moldagem manual de argila, e que permite experimentar formas simétricas e arredondadas, como vasos, tigelas e potes, por ajuste em alguns parâmetros e nas funções trigonométricas do código.</div>
 <p><a href="Eq/jsp_steam.html" target="_blank"><img src="Eq/steam.png" class="img-fluid"></a></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Altere a altura do vaso, seu formato, e suas cores, editando o código nos campos específicos.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Altere a altura do vaso, seu formato, e suas cores, editando o código nos campos específicos.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="contexto---mini-cad-em13mat301-em13mat503-em13mat402" class="level3" data-number="11.2">
@@ -782,10 +810,10 @@ N(t) = \frac{K}{1 + \left(\frac{K - N_0}{N_0}\right) \cdot e^{-r \cdot A(t) \cdo
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Segue um exemplo de código para manipulação de formas geométricas em 3D (curvas ou retas) na elaboração de um mini CAD (<em>Computer-Aided Design</em>).</div>
 <p><a href="Eq/jsp_miniCAD.html" target="_blank"><img src="Eq/miniCAD.png" class="img-fluid"></a></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Experimente alterar os parâmetros base, altura e curvatura do código, variando também o sinal dos <span class="fu">valores</span> (positivo, negativo);</span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Altere alguma função trigonométrica (linhaX ou linhaY, seno para tangente, por exemplo), e sobreponha ao plot;</span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Sobreponha figuras geométricas com paleta de cores distintas.</span>
-<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="fl">4.</span> Crie figuras simétricas sobrepondo uma curva com parâmetro positivo a uma com mesmo parâmetro negativo.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Experimente alterar os parâmetros base, altura e curvatura do código, variando também o sinal dos <span class="fu">valores</span> (positivo, negativo);</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Altere alguma função trigonométrica (linhaX ou linhaY, seno para tangente, por exemplo), e sobreponha ao plot;</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Sobreponha figuras geométricas com paleta de cores distintas.</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="fl">4.</span> Crie figuras simétricas sobrepondo uma curva com parâmetro positivo a uma com mesmo parâmetro negativo.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 

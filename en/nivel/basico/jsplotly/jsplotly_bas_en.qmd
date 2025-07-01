@@ -423,6 +423,44 @@ Source: [Encyclopedia.com](https://www.encyclopedia.com/history/encyclopedias-al
 <!-- ``` -->
 ## Arts
 
+### Context - Fractal composition (EM13MAT301, EM13MAT305, EM13MAT401, EM13ARM502, EF09MA10)
+
+
+| Fractals are geometric objects with scale symmetry, forming patterns that repeat themselves in smaller parts of the original object. The most common mathematical representations are Mandelbrot fractals and Julia fractals.
+
+
+### Equation {.unnumbered}
+
+| Julia fractals are formed in a complex Cartesian plane by the sum of the real and imaginary components. The basic formula for the Julia set is given by:
+
+$$
+z_{n+1}=z_{n}^{2}+c
+$$
+
+*Where:*
+
+- z ∈ C: usually initialized as the point on the complex plane;
+
+- c ∈ C: fixed for each Julia set.
+
+
+[![](Eq/julia.png)](Eq/jsp_julia.html){target=“_blank”}
+
+
+### Suggestion {.unnumbered}
+
+
+```{r, eval=FALSE}
+1. Try changing the Real and Imaginary components of the formula to obtain different artistic patterns. Here are some suggestions:
+c = 0 + 0i
+c = -0.4 + 0.6i
+c = 0.285 + 0i
+c = -0.8 + 0.156i
+c = 0.45 + 0.1428i
+
+```
+
+
 ### Context - Music notation editor (EF15AR06, EF69AR22, EM13ARH402)
 
 | The following example illustrates the concepts of pitch (tonality) and duration for musical notes in the diatonic scale. The captions represent the duration values, and the tonalities are presented in their frequency values
