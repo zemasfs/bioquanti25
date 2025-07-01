@@ -53,7 +53,7 @@ a:hover {
 
 /* Aumenta o tamanho do logo da navbar */
 .navbar-brand {
-  height: 48px !important;  /* ou 40px, 48px, etc. */
+  height: 32px !important;  /* ou 40px, 48px, etc. */
   margin-right: 0px;
   margin-left: 0px !important;    /* Remove espaço à esquerda */
   margin-right: 0.5rem !important;  /* Pequeno respiro à direita, opcional */
