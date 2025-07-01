@@ -377,9 +377,10 @@ window.Quarto = {
   <li><a href="#equação-de-van-der-waals-para-gases-ideais" id="toc-equação-de-van-der-waals-para-gases-ideais" class="nav-link" data-scroll-target="#equação-de-van-der-waals-para-gases-ideais"><span class="header-section-number">8</span> Equação de van der Waals para gases ideais</a></li>
   <li><a href="#equilíbrio-de-produção-de-atp-a-partir-de-reagentes-temperatura-e-ph" id="toc-equilíbrio-de-produção-de-atp-a-partir-de-reagentes-temperatura-e-ph" class="nav-link" data-scroll-target="#equilíbrio-de-produção-de-atp-a-partir-de-reagentes-temperatura-e-ph"><span class="header-section-number">9</span> Equilíbrio de produção de ATP a partir de reagentes, temperatura, e pH</a></li>
   <li><a href="#variação-da-energia-de-gibbs-com-a-temperatura" id="toc-variação-da-energia-de-gibbs-com-a-temperatura" class="nav-link" data-scroll-target="#variação-da-energia-de-gibbs-com-a-temperatura"><span class="header-section-number">10</span> Variação da energia de Gibbs com a temperatura</a></li>
-  <li><a href="#inserção-de-dados-do-usuário" id="toc-inserção-de-dados-do-usuário" class="nav-link" data-scroll-target="#inserção-de-dados-do-usuário"><span class="header-section-number">11</span> Inserção de dados do usuário</a></li>
-  <li><a href="#ajuste-linear-de-dados" id="toc-ajuste-linear-de-dados" class="nav-link" data-scroll-target="#ajuste-linear-de-dados"><span class="header-section-number">12</span> Ajuste linear de dados</a></li>
-  <li><a href="#ajuste-não-linear-de-dados" id="toc-ajuste-não-linear-de-dados" class="nav-link" data-scroll-target="#ajuste-não-linear-de-dados"><span class="header-section-number">13</span> Ajuste não linear de dados</a></li>
+  <li><a href="#espectroscopia-de-impedância-eletroquímica-eis" id="toc-espectroscopia-de-impedância-eletroquímica-eis" class="nav-link" data-scroll-target="#espectroscopia-de-impedância-eletroquímica-eis"><span class="header-section-number">11</span> Espectroscopia de impedância eletroquímica (EIS)</a></li>
+  <li><a href="#inserção-de-dados-do-usuário" id="toc-inserção-de-dados-do-usuário" class="nav-link" data-scroll-target="#inserção-de-dados-do-usuário"><span class="header-section-number">12</span> Inserção de dados do usuário</a></li>
+  <li><a href="#ajuste-linear-de-dados" id="toc-ajuste-linear-de-dados" class="nav-link" data-scroll-target="#ajuste-linear-de-dados"><span class="header-section-number">13</span> Ajuste linear de dados</a></li>
+  <li><a href="#ajuste-não-linear-de-dados" id="toc-ajuste-não-linear-de-dados" class="nav-link" data-scroll-target="#ajuste-não-linear-de-dados"><span class="header-section-number">14</span> Ajuste não linear de dados</a></li>
   </ul>
 </nav>
     </div>
@@ -761,30 +762,69 @@ P = \frac{RT}{V - b} - \frac{a}{V^2}
 </div>
 </section>
 </section>
-<section id="inserção-de-dados-do-usuário" class="level2" data-number="11">
-<h2 data-number="11" class="anchored" data-anchor-id="inserção-de-dados-do-usuário"><span class="header-section-number">11</span> Inserção de dados do usuário</h2>
+<section id="espectroscopia-de-impedância-eletroquímica-eis" class="level2" data-number="11">
+<h2 data-number="11" class="anchored" data-anchor-id="espectroscopia-de-impedância-eletroquímica-eis"><span class="header-section-number">11</span> Espectroscopia de impedância eletroquímica (EIS)</h2>
+<section id="contexto-10" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="contexto-10">Contexto:</h3>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A espectroscopia de impedância eletroquímica (EIS) é uma técnica analítica que mede a resposta de um sistema eletroquímico a uma perturbação senoidal de pequena amplitude (ex: 5-10 mV), aplicada em uma ampla faixa de frequências (ex: 100 kHz-1mHz). A EIS permite obter-se informações sobre processos interfaciais, como transferência de carga, difusão de íons e formação de filmes passivos, por meio da análise da impedância complexa do sistema. Trata-se de uma técnica não destrutiva, amplamente utilizada em áreas como corrosão, baterias, células a combustível, biossensores e revestimentos protetores.</div>
+</section>
+<section id="equação-10" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="equação-10">Equação:</h3>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Um modelo eletroquímico de impedância (EIS) com componentes típicos de circuitos equivalentes constitui o de Randles modificado: resistor série <em>Rs</em>, um resistor <em>Rp</em> em paralelo com um <em>CPE</em> (Elemento de Fase Constante), e um elemento <em>Warburg</em>. Uma representação comum para EIS é o gráfico de <em>Nyquist</em>, em que o eixo real representa resistência (Zre) e o eixo imaginário a reatância negativa (−Zim). O formalismo envolvido está na equação abaixo:</div>
+<p><span class="math display">\[
+Z_{\text{total}}(\omega) = R_s + \left[ \left( \frac{1}{R_p} + Q (j\omega)^n \right)^{-1} \right] + \frac{\sigma}{\sqrt{\omega}} (1 - j)
+\]</span></p>
+<p><em>Onde:</em></p>
+<ul>
+<li>Z<span class="math inline">\(_{total}\)</span> = impedância total em determinada frequência ;</li>
+<li><span class="math inline">\(\omega\)</span> = Frequência angular (rad/s), <span class="math inline">\(\omega\)</span>=2πf ou <span class="math inline">\(\omega\)</span>=2πf;</li>
+<li>R<span class="math inline">\(_{p}\)</span> = Resistência ôhmica (resistência da solução eletrolítica, fios, contatos etc.) ;</li>
+<li>R<span class="math inline">\(_{p}\)</span> = Resistência de polarização (associada a processos de transferência de carga, como reações eletroquímicas);</li>
+<li><em>Q</em> = Constante associada ao elemento de fase constante (CPE), substitui um capacitor ideal para representar comportamentos não ideais ;</li>
+<li><em>n</em> = Expoente do CPE, entre 0 e 1; define o grau de idealidade do comportamento capacitivo (n = 1: capacitor ideal; n &lt; 1: dispersão);</li>
+<li><span class="math inline">\(\sigma\)</span> = Coeficiente de Warburg, associado à difusão de íons no sistema eletroquímico ;</li>
+<li><em>j</em> = Unidade imaginária, j<span class="math inline">\(^{2}\)</span> = −1;</li>
+</ul>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Um modelo eletroquímico de impedância (EIS) com componentes típicos de circuitos equivalentes constitui o de Randles modificado: resistor série <em>Rs</em>, um resistor <em>Rp</em> em paralelo com um <em>CPE</em> (Elemento de Fase Constante), e um elemento <em>Warburg</em>. Uma representação comum para EIS é o gráfico de <em>Nyquist</em>, em que o eixo real representa resistência (Zre) e o eixo imaginário a reatância negativa (−Zim).</div>
+<p><a href="Eq/jsp_EIS.html" target="_blank"><img src="Eq/EIS.png" class="img-fluid"></a></p>
+</section>
+<section id="sugestão-9" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="sugestão-9">Sugestão</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Verifique o efeito de Rs no gráfico, anulando o seu <span class="fu">valor</span> (resistência da solução);</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Observe a deformação do semicírculo variando os valores do elemento de fase <span class="fu">constante</span> (ex<span class="sc">:</span> <span class="at">Q =</span> <span class="fl">1e-3</span>; <span class="at">n =</span> <span class="fl">0.6</span> <span class="sc">-</span> dispersão do comportamento capacitivo); </span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span>  Experimente combinar outros valores dos parâmetros do cabeçalho do código, para evidenciar situações correntes em eletroanálise<span class="sc">:</span> Rs, Rp, Q, n, e sigma;</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Reduza o modelo de Warburg com elemento de fase constante a um modelo de Randles simples, e formado apenas por <span class="dv">2</span> resistores em série, o segundo em paralelo com um capacitor ideal, e sem difusão de <span class="fu">Warburg</span> (<span class="at">sigma =</span> <span class="dv">0</span>; <span class="at">n =</span> <span class="dv">1</span>).</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="inserção-de-dados-do-usuário" class="level2" data-number="12">
+<h2 data-number="12" class="anchored" data-anchor-id="inserção-de-dados-do-usuário"><span class="header-section-number">12</span> Inserção de dados do usuário</h2>
+<section id="contexto-11" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="contexto-11">Contexto</h3>
 <div class="line-block">&nbsp;&nbsp;Por vezes é interessante trabalhar-se com os próprios dados discretos, buscando-se uma relação de tendência, matemática ou simplesmente visual, para a relação de variáveis. Segue um exemplo de gráfico interativo com dados do usuário.</div>
 <p><br>
 </p>
 <p><a href="Eq/jsp_dados.html" target="_blank"><img src="Eq/dados.png" class="img-fluid"></a></p>
-<section id="sugestão-9" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="sugestão-9">Sugestão:</h3>
+</section>
+<section id="sugestão-10" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="sugestão-10">Sugestão:</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Experimente alterar os dados inseridos, sobrepondo ou não o gráfico;</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Experimente alterar a representação de dados em <span class="st">"mode"</span> e <span class="st">"type"</span>, para pontos, linhas, pontos<span class="sc">+</span>linhas, barras.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Experimente alterar os dados inseridos, sobrepondo ou não o gráfico;</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Experimente alterar a representação de dados em <span class="st">"mode"</span> e <span class="st">"type"</span>, para pontos, linhas, pontos<span class="sc">+</span>linhas, barras.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br>
 </p>
 </section>
 </section>
-<section id="ajuste-linear-de-dados" class="level2" data-number="12">
-<h2 data-number="12" class="anchored" data-anchor-id="ajuste-linear-de-dados"><span class="header-section-number">12</span> Ajuste linear de dados</h2>
-<section id="contexto-10" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="contexto-10">Contexto:</h3>
+<section id="ajuste-linear-de-dados" class="level2" data-number="13">
+<h2 data-number="13" class="anchored" data-anchor-id="ajuste-linear-de-dados"><span class="header-section-number">13</span> Ajuste linear de dados</h2>
+<section id="contexto-12" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="contexto-12">Contexto:</h3>
 <div class="line-block">&nbsp;&nbsp;Em diversas situações da pesquisa experimental, faz-se necessário correlacionar os dados de uma variável dependente com uma variável preditora frente à equação que segue.</div>
 </section>
-<section id="equação-10" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="equação-10">Equação:</h3>
+<section id="equação-11" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="equação-11">Equação:</h3>
 <p><span class="math display">\[
 y = \alpha x + \beta + \varepsilon
 \]</span> <em>Onde:</em></p>
@@ -813,26 +853,26 @@ y = \alpha x + \beta + \varepsilon
 </p>
 <p><a href="Eq/jsp_ajLin.html" target="_blank"><img src="Eq/ajLin.png" class="img-fluid"></a></p>
 </section>
-<section id="sugestão-10" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="sugestão-10">Sugestão:</h3>
+<section id="sugestão-11" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="sugestão-11">Sugestão:</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Apresente os pontos sobrepostos ou não à reta do ajuste. Para a sobreposição, escolha <span class="st">"mostrarPontos = true"</span> e <span class="st">"mostrarReta = true"</span>;</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Altere os dados e realize novo ajuste, para obtenção de outros parâmetros da reta.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Apresente os pontos sobrepostos ou não à reta do ajuste. Para a sobreposição, escolha <span class="st">"mostrarPontos = true"</span> e <span class="st">"mostrarReta = true"</span>;</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Altere os dados e realize novo ajuste, para obtenção de outros parâmetros da reta.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>
-<section id="ajuste-não-linear-de-dados" class="level2" data-number="13">
-<h2 data-number="13" class="anchored" data-anchor-id="ajuste-não-linear-de-dados"><span class="header-section-number">13</span> Ajuste não linear de dados</h2>
-<section id="contexto-11" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="contexto-11">Contexto:</h3>
+<section id="ajuste-não-linear-de-dados" class="level2" data-number="14">
+<h2 data-number="14" class="anchored" data-anchor-id="ajuste-não-linear-de-dados"><span class="header-section-number">14</span> Ajuste não linear de dados</h2>
+<section id="contexto-13" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="contexto-13">Contexto:</h3>
 <div class="line-block">&nbsp;&nbsp;Modelagem é uma área de emprego comum nas ciências naturais, quando se deseja previsão ou correlação matemática de dados experimentais. Modelos podem constituir-se lineares ou não. Quando não lineares, podem ser aplicados de forma empírica para os dados (ex: funções quadráticas, logarítmicas, exponenciais ou de potência), ou a partir de uma função matemática explanatória do modelo.</div>
 <div class="line-block">&nbsp;&nbsp;Nesse caso são empregadas técnicas para ajuste não linear dos dados ao modelo, como <em>Simplex</em>, <em>Gauss</em>, <em>Newton-Raphson</em>, <em>Levenberg-Marquadt</em>, ou <em>mínimos quadrados</em> por exemplo. Seja qual for o método, o ajuste não linear difere-se do linear em pressupostos e tratamento dos dados (veja uma rápida explicação <a href="https://bioquanti.netlify.app/pt/nivel/superior/r/enzimas#ajuste-n%C3%A3o-linear">aqui</a>.</div>
 <div class="line-block">&nbsp;&nbsp;O exemplo a seguir ilustra a aplicação de um ajuste não linear de dados de interação molecular por modelo de Langmuir, e tratamento por <em>minimização do erro quadrático por varredura manual</em>. Nesse tratamento, calcula-se a <em>soma dos erros quadráticos (RMSE)</em> para combinações de <em>a</em> e <em>b</em>, selecionando-se o par com menor erro calculado. Nesse caso, por simplificação, apesar o <em>JSPlotly</em> trabalhar com bibliotecas mais específicas, a regressão não linear dá-se por por mínimos quadrados, mas realizada por <em>grid search</em>, e não por métodos iterativos clássicos. Assim, um conjunto de valores é testado para o par</div>
 <p><br>
 </p>
 </section>
-<section id="equação-11" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="equação-11">Equação:</h3>
+<section id="equação-12" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="equação-12">Equação:</h3>
 <div class="line-block">&nbsp;&nbsp;A equação de Langmuir é representada abaixo:</div>
 <p><span class="math display">\[
 Y = \frac{aX}{K_d + X}
@@ -852,11 +892,11 @@ SSR(a, K_d) = \sum_{i=1}^n \left( y_i - \frac{a x_i}{K_d + x_i} \right)^2
 </p>
 <p><a href="Eq/jsp_ajNonLin.html" target="_blank"><img src="Eq/ajNonLin.png" class="img-fluid"></a></p>
 </section>
-<section id="sugestão-11" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="sugestão-11">Sugestão:</h3>
+<section id="sugestão-12" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="sugestão-12">Sugestão:</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Como no exemplo anterior, apresente alternativamente os pontos e a curva de ajuste pela operação <span class="st">"booleana"</span> (<span class="st">"mostrarPontos = true/false"</span>; <span class="st">"mostrarCurva = true/false"</span>);</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Altere os dados e realize novo ajuste, para obtenção de outros parâmetros da equação (Kd, SSR, R², R² ajustado). Obs<span class="sc">:</span> R² adj corresponde ao valor de R² corrigido para o número de parâmetros do <span class="fu">modelo</span> (no caso, <span class="st">"2"</span>), incidindo diretamente nos <span class="st">"graus de liberdade"</span> para o ajuste.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Como no exemplo anterior, apresente alternativamente os pontos e a curva de ajuste pela operação <span class="st">"booleana"</span> (<span class="st">"mostrarPontos = true/false"</span>; <span class="st">"mostrarCurva = true/false"</span>);</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Altere os dados e realize novo ajuste, para obtenção de outros parâmetros da equação (Kd, SSR, R², R² ajustado). Obs<span class="sc">:</span> R² adj corresponde ao valor de R² corrigido para o número de parâmetros do <span class="fu">modelo</span> (no caso, <span class="st">"2"</span>), incidindo diretamente nos <span class="st">"graus de liberdade"</span> para o ajuste.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 

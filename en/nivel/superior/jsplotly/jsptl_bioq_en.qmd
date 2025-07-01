@@ -410,6 +410,52 @@ $$
 ```
 
 
+## Electrochemical impedance spectroscopy (EIS)
+
+### Context: {.unnumbered}
+
+| Electrochemical impedance spectroscopy (EIS) is an analytical technique that measures the response of an electrochemical system to a small amplitude sinusoidal disturbance (e.g., 5-10 mV) applied over a wide frequency range (e.g., 100 kHz-1 mHz). EIS provides information about interfacial processes, such as charge transfer, ion diffusion, and passive film formation, by analyzing the complex impedance of the system. It is a non-destructive technique widely used in areas such as corrosion, batteries, fuel cells, biosensors, and protective coatings. 
+
+### Equation: {.unnumbered}
+
+
+| An electrochemical impedance (EIS) model with typical equivalent circuit components constitutes the modified Randles model: series resistor *Rs*, a resistor *Rp* in parallel with a *CPE* (Constant Phase Element), and a *Warburg* element. A common representation for EIS is the *Nyquist* plot, where the real axis represents resistance (Zre) and the imaginary axis represents negative reactance (−Zim). The formalism involved is in the equation below:
+
+
+$$
+Z_{\text{total}}(\omega) = R_s + \left[ \left( \frac{1}{R_p} + Q (j\omega)^n \right)^{-1} \right] + \frac{\sigma}{\sqrt{\omega}} (1 - j)
+$$
+
+*Where:*
+
+- Z$_{total}$ = total impedance at a given frequency;
+- $\omega$ = angular frequency (rad/s), $\omega$=2πf or $\omega$=2πf;
+- R$_{p}$ = ohmic resistance (resistance of the electrolytic solution, wires, contacts, etc.);
+- R$_{p}$ = Polarization resistance (associated with charge transfer processes, such as electrochemical reactions);
+- *Q* = Constant associated with the constant phase element (CPE), replaces an ideal capacitor to represent non-ideal behaviors;
+- *n* = CPE exponent, between 0 and 1; defines the degree of ideality of the capacitive behavior (n = 1: ideal capacitor; n < 1: dispersion);
+- $\sigma$ = Warburg coefficient, associated with ion diffusion in the electrochemical system;
+- *j* = Imaginary unit, j$^{2}$ = −1;
+
+
+| An electrochemical impedance model (EIS) with typical equivalent circuit components constitutes the modified Randles model: series resistor *Rs*, a resistor *Rp* in parallel with a *CPE* (Constant Phase Element), and a *Warburg* element. A common representation for EIS is the *Nyquist* plot, where the real axis represents resistance (Zre) and the imaginary axis represents negative reactance (−Zim).
+ 
+
+
+[![](Eq/EIS.png)](Eq/jsp_EIS.html){target=“_blank”}
+
+### Suggestion {.unnumbered}
+
+```{r, eval=FALSE}
+
+1. Check the effect of Rs on the graph by setting its value to zero (solution resistance);
+2. Observe the deformation of the semicircle by varying the values of the constant phase element (e.g., Q = 1e-3; n = 0.6 - dispersion of capacitive behavior);
+2. Try combining other values of the code header parameters to highlight common situations in electroanalysis: Rs, Rp, Q, n, and sigma;
+3. Reduce the Warburg model with constant phase element to a simple Randles model, consisting only of two resistors in series, the second in parallel with an ideal capacitor, and without Warburg diffusion (sigma = 0; n = 1).
+```
+
+
+
 ## User data insertion
 
 | Sometimes it is interesting to work with discrete data itself, seeking a trend, mathematical or simply visual, for the relationship between variables. Here is an example of an interactive graph with user data.

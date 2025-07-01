@@ -410,7 +410,57 @@ $$
 ```
 
 
+## Espectroscopia de impedância eletroquímica (EIS)
+
+### Contexto: {.unnumbered}
+
+|       A espectroscopia de impedância eletroquímica (EIS) é uma técnica analítica que mede a resposta de um sistema eletroquímico a uma perturbação senoidal de pequena amplitude (ex: 5-10 mV), aplicada em uma ampla faixa de frequências (ex: 100 kHz-1mHz). A EIS permite obter-se informações sobre processos interfaciais, como transferência de carga, difusão de íons e formação de filmes passivos, por meio da análise da impedância complexa do sistema. Trata-se de uma técnica não destrutiva, amplamente utilizada em áreas como corrosão, baterias, células a combustível, biossensores e revestimentos protetores. 
+
+### Equação: {.unnumbered}
+
+
+|       Um modelo eletroquímico de impedância (EIS) com componentes típicos de circuitos equivalentes constitui o de Randles modificado: resistor série *Rs*, um resistor *Rp* em paralelo com um *CPE* (Elemento de Fase Constante), e um elemento *Warburg*. Uma representação comum para EIS é o gráfico de *Nyquist*, em que o eixo real representa resistência (Zre) e o eixo imaginário a reatância negativa (−Zim).  O formalismo envolvido está na equação abaixo:
+
+
+$$
+Z_{\text{total}}(\omega) = R_s + \left[ \left( \frac{1}{R_p} + Q (j\omega)^n \right)^{-1} \right] + \frac{\sigma}{\sqrt{\omega}} (1 - j)
+$$
+
+*Onde:*
+
+- Z$_{total}$ = impedância total em determinada frequência ;
+- $\omega$ = Frequência angular (rad/s), $\omega$=2πf ou $\omega$=2πf;
+- R$_{p}$ = Resistência ôhmica (resistência da solução eletrolítica, fios, contatos etc.) ;
+- R$_{p}$ = Resistência de polarização (associada a processos de transferência de carga, como reações eletroquímicas);
+- *Q* = Constante associada ao elemento de fase constante (CPE), substitui um capacitor ideal para representar comportamentos não ideais ;
+- *n* = Expoente do CPE, entre 0 e 1; define o grau de idealidade do comportamento capacitivo (n = 1: capacitor ideal; n < 1: dispersão);
+- $\sigma$ = Coeficiente de Warburg, associado à difusão de íons no sistema eletroquímico ;
+- *j* = Unidade imaginária, j$^{2}$ = −1;
+
+
+|       Um modelo eletroquímico de impedância (EIS) com componentes típicos de circuitos equivalentes constitui o de Randles modificado: resistor série *Rs*, um resistor *Rp* em paralelo com um *CPE* (Elemento de Fase Constante), e um elemento *Warburg*. Uma representação comum para EIS é o gráfico de *Nyquist*, em que o eixo real representa resistência (Zre) e o eixo imaginário a reatância negativa (−Zim). 
+
+
+[![](Eq/EIS.png)](Eq/jsp_EIS.html){target="_blank"}
+
+### Sugestão {.unnumbered}
+
+```{r, eval=FALSE}
+
+1. Verifique o efeito de Rs no gráfico, anulando o seu valor (resistência da solução);
+2. Observe a deformação do semicírculo variando os valores do elemento de fase constante (ex: Q = 1e-3; n = 0.6 - dispersão do comportamento capacitivo); 
+2.  Experimente combinar outros valores dos parâmetros do cabeçalho do código, para evidenciar situações correntes em eletroanálise: Rs, Rp, Q, n, e sigma;
+3. Reduza o modelo de Warburg com elemento de fase constante a um modelo de Randles simples, e formado apenas por 2 resistores em série, o segundo em paralelo com um capacitor ideal, e sem difusão de Warburg (sigma = 0; n = 1).
+```
+
+
+
+
+
 ## Inserção de dados do usuário
+
+
+### Contexto {.unnumbered}
 
 |   Por vezes é interessante trabalhar-se com os próprios dados discretos, buscando-se uma relação de tendência, matemática ou simplesmente visual, para a relação de variáveis. Segue um exemplo de gráfico interativo com dados do usuário.
 \
