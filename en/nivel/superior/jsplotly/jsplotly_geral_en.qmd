@@ -3,7 +3,7 @@ title: "JSPlotly and Interactive Simulation"
 format: html
 toc: true
 number-sections: true
-lang: pt
+lang: en
 ---
 
 | *JSPlotly* is an application for creating interactive and dynamic graphs for simulating natural phenomena based on equations and data visualization. Its name comes from the main language used in its construction and for the production of graphics, [JavaScript](https://www.javascript.com/), as well as the library involved in it, [Plotly.js](https://plotly.com/javascript/basic-charts/). 

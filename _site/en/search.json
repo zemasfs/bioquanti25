@@ -2003,8 +2003,8 @@
     "objectID": "nivel/superior/jsplotly/jsplotly_geral_en.html#footnotes",
     "href": "nivel/superior/jsplotly/jsplotly_geral_en.html#footnotes",
     "title": "JSPlotly and Interactive Simulation",
-    "section": "Notas de rodapé",
-    "text": "Notas de rodapé\n\n\nSchneedorf, J.M. JSPlotly: an application for interactive graphics in Biochemistry for HTML viewers. Journal of Biochemistry Teaching. 2025 (in press).↩︎",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nSchneedorf, J.M. JSPlotly: an application for interactive graphics in Biochemistry for HTML viewers. Journal of Biochemistry Teaching. 2025 (in press).↩︎",
     "crumbs": [
       "About",
       "JSPlotly & GSPlotly - Interactive Graphics & AI",
@@ -2171,8 +2171,8 @@
     "objectID": "nivel/superior/jsplotly/jsptl_bioq_en.html#user-data-insertion",
     "href": "nivel/superior/jsplotly/jsptl_bioq_en.html#user-data-insertion",
     "title": "Interactive Simulations for Biophysical Chemistry with JSPlotly & GSPlotly",
-    "section": "12 User data insertion",
-    "text": "12 User data insertion\nSometimes it is interesting to work with discrete data itself, seeking a trend, mathematical or simply visual, for the relationship between variables. Here is an example of an interactive graph with user data.\n\n\n\n\nSuggestion:\n\n1. Try changing the data entered, overlaying the graph or not;\n2. Try changing the data representation in “mode” and “type” to points, lines, points+lines, bars.",
+    "section": "13 User data insertion",
+    "text": "13 User data insertion\nSometimes it is interesting to work with discrete data itself, seeking a trend, mathematical or simply visual, for the relationship between variables. Here is an example of an interactive graph with user data.\n\n\n\n\nSuggestion:\n\n1. Try changing the data entered, overlaying the graph or not;\n2. Try changing the data representation in “mode” and “type” to points, lines, points+lines, bars.",
     "crumbs": [
       "About",
       "JSPlotly & GSPlotly - Interactive Graphics & AI",
@@ -2183,8 +2183,8 @@
     "objectID": "nivel/superior/jsplotly/jsptl_bioq_en.html#linear-data-adjustment",
     "href": "nivel/superior/jsplotly/jsptl_bioq_en.html#linear-data-adjustment",
     "title": "Interactive Simulations for Biophysical Chemistry with JSPlotly & GSPlotly",
-    "section": "13 Linear data adjustment",
-    "text": "13 Linear data adjustment\n\nContext:\nIn various experimental research situations, it is necessary to correlate the data of a dependent variable with a predictor variable using the following equation.\n\n\nEquation:\n\\[\ny = \\alpha x + \\beta + \\varepsilon\n\\] Where:\n\ny = dependent variable;\nx = independent variable;\n\\(\\alpha\\) = slope of the adjusted line;\n\\(\\beta\\) = intercept of the adjusted line;\n\\(\\epsilon\\) = measurement error.\n\nThe parameters of slope and intercept can be obtained by several procedures, such as least squares, matrix algebra, or simple summaries. In the latter case, the calculation of parameters and error can be computed as follows:\n\\[\n\\alpha = \\frac{n \\sum x_i y_i - \\sum x_i \\sum y_i}{n \\sum x_i^2 - \\left( \\sum x_i \\right)^2}\n\\]\n\\[\n\\beta = \\frac{\\sum y_i - \\alpha \\sum x_i}{n}\n\\]\n\\[\n\\hat{y}_i = \\alpha x_i + \\beta\n\\]\n\\[\n\\varepsilon_i = \\left| y_i - \\hat{y}_i \\right|\n\\]\nA representation for linear adjustment with arbitrary data is provided below:\n\n\n\n\n\nSuggestion:\n\n1. Show the points that overlap or do not overlap the fit line. For overlap, choose “showPoints = true” and “showLine = true”;\n2. Change the data and perform a new fit to obtain other parameters of the line.",
+    "section": "14 Linear data adjustment",
+    "text": "14 Linear data adjustment\n\nContext:\nIn various experimental research situations, it is necessary to correlate the data of a dependent variable with a predictor variable using the following equation.\n\n\nEquation:\n\\[\ny = \\alpha x + \\beta + \\varepsilon\n\\] Where:\n\ny = dependent variable;\nx = independent variable;\n\\(\\alpha\\) = slope of the adjusted line;\n\\(\\beta\\) = intercept of the adjusted line;\n\\(\\epsilon\\) = measurement error.\n\nThe parameters of slope and intercept can be obtained by several procedures, such as least squares, matrix algebra, or simple summaries. In the latter case, the calculation of parameters and error can be computed as follows:\n\\[\n\\alpha = \\frac{n \\sum x_i y_i - \\sum x_i \\sum y_i}{n \\sum x_i^2 - \\left( \\sum x_i \\right)^2}\n\\]\n\\[\n\\beta = \\frac{\\sum y_i - \\alpha \\sum x_i}{n}\n\\]\n\\[\n\\hat{y}_i = \\alpha x_i + \\beta\n\\]\n\\[\n\\varepsilon_i = \\left| y_i - \\hat{y}_i \\right|\n\\]\nA representation for linear adjustment with arbitrary data is provided below:\n\n\n\n\n\nSuggestion:\n\n1. Show the points that overlap or do not overlap the fit line. For overlap, choose “showPoints = true” and “showLine = true”;\n2. Change the data and perform a new fit to obtain other parameters of the line.",
     "crumbs": [
       "About",
       "JSPlotly & GSPlotly - Interactive Graphics & AI",
@@ -2195,8 +2195,8 @@
     "objectID": "nivel/superior/jsplotly/jsptl_bioq_en.html#nonlinear-data-fit",
     "href": "nivel/superior/jsplotly/jsptl_bioq_en.html#nonlinear-data-fit",
     "title": "Interactive Simulations for Biophysical Chemistry with JSPlotly & GSPlotly",
-    "section": "14 Nonlinear data fit",
-    "text": "14 Nonlinear data fit\n\nContext:\nModeling is a common area of employment in the natural sciences, when mathematical prediction or correlation of experimental data is desired. Models can be linear or non-linear. When non-linear, they can be applied empirically to the data (e.g., quadratic, logarithmic, exponential, or power functions), or from a mathematical function that explains the model.\nIn this case, techniques for nonlinear adjustment of the data to the model are used, such as Simplex, Gauss, Newton-Raphson, Levenberg-Marquardt, or least squares, for example. Regardless of the method, nonlinear adjustment differs from linear adjustment in its assumptions and data treatment (see a quick explanation here.\nThe following example illustrates the application of a nonlinear adjustment of molecular interaction data using the Langmuir model and treatment by manual grid search. In this treatment, the sum of the quadratic errors (RMSE) is calculated for combinations of a and b, selecting the pair with the lowest calculated error. In this case, for simplicity, although JSPlotly works with more specific libraries, the nonlinear regression is performed by least squares, but using grid search rather than classic iterative methods. Thus, a set of values is tested for the pair\n\n\n\n\nEquation:\nThe Langmuir equation is represented below:\n\\[\nY = \\frac{aX}{K_d + X}\n\\] Where:\n\nY = fraction of occupied sites;\nX = concentration of free ligand;\na = saturation value (sites of the same affinity completely occupied);\nKd = equilibrium dissociation constant of the complex.\n\nIn this case, the nonlinear least squares function is:\n\\[\nSSR(a, K_d) = \\sum_{i=1}^n \\left( y_i - \\frac{a x_i}{K_d + x_i} \\right)^2\n\\]\nWhere:\nSSR = sum of the squares of the residuals (inversely proportional to the quality of the fit)\n\n\n\n\nSuggestion:\n\n1. As in the previous example, alternately display the points and the adjustment curve using the “Boolean” operation (“showPoints = true/false”; “showCurve = true/false”);\n2. Change the data and perform a new fit to obtain other parameters of the equation (Kd, SSR, R², adjusted R²). Note: R² adj corresponds to the value of R² corrected for the number of parameters in the model (in this case, “2”), directly affecting the “degrees of freedom” for the fit.",
+    "section": "15 Nonlinear data fit",
+    "text": "15 Nonlinear data fit\n\nContext:\nModeling is a common area of employment in the natural sciences, when mathematical prediction or correlation of experimental data is desired. Models can be linear or non-linear. When non-linear, they can be applied empirically to the data (e.g., quadratic, logarithmic, exponential, or power functions), or from a mathematical function that explains the model.\nIn this case, techniques for nonlinear adjustment of the data to the model are used, such as Simplex, Gauss, Newton-Raphson, Levenberg-Marquardt, or least squares, for example. Regardless of the method, nonlinear adjustment differs from linear adjustment in its assumptions and data treatment (see a quick explanation here.\nThe following example illustrates the application of a nonlinear adjustment of molecular interaction data using the Langmuir model and treatment by manual grid search. In this treatment, the sum of the quadratic errors (RMSE) is calculated for combinations of a and b, selecting the pair with the lowest calculated error. In this case, for simplicity, although JSPlotly works with more specific libraries, the nonlinear regression is performed by least squares, but using grid search rather than classic iterative methods. Thus, a set of values is tested for the pair\n\n\n\n\nEquation:\nThe Langmuir equation is represented below:\n\\[\nY = \\frac{aX}{K_d + X}\n\\] Where:\n\nY = fraction of occupied sites;\nX = concentration of free ligand;\na = saturation value (sites of the same affinity completely occupied);\nKd = equilibrium dissociation constant of the complex.\n\nIn this case, the nonlinear least squares function is:\n\\[\nSSR(a, K_d) = \\sum_{i=1}^n \\left( y_i - \\frac{a x_i}{K_d + x_i} \\right)^2\n\\]\nWhere:\nSSR = sum of the squares of the residuals (inversely proportional to the quality of the fit)\n\n\n\n\nSuggestion:\n\n1. As in the previous example, alternately display the points and the adjustment curve using the “Boolean” operation (“showPoints = true/false”; “showCurve = true/false”);\n2. Change the data and perform a new fit to obtain other parameters of the equation (Kd, SSR, R², adjusted R²). Note: R² adj corresponds to the value of R² corrected for the number of parameters in the model (in this case, “2”), directly affecting the “degrees of freedom” for the fit.",
     "crumbs": [
       "About",
       "JSPlotly & GSPlotly - Interactive Graphics & AI",
@@ -4354,5 +4354,29 @@
     "title": "",
     "section": "7 Customized GPT",
     "text": "7 Customized GPT\n\nSchneedorf, J.M. GSPlotly: interactive script generator for JSPlotly. Customized OpenAI GPT. Available at: https://chat.openai.com/g/g-6819fbb8d2d08191bf7d50a3dbeadb0d-gsplotly. Accessed on: May 11, 2025."
+  },
+  {
+    "objectID": "nivel/superior/jsplotly/jsptl_bioq_en.html#diagrams",
+    "href": "nivel/superior/jsplotly/jsptl_bioq_en.html#diagrams",
+    "title": "Interactive Simulations for Biophysical Chemistry with JSPlotly & GSPlotly",
+    "section": "12 Diagrams",
+    "text": "12 Diagrams\n\nContext:\nDue to the nature of the Plotly.js library, it is also possible to generate code in JSPlotly without involving an equation, such as for representing diagrams, flowcharts, heredograms, among others. The example below illustrates a representation of the Krebs cycle.\n\n\n\nSuggestion:\n\n1. Try repositioning enzymes and metabolites by clicking and dragging the terms;\n2. Try replacing the names in the code to produce another metabolic cycle, such as the urea cycle.\n\n\n\nContext: Flowchart\n\n\n\nSuggestion:\n\n1. Reposition terms and connectors by dragging with the mouse;\n2. For a different flowchart in the content, modify the terms in the code;\n2. For a different flowchart format, change the font and connector characteristics in the “annotations” constant.",
+    "crumbs": [
+      "About",
+      "JSPlotly & GSPlotly - Interactive Graphics & AI",
+      "Simulations in Biophysical Chemistry"
+    ]
+  },
+  {
+    "objectID": "nivel/superior/jsplotly/jsptl_bioq_en.html#diagrams-and-flowcharts",
+    "href": "nivel/superior/jsplotly/jsptl_bioq_en.html#diagrams-and-flowcharts",
+    "title": "Interactive Simulations for Biophysical Chemistry with JSPlotly & GSPlotly",
+    "section": "12 Diagrams and flowcharts",
+    "text": "12 Diagrams and flowcharts\n\nContext:\nDue to the nature of the Plotly.js library, it is also possible to generate code in JSPlotly without involving an equation, such as for representing diagrams, flowcharts, heredograms, among others. The example below illustrates a representation of the Krebs cycle.\n\n\n\nSuggestion:\n\n1. Try repositioning enzymes and metabolites by clicking and dragging the terms;\n2. Try replacing the names in the code to produce another metabolic cycle, such as the urea cycle.\n\n\n\nContext: Flowchart\n\n\n\nSuggestion:\n\n1. Reposition terms and connectors by dragging with the mouse;\n2. For a different flowchart in the content, modify the terms in the code;\n2. For a different flowchart format, change the font and connector characteristics in the “annotations” constant.",
+    "crumbs": [
+      "About",
+      "JSPlotly & GSPlotly - Interactive Graphics & AI",
+      "Simulations in Biophysical Chemistry"
+    ]
   }
 ]

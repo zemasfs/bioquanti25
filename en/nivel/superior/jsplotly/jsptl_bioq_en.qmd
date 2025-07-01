@@ -4,7 +4,7 @@ format: html
 toc: true
 toc-depth: 2
 number-sections: true
-lang: pt
+lang: en
 ---
 
 | To illustrate the potential use of *JSPlotly* for biochemistry and related fields, here are some examples of simulations and data analysis whose graphs are often found in textbooks and related content. To get the most out of each topic, try following the suggestions for *parametric manipulation* in each topic.
@@ -452,6 +452,40 @@ $$
 2. Observe the deformation of the semicircle by varying the values of the constant phase element (e.g., Q = 1e-3; n = 0.6 - dispersion of capacitive behavior);
 2. Try combining other values of the code header parameters to highlight common situations in electroanalysis: Rs, Rp, Q, n, and sigma;
 3. Reduce the Warburg model with constant phase element to a simple Randles model, consisting only of two resistors in series, the second in parallel with an ideal capacitor, and without Warburg diffusion (sigma = 0; n = 1).
+```
+
+
+## Diagrams and flowcharts
+
+### Context: {.unnumbered}
+
+
+| Due to the nature of the *Plotly.js* library, it is also possible to generate code in *JSPlotly* without involving an equation, such as for representing diagrams, flowcharts, heredograms, among others. The example below illustrates a representation of the Krebs cycle.
+
+
+[![](Eq/krebs.png)](Eq/jsp_krebs.html){target=“_blank”}
+
+### Suggestion: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Try repositioning enzymes and metabolites by clicking and dragging the terms;
+2. Try replacing the names in the code to produce another metabolic cycle, such as the urea cycle.
+```
+
+
+### Context: Flowchart {.unnumbered}
+
+
+[![](Eq/fluxograma.png)](Eq/jsp_fluxograma.html){target=“_blank”}
+
+### Suggestion: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Reposition terms and connectors by dragging with the mouse;
+2. For a different flowchart in the content, modify the terms in the code;
+2. For a different flowchart format, change the font and connector characteristics in the “annotations” constant.
+
+
 ```
 
 

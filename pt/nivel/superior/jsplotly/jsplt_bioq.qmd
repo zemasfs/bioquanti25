@@ -454,6 +454,39 @@ $$
 ```
 
 
+## Diagramas e fluxogramas
+
+### Contexto: Diagrama {.unnumbered}
+
+
+|       Pela natureza da biblioteca *Plotly.js*, Também é possível a geração de códigos no *JSPlotly* sem o envolvimento de uma equação, tal como para representação de diagramas e fluxogramas, entre outros. O exemplo abaixo ilustra uma representação do ciclo de Krebs, e o seguinte um fluxograma experimental.
+
+
+[![](Eq/krebs.png)](Eq/jsp_krebs.html){target="_blank"}
+
+### Sugestão: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Experimente reposicionar melhor enzimas e metabólitos, apenas clicando e arrastando os termos;
+2. Experimente substituir os nomes que estão no código para a produção de outro ciclo metabólico, como o ciclo da ureia.
+```
+
+
+### Contexto: Fluxograma {.unnumbered}
+
+
+[![](Eq/fluxograma.png)](Eq/jsp_fluxograma.html){target="_blank"}
+
+### Sugestão: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Reposicione termos e conectores com arraste de mouse;
+2. Para um fluxograma diferente no conteúdo, modifique os termos no código;
+2. Para um fluxograma diferente no formato, altere as características de fonte e conectores na constante "annotations".
+
+
+```
+
 
 
 
