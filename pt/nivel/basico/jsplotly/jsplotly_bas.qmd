@@ -424,6 +424,35 @@ Fonte: [Encyclopedia.com](https://www.encyclopedia.com/history/encyclopedias-alm
 ```
 
 
+## Diagramas e Fluxogramas
+
+|   O aplicativo também permite a criação de outros objetos didáticos interativos, sem a necessidade de inserção de equações, como diagramas e fluxogramas. Seguem exemplos.
+
+### Contexto: Diagrama de ciclo claro e escuro da fotossíntese (EM13CNT101, EM13CNT103, EM13CNT201, EM13MAT405) 
+
+[![](Eq/diagramaEB.png)](Eq/jsp_diagramaEB.html){target="_blank"}
+
+```{r, eval=FALSE}
+
+1. Experimente reposicionar as entradas e saídas (ex: Luz, Glicose) por simples arraste de mouse;
+2. Substitua os termos dentro dos quadros, ou mude outros aspectos do diagrama (cor, preenchimento, por ex).
+
+```
+
+
+### Contexto: Fluxograma para o ciclo da água (EF06CI03, EF06CI04, EM13CNT103, EM13CNT202) 
+
+[![](Eq/fluxogramaEB.png)](Eq/jsp_fluxogramaEB.html){target="_blank"}
+
+### Sugestões: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Como para diagramas acima, experimente alterar no código as propriedades das setas e dos termos e campos envolvidos no fluxograma;
+2. Substitua termos para a formação de outro fluxograma;
+3. Reposicione os objetos na área gráfica (campos, termos, setas) com auxílio do mouse.
+
+```
+
 
 
 ## Artes
@@ -476,6 +505,28 @@ $$
 ```{r, eval=FALSE}
 1. Experimente alterar a sequência melódica do código no vetor correspondente;
 2. Experimente alterar as figuras de duração no vetor correspondente
+
+```
+
+
+## Animação
+
+|   Assim como simulações, animações podem auxiliar na compreensão de um tema específico. O *JSPlotly* não trabalha diretamente com animações como o faz a biblioteca *Plotly.js*, pois isso exige alteração do código-fonte que foge à proposta de ensino-aprendizagem e pesquisa pretendidos (inserção de *frames*, *buttons*, *transitions*, por ex). Não obstante, é possível simular uma animação com vistas a melhorar o aprendizado de um tema, por inserção de controle deslizante manual.
+
+|   O exemplo a seguir apresenta um *simulador para animação manual* para funções matemáticas. Para seu uso, basta deslizar o *slider* progressivamente para visualização gráfica do resultado frente à mudança da variável preditora.
+
+**Obs:** Esse objeto didático tem um truque...na verdade, dois ! Após clicar em *add plo*, é necessário deslizar o *slider* primeiro para visualizar o gráfico. E para visualizar uma animação para outra equação, é necessário atualizar a página, como orientado na margem inferior da tela gráfica.
+
+
+[![](Eq/anima.png)](Eq/jsp_anima.html){target="_blank"}
+
+
+### Sugestão: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Deslize o controle para evidenciar a animação manual;
+2. Experimente substituir a equação modelo por outra, e arraste o controle deslizante para observar o efeito;
+3. Altere alguns parâmetros para a animação, por exemplo, aumentando os níveis de "frames" (slider.max = "50"; slider.value = 1).
 
 ```
 

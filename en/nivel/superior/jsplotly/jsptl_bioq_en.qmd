@@ -563,6 +563,43 @@ $$
 ```
 
 
+## ANOVA and Tukey-HSD test
+
+### Context: {.unnumbered}
+
+| In research, it is common to analyze a set of data by comparing the variance between groups with that obtained within each group, or *Analysis of Variance (ANOVA)*. Once statistical information indicating that there is a difference between groups greater than the internal difference has been obtained, a *post hoc* test is performed to compare means, such as the *Tukey-HSD test* (*Honest Significant Difference*). 
+
+### Equation: {.unnumbered}
+
+| The equation that characterizes a Tukey-HSD test is provided below (correction for unbalanced groups):
+
+
+$$
+\text{HSD}_{ij} = q_{\alpha} \cdot \sqrt{\frac{\text{MS}_{\text{within}}}{2} \left( \frac{1}{n_i} + \frac{1}{n_j} \right)}
+$$
+
+*Where:*
+
+- HSD = minimum value of the difference between two means for it to be considered significant;
+- q$_{\alpha}$ = critical value of the studentized distribution *q* (Tukey distribution), depending on the number of groups and the significance level $\alpha$;
+- MS$_{within}$ = mean square within groups (error) obtained from ANOVA;
+- n: number of observations per group (*i* and *j* if there are groups of different sizes).
+\
+
+
+[![](Eq/tukey.png)](Eq/jsp_tukey.html){target=“_blank”}
+
+### Suggestion: {.unnumbered}
+
+```{r, eval=FALSE}
+1. You can click and drag the minimum difference markers (a, b, etc.) above the graph for better visual adjustment, as well as the ANOVA table and the statistical test result;
+2. Change the values of the vectors, redo the analysis and the graph simultaneously, and notice the difference in the values obtained. Note that, as stated at the bottom, you need to refresh the website page to clear previous data retained in the cache;
+3. Enter other data in the respective vectors, either your own or from another source;
+4. Enter new data vectors, or delete some, for a customized calculation and graph.
+
+```
+
+
 ## Nonlinear data fit
 
 ### Context: {.unnumbered}
@@ -573,8 +610,7 @@ $$
 | In this case, techniques for nonlinear adjustment of the data to the model are used, such as *Simplex*, *Gauss*, *Newton-Raphson*, *Levenberg-Marquardt*, or *least squares*, for example. Regardless of the method, nonlinear adjustment differs from linear adjustment in its assumptions and data treatment (see a quick explanation [here](https://bioquanti.netlify.app/pt/nivel/superior/r/enzimas#ajuste-n%C3%A3o-linear).
  
 
-| The following example illustrates the application of a nonlinear adjustment of molecular interaction data using the Langmuir model and treatment by *manual grid search*. In this treatment, the *sum of the quadratic errors (RMSE)* is calculated for combinations of *a* and *b*, selecting the pair with the lowest calculated error. In this case, for simplicity, although *JSPlotly* works with more specific libraries, the nonlinear regression is performed by least squares, but using *grid search* rather than classic iterative methods. Thus, a set of values is tested for the pair 
-\
+| The following example illustrates the application of a nonlinear adjustment of molecular interaction data using the Langmuir model and treatment by *manual scan least squares*. In this treatment, the *sum of the least squares errors (RMSE)* is calculated for combinations of *a* and *b*, selecting the pair with the lowest calculated error. In this case, for simplicity, although *JSPlotly* works with more specific libraries, the nonlinear regression is performed by least squares, but using *grid search* rather than classic iterative methods. Thus, a set of values is tested for the pair (a, b) in a previously defined grid (combination table), allowing the identification of the parameters that best describe the experimental data according to the minimum error criterion.
 
 ### Equation: {.unnumbered}
 

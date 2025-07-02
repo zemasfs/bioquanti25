@@ -421,6 +421,40 @@ Source: [Encyclopedia.com](https://www.encyclopedia.com/history/encyclopedias-al
 <!-- 1. Test other keys (C, G, D, etc.), observing how the pure wave appears when the graphs are superimposed; -->
 <!-- 2. Evaluate the difference between a pure wave and one produced with musical instruments, involving natural harmonics. To do this, replace the Boolean option "false" with "true" in the variable "const ondaComposta". -->
 <!-- ``` -->
+
+
+## Diagrams and Flowcharts
+
+| The application also allows the creation of other interactive teaching objects, without the need to insert equations, such as diagrams and flowcharts. Examples follow.
+
+### Context: Diagram of the light and dark cycles of photosynthesis (EM13CNT101, EM13CNT103, EM13CNT201, EM13MAT405)
+ 
+
+[![](Eq/diagramaEB.png)](Eq/jsp_diagramaEB.html){target=“_blank”}
+
+```{r, eval=FALSE}
+
+1. Try repositioning the inputs and outputs (e.g., Light, Glucose) by simply dragging them with the mouse.
+2. Replace the terms within the boxes, or change other aspects of the diagram (color, fill, for example).
+
+```
+
+
+### Context: Flowchart for the water cycle (EF06CI03, EF06CI04, EM13CNT103, EM13CNT202) 
+
+[![](Eq/fluxogramaEB.png)](Eq/jsp_fluxogramaEB.html){target=“_blank”}
+
+### Suggestions: {.unnumbered}
+
+```{r, eval=FALSE}
+1. As for the diagrams above, try changing the properties of the arrows and the terms and fields involved in the flowchart in the code;
+2. Replace terms to form another flowchart;
+3. Reposition the objects in the graphic area (fields, terms, arrows) using the mouse.
+
+```
+
+
+
 ## Arts
 
 ### Context - Fractal composition (EM13MAT301, EM13MAT305, EM13MAT401, EM13ARM502, EF09MA10)
@@ -474,6 +508,27 @@ c = 0.45 + 0.1428i
 ```
 
 
+
+## Animation
+
+| Like simulations, animations can help in understanding a specific topic. *JSPlotly* does not work directly with animations as the *Plotly.js* library does, as this requires changes to the source code that are not in line with the intended teaching, learning, and research objectives (e.g., insertion of *frames*, *buttons*, *transitions*, etc.). However, it is possible to simulate an animation to improve learning of a topic by inserting a manual slider.
+
+| The following example shows a *simulator for manual animation* for mathematical functions. To use it, simply slide the *slider* progressively to see a graphical representation of the result as the predictor variable changes.
+
+**Note:** This teaching object has a trick...actually, two! After clicking *add plo*, you must first slide the *slider* to view the graph. And to view an animation for another equation, you must refresh the page, as instructed at the bottom of the graphic screen.
+
+
+[![](Eq/anima.png)](Eq/jsp_anima.html){target=“_blank”}
+
+
+### Suggestion: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Slide the control to highlight the manual animation;
+2. Try replacing the model equation with another one, and drag the slider to observe the effect;
+3. Change some parameters for the animation, for example, increasing the “frames” levels (slider.max = “50”; slider.value = 1).
+
+```
 
 
 ## STEAM

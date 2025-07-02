@@ -381,7 +381,8 @@ window.Quarto = {
   <li><a href="#diagramas-e-fluxogramas" id="toc-diagramas-e-fluxogramas" class="nav-link" data-scroll-target="#diagramas-e-fluxogramas"><span class="header-section-number">12</span> Diagramas e fluxogramas</a></li>
   <li><a href="#inserção-de-dados-do-usuário" id="toc-inserção-de-dados-do-usuário" class="nav-link" data-scroll-target="#inserção-de-dados-do-usuário"><span class="header-section-number">13</span> Inserção de dados do usuário</a></li>
   <li><a href="#ajuste-linear-de-dados" id="toc-ajuste-linear-de-dados" class="nav-link" data-scroll-target="#ajuste-linear-de-dados"><span class="header-section-number">14</span> Ajuste linear de dados</a></li>
-  <li><a href="#ajuste-não-linear-de-dados" id="toc-ajuste-não-linear-de-dados" class="nav-link" data-scroll-target="#ajuste-não-linear-de-dados"><span class="header-section-number">15</span> Ajuste não linear de dados</a></li>
+  <li><a href="#anava-e-teste-de-tukey-hsd" id="toc-anava-e-teste-de-tukey-hsd" class="nav-link" data-scroll-target="#anava-e-teste-de-tukey-hsd"><span class="header-section-number">15</span> ANAVA e teste de Tukey-HSD</a></li>
+  <li><a href="#ajuste-não-linear-de-dados" id="toc-ajuste-não-linear-de-dados" class="nav-link" data-scroll-target="#ajuste-não-linear-de-dados"><span class="header-section-number">16</span> Ajuste não linear de dados</a></li>
   </ul>
 </nav>
     </div>
@@ -889,18 +890,50 @@ y = \alpha x + \beta + \varepsilon
 </div>
 </section>
 </section>
-<section id="ajuste-não-linear-de-dados" class="level2" data-number="15">
-<h2 data-number="15" class="anchored" data-anchor-id="ajuste-não-linear-de-dados"><span class="header-section-number">15</span> Ajuste não linear de dados</h2>
+<section id="anava-e-teste-de-tukey-hsd" class="level2" data-number="15">
+<h2 data-number="15" class="anchored" data-anchor-id="anava-e-teste-de-tukey-hsd"><span class="header-section-number">15</span> ANAVA e teste de Tukey-HSD</h2>
 <section id="contexto-13" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="contexto-13">Contexto:</h3>
-<div class="line-block">&nbsp;&nbsp;Modelagem é uma área de emprego comum nas ciências naturais, quando se deseja previsão ou correlação matemática de dados experimentais. Modelos podem constituir-se lineares ou não. Quando não lineares, podem ser aplicados de forma empírica para os dados (ex: funções quadráticas, logarítmicas, exponenciais ou de potência), ou a partir de uma função matemática explanatória do modelo.</div>
-<div class="line-block">&nbsp;&nbsp;Nesse caso são empregadas técnicas para ajuste não linear dos dados ao modelo, como <em>Simplex</em>, <em>Gauss</em>, <em>Newton-Raphson</em>, <em>Levenberg-Marquadt</em>, ou <em>mínimos quadrados</em> por exemplo. Seja qual for o método, o ajuste não linear difere-se do linear em pressupostos e tratamento dos dados (veja uma rápida explicação <a href="https://bioquanti.netlify.app/pt/nivel/superior/r/enzimas#ajuste-n%C3%A3o-linear">aqui</a>.</div>
-<div class="line-block">&nbsp;&nbsp;O exemplo a seguir ilustra a aplicação de um ajuste não linear de dados de interação molecular por modelo de Langmuir, e tratamento por <em>minimização do erro quadrático por varredura manual</em>. Nesse tratamento, calcula-se a <em>soma dos erros quadráticos (RMSE)</em> para combinações de <em>a</em> e <em>b</em>, selecionando-se o par com menor erro calculado. Nesse caso, por simplificação, apesar o <em>JSPlotly</em> trabalhar com bibliotecas mais específicas, a regressão não linear dá-se por por mínimos quadrados, mas realizada por <em>grid search</em>, e não por métodos iterativos clássicos. Assim, um conjunto de valores é testado para o par</div>
-<p><br>
-</p>
+<div class="line-block">&nbsp;&nbsp;Em pesquisa é comum proceder a análise de um conjunto de dados comparando-se a variância entre grupos com a obtida dentro de cada grupo, ou <em>Análise de Variância (ANAVA)</em>. Uma vez obtida a informação estatística de que há diferença entre os grupos superior à interna, procede-se um teste <em>pos-hoc</em> para comparação de médias, como o <em>teste de Tukey-HSD</em> (<em>Honest Significant Difference</em>).</div>
 </section>
 <section id="equação-12" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="equação-12">Equação:</h3>
+<div class="line-block">&nbsp;&nbsp;A equação que caracteriza um teste de Tukeu-HSD é fornecida abaixo (correção para grupos desbalanceados):</div>
+<p><span class="math display">\[
+\text{HSD}_{ij} = q_{\alpha} \cdot \sqrt{\frac{\text{MS}_{\text{within}}}{2} \left( \frac{1}{n_i} + \frac{1}{n_j} \right)}
+\]</span></p>
+<p><em>Onde:</em></p>
+<ul>
+<li>HSD = valor mínimo da diferença entre duas médias para que ela seja considerada significativa;</li>
+<li>q<span class="math inline">\(_{\alpha}\)</span> = valor crítico da distribuição studentizada <em>q</em> (distribuição de Tukey), dependendo do número de grupos e do nível de significância <span class="math inline">\(\alpha\)</span>;</li>
+<li>MS<span class="math inline">\(_{within}\)</span> = quadrado médio dentro dos grupos (erro) obtido da ANAVA;</li>
+<li>n: número de observações por grupo (<em>i</em> e <em>j</em> se houver grupos de tamanhos diferentes).<br>
+</li>
+</ul>
+<p><a href="Eq/jsp_tukey.html" target="_blank"><img src="Eq/tukey.png" class="img-fluid"></a></p>
+</section>
+<section id="sugestão-14" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="sugestão-14">Sugestão:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Você pode clicar e arrastar os marcadores de mínima diferença (a,b,etc) acima do gráfico, para melhor ajuste visual, bem como a tabela de ANAVA e o resultado do teste estatístico;</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Altere os valores dos vetores, refaça a análise e o gráfico simultâneos, e perceba a diferença nos valores obtidos. Observe que, como informado na borda inferior, é necessário atualizar a página do site para anular dados anteriores retidos em memória cache;</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Insira outros dados nos vetores respectivos, seus ou de outra fonte;</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="fl">4.</span> Insira novos vetores de dados, ou delete algum, para um cálculo e gráfico personalizado.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="ajuste-não-linear-de-dados" class="level2" data-number="16">
+<h2 data-number="16" class="anchored" data-anchor-id="ajuste-não-linear-de-dados"><span class="header-section-number">16</span> Ajuste não linear de dados</h2>
+<section id="contexto-14" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="contexto-14">Contexto:</h3>
+<div class="line-block">&nbsp;&nbsp;Modelagem é uma área de emprego comum nas ciências naturais, quando se deseja previsão ou correlação matemática de dados experimentais. Modelos podem constituir-se lineares ou não. Quando não lineares, podem ser aplicados de forma empírica para os dados (ex: funções quadráticas, logarítmicas, exponenciais ou de potência), ou a partir de uma função matemática explanatória do modelo.</div>
+<div class="line-block">&nbsp;&nbsp;Nesse caso são empregadas técnicas para ajuste não linear dos dados ao modelo, como <em>Simplex</em>, <em>Gauss</em>, <em>Newton-Raphson</em>, <em>Levenberg-Marquadt</em>, ou <em>mínimos quadrados</em> por exemplo. Seja qual for o método, o ajuste não linear difere-se do linear em pressupostos e tratamento dos dados (veja uma rápida explicação <a href="https://bioquanti.netlify.app/pt/nivel/superior/r/enzimas#ajuste-n%C3%A3o-linear">aqui</a>.</div>
+<div class="line-block">&nbsp;&nbsp;O exemplo a seguir ilustra a aplicação de um ajuste não linear de dados de interação molecular por modelo de Langmuir, e tratamento por <em>minimização do erro quadrático por varredura manual</em>. Nesse tratamento, calcula-se a <em>soma dos erros quadráticos (RMSE)</em> para combinações de <em>a</em> e <em>b</em>, selecionando-se o par com menor erro calculado. Nesse caso, por simplificação, apesar do <em>JSPlotly</em> trabalhar com bibliotecas mais específicas, a regressão não linear dá-se por mínimos quadrados, mas realizada por <em>grid search</em>, e não por métodos iterativos clássicos. Assim, um conjunto de valores é testado para o par (a, b) em uma malha definida previamente (tabela de combinações), permitindo a identificação dos parâmetros que melhor descrevem os dados experimentais segundo o critério de erro mínimo.</div>
+<p><br>
+</p>
+</section>
+<section id="equação-13" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="equação-13">Equação:</h3>
 <div class="line-block">&nbsp;&nbsp;A equação de Langmuir é representada abaixo:</div>
 <p><span class="math display">\[
 Y = \frac{aX}{K_d + X}
@@ -920,11 +953,11 @@ SSR(a, K_d) = \sum_{i=1}^n \left( y_i - \frac{a x_i}{K_d + x_i} \right)^2
 </p>
 <p><a href="Eq/jsp_ajNonLin.html" target="_blank"><img src="Eq/ajNonLin.png" class="img-fluid"></a></p>
 </section>
-<section id="sugestão-14" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="sugestão-14">Sugestão:</h3>
+<section id="sugestão-15" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="sugestão-15">Sugestão:</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Como no exemplo anterior, apresente alternativamente os pontos e a curva de ajuste pela operação <span class="st">"booleana"</span> (<span class="st">"mostrarPontos = true/false"</span>; <span class="st">"mostrarCurva = true/false"</span>);</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Altere os dados e realize novo ajuste, para obtenção de outros parâmetros da equação (Kd, SSR, R², R² ajustado). Obs<span class="sc">:</span> R² adj corresponde ao valor de R² corrigido para o número de parâmetros do <span class="fu">modelo</span> (no caso, <span class="st">"2"</span>), incidindo diretamente nos <span class="st">"graus de liberdade"</span> para o ajuste.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Como no exemplo anterior, apresente alternativamente os pontos e a curva de ajuste pela operação <span class="st">"booleana"</span> (<span class="st">"mostrarPontos = true/false"</span>; <span class="st">"mostrarCurva = true/false"</span>);</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Altere os dados e realize novo ajuste, para obtenção de outros parâmetros da equação (Kd, SSR, R², R² ajustado). Obs<span class="sc">:</span> R² adj corresponde ao valor de R² corrigido para o número de parâmetros do <span class="fu">modelo</span> (no caso, <span class="st">"2"</span>), incidindo diretamente nos <span class="st">"graus de liberdade"</span> para o ajuste.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 

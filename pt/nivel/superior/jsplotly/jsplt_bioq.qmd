@@ -566,6 +566,44 @@ $$
 ```
 
 
+## ANAVA e teste de Tukey-HSD
+
+### Contexto: {.unnumbered}
+
+|   Em pesquisa é comum proceder a análise de um conjunto de dados comparando-se a variância entre grupos com a obtida dentro de cada grupo, ou *Análise de Variância (ANAVA)*.  Uma vez obtida a informação estatística de que há diferença entre os grupos superior à interna, procede-se um teste *pos-hoc* para comparação de médias, como o *teste de Tukey-HSD* (*Honest Significant Difference*). 
+
+### Equação: {.unnumbered}
+
+|   A equação que caracteriza um teste de Tukeu-HSD é fornecida abaixo (correção para grupos desbalanceados):
+
+
+$$
+\text{HSD}_{ij} = q_{\alpha} \cdot \sqrt{\frac{\text{MS}_{\text{within}}}{2} \left( \frac{1}{n_i} + \frac{1}{n_j} \right)}
+$$
+
+*Onde:*
+
+- HSD = valor mínimo da diferença entre duas médias para que ela seja considerada significativa;
+- q$_{\alpha}$ =  valor crítico da distribuição studentizada *q* (distribuição de Tukey), dependendo do número de grupos e do nível de significância $\alpha$;
+- MS$_{within}$ = quadrado médio dentro dos grupos (erro) obtido da ANAVA;
+- n: número de observações por grupo (*i* e *j* se houver grupos de tamanhos diferentes). 
+\
+
+
+[![](Eq/tukey.png)](Eq/jsp_tukey.html){target="_blank"}
+
+### Sugestão: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Você pode clicar e arrastar os marcadores de mínima diferença (a,b,etc) acima do gráfico, para melhor ajuste visual, bem como a tabela de ANAVA e o resultado do teste estatístico;
+2. Altere os valores dos vetores, refaça a análise e o gráfico simultâneos, e perceba a diferença nos valores obtidos. Observe que, como informado na borda inferior, é necessário atualizar a página do site para anular dados anteriores retidos em memória cache;
+3. Insira outros dados nos vetores respectivos, seus ou de outra fonte;
+4. Insira novos vetores de dados, ou delete algum, para um cálculo e gráfico personalizado.
+
+```
+
+
+
 ## Ajuste não linear de dados
 
 ### Contexto: {.unnumbered}
@@ -574,7 +612,7 @@ $$
 
 |   Nesse caso são empregadas técnicas para ajuste não linear dos dados ao modelo, como *Simplex*,  *Gauss*, *Newton-Raphson*, *Levenberg-Marquadt*, ou *mínimos quadrados* por exemplo. Seja qual for o método, o ajuste não linear difere-se do linear em pressupostos e tratamento dos dados (veja uma rápida explicação [aqui](https://bioquanti.netlify.app/pt/nivel/superior/r/enzimas#ajuste-n%C3%A3o-linear). 
 
-|   O exemplo a seguir ilustra a aplicação de um ajuste não linear de dados de interação molecular por modelo de Langmuir, e tratamento por *minimização do erro quadrático por varredura manual*. Nesse tratamento, calcula-se a *soma dos erros quadráticos (RMSE)* para combinações de *a* e *b*, selecionando-se o par com menor erro calculado. Nesse caso, por simplificação, apesar o *JSPlotly* trabalhar com bibliotecas mais específicas, a regressão não linear dá-se por por mínimos quadrados, mas realizada por *grid search*, e não por métodos iterativos clássicos. Assim, um conjunto de valores é testado para o par 
+|   O exemplo a seguir ilustra a aplicação de um ajuste não linear de dados de interação molecular por modelo de Langmuir, e tratamento por *minimização do erro quadrático por varredura manual*. Nesse tratamento, calcula-se a *soma dos erros quadráticos (RMSE)* para combinações de *a* e *b*, selecionando-se o par com menor erro calculado. Nesse caso, por simplificação, apesar do *JSPlotly* trabalhar com bibliotecas mais específicas, a regressão não linear dá-se por mínimos quadrados, mas realizada por *grid search*, e não por métodos iterativos clássicos. Assim, um conjunto de valores é testado para o par (a, b) em uma malha definida previamente (tabela de combinações), permitindo a identificação dos parâmetros que melhor descrevem os dados experimentais segundo o critério de erro mínimo.
 \
 
 ### Equação: {.unnumbered}

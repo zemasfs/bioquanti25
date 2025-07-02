@@ -561,28 +561,39 @@ function limparTudo() {
 // Definir a equação quadrática padrão
 var codigoPadrao = `
 
-// Dados simples (exemplo manual)
-const x_values = [1, 2, 3, 4, 5];
-const y_values = [2, 3, 5, 4, 6];
+// Simulação de médias de 4 grupos e seus ICs
+const grupos = ["A", "B", "C", "D"];
+const medias = [5.1, 5.4, 7.2, 6.8];
+const erros = [0.5, 0.4, 0.1, 0.3]; // erro padrão
 
-// Configuração visual
-const layout = {
-    title: "Visualização de Dados",
-    xaxis: { title: "Eixo X" },
-    yaxis: { title: "Eixo Y" }
-};
+const x_values = grupos;
+const y_values = medias;
 
-// Trace padrão
 const trace = {
-    x: x_values,
-    y: y_values,
-    mode: "markers+lines",       // Altere aqui: 'lines', 'markers+lines', etc.
-    type: "bar",       // Pode alterar para 'bar', 'scattergl', etc.
-    marker: { size: 8 },
-    name: "Dados"
+  x: x_values,
+  y: y_values,
+  type: "bar",  // Barras com erro
+  name: 'Médias dos Grupos',
+  error_y: {
+    type: 'data',
+    array: erros,
+    visible: true,
+    color: 'orange'
+  },
+  marker: {
+    size: 8,
+    color: ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728']
+  }
 };
 
-// Retorno obrigatório
+const layout = {
+  title: 'Tratamentos',
+  xaxis: { title: 'Grupos' },
+  yaxis: { title: 'Média ± IC (95%)', range: [0, 9] },
+  showlegend: false,
+  bargap: 0.4
+};
+
 return { trace, layout };
 
 
