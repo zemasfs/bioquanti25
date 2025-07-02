@@ -8,7 +8,7 @@ publish: false
 
 |       Disponibilizado em outubro de 2022, o site *Bioquanti* foi concebido no intuito de contribuir para um ensino reprodutível e autoinstrucional. Entende-se por **ensino reprodutível** uma metodologia de ensino-aprendizagem ativa baseada em códigos de programação, herdada dos conceitos de [programação letrada](https://academic.oup.com/comjnl/article-abstract/27/2/97/343244?login=true) de Donald Knuth e da *pesquisa reprodutível*, e direcionada à produção e compartilhamento de *documentos dinâmicos* e *objetos didáticos* reprodutíveis por execução ou personalização de códigos. Originalmente concebido ao estudo de temas em *Bioquímica Quantitativa* por auxílio de códigos de programação, o site conta hoje com conteúdos do ensino básico, também alicerçados à linguagens de programação.
 
-|   Em essência, o site visa oferecer ferramentas e tutoriais para o emprego do **pensamento computacional** voltado à **lógica de programação** com auxílio de **linguagens de programação**, e diretamente aplicados em conteúdos curriculares, pela execução, modificação, e criação de códigos para a construção e estudo de objetos interativos para temas técnico-científicos. 
+|   Em essência, o site visa oferecer ferramentas e tutoriais para o emprego do **pensamento computacional** voltado à **lógica de programação** com auxílio de **linguagens de programação**, e diretamente aplicados em **conteúdos curriculares**, pela execução, modificação, e criação de códigos para a construção e estudo de objetos interativos para temas técnico-científicos. 
 \
 
 |   Em síntese...**códigos para conteúdos**.
@@ -18,9 +18,9 @@ publish: false
 
 |       O portal conta com acesso a *ebooks* de livre distribuição para estudos em Bioquímica e áreas correlatas, a saber: [Visualização Dinâmica em Catálise & Metabolismo](http://dx.doi.org/10.13140/RG.2.2.25027.92964), [Bioquímica Quantitativa & R](http://dx.doi.org/10.13140/RG.2.2.36090.40644), e [Bioquímica Estrutural Guiada Por Jmol](http://dx.doi.org/10.13140/RG.2.2.29268.10882), todos com códigos para reprodução.
 
-|   Também acompanha o site o acesso ao *ebook* [Bioquímica Básica, de Gente, de Bicho, e de Planta](/nivel/superior/biqTxT/index_txt.qmd), um texto básico para graduação na área, para referência a diversos conteúdos, mas desprovido de códigos.
+|   Também acompanha o site o acesso ao *ebook* [Bioquímica Básica, de Gente, de Bicho, e de Planta](https://www.researchgate.net/publication/388790659_Bioquimica_basica_de_gente_de_bicho_e_de_planta) ou sua [versão digital no site](/nivel/superior/biqTxT/index_txt.qmd), um texto básico para graduação na área, para referência a diversos conteúdos, mas desprovido de códigos.
 
-|   Para o ensino básico sugere-se uma olhada no *ebook* [Vivificando Conteúdos para o Ensino Básico](https://www.pimentacultural.com/livro/vivificando-conteudos/), uma adaptação de parte dos conteúdos do site para uma curva suave de aprendizado de *Jmol* e *R & RStudio*, e diretamente aplicados na construção de *objetos interativos de ensino reprodutível (OIER)* a conteúdos escolares.
+|   Para o ensino básico sugere-se uma olhada no *ebook* [Vivificando Conteúdos para o Ensino Básico](https://www.researchgate.net/publication/392460244_Vivificando_Conteudos_Para_o_Ensino_Basico_Moleculas_Graficos_e_Mapas_Interativos), uma adaptação de parte dos conteúdos do site para uma curva suave de aprendizado de *Jmol* e *R & RStudio*, e diretamente aplicados na construção de *objetos interativos de ensino reprodutível (OIER)* a conteúdos escolares.
 \
 
 ## Reconhecimento
