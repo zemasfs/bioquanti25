@@ -3631,7 +3631,7 @@
     "href": "nivel/superior/jsplotly/jsplt_bioq.html",
     "title": "Simulações Interativas Para Biofísico-química com JSPlotly & GSPlotly",
     "section": "",
-    "text": "Para ilustrar o potencial de uso do JSPlotly para Bioquímica e áreas correlatas, seguem alguns exemplos de simulações e análise de dados, e cujos gráficos são frequentemente encontrados em livros-texto e conteúdos afins. Para um melhor aproveitamento de cada tema, experimente seguir as sugestões para manipulação paramétrica em cada tema.",
+    "text": "Para ilustrar o potencial de uso do JSPlotly para Bioquímica e áreas correlatas, seguem alguns exemplos de simulações e análise de dados, e cujos gráficos são frequentemente encontrados em livros-texto e conteúdos afins. Para um melhor aproveitamento de cada tema, experimente seguir as sugestões para manipulação paramétrica dos códigos em cada tema.",
     "crumbs": [
       "Sobre",
       "JSPlotly & GSPlotly - Simulação gráfica interativa & IA",
@@ -4513,6 +4513,18 @@
       "Sobre",
       "JSPlotly & GSPlotly - Simulação gráfica interativa & IA",
       "Simulações na Escola"
+    ]
+  },
+  {
+    "objectID": "nivel/superior/jsplotly/jsplt_bioq.html#análise-de-dados",
+    "href": "nivel/superior/jsplotly/jsplt_bioq.html#análise-de-dados",
+    "title": "Simulações Interativas Para Biofísico-química com JSPlotly & GSPlotly",
+    "section": "Análise de Dados",
+    "text": "Análise de Dados",
+    "crumbs": [
+      "Sobre",
+      "JSPlotly & GSPlotly - Simulação gráfica interativa & IA",
+      "Simulações em Biofísico-química"
     ]
   }
 ]

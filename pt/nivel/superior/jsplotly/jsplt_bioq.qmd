@@ -7,7 +7,7 @@ number-sections: true
 lang: pt
 ---
 
-|   Para ilustrar o potencial de uso do *JSPlotly* para Bioquímica e áreas correlatas, seguem alguns exemplos de simulações e análise de dados, e cujos gráficos são frequentemente encontrados em livros-texto e conteúdos afins. Para um melhor aproveitamento de cada tema, experimente seguir as sugestões para *manipulação paramétrica* em cada tema. 
+|   Para ilustrar o potencial de uso do *JSPlotly* para Bioquímica e áreas correlatas, seguem alguns exemplos de **simulações e análise de dados**, e cujos gráficos são frequentemente encontrados em livros-texto e conteúdos afins. Para um melhor aproveitamento de cada tema, experimente seguir as sugestões para *manipulação paramétrica* dos códigos em cada tema. 
 \
 
 ## Instruções {.unnumbered}
@@ -488,6 +488,7 @@ $$
 ```
 
 
+## Análise de Dados {.unnumbered}
 
 
 ## Inserção de dados do usuário
