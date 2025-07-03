@@ -381,11 +381,12 @@ window.Quarto = {
   <li><a href="#variation-of-gibbs-energy-with-temperature" id="toc-variation-of-gibbs-energy-with-temperature" class="nav-link" data-scroll-target="#variation-of-gibbs-energy-with-temperature"><span class="header-section-number">10</span> Variation of Gibbs energy with temperature</a></li>
   <li><a href="#electrochemical-impedance-spectroscopy-eis" id="toc-electrochemical-impedance-spectroscopy-eis" class="nav-link" data-scroll-target="#electrochemical-impedance-spectroscopy-eis"><span class="header-section-number">11</span> Electrochemical impedance spectroscopy (EIS)</a></li>
   <li><a href="#diagrams-and-flowcharts" id="toc-diagrams-and-flowcharts" class="nav-link" data-scroll-target="#diagrams-and-flowcharts"><span class="header-section-number">12</span> Diagrams and flowcharts</a></li>
-  <li><a href="#data-analysis" id="toc-data-analysis" class="nav-link" data-scroll-target="#data-analysis">Data analysis</a></li>
+  <li><a href="#data-analysis" id="toc-data-analysis" class="nav-link" data-scroll-target="#data-analysis"><strong>Data analysis</strong></a></li>
   <li><a href="#user-data-insertion" id="toc-user-data-insertion" class="nav-link" data-scroll-target="#user-data-insertion"><span class="header-section-number">13</span> User data insertion</a></li>
-  <li><a href="#linear-data-adjustment" id="toc-linear-data-adjustment" class="nav-link" data-scroll-target="#linear-data-adjustment"><span class="header-section-number">14</span> Linear data adjustment</a></li>
-  <li><a href="#anova-and-tukey-hsd-test" id="toc-anova-and-tukey-hsd-test" class="nav-link" data-scroll-target="#anova-and-tukey-hsd-test"><span class="header-section-number">15</span> ANOVA and Tukey-HSD test</a></li>
-  <li><a href="#nonlinear-data-fit" id="toc-nonlinear-data-fit" class="nav-link" data-scroll-target="#nonlinear-data-fit"><span class="header-section-number">16</span> Nonlinear data fit</a></li>
+  <li><a href="#uploading-files-for-analysis" id="toc-uploading-files-for-analysis" class="nav-link" data-scroll-target="#uploading-files-for-analysis"><span class="header-section-number">14</span> Uploading files for analysis</a></li>
+  <li><a href="#linear-data-adjustment" id="toc-linear-data-adjustment" class="nav-link" data-scroll-target="#linear-data-adjustment"><span class="header-section-number">15</span> Linear data adjustment</a></li>
+  <li><a href="#anova-and-tukey-hsd-test" id="toc-anova-and-tukey-hsd-test" class="nav-link" data-scroll-target="#anova-and-tukey-hsd-test"><span class="header-section-number">16</span> ANOVA and Tukey-HSD test</a></li>
+  <li><a href="#nonlinear-data-fit" id="toc-nonlinear-data-fit" class="nav-link" data-scroll-target="#nonlinear-data-fit"><span class="header-section-number">17</span> Nonlinear data fit</a></li>
   </ul>
 </nav>
     </div>
@@ -831,7 +832,7 @@ Z_{\text{total}}(\omega) = R_s + \left[ \left( \frac{1}{R_p} + Q (j\omega)^n \ri
 </section>
 </section>
 <section id="data-analysis" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="data-analysis">Data analysis</h2>
+<h2 class="unnumbered anchored" data-anchor-id="data-analysis"><strong>Data analysis</strong></h2>
 </section>
 <section id="user-data-insertion" class="level2" data-number="13">
 <h2 data-number="13" class="anchored" data-anchor-id="user-data-insertion"><span class="header-section-number">13</span> User data insertion</h2>
@@ -849,8 +850,27 @@ Z_{\text{total}}(\omega) = R_s + \left[ \left( \frac{1}{R_p} + Q (j\omega)^n \ri
 </p>
 </section>
 </section>
-<section id="linear-data-adjustment" class="level2" data-number="14">
-<h2 data-number="14" class="anchored" data-anchor-id="linear-data-adjustment"><span class="header-section-number">14</span> Linear data adjustment</h2>
+<section id="uploading-files-for-analysis" class="level2" data-number="14">
+<h2 data-number="14" class="anchored" data-anchor-id="uploading-files-for-analysis"><span class="header-section-number">14</span> Uploading files for analysis</h2>
+<section id="context---csv-file" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="context---csv-file">Context - CSV file</h3>
+<div class="line-block">Sometimes, it is necessary to analyze results related to a set of data in a spreadsheet. For this situation, the following example illustrates the loading of two data vectors from a <em>CSV</em> (<em>comma separated value</em>) file, a format commonly used for exporting/importing in spreadsheets, and the resulting graph.</div>
+<p><a href="Eq/jsp_csv.html" target="“_blank”"><img src="Eq/csv.png" class="img-fluid"></a></p>
+<p><strong>Instructions:</strong></p>
+<ul>
+<li>1 Click on <em>add plot</em> and select a CSV file using the <em>browse</em> button at the top. Note: variable <em>X</em> in the first column of the file, and variable <em>Y</em> in the second column;</li>
+<li><ol start="2" type="1">
+<li>Click on <em>add plot</em> again to view the resulting graph.</li>
+</ol></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Try other CSV files;</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Vary the aspects of the graph, such as type, color, marker size, etc.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="linear-data-adjustment" class="level2" data-number="15">
+<h2 data-number="15" class="anchored" data-anchor-id="linear-data-adjustment"><span class="header-section-number">15</span> Linear data adjustment</h2>
 <section id="context-12" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="context-12">Context:</h3>
 <div class="line-block">In various experimental research situations, it is necessary to correlate the data of a dependent variable with a predictor variable using the following equation.</div>
@@ -888,13 +908,13 @@ y = \alpha x + \beta + \varepsilon
 <section id="suggestion-13" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="suggestion-13">Suggestion:</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Show the points that overlap or do not overlap the fit line. For overlap, choose “showPoints <span class="ot">=</span> true” and “showLine <span class="ot">=</span> true”;</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Change the data and perform a new fit to obtain other parameters of the line.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Show the points that overlap or do not overlap the fit line. For overlap, choose “showPoints <span class="ot">=</span> true” and “showLine <span class="ot">=</span> true”;</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Change the data and perform a new fit to obtain other parameters of the line.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>
-<section id="anova-and-tukey-hsd-test" class="level2" data-number="15">
-<h2 data-number="15" class="anchored" data-anchor-id="anova-and-tukey-hsd-test"><span class="header-section-number">15</span> ANOVA and Tukey-HSD test</h2>
+<section id="anova-and-tukey-hsd-test" class="level2" data-number="16">
+<h2 data-number="16" class="anchored" data-anchor-id="anova-and-tukey-hsd-test"><span class="header-section-number">16</span> ANOVA and Tukey-HSD test</h2>
 <section id="context-13" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="context-13">Context:</h3>
 <div class="line-block">In research, it is common to analyze a set of data by comparing the variance between groups with that obtained within each group, or <em>Analysis of Variance (ANOVA)</em>. Once statistical information indicating that there is a difference between groups greater than the internal difference has been obtained, a <em>post hoc</em> test is performed to compare means, such as the <em>Tukey-HSD test</em> (<em>Honest Significant Difference</em>).</div>
@@ -918,15 +938,15 @@ y = \alpha x + \beta + \varepsilon
 <section id="suggestion-14" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="suggestion-14">Suggestion:</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> You can click and drag the minimum difference <span class="fu">markers</span> (a, b, etc.) above the graph <span class="cf">for</span> better visual adjustment, as well as the ANOVA table and the statistical test result;</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Change the values of the vectors, redo the analysis and the graph simultaneously, and notice the difference <span class="cf">in</span> the values obtained. Note that, as stated at the bottom, you need to refresh the website page to clear previous data retained <span class="cf">in</span> the cache;</span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Enter other data <span class="cf">in</span> the respective vectors, either your own or from another source;</span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="fl">4.</span> Enter new data vectors, or delete some, <span class="cf">for</span> a customized calculation and graph.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> You can click and drag the minimum difference <span class="fu">markers</span> (a, b, etc.) above the graph <span class="cf">for</span> better visual adjustment, as well as the ANOVA table and the statistical test result;</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Change the values of the vectors, redo the analysis and the graph simultaneously, and notice the difference <span class="cf">in</span> the values obtained. Note that, as stated at the bottom, you need to refresh the website page to clear previous data retained <span class="cf">in</span> the cache;</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Enter other data <span class="cf">in</span> the respective vectors, either your own or from another source;</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="fl">4.</span> Enter new data vectors, or delete some, <span class="cf">for</span> a customized calculation and graph.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>
-<section id="nonlinear-data-fit" class="level2" data-number="16">
-<h2 data-number="16" class="anchored" data-anchor-id="nonlinear-data-fit"><span class="header-section-number">16</span> Nonlinear data fit</h2>
+<section id="nonlinear-data-fit" class="level2" data-number="17">
+<h2 data-number="17" class="anchored" data-anchor-id="nonlinear-data-fit"><span class="header-section-number">17</span> Nonlinear data fit</h2>
 <section id="context-14" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="context-14">Context:</h3>
 <div class="line-block">Modeling is a common area of employment in the natural sciences, when mathematical prediction or correlation of experimental data is desired. Models can be linear or non-linear. When non-linear, they can be applied empirically to the data (e.g., quadratic, logarithmic, exponential, or power functions), or from a mathematical function that explains the model.</div>
@@ -957,8 +977,8 @@ SSR(a, K_d) = \sum_{i=1}^n \left( y_i - \frac{a x_i}{K_d + x_i} \right)^2
 <section id="suggestion-15" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="suggestion-15">Suggestion:</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> As <span class="cf">in</span> the previous example, alternately display the points and the adjustment curve using the “Boolean” <span class="fu">operation</span> (“<span class="at">showPoints =</span> true<span class="sc">/</span>false”; “<span class="at">showCurve =</span> true<span class="sc">/</span>false”);</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Change the data and perform a new fit to obtain other parameters of the <span class="fu">equation</span> (Kd, SSR, R², adjusted R²). Note<span class="sc">:</span> R² adj corresponds to the value of R² corrected <span class="cf">for</span> the number of parameters <span class="cf">in</span> the <span class="fu">model</span> (<span class="cf">in</span> this case, “<span class="dv">2</span>”), directly affecting the “degrees of freedom” <span class="cf">for</span> the fit.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> As <span class="cf">in</span> the previous example, alternately display the points and the adjustment curve using the “Boolean” <span class="fu">operation</span> (“<span class="at">showPoints =</span> true<span class="sc">/</span>false”; “<span class="at">showCurve =</span> true<span class="sc">/</span>false”);</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Change the data and perform a new fit to obtain other parameters of the <span class="fu">equation</span> (Kd, SSR, R², adjusted R²). Note<span class="sc">:</span> R² adj corresponds to the value of R² corrected <span class="cf">for</span> the number of parameters <span class="cf">in</span> the <span class="fu">model</span> (<span class="cf">in</span> this case, “<span class="dv">2</span>”), directly affecting the “degrees of freedom” <span class="cf">for</span> the fit.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 

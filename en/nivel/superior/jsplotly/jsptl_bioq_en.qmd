@@ -489,7 +489,7 @@ $$
 ```
 
 
-## Data analysis {.unnumbered}
+## **Data analysis** {.unnumbered}
 
 ## User data insertion
 
@@ -506,6 +506,25 @@ $$
 ```
 
 \
+
+
+## Uploading files for analysis
+
+### Context - CSV file {.unnumbered}
+
+| Sometimes, it is necessary to analyze results related to a set of data in a spreadsheet. For this situation, the following example illustrates the loading of two data vectors from a *CSV* (*comma separated value*) file, a format commonly used for exporting/importing in spreadsheets, and the resulting graph. 
+
+[![](Eq/csv.png)](Eq/jsp_csv.html){target=“_blank”}
+
+**Instructions:**
+
+- 1 Click on *add plot* and select a CSV file using the *browse* button at the top. Note: variable *X* in the first column of the file, and variable *Y* in the second column;
+- 2. Click on *add plot* again to view the resulting graph.
+
+```{r, eval=FALSE}
+1. Try other CSV files;
+2. Vary the aspects of the graph, such as type, color, marker size, etc.
+```
 
 
 ## Linear data adjustment

@@ -379,11 +379,12 @@ window.Quarto = {
   <li><a href="#variação-da-energia-de-gibbs-com-a-temperatura" id="toc-variação-da-energia-de-gibbs-com-a-temperatura" class="nav-link" data-scroll-target="#variação-da-energia-de-gibbs-com-a-temperatura"><span class="header-section-number">10</span> Variação da energia de Gibbs com a temperatura</a></li>
   <li><a href="#espectroscopia-de-impedância-eletroquímica-eis" id="toc-espectroscopia-de-impedância-eletroquímica-eis" class="nav-link" data-scroll-target="#espectroscopia-de-impedância-eletroquímica-eis"><span class="header-section-number">11</span> Espectroscopia de impedância eletroquímica (EIS)</a></li>
   <li><a href="#diagramas-e-fluxogramas" id="toc-diagramas-e-fluxogramas" class="nav-link" data-scroll-target="#diagramas-e-fluxogramas"><span class="header-section-number">12</span> Diagramas e fluxogramas</a></li>
-  <li><a href="#análise-de-dados" id="toc-análise-de-dados" class="nav-link" data-scroll-target="#análise-de-dados">Análise de Dados</a></li>
+  <li><a href="#análise-de-dados" id="toc-análise-de-dados" class="nav-link" data-scroll-target="#análise-de-dados"><strong>Análise de Dados</strong></a></li>
   <li><a href="#inserção-de-dados-do-usuário" id="toc-inserção-de-dados-do-usuário" class="nav-link" data-scroll-target="#inserção-de-dados-do-usuário"><span class="header-section-number">13</span> Inserção de dados do usuário</a></li>
-  <li><a href="#ajuste-linear-de-dados" id="toc-ajuste-linear-de-dados" class="nav-link" data-scroll-target="#ajuste-linear-de-dados"><span class="header-section-number">14</span> Ajuste linear de dados</a></li>
-  <li><a href="#anava-e-teste-de-tukey-hsd" id="toc-anava-e-teste-de-tukey-hsd" class="nav-link" data-scroll-target="#anava-e-teste-de-tukey-hsd"><span class="header-section-number">15</span> ANAVA e teste de Tukey-HSD</a></li>
-  <li><a href="#ajuste-não-linear-de-dados" id="toc-ajuste-não-linear-de-dados" class="nav-link" data-scroll-target="#ajuste-não-linear-de-dados"><span class="header-section-number">16</span> Ajuste não linear de dados</a></li>
+  <li><a href="#carregamento-de-arquivo-para-análise" id="toc-carregamento-de-arquivo-para-análise" class="nav-link" data-scroll-target="#carregamento-de-arquivo-para-análise"><span class="header-section-number">14</span> Carregamento de arquivo para análise</a></li>
+  <li><a href="#ajuste-linear-de-dados" id="toc-ajuste-linear-de-dados" class="nav-link" data-scroll-target="#ajuste-linear-de-dados"><span class="header-section-number">15</span> Ajuste linear de dados</a></li>
+  <li><a href="#anava-e-teste-de-tukey-hsd" id="toc-anava-e-teste-de-tukey-hsd" class="nav-link" data-scroll-target="#anava-e-teste-de-tukey-hsd"><span class="header-section-number">16</span> ANAVA e teste de Tukey-HSD</a></li>
+  <li><a href="#ajuste-não-linear-de-dados" id="toc-ajuste-não-linear-de-dados" class="nav-link" data-scroll-target="#ajuste-não-linear-de-dados"><span class="header-section-number">17</span> Ajuste não linear de dados</a></li>
   </ul>
 </nav>
     </div>
@@ -829,7 +830,7 @@ Z_{\text{total}}(\omega) = R_s + \left[ \left( \frac{1}{R_p} + Q (j\omega)^n \ri
 </section>
 </section>
 <section id="análise-de-dados" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="análise-de-dados">Análise de Dados</h2>
+<h2 class="unnumbered anchored" data-anchor-id="análise-de-dados"><strong>Análise de Dados</strong></h2>
 </section>
 <section id="inserção-de-dados-do-usuário" class="level2" data-number="13">
 <h2 data-number="13" class="anchored" data-anchor-id="inserção-de-dados-do-usuário"><span class="header-section-number">13</span> Inserção de dados do usuário</h2>
@@ -850,8 +851,27 @@ Z_{\text{total}}(\omega) = R_s + \left[ \left( \frac{1}{R_p} + Q (j\omega)^n \ri
 </p>
 </section>
 </section>
-<section id="ajuste-linear-de-dados" class="level2" data-number="14">
-<h2 data-number="14" class="anchored" data-anchor-id="ajuste-linear-de-dados"><span class="header-section-number">14</span> Ajuste linear de dados</h2>
+<section id="carregamento-de-arquivo-para-análise" class="level2" data-number="14">
+<h2 data-number="14" class="anchored" data-anchor-id="carregamento-de-arquivo-para-análise"><span class="header-section-number">14</span> Carregamento de arquivo para análise</h2>
+<section id="contexto---arquivo-csv" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="contexto---arquivo-csv">Contexto - Arquivo CSV</h3>
+<div class="line-block">&nbsp;&nbsp;Por vezes, há necessidade de se analisar resultados referentes a um conjunto de dados presente numa planilha. Para essa situação, o exemplo a seguir ilustra o carregamento de dois vetores de dados a partir de um arquivo <em>CSV</em> (<em>comma separated value</em>), formato comumente utilizado em exportação/importação em planilhas eletrônicas, e seu gráfico resultante.</div>
+<p><a href="Eq/jsp_csv.html" target="_blank"><img src="Eq/csv.png" class="img-fluid"></a></p>
+<p><strong>Instruções:</strong></p>
+<ul>
+<li>1 Clique em <em>add plot</em> e selecione um arquivo CSV no botão <em>browse</em> superior que é apresentado. Nota: variável <em>X</em> na 1a. coluna do arquivo, e variável <em>Y</em> na 2a. coluna;</li>
+<li><ol start="2" type="1">
+<li>Clique em <em>add plot</em> novamente para a visualização do gráfico resultante.</li>
+</ol></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Experimente outros arquivos CSV;</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Varie os aspectos do gráfico, como tipo, cor, tamanho do marcador, etc.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="ajuste-linear-de-dados" class="level2" data-number="15">
+<h2 data-number="15" class="anchored" data-anchor-id="ajuste-linear-de-dados"><span class="header-section-number">15</span> Ajuste linear de dados</h2>
 <section id="contexto-12" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="contexto-12">Contexto:</h3>
 <div class="line-block">&nbsp;&nbsp;Em diversas situações da pesquisa experimental, faz-se necessário correlacionar os dados de uma variável dependente com uma variável preditora frente à equação que segue.</div>
@@ -889,13 +909,13 @@ y = \alpha x + \beta + \varepsilon
 <section id="sugestão-13" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="sugestão-13">Sugestão:</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Apresente os pontos sobrepostos ou não à reta do ajuste. Para a sobreposição, escolha <span class="st">"mostrarPontos = true"</span> e <span class="st">"mostrarReta = true"</span>;</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Altere os dados e realize novo ajuste, para obtenção de outros parâmetros da reta.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Apresente os pontos sobrepostos ou não à reta do ajuste. Para a sobreposição, escolha <span class="st">"mostrarPontos = true"</span> e <span class="st">"mostrarReta = true"</span>;</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Altere os dados e realize novo ajuste, para obtenção de outros parâmetros da reta.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>
-<section id="anava-e-teste-de-tukey-hsd" class="level2" data-number="15">
-<h2 data-number="15" class="anchored" data-anchor-id="anava-e-teste-de-tukey-hsd"><span class="header-section-number">15</span> ANAVA e teste de Tukey-HSD</h2>
+<section id="anava-e-teste-de-tukey-hsd" class="level2" data-number="16">
+<h2 data-number="16" class="anchored" data-anchor-id="anava-e-teste-de-tukey-hsd"><span class="header-section-number">16</span> ANAVA e teste de Tukey-HSD</h2>
 <section id="contexto-13" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="contexto-13">Contexto:</h3>
 <div class="line-block">&nbsp;&nbsp;Em pesquisa é comum proceder a análise de um conjunto de dados comparando-se a variância entre grupos com a obtida dentro de cada grupo, ou <em>Análise de Variância (ANAVA)</em>. Uma vez obtida a informação estatística de que há diferença entre os grupos superior à interna, procede-se um teste <em>pos-hoc</em> para comparação de médias, como o <em>teste de Tukey-HSD</em> (<em>Honest Significant Difference</em>).</div>
@@ -919,15 +939,15 @@ y = \alpha x + \beta + \varepsilon
 <section id="sugestão-14" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="sugestão-14">Sugestão:</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Você pode clicar e arrastar os marcadores de mínima diferença (a,b,etc) acima do gráfico, para melhor ajuste visual, bem como a tabela de ANAVA e o resultado do teste estatístico;</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Altere os valores dos vetores, refaça a análise e o gráfico simultâneos, e perceba a diferença nos valores obtidos. Observe que, como informado na borda inferior, é necessário atualizar a página do site para anular dados anteriores retidos em memória cache;</span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Insira outros dados nos vetores respectivos, seus ou de outra fonte;</span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="fl">4.</span> Insira novos vetores de dados, ou delete algum, para um cálculo e gráfico personalizado.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Você pode clicar e arrastar os marcadores de mínima diferença (a,b,etc) acima do gráfico, para melhor ajuste visual, bem como a tabela de ANAVA e o resultado do teste estatístico;</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Altere os valores dos vetores, refaça a análise e o gráfico simultâneos, e perceba a diferença nos valores obtidos. Observe que, como informado na borda inferior, é necessário atualizar a página do site para anular dados anteriores retidos em memória cache;</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Insira outros dados nos vetores respectivos, seus ou de outra fonte;</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="fl">4.</span> Insira novos vetores de dados, ou delete algum, para um cálculo e gráfico personalizado.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>
-<section id="ajuste-não-linear-de-dados" class="level2" data-number="16">
-<h2 data-number="16" class="anchored" data-anchor-id="ajuste-não-linear-de-dados"><span class="header-section-number">16</span> Ajuste não linear de dados</h2>
+<section id="ajuste-não-linear-de-dados" class="level2" data-number="17">
+<h2 data-number="17" class="anchored" data-anchor-id="ajuste-não-linear-de-dados"><span class="header-section-number">17</span> Ajuste não linear de dados</h2>
 <section id="contexto-14" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="contexto-14">Contexto:</h3>
 <div class="line-block">&nbsp;&nbsp;Modelagem é uma área de emprego comum nas ciências naturais, quando se deseja previsão ou correlação matemática de dados experimentais. Modelos podem constituir-se lineares ou não. Quando não lineares, podem ser aplicados de forma empírica para os dados (ex: funções quadráticas, logarítmicas, exponenciais ou de potência), ou a partir de uma função matemática explanatória do modelo.</div>
@@ -960,8 +980,8 @@ SSR(a, K_d) = \sum_{i=1}^n \left( y_i - \frac{a x_i}{K_d + x_i} \right)^2
 <section id="sugestão-15" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="sugestão-15">Sugestão:</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Como no exemplo anterior, apresente alternativamente os pontos e a curva de ajuste pela operação <span class="st">"booleana"</span> (<span class="st">"mostrarPontos = true/false"</span>; <span class="st">"mostrarCurva = true/false"</span>);</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Altere os dados e realize novo ajuste, para obtenção de outros parâmetros da equação (Kd, SSR, R², R² ajustado). Obs<span class="sc">:</span> R² adj corresponde ao valor de R² corrigido para o número de parâmetros do <span class="fu">modelo</span> (no caso, <span class="st">"2"</span>), incidindo diretamente nos <span class="st">"graus de liberdade"</span> para o ajuste.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Como no exemplo anterior, apresente alternativamente os pontos e a curva de ajuste pela operação <span class="st">"booleana"</span> (<span class="st">"mostrarPontos = true/false"</span>; <span class="st">"mostrarCurva = true/false"</span>);</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Altere os dados e realize novo ajuste, para obtenção de outros parâmetros da equação (Kd, SSR, R², R² ajustado). Obs<span class="sc">:</span> R² adj corresponde ao valor de R² corrigido para o número de parâmetros do <span class="fu">modelo</span> (no caso, <span class="st">"2"</span>), incidindo diretamente nos <span class="st">"graus de liberdade"</span> para o ajuste.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 

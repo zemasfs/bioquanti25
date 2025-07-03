@@ -488,7 +488,7 @@ $$
 ```
 
 
-## Análise de Dados {.unnumbered}
+## **Análise de Dados** {.unnumbered}
 
 
 ## Inserção de dados do usuário
@@ -509,6 +509,27 @@ $$
 ```
 
 \
+
+## Carregamento de arquivo para análise
+
+### Contexto - Arquivo CSV {.unnumbered}
+
+|   Por vezes, há necessidade de se analisar resultados referentes a um conjunto de dados presente numa planilha. Para essa situação, o exemplo a seguir ilustra o carregamento de dois vetores de dados a partir de um arquivo *CSV* (*comma separated value*), formato comumente utilizado em exportação/importação em planilhas eletrônicas, e seu gráfico resultante.  
+
+[![](Eq/csv.png)](Eq/jsp_csv.html){target="_blank"}
+
+**Instruções:**
+
+- 1 Clique em *add plot* e selecione um arquivo CSV no botão *browse* superior que é apresentado. Nota: variável *X* na 1a. coluna do arquivo, e variável *Y* na 2a. coluna;
+- 2. Clique em *add plot* novamente para a visualização do gráfico resultante.
+
+```{r, eval=FALSE}
+1. Experimente outros arquivos CSV;
+2. Varie os aspectos do gráfico, como tipo, cor, tamanho do marcador, etc.
+```
+
+
+
 
 
 ## Ajuste linear de dados
