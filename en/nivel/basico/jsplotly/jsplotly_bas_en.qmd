@@ -559,3 +559,40 @@ c = 0.45 + 0.1428i
 ```
 
 
+## Game
+
+| Since *JSPlotly* involves a programming language, *JavaScript*, it is plausible that it can offer a set of tangible operations to it, regardless of the construction of graphics (as in diagrams and flowcharts above). 
+
+| In parallel with the richness that accompanies *gamification* as an active methodology, *creating a game* can stimulate learners to another level, since strategy is often already part of their daily lives. Playing is one thing... creating a game can have a more prominent and recursive impact on computational thinking and logic, as well as on learning the programming language itself!
+
+### Context - Memory Game (EF06MA19, EF06MA16, EF07MA26, EF09MA19, EM13MAT401, EM13MAT102, EM13MAT403) {.unnumbered}
+
+| The clickable image below leads to a classic *Numerical Memory Game*. The goal is to match a pair of values after memorizing a numerical table. To play, follow the instructions below:
+\
+
+**Instructions for the Numerical Memory Game:**
+
+- 1. In the upper field there are two Boolean constants true/false, one to play (*play*) and another to check the answer (*check*), as well as a *seed* that sets a random numerical table;
+- 2. Start the game (*play/false*, *check/false*);
+- 3. Click on the *add plot* button and a grid of number pairs will be displayed for memorization;
+- 4. Switch to *play/true*, click on *clean plot*, and then on *add plot*. The grid will now be displayed with only one value (the other cells will show *“?”*);
+- 6. Select *verify/true*, click on *clean plot*, and then on *add plot*. A field will appear for you to enter the coordinates where you believe the other number pair is located (e.g., A2);
+- 7. Click on *OK*, and a pair consisting of the initial value and the chosen value will be displayed for verification.
+
+
+| To restart the game, click *clean plot* and select *false* for the Boolean options.
+
+| Have fun!
+\
+
+
+[![](Eq/game.png)](Eq/jsp_game.html){target=“_blank”}
+
+
+
+
+```{r, eval= FALSE}
+1. To play again and change the values in the table, simply modify the *seed* constant to any number;
+2. To vary the difficulty levels of the game, simply change the number of rows and columns in the respective constants in the code.
+```
+

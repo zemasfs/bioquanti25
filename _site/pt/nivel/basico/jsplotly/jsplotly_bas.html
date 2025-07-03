@@ -380,6 +380,7 @@ window.Quarto = {
   <li><a href="#artes" id="toc-artes" class="nav-link" data-scroll-target="#artes"><span class="header-section-number">11</span> Artes</a></li>
   <li><a href="#animação" id="toc-animação" class="nav-link" data-scroll-target="#animação"><span class="header-section-number">12</span> Animação</a></li>
   <li><a href="#steam" id="toc-steam" class="nav-link" data-scroll-target="#steam"><span class="header-section-number">13</span> STEAM</a></li>
+  <li><a href="#jogos" id="toc-jogos" class="nav-link" data-scroll-target="#jogos"><span class="header-section-number">14</span> Jogos</a></li>
   </ul>
 </nav>
     </div>
@@ -855,6 +856,47 @@ z_{n+1}=z_{n}^{2}+c
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Altere alguma função trigonométrica (linhaX ou linhaY, seno para tangente, por exemplo), e sobreponha ao plot;</span>
 <span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Sobreponha figuras geométricas com paleta de cores distintas.</span>
 <span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="fl">4.</span> Crie figuras simétricas sobrepondo uma curva com parâmetro positivo a uma com mesmo parâmetro negativo.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="jogos" class="level2" data-number="14">
+<h2 data-number="14" class="anchored" data-anchor-id="jogos"><span class="header-section-number">14</span> Jogos</h2>
+<div class="line-block">&nbsp;&nbsp;Em função do <em>JSPlotly</em> envolver uma linguagem de programação, <em>JavaScript</em>, é plausível que consiga oferecer um conjunto de operações tangíveis a essa, independentemente da construção de gráficos (como em diagramas e fluxogramas acima).</div>
+<div class="line-block">&nbsp;&nbsp;Em paralelo à riqueza que acompanha a <em>gameficação</em> como metodologia ativa, a <em>criação de um jogo</em> pode estimular o aprendiz a um outro nível, posto que a estratégia por vezes já faz parte de seu cotidiano. Jogar é uma coisa…criar um jogo pode ter impacto mais proeminente e recursivo ao pensamento e lógica computacionais, bem como ao aprendizado da própria linguagem de programação !</div>
+<section id="contexto---jogo-da-memória-ef06ma19-ef06ma16-ef07ma26-ef09ma19-em13mat401-em13mat102-em13mat403" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="contexto---jogo-da-memória-ef06ma19-ef06ma16-ef07ma26-ef09ma19-em13mat401-em13mat102-em13mat403">Contexto - Jogo da Memória (EF06MA19, EF06MA16, EF07MA26, EF09MA19, EM13MAT401, EM13MAT102, EM13MAT403)</h3>
+<div class="line-block">&nbsp;&nbsp;A imagem clicável abaixo direciona para um clássico <em>Jogo de Memória Numérica</em>. O objetivo é acertar um par de valores após memorização de um quadro numérico. Para jogar, siga as instruções que seguem:</div>
+<p><br>
+</p>
+<p><strong>Instruções para o Jogo de Memória Numérica:</strong></p>
+<ul>
+<li><ol type="1">
+<li>No campo superior existem duas constantes booleanas true/false, uma para jogar (<em>jogue</em>) e outra para verificar o acerto (<em>verificar</em>), bem como uma <em>semente</em> que fixa um determinado quadro numérico aleatório;</li>
+</ol></li>
+<li><ol start="2" type="1">
+<li>Inicie o jogo (<em>jogue/false</em>, <em>verificar/false</em>);</li>
+</ol></li>
+<li><ol start="3" type="1">
+<li>Clique no botão <em>add plot</em> e será exibido um quadro de pares numéricos para memorização;</li>
+</ol></li>
+<li><ol start="4" type="1">
+<li>Troque para <em>jogue/true</em>, clique em <em>clean plot</em>, e depois em <em>add plot</em>. O quadro será exibido agora apenas com um valor (demais células mostratrão <em>“?”</em>);</li>
+</ol></li>
+<li><ol start="6" type="1">
+<li>Escolha <em>verificar/true</em>, clique em <em>clean plot</em>, e depois em <em>add plot</em>. Será apresentado um campo para se digitar as coordenadas em que se acredita estar o outro par numérico (Ex: A2);</li>
+</ol></li>
+<li><ol start="7" type="1">
+<li>Clique em <em>OK</em>, e será apresentado um par formado pelo valor inicial e o valor escolhido, para verificação do acerto.</li>
+</ol></li>
+</ul>
+<div class="line-block">&nbsp;&nbsp;Para reiniciar o jogo, <em>clean plot</em>, e opções booleanas <em>false</em>.</div>
+<div class="line-block">&nbsp;&nbsp;Divirta-se !!</div>
+<p><br>
+</p>
+<p><a href="Eq/jsp_game.html" target="_blank"><img src="Eq/game.png" class="img-fluid"></a></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Para jogar novamente alterando os valores do quadro, basta modificar a constante <span class="sc">*</span>semente<span class="sc">*</span> para um número qualquer;</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Para variar entre níveis de dificuldade do jogo, basta alterar o número de linhas e de colunas nas constantes respectivas do código. </span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 

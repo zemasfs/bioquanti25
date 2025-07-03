@@ -547,6 +547,7 @@ $$
 <!-- ``` -->
 
 
+
 ## STEAM
 
 ### Contexto - Vaso em torno de olaria (EM13MAT101, EM13MAT403, EM13CNT204, EM13AR01, EM13AR02) 
@@ -573,4 +574,43 @@ $$
 4. Crie figuras simétricas sobrepondo uma curva com parâmetro positivo a uma com mesmo parâmetro negativo.
 ```
 
+
+
+
+## Jogos
+
+|   Em função do *JSPlotly* envolver uma linguagem de programação, *JavaScript*, é plausível que consiga oferecer um conjunto de operações tangíveis a essa, independentemente da construção de gráficos (como em diagramas e fluxogramas acima).  
+
+|   Em paralelo à riqueza que acompanha a *gameficação* como metodologia ativa, a *criação de um jogo* pode estimular o aprendiz a um outro nível, posto que a estratégia por vezes já faz parte de seu cotidiano. Jogar é uma coisa...criar um jogo pode ter impacto mais proeminente e recursivo ao pensamento e lógica computacionais, bem como ao aprendizado da própria linguagem de programação !
+
+### Contexto - Jogo da Memória  (EF06MA19, EF06MA16, EF07MA26, EF09MA19, EM13MAT401, EM13MAT102, EM13MAT403) {.unnumbered}
+
+|   A imagem clicável abaixo direciona para um clássico *Jogo de Memória Numérica*. O objetivo é acertar um par de valores após memorização de um quadro numérico. Para jogar, siga as instruções que seguem:
+\
+
+**Instruções para o Jogo de Memória Numérica:**
+
+- 1. No campo superior existem duas constantes booleanas true/false, uma para jogar (*jogue*) e outra para verificar o acerto (*verificar*), bem como uma *semente* que fixa um determinado quadro numérico aleatório;
+- 2. Inicie o jogo (*jogue/false*, *verificar/false*);
+- 3. Clique no botão *add plot* e será exibido um quadro de pares numéricos para memorização;
+- 4. Troque para *jogue/true*, clique em *clean plot*, e depois em *add plot*. O quadro será exibido agora apenas com um valor (demais células mostratrão *"?"*);
+- 6. Escolha *verificar/true*, clique em *clean plot*, e depois em *add plot*. Será apresentado um campo para se digitar as coordenadas em que se acredita estar o outro par numérico (Ex: A2);
+- 7. Clique em *OK*, e será apresentado um par formado pelo valor inicial e o valor escolhido, para verificação do acerto.
+
+
+|   Para reiniciar o jogo, *clean plot*, e opções booleanas *false*.
+
+|   Divirta-se !!
+\
+
+
+[![](Eq/game.png)](Eq/jsp_game.html){target="_blank"}
+
+
+
+
+```{r, eval= FALSE}
+1. Para jogar novamente alterando os valores do quadro, basta modificar a constante *semente* para um número qualquer;
+2. Para variar entre níveis de dificuldade do jogo, basta alterar o número de linhas e de colunas nas constantes respectivas do código. 
+```
 

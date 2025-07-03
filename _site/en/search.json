@@ -4409,5 +4409,29 @@
       "JSPlotly & GSPlotly - Interactive Graphics & AI",
       "Simulations at School"
     ]
+  },
+  {
+    "objectID": "nivel/basico/jsplotly/jsplotly_bas_en.html#games",
+    "href": "nivel/basico/jsplotly/jsplotly_bas_en.html#games",
+    "title": "JSPlotly and GSPlotly at School",
+    "section": "14 Games",
+    "text": "14 Games\nSince JSPlotly involves a programming language, JavaScript, it is plausible that it can offer a set of tangible operations to it, regardless of the construction of graphics (as in diagrams and flowcharts above).\nIn parallel with the richness that accompanies gamification as an active methodology, creating a game can stimulate learners to another level, since strategy is often already part of their daily lives. Playing is one thing… creating a game can have a more prominent and recursive impact on computational thinking and logic, as well as on learning the programming language itself!\n\nContext - Memory Game (EF06MA19, EF06MA16, EF07MA26, EF09MA19, EM13MAT401, EM13MAT102, EM13MAT403)\nThe clickable image below leads to a classic Numerical Memory Game. The goal is to match a pair of values after memorizing a numerical table. To play, follow the instructions below:\n\n\nInstructions for the Numerical Memory Game:\n\n\nIn the upper field there are two Boolean constants true/false, one to play (play) and another to check the answer (check), as well as a seed that sets a random numerical table;\n\n\nStart the game (play/false, check/false);\n\n\nClick on the add plot button and a grid of number pairs will be displayed for memorization;\n\n\nSwitch to play/true, click on clean plot, and then on add plot. The grid will now be displayed with only one value (the other cells will show “?”);\n\n\nSelect verify/true, click on clean plot, and then on add plot. A field will appear for you to enter the coordinates where you believe the other number pair is located (e.g., A2);\n\n\nClick on OK, and a pair consisting of the initial value and the chosen value will be displayed for verification.\n\n\nTo restart the game, click clean plot and select false for the Boolean options.\nHave fun!\n\n\n\n\n1. To play again and change the values in the table, simply modify the *seed* constant to any number;\n2. To vary the difficulty levels of the game, simply change the number of rows and columns in the respective constants in the code.",
+    "crumbs": [
+      "About",
+      "JSPlotly & GSPlotly - Interactive Graphics & AI",
+      "Simulations at School"
+    ]
+  },
+  {
+    "objectID": "nivel/basico/jsplotly/jsplotly_bas_en.html#game",
+    "href": "nivel/basico/jsplotly/jsplotly_bas_en.html#game",
+    "title": "JSPlotly and GSPlotly at School",
+    "section": "14 Game",
+    "text": "14 Game\nSince JSPlotly involves a programming language, JavaScript, it is plausible that it can offer a set of tangible operations to it, regardless of the construction of graphics (as in diagrams and flowcharts above).\nIn parallel with the richness that accompanies gamification as an active methodology, creating a game can stimulate learners to another level, since strategy is often already part of their daily lives. Playing is one thing… creating a game can have a more prominent and recursive impact on computational thinking and logic, as well as on learning the programming language itself!\n\nContext - Memory Game (EF06MA19, EF06MA16, EF07MA26, EF09MA19, EM13MAT401, EM13MAT102, EM13MAT403)\nThe clickable image below leads to a classic Numerical Memory Game. The goal is to match a pair of values after memorizing a numerical table. To play, follow the instructions below:\n\n\nInstructions for the Numerical Memory Game:\n\n\nIn the upper field there are two Boolean constants true/false, one to play (play) and another to check the answer (check), as well as a seed that sets a random numerical table;\n\n\nStart the game (play/false, check/false);\n\n\nClick on the add plot button and a grid of number pairs will be displayed for memorization;\n\n\nSwitch to play/true, click on clean plot, and then on add plot. The grid will now be displayed with only one value (the other cells will show “?”);\n\n\nSelect verify/true, click on clean plot, and then on add plot. A field will appear for you to enter the coordinates where you believe the other number pair is located (e.g., A2);\n\n\nClick on OK, and a pair consisting of the initial value and the chosen value will be displayed for verification.\n\n\nTo restart the game, click clean plot and select false for the Boolean options.\nHave fun!\n\n\n\n\n1. To play again and change the values in the table, simply modify the *seed* constant to any number;\n2. To vary the difficulty levels of the game, simply change the number of rows and columns in the respective constants in the code.",
+    "crumbs": [
+      "About",
+      "JSPlotly & GSPlotly - Interactive Graphics & AI",
+      "Simulations at School"
+    ]
   }
 ]
