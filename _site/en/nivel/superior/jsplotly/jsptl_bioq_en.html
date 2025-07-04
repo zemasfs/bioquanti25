@@ -380,13 +380,18 @@ window.Quarto = {
   <li><a href="#equilibrium-of-atp-production-from-reactants-temperature-and-ph" id="toc-equilibrium-of-atp-production-from-reactants-temperature-and-ph" class="nav-link" data-scroll-target="#equilibrium-of-atp-production-from-reactants-temperature-and-ph"><span class="header-section-number">9</span> Equilibrium of ATP production from reactants, temperature, and pH</a></li>
   <li><a href="#variation-of-gibbs-energy-with-temperature" id="toc-variation-of-gibbs-energy-with-temperature" class="nav-link" data-scroll-target="#variation-of-gibbs-energy-with-temperature"><span class="header-section-number">10</span> Variation of Gibbs energy with temperature</a></li>
   <li><a href="#electrochemical-impedance-spectroscopy-eis" id="toc-electrochemical-impedance-spectroscopy-eis" class="nav-link" data-scroll-target="#electrochemical-impedance-spectroscopy-eis"><span class="header-section-number">11</span> Electrochemical impedance spectroscopy (EIS)</a></li>
-  <li><a href="#diagrams-and-flowcharts" id="toc-diagrams-and-flowcharts" class="nav-link" data-scroll-target="#diagrams-and-flowcharts"><span class="header-section-number">12</span> Diagrams and flowcharts</a></li>
+  <li><a href="#cyclic-voltammetry" id="toc-cyclic-voltammetry" class="nav-link" data-scroll-target="#cyclic-voltammetry"><span class="header-section-number">12</span> Cyclic voltammetry</a></li>
+  <li><a href="#diagrams-and-flowcharts" id="toc-diagrams-and-flowcharts" class="nav-link" data-scroll-target="#diagrams-and-flowcharts"><span class="header-section-number">13</span> Diagrams and flowcharts</a></li>
   <li><a href="#data-analysis" id="toc-data-analysis" class="nav-link" data-scroll-target="#data-analysis"><strong>Data analysis</strong></a></li>
-  <li><a href="#user-data-insertion" id="toc-user-data-insertion" class="nav-link" data-scroll-target="#user-data-insertion"><span class="header-section-number">13</span> User data insertion</a></li>
-  <li><a href="#uploading-files-for-analysis" id="toc-uploading-files-for-analysis" class="nav-link" data-scroll-target="#uploading-files-for-analysis"><span class="header-section-number">14</span> Uploading files for analysis</a></li>
-  <li><a href="#linear-data-adjustment" id="toc-linear-data-adjustment" class="nav-link" data-scroll-target="#linear-data-adjustment"><span class="header-section-number">15</span> Linear data adjustment</a></li>
-  <li><a href="#anova-and-tukey-hsd-test" id="toc-anova-and-tukey-hsd-test" class="nav-link" data-scroll-target="#anova-and-tukey-hsd-test"><span class="header-section-number">16</span> ANOVA and Tukey-HSD test</a></li>
-  <li><a href="#nonlinear-data-fit" id="toc-nonlinear-data-fit" class="nav-link" data-scroll-target="#nonlinear-data-fit"><span class="header-section-number">17</span> Nonlinear data fit</a></li>
+  <li><a href="#user-data-insertion" id="toc-user-data-insertion" class="nav-link" data-scroll-target="#user-data-insertion"><span class="header-section-number">14</span> User data insertion</a></li>
+  <li><a href="#uploading-files-for-analysis" id="toc-uploading-files-for-analysis" class="nav-link" data-scroll-target="#uploading-files-for-analysis"><span class="header-section-number">15</span> Uploading files for analysis</a></li>
+  <li><a href="#linear-data-adjustment" id="toc-linear-data-adjustment" class="nav-link" data-scroll-target="#linear-data-adjustment"><span class="header-section-number">16</span> Linear data adjustment</a></li>
+  <li><a href="#polynomial-regression" id="toc-polynomial-regression" class="nav-link" data-scroll-target="#polynomial-regression"><span class="header-section-number">17</span> Polynomial regression</a></li>
+  <li><a href="#multilinear-regression" id="toc-multilinear-regression" class="nav-link" data-scroll-target="#multilinear-regression"><span class="header-section-number">18</span> Multilinear regression</a></li>
+  <li><a href="#response-surface-methodology-rsm" id="toc-response-surface-methodology-rsm" class="nav-link" data-scroll-target="#response-surface-methodology-rsm"><span class="header-section-number">19</span> Response Surface Methodology (RSM)</a></li>
+  <li><a href="#data-smoothing---spline-and-savitzky-golay-filter" id="toc-data-smoothing---spline-and-savitzky-golay-filter" class="nav-link" data-scroll-target="#data-smoothing---spline-and-savitzky-golay-filter"><span class="header-section-number">20</span> Data smoothing - Spline and Savitzky-Golay filter</a></li>
+  <li><a href="#anova-and-tukey-hsd-test" id="toc-anova-and-tukey-hsd-test" class="nav-link" data-scroll-target="#anova-and-tukey-hsd-test"><span class="header-section-number">21</span> ANOVA and Tukey-HSD test</a></li>
+  <li><a href="#nonlinear-data-fit" id="toc-nonlinear-data-fit" class="nav-link" data-scroll-target="#nonlinear-data-fit"><span class="header-section-number">22</span> Nonlinear data fit</a></li>
   </ul>
 </nav>
     </div>
@@ -757,7 +762,7 @@ P = \frac{RT}{V - b} - \frac{a}{V^2}
 <li>T<span class="math inline">\(_{0}\)</span> = reference temperature, usually 298 K.</li>
 <li>R = 8.314 J/mol/K (universal gas constant);</li>
 </ul>
-<p><a href="Eq/jsp_gibbs.html" target="“_blank”"><img src="Eq/gibbs.png" class="img-fluid"></a></p>
+<p><a href="Eq/jsp_gibbs.html" target="_blank"><img src="Eq/gibbs.png" class="img-fluid"></a></p>
 </section>
 <section id="suggestion-8" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="suggestion-8">Suggestion:</h3>
@@ -792,7 +797,7 @@ Z_{\text{total}}(\omega) = R_s + \left[ \left( \frac{1}{R_p} + Q (j\omega)^n \ri
 <li><em>j</em> = Imaginary unit, j<span class="math inline">\(^{2}\)</span> = −1;</li>
 </ul>
 <div class="line-block">An electrochemical impedance model (EIS) with typical equivalent circuit components constitutes the modified Randles model: series resistor <em>Rs</em>, a resistor <em>Rp</em> in parallel with a <em>CPE</em> (Constant Phase Element), and a <em>Warburg</em> element. A common representation for EIS is the <em>Nyquist</em> plot, where the real axis represents resistance (Zre) and the imaginary axis represents negative reactance (−Zim).</div>
-<p><a href="Eq/jsp_EIS.html" target="“_blank”"><img src="Eq/EIS.png" class="img-fluid"></a></p>
+<p><a href="Eq/jsp_EIS.html" target="_blank"><img src="Eq/EIS.png" class="img-fluid"></a></p>
 </section>
 <section id="suggestion-9" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="suggestion-9">Suggestion</h3>
@@ -804,58 +809,129 @@ Z_{\text{total}}(\omega) = R_s + \left[ \left( \frac{1}{R_p} + Q (j\omega)^n \ri
 </div>
 </section>
 </section>
-<section id="diagrams-and-flowcharts" class="level2" data-number="12">
-<h2 data-number="12" class="anchored" data-anchor-id="diagrams-and-flowcharts"><span class="header-section-number">12</span> Diagrams and flowcharts</h2>
+<section id="cyclic-voltammetry" class="level2" data-number="12">
+<h2 data-number="12" class="anchored" data-anchor-id="cyclic-voltammetry"><span class="header-section-number">12</span> Cyclic voltammetry</h2>
 <section id="context-11" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="context-11">Context:</h3>
-<div class="line-block">Due to the nature of the <em>Plotly.js</em> library, it is also possible to generate code in <em>JSPlotly</em> without involving an equation, such as for representing diagrams, flowcharts, heredograms, among others. The example below illustrates a representation of the Krebs cycle.</div>
-<p><a href="Eq/jsp_krebs.html" target="“_blank”"><img src="Eq/krebs.png" class="img-fluid"></a></p>
+<div class="line-block">Cyclic voltammetry (CV) is an electroanalytical technique for characterizing interfacial (electrode-solution) redox processes. When a standard analyte in quantitative equilibrium between the oxidized and reduced forms is used, the resulting graph acquires an unusual profile, called a <em>duck shape</em>. This results from the peculiar shape obtained when a bidirectional potentiometric scan is performed on a set of electrodes by a potentiostat, resulting in cycles of oxidation and subsequent reduction (application of positive potentials followed by negative potentials). The shape, value, and distance between the resulting peaks allow the analyte to be identified and characterized, as well as the redox processes involved in the experiment.</div>
+</section>
+<section id="equation-11" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="equation-11">Equation:</h3>
+<div class="line-block">Although the formalism for cyclic voltammetry is complex and involves the solution of <em>ordinary differential equations</em> (as well as electroanalytical techniques in general), which is beyond the scope of this material, the resulting current flow can be summarized by the <em>Buttler-Volmer equation</em> below:</div>
+<p><span class="math display">\[
+j = j_0 \left[ \exp\left(\frac{\alpha n F (E - E^0)}{RT}\right) - \exp\left(\frac{-(1 - \alpha) n F (E - E^0)}{RT}\right) \right]
+\]</span> <em>Where:</em></p>
+<ul>
+<li>j = current density;</li>
+<li>j<span class="math inline">\(_{0}\)</span> = exchange current;</li>
+<li><span class="math inline">\(\alpha\)</span> = charge transfer coefficient;</li>
+<li>E = potential applied to the electrode;</li>
+<li>E<span class="math inline">\(^{0}\)</span> = standard electrode potential;</li>
+<li>n = number of electrons;</li>
+<li>F = Faraday constant (96485 C·mol⁻¹)</li>
+<li>R = universal gas constant (8.314 J·mol⁻¹·K⁻¹);</li>
+<li>T = temperature<br>
+</li>
+</ul>
+<div class="line-block">For a model of electroanalyte diffusion and accumulation at the electrode surface, the general equation for the boundary condition where the redox conversion rate is proportional to the diffusion current can be represented by <em>Fick’s 2nd Law equation </em> for mass transport:</div>
+<p><span class="math display">\[
+\frac{\partial C(x,t)} {\partial t} = D \frac{\partial^2 C(x,t)} {\partial x^2}
+\]</span></p>
+<p><em>Where:</em></p>
+<ul>
+<li>C(x,t) = concentration of the electroanalytical species (mol/cm³), as a function of position <em>x</em> and time <em>t</em>;</li>
+<li>D = diffusion coefficient of the species (cm²/s);</li>
+<li>t = time (s);</li>
+<li>x = distance from the electrode surface (cm);</li>
+<li><span class="math inline">\(\delta\)</span> = notation for partial derivative.<br>
+</li>
+</ul>
+<div class="line-block">The chemical equilibrium of the redox reaction is given by the ratio between the concentrations of the oxidized and reduced forms at the electrode/solution interface when the system is in equilibrium (or near equilibrium), according to the <em>Nernst equation</em>:</div>
+<p><span class="math display">\[
+E = E^0 + \frac{RT}{nF} \ln \left( \frac{[\text{Ox}]}{[\text{Red}]} \right)
+\]</span></p>
+<div class="line-block">The resulting current is obtained by <em>Faraday’s law</em>:</div>
+<p><span class="math display">\[
+i(t) = n F A D \left. \frac{\partial C(x,t)} {\partial x} \right|_{x=0}
+\]</span> <em>Where:</em></p>
+<ul>
+<li>A = electrode surface area (cm²);</li>
+<li>i(t) = current at time <em>t</em> (A, Amperes).</li>
+</ul>
+</section>
+<section id="cyclic-voltammetry-simulator" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="cyclic-voltammetry-simulator">Cyclic Voltammetry Simulator</h3>
+<div class="line-block">To illustrate the potential of the <em>JSPlotly/GSPlotly</em> platform for developing complex <em>virtual experiments</em>, here is a <em>cyclic voltammetry simulator</em> resulting from the above procedures (as well as a few hours of prompt engineering!!).</div>
+<div class="line-block">The example illustrates typical behavior in cyclic voltammetry (and the curious <em>duck shape</em>), and includes a model of diffusion and accumulation of electroactive species near the electrode surface. The code uses a <em>numerical solution</em> to obtain the current density over time, considering the effects of cyclic scanning of the applied potential, mass transport, and reaction kinetics.</div>
+<div class="line-block">In short, it numerically solves Fick’s equation with dynamic boundary conditions, applies the Nernst equation at the boundary (electrode surface) to determine the conversion between species, uses the finite difference method or explicit scheme to advance in time, and obtains the current by applying Faraday’s Law, through the derivative of the flux at the interface.</div>
+<div class="line-block">Find it complex? How about this: the code combines Fick (transport) and Nernst (local redox equilibrium) to accurately model the shape of the voltamogram, obtaining a physical simulation with significant realism for cyclic voltammetry.</div>
+<p><br>
+</p>
+<p><a href="Eq/jsp_cv.html" target="_blank"><img src="Eq/cv.png" class="img-fluid"></a></p>
 </section>
 <section id="suggestion-10" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="suggestion-10">Suggestion:</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Try repositioning enzymes and metabolites by clicking and dragging the terms;</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Try replacing the names <span class="cf">in</span> the code to produce another metabolic cycle, such as the urea cycle.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Observe the number of values at the beginning of the code, which are tangible to <span class="st">"parametric manipulation."</span> Try to understand what they represent, and consciously vary their values, aiming to add value to the learning of the simulation. This is the essence of <span class="st">"parametric manipulation"</span> that involves <span class="st">"reproducible teaching"</span><span class="sc">!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p><br>
+</p>
 </section>
-<section id="context-flowchart" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="context-flowchart">Context: Flowchart</h3>
-<p><a href="Eq/jsp_fluxograma.html" target="“_blank”"><img src="Eq/fluxograma.png" class="img-fluid"></a></p>
+</section>
+<section id="diagrams-and-flowcharts" class="level2" data-number="13">
+<h2 data-number="13" class="anchored" data-anchor-id="diagrams-and-flowcharts"><span class="header-section-number">13</span> Diagrams and flowcharts</h2>
+<section id="context-12" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="context-12">Context:</h3>
+<div class="line-block">Due to the nature of the <em>Plotly.js</em> library, it is also possible to generate code in <em>JSPlotly</em> without involving an equation, such as for representing diagrams, flowcharts, heredograms, among others. The example below illustrates a representation of the Krebs cycle.</div>
+<p><a href="Eq/jsp_krebs.html" target="_blank"><img src="Eq/krebs.png" class="img-fluid"></a></p>
 </section>
 <section id="suggestion-11" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="suggestion-11">Suggestion:</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Reposition terms and connectors by dragging with the mouse;</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> For a different flowchart <span class="cf">in</span> the content, modify the terms <span class="cf">in</span> the code;</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> For a different flowchart format, change the font and connector characteristics <span class="cf">in</span> the “annotations” constant.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Try repositioning enzymes and metabolites by clicking and dragging the terms;</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Try replacing the names <span class="cf">in</span> the code to produce another metabolic cycle, such as the urea cycle.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</section>
+<section id="context-flowchart" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="context-flowchart">Context: Flowchart</h3>
+<p><a href="Eq/jsp_fluxograma.html" target="_blank"><img src="Eq/fluxograma.png" class="img-fluid"></a></p>
+</section>
+<section id="suggestion-12" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="suggestion-12">Suggestion:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Reposition terms and connectors by dragging with the mouse;</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> For a different flowchart <span class="cf">in</span> the content, modify the terms <span class="cf">in</span> the code;</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> For a different flowchart format, change the font and connector characteristics <span class="cf">in</span> the <span class="st">"annotations"</span> constant.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br>
+</p>
 </section>
 </section>
 <section id="data-analysis" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="data-analysis"><strong>Data analysis</strong></h2>
 </section>
-<section id="user-data-insertion" class="level2" data-number="13">
-<h2 data-number="13" class="anchored" data-anchor-id="user-data-insertion"><span class="header-section-number">13</span> User data insertion</h2>
+<section id="user-data-insertion" class="level2" data-number="14">
+<h2 data-number="14" class="anchored" data-anchor-id="user-data-insertion"><span class="header-section-number">14</span> User data insertion</h2>
 <div class="line-block">Sometimes it is interesting to work with discrete data itself, seeking a trend, mathematical or simply visual, for the relationship between variables. Here is an example of an interactive graph with user data.</div>
 <p><br>
 </p>
-<p><a href="Eq/jsp_dados.html" target="“_blank”"><img src="Eq/dados.png" class="img-fluid"></a></p>
-<section id="suggestion-12" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="suggestion-12">Suggestion:</h3>
+<p><a href="Eq/jsp_dados.html" target="_blank"><img src="Eq/dados.png" class="img-fluid"></a></p>
+<section id="suggestion-13" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="suggestion-13">Suggestion:</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Try changing the data entered, overlaying the graph or not;</span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Try changing the data representation <span class="cf">in</span> “mode” and “type” to points, lines, points<span class="sc">+</span>lines, bars.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Try changing the data entered, overlaying the graph or not;</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Try changing the data representation <span class="cf">in</span> <span class="st">"mode"</span> and <span class="st">"type"</span> to points, lines, points<span class="sc">+</span>lines, bars.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br>
 </p>
 </section>
 </section>
-<section id="uploading-files-for-analysis" class="level2" data-number="14">
-<h2 data-number="14" class="anchored" data-anchor-id="uploading-files-for-analysis"><span class="header-section-number">14</span> Uploading files for analysis</h2>
+<section id="uploading-files-for-analysis" class="level2" data-number="15">
+<h2 data-number="15" class="anchored" data-anchor-id="uploading-files-for-analysis"><span class="header-section-number">15</span> Uploading files for analysis</h2>
 <section id="context---csv-file" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="context---csv-file">Context - CSV file</h3>
 <div class="line-block">Sometimes, it is necessary to analyze results related to a set of data in a spreadsheet. For this situation, the following example illustrates the loading of two data vectors from a <em>CSV</em> (<em>comma separated value</em>) file, a format commonly used for exporting/importing in spreadsheets, and the resulting graph.</div>
-<p><a href="Eq/jsp_csv.html" target="“_blank”"><img src="Eq/csv.png" class="img-fluid"></a></p>
+<p><a href="Eq/jsp_csv.html" target="_blank"><img src="Eq/csv.png" class="img-fluid"></a></p>
 <p><strong>Instructions:</strong></p>
 <ul>
 <li>1 Click on <em>add plot</em> and select a CSV file using the <em>browse</em> button at the top. Note: variable <em>X</em> in the first column of the file, and variable <em>Y</em> in the second column;</li>
@@ -864,19 +940,19 @@ Z_{\text{total}}(\omega) = R_s + \left[ \left( \frac{1}{R_p} + Q (j\omega)^n \ri
 </ol></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Try other CSV files;</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Vary the aspects of the graph, such as type, color, marker size, etc.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Try other CSV files;</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Vary the aspects of the graph, such as type, color, marker size, etc.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>
-<section id="linear-data-adjustment" class="level2" data-number="15">
-<h2 data-number="15" class="anchored" data-anchor-id="linear-data-adjustment"><span class="header-section-number">15</span> Linear data adjustment</h2>
-<section id="context-12" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="context-12">Context:</h3>
+<section id="linear-data-adjustment" class="level2" data-number="16">
+<h2 data-number="16" class="anchored" data-anchor-id="linear-data-adjustment"><span class="header-section-number">16</span> Linear data adjustment</h2>
+<section id="context-13" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="context-13">Context:</h3>
 <div class="line-block">In various experimental research situations, it is necessary to correlate the data of a dependent variable with a predictor variable using the following equation.</div>
 </section>
-<section id="equation-11" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="equation-11">Equation:</h3>
+<section id="equation-12" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="equation-12">Equation:</h3>
 <p><span class="math display">\[
 y = \alpha x + \beta + \varepsilon
 \]</span> <em>Where:</em></p>
@@ -903,24 +979,210 @@ y = \alpha x + \beta + \varepsilon
 <div class="line-block">A representation for linear adjustment with arbitrary data is provided below:</div>
 <p><br>
 </p>
-<p><a href="Eq/jsp_ajLin.html" target="“_blank”"><img src="Eq/ajLin.png" class="img-fluid"></a></p>
+<p><a href="Eq/jsp_ajLin.html" target="_blank"><img src="Eq/ajLin.png" class="img-fluid"></a></p>
 </section>
-<section id="suggestion-13" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="suggestion-13">Suggestion:</h3>
+<section id="suggestion-14" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="suggestion-14">Suggestion:</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Show the points that overlap or do not overlap the fit line. For overlap, choose “showPoints <span class="ot">=</span> true” and “showLine <span class="ot">=</span> true”;</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Change the data and perform a new fit to obtain other parameters of the line.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Show the points that overlap or do not overlap the fit line. For overlap, choose <span class="st">"showPoints = true"</span> and <span class="st">"showLine = true"</span>;</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Change the data and perform a new fit to obtain other parameters of the line.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>
-<section id="anova-and-tukey-hsd-test" class="level2" data-number="16">
-<h2 data-number="16" class="anchored" data-anchor-id="anova-and-tukey-hsd-test"><span class="header-section-number">16</span> ANOVA and Tukey-HSD test</h2>
-<section id="context-13" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="context-13">Context:</h3>
+<section id="polynomial-regression" class="level2" data-number="17">
+<h2 data-number="17" class="anchored" data-anchor-id="polynomial-regression"><span class="header-section-number">17</span> Polynomial regression</h2>
+<section id="context-14" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="context-14">Context:</h3>
+<div class="line-block">In some situations, linear fitting does not provide an adequate trend for modeling experimental data, which leads to the use of other models, such as <em>exponential, hyperbolic, logarithmic, power, and polynomial</em>. Polynomial trends are common in natural phenomena, with mathematical treatment of data occurring by different methods, such as simple sums, least squares, or linear algebra. Here is an example of polynomial regression with adjustable degrees in the code.</div>
+</section>
+<section id="equation-13" class="level3" data-number="17.1">
+<h3 data-number="17.1" class="anchored" data-anchor-id="equation-13"><span class="header-section-number">17.1</span> Equation</h3>
+<div class="line-block">Error minimization for the polynomial curve is obtained by generalized <em>least squares regression</em> and application of the <em>Vandermonde matrix</em>, as follows.</div>
+<div class="line-block">Let the vectors x=[x<span class="math inline">\(_{1}\)</span>,x<span class="math inline">\(_{2}\)</span>,…,x<span class="math inline">\(_{n}\)</span>] and y=[y<span class="math inline">\(_{1}\)</span>,y<span class="math inline">\(_{2}\)</span>,…,y<span class="math inline">\({_n}\)</span>] be the desired polynomial:</div>
+<p><span class="math display">\[
+y = \beta_0 + \beta_1 x + \beta_2 x^2 + \cdots + \beta_g x^g
+\]</span> | Thus, the Vandermonde matrix is constructed as:</p>
+<p><span class="math display">\[
+X =
+\begin{bmatrix}
+1 &amp; x_1 &amp; x_1^2 &amp; \cdots &amp; x_1^g \\\\
+1 &amp; x_2 &amp; x_2^2 &amp; \cdots &amp; x_2^g \\\\
+\vdots &amp; \vdots &amp; \vdots &amp; &amp; \vdots \\\\
+1 &amp; x_n &amp; x_n^2 &amp; \cdots &amp; x_n^g
+\end{bmatrix}
+\]</span></p>
+<div class="line-block">To find the <em>coefficients <span class="math inline">\(\beta\)</span></em> that minimize the quadratic error, solve the linear system in sequence:</div>
+<p><span class="math display">\[
+\boldsymbol{\beta} = (X^T X)^{-1} X^T \mathbf{y}
+\]</span><br>
+</p>
+<p><em>Where:</em></p>
+<ul>
+<li><em>T</em> represents the transposed matrix<br>
+</li>
+</ul>
+<p><a href="Eq/jsp_polinomial.html" target="“_blank”"><img src="Eq/polinomial.png" class="img-fluid"></a></p>
+</section>
+<section id="suggestion-15" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="suggestion-15">Suggestion:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Try degree <span class="dv">1</span> <span class="cf">for</span> the polynomial, i.e., a reduction of the treatment to linear adjustment;</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Change the formatting of labels, colors, sizes, etc., <span class="cf">in</span> the code;</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Overlap some adjustments, edit, and reposition the caption;</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="fl">4.</span> Test the code with another data vector.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="multilinear-regression" class="level2" data-number="18">
+<h2 data-number="18" class="anchored" data-anchor-id="multilinear-regression"><span class="header-section-number">18</span> Multilinear regression</h2>
+<section id="context-15" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="context-15">Context:</h3>
+<div class="line-block">Multiple linear adjustment is very useful when you want to predict behavior based on two or more predictor variables. The procedure involves a <em>design matrix</em> (or <em>projection operator</em>) similar to the <em>Vandermonde matrix</em>.</div>
+</section>
+<section id="equation-14" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="equation-14">Equation:</h3>
+<div class="line-block">The analytical solution for the design matrix involves solving a matrix of coefficients <span class="math inline">\(\beta\)</span> for a set of predictor values of the response vector <em>y</em>, as follows:</div>
+<p><span class="math display">\[
+y_i = \beta_0 + \beta_1 x_{1i} + \beta_2 x_{2i} + \cdots + \beta_p x_{pi} + \varepsilon_i
+\]</span></p>
+<p><span class="math display">\[
+\mathbf{y} = \mathbf{X} \boldsymbol{\beta} + \boldsymbol{\varepsilon}
+\]</span></p>
+<p><span class="math display">\[
+\hat{\boldsymbol{\beta}} = (\mathbf{X}^\top \mathbf{X})^{-1} \mathbf{X}^\top \mathbf{y}
+\]</span></p>
+<p><em>Where:</em> - <span class="math inline">\(\beta\)</span> = coefficient vector; - <em>y</em> = response vector; - <em>X</em> = design matrix; - <span class="math inline">\(\epsilon\)</span> = random noise</p>
+<div class="line-block">Thus, predicted values and associated error are obtained by:</div>
+<p><span class="math display">\[
+\hat{\mathbf{y}} = \mathbf{X} \hat{\boldsymbol{\beta}}
+\]</span> <span class="math display">\[
+\mathbf{e} = \mathbf{y} - \hat{\mathbf{y}}
+\]</span></p>
+<div class="line-block">Obviously, the graphical representation for a multilinear fit is limited to two independent variables, <em>x1</em> and <em>x2</em>, in addition to the response variable (<em>3D graph</em>), although the matrix calculation allows for several predictor variables (hyperdimensional space). Tangential to the first situation, here is an example.</div>
+<p><strong>Instructions</strong> - 1. Note that there is a Boolean flag (<em>showFit</em>) at the beginning of the code: <em>false</em> for data only, and <em>true</em> for the fit. - 2. You can click on <em>add plot</em> to view the data with the flag set to <em>false</em>, followed by another <em>add plot</em> with the flag set to <em>true</em>.<br>
+</p>
+<p><a href="Eq/jsp_multilinear.html" target="“_blank”"><img src="Eq/multilinear.png" class="img-fluid"></a><br>
+</p>
+<div class="line-block">Rotate the graph and observe the surface around the points. Unlike a linear fit, the points are distributed discontinuously in space.</div>
+</section>
+<section id="suggestion-16" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="suggestion-16">Suggestion:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> <span class="fu">QSAR</span> (“Quantitative Structure<span class="sc">-</span>Activity Relationship”) results use multilinear adjustment analysis to identify the strength of predictor variables. Try a dataset with two <span class="fu">variables</span> (e.g., concentration, pH, compound A, B, etc.) on the internet.</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> For more predictor variables, see the code below<span class="sc">!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="context-multiple-linear-adjustment-with-3-or-more-predictor-variables" class="level3" data-number="18.1">
+<h3 data-number="18.1" class="anchored" data-anchor-id="context-multiple-linear-adjustment-with-3-or-more-predictor-variables"><span class="header-section-number">18.1</span> Context: Multiple linear adjustment with 3 or more predictor variables</h3>
+<div class="line-block">Although <em>JSPlotly</em> was designed for producing interactive graphs and maps using the <em>Plotly.js</em> library on top of the <em>JavaScript</em> language, it extends the application possibilities beyond graphical representations. An example of this can be found in the code below, for a <em>multilinear adjustment</em> for a situation with 4 predictor variables.</div>
+<p><a href="Eq/jsp_multilin4Var.html" target="“_blank”"><img src="Eq/multilin4Var.png" class="img-fluid"></a></p>
+</section>
+<section id="suggestion-17" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="suggestion-17">Suggestion:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Try varying the number of <span class="fu">predictors</span> (xi). To do this<span class="sc">:</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>a. Without reducing, simply remove the desired <span class="fu">vector</span>(s) and correct their quantity <span class="cf">in</span> the line<span class="sc">:</span> “const X <span class="ot">=</span> <span class="fu">x1.map</span>((_, i)”;</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>b. If you want to increase, add a new vector <span class="cf">in</span> the corresponding line and update the quantity <span class="cf">in</span> the mapping of “const <span class="at">X =</span> <span class="fu">x1.map</span>((_, i)”.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="response-surface-methodology-rsm" class="level2" data-number="19">
+<h2 data-number="19" class="anchored" data-anchor-id="response-surface-methodology-rsm"><span class="header-section-number">19</span> Response Surface Methodology (RSM)</h2>
+<div class="line-block">A variation of multilinear adjustment involves the <em>response surface methodology</em>, commonly linear (flat) or quadratic (curvilinear), applied in modeling and optimization of experimental processes with multiple independent variables. Its objective is to fit a mathematical equation that represents the relationship between the experimental factors and the response variable, allowing behaviors to be predicted and optimal conditions to be identified.</div>
+<div class="line-block">For experiments with two factors, a second-order quadratic model is commonly used, which allows surfaces with curvature to be represented. The central idea of the experiment is to select values and their codes (-1,0,1), representing, respectively, a quantity below, an average quantity, and a quantity above, for a given predictor variable.</div>
+<section id="equation-15" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="equation-15">Equation:</h3>
+<div class="line-block">The general quadratic model for two factors is represented by:</div>
+<p><span class="math display">\[
+y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \beta_{11} x_1^2 + \beta_{22} x_2^2 + \beta_{12} x_1 x_2 + \varepsilon
+\]</span></p>
+<div class="line-block">With the matrix form of the model represented by:</div>
+<p><span class="math display">\[
+\mathbf{y} = \mathbf{X} \boldsymbol{\beta} + \boldsymbol{\varepsilon}
+\]</span></p>
+<div class="line-block">And the estimation of the coefficients <span class="math inline">\(\beta\)</span> by least squares, similar to multilinear adjustment, by:</div>
+<p><span class="math display">\[
+\hat{\boldsymbol{\beta}} = (\mathbf{X}^\top \mathbf{X})^{-1} \mathbf{X}^\top \mathbf{y}
+\]</span><br>
+</p>
+<p><a href="Eq/jsp_msr.html" target="“_blank”"><img src="Eq/msr.png" class="img-fluid"></a></p>
+</section>
+<section id="suggestion-18" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="suggestion-18">Suggestion:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> As suggested earlier, try using data from the literature or another source whose responses are already known, replacing the respective vectors at the beginning of the code. This allows you to compare the effectiveness of using the tool presented.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="data-smoothing---spline-and-savitzky-golay-filter" class="level2" data-number="20">
+<h2 data-number="20" class="anchored" data-anchor-id="data-smoothing---spline-and-savitzky-golay-filter"><span class="header-section-number">20</span> Data smoothing - Spline and Savitzky-Golay filter</h2>
+<div class="line-block">In experimental research, signal detection occasionally occurs in the presence of significant levels of noise, as occurs in continuous spectral scanning under wavelength variation, or in the detection of electrical signals in time. In this case, there is no analytical equation that describes the behavior of the signal, although some digital processing tools can rely on a trend curve in data processing, significantly reducing the noise level, such as by <em>spline curve</em> and <em>Savitzky-Golay filter</em>.</div>
+<section id="context---cubic-spline" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="context---cubic-spline">Context - Cubic spline</h3>
+<div class="line-block">A very common interpolation technique involves the use of cubic splines by degree 3 polynomials interconnecting data windows. The treatment consists of applying polynomial functions to subintervals of the points, promoting smoothing between the data windows. Mathematically, the spline is applied in such a way that:</div>
+<p><span class="math display">\[
+S_i(x) = a_i + b_i(x - x_i) + c_i(x - x_i)^2 + d_i(x - x_i)^3
+\]</span></p>
+<p><em>Where:</em></p>
+<ul>
+<li>S<span class="math inline">\(_{i}\)</span>(x) = cubic spline function in the interval <em>[xi,xi+1]</em>;</li>
+<li>a<span class="math inline">\(_{i, b\)</span><em>{i}<span class="math inline">\(, c\)</span></em>{i}<span class="math inline">\(, d\)</span>_{i}$ = specific coefficients for segment <em>i</em>;</li>
+<li>x<span class="math inline">\(_{i}\)</span> = starting point of the interval;</li>
+<li><em>x</em> = independent variable.</li>
+</ul>
+</section>
+<section id="context---savitzky-golay-filter" class="level3" data-number="20.1">
+<h3 data-number="20.1" class="anchored" data-anchor-id="context---savitzky-golay-filter"><span class="header-section-number">20.1</span> Context - Savitzky-Golay filter</h3>
+<div class="line-block">The Savitzky-Golay filter smoothing technique applies a local polynomial regression to a moving window, using least squares and a predetermined degree, preserving peak, valley, and band signals. Unlike cubic splines, the filter produces a continuous global curve, rather than a set of interconnected curves. Mathematically:</div>
+<p><span class="math display">\[
+\tilde{y}_i = \sum_{j=-m}^{m} c_j \cdot y_{i+j}
+\]</span></p>
+<p><em>Where:</em></p>
+<ul>
+<li>y<span class="math inline">\(_{i}\)</span> = smoothed value at position <em>i</em>;</li>
+<li>y<span class="math inline">\(_{i+j}\)</span> = actual values of the series within the window;</li>
+<li>c<span class="math inline">\(_{i}\)</span> = filter coefficients derived from a polynomial regression;</li>
+<li><em>m</em> = number of points on each side of the central window.</li>
+</ul>
+<div class="line-block">Here is an example of code for <em>JSplotly</em> that illustrates the use of the two interpolation methods.</div>
+<p><a href="Eq/jsp_splineGolay.html" target="“_blank”"><img src="Eq/splineGolay.png" class="img-fluid"></a><br>
+</p>
+<p><strong>Instructions:</strong></p>
+<ul>
+<li><ol type="1">
+<li>The code has two <em>true/false flags</em>, one for ‘useGolay’ and another for “useSpline”;</li>
+</ol></li>
+<li><ol start="2" type="1">
+<li>View the raw data by setting both flags to <em>false</em>;</li>
+</ol></li>
+<li><ol start="3" type="1">
+<li>To overlay a cubic spline, change its constant to <em>true</em>;</li>
+</ol></li>
+<li><ol start="4" type="1">
+<li>To overlay the Savitzky-Golay filter, change its constant to <em>true</em>;</li>
+</ol></li>
+<li><ol start="5" type="1">
+<li>To adjust the filter, modify its parameters in the constants <em>window</em> (moving window) and/or <em>degree</em> (degree of the polynomial).</li>
+</ol></li>
+</ul>
+</section>
+<section id="suggestion-19" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="suggestion-19">Suggestion:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Compare the smoothing effects of the two polynomial interpolation treatments;</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Apply only the filter, adjusting the moving window and polynomial degree parameters;</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Try interpolation with other raw data <span class="cf">in</span> the code, replacing the constants “x_values” and “y_raw” with numeric vectors;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="anova-and-tukey-hsd-test" class="level2" data-number="21">
+<h2 data-number="21" class="anchored" data-anchor-id="anova-and-tukey-hsd-test"><span class="header-section-number">21</span> ANOVA and Tukey-HSD test</h2>
+<section id="context-16" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="context-16">Context:</h3>
 <div class="line-block">In research, it is common to analyze a set of data by comparing the variance between groups with that obtained within each group, or <em>Analysis of Variance (ANOVA)</em>. Once statistical information indicating that there is a difference between groups greater than the internal difference has been obtained, a <em>post hoc</em> test is performed to compare means, such as the <em>Tukey-HSD test</em> (<em>Honest Significant Difference</em>).</div>
 </section>
-<section id="equation-12" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="equation-12">Equation:</h3>
+<section id="equation-16" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="equation-16">Equation:</h3>
 <div class="line-block">The equation that characterizes a Tukey-HSD test is provided below (correction for unbalanced groups):</div>
 <p><span class="math display">\[
 \text{HSD}_{ij} = q_{\alpha} \cdot \sqrt{\frac{\text{MS}_{\text{within}}}{2} \left( \frac{1}{n_i} + \frac{1}{n_j} \right)}
@@ -933,28 +1195,28 @@ y = \alpha x + \beta + \varepsilon
 <li>n: number of observations per group (<em>i</em> and <em>j</em> if there are groups of different sizes).<br>
 </li>
 </ul>
-<p><a href="Eq/jsp_tukey.html" target="“_blank”"><img src="Eq/tukey.png" class="img-fluid"></a></p>
+<p><a href="Eq/jsp_tukey.html" target="_blank"><img src="Eq/tukey.png" class="img-fluid"></a></p>
 </section>
-<section id="suggestion-14" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="suggestion-14">Suggestion:</h3>
+<section id="suggestion-20" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="suggestion-20">Suggestion:</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> You can click and drag the minimum difference <span class="fu">markers</span> (a, b, etc.) above the graph <span class="cf">for</span> better visual adjustment, as well as the ANOVA table and the statistical test result;</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Change the values of the vectors, redo the analysis and the graph simultaneously, and notice the difference <span class="cf">in</span> the values obtained. Note that, as stated at the bottom, you need to refresh the website page to clear previous data retained <span class="cf">in</span> the cache;</span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Enter other data <span class="cf">in</span> the respective vectors, either your own or from another source;</span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="fl">4.</span> Enter new data vectors, or delete some, <span class="cf">for</span> a customized calculation and graph.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> You can click and drag the minimum difference <span class="fu">markers</span> (a, b, etc.) above the graph <span class="cf">for</span> better visual adjustment, as well as the ANOVA table and the statistical test result;</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Change the values of the vectors, redo the analysis and the graph simultaneously, and notice the difference <span class="cf">in</span> the values obtained. Note that, as stated at the bottom, you need to refresh the website page to clear previous data retained <span class="cf">in</span> the cache;</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span> Enter other data <span class="cf">in</span> the respective vectors, either your own or from another source;</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="fl">4.</span> Enter new data vectors, or delete some, <span class="cf">for</span> a customized calculation and graph.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>
-<section id="nonlinear-data-fit" class="level2" data-number="17">
-<h2 data-number="17" class="anchored" data-anchor-id="nonlinear-data-fit"><span class="header-section-number">17</span> Nonlinear data fit</h2>
-<section id="context-14" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="context-14">Context:</h3>
+<section id="nonlinear-data-fit" class="level2" data-number="22">
+<h2 data-number="22" class="anchored" data-anchor-id="nonlinear-data-fit"><span class="header-section-number">22</span> Nonlinear data fit</h2>
+<section id="context-17" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="context-17">Context:</h3>
 <div class="line-block">Modeling is a common area of employment in the natural sciences, when mathematical prediction or correlation of experimental data is desired. Models can be linear or non-linear. When non-linear, they can be applied empirically to the data (e.g., quadratic, logarithmic, exponential, or power functions), or from a mathematical function that explains the model.</div>
 <div class="line-block">In this case, techniques for nonlinear adjustment of the data to the model are used, such as <em>Simplex</em>, <em>Gauss</em>, <em>Newton-Raphson</em>, <em>Levenberg-Marquardt</em>, or <em>least squares</em>, for example. Regardless of the method, nonlinear adjustment differs from linear adjustment in its assumptions and data treatment (see a quick explanation <a href="https://bioquanti.netlify.app/pt/nivel/superior/r/enzimas#ajuste-n%C3%A3o-linear">here</a>.</div>
 <div class="line-block">The following example illustrates the application of a nonlinear adjustment of molecular interaction data using the Langmuir model and treatment by <em>manual scan least squares</em>. In this treatment, the <em>sum of the least squares errors (RMSE)</em> is calculated for combinations of <em>a</em> and <em>b</em>, selecting the pair with the lowest calculated error. In this case, for simplicity, although <em>JSPlotly</em> works with more specific libraries, the nonlinear regression is performed by least squares, but using <em>grid search</em> rather than classic iterative methods. Thus, a set of values is tested for the pair (a, b) in a previously defined grid (combination table), allowing the identification of the parameters that best describe the experimental data according to the minimum error criterion.</div>
 </section>
-<section id="equation-13" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="equation-13">Equation:</h3>
+<section id="equation-17" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="equation-17">Equation:</h3>
 <div class="line-block">The Langmuir equation is represented below:</div>
 <p><span class="math display">\[
 Y = \frac{aX}{K_d + X}
@@ -972,13 +1234,13 @@ SSR(a, K_d) = \sum_{i=1}^n \left( y_i - \frac{a x_i}{K_d + x_i} \right)^2
 <p><em>Where:</em></p>
 <p><em>SSR</em> = sum of the squares of the residuals (inversely proportional to the quality of the fit)<br>
 </p>
-<p><a href="Eq/jsp_ajNonLin.html" target="“_blank”"><img src="Eq/ajNonLin.png" class="img-fluid"></a></p>
+<p><a href="Eq/jsp_ajNonLin.html" target="_blank"><img src="Eq/ajNonLin.png" class="img-fluid"></a></p>
 </section>
-<section id="suggestion-15" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="suggestion-15">Suggestion:</h3>
+<section id="suggestion-21" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="suggestion-21">Suggestion:</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> As <span class="cf">in</span> the previous example, alternately display the points and the adjustment curve using the “Boolean” <span class="fu">operation</span> (“<span class="at">showPoints =</span> true<span class="sc">/</span>false”; “<span class="at">showCurve =</span> true<span class="sc">/</span>false”);</span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Change the data and perform a new fit to obtain other parameters of the <span class="fu">equation</span> (Kd, SSR, R², adjusted R²). Note<span class="sc">:</span> R² adj corresponds to the value of R² corrected <span class="cf">for</span> the number of parameters <span class="cf">in</span> the <span class="fu">model</span> (<span class="cf">in</span> this case, “<span class="dv">2</span>”), directly affecting the “degrees of freedom” <span class="cf">for</span> the fit.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> As <span class="cf">in</span> the previous example, alternately display the points and the adjustment curve using the <span class="st">"Boolean"</span> <span class="fu">operation</span> (<span class="st">"showPoints = true/false"</span>; <span class="st">"showCurve = true/false"</span>);</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Change the data and perform a new fit to obtain other parameters of the <span class="fu">equation</span> (Kd, SSR, R², adjusted R²). Note<span class="sc">:</span> R² adj corresponds to the value of R² corrected <span class="cf">for</span> the number of parameters <span class="cf">in</span> the <span class="fu">model</span> (<span class="cf">in</span> this case, <span class="st">"2"</span>), directly affecting the <span class="st">"degrees of freedom"</span> <span class="cf">for</span> the fit.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 

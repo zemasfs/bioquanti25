@@ -398,7 +398,7 @@ $$
 - R = 8.314 J/mol/K (universal gas constant);
 
 
-[![](Eq/gibbs.png)](Eq/jsp_gibbs.html){target=“_blank”}
+[![](Eq/gibbs.png)](Eq/jsp_gibbs.html){target="_blank"}
 
 
 ### Suggestion: {.unnumbered}
@@ -442,7 +442,7 @@ $$
  
 
 
-[![](Eq/EIS.png)](Eq/jsp_EIS.html){target=“_blank”}
+[![](Eq/EIS.png)](Eq/jsp_EIS.html){target="_blank"}
 
 ### Suggestion {.unnumbered}
 
@@ -455,6 +455,91 @@ $$
 ```
 
 
+## Cyclic voltammetry
+
+### Context: {.unnumbered}
+
+| Cyclic voltammetry (CV) is an electroanalytical technique for characterizing interfacial (electrode-solution) redox processes. When a standard analyte in quantitative equilibrium between the oxidized and reduced forms is used, the resulting graph acquires an unusual profile, called a *duck shape*. This results from the peculiar shape obtained when a bidirectional potentiometric scan is performed on a set of electrodes by a potentiostat, resulting in cycles of oxidation and subsequent reduction (application of positive potentials followed by negative potentials). The shape, value, and distance between the resulting peaks allow the analyte to be identified and characterized, as well as the redox processes involved in the experiment.
+ 
+
+### Equation: {.unnumbered}
+
+| Although the formalism for cyclic voltammetry is complex and involves the solution of *ordinary differential equations* (as well as electroanalytical techniques in general), which is beyond the scope of this material, the resulting current flow can be summarized by the *Buttler-Volmer equation* below:
+
+$$
+j = j_0 \left[ \exp\left(\frac{\alpha n F (E - E^0)}{RT}\right) - \exp\left(\frac{-(1 - \alpha) n F (E - E^0)}{RT}\right) \right]
+$$
+*Where:*
+
+- j = current density;
+- j$_{0}$ = exchange current;
+- $\alpha$ = charge transfer coefficient;
+- E = potential applied to the electrode;
+- E$^{0}$ = standard electrode potential;
+- n = number of electrons;
+- F = Faraday constant (96485 C·mol⁻¹)
+- R = universal gas constant (8.314 J·mol⁻¹·K⁻¹);
+- T = temperature
+\
+
+| For a model of electroanalyte diffusion and accumulation at the electrode surface, the general equation for the boundary condition where the redox conversion rate is proportional to the diffusion current can be represented by *Fick's 2nd Law equation * for mass transport: 
+
+$$
+\frac{\partial C(x,t)} {\partial t} = D \frac{\partial^2 C(x,t)} {\partial x^2}
+$$
+
+*Where:*
+
+- C(x,t) = concentration of the electroanalytical species (mol/cm³), as a function of position *x* and time *t*;
+- D = diffusion coefficient of the species (cm²/s);
+- t = time (s);
+- x = distance from the electrode surface (cm);
+- $\delta$ = notation for partial derivative.
+\
+
+
+| The chemical equilibrium of the redox reaction is given by the ratio between the concentrations of the oxidized and reduced forms at the electrode/solution interface when the system is in equilibrium (or near equilibrium), according to the *Nernst equation*:
+
+$$
+E = E^0 + \frac{RT}{nF} \ln \left( \frac{[\text{Ox}]}{[\text{Red}]} \right)
+$$
+
+
+| The resulting current is obtained by *Faraday's law*:
+
+$$
+i(t) = n F A D \left. \frac{\partial C(x,t)} {\partial x} \right|_{x=0}
+$$
+*Where:*
+
+- A = electrode surface area (cm²);
+- i(t) = current at time *t* (A, Amperes).
+
+
+### Cyclic Voltammetry Simulator {.unnumbered}
+
+
+| To illustrate the potential of the *JSPlotly/GSPlotly* platform for developing complex *virtual experiments*, here is a *cyclic voltammetry simulator* resulting from the above procedures (as well as a few hours of prompt engineering!!). 
+
+| The example illustrates typical behavior in cyclic voltammetry (and the curious *duck shape*), and includes a model of diffusion and accumulation of electroactive species near the electrode surface. The code uses a *numerical solution* to obtain the current density over time, considering the effects of cyclic scanning of the applied potential, mass transport, and reaction kinetics.
+
+| In short, it numerically solves Fick's equation with dynamic boundary conditions, applies the Nernst equation at the boundary (electrode surface) to determine the conversion between species, uses the finite difference method or explicit scheme to advance in time, and obtains the current by applying Faraday's Law, through the derivative of the flux at the interface.
+
+| Find it complex? How about this: the code combines Fick (transport) and Nernst (local redox equilibrium) to accurately model the shape of the voltamogram, obtaining a physical simulation with significant realism for cyclic voltammetry.
+\
+
+
+
+[![](Eq/cv.png)](Eq/jsp_cv.html){target="_blank"}
+
+
+### Suggestion: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Observe the number of values at the beginning of the code, which are tangible to "parametric manipulation." Try to understand what they represent, and consciously vary their values, aiming to add value to the learning of the simulation. This is the essence of "parametric manipulation" that involves "reproducible teaching"!
+```
+\
+
 ## Diagrams and flowcharts
 
 ### Context: {.unnumbered}
@@ -463,7 +548,7 @@ $$
 | Due to the nature of the *Plotly.js* library, it is also possible to generate code in *JSPlotly* without involving an equation, such as for representing diagrams, flowcharts, heredograms, among others. The example below illustrates a representation of the Krebs cycle.
 
 
-[![](Eq/krebs.png)](Eq/jsp_krebs.html){target=“_blank”}
+[![](Eq/krebs.png)](Eq/jsp_krebs.html){target="_blank"}
 
 ### Suggestion: {.unnumbered}
 
@@ -476,18 +561,18 @@ $$
 ### Context: Flowchart {.unnumbered}
 
 
-[![](Eq/fluxograma.png)](Eq/jsp_fluxograma.html){target=“_blank”}
+[![](Eq/fluxograma.png)](Eq/jsp_fluxograma.html){target="_blank"}
 
 ### Suggestion: {.unnumbered}
 
 ```{r, eval=FALSE}
 1. Reposition terms and connectors by dragging with the mouse;
 2. For a different flowchart in the content, modify the terms in the code;
-2. For a different flowchart format, change the font and connector characteristics in the “annotations” constant.
+2. For a different flowchart format, change the font and connector characteristics in the "annotations" constant.
 
 
 ```
-
+\
 
 ## **Data analysis** {.unnumbered}
 
@@ -496,13 +581,13 @@ $$
 | Sometimes it is interesting to work with discrete data itself, seeking a trend, mathematical or simply visual, for the relationship between variables. Here is an example of an interactive graph with user data.
 \
 
-[![](Eq/dados.png)](Eq/jsp_dados.html){target=“_blank”}
+[![](Eq/dados.png)](Eq/jsp_dados.html){target="_blank"}
 
 ### Suggestion: {.unnumbered}
 
 ```{r, eval=FALSE}
 1. Try changing the data entered, overlaying the graph or not;
-2. Try changing the data representation in “mode” and “type” to points, lines, points+lines, bars.
+2. Try changing the data representation in "mode" and "type" to points, lines, points+lines, bars.
 ```
 
 \
@@ -514,7 +599,7 @@ $$
 
 | Sometimes, it is necessary to analyze results related to a set of data in a spreadsheet. For this situation, the following example illustrates the loading of two data vectors from a *CSV* (*comma separated value*) file, a format commonly used for exporting/importing in spreadsheets, and the resulting graph. 
 
-[![](Eq/csv.png)](Eq/jsp_csv.html){target=“_blank”}
+[![](Eq/csv.png)](Eq/jsp_csv.html){target="_blank"}
 
 **Instructions:**
 
@@ -572,14 +657,252 @@ $$
 | A representation for linear adjustment with arbitrary data is provided below:
 \
 
-[![](Eq/ajLin.png)](Eq/jsp_ajLin.html){target=“_blank”}
+[![](Eq/ajLin.png)](Eq/jsp_ajLin.html){target="_blank"}
 
 
 ### Suggestion: {.unnumbered}
 
 ```{r, eval=FALSE}
-1. Show the points that overlap or do not overlap the fit line. For overlap, choose “showPoints = true” and “showLine = true”;
+1. Show the points that overlap or do not overlap the fit line. For overlap, choose "showPoints = true" and "showLine = true";
 2. Change the data and perform a new fit to obtain other parameters of the line.
+```
+
+
+
+## Polynomial regression
+
+### Context: {.unnumbered}
+
+| In some situations, linear fitting does not provide an adequate trend for modeling experimental data, which leads to the use of other models, such as *exponential, hyperbolic, logarithmic, power, and polynomial*. Polynomial trends are common in natural phenomena, with mathematical treatment of data occurring by different methods, such as simple sums, least squares, or linear algebra. Here is an example of polynomial regression with adjustable degrees in the code.
+
+### Equation
+
+| Error minimization for the polynomial curve is obtained by generalized *least squares regression* and application of the *Vandermonde matrix*, as follows.
+
+| Let the vectors x=[x$_{1}$,x$_{2}$,…,x$_{n}$] and y=[y$_{1}$,y$_{2}$,…,y${_n}$] be the desired polynomial:
+
+$$
+y = \beta_0 + \beta_1 x + \beta_2 x^2 + \cdots + \beta_g x^g
+$$
+| Thus, the Vandermonde matrix is constructed as:
+
+$$
+X =
+\begin{bmatrix}
+1 & x_1 & x_1^2 & \cdots & x_1^g \\\\
+1 & x_2 & x_2^2 & \cdots & x_2^g \\\\
+\vdots & \vdots & \vdots & & \vdots \\\\
+1 & x_n & x_n^2 & \cdots & x_n^g
+\end{bmatrix}
+$$
+
+
+| To find the *coefficients $\beta$* that minimize the quadratic error, solve the linear system in sequence:
+
+$$
+\boldsymbol{\beta} = (X^T X)^{-1} X^T \mathbf{y}
+$$
+\
+
+*Where:*
+
+- *T* represents the transposed matrix
+\
+
+
+
+[![](Eq/polinomial.png)](Eq/jsp_polinomial.html){target=“_blank”}
+
+
+### Suggestion: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Try degree 1 for the polynomial, i.e., a reduction of the treatment to linear adjustment;
+2. Change the formatting of labels, colors, sizes, etc., in the code;
+3. Overlap some adjustments, edit, and reposition the caption;
+4. Test the code with another data vector.
+```
+
+
+## Multilinear regression
+
+### Context: {.unnumbered}
+
+| Multiple linear adjustment is very useful when you want to predict behavior based on two or more predictor variables. The procedure involves a *design matrix* (or *projection operator*) similar to the *Vandermonde matrix*.
+
+
+### Equation: {.unnumbered}
+
+| The analytical solution for the design matrix involves solving a matrix of coefficients $\beta$ for a set of predictor values of the response vector *y*, as follows:
+
+$$
+y_i = \beta_0 + \beta_1 x_{1i} + \beta_2 x_{2i} + \cdots + \beta_p x_{pi} + \varepsilon_i
+$$
+
+$$
+\mathbf{y} = \mathbf{X} \boldsymbol{\beta} + \boldsymbol{\varepsilon}
+$$
+
+$$
+\hat{\boldsymbol{\beta}} = (\mathbf{X}^\top \mathbf{X})^{-1} \mathbf{X}^\top \mathbf{y}
+$$
+
+*Where:*
+- $\beta$ = coefficient vector;
+- *y* = response vector;
+- *X* = design matrix;
+- $\epsilon$ = random noise
+
+
+| Thus, predicted values and associated error are obtained by:
+
+$$
+\hat{\mathbf{y}} = \mathbf{X} \hat{\boldsymbol{\beta}}
+$$
+$$
+\mathbf{e} = \mathbf{y} - \hat{\mathbf{y}}
+$$
+
+
+| Obviously, the graphical representation for a multilinear fit is limited to two independent variables, *x1* and *x2*, in addition to the response variable (*3D graph*), although the matrix calculation allows for several predictor variables (hyperdimensional space). Tangential to the first situation, here is an example.
+
+**Instructions**
+- 1. Note that there is a Boolean flag (*showFit*) at the beginning of the code: *false* for data only, and *true* for the fit.
+- 2. You can click on *add plot* to view the data with the flag set to *false*, followed by another *add plot* with the flag set to *true*.
+\
+
+[![](Eq/multilinear.png)](Eq/jsp_multilinear.html){target=“_blank”}
+\
+
+| Rotate the graph and observe the surface around the points. Unlike a linear fit, the points are distributed discontinuously in space.
+
+### Suggestion: {.unnumbered}
+
+```{r, eval=FALSE}
+1. QSAR (“Quantitative Structure-Activity Relationship”) results use multilinear adjustment analysis to identify the strength of predictor variables. Try a dataset with two variables (e.g., concentration, pH, compound A, B, etc.) on the internet.
+2. For more predictor variables, see the code below!
+```
+
+
+### Context: Multiple linear adjustment with 3 or more predictor variables
+
+| Although *JSPlotly* was designed for producing interactive graphs and maps using the *Plotly.js* library on top of the *JavaScript* language, it extends the application possibilities beyond graphical representations. An example of this can be found in the code below, for a *multilinear adjustment* for a situation with 4 predictor variables.
+
+
+[![](Eq/multilin4Var.png)](Eq/jsp_multilin4Var.html){target=“_blank”}
+
+
+### Suggestion: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Try varying the number of predictors (xi). To do this:
+a. Without reducing, simply remove the desired vector(s) and correct their quantity in the line: “const X = x1.map((_, i)”;
+b. If you want to increase, add a new vector in the corresponding line and update the quantity in the mapping of “const X = x1.map((_, i)”.
+```
+
+
+
+## Response Surface Methodology (RSM)
+
+| A variation of multilinear adjustment involves the *response surface methodology*, commonly linear (flat) or quadratic (curvilinear), applied in modeling and optimization of experimental processes with multiple independent variables. Its objective is to fit a mathematical equation that represents the relationship between the experimental factors and the response variable, allowing behaviors to be predicted and optimal conditions to be identified. 
+
+| For experiments with two factors, a second-order quadratic model is commonly used, which allows surfaces with curvature to be represented. The central idea of the experiment is to select values and their codes (-1,0,1), representing, respectively, a quantity below, an average quantity, and a quantity above, for a given predictor variable.
+
+### Equation: {.unnumbered}
+
+| The general quadratic model for two factors is represented by:
+
+
+$$
+y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \beta_{11} x_1^2 + \beta_{22} x_2^2 + \beta_{12} x_1 x_2 + \varepsilon
+$$
+
+| With the matrix form of the model represented by:
+
+$$
+\mathbf{y} = \mathbf{X} \boldsymbol{\beta} + \boldsymbol{\varepsilon}
+$$
+
+| And the estimation of the coefficients $\beta$ by least squares, similar to multilinear adjustment, by:
+
+
+$$
+\hat{\boldsymbol{\beta}} = (\mathbf{X}^\top \mathbf{X})^{-1} \mathbf{X}^\top \mathbf{y}
+$$
+\
+
+
+
+
+[![](Eq/msr.png)](Eq/jsp_msr.html){target=“_blank”}
+
+
+### Suggestion: {.unnumbered}
+
+```{r, eval=FALSE}
+1. As suggested earlier, try using data from the literature or another source whose responses are already known, replacing the respective vectors at the beginning of the code. This allows you to compare the effectiveness of using the tool presented.
+```
+
+
+
+## Data smoothing - Spline and Savitzky-Golay filter
+
+| In experimental research, signal detection occasionally occurs in the presence of significant levels of noise, as occurs in continuous spectral scanning under wavelength variation, or in the detection of electrical signals in time. In this case, there is no analytical equation that describes the behavior of the signal, although some digital processing tools can rely on a trend curve in data processing, significantly reducing the noise level, such as by *spline curve* and *Savitzky-Golay filter*. 
+
+
+### Context - Cubic spline {.unnumbered}
+
+| A very common interpolation technique involves the use of cubic splines by degree 3 polynomials interconnecting data windows. The treatment consists of applying polynomial functions to subintervals of the points, promoting smoothing between the data windows. Mathematically, the spline is applied in such a way that:
+
+$$
+S_i(x) = a_i + b_i(x - x_i) + c_i(x - x_i)^2 + d_i(x - x_i)^3
+$$
+
+
+*Where:*
+
+- S$_{i}$(x) = cubic spline function in the interval *[xi,xi+1]*;
+- a$_{i, b$_{i}$, c$_{i}$, d$_{i}$ = specific coefficients for segment *i*;
+- x$_{i}$ = starting point of the interval;
+- *x* = independent variable.
+
+
+### Context - Savitzky-Golay filter
+
+| The Savitzky-Golay filter smoothing technique applies a local polynomial regression to a moving window, using least squares and a predetermined degree, preserving peak, valley, and band signals. Unlike cubic splines, the filter produces a continuous global curve, rather than a set of interconnected curves. Mathematically:
+
+
+$$
+\tilde{y}_i = \sum_{j=-m}^{m} c_j \cdot y_{i+j}
+$$
+
+*Where:*
+
+- y$_{i}$ = smoothed value at position *i*;
+- y$_{i+j}$ = actual values of the series within the window;
+- c$_{i}$ = filter coefficients derived from a polynomial regression;
+- *m* = number of points on each side of the central window.
+
+| Here is an example of code for *JSplotly* that illustrates the use of the two interpolation methods.
+
+[![](Eq/splineGolay.png)](Eq/jsp_splineGolay.html){target=“_blank”}
+\
+
+**Instructions:**
+
+- 1. The code has two *true/false flags*, one for ‘useGolay’ and another for “useSpline”;
+- 2. View the raw data by setting both flags to *false*;
+- 3. To overlay a cubic spline, change its constant to *true*;
+- 4. To overlay the Savitzky-Golay filter, change its constant to *true*;
+- 5. To adjust the filter, modify its parameters in the constants *window* (moving window) and/or *degree* (degree of the polynomial).
+
+
+### Suggestion: {.unnumbered}
+
+```{r, eval=FALSE}
+1. Compare the smoothing effects of the two polynomial interpolation treatments;
+2. Apply only the filter, adjusting the moving window and polynomial degree parameters;
+3. Try interpolation with other raw data in the code, replacing the constants “x_values” and “y_raw” with numeric vectors;
 ```
 
 
@@ -607,7 +930,7 @@ $$
 \
 
 
-[![](Eq/tukey.png)](Eq/jsp_tukey.html){target=“_blank”}
+[![](Eq/tukey.png)](Eq/jsp_tukey.html){target="_blank"}
 
 ### Suggestion: {.unnumbered}
 
@@ -661,12 +984,12 @@ $$
 \
 
 
-[![](Eq/ajNonLin.png)](Eq/jsp_ajNonLin.html){target=“_blank”}
+[![](Eq/ajNonLin.png)](Eq/jsp_ajNonLin.html){target="_blank"}
 
 
 ### Suggestion: {.unnumbered}
 
 ```{r, eval=FALSE}
-1. As in the previous example, alternately display the points and the adjustment curve using the “Boolean” operation (“showPoints = true/false”; “showCurve = true/false”);
-2. Change the data and perform a new fit to obtain other parameters of the equation (Kd, SSR, R², adjusted R²). Note: R² adj corresponds to the value of R² corrected for the number of parameters in the model (in this case, “2”), directly affecting the “degrees of freedom” for the fit.
+1. As in the previous example, alternately display the points and the adjustment curve using the "Boolean" operation ("showPoints = true/false"; "showCurve = true/false");
+2. Change the data and perform a new fit to obtain other parameters of the equation (Kd, SSR, R², adjusted R²). Note: R² adj corresponds to the value of R² corrected for the number of parameters in the model (in this case, "2"), directly affecting the "degrees of freedom" for the fit.
 ```
