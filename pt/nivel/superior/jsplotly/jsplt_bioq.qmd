@@ -1021,7 +1021,7 @@ $$
 
 **Instruções**
 
-- 1. Perceba que o código possui um flag para *true/false* na constante *ajuste*. Deixei-o em *false* para a representação dos dados, somente (vetores *x* e *y*, ou *S* e *v*);
+- 1. Perceba que o código possui um flag para *true/false* na constante *ajuste*. Deixe-o em *false* para a representação dos dados, somente (vetores *x* e *y*, ou *S* e *v*);
 - 2. Na área da *Plot* do código, acerte a constante *trace* para que fique com os vetores de dados, também;
 - 3. Clique em *add plot* para visualizar os pontos experimentais;
 - 4. Para superimpor a curva ajustada, atualize as constantes *ajuste* e *trace* (vetores *S_fit* e *v_fit*), e escolha *lines* em *mode*.
