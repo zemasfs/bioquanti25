@@ -1026,7 +1026,7 @@ $$
 - 3. Clique em *add plot* para visualizar os pontos experimentais;
 - 4. Para superimpor a curva ajustada, atualize as constantes *ajuste* e *trace* (vetores *S_fit* e *v_fit*), e escolha *lines* em *mode*.
 
-[![](Eq/ajNonLinGauss.png)](Eq/jsp_ajNonLinGauss2.html){target="_blank"}
+[![](Eq/ajNonLinGauss2.png)](Eq/jsp_ajNonLinGauss2.html){target="_blank"}
 
 
 

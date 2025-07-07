@@ -1025,5 +1025,5 @@ $$
 - 3. Click *add plot* to view the experimental points;
 - 4. To superimpose the fitted curve, update the constants *ajuste* and *trace* (vectors *S_fit* and *v_fit*), and choose *lines* in *mode*.
 
-[![](Eq/ajNonLinGauss.png)](Eq/jsp_ajNonLinGauss2.html){target=“_blank”}
+[![](Eq/ajNonLinGauss2.png)](Eq/jsp_ajNonLinGauss2.html){target=“_blank”}
 
