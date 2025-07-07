@@ -943,17 +943,19 @@ $$
 ```
 
 
-## Nonlinear data fit
 
-### Context: {.unnumbered}
+## Nonlinear data adjustment
 
-| Modeling is a common area of employment in the natural sciences, when mathematical prediction or correlation of experimental data is desired. Models can be linear or non-linear. When non-linear, they can be applied empirically to the data (e.g., quadratic, logarithmic, exponential, or power functions), or from a mathematical function that explains the model.
+| Modeling is a common area of employment in the natural sciences, when mathematical prediction or correlation of experimental data is desired. Models can be linear or nonlinear. When nonlinear, they can be applied empirically to the data (e.g., quadratic, logarithmic, exponential, or power functions), or from an explanatory mathematical function of the model. 
+
+| In this case, techniques for nonlinear adjustment of the data to the model are used, such as *Simplex*, *Gauss*, *Newton-Raphson*, *Levenberg-Marquardt*, or *least squares*, for example. Regardless of the method, nonlinear adjustment differs from linear adjustment in its assumptions and treatment of data (see a quick explanation [here](https://bioquanti.netlify.app/pt/nivel/superior/r/enzimas#ajuste-n%C3%A3o-linear).
  
 
-| In this case, techniques for nonlinear adjustment of the data to the model are used, such as *Simplex*, *Gauss*, *Newton-Raphson*, *Levenberg-Marquardt*, or *least squares*, for example. Regardless of the method, nonlinear adjustment differs from linear adjustment in its assumptions and data treatment (see a quick explanation [here](https://bioquanti.netlify.app/pt/nivel/superior/r/enzimas#ajuste-n%C3%A3o-linear).
- 
+### Context: Ligand-protein interaction (*grid search* algorithm) {.unnumbered}
 
-| The following example illustrates the application of a nonlinear adjustment of molecular interaction data using the Langmuir model and treatment by *manual scan least squares*. In this treatment, the *sum of the least squares errors (RMSE)* is calculated for combinations of *a* and *b*, selecting the pair with the lowest calculated error. In this case, for simplicity, although *JSPlotly* works with more specific libraries, the nonlinear regression is performed by least squares, but using *grid search* rather than classic iterative methods. Thus, a set of values is tested for the pair (a, b) in a previously defined grid (combination table), allowing the identification of the parameters that best describe the experimental data according to the minimum error criterion.
+
+| The following example illustrates the application of a nonlinear adjustment of molecular interaction data using the Langmuir model and treatment by *manual grid search*. In this treatment, the *sum of the quadratic errors (RMSE)* is calculated for combinations of *a* and *b*, selecting the pair with the lowest calculated error. In this case, for simplicity, although *JSPlotly* works with more specific libraries, the nonlinear regression is performed by least squares, but using *grid search* rather than classic iterative methods. Thus, a set of values is tested for the pair (a, b) in a previously defined grid (combination table), allowing the identification of the parameters that best describe the experimental data according to the minimum error criterion.
+\
 
 ### Equation: {.unnumbered}
 
@@ -967,7 +969,7 @@ $$
 - Y = fraction of occupied sites;
 - X = concentration of free ligand;
 - *a* = saturation value (sites of the same affinity completely occupied);
-- *Kd* = equilibrium dissociation constant of the complex.
+- *Kd* = dissociation equilibrium constant of the complex.
 
 
 
@@ -984,12 +986,44 @@ $$
 \
 
 
-[![](Eq/ajNonLin.png)](Eq/jsp_ajNonLin.html){target="_blank"}
+[![](Eq/ajNonLin.png)](Eq/jsp_ajNonLin.html){target=“_blank”}
 
 
 ### Suggestion: {.unnumbered}
 
 ```{r, eval=FALSE}
-1. As in the previous example, alternately display the points and the adjustment curve using the "Boolean" operation ("showPoints = true/false"; "showCurve = true/false");
-2. Change the data and perform a new fit to obtain other parameters of the equation (Kd, SSR, R², adjusted R²). Note: R² adj corresponds to the value of R² corrected for the number of parameters in the model (in this case, "2"), directly affecting the "degrees of freedom" for the fit.
+1. As in the previous example, alternately display the points and the adjustment curve using the “Boolean” operation (“showPoints = true/false”; “showCurve = true/false”);
+2. Change the data and perform a new fit to obtain other parameters of the equation (Kd, SSR, R², adjusted R²). Note: R² adj corresponds to the value of R² corrected for the number of parameters in the model (in this case, “2”), directly affecting the “degrees of freedom” for the fit.
 ```
+\
+
+
+### Context - Competitive inhibition in enzyme kinetics (Gauss-Newton algorithm) {.unnumbered}
+ 
+
+
+| The *Gauss-Newton* method iteratively fits nonlinear models to experimental data sets. It is especially efficient when the model is *quasi-linear* with respect to the parameters and the residuals are moderately small. The goal is to find the parameters $\theta$ that minimize the sum of the squares of the residuals between the observed data *yi* and the values predicted by the model f(xi,$\theta$. Unlike the full Newton-Raphson method, Gauss-Newton avoids the explicit calculation of the Hessian by using an approximation based on the Jacobian of the residuals.
+
+
+## Equation: {.unnumbered}
+
+| This approximation results in a linear system that can be solved at each iteration to update the model parameters. The central formula of the method consists of multiplying the transposed Jacobian *JT* by the Jacobian *J* itself, forming a symmetric matrix that approximates the Hessian. The residual vector *r* is then used to determine the update direction $\Delta\theta$, with the following equation:
+
+$$
+\theta_{k+1} = \theta_k + \left(J^T J\right)^{-1} J^T \cdot r
+$$
+
+| To illustrate the potential of the application in iterative nonlinear fitting, here is an example for enzyme kinetics using a *competitive inhibition model*. 
+
+| The code allows you to adjust the *seeds*, *tolerance*, and number of *iterations*, and provides the graph (points/fitted line, manually), and statistical parameters of the regression.
+\
+
+**Instructions**
+
+- 1. Note that the code has a flag for *true/false* in the *ajuste* constant. I left it at *false* for data representation only (vectors *x* and *y*, or *S* and *v*);
+- 2. In the *Plot* area of the code, set the *trace* constant so that it also includes the data vectors;
+- 3. Click *add plot* to view the experimental points;
+- 4. To superimpose the fitted curve, update the constants *ajuste* and *trace* (vectors *S_fit* and *v_fit*), and choose *lines* in *mode*.
+
+[![](Eq/ajNonLinGauss.png)](Eq/jsp_ajNonLinGauss.html){target=“_blank”}
+

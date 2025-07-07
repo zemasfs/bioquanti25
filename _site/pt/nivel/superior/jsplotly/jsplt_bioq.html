@@ -390,6 +390,7 @@ window.Quarto = {
   <li><a href="#suavização-de-dados---spline-e-filtro-de-savitzky-golay" id="toc-suavização-de-dados---spline-e-filtro-de-savitzky-golay" class="nav-link" data-scroll-target="#suavização-de-dados---spline-e-filtro-de-savitzky-golay"><span class="header-section-number">20</span> Suavização de dados - Spline e filtro de Savitzky-Golay</a></li>
   <li><a href="#anava-e-teste-de-tukey-hsd" id="toc-anava-e-teste-de-tukey-hsd" class="nav-link" data-scroll-target="#anava-e-teste-de-tukey-hsd"><span class="header-section-number">21</span> ANAVA e teste de Tukey-HSD</a></li>
   <li><a href="#ajuste-não-linear-de-dados" id="toc-ajuste-não-linear-de-dados" class="nav-link" data-scroll-target="#ajuste-não-linear-de-dados"><span class="header-section-number">22</span> Ajuste não linear de dados</a></li>
+  <li><a href="#equação-18" id="toc-equação-18" class="nav-link" data-scroll-target="#equação-18">Equação:</a></li>
   </ul>
 </nav>
     </div>
@@ -1208,10 +1209,10 @@ S_i(x) = a_i + b_i(x - x_i) + c_i(x - x_i)^2 + d_i(x - x_i)^3
 </section>
 <section id="ajuste-não-linear-de-dados" class="level2" data-number="22">
 <h2 data-number="22" class="anchored" data-anchor-id="ajuste-não-linear-de-dados"><span class="header-section-number">22</span> Ajuste não linear de dados</h2>
-<section id="contexto-17" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="contexto-17">Contexto:</h3>
 <div class="line-block">&nbsp;&nbsp;Modelagem é uma área de emprego comum nas ciências naturais, quando se deseja previsão ou correlação matemática de dados experimentais. Modelos podem constituir-se lineares ou não. Quando não lineares, podem ser aplicados de forma empírica para os dados (ex: funções quadráticas, logarítmicas, exponenciais ou de potência), ou a partir de uma função matemática explanatória do modelo.</div>
 <div class="line-block">&nbsp;&nbsp;Nesse caso são empregadas técnicas para ajuste não linear dos dados ao modelo, como <em>Simplex</em>, <em>Gauss</em>, <em>Newton-Raphson</em>, <em>Levenberg-Marquadt</em>, ou <em>mínimos quadrados</em> por exemplo. Seja qual for o método, o ajuste não linear difere-se do linear em pressupostos e tratamento dos dados (veja uma rápida explicação <a href="https://bioquanti.netlify.app/pt/nivel/superior/r/enzimas#ajuste-n%C3%A3o-linear">aqui</a>.</div>
+<section id="contexto-interação-ligante-proteína-algoritmo-de-grid-search" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="contexto-interação-ligante-proteína-algoritmo-de-grid-search">Contexto: Interação ligante-proteína (algoritmo de <em>grid search</em>)</h3>
 <div class="line-block">&nbsp;&nbsp;O exemplo a seguir ilustra a aplicação de um ajuste não linear de dados de interação molecular por modelo de Langmuir, e tratamento por <em>minimização do erro quadrático por varredura manual</em>. Nesse tratamento, calcula-se a <em>soma dos erros quadráticos (RMSE)</em> para combinações de <em>a</em> e <em>b</em>, selecionando-se o par com menor erro calculado. Nesse caso, por simplificação, apesar do <em>JSPlotly</em> trabalhar com bibliotecas mais específicas, a regressão não linear dá-se por mínimos quadrados, mas realizada por <em>grid search</em>, e não por métodos iterativos clássicos. Assim, um conjunto de valores é testado para o par (a, b) em uma malha definida previamente (tabela de combinações), permitindo a identificação dos parâmetros que melhor descrevem os dados experimentais segundo o critério de erro mínimo.</div>
 <p><br>
 </p>
@@ -1243,9 +1244,42 @@ SSR(a, K_d) = \sum_{i=1}^n \left( y_i - \frac{a x_i}{K_d + x_i} \right)^2
 <div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Como no exemplo anterior, apresente alternativamente os pontos e a curva de ajuste pela operação <span class="st">"booleana"</span> (<span class="st">"mostrarPontos = true/false"</span>; <span class="st">"mostrarCurva = true/false"</span>);</span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Altere os dados e realize novo ajuste, para obtenção de outros parâmetros da equação (Kd, SSR, R², R² ajustado). Obs<span class="sc">:</span> R² adj corresponde ao valor de R² corrigido para o número de parâmetros do <span class="fu">modelo</span> (no caso, <span class="st">"2"</span>), incidindo diretamente nos <span class="st">"graus de liberdade"</span> para o ajuste.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-
-
+<p><br>
+</p>
 </section>
+<section id="contexto---inibição-competitiva-em-cinética-enzimática-algoritmo-de-gauss-newton" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="contexto---inibição-competitiva-em-cinética-enzimática-algoritmo-de-gauss-newton">Contexto - Inibição competitiva em cinética enzimática (algoritmo de Gauss-Newton)</h3>
+<div class="line-block">&nbsp;&nbsp;O método de <em>Gauss-Newton</em> ajusta iterativamente modelos não lineares a conjuntos de dados experimentais. Ele é especialmente eficiente quando o modelo é <em>quase linear</em> em relação aos parâmetros e os resíduos são moderadamente pequenos. O objetivo é encontrar os parâmetros <span class="math inline">\(\theta\)</span> que minimizam a soma dos quadrados dos resíduos entre os dados observados <em>yi</em> e os valores preditos pelo modelo f(xi,<span class="math inline">\(\theta\)</span>. Diferente do método de Newton-Raphson completo, o Gauss-Newton evita o cálculo explícito da Hessiana, utilizando uma aproximação baseada na Jacobiana dos resíduos.</div>
+</section>
+</section>
+<section id="equação-18" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="equação-18">Equação:</h2>
+<div class="line-block">&nbsp;&nbsp;Essa aproximação resulta em um sistema linear que pode ser resolvido a cada iteração para atualizar os parâmetros do modelo. A fórmula central do método consiste na multiplicação da Jacobiana transposta <em>JT</em> pela própria Jacobiana <em>J</em>, formando uma matriz simétrica que aproxima a Hessiana. O vetor de resíduos <em>r</em> é então usado para determinar a direção de atualização <span class="math inline">\(\Delta\theta\)</span>, com a seguinte equação:</div>
+<p><span class="math display">\[
+\theta_{k+1} = \theta_k + \left(J^T J\right)^{-1} J^T \cdot r
+\]</span></p>
+<div class="line-block">&nbsp;&nbsp;Para ilustrar o potencial do aplicativo em ajuste não linear iterativo, segue um exemplo para cinética enzimática utilizando-se um <em>modelo de inibição competitiva</em>.</div>
+<div class="line-block">&nbsp;&nbsp;O código permite ajustar as <em>sementes</em>, <em>tolerância</em>, e número de <em>iterações</em>, e oferece o gráfico (pontos/linha ajustada, manualmente), e parâmetros estatísticos da regressão.</div>
+<p><br>
+</p>
+<p><strong>Instruções</strong></p>
+<ul>
+<li><ol type="1">
+<li>Perceba que o código possui um flag para <em>true/false</em> na constante <em>ajuste</em>. Deixei-o em <em>false</em> para a representação dos dados, somente (vetores <em>x</em> e <em>y</em>, ou <em>S</em> e <em>v</em>);</li>
+</ol></li>
+<li><ol start="2" type="1">
+<li>Na área da <em>Plot</em> do código, acerte a constante <em>trace</em> para que fique com os vetores de dados, também;</li>
+</ol></li>
+<li><ol start="3" type="1">
+<li>Clique em <em>add plot</em> para visualizar os pontos experimentais;</li>
+</ol></li>
+<li><ol start="4" type="1">
+<li>Para superimpor a curva ajustada, atualize as constantes <em>ajuste</em> e <em>trace</em> (vetores <em>S_fit</em> e <em>v_fit</em>), e escolha <em>lines</em> em <em>mode</em>.</li>
+</ol></li>
+</ul>
+<p><a href="Eq/jsp_ajNonLinGauss.html" target="_blank"><img src="Eq/ajNonLinGauss.png" class="img-fluid"></a></p>
+
+
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a></main> <!-- /main -->

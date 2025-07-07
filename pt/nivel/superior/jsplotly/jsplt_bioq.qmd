@@ -949,11 +949,12 @@ $$
 
 ## Ajuste não linear de dados
 
-### Contexto: {.unnumbered}
-
 |   Modelagem é uma área de emprego comum nas ciências naturais, quando se deseja previsão ou correlação matemática de dados experimentais. Modelos podem constituir-se lineares ou não. Quando não lineares, podem ser aplicados de forma empírica para os dados (ex: funções quadráticas, logarítmicas, exponenciais ou de potência), ou a partir de uma função matemática explanatória do modelo. 
 
 |   Nesse caso são empregadas técnicas para ajuste não linear dos dados ao modelo, como *Simplex*,  *Gauss*, *Newton-Raphson*, *Levenberg-Marquadt*, ou *mínimos quadrados* por exemplo. Seja qual for o método, o ajuste não linear difere-se do linear em pressupostos e tratamento dos dados (veja uma rápida explicação [aqui](https://bioquanti.netlify.app/pt/nivel/superior/r/enzimas#ajuste-n%C3%A3o-linear). 
+
+### Contexto: Interação ligante-proteína (algoritmo de *grid search*) {.unnumbered}
+
 
 |   O exemplo a seguir ilustra a aplicação de um ajuste não linear de dados de interação molecular por modelo de Langmuir, e tratamento por *minimização do erro quadrático por varredura manual*. Nesse tratamento, calcula-se a *soma dos erros quadráticos (RMSE)* para combinações de *a* e *b*, selecionando-se o par com menor erro calculado. Nesse caso, por simplificação, apesar do *JSPlotly* trabalhar com bibliotecas mais específicas, a regressão não linear dá-se por mínimos quadrados, mas realizada por *grid search*, e não por métodos iterativos clássicos. Assim, um conjunto de valores é testado para o par (a, b) em uma malha definida previamente (tabela de combinações), permitindo a identificação dos parâmetros que melhor descrevem os dados experimentais segundo o critério de erro mínimo.
 \
@@ -996,6 +997,37 @@ $$
 1. Como no exemplo anterior, apresente alternativamente os pontos e a curva de ajuste pela operação "booleana" ("mostrarPontos = true/false"; "mostrarCurva = true/false");
 2. Altere os dados e realize novo ajuste, para obtenção de outros parâmetros da equação (Kd, SSR, R², R² ajustado). Obs: R² adj corresponde ao valor de R² corrigido para o número de parâmetros do modelo (no caso, "2"), incidindo diretamente nos "graus de liberdade" para o ajuste.
 ```
+\
 
-                                                                                                                                                                                                          
+                               
+### Contexto - Inibição competitiva em cinética enzimática (algoritmo de Gauss-Newton) {.unnumbered}   
+
+
+|   O método de *Gauss-Newton* ajusta iterativamente modelos não lineares a conjuntos de dados experimentais. Ele é especialmente eficiente quando o modelo é *quase linear* em relação aos parâmetros e os resíduos são moderadamente pequenos. O objetivo é encontrar os parâmetros $\theta$ que minimizam a soma dos quadrados dos resíduos entre os dados observados *yi* e os valores preditos pelo modelo f(xi,$\theta$. Diferente do método de Newton-Raphson completo, o Gauss-Newton evita o cálculo explícito da Hessiana, utilizando uma aproximação baseada na Jacobiana dos resíduos.
+
+
+## Equação: {.unnumbered}
+
+|   Essa aproximação resulta em um sistema linear que pode ser resolvido a cada iteração para atualizar os parâmetros do modelo. A fórmula central do método consiste na multiplicação da Jacobiana transposta *JT* pela própria Jacobiana *J*, formando uma matriz simétrica que aproxima a Hessiana. O vetor de resíduos *r* é então usado para determinar a direção de atualização $\Delta\theta$, com a seguinte equação:
+
+$$
+\theta_{k+1} = \theta_k + \left(J^T J\right)^{-1} J^T \cdot r
+$$
+
+|   Para ilustrar o potencial do aplicativo em ajuste não linear iterativo, segue um exemplo para cinética enzimática utilizando-se um *modelo de inibição competitiva*. 
+
+|   O código permite ajustar as *sementes*, *tolerância*, e número de *iterações*, e oferece o gráfico (pontos/linha ajustada, manualmente), e parâmetros estatísticos da regressão.
+\
+
+**Instruções**
+
+- 1. Perceba que o código possui um flag para *true/false* na constante *ajuste*. Deixei-o em *false* para a representação dos dados, somente (vetores *x* e *y*, ou *S* e *v*);
+- 2. Na área da *Plot* do código, acerte a constante *trace* para que fique com os vetores de dados, também;
+- 3. Clique em *add plot* para visualizar os pontos experimentais;
+- 4. Para superimpor a curva ajustada, atualize as constantes *ajuste* e *trace* (vetores *S_fit* e *v_fit*), e escolha *lines* em *mode*.
+
+[![](Eq/ajNonLinGauss.png)](Eq/jsp_ajNonLinGauss.html){target="_blank"}
+
+
+
                                                                                                      

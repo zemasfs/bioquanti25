@@ -391,7 +391,8 @@ window.Quarto = {
   <li><a href="#response-surface-methodology-rsm" id="toc-response-surface-methodology-rsm" class="nav-link" data-scroll-target="#response-surface-methodology-rsm"><span class="header-section-number">19</span> Response Surface Methodology (RSM)</a></li>
   <li><a href="#data-smoothing---spline-and-savitzky-golay-filter" id="toc-data-smoothing---spline-and-savitzky-golay-filter" class="nav-link" data-scroll-target="#data-smoothing---spline-and-savitzky-golay-filter"><span class="header-section-number">20</span> Data smoothing - Spline and Savitzky-Golay filter</a></li>
   <li><a href="#anova-and-tukey-hsd-test" id="toc-anova-and-tukey-hsd-test" class="nav-link" data-scroll-target="#anova-and-tukey-hsd-test"><span class="header-section-number">21</span> ANOVA and Tukey-HSD test</a></li>
-  <li><a href="#nonlinear-data-fit" id="toc-nonlinear-data-fit" class="nav-link" data-scroll-target="#nonlinear-data-fit"><span class="header-section-number">22</span> Nonlinear data fit</a></li>
+  <li><a href="#nonlinear-data-adjustment" id="toc-nonlinear-data-adjustment" class="nav-link" data-scroll-target="#nonlinear-data-adjustment"><span class="header-section-number">22</span> Nonlinear data adjustment</a></li>
+  <li><a href="#equation-18" id="toc-equation-18" class="nav-link" data-scroll-target="#equation-18">Equation:</a></li>
   </ul>
 </nav>
     </div>
@@ -1207,13 +1208,15 @@ S_i(x) = a_i + b_i(x - x_i) + c_i(x - x_i)^2 + d_i(x - x_i)^3
 </div>
 </section>
 </section>
-<section id="nonlinear-data-fit" class="level2" data-number="22">
-<h2 data-number="22" class="anchored" data-anchor-id="nonlinear-data-fit"><span class="header-section-number">22</span> Nonlinear data fit</h2>
-<section id="context-17" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="context-17">Context:</h3>
-<div class="line-block">Modeling is a common area of employment in the natural sciences, when mathematical prediction or correlation of experimental data is desired. Models can be linear or non-linear. When non-linear, they can be applied empirically to the data (e.g., quadratic, logarithmic, exponential, or power functions), or from a mathematical function that explains the model.</div>
-<div class="line-block">In this case, techniques for nonlinear adjustment of the data to the model are used, such as <em>Simplex</em>, <em>Gauss</em>, <em>Newton-Raphson</em>, <em>Levenberg-Marquardt</em>, or <em>least squares</em>, for example. Regardless of the method, nonlinear adjustment differs from linear adjustment in its assumptions and data treatment (see a quick explanation <a href="https://bioquanti.netlify.app/pt/nivel/superior/r/enzimas#ajuste-n%C3%A3o-linear">here</a>.</div>
-<div class="line-block">The following example illustrates the application of a nonlinear adjustment of molecular interaction data using the Langmuir model and treatment by <em>manual scan least squares</em>. In this treatment, the <em>sum of the least squares errors (RMSE)</em> is calculated for combinations of <em>a</em> and <em>b</em>, selecting the pair with the lowest calculated error. In this case, for simplicity, although <em>JSPlotly</em> works with more specific libraries, the nonlinear regression is performed by least squares, but using <em>grid search</em> rather than classic iterative methods. Thus, a set of values is tested for the pair (a, b) in a previously defined grid (combination table), allowing the identification of the parameters that best describe the experimental data according to the minimum error criterion.</div>
+<section id="nonlinear-data-adjustment" class="level2" data-number="22">
+<h2 data-number="22" class="anchored" data-anchor-id="nonlinear-data-adjustment"><span class="header-section-number">22</span> Nonlinear data adjustment</h2>
+<div class="line-block">Modeling is a common area of employment in the natural sciences, when mathematical prediction or correlation of experimental data is desired. Models can be linear or nonlinear. When nonlinear, they can be applied empirically to the data (e.g., quadratic, logarithmic, exponential, or power functions), or from an explanatory mathematical function of the model.</div>
+<div class="line-block">In this case, techniques for nonlinear adjustment of the data to the model are used, such as <em>Simplex</em>, <em>Gauss</em>, <em>Newton-Raphson</em>, <em>Levenberg-Marquardt</em>, or <em>least squares</em>, for example. Regardless of the method, nonlinear adjustment differs from linear adjustment in its assumptions and treatment of data (see a quick explanation <a href="https://bioquanti.netlify.app/pt/nivel/superior/r/enzimas#ajuste-n%C3%A3o-linear">here</a>.</div>
+<section id="context-ligand-protein-interaction-grid-search-algorithm" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="context-ligand-protein-interaction-grid-search-algorithm">Context: Ligand-protein interaction (<em>grid search</em> algorithm)</h3>
+<div class="line-block">The following example illustrates the application of a nonlinear adjustment of molecular interaction data using the Langmuir model and treatment by <em>manual grid search</em>. In this treatment, the <em>sum of the quadratic errors (RMSE)</em> is calculated for combinations of <em>a</em> and <em>b</em>, selecting the pair with the lowest calculated error. In this case, for simplicity, although <em>JSPlotly</em> works with more specific libraries, the nonlinear regression is performed by least squares, but using <em>grid search</em> rather than classic iterative methods. Thus, a set of values is tested for the pair (a, b) in a previously defined grid (combination table), allowing the identification of the parameters that best describe the experimental data according to the minimum error criterion.</div>
+<p><br>
+</p>
 </section>
 <section id="equation-17" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="equation-17">Equation:</h3>
@@ -1225,7 +1228,7 @@ Y = \frac{aX}{K_d + X}
 <li>Y = fraction of occupied sites;</li>
 <li>X = concentration of free ligand;</li>
 <li><em>a</em> = saturation value (sites of the same affinity completely occupied);</li>
-<li><em>Kd</em> = equilibrium dissociation constant of the complex.</li>
+<li><em>Kd</em> = dissociation equilibrium constant of the complex.</li>
 </ul>
 <div class="line-block">In this case, the nonlinear least squares function is:</div>
 <p><span class="math display">\[
@@ -1234,17 +1237,50 @@ SSR(a, K_d) = \sum_{i=1}^n \left( y_i - \frac{a x_i}{K_d + x_i} \right)^2
 <p><em>Where:</em></p>
 <p><em>SSR</em> = sum of the squares of the residuals (inversely proportional to the quality of the fit)<br>
 </p>
-<p><a href="Eq/jsp_ajNonLin.html" target="_blank"><img src="Eq/ajNonLin.png" class="img-fluid"></a></p>
+<p><a href="Eq/jsp_ajNonLin.html" target="“_blank”"><img src="Eq/ajNonLin.png" class="img-fluid"></a></p>
 </section>
 <section id="suggestion-21" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="suggestion-21">Suggestion:</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> As <span class="cf">in</span> the previous example, alternately display the points and the adjustment curve using the <span class="st">"Boolean"</span> <span class="fu">operation</span> (<span class="st">"showPoints = true/false"</span>; <span class="st">"showCurve = true/false"</span>);</span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Change the data and perform a new fit to obtain other parameters of the <span class="fu">equation</span> (Kd, SSR, R², adjusted R²). Note<span class="sc">:</span> R² adj corresponds to the value of R² corrected <span class="cf">for</span> the number of parameters <span class="cf">in</span> the <span class="fu">model</span> (<span class="cf">in</span> this case, <span class="st">"2"</span>), directly affecting the <span class="st">"degrees of freedom"</span> <span class="cf">for</span> the fit.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> As <span class="cf">in</span> the previous example, alternately display the points and the adjustment curve using the “Boolean” <span class="fu">operation</span> (“<span class="at">showPoints =</span> true<span class="sc">/</span>false”; “<span class="at">showCurve =</span> true<span class="sc">/</span>false”);</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> Change the data and perform a new fit to obtain other parameters of the <span class="fu">equation</span> (Kd, SSR, R², adjusted R²). Note<span class="sc">:</span> R² adj corresponds to the value of R² corrected <span class="cf">for</span> the number of parameters <span class="cf">in</span> the <span class="fu">model</span> (<span class="cf">in</span> this case, “<span class="dv">2</span>”), directly affecting the “degrees of freedom” <span class="cf">for</span> the fit.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-
-
+<p><br>
+</p>
 </section>
+<section id="context---competitive-inhibition-in-enzyme-kinetics-gauss-newton-algorithm" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="context---competitive-inhibition-in-enzyme-kinetics-gauss-newton-algorithm">Context - Competitive inhibition in enzyme kinetics (Gauss-Newton algorithm)</h3>
+<div class="line-block">The <em>Gauss-Newton</em> method iteratively fits nonlinear models to experimental data sets. It is especially efficient when the model is <em>quasi-linear</em> with respect to the parameters and the residuals are moderately small. The goal is to find the parameters <span class="math inline">\(\theta\)</span> that minimize the sum of the squares of the residuals between the observed data <em>yi</em> and the values predicted by the model f(xi,<span class="math inline">\(\theta\)</span>. Unlike the full Newton-Raphson method, Gauss-Newton avoids the explicit calculation of the Hessian by using an approximation based on the Jacobian of the residuals.</div>
+</section>
+</section>
+<section id="equation-18" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="equation-18">Equation:</h2>
+<div class="line-block">This approximation results in a linear system that can be solved at each iteration to update the model parameters. The central formula of the method consists of multiplying the transposed Jacobian <em>JT</em> by the Jacobian <em>J</em> itself, forming a symmetric matrix that approximates the Hessian. The residual vector <em>r</em> is then used to determine the update direction <span class="math inline">\(\Delta\theta\)</span>, with the following equation:</div>
+<p><span class="math display">\[
+\theta_{k+1} = \theta_k + \left(J^T J\right)^{-1} J^T \cdot r
+\]</span></p>
+<div class="line-block">To illustrate the potential of the application in iterative nonlinear fitting, here is an example for enzyme kinetics using a <em>competitive inhibition model</em>.</div>
+<div class="line-block">The code allows you to adjust the <em>seeds</em>, <em>tolerance</em>, and number of <em>iterations</em>, and provides the graph (points/fitted line, manually), and statistical parameters of the regression.</div>
+<p><br>
+</p>
+<p><strong>Instructions</strong></p>
+<ul>
+<li><ol type="1">
+<li>Note that the code has a flag for <em>true/false</em> in the <em>ajuste</em> constant. I left it at <em>false</em> for data representation only (vectors <em>x</em> and <em>y</em>, or <em>S</em> and <em>v</em>);</li>
+</ol></li>
+<li><ol start="2" type="1">
+<li>In the <em>Plot</em> area of the code, set the <em>trace</em> constant so that it also includes the data vectors;</li>
+</ol></li>
+<li><ol start="3" type="1">
+<li>Click <em>add plot</em> to view the experimental points;</li>
+</ol></li>
+<li><ol start="4" type="1">
+<li>To superimpose the fitted curve, update the constants <em>ajuste</em> and <em>trace</em> (vectors <em>S_fit</em> and <em>v_fit</em>), and choose <em>lines</em> in <em>mode</em>.</li>
+</ol></li>
+</ul>
+<p><a href="Eq/jsp_ajNonLinGauss.html" target="“_blank”"><img src="Eq/ajNonLinGauss.png" class="img-fluid"></a></p>
+
+
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
