@@ -754,509 +754,241 @@ function limparTudo() {
 // Definir a equação quadrática padrão
 var codigoPadrao = `
 
-function linspace(a, b, n) {
-  const arr = [];
-  const step = (b - a) / (n - 1);
-  for (let i = 0; i < n; i++) {
-    arr.push(a + i * step);
+// ==================================================
+// GERADOR DE QRCODE PARA LIVROS VIVOS
+// Versao ASCII-free
+// Sem botao Gerar
+// Atualiza automaticamente quando o link muda
+// Preserva Ace
+// ==================================================
+
+(function() {
+
+  var linkInicial = "https://bioquanti.netlify.app/pt/";
+  var tituloInicial = "Acesse o objeto interativo";
+
+  var ultimoLinkLido = "";
+  var ultimoTituloLido = "";
+
+  var paineisAntigos = document.querySelectorAll(".painelQRCodeAuto");
+  for (var i = 0; i < paineisAntigos.length; i++) {
+    paineisAntigos[i].remove();
   }
-  return arr;
-}
 
-function format2(x) {
-  return Number(x).toFixed(2);
-}
+  var painel = document.createElement("div");
+  painel.className = "painelQRCodeAuto";
+  painel.style.maxWidth = "620px";
+  painel.style.margin = "20px auto";
+  painel.style.padding = "20px";
+  painel.style.border = "1px solid #ccc";
+  painel.style.borderRadius = "12px";
+  painel.style.fontFamily = "Arial, sans-serif";
+  painel.style.background = "#f9f9f9";
+  painel.style.textAlign = "center";
 
-const frames = [];
+  painel.innerHTML = [
+    '<h2 style="margin-top:0;">Gerador de QRCode</h2>',
 
-// =========================
-// SOLUCOES
-// =========================
-const nList = [0.5, 1.0, 1.5, 2.0, 3.0];
+    '<p style="font-size:14px; color:#444;">',
+    'Edite o link abaixo. O QRCode sera atualizado automaticamente.',
+    '</p>',
 
-for (let i = 0; i < nList.length; i++) {
-  const nSoluto = nList[i];
-  const V = linspace(0.5, 10, 150);
-  const C = V.map(v => nSoluto / v);
+    '<textarea',
+    ' class="campoLinkQRAuto"',
+    ' rows="3"',
+    ' style="width:95%; padding:10px; margin-bottom:10px; border:1px solid #aaa; border-radius:6px; font-size:14px; font-family:Arial, sans-serif;"',
+    '>',
+    linkInicial,
+    '</textarea>',
 
-  const volumeEscolhido = 5.0;
-  const concEscolhida = nSoluto / volumeEscolhido;
+    '<input',
+    ' class="campoTituloQRAuto"',
+    ' type="text"',
+    ' value="' + tituloInicial + '"',
+    ' style="width:95%; padding:10px; margin-bottom:15px; border:1px solid #aaa; border-radius:6px; font-size:14px;"',
+    '>',
 
-  frames.push({
-    name: "sol_" + i,
-    data: [
-      {
-        x: V,
-        y: C,
-        type: "scatter",
-        mode: "lines",
-        name: "Concentracao",
-        xaxis: "x1",
-        yaxis: "y1",
-        hovertemplate: "Volume: %{x:.2f} L<br>Concentracao: %{y:.2f} mol/L<extra></extra>"
-      },
-      {
-        x: [volumeEscolhido],
-        y: [concEscolhida],
-        type: "scatter",
-        mode: "markers",
-        name: "Exemplo em 5 L",
-        xaxis: "x1",
-        yaxis: "y1",
-        hovertemplate: "Exemplo:<br>Volume: %{x:.2f} L<br>Concentracao: %{y:.2f} mol/L<extra></extra>"
-      },
-      {
-        x: ["Soluto", "Solvente"],
-        y: [nSoluto, 10 - nSoluto > 0 ? 10 - nSoluto : 0.2],
-        type: "bar",
-        name: "Composicao relativa",
-        xaxis: "x2",
-        yaxis: "y2",
-        hovertemplate: "%{x}: %{y:.2f}<extra></extra>"
-      }
-    ],
-    layout: {
-      title: "Quimica interativa - Solucoes",
-      xaxis: {
-        title: "Volume (L)",
-        domain: [0.00, 0.60],
-        range: [0.5, 10]
-      },
-      yaxis: {
-        title: "Concentracao (mol/L)",
-        range: [0, 6.5]
-      },
-      xaxis2: {
-        title: "Componentes",
-        domain: [0.68, 1.00]
-      },
-      yaxis2: {
-        title: "Quantidade relativa",
-        range: [0, 10]
-      },
-      annotations: [
-        {
-          x: 0.84,
-          y: 0.88,
-          xref: "paper",
-          yref: "paper",
-          showarrow: false,
-          align: "left",
-          text:
-            "n = " + format2(nSoluto) + " mol<br>" +
-            "Em 5,0 L: " + format2(concEscolhida) + " mol/L<br>" +
-            "Diluir reduz a concentracao."
-        },
-        {
-          x: 0.5,
-          y: -0.22,
-          xref: "paper",
-          yref: "paper",
-          showarrow: false,
-          align: "center",
-          text:
-            "Solucoes: a concentracao depende da relacao entre quantidade de soluto e volume."
-        }
-      ]
+    '<br>',
+
+    '<button class="botaoSalvarQRAuto" style="padding:10px 18px; border:none; border-radius:8px; background:#2ca02c; color:white; font-size:15px; cursor:pointer; margin:5px;">',
+    'Salvar PNG',
+    '</button>',
+
+    '<button class="botaoLimparQRAuto" style="padding:10px 18px; border:none; border-radius:8px; background:#777; color:white; font-size:15px; cursor:pointer; margin:5px;">',
+    'Limpar',
+    '</button>',
+
+    '<div style="margin:20px auto 10px auto; padding:15px; background:white; display:inline-block; border:1px solid #ddd; border-radius:10px;">',
+
+    '<div',
+    ' class="areaQRAuto"',
+    ' style="width:280px; min-height:280px; display:flex; align-items:center; justify-content:center; background:white;"',
+    '>',
+    '<span style="font-size:13px; color:#777;">Aguardando QRCode...</span>',
+    '</div>',
+
+    '<div class="legendaQRAuto" style="margin-top:10px; font-size:14px; color:#333; word-break:break-word;"></div>',
+
+    '<div class="statusQRAuto" style="margin-top:8px; font-size:11px; color:#777; word-break:break-word;"></div>',
+
+    '</div>'
+  ].join("");
+
+  var alvo = document.getElementById("divGraficoPlotly");
+
+  if (alvo && alvo.parentNode) {
+    alvo.parentNode.insertBefore(painel, alvo.nextSibling);
+  } else {
+    document.body.appendChild(painel);
+  }
+
+  var campoLink = painel.querySelector(".campoLinkQRAuto");
+  var campoTitulo = painel.querySelector(".campoTituloQRAuto");
+  var area = painel.querySelector(".areaQRAuto");
+  var legenda = painel.querySelector(".legendaQRAuto");
+  var status = painel.querySelector(".statusQRAuto");
+  var botaoSalvar = painel.querySelector(".botaoSalvarQRAuto");
+  var botaoLimpar = painel.querySelector(".botaoLimparQRAuto");
+
+  function carregarQRCodeJS(callback) {
+    if (typeof QRCode !== "undefined") {
+      callback();
+      return;
     }
+
+    var script = document.createElement("script");
+    script.src = "https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js";
+
+    script.onload = function() {
+      callback();
+    };
+
+    script.onerror = function() {
+      status.innerHTML = "Erro ao carregar biblioteca de QRCode.";
+    };
+
+    document.head.appendChild(script);
+  }
+
+  function limparTexto(texto) {
+    return texto.replace(/^\s+|\s+$/g, "");
+  }
+
+  function limparNomeArquivo(texto) {
+    return texto
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
+  }
+
+  function desenharQRCode(link, titulo) {
+    area.innerHTML = "";
+    legenda.innerHTML = "";
+
+    var caixa = document.createElement("div");
+    caixa.className = "caixaQRAuto";
+    caixa.style.display = "inline-block";
+    caixa.style.background = "white";
+    caixa.style.padding = "10px";
+
+    area.appendChild(caixa);
+
+    new QRCode(caixa, {
+      text: link,
+      width: 240,
+      height: 240,
+      colorDark: "#000000",
+      colorLight: "#ffffff",
+      correctLevel: QRCode.CorrectLevel.H
+    });
+
+    legenda.innerHTML =
+      "<strong>" + titulo + "</strong><br>" +
+      '<span style="font-size:12px;">' + link + "</span>";
+
+    status.innerHTML = "QRCode atualizado para: " + link;
+  }
+
+  function verificarMudancas() {
+    var link = limparTexto(campoLink.value);
+    var titulo = limparTexto(campoTitulo.value);
+
+    if (titulo === "") {
+      titulo = "QRCode";
+    }
+
+    if (link === "") {
+      return;
+    }
+
+    if (link !== ultimoLinkLido || titulo !== ultimoTituloLido) {
+      ultimoLinkLido = link;
+      ultimoTituloLido = titulo;
+      desenharQRCode(link, titulo);
+    }
+  }
+
+  function salvarQRCode() {
+    var caixa = painel.querySelector(".caixaQRAuto");
+
+    if (!caixa) {
+      alert("QRCode ainda nao gerado.");
+      return;
+    }
+
+    var canvas = caixa.querySelector("canvas");
+    var img = caixa.querySelector("img");
+    var dataURL = "";
+
+    if (canvas) {
+      dataURL = canvas.toDataURL("image/png");
+    } else if (img) {
+      dataURL = img.src;
+    } else {
+      alert("QRCode nao encontrado.");
+      return;
+    }
+
+    var nomeBase = limparNomeArquivo(ultimoTituloLido);
+
+    if (nomeBase === "") {
+      nomeBase = "qrcode";
+    }
+
+    var a = document.createElement("a");
+    a.href = dataURL;
+    a.download = nomeBase + ".png";
+
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  }
+
+  function limparQRCode() {
+    area.innerHTML =
+      '<span style="font-size:13px; color:#777;">Aguardando QRCode...</span>';
+
+    legenda.innerHTML = "";
+    status.innerHTML = "";
+
+    ultimoLinkLido = "";
+    ultimoTituloLido = "";
+  }
+
+  carregarQRCodeJS(function() {
+    botaoSalvar.onclick = salvarQRCode;
+    botaoLimpar.onclick = limparQRCode;
+
+    verificarMudancas();
+
+    setInterval(function() {
+      verificarMudancas();
+    }, 500);
   });
-}
 
-// =========================
-// EQUILIBRIO
-// =========================
-const pList = [-0.4, -0.2, 0.0, 0.2, 0.4];
-
-for (let i = 0; i < pList.length; i++) {
-  const perturbacao = pList[i];
-  const t = linspace(0, 10, 180);
-
-  const R0 = Math.max(0.2, Math.min(1.6, 1.0 + perturbacao));
-  const Req = Math.max(0.1, Math.min(1.2, 0.35 + 0.18 * perturbacao));
-  const Peq = Math.max(0.1, Math.min(1.4, 1.00 - Req));
-  const k = 0.85;
-
-  const R = t.map(tt => Req + (R0 - Req) * Math.exp(-k * tt));
-  const P = t.map(tt => Peq * (1 - Math.exp(-k * tt)));
-
-  frames.push({
-    name: "eq_" + i,
-    data: [
-      {
-        x: t,
-        y: R,
-        type: "scatter",
-        mode: "lines",
-        name: "Reagente",
-        xaxis: "x1",
-        yaxis: "y1",
-        hovertemplate: "Tempo: %{x:.2f}<br>[Reagente]: %{y:.2f}<extra></extra>"
-      },
-      {
-        x: t,
-        y: P,
-        type: "scatter",
-        mode: "lines",
-        name: "Produto",
-        xaxis: "x1",
-        yaxis: "y1",
-        hovertemplate: "Tempo: %{x:.2f}<br>[Produto]: %{y:.2f}<extra></extra>"
-      },
-      {
-        x: ["Reagente eq.", "Produto eq."],
-        y: [Req, Peq],
-        type: "bar",
-        name: "Estado final",
-        xaxis: "x2",
-        yaxis: "y2",
-        hovertemplate: "%{x}: %{y:.2f}<extra></extra>"
-      }
-    ],
-    layout: {
-      title: "Quimica interativa - Equilibrio",
-      xaxis: {
-        title: "Tempo",
-        domain: [0.00, 0.60],
-        range: [0, 10]
-      },
-      yaxis: {
-        title: "Concentracao relativa",
-        range: [0, 1.6]
-      },
-      xaxis2: {
-        title: "Estado final",
-        domain: [0.68, 1.00]
-      },
-      yaxis2: {
-        title: "Nivel relativo",
-        range: [0, 1.6]
-      },
-      annotations: [
-        {
-          x: 0.84,
-          y: 0.88,
-          xref: "paper",
-          yref: "paper",
-          showarrow: false,
-          align: "left",
-          text:
-            "Perturbacao = " + format2(perturbacao) + "<br>" +
-            "Req = " + format2(Req) + "<br>" +
-            "Peq = " + format2(Peq) + "<br>" +
-            "Equilibrio dinamico."
-        },
-        {
-          x: 0.5,
-          y: -0.22,
-          xref: "paper",
-          yref: "paper",
-          showarrow: false,
-          align: "center",
-          text:
-            "Equilibrio: o sistema evolui ate um estado estavel entre reagentes e produtos."
-        }
-      ]
-    }
-  });
-}
-
-// =========================
-// CINETICA OFF
-// =========================
-const tempList = [10, 25, 40, 60, 80];
-
-for (let i = 0; i < tempList.length; i++) {
-  const temperatura = tempList[i];
-  const t = linspace(0, 10, 180);
-
-  const fatorTemp = 1 + (temperatura - 25) / 40;
-  const k = 0.18 * fatorTemp;
-
-  const reagente = t.map(tt => Math.exp(-k * tt));
-  const produto = t.map(tt => 1 - Math.exp(-k * tt));
-  const t12 = Math.log(2) / k;
-
-  frames.push({
-    name: "cin_off_" + i,
-    data: [
-      {
-        x: t,
-        y: reagente,
-        type: "scatter",
-        mode: "lines",
-        name: "Reagente",
-        xaxis: "x1",
-        yaxis: "y1",
-        hovertemplate: "Tempo: %{x:.2f}<br>Reagente: %{y:.2f}<extra></extra>"
-      },
-      {
-        x: t,
-        y: produto,
-        type: "scatter",
-        mode: "lines",
-        name: "Produto",
-        xaxis: "x1",
-        yaxis: "y1",
-        hovertemplate: "Tempo: %{x:.2f}<br>Produto: %{y:.2f}<extra></extra>"
-      },
-      {
-        x: ["k", "t1/2"],
-        y: [k, t12],
-        type: "bar",
-        name: "Indicadores",
-        xaxis: "x2",
-        yaxis: "y2",
-        hovertemplate: "%{x}: %{y:.2f}<extra></extra>"
-      }
-    ],
-    layout: {
-      title: "Quimica interativa - Cinetica (catalisador OFF)",
-      xaxis: {
-        title: "Tempo",
-        domain: [0.00, 0.60],
-        range: [0, 10]
-      },
-      yaxis: {
-        title: "Fracao relativa",
-        range: [0, 1.05]
-      },
-      xaxis2: {
-        title: "Indicadores",
-        domain: [0.68, 1.00]
-      },
-      yaxis2: {
-        title: "Valor",
-        range: [0, 4.5]
-      },
-      annotations: [
-        {
-          x: 0.84,
-          y: 0.88,
-          xref: "paper",
-          yref: "paper",
-          showarrow: false,
-          align: "left",
-          text:
-            "T = " + temperatura + " C<br>" +
-            "Catalisador OFF<br>" +
-            "k = " + format2(k) + "<br>" +
-            "t1/2 = " + format2(t12)
-        },
-        {
-          x: 0.5,
-          y: -0.22,
-          xref: "paper",
-          yref: "paper",
-          showarrow: false,
-          align: "center",
-          text:
-            "Cinetica: aumentar a temperatura acelera a reacao."
-        }
-      ]
-    }
-  });
-}
-
-// =========================
-// CINETICA ON
-// =========================
-for (let i = 0; i < tempList.length; i++) {
-  const temperatura = tempList[i];
-  const t = linspace(0, 10, 180);
-
-  const fatorTemp = 1 + (temperatura - 25) / 40;
-  const k = 0.18 * fatorTemp * 1.8;
-
-  const reagente = t.map(tt => Math.exp(-k * tt));
-  const produto = t.map(tt => 1 - Math.exp(-k * tt));
-  const t12 = Math.log(2) / k;
-
-  frames.push({
-    name: "cin_on_" + i,
-    data: [
-      {
-        x: t,
-        y: reagente,
-        type: "scatter",
-        mode: "lines",
-        name: "Reagente",
-        xaxis: "x1",
-        yaxis: "y1",
-        hovertemplate: "Tempo: %{x:.2f}<br>Reagente: %{y:.2f}<extra></extra>"
-      },
-      {
-        x: t,
-        y: produto,
-        type: "scatter",
-        mode: "lines",
-        name: "Produto",
-        xaxis: "x1",
-        yaxis: "y1",
-        hovertemplate: "Tempo: %{x:.2f}<br>Produto: %{y:.2f}<extra></extra>"
-      },
-      {
-        x: ["k", "t1/2"],
-        y: [k, t12],
-        type: "bar",
-        name: "Indicadores",
-        xaxis: "x2",
-        yaxis: "y2",
-        hovertemplate: "%{x}: %{y:.2f}<extra></extra>"
-      }
-    ],
-    layout: {
-      title: "Quimica interativa - Cinetica (catalisador ON)",
-      xaxis: {
-        title: "Tempo",
-        domain: [0.00, 0.60],
-        range: [0, 10]
-      },
-      yaxis: {
-        title: "Fracao relativa",
-        range: [0, 1.05]
-      },
-      xaxis2: {
-        title: "Indicadores",
-        domain: [0.68, 1.00]
-      },
-      yaxis2: {
-        title: "Valor",
-        range: [0, 4.5]
-      },
-      annotations: [
-        {
-          x: 0.84,
-          y: 0.88,
-          xref: "paper",
-          yref: "paper",
-          showarrow: false,
-          align: "left",
-          text:
-            "T = " + temperatura + " C<br>" +
-            "Catalisador ON<br>" +
-            "k = " + format2(k) + "<br>" +
-            "t1/2 = " + format2(t12)
-        },
-        {
-          x: 0.5,
-          y: -0.22,
-          xref: "paper",
-          yref: "paper",
-          showarrow: false,
-          align: "center",
-          text:
-            "Cinetica: o catalisador acelera ainda mais a reacao."
-        }
-      ]
-    }
-  });
-}
-
-// =========================
-// FIGURA INICIAL
-// =========================
-const data = frames[2].data;
-
-const layout = {
-  ...frames[2].layout,
-  paper_bgcolor: "white",
-  plot_bgcolor: "white",
-  showlegend: true,
-  margin: { l: 70, r: 40, t: 100, b: 140 },
-
-  updatemenus: [
-    {
-      type: "buttons",
-      direction: "right",
-      x: 0.00,
-      y: 1.22,
-      showactive: false,
-      buttons: [
-        {
-          label: "Solucoes",
-          method: "animate",
-          args: [["sol_2"], {
-            mode: "immediate",
-            transition: { duration: 300 },
-            frame: { duration: 300, redraw: true }
-          }]
-        },
-        {
-          label: "Equilibrio",
-          method: "animate",
-          args: [["eq_2"], {
-            mode: "immediate",
-            transition: { duration: 300 },
-            frame: { duration: 300, redraw: true }
-          }]
-        },
-        {
-          label: "Cinetica OFF",
-          method: "animate",
-          args: [["cin_off_1"], {
-            mode: "immediate",
-            transition: { duration: 300 },
-            frame: { duration: 300, redraw: true }
-          }]
-        },
-        {
-          label: "Cinetica ON",
-          method: "animate",
-          args: [["cin_on_1"], {
-            mode: "immediate",
-            transition: { duration: 300 },
-            frame: { duration: 300, redraw: true }
-          }]
-        }
-      ]
-    }
-  ],
-
-  sliders: [
-    {
-      active: 2,
-      x: 0.10,
-      y: -0.10,
-      len: 0.80,
-      currentvalue: {
-        prefix: "Explore: "
-      },
-      pad: { t: 20 },
-      steps: [
-        { label: "S0", method: "animate", args: [["sol_0"], { mode: "immediate", transition: { duration: 200 }, frame: { duration: 200, redraw: true } }] },
-        { label: "S1", method: "animate", args: [["sol_1"], { mode: "immediate", transition: { duration: 200 }, frame: { duration: 200, redraw: true } }] },
-        { label: "S2", method: "animate", args: [["sol_2"], { mode: "immediate", transition: { duration: 200 }, frame: { duration: 200, redraw: true } }] },
-        { label: "S3", method: "animate", args: [["sol_3"], { mode: "immediate", transition: { duration: 200 }, frame: { duration: 200, redraw: true } }] },
-        { label: "S4", method: "animate", args: [["sol_4"], { mode: "immediate", transition: { duration: 200 }, frame: { duration: 200, redraw: true } }] },
-
-        { label: "E0", method: "animate", args: [["eq_0"], { mode: "immediate", transition: { duration: 200 }, frame: { duration: 200, redraw: true } }] },
-        { label: "E1", method: "animate", args: [["eq_1"], { mode: "immediate", transition: { duration: 200 }, frame: { duration: 200, redraw: true } }] },
-        { label: "E2", method: "animate", args: [["eq_2"], { mode: "immediate", transition: { duration: 200 }, frame: { duration: 200, redraw: true } }] },
-        { label: "E3", method: "animate", args: [["eq_3"], { mode: "immediate", transition: { duration: 200 }, frame: { duration: 200, redraw: true } }] },
-        { label: "E4", method: "animate", args: [["eq_4"], { mode: "immediate", transition: { duration: 200 }, frame: { duration: 200, redraw: true } }] },
-
-        { label: "K0", method: "animate", args: [["cin_off_0"], { mode: "immediate", transition: { duration: 200 }, frame: { duration: 200, redraw: true } }] },
-        { label: "K1", method: "animate", args: [["cin_off_1"], { mode: "immediate", transition: { duration: 200 }, frame: { duration: 200, redraw: true } }] },
-        { label: "K2", method: "animate", args: [["cin_off_2"], { mode: "immediate", transition: { duration: 200 }, frame: { duration: 200, redraw: true } }] },
-        { label: "K3", method: "animate", args: [["cin_off_3"], { mode: "immediate", transition: { duration: 200 }, frame: { duration: 200, redraw: true } }] },
-        { label: "K4", method: "animate", args: [["cin_off_4"], { mode: "immediate", transition: { duration: 200 }, frame: { duration: 200, redraw: true } }] },
-
-        { label: "C0", method: "animate", args: [["cin_on_0"], { mode: "immediate", transition: { duration: 200 }, frame: { duration: 200, redraw: true } }] },
-        { label: "C1", method: "animate", args: [["cin_on_1"], { mode: "immediate", transition: { duration: 200 }, frame: { duration: 200, redraw: true } }] },
-        { label: "C2", method: "animate", args: [["cin_on_2"], { mode: "immediate", transition: { duration: 200 }, frame: { duration: 200, redraw: true } }] },
-        { label: "C3", method: "animate", args: [["cin_on_3"], { mode: "immediate", transition: { duration: 200 }, frame: { duration: 200, redraw: true } }] },
-        { label: "C4", method: "animate", args: [["cin_on_4"], { mode: "immediate", transition: { duration: 200 }, frame: { duration: 200, redraw: true } }] }
-      ]
-    }
-  ]
-};
-
-const config = {
-  responsive: true,
-  displayModeBar: true
-};
-
-return { data, layout, config, frames };
+})();
 
 `;
 

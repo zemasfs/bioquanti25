@@ -753,10 +753,16 @@ function limparTudo() {
 
 // Definir a equação quadrática padrão
 var codigoPadrao = `
-// ===============================
-// ATMOSFERAS COMPARADAS
-// ===============================
-// Instruções e cenários simulados no site Bioquanti (JSPlotly --> Livros Vivos)
+
+// ========================================
+// SCRIPT 5 - ATMOSFERAS COMPARADAS
+//
+// Entradas opcionais do JSPlotly:
+// input_P0   -> pressao ao nivel de referencia
+// input_altmax -> altitude maxima
+//
+// Sem HTML externo. Usa menu do proprio Plotly.
+// ========================================
 
 let P0 = typeof input_P0 !== "undefined" ? input_P0 : 101325;
 let altmax = typeof input_altmax !== "undefined" ? input_altmax : 10000;

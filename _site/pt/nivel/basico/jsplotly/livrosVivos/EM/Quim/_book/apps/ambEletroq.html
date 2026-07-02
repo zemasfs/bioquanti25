@@ -753,8 +753,23 @@ function limparTudo() {
 
 // Definir a equação quadrática padrão
 var codigoPadrao = `
-// CONDUTIVIDADE E CONCENTRAÇÃO
-// Instruções e cenários simulados no site Bioquanti (JSPlotly --> Livros Vivos)
+
+
+/*
+SCRIPT 1 - CONDUTIVIDADE E CONCENTRACAO
+Altere os valores abaixo.
+
+Sugestoes:
+input_concentracao = 0.10
+input_mobilidade = 1.00
+input_temperatura = 25
+input_tipo = "forte"
+
+Tipos:
+"forte"  -> dissociacao quase total
+"media"  -> dissociacao intermediaria
+"fraca"  -> dissociacao pequena
+*/
 
 const concentracao = typeof input_concentracao !== "undefined" ? input_concentracao : 0.10;
 const mobilidade = typeof input_mobilidade !== "undefined" ? input_mobilidade : 1.00;

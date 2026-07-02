@@ -756,9 +756,18 @@ var codigoPadrao = `
 
 
 // =====================================================
-// CENARIOS DE PARTICULAS
+// SCRIPT 3 - CENARIOS DE PARTICULAS PARA USAR COM ADD
+// Corrigido para:
+// - cor variar continuamente com T
+// - melhor comportamento visual no JSPlotly
+// - comparacao de cenarios empilhados
+//
+// Parametros:
+// input_T = 1.0;
+// input_interacao = 0.05;
+// input_N = 60;
+// input_seed = 1;
 // =====================================================
-// Instruções e cenários simulados no site Bioquanti (JSPlotly --> Livros Vivos)
 
 const T = (typeof input_T !== "undefined") ? input_T : 1000.0;
 const interacao = (typeof input_interacao !== "undefined") ? input_interacao : 1;

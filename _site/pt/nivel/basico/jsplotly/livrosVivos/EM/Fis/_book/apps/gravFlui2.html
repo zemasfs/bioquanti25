@@ -756,8 +756,12 @@ var codigoPadrao = `
 
 // ========================================
 // PRESSÃO HIDROSTÁTICA INTERATIVA
+// Controles esperados no JSPlotly:
+//
+// input_rho  -> densidade
+// input_g    -> gravidade
+// input_hmax -> profundidade máxima
 // ========================================
-// Instruções e cenários simulados no site Bioquanti (JSPlotly --> Livros Vivos)
 
 let rho = typeof input_rho !== "undefined" ? input_rho : 1000;
 let g = typeof input_g !== "undefined" ? input_g : 9.8;

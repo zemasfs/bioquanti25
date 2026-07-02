@@ -753,11 +753,23 @@ function limparTudo() {
 
 // Definir a equação quadrática padrão
 var codigoPadrao = `
+
+
 // =======================================================
-ANIMACAO DE PARTICULAS
+// SCRIPT 4 - ANIMACAO DE PARTICULAS
 // Termodinamica, gases e solucoes em animacao
+//
+// Parametros:
+// input_T = 1.2;           // temperatura relativa
+// input_interacao = 0.04;  // interacao entre particulas
+// input_N = 40;            // numero de particulas
+// input_seed = 2;          // semente
+//
+// Ideia:
+// - T maior -> movimento mais intenso
+// - interacao maior -> maior influencia entre particulas
+// - pode representar comparacoes entre comportamento mais ideal e menos ideal
 // =======================================================
-// Instruções e cenários simulados no site Bioquanti (JSPlotly --> Livros Vivos)
 
 const T = (typeof input_T !== "undefined") ? input_T : 1.2;
 const interacao = (typeof input_interacao !== "undefined") ? input_interacao : 0.04;
