@@ -43,9 +43,7 @@ O material intititulado **JSPlotly por Estudantes** compreende alguns temas do e
 
 [JSPlotly por Estudantes](EM/Student/_book/index.html) 
 
-<!--[JSPlotly por Usuários] (EM/Users/_book/users.html) -->
-
-<!-- [Sensores & JSPlotly]()  -->
+[Sensores & JSPlotly]() 
 
 
 
