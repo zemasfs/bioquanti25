@@ -1,6 +1,7 @@
 main.content {
-  max-width: 1000px;
-  margin: auto;
+  max-width: 850px;
+  margin-left: 0;
+  margin-right: 0;
   line-height: 1.65;
   font-size: 1.05rem;
 }
@@ -71,3 +72,5 @@ img {
 .ic strong {
   color: #00529b;
 }
+
+

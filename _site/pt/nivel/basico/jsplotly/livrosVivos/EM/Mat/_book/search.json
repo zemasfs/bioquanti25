@@ -52,21 +52,21 @@
   {
     "objectID": "prob.html#estatística-resumir-e-interpretar-dados",
     "href": "prob.html#estatística-resumir-e-interpretar-dados",
-    "title": "4  Probabilidade e Estatística: quando o acaso revela padrões",
+    "title": "4  Probabilidade e Estatística",
     "section": "4.1 Estatística: resumir e interpretar dados",
-    "text": "4.1 Estatística: resumir e interpretar dados\nOs resultados de um experimento podem ser organizados em tabelas, distribuições e gráficos. A média aritmética, por exemplo, resume o valor central dos dados:\n\\[\n\\bar{x} = \\frac{x_1 + x_2 + \\cdots + x_n}{n}\n\\tag{4.3}\\] ​\nO desvio dessa média também nos ajuda a avaliar o grau de dispersão dos dados em torno do valor (ou ruído). Entre os desvios existentes, é bastante comum nas ciências o uso do desvio-padrão:\n\\[\ns = \\sqrt{\\frac{\\sum_{i=1}^{n} (x_i - \\overline{x})^2}{n-1}}\n\\tag{4.4}\\]\nCom o símbolo \\(\\Sigma\\) representando a somatória de elementos.\nUm maneira de resumir e interpretar dados de um experimento com amostra aleatória se dá pelo uso de um histograma. Para isso, experimente o JSPlotly que segue.",
+    "text": "4.1 Estatística: resumir e interpretar dados\nOs resultados de um experimento podem ser organizados em tabelas, distribuições e gráficos. A média aritmética, por exemplo, resume o valor central dos dados:\n\\[\n\\bar{x} = \\frac{x_1 + x_2 + \\cdots + x_n}{n}\n\\tag{4.3}\\] ​\nO desvio dessa média também nos ajuda a avaliar o grau de dispersão dos dados em torno do valor (ou ruído). Entre os desvios existentes, é bastante comum nas Ciências o uso do desvio-padrão:\n\\[\ns = \\sqrt{\\frac{\\sum_{i=1}^{n} (x_i - \\overline{x})^2}{n-1}}\n\\tag{4.4}\\]\nCom o símbolo \\(\\Sigma\\) representando a somatória de elementos.\nUm maneira de resumir e interpretar dados de um experimento com amostra aleatória se dá pelo uso de um histograma. Para isso, experimente o JSPlotly que segue.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Probabilidade e Estatística: quando o acaso revela padrões</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Probabilidade e Estatística</span>"
     ]
   },
   {
     "objectID": "prob.html#da-chance-ao-padrão",
     "href": "prob.html#da-chance-ao-padrão",
-    "title": "4  Probabilidade e Estatística: quando o acaso revela padrões",
+    "title": "4  Probabilidade e Estatística",
     "section": "4.2 Da chance ao padrão",
-    "text": "4.2 Da chance ao padrão\nQuando repetimos muitas vezes um experimento aleatório, as irregularidades das primeiras observações tendem a se suavizar. A frequência relativa passa a se aproximar da probabilidade teórica, e certos resumos estatisticos tornam-se mais estáveis. Isso equivale dizer que o acaso não desaparece, mas se organiza. Cada resultado individual continua imprevisível, mas o conjunto revela regularidades, permitindo que a repetição se transforme em informação.\nFica fácil então perceber que a leitura de dados em saúde, educação, economia, esportes e ciências depende do entendimento de probabilidade e estatística. Uma pesquisa com poucas pessoas pode não representar bem uma população. Isso porque um resultado extremo pode ocorrer por acaso e, dessa forma, produzir uma média isolada que pode esconder grande variabilidade. Apostas eleitorais que o digam !",
+    "text": "4.2 Da chance ao padrão\nQuando repetimos muitas vezes um experimento aleatório, as irregularidades das primeiras observações tendem a suavizar. A frequência relativa passa a aproximar-se da probabilidade teórica, e certos resumos estatisticos tornam-se mais estáveis. Isso equivale dizer que o acaso não desaparece, mas se organiza. Cada resultado individual continua imprevisível, mas o conjunto revela regularidades, permitindo que a repetição se transforme em informação.\nFica fácil então perceber que a leitura de dados em saúde, educação, economia, esportes e ciências depende do entendimento de probabilidade e estatística. Uma pesquisa com poucas pessoas pode não representar bem uma população. Isso porque um resultado extremo pode ocorrer por acaso e, dessa forma, produzir uma média isolada que pode esconder grande variabilidade. As apostas eleitorais que o digam !",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Probabilidade e Estatística: quando o acaso revela padrões</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Probabilidade e Estatística</span>"
     ]
   },
   {

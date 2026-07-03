@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2&nbsp; Mecânica: objetos em movimento – Simulações Interativas com JSPlotly em Física</title>
+<title>3&nbsp; Eletricidade e Magnetismo – Simulações Interativas com JSPlotly em Física</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,8 +65,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./elect.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./ondas.html" rel="next">
+<link href="./mecanica.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -147,7 +147,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./mecanica.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Mecânica: objetos em movimento</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./elect.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Eletricidade e Magnetismo</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
@@ -180,13 +180,13 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./mecanica.html" class="sidebar-item-text sidebar-link active">
+  <a href="./mecanica.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Mecânica: objetos em movimento</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./elect.html" class="sidebar-item-text sidebar-link">
+  <a href="./elect.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Eletricidade e Magnetismo</span></span></a>
   </div>
 </li>
@@ -215,7 +215,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Mecânica: objetos em movimento</span></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Eletricidade e Magnetismo</span></h1>
 </div>
 
 
@@ -242,20 +242,24 @@ O MUNDO TE CHAMA <img src="figuras/icons/tronco_bg.png" class="img-fluid" style=
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Um carro arranca lentamente, ganha velocidade e depois freia até parar. Uma bola parada passa a se mover quando é chutada. Um aviãozinho de papel é atirado de uma janela. Em uma colisão, um corpo pode mudar drasticamente seu movimento em um intervalo de tempo muito curto. Essas e tantas outras situações fazem parte do cotidiano e, embora sejam bastante distintas, compartilham o que faz um corpo se mover ou mudar de movimento na Mecânica. Nesse capítulo será abordado como diferentes formas de descrever o movimento — posição, velocidade e aceleração — se conectam com suas causas físicas, como a força e o impulso.</p>
+<p>A eletricidade está presente em praticamente todas as atividades humanas. Ela alimenta lâmpadas, celulares, computadores, eletrodomésticos, sistemas de comunicação e redes inteiras de transmissão de energia. Já o magnetismo aparece em motores, transformadores, alto-falantes, cartões magnéticos e em muitos dispositivos que usamos sem perceber. E é claro, um (quase) não vive sem o outro.</p>
+<p>Mas o que realmente acontece quando ligamos um aparelho ? Como as cargas elétricas se movimentam em um circuito ? E por que um fenômeno aparentemente elétrico pode dar origem a efeitos magnéticos ? Isso pode nos levar a uma unificação curiosa da Física, a ideia de que eletricidade e magnetismo não são temas isolados, mas “duas faces de uma mesma moeda”.</p>
+<p><em>Como algo invisível pode empurrar, puxar e mover objetos sem encostar neles ?</em></p>
 <p><strong>Depois de explorar, você consegue:</strong></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">-</span> interpretar o movimento a partir de gráficos <span class="er">(</span><span class="ex">1a.</span> e 2a. Leis de Newton<span class="kw">);</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">-</span> relacionar velocidade e aceleração com mudanças no movimento<span class="kw">;</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">-</span> compreender o papel da força resultante<span class="kw">;</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">-</span> perceber como interações rápidas produzem efeitos significativos<span class="kw">;</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">-</span> usar visualizações interativas para aprendizagem de movimento.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div id="fig-mec_gizz2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">-</span> compreender a relação entre tensão, corrente elétrica e resistência<span class="kw">;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">-</span> interpretar graficamente situações simples de circuitos elétricos<span class="kw">;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">-</span> reconhecer como correntes elétricas produzem campos magnéticos e como isso se conecta a tecnologias do cotidiano.</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">-</span> relacionar tensão, corrente elétrica e resistência em situações simples<span class="kw">;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">-</span> interpretar representações gráficas e espaciais de fenômenos eletromagnéticos<span class="kw">;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ex">-</span> reconhecer aplicações da eletricidade e do magnetismo em tecnologias do cotidiano.</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ex">-</span> interpretar fenômenos de eletricidade e magnetismo com auxílio de simuladores interativos.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="fig-gizz_elect" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-mec_gizz2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="figuras/mec_gizz2.png" class="img-fluid figure-img" style="width:70.0%">
+<div aria-describedby="fig-gizz_elect-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figuras/gizz_elect.png" class="img-fluid figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mec_gizz2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;2.1: Quando a força aplicada a um objeto promove sua aceleração e consequente mudança de posição.
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gizz_elect-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;3.1: Corrente elétrica, resistência e campo magnético são partes de uma ideia comum.
 </figcaption>
 </figure>
 </div>
@@ -272,55 +276,40 @@ MEXA ANTES DE ENTENDER <img src="figuras/icons/ramo_bg.png" class="img-fluid" st
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Antes de qualquer definição formal, experimente o objeto interativo a seguir. Sem pressa. Sem fórmulas.</p>
-<div id="fig-mec" class="quarto-float quarto-figure quarto-figure-center anchored">
+<p>Antes de mergulhar nas explicações formais, experimente o JSPlotly abaixo, alterando os valores no código para observar os efeitos produzidos no gráfico.</p>
+<div id="fig-elect" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-mec-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="figuras/mec_q.png" class="img-fluid figure-img">
+<div aria-describedby="fig-elect-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figuras/elect.png" class="img-fluid figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mec-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;2.2: Aplicativo de JSPlotly para explorar o movimento. Clique com o botão direito do mouse neste <a href="https://bioquanti.netlify.app/pt/nivel/basico/jsplotly/livrosvivos/em/fis/_book/apps/mec">LINK</a> e abra-o numa nova aba. Ou use a tela capacitiva de seu dispositivo móvel (celular, tablet).
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-elect-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;3.2: Lei de Ohm: quando tensão, corrente e resistência dependem um do outro. Clique neste <a href="apps/elect.html">LINK</a> para carregar o <em>app</em>.
 </figcaption>
 </figure>
 </div>
-<p>Observe como a posição muda linearmente (função afim) sob uma velocidade fixa para o objeto. Dobre o valor da <code>velocidade inicial</code> <em>v0</em> e clique em <em>add</em> novamente, visualizando como fica o gráfico:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> v0 <span class="op">=</span> <span class="dv">4</span><span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Essa forma linear em que o gráfico de posição é apresentado dá-se em função do <code>MRV</code>, ou <code>movimento retilíneo uniforme</code>. Veja que o editor de códigos apresenta a opção de MRV em seu início. Experimente passar essa opção para <code>MUV</code>, <code>movimento retilíneo uniformemente variado</code>. Pra isso, clique em <em>clean</em>, apenas para limpar a área dos gráficos, altere o termo dentro das aspas, e depois clique em <em>add</em>, como segue:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> tipo <span class="op">=</span> <span class="st">"MUV"</span><span class="op">;</span> <span class="co">// "MRU" ou "MUV"</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Perceba agora que a velocidade em MUV cresce linearmente, enquanto a distância cresce como uma curva. Isso ocorre porque o objeto está sofrendo uma <code>aceleração</code>. Experimente dobrar agora o valor da aceleração, como você fez anteriormente para a velocidade inicial, e veja o que acontece. Mexendo um pouco naqueles parâmetros do editor, tente observar também quando o gráfico da posição é uma reta, quando ele se curva, quando a velocidade se mantém constante, e quando ela cresce ou diminui.</p>
-<p>O <em>app</em> suscita algumas questões curiosas sobre posição e velocidade durante o movimento. Você saberia responder se é possível estar em movimento sem mudar a velocidade ? Ou o que muda primeiro, se a posição ou a velocidade ? Saberia como reconhecer aceleração apenas olhando um gráfico ? E por que mudar o valor de <em><code>a</code></em> não altera a forma do gráfico quando o movimento é MRU ?</p>
-</div>
-</div>
-<hr>
-<div class="callout callout-style-default callout-important no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-FAZENDO APARECER <img src="figuras/icons/galho_bg.png" class="img-fluid" style="width:7.0%">
-</div>
-</div>
-<section id="movimento" class="level2 callout-body-container callout-body" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="movimento"><span class="header-section-number">2.1</span> Movimento</h2>
-<p>O primeiro passo é descrever o movimento, para depois entender por que ele muda.</p>
-<section id="como-descrever" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="como-descrever">Como descrever</h3>
-<p>A <em>posição</em> indica onde um corpo está. A <em>velocidade</em> indica como essa posição muda com o tempo. Já a <em>aceleração</em> revela como a velocidade varia. Quando a velocidade é constante, a posição cresce de forma linear. Quando há aceleração, a velocidade deixa de ser constante, e a posição passa a crescer de forma cada vez mais rápida ou mais lenta.</p>
-</section>
-<section id="por-que-muda" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="por-que-muda">Por que muda</h3>
-<p>Para entender por que o movimento muda, entra em cena a ideia de <em>força</em>. A força resultante sobre um corpo está relacionada à sua aceleração. Isso significa que forças não produzem diretamente velocidade, mas sim mudanças na velocidade.</p>
-</section>
-<section id="interações-rápidas-impulso" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="interações-rápidas-impulso">Interações rápidas: impulso</h3>
-<p>Nem toda mudança de movimento acontece lentamente. Um chute, uma batida ou uma rebatida são exemplos de interações rápidas. Nesses casos, uma força atua por um intervalo de tempo muito curto, mas ainda assim produz uma mudança significativa no movimento. Esse efeito é descrito pelo <code>impulso</code>, que representa a variação da quantidade de movimento de um corpo. Assim, o movimento pode ser entendido como:</p>
+<section id="agite-antes-de-usar" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="agite-antes-de-usar">Agite antes de usar</h4>
+<p>O script mostra a relação entre <em>tensão elétrica</em> (ou potencial elétrico, <em>V</em>), <em>corrente elétrica (I)</em> e <em>resistência (R)</em>. Para isso ele usa a <code>1a. lei de Ohm</code>:</p>
+<p><span id="eq-ohm"><span class="math display">\[
+V = R \cdot I
+\tag{3.1}\]</span></span></p>
+<p>ou, reorganizando:</p>
+<p><span id="eq-ohm2"><span class="math display">\[
+I = \frac{V}{R}
+\tag{3.2}\]</span></span></p>
+<p><em>Onde:</em> V é dado em <em>Volts</em> (V), I em <em>Àmpere</em> (A), e R em <em>ohm</em> (<span class="math inline">\(\Omega\)</span>).</p>
+<p>Veja pelas <a href="#eq-ohm" class="quarto-xref">Equação&nbsp;<span>3.1</span></a> e <a href="#eq-ohm2" class="quarto-xref">Equação&nbsp;<span>3.2</span></a> que o comportamento é puramente linear, e dependente da <em>resistência</em> definida no código. Ex:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> R <span class="op">=</span> <span class="dv">7</span><span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Observe que a corrente aumenta quando a tensão também aumenta. Isso acontece porque a resistência permanece constante. Parece até meio óbvio, mas essa é a <em>alma</em> de um circuito elétrico <em>resistivo</em>. E que pode aparecer desde um simples <code>LED</code> de celular até uma <em>biocélula a combustível</em> ! Ou seja, a <code>Lei de Ohm</code> mostra que, em um resistor ôhmico:</p>
 <p><span class="math display">\[
-Força \rightarrow Aceleração \rightarrow Velocidade \rightarrow Posição
+I \propto V
 \]</span></p>
-<p>Ou seja, forças produzem aceleração, a aceleração altera a velocidade, e a velocidade modifica a posição.</p>
+<p>Isso significa que tensão e corrente são diretamente proporcionais. A inclinação da reta informa como a corrente responde à tensão. Quanto maior a resistência, menor a inclinação. Quanto menor a resistência, maior a inclinação. Assim, se a tensão dobra, a corrente também dobra. Experimente comparar situações com baixa e alta resistência, e tente prever o resultado antes de alterar o código. Em qual situação a corrente cresce mais “lentamente” ?</p>
+<p>E compare também o que você experimentou acima com uma cena do cotidiano. Imagine uma lâmpada, um chuveiro ou um carregador. Todos dependem da relação entre tensão, corrente, e resistência. Agora, se a corrente for do tipo que “sai” da tomada de casa, bom, aí a coisa muda de figura, pois entra em ação o <em>magnetismo</em>. E muda de figura também a pergunta central desse capítulo:</p>
+<p><em>Como descrever, prever e visualizar a relação entre tensão, corrente elétrica, resistência e efeitos magnéticos em situações simples do cotidiano ?</em></p>
+<p>Em outras palavras, queremos entender como uma diferença de potencial elétrico (tensão) pode colocar cargas em movimento (corrente), como esse movimento encontra oposição no circuito (resistência) e como, a partir daí, surgem efeitos magnéticos observáveis.</p>
 </section>
-</section>
+</div>
 </div>
 <hr>
 <div class="callout callout-style-default callout-caution no-icon callout-titled">
@@ -329,34 +318,69 @@ Força \rightarrow Aceleração \rightarrow Velocidade \rightarrow Posição
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-VOLTA PRO MUNDO <img src="figuras/icons/folha_bg.png" class="img-fluid" style="width:7.0%">
+VOLTA PRO MUNDO <img src="figuras/icons/galho_bg.png" class="img-fluid" style="width:7.0%">
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Volte às situações iniciais. Quando um carro mantém velocidade constante, seu movimento continua, mas não muda. Quando acelera, sua velocidade cresce. Quando freia, diminui. Em uma colisão, essa mudança pode ocorrer de forma abrupta. O que diferencia esses casos não é apenas o movimento em si, mas como ele evolui ao longo do tempo. E essa evolução depende da aceleração.</p>
-<p>Experimente alterar a aceleração para um valor negativo no aplicativo JSPlotly da <a href="#fig-mec" class="quarto-xref">Figura&nbsp;<span>2.2</span></a>, bem como para um valor nulo. Observe que:</p>
+<p>Agora saímos da observação inicial e voltamos ao mundo real com mais uma ferramenta para interpretação: um simulador JSPlotly mais completo.</p>
+<div id="fig-elect2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-elect2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figuras/elect2.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-elect2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;3.3: Integrando eletricidade e campo magnético. Tensão produz corrente, e corrente gera magnetismo. Clique no <a href="apps/elect2.html">LINK</a> para rodar o aplicativo.
+</figcaption>
+</figure>
+</div>
+<p>No simulador você poderá explorar a relação entre tensão, corrente e resistência, a variação da intensidade da corrente em diferentes condições, a associação entre corrente elétrica e campo magnético, e a leitura integrada de mais de uma dessas grandezas ao mesmo tempo.</p>
+<section id="agite-antes-de-usar-1" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="agite-antes-de-usar-1">Agite antes de usar</h4>
+<p>O <em>script</em> apresenta uma curva de corrente, uma curva de <code>campo magnético</code> relativo, um menu suspenso (<em>dropdown</em>) para resistência e um controle deslizante (<em>slider</em>) de tensão máxima. O menu permite escolher o valor para resistência (2, 5, ou 10 ohms), enquanto o <em>slider</em> um valor máximo para tensão (5 a 30 V). Quando você muda isso, a corrente muda e a curva do campo magnético muda junto.</p>
+<ol type="1">
+<li><em>Iniciando o aplicativo</em>. Inicie com R = 5 ohms e Vmax = 10 V.</li>
+</ol>
 <ul>
-<li>quando a &gt; 0 <span class="math inline">\(\rightarrow\)</span> reta inclinada pra cima</li>
-<li>quando a &lt; 0 <span class="math inline">\(\rightarrow\)</span> reta inclinada pra baixo</li>
-<li>quando a = 0 <span class="math inline">\(\rightarrow\)</span> reta horizontal</li>
+<li>O que acontece com a corrente quando a tensão cresce ?</li>
+<li>O gráfico parece linear ?</li>
+<li>Por que a curva do campo acompanha a da corrente ?</li>
 </ul>
-<p>Então…</p>
-<p><em>Qual grandeza revela melhor o que está acontecendo em cada momento do movimento?</em></p>
-<p>Assim como para diversos domínios da Física, o MRV e MUV são descritos por funções matemáticas específicas para a posição e velocidade.</p>
-<p>Para MRU:</p>
+<ol start="2" type="1">
+<li><em>Mexendo na resistência</em>. Troque no menu de R = 5 para R = 10.</li>
+</ol>
+<ul>
+<li>Para a mesma tensão, a corrente aumentou ou diminuiu ?</li>
+<li>O campo magnético ficou mais intenso ou menos intenso ?</li>
+<li>O que isso sugere sobre a relação entre resistência e fluxo de cargas ?</li>
+</ul>
+<ol start="3" type="1">
+<li><em>Mexendo no slider</em>. Agora arraste o slider para Vmax = 20, e depois Vmax = 30.
+<ul>
+<li>O que mudou no alcance do gráfico ?</li>
+<li>A forma da curva mudou ou foi apenas sua extensão ?</li>
+<li>O modelo continua obedecendo à mesma relação física ?</li>
+</ul></li>
+</ol>
+<p>Você deve ter percebido que o campo magnético é proporcional à corrente. No modelo simplificado do <em>script</em>, o campo magnético <span class="math inline">\(B\)</span> é dado por:</p>
 <p><span class="math display">\[
-x(t) = x_0 + v_0 t
+B = k \cdot I
 \]</span></p>
+<p><em>Onde:</em> <em>k</em> = 0.2.</p>
+<p>Substituindo I = <span class="math inline">\(\frac{V}{R}\)</span> em “<span class="math inline">\(B = kI\)</span>”” :</p>
 <p><span class="math display">\[
-v(t) = v_0
+B = k \cdot \frac{V}{R}
 \]</span></p>
-<p>E para MUV:</p>
-<p><span class="math display">\[
-x(t) = x_0 + v_0 t + \frac{1}{2} a t^2
-\]</span></p>
-<p><span class="math display">\[
-v(t) = v_0 + a t
-\]</span></p>
+<p>Essa é a ponte para se compreender como funciona um <code>eletroimã</code> (fio retilíneo com corrente gerando campo magnético em torno de um condutor). Muitos objetos do cotidiano seguem essas mesmas relações matemáticas, como as <em>redes elétricas</em>. Nessas, corrente e resistência precisam ser equilibradas para transmissão eficiente por <em>motores elétricos</em>, os quais convertem energia elétrica em movimento com base em interações eletromagnéticas de <em>transformadores</em>. Por sua vez, os transformadores operam pela íntima relação entre correntes e campos magnéticos variáveis para fazer funcionar os <em>dispositivos eletrônicos</em>, os quais dependem de controle preciso do fluxo de cargas.</p>
+<p>Agora tente responder às questões que seguem, <em>mexendo</em> no aplicativo:</p>
+<ul>
+<li>Se a resistência de um circuito aumenta muito, o que acontece com a corrente elétrica para uma mesma tensão (experimente mudar R de 2 pra 10 ohms) ?</li>
+<li>Como isso aparece no gráfico ?</li>
+<li>Se a corrente diminui, o campo magnético relativo aumenta ou diminui ?</li>
+<li>Ao aumentar a tensão máxima no <em>slider</em>, a relação física muda ou apenas vemos mais pontos do mesmo comportamento ?</li>
+<li>Por que a curva de corrente é linear neste modelo ?</li>
+</ul>
+<p>Resumindo, tensão, corrente, resistência e campo magnético guardam relações importantes que se expressam no cotidiano. Tensão elétrica está relacionada à “força de empurrão” sobre as cargas, enquanto que resistência representa a oposição à passagem da corrente. Por sua vez, correntes elétricas produzem campos magnéticos ao seu redor. E a integração dessas ideias permite compreender como operam dispositivos reais.</p>
+</section>
 </div>
 </div>
 <hr>
@@ -370,154 +394,71 @@ E SE… <img src="figuras/icons/flor_bg.png" class="img-fluid" style="width:10.0
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Agora é hora de ir um pouco mais longe. Juntar num <em>“mesmo saco”</em> posição, velocidade, aceleração, força (<code>2ª Lei de Newton</code>), e impulso. Para isso experimente as simulações do aplicativo abaixo para JSPlotly.</p>
-<div id="fig-mec2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<p>Refletindo mais um pouco sobre as relações acima, é possível divagar para “outros mundos” da eletricidade e magnetismo. Por exemplo:</p>
+<ul>
+<li>E se a resistência for nula ? Experimente “R = 1e-20” no <em>app</em> da <a href="#fig-elect" class="quarto-xref">Figura&nbsp;<span>3.2</span></a>.</li>
+<li>E se não houver passagem de corrente, qual seria o valor da resistência ?</li>
+<li>E se aumentarmos a tensão máxima mantendo a resistência fixa ? Use o <em>app</em> da <a href="#fig-elect2" class="quarto-xref">Figura&nbsp;<span>3.3</span></a> para auxiliá-lo.</li>
+<li>E se aumentarmos a resistência mantendo a mesma tensão ?</li>
+<li>E se a resistência for pequena: por que a corrente cresce mais rapidamente ?</li>
+<li>E se duas situações tiverem a mesma tensão, mas resistências diferentes ?</li>
+<li>E se quisermos gerar um campo magnético maior: devemos aumentar a tensão ou reduzir a resistência ?</li>
+<li>E se a corrente fosse zero; ainda existiria campo magnético ?</li>
+<li>E se aumentarmos muito a corrente; o campo cresce indefinidamente ?</li>
+<li>E se nos afastarmos muito do fio; o campo desaparece completamente ?</li>
+<li>E se invertermos o sentido várias vezes; o campo acompanha instantaneamente ?</li>
+<li>E se existirem dois fios próximos; como os campos interagem ?</li>
+<li>E se o fio não for retilíneo; as linhas de campo continuam circulares ?</li>
+<li>E se o campo fosse representado por vetores em vez de círculos ?</li>
+<li>E se aproximarmos uma bússola do fio; O que aconteceria ?</li>
+</ul>
+<section id="observando-o-campo-magnético-no-espaço" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="observando-o-campo-magnético-no-espaço"><span class="header-section-number">3.1</span> Observando o campo magnético no espaço</h2>
+<p>Nos gráficos anteriores, a relação entre tensão, corrente e resistência foi observada principalmente em duas dimensões. Agora, podemos avançar para uma representação espacial do campo magnético em torno de um fio retilíneo percorrido por corrente, como segue.</p>
+<div id="fig-elect3d" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-mec2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="figuras/mec2_q.png" class="img-fluid figure-img">
+<div aria-describedby="fig-elect3d-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figuras/elect3d.png" class="img-fluid figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mec2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;2.3: Aplicativo JSPlotly para explorar posição, velocidade, aceleração e força. Clique com o botão direito do mouse neste <a href="https://bioquanti.netlify.app/pt/nivel/basico/jsplotly/livrosvivos/em/fis/_book/apps/mec2">LINK</a> e abra-o numa nova aba. Ou use a tela capacitiva de seu dispositivo móvel (celular, tablet).
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-elect3d-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;3.4: Visualização em 3D do campo magnético criado por uma corrente elétrica ao redor de um fio. Clique no <a href="apps/elect3d.html">LINK</a> para “rodá-lo”.
 </figcaption>
 </figure>
 </div>
-<p>Nesse segundo objeto interativo, várias grandezas aparecem ao mesmo tempo (força, aceleração, massa, e impulso). Sendo um pouco mais descritivo, o <em>app</em> busca integrar MRU, MUV, 2ª Lei de Newton e impulso, conforme as relações abaixo.</p>
-<p><strong>MRU:</strong> <span class="math display">\[
-a(t)=0
-\]</span></p>
-<p><strong>MUV:</strong> <span class="math display">\[
-a(t)=a
-\]</span></p>
-<p><strong>2ª Lei de Newton:</strong></p>
-<p><span class="math display">\[
-F(t)=m\,a(t)
-\]</span></p>
-<p><strong>Impulso:</strong></p>
-<p><span class="math display">\[
-J=\sum_i F_i\,\Delta t
-\]</span></p>
-<p>Na última equação, “<span class="math inline">\(\Sigma\)</span>” é o símbolo para <em>somatória</em> e, no caso, do produto da força por cada pequeno intervalo de tempo.</p>
-<section id="agite-antes-de-usar" class="level4 unnumbered">
-<h4 class="unnumbered anchored" data-anchor-id="agite-antes-de-usar">Agite antes de usar</h4>
-<p>Observe como posição, velocidade, aceleração e força se conectam. Neste segundo momento, o objeto interativo apresenta a descrição do movimento, mas agora incorporando uma interpretacao física mais integrada. Nessa, posicão, velocidade, aceleracão e força permitem que se observe como a mudança em uma grandeza repercute nas demais. Para utilizar esse novo <em>app</em> de JSPlotly, experimente seguir esse pequeno tutorial:</p>
+<p>Nessa visualização, o fio condutor aparece no centro, enquanto curvas ao seu redor sugerem as linhas do campo magnético. Ao variar a corrente, a representação da intensidade do campo também se altera.</p>
+<section id="agite-antes-de-usar-2" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="agite-antes-de-usar-2">Agite antes de usar</h4>
+<p>O <em>app</em> apresenta-se com:</p>
 <ol type="1">
-<li>Altere <code>const cenario</code> para escolher entre <code>"MRU"</code>, <code>"MUV"</code>, <code>"Forca constante"</code>, <code>"Freada"</code> e <code>"Impulso"</code>;</li>
-<li>Em <code>"MRU"</code>, observe movimento com velocidade constante e força nula;</li>
-<li>Em <code>"MUV"</code>, altere <code>aConst</code> e veja como a aceleração muda a velocidade;</li>
-<li>Em <code>"Forca constante"</code>, varie <code>m</code> e <code>Fconst</code> para observar a relação entre força, massa e aceleração;</li>
-<li>Em <code>"Freada"</code>, aumente <code>aConst</code> para simular uma desaceleração mais intensa;</li>
-<li>Em <code>"Impulso"</code>, modifique <code>tImp</code>, <code>dtImp</code> e <code>J</code> para controlar quando, por quanto tempo e com que intensidade a força atua;</li>
-<li>Use o botão <em>Animar</em> para acompanhar o corpo no gráfico de posição;</li>
-<li>Compare os gráficos de posição, velocidade, aceleração e força, para perceber como uma mudança física se propaga pelo movimento.</li>
+<li>Um fio retilíneo no centro;</li>
+<li>Setas tangenciais ao redor do fio mostrando o sentido local do campo magnético;</li>
+<li>Várias circunferências ao redor do fio representando as linhas de campo;</li>
+<li>Uma seta vermelha indicando o sentido da corrente;</li>
+<li>Pontos no plano indicando a ideia de que a intensidade do campo depende da distância ao fio.</li>
 </ol>
-<p>Tendo experimentado as variações acima, você estará mais do que apto para aventurar-se como um <em>mergulhador abissal</em> da Mecânica do movimento, não apenas observando-a, mas compreendendo-a. E poderá trabalhar com cenários diversos para melhor compreensão das relações de movimento, tais como:</p>
+<p>Esse objeto interativo mostra como uma corrente elétrica em um fio gera um campo magnético ao seu redor. Esse campo que forma círculos ao redor do fio depende da corrente e da distância ao fio. Matematicamente, e de forma simplificada:</p>
+<p><span class="math display">\[
+B \propto \frac{I}{r}
+\]</span></p>
+<p>Assim, experimente o <em>app</em> com as sugestões que seguem:</p>
 <ol type="1">
-<li>MRU - como um corpo pode continuar se movendo mesmo sem força resultante (ou…por que em MRU a força é zero e a velocidade não) ?</li>
-<li>MUV - como a aceleração constante aparece ao mesmo tempo em v(t) e x(t) (ou…o que muda primeiro quando aplicamos força) ?</li>
-<li>Força constante - por que aumentar a massa enfraquece o efeito da mesma força ?</li>
-<li>Freada - o que significa uma aceleração negativa ?</li>
-<li>Impulso - como uma força breve consegue alterar tanto o movimento ?</li>
-<li>Como o impulso aparece no gráfico da força ?</li>
-<li>Por que a aceleração depende da massa ?</li>
+<li>Use o painel lateral para selecionar a corrente (1, 2 ou 4 A). Observe como muda a intensidade das linhas;</li>
+<li>Ative o movimento do campo com <code>Play/Pause</code>, e observe o sentido de circulação da corrente;</li>
+<li>Altere o sentido das linhas de campo para cima ou para para baixo, e observe que o campo inverte o sentido da corrente;</li>
+<li>O raio visual controla a posição das linhas de campo. Observe que o campo existe em todo o espaço, mas enfraquece com a distância;</li>
 </ol>
-<p>Experimente também modificar diversos parâmetros simultaneamente, como segue.</p>
-<ul>
-<li>mantenha a força igual a zero;</li>
-<li>inverta o sentido da aceleração;</li>
-<li>aumente a massa;</li>
-<li>aplique uma força intensa por pouco tempo.</li>
-</ul>
-<p>E pergunte-se:</p>
-<ul>
-<li>E se não há força resultante ?</li>
-<li>E se a aceleração for negativa…como a velocidade responde ?</li>
-<li>E se aumentar a massa ?</li>
-<li>E se houver uma ação rápida, qual o tamanho do efeito ?</li>
-</ul>
 </section>
-<section id="comparando-a-dinâmica-de-2-corpos" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="comparando-a-dinâmica-de-2-corpos"><span class="header-section-number">2.2</span> Comparando a dinâmica de 2 corpos</h2>
-<p>Agora experimente um último aplicativo JSPlotly, esse voltado para o estudo de posição, velocidade e aceleração de dois corpos submetidos a uma mesma força.</p>
-<div id="fig-mec3_2corpos" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-mec3_2corpos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="figuras/mec3_2corpos_q.png" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mec3_2corpos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;2.4: JSPlotly para visualizar as relações de posição, velocidade e aceleração de 2 corpos submetidos a uma mesma força. Clique <a href="https://bioquanti.netlify.app/pt/nivel/basico/jsplotly/livrosvivos/em/fis/_book/apps/mec3_2corpos">AQUI</a> para acessar o aplicativo.
-</figcaption>
-</figure>
-</div>
-<!-- O quarto painel vira uma pista horizontal. Nela aparecem:
- - corpo A
- - corpo B
-
-Na animação, os dois andam lado a lado.
-
-No painel inferior direito, a comparação deixa de ser apenas gráfica e passa a ser espacial. Os dois corpos percorrem pistas paralelas sob a mesma forçaa resultante. Como suas massas são diferentes, o deslocamento ao longo do tempo também passa a ser diferente. A pista transforma a `lei de Newton` em uma cena observável.
-
-1. pista com “largada” e “chegada”
-fica com cara de corrida.
-
-1. pista com cores diferentes para A e B
-fica mais intuitivo visualmente.
-
-1. pista com contador de tempo atual
-fica ótimo para leitura temporal.
-
-1. pista + força contrária / atrito
-aí vira um capítulo inteiro quase sozinho
-
-- o mesmo fenômeno nos gráficos;
-- a tradução espacial numa pista;
-- a noção de antes e depois com largada e chegada;
-- e o tempo passando durante a animação. -->
-<p>Nesta nova versão, a comparação entre os dois corpos ganha um apoio visual adicional. A pista explicita a ideia de percurso, enquanto o contador de tempo reforça que a diferenca entre os corpos não depende apenas da posição final, mas de como o movimento evolui ao longo do processo.</p>
-<section id="agite-antes-de-usar-1" class="level4 unnumbered">
-<h4 class="unnumbered anchored" data-anchor-id="agite-antes-de-usar-1">Agite antes de usar</h4>
-<p>Este app compara dois corpos sob a mesma força, destacando o papel da massa na aceleração.</p>
-<ol type="1">
-<li><p>Observe o cenário padrão. Dois corpos (A e B) partem da mesma posição e com velocidade inicial nula:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> x0A <span class="op">=</span> <span class="fl">0.0</span><span class="op">;</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> x0B <span class="op">=</span> <span class="fl">0.0</span><span class="op">;</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> v0A <span class="op">=</span> <span class="fl">0.0</span><span class="op">;</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> v0B <span class="op">=</span> <span class="fl">0.0</span><span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Compare as massas.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> mA <span class="op">=</span> <span class="fl">1.0</span><span class="op">;</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> mB <span class="op">=</span> <span class="fl">3.0</span><span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>O corpo A é mais leve que o corpo B.</p></li>
-<li><p>Mantenha a mesma força para ambos</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> Fconst <span class="op">=</span> <span class="fl">6.0</span><span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>A força resultante é igual para os dois corpos.A ideia básica desse experimento é que a aceleração é calculada por:</p></li>
-</ol>
-<p><span class="math display">\[
-a=\frac{F}{m}
-\]</span></p>
-<p>Portanto, quanto menor a massa, maior a aceleração.</p>
-<ol start="4" type="1">
-<li><p>Preveja antes de rodar. Qual corpo chegará primeiro, o mais leve (A) ou o mais pesado (B)?</p></li>
-<li><p>Clique em “Animar” e observe o gráfico de posição <span class="math inline">\(x(t)\)</span>, o gráfico de velocidade <span class="math inline">\(v(t)\)</span>, o de aceleração <span class="math inline">\(a(t)\)</span>, e o de movimento na pista (largada e chegada).</p></li>
-<li><p>Interprete os gráficos comparando a inclinação das curvas de posição, o crescimento da velocidade e o valor constante da aceleração.</p></li>
-<li><p>Faça experimentos simples:</p>
-<ul>
-<li><p>Troque as massas:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> mA <span class="op">=</span> <span class="fl">3.0</span><span class="op">;</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> mB <span class="op">=</span> <span class="fl">1.0</span><span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Aumente a força:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> Fconst <span class="op">=</span> <span class="fl">10.0</span><span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Dê velocidade inicial:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> v0A <span class="op">=</span> <span class="fl">2.0</span><span class="op">;</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> v0B <span class="op">=</span> <span class="fl">2.0</span><span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-</ul></li>
-</ol>
-<p>Ufa !!! Se chegou até aqui, já deve ter percebido que <em>uma mesma força não significa um mesmo movimento; a massa é quem controla como o movimento responde à força</em>. Quer mais umas perguntinhas a responder com o <em>app</em> da <a href="#fig-mec3_2corpos" class="quarto-xref">Figura&nbsp;<span>2.4</span></a> ?</p>
-<ul>
-<li>Por que o corpo mais leve acelera mais ?</li>
-<li>Se a força é a mesma, então por que os movimentos são diferentes ?</li>
-<li>O que muda primeiro: aceleração, velocidade ou posição?</li>
-</ul>
 </section>
+<section id="regra-da-mão-direita" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="regra-da-mão-direita"><span class="header-section-number">3.2</span> Regra da mão direita</h2>
+<p>Essa é uma convenção física para facilitar a compreensão de como o sentido da corrente e do campo magnético estão interligados. Nessa representação, o polegar aponta para o sentido da corrente, enquanto os dedos com a mão fechada apontam para o sentido do campo. Isso aparece visualmente no <em>app</em> da <a href="#fig-elect3d" class="quarto-xref">Figura&nbsp;<span>3.4</span></a>.</p>
+<p>Alguns cenários permitem explorar o aplicativo. Veja:</p>
+<ol type="1">
+<li><p><em>Intensidade do campo</em>. Aumente a corrente e veja como o campo fica mais intenso.</p></li>
+<li><p><em>Inversão do campo</em>. Mude o sentido da corrente e observe o campo gira ao contrário.</p></li>
+<li><p><em>Distância ao fio</em>. Observe os pontos do plano, e perceba que o campo diminui com a distância.</p></li>
+<li><p><em>Estrutura tridimensional</em>. Olhe o gráfico de diferentes ângulos, clicando no menu de barras superior para ícones de rotação e translação. Observe então a tridimensionalidade do campo magnético.</p></li>
+</ol>
 </section>
 </div>
 </div>
@@ -532,11 +473,11 @@ MESMO PADRÃO, OUTROS MUNDOS <img src="figuras/icons/fruto_bg.png" class="img-fl
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>A mesma lógica apresentada nesse capítulo de <em>Mecânica</em> também surge em diversos contextos. Por exemplo, em veículos acelerando e freando, objetos em queda, bolas sendo lançadas ou chutadas, colisões entre corpos, e sistemas mecânicos simples. A partir daqui, portanto, novos caminhos podem ser explorados no tema, incluindo queda livre e gravidade, distância de frenagem, análise de colisões, e movimentos mais complexos, cada qual nascente da mesma estrutura apresentada no capítulo. Em todos eles, a força gera aceleração, a aceleração muda a velocidade, e a velocidade muda a posição. Isso é movimento.</p>
+<p>A mesma lógica estudada aqui reaparece em muitos outros contextos, e até mesmo introduz as ideias de <em>eletromagnetismo</em>. Veja um chuveiro elétrico, por exemplo, em que a resistência influencia diretamente o aquecimento. Como também em carregadores e fontes, que controlam tensão e corrente para alimentar dispositivos, como o seu celular. Na estrutura dos eletroímãs, em que a passagem de corrente gera campo magnético utilizável. Em motores e ventiladores, cujo funcionamento depende da interação entre corrente e magnetismo. Em alto-falantes, que convertem sinais elétricos em vibração mecânica com base em forças magnéticas. E em muitas outras situações do cotidiano.</p>
 </div>
 </div>
 <hr>
-<div class="callout callout-style-default callout-important no-icon callout-titled">
+<div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
@@ -546,16 +487,23 @@ POR DENTRO DA FERRAMENTA <img src="figuras/icons/semente_bg.png" class="img-flui
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Esse espaço é devotado a aplicar um pouco do <strong>pensamento computacional</strong> diretamente na <strong>lógica de programação</strong> por trás dos objetos interativos dos conteúdos do capítulo. Nesse sentido, e selecionando o primeiro objeto para tal, define-se primeiro o cenário físico e as condições iniciais. Em seguida, o tempo é dividido em pequenos intervalos. Para cada instante, calculam-se as grandezas relevantes e atualiza-se o estado do sistema. Em resumo, as ações do código envolvem:</p>
-<pre class="text"><code>1. definir condições iniciais;
-2. escolher o tipo de movimento;
-3. dividir o tempo em pequenos intervalos;
-4. para cada instante:
-    a. calcular a aceleração;
-    b. atualizar a velocidade;
-    c. atualizar a posição;
-5. armazenar os resultados;
-6. construir os gráficos</code></pre>
+<p>Os modelos desse capítulo utilizam relações fundamentais da Física, especialmente:</p>
+<ul>
+<li>a 1a. Lei de Ohm, que relaciona tensão, corrente e resistência;</li>
+<li>a ideia de que uma corrente elétrica gera campo magnético ao redor de um condutor;</li>
+<li>relações de proporcionalidade que podem ser representadas numericamente e visualizadas graficamente.</li>
+</ul>
+<p>Do ponto de vista computacional, o código cria sequências de valores, aplica uma relação matemática a cada elemento e devolve essas informações na forma de gráficos interativos. Assim, você pode manipular parâmetros e perceber como pequenas mudanças numéricas produzem efeitos físicos visíveis.</p>
+<p>Agora uma síntese da lógica utilizada para o script da <a href="#fig-elect" class="quarto-xref">Figura&nbsp;<span>3.2</span></a>.</p>
+<p>A resistência é definida aqui:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> R <span class="op">=</span> <span class="dv">7</span><span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Os valores de tensão são gerados de 0 até 30 volts:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (<span class="kw">let</span> V <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> V <span class="op">&lt;=</span> <span class="dv">30</span><span class="op">;</span> V <span class="op">+=</span> <span class="dv">1</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Para cada valor de tensão, o script calcula a corrente:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>I_values<span class="op">.</span><span class="fu">push</span>(V <span class="op">/</span> R)<span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Depois, o gráfico é construído com:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>x<span class="op">:</span> V_values<span class="op">,</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>y<span class="op">:</span> I_values</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div style="page-break-after: always;"></div>
@@ -964,13 +912,13 @@ POR DENTRO DA FERRAMENTA <img src="figuras/icons/semente_bg.png" class="img-flui
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Introdução">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introdução</span></span>
+      <a href="./mecanica.html" class="pagination-link" aria-label="Mecânica: objetos em movimento">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Mecânica: objetos em movimento</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./elect.html" class="pagination-link" aria-label="Eletricidade e Magnetismo">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Eletricidade e Magnetismo</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./ondas.html" class="pagination-link" aria-label="Ondas: movimento, som e luz">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Ondas: movimento, som e luz</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
