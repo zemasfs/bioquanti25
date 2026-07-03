@@ -82,11 +82,11 @@
   {
     "objectID": "fisio.html#estrutura-de-js",
     "href": "fisio.html#estrutura-de-js",
-    "title": "5  Metabolismo e Fisiologia: energia, equilíbrio e vida",
+    "title": "5  Metabolismo e Fisiologia",
     "section": "5.1 Estrutura de JS",
     "text": "5.1 Estrutura de JS\nUma linguagem de programação normalmente possui características estruturais comuns. Isso quer dizer que há comandos para declarar uma variável e seu tipo, a entrada e saída de dados (resultados), a criação e uso de funções, e cálculos aritméticos, por exemplo. E tal como outras linguagens de programação, JS opera com uma lógica similar de declarações (palavras-chave, operadores, valores, expressões). Em resumo, a gente dizer as declarações de JS compõem:\n1. Palavras-chave: sintaxe da linguagem JS;\n2. Operadores: caracteres que realizam operações;\n3. Valores: texto, números, verdadeiro/falso (variável \"booleana\"), \"não definido\", \"nulo\";\n4. Expressões: trechos de código que produzem um único valor.\nDo ponto de vista estrutural, por conseguinte, JS possui características que também são comuns a outras linguagens de programação:\n1. Saída de dados;\n2. Declaração de variáveis; \n3. Tipos de dados;\n4. Constantes;\n5. Aritmética;\n6. Vetores;\n7. Funções;\n8. Geração de dados aleatórios;\n9. Objetos;\n10. Operadores;\n11. Estruturas de controle;",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Metabolismo e Fisiologia: energia, equilíbrio e vida</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Metabolismo e Fisiologia</span>"
     ]
   },
   {
