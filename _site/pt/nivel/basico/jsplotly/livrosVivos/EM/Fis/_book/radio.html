@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt">
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.22">
+<head>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta charset="utf-8" />
+<meta name="generator" content="quarto-1.7.22" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 
 
-<title>4&nbsp; Radioatividade e energia nuclear – Física &amp; JSPlotly</title>
+<title>6  Radioatividade e energia nuclear – Simulações Interativas com JSPlotly em Física</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -57,25 +59,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 </style>
 
-
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./ondas.html" rel="prev">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b4406b7675125bc2ba204020e191172.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c9c2bb176cc3f720e0e6b6dc6e612089.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<!-- htmldependencies:E3FAD763 -->
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -134,20 +118,25 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="book.css">
+<link rel="stylesheet" href="book.css" />
 </head>
 
-<body class="nav-sidebar floating quarto-light">
+<body>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn"
+      data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" 
+      aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral"
+      onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./radio.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Radioatividade e energia nuclear</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <h1 class="quarto-secondary-nav-title no-breadcrumbs"></h1>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" role="link"
+        aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral"
+        onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
@@ -161,7 +150,9 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Física &amp; JSPlotly</a> 
+      <a href="/">
+      Simulações Interativas com JSPlotly em Física
+      </a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -173,42 +164,54 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introdução</span></span></a>
+  <a href="/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class='chapter-number'>1</span>  <span class='chapter-title'>Introdução</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./mecanica.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Mecânica: objetos em movimento</span></span></a>
+  <a href="/mecanica.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class='chapter-number'>2</span>  <span class='chapter-title'>Mecânica: objetos em movimento</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ondas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Ondas: movimento, som e luz</span></span></a>
+  <a href="/elect.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class='chapter-number'>3</span>  <span class='chapter-title'>Eletricidade e Magnetismo</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./radio.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Radioatividade e energia nuclear</span></span></a>
+  <a href="/ondas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class='chapter-number'>4</span>  <span class='chapter-title'>Ondas: movimento, som e luz</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/term.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class='chapter-number'>5</span>  <span class='chapter-title'>Termodinâmica, Gases e Soluções</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/radio.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class='chapter-number'>6</span>  <span class='chapter-title'>Radioatividade e energia nuclear</span></span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" ></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <div id="quarto-toc-target"></div>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Radioatividade e energia nuclear</span></h1>
+<h1 class="title"><span class="chapter-number">6</span>  <span class="chapter-title">Radioatividade e energia nuclear</span></h1>
 </div>
 
 
@@ -275,66 +278,66 @@ Ramos: Radioatividade + Energia Nuclear + Impactos   -->
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
+<i class='callout-icon no-icon'></i>
 </div>
 <div class="callout-title-container flex-fill">
-O MUNDO TE CHAMA <img src="figuras/icons/tronco_bg.png" class="img-fluid" style="width:7.0%">
+O MUNDO TE CHAMA <img src="figuras/icons/tronco_bg.png" class="img-fluid" style="width:7.0%" />
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <p>Nem toda energia aparece como calor ou movimento. Algumas das transformações mais intensas do universo acontecem nas escalas invisíveis de dentro do átomo. A <code>radioatividade</code> mostra que a matéria não é completamente estável. Dentro dos átomos existe <code>energia nuclear</code> capaz de curar, medir, datar, e gerar eletricidade, mas também matar, exigindo responsabilidade ética, ambiental e social. Certos núcleos se transformam espontaneamente, emitindo partículas e energia. E essas transformações permitem datar fósseis e rochas, diagnosticar e tratar doenças, gerar energia elétrica, esterilizar materiais e estudar estruturas invisíveis.</p>
 <p>Por outro lado, a radioatividade também levanta questões ambientais, sociais e mesmo da sobrevivência da humanidade, como a gestão de resíduos radioativos e segurança, o impacto ambiental, decisões sociais e políticas, geração alternativa de energia, enriquecimento de isótopos para fins pacíficos e restrição ao emprego de ogivas e armas nucleares.</p>
 <p>O capítulo pretende fornecer uma visão panorâmica no tema de energia nuclear e impactos no mundo real, conectando ciência, tecnologia e sociedade, e apresentando alguns dos conceitos no tema. Ilustrando, a meia-vida radioativa, os tipos de radiação, fissão nuclear e energia liberada, e a discussão de riscos, benefícios e impactos da energia nuclear.</p>
-<div id="fig-gizz_radio" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
+<div id="fig-gizz_radio" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
 <div aria-describedby="fig-gizz_radio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="figuras/gizz_radio.png" class="img-fluid figure-img" style="width:50.0%">
+<img src="figuras/gizz_radio.png" class="img-fluid" style="width:50.0%" />
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gizz_radio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;4.1: O núcleo do átomo transforma matéria, energia e decisões humanas.
+Figura 6.1: O núcleo do átomo transforma matéria, energia e decisões humanas.
 </figcaption>
 </figure>
 </div>
 <p><strong>Ao final, você será capaz de:</strong></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">-</span> explicar o que torna um núcleo radioativo<span class="kw">;</span></span>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">-</span> explicar o que torna um núcleo radioativo<span class="kw">;</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">-</span> diferenciar radiações alfa, beta e gama<span class="kw">;</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">-</span> interpretar curvas de decaimento e meia-vida<span class="kw">;</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">-</span> relacionar fissão nuclear com produção de energia<span class="kw">;</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">-</span> comparar benefícios e riscos da energia nuclear<span class="kw">;</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ex">-</span> discutir impactos ambientais, sociais e tecnológicos da radioatividade<span class="kw">;</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ex">-</span> investigar modelos computacionais para visualização interativa do tema<span class="kw">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ex">-</span> investigar modelos computacionais para visualização interativa do tema<span class="kw">;</span></span></code></pre></div>
 </div>
 </div>
-<hr>
+<hr />
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
+<i class='callout-icon no-icon'></i>
 </div>
 <div class="callout-title-container flex-fill">
-MEXA ANTES DE ENTENDER <img src="figuras/icons/ramo_bg.png" class="img-fluid" style="width:7.0%">
+MEXA ANTES DE ENTENDER <img src="figuras/icons/ramo_bg.png" class="img-fluid" style="width:7.0%" />
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Acesse o JSPlotly da <a href="#fig-radio" class="quarto-xref">Figura&nbsp;<span>4.2</span></a> abaixo para entender um pouco como uma amostra radioativa diminui ao longo do tempo.</p>
-<div id="fig-radio" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
+<p>Acesse o JSPlotly da <a href="#fig-radio" class="quarto-xref">Figura <span class="quarto-unresolved-ref">fig-radio</span></a> abaixo para entender um pouco como uma amostra radioativa diminui ao longo do tempo.</p>
+<div id="fig-radio" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
 <div aria-describedby="fig-radio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="figuras/radio_q.png" class="img-fluid figure-img">
+<img src="figuras/radio_q.png" class="img-fluid" />
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-radio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;4.2: Meia-vida: a cada intervalo de tempo resta metade da quantidade anterior. Clique com o botão direito neste <a href="https://bioquanti.netlify.app/pt/nivel/basico/jsplotly/livrosvivos/em/fis/_book/apps/radio">LINK</a> e abra o <em>app</em> em nova aba.
+Figura 6.2: Meia-vida: a cada intervalo de tempo resta metade da quantidade anterior. Clique com o botão direito neste <a href="https://bioquanti.netlify.app/pt/nivel/basico/jsplotly/livrosvivos/em/fis/_book/apps/radio">LINK</a> e abra o <em>app</em> em nova aba.
 </figcaption>
 </figure>
 </div>
 <section id="agite-antes-de-usar" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="agite-antes-de-usar">Agite antes de usar</h2>
+<h2 class="unnumbered">Agite antes de usar</h2>
 <p>O gráfico compara diferentes valores de <code>meia-vida</code>, mostrando que alguns materiais decaem rapidamente, enquanto outros permanecem ativos por muito mais tempo. Execute o script e observe as curvas para as meia-vidas.</p>
 <p>Compare qual curva cai mais rápido.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> meiasVidas <span class="op">=</span> [<span class="dv">2</span><span class="op">,</span> <span class="dv">5</span><span class="op">,</span> <span class="dv">10</span><span class="op">,</span> <span class="dv">20</span>]<span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> meiasVidas <span class="op">=</span> [<span class="dv">2</span><span class="op">,</span> <span class="dv">5</span><span class="op">,</span> <span class="dv">10</span><span class="op">,</span> <span class="dv">20</span>]<span class="op">;</span></span></code></pre></div>
 <p>Depois altere como abaixo. Observe que a forma do decaimento continua a mesma, mas a escala muda.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> quantidadeInicial <span class="op">=</span> <span class="dv">200</span><span class="op">;</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> tempoMaximo <span class="op">=</span> <span class="dv">80</span><span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> quantidadeInicial <span class="op">=</span> <span class="dv">200</span><span class="op">;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> tempoMaximo <span class="op">=</span> <span class="dv">80</span><span class="op">;</span></span></code></pre></div>
 <p>Verifique que a radioatividade não desaparece toda de uma vez. O decaimento radioativo é probabilístico. Não sabemos exatamente quando um núcleo específico vai decair mas, quando observamos muitos núcleos juntos, aparece um padrão regular. Um tutorial para uso do <em>app</em> segue abaixo.</p>
 <ol type="1">
 <li>Rode o script;</li>
@@ -352,34 +355,34 @@ Figura&nbsp;4.2: Meia-vida: a cada intervalo de tempo resta metade da quantidade
 <ol type="1">
 <li><em>Decaimento rápido</em>. Por que materiais com meia-vida curta desaparecem rapidamente ?</li>
 </ol>
-<div class="sourceCode" id="cb4"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> meiasVidas <span class="op">=</span> [<span class="dv">1</span><span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="dv">3</span><span class="op">,</span> <span class="dv">4</span>]<span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> meiasVidas <span class="op">=</span> [<span class="dv">1</span><span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="dv">3</span><span class="op">,</span> <span class="dv">4</span>]<span class="op">;</span></span></code></pre></div>
 <ol start="2" type="1">
 <li><em>Decaimento lento</em>. Por que materiais com meia-vida longa permanecem ativos por muito tempo?</li>
 </ol>
-<div class="sourceCode" id="cb5"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> meiasVidas <span class="op">=</span> [<span class="dv">10</span><span class="op">,</span> <span class="dv">20</span><span class="op">,</span> <span class="dv">40</span><span class="op">,</span> <span class="dv">80</span>]<span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> meiasVidas <span class="op">=</span> [<span class="dv">10</span><span class="op">,</span> <span class="dv">20</span><span class="op">,</span> <span class="dv">40</span><span class="op">,</span> <span class="dv">80</span>]<span class="op">;</span></span></code></pre></div>
 <ol start="3" type="1">
 <li><em>Tempo maior</em>. A quantidade chega exatamente a zero ou apenas se aproxima dele ?</li>
 </ol>
-<div class="sourceCode" id="cb6"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> tempoMaximo <span class="op">=</span> <span class="dv">100</span><span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> tempoMaximo <span class="op">=</span> <span class="dv">100</span><span class="op">;</span></span></code></pre></div>
 <ol start="4" type="1">
 <li><em>Quantidade inicial maior</em>. A meia-vida muda quando começamos com mais material ?</li>
 </ol>
-<div class="sourceCode" id="cb7"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> quantidadeInicial <span class="op">=</span> <span class="dv">1000</span><span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> quantidadeInicial <span class="op">=</span> <span class="dv">1000</span><span class="op">;</span></span></code></pre></div>
 <ol start="5" type="1">
 <li><em>Comparação extrema</em>. Como curvas muito diferentes ajudam a entender risco, persistência e armazenamento ?</li>
 </ol>
-<div class="sourceCode" id="cb8"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> meiasVidas <span class="op">=</span> [<span class="dv">1</span><span class="op">,</span> <span class="dv">5</span><span class="op">,</span> <span class="dv">50</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> meiasVidas <span class="op">=</span> [<span class="dv">1</span><span class="op">,</span> <span class="dv">5</span><span class="op">,</span> <span class="dv">50</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">;</span></span></code></pre></div>
 <p>As curvas mostram decaimento exponencial. No início, a queda pode parecer rápida. Depois, a quantidade continua diminuindo, mas cada nova metade é calculada sobre o que ainda resta. Por isso, a curva se aproxima de zero gradualmente. Ou seja, meia-vida é o tempo que leva para restar metade de um material.</p>
 <section id="por-dentro-do-script" class="level4 unnumbered">
-<h4 class="unnumbered anchored" data-anchor-id="por-dentro-do-script">Por dentro do script</h4>
+<h4 class="unnumbered">Por dentro do script</h4>
 <p>O script usa uma função para calcular o decaimento:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">calculaDecaimento</span>(N0<span class="op">,</span> T12<span class="op">,</span> tempo) {</span>
+<div class="sourceCode" id="cb9"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">calculaDecaimento</span>(N0<span class="op">,</span> T12<span class="op">,</span> tempo) {</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> N0 <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">pow</span>(<span class="fl">0.5</span><span class="op">,</span> tempo <span class="op">/</span> T12)<span class="op">;</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <p>Onde <code>N0</code> é a quantidade inicial, <code>T12</code> é a meia-vida, e <code>tempo</code> é o período transcorrido. Depois, o script calcula várias curvas:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> meiasVidas <span class="op">=</span> [<span class="dv">2</span><span class="op">,</span> <span class="dv">5</span><span class="op">,</span> <span class="dv">10</span><span class="op">,</span> <span class="dv">20</span>]<span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> meiasVidas <span class="op">=</span> [<span class="dv">2</span><span class="op">,</span> <span class="dv">5</span><span class="op">,</span> <span class="dv">10</span><span class="op">,</span> <span class="dv">20</span>]<span class="op">;</span></span></code></pre></div>
 <p>Cada curva mostra uma amostra com meia-vida diferente. A linha tracejada marca metade da quantidade inicial, e ajuda a visualizar quando cada curva atinge sua primeira meia-vida.</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>quantidadeInicial <span class="op">/</span> <span class="dv">2</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>quantidadeInicial <span class="op">/</span> <span class="dv">2</span></span></code></pre></div>
 </section>
 </section>
 </div>
@@ -458,37 +461,37 @@ Não importa se há muito ou pouco material. O padrão matemático se repete.
 - Imagine uma aplicação médica, na qual a radiação precisa desaparecer relativamente rápido.
 - Imagine um rejeito nuclear, que precisa permanecer isolado por muito tempo.
 - Pergunte: a mesma propriedade física pode ser útil e perigosa ao mesmo tempo? -->
-<hr>
+<hr />
 <div class="callout callout-style-default callout-important no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
+<i class='callout-icon no-icon'></i>
 </div>
 <div class="callout-title-container flex-fill">
-FAZENDO APARECER <img src="figuras/icons/galho_bg.png" class="img-fluid" style="width:7.0%">
+FAZENDO APARECER <img src="figuras/icons/galho_bg.png" class="img-fluid" style="width:7.0%" />
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <p>A equação de <code>decaimento radioativo</code> mostra quanto de uma substância radioativa ainda resta depois de certo tempo:</p>
 <p><span id="eq-radio"><span class="math display">\[
 N(t) = N_0 \cdot \left(\frac{1}{2}\right)^{t/T_{1/2}}
-\tag{4.1}\]</span></span></p>
-<p>Na <a href="#eq-radio" class="quarto-xref">Equação&nbsp;<span>4.1</span></a>, <span class="math inline">\(N(t)\)</span> representa a quantidade de material radioativo que resta no tempo <span class="math inline">\(t\)</span>, <span class="math inline">\(N_0\)</span> a quantidade inicial da substância radioativa, e <span class="math inline">\(T_{1/2}\)</span> a meia-vida.</p>
+\tag{6.1}\]</span></span></p>
+<p>Na <a href="#eq-radio" class="quarto-xref">Equação <span class="quarto-unresolved-ref">eq-radio</span></a>, <span class="math inline">\(N(t)\)</span> representa a quantidade de material radioativo que resta no tempo <span class="math inline">\(t\)</span>, <span class="math inline">\(N_0\)</span> a quantidade inicial da substância radioativa, e <span class="math inline">\(T_{1/2}\)</span> a meia-vida.</p>
 <p>Assim, a quantidade restante pode ser entendida como a quantidade inicial multiplicada por metade elevada ao número de meias-vidas transcorridas. Chato, não ? Então, quem sabe um “corta pela metade, corta pela metade, corta pela metade,…”, e assim por diante. Na prática, um padrão que permite prever quanto material radioativo ainda resta depois de certo tempo.</p>
 <p>A radiação é conhecida por apresentar riscos à saúde em função de seu poder de penetração nos tecidos, chegando inclusive aos ossos. Existem alguns tipos de radiação, cada um interagindo com a matéria de forma diferente, em com diferentes níveis de impacto sobre a matéria. O JSPlotly a seguir apresenta uma forma mais descontraída para esse estudo.</p>
-<div id="fig-radio2" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
+<div id="fig-radio2" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
 <div aria-describedby="fig-radio2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="figuras/radio2_q.png" class="img-fluid figure-img">
+<img src="figuras/radio2_q.png" class="img-fluid" />
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-radio2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;4.3: Uma radiação mais penetrante não significa necessariamente mais perigosa. Clique com o botão direito neste <a href="https://bioquanti.netlify.app/pt/nivel/basico/jsplotly/livrosvivos/em/fis/_book/apps/radio2">LINK</a> e abra em nova aba.
+Figura 6.3: Uma radiação mais penetrante não significa necessariamente mais perigosa. Clique com o botão direito neste <a href="https://bioquanti.netlify.app/pt/nivel/basico/jsplotly/livrosvivos/em/fis/_book/apps/radio2">LINK</a> e abra em nova aba.
 </figcaption>
 </figure>
 </div>
 <p>O script compara três tipos de radiação: alfa (<span class="math inline">\(\alpha\)</span>), beta (<span class="math inline">\(\beta\)</span>) e gama (<span class="math inline">\(\gamma\)</span>). Você pode observar, simultaneamente, o poder de <code>penetração</code>, a capacidade de <code>ionização</code>, <code>massa relativa</code>, <code>carga elétrica</code> e tipo de <code>blindagem</code>.</p>
 <section id="agite-antes-de-usar-1" class="level4 unnumbered">
-<h4 class="unnumbered anchored" data-anchor-id="agite-antes-de-usar-1">Agite antes de usar</h4>
+<h4 class="unnumbered">Agite antes de usar</h4>
 <p>Execute o script. As barras mostram penetração e ionização, enquanto os pontos mostram massa e carga. Observe qual radiação penetra mais, qual ioniza mais, e qual tem maior massa. Passe o mouse sobre as barras para ver a blindagem. E compare os tipos de radiação. Por exemplo, alfa vs beta, beta vs gama, e alfa vs gama.</p>
 <p>Apesar de transparecer que um tipo seja mais “forte” e mais perigoso do que outro, no mundo real não funciona assim. O risco depende de alguns fatores, como a penetração (até onde chega), a ionização (quanto dano local causa), e o contexto (externo ou interno ao corpo), além do tempo e da quantidade de exposição.</p>
 <p>Por exemplo, a alfa possui baixa penetração mas alta ionização, enquanto que a gama possui alta penetração mas menor ionização local. Isso quebra o mito de que quanto mais penetrante a radiação, mais perigosa ela se apresenta. Vai abaixo um modo de uso do script.</p>
@@ -522,12 +525,12 @@ Figura&nbsp;4.3: Uma radiação mais penetrante não significa necessariamente m
 <p>Concluindo, o tipo de interação importa mais do que sua “força” isolada.</p>
 </section>
 <section id="por-dentro-do-script-1" class="level4 unnumbered">
-<h4 class="unnumbered anchored" data-anchor-id="por-dentro-do-script-1">Por dentro do script</h4>
+<h4 class="unnumbered">Por dentro do script</h4>
 <p>O script organiza os dados em uma lista:</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> radiacoes <span class="op">=</span> [<span class="op">...</span>]</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> radiacoes <span class="op">=</span> [<span class="op">...</span>]</span></code></pre></div>
 <p>Cada tipo possui propriedades de massa, carga, penetração, ionização e blindagem. Depois separa os dados para o gráfico:</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> penetracao <span class="op">=</span> radiacoes<span class="op">.</span><span class="fu">map</span>(r <span class="kw">=&gt;</span> r<span class="op">.</span><span class="at">penetracao</span>)<span class="op">;</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> ionizacao <span class="op">=</span> radiacoes<span class="op">.</span><span class="fu">map</span>(r <span class="kw">=&gt;</span> r<span class="op">.</span><span class="at">ionizacao</span>)<span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> penetracao <span class="op">=</span> radiacoes<span class="op">.</span><span class="fu">map</span>(r <span class="kw">=&gt;</span> r<span class="op">.</span><span class="at">penetracao</span>)<span class="op">;</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> ionizacao <span class="op">=</span> radiacoes<span class="op">.</span><span class="fu">map</span>(r <span class="kw">=&gt;</span> r<span class="op">.</span><span class="at">ionizacao</span>)<span class="op">;</span></span></code></pre></div>
 <p>No gráfico as barras mostram penetração e ionização e os pontos massa e carga, reunindo várias dimensões em uma única visualização.</p>
 </section>
 </div>
@@ -645,36 +648,36 @@ A beta é intermediária.
 A gama é muito penetrante, mas menos ionizante em comparação direta.
 
 Por isso, segurança radiológica não depende de medo genérico da palavra “radiação”, mas de análise física: tipo de emissão, energia, distância, tempo e blindagem. -->
-<hr>
+<hr />
 <div class="callout callout-style-default callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
+<i class='callout-icon no-icon'></i>
 </div>
 <div class="callout-title-container flex-fill">
-VOLTA PRO MUNDO <img src="figuras/icons/folha_bg.png" class="img-fluid" style="width:7.0%">
+VOLTA PRO MUNDO <img src="figuras/icons/folha_bg.png" class="img-fluid" style="width:7.0%" />
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <p>O átomo possui duas regiões, o <code>núcleo</code> e a <code>eletrosfera</code>. O núcleo é a região central, extremamente compacta e densa, e que concentra praticamente toda a massa atômica. Nele ficam os <code>prótons</code> (com carga elétrica positiva) e os <code>nêutrons</code> (partículas sem carga que ajudam a estabilizar o núcleo). Ao redor desse centro, em um vasto espaço quase totalmente vazio, fica a eletrosfera, onde os elétrons (partículas de carga negativa e massa desprezível) “giram” em alta velocidade, atraídos pela carga positiva do núcleo.</p>
 <p>Diversas reações que ocorrem nos átomos podem liberar energia, como a <code>fusão nuclear</code>, que ocorre quando dois núcleos atômicos leves se unem para formar um único núcleo mais pesado, o que libera uma quantidade colossal de energia. E também a `fissão nuclear´, que envolve a divisão de um átomo pesado, também liberando grande quantidade de energia.</p>
 <p>Agora que você já aprendeu <em>“na prática”</em> um pouco sobre a meia-vida, o decaimento radioativo e os tipos de radiação, que tal simular um fenômeno do mundo real, a <code>fissão nuclear</code>, base para a produção de energia elétrica em usinas nucleares ? E melhor ainda…com uma animação !</p>
-<div id="fig-radio3" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
+<div id="fig-radio3" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
 <div aria-describedby="fig-radio3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="figuras/radio3_q.png" class="img-fluid figure-img">
+<img src="figuras/radio3_q.png" class="img-fluid" />
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-radio3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;4.4: A fissão nuclear transforma massa em energia e pode gerar reações em cadeia. Clique com o botão direito neste <a href="https://bioquanti.netlify.app/pt/nivel/basico/jsplotly/livrosvivos/em/fis/_book/apps/radio3">LINK</a> e abra o <em>app</em> em nova aba.
+Figura 6.4: A fissão nuclear transforma massa em energia e pode gerar reações em cadeia. Clique com o botão direito neste <a href="https://bioquanti.netlify.app/pt/nivel/basico/jsplotly/livrosvivos/em/fis/_book/apps/radio3">LINK</a> e abra o <em>app</em> em nova aba.
 </figcaption>
 </figure>
 </div>
 <p>A fissão nuclear libera energia quando o núcleo se rompe. Mais detalhadamente, pela divisão de um núcleo atômico pesado e instável (como o <code>Urânio-235</code>) em dois ou mais núcleos menores, liberando uma enorme quantidade de energia, nêutrons e radiação.</p>
 <section id="agite-antes-de-usar-2" class="level4 unnumbered">
-<h4 class="unnumbered anchored" data-anchor-id="agite-antes-de-usar-2">Agite antes de usar</h4>
-<p>O script da <a href="#fig-radio3" class="quarto-xref">Figura&nbsp;<span>4.4</span></a> mostra uma <em>fissão nuclear animada</em>. Nela você pode acompanhar um nêutron incidente, o núcleo de U-235, a quebra em fragmentos menores, a emissão de novos nêutrons e a liberação de energia em ondas.</p>
+<h4 class="unnumbered">Agite antes de usar</h4>
+<p>O script da <a href="#fig-radio3" class="quarto-xref">Figura <span class="quarto-unresolved-ref">fig-radio3</span></a> mostra uma <em>fissão nuclear animada</em>. Nela você pode acompanhar um nêutron incidente, o núcleo de U-235, a quebra em fragmentos menores, a emissão de novos nêutrons e a liberação de energia em ondas.</p>
 <p>Execute o script e clique em <code>Play</code>. Observe o nêutron se aproximando, o núcleo instável, a ruptura e a explosão de energia. Depois altere o valor de energia liberada, e observe como o efeito visual muda (ex: 100, 200, 400).</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> energiaLiberada <span class="op">=</span> <span class="dv">50</span><span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> energiaLiberada <span class="op">=</span> <span class="dv">50</span><span class="op">;</span></span></code></pre></div>
 <p>Pense: o que muda mais, a forma da reação ou a intensidade da energia ?</p>
 <p>Quando o núcleo se divide, parte da massa é convertida em energia, novos nêutrons são liberados, e esses nêutrons podem atingir outros núcleos. Isso leva a um fenômeno de <code>reação em cadeia</code>, na qual uma única fissão pode gerar várias outras. Vai agora um modo de usar para o aplicativo.</p>
 <ol type="1">
@@ -694,32 +697,32 @@ Figura&nbsp;4.4: A fissão nuclear transforma massa em energia e pode gerar rea�
 <ol type="1">
 <li><em>Baixa energia</em>. Por que o efeito parece mais “contido” ?</li>
 </ol>
-<div class="sourceCode" id="cb15"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> energiaLiberada <span class="op">=</span> <span class="dv">20</span><span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> energiaLiberada <span class="op">=</span> <span class="dv">20</span><span class="op">;</span></span></code></pre></div>
 <ol start="2" type="1">
 <li><p><em>Energia intermediária</em>. Agora mude a <code>energiaLiberada</code> para 100. Quando o processo começa a parecer mais intenso ?</p></li>
 <li><p><em>Alta energia</em>. Suba então para 800. O que muda na propagação da energia ?</p></li>
 <li><p><em>Número de frames</em>. O que você percebe melhor com animação mais lenta ?</p></li>
 </ol>
-<div class="sourceCode" id="cb16"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> numeroFrames <span class="op">=</span> <span class="dv">80</span><span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> numeroFrames <span class="op">=</span> <span class="dv">80</span><span class="op">;</span></span></code></pre></div>
 <ol start="5" type="1">
 <li><em>Interpretação física</em>. Observe os três nêutrons liberados. Quantas novas fissões eles poderiam iniciar ?</li>
 </ol>
 <p>A fissão nuclear ocorre em etapas. O nêutron atinge o núcleo (colisão), o núcleo se deforma (instabilidade), ocorrendo a divisão em fragmentos (fragmentação), com a liberação de novos nêutrons (emissão) e a propagação de ondas (energia). Repare que a energia nuclear não é uma explosão “mágica” que surge de átomo fechado, mas o resultado de reorganização da matéria.</p>
 </section>
 <section id="por-dentro-do-script-2" class="level4 unnumbered">
-<h4 class="unnumbered anchored" data-anchor-id="por-dentro-do-script-2">Por dentro do script</h4>
+<h4 class="unnumbered">Por dentro do script</h4>
 <p>O script começa definindo a energia:</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> energiaLiberada <span class="op">=</span> <span class="dv">20</span><span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> energiaLiberada <span class="op">=</span> <span class="dv">20</span><span class="op">;</span></span></code></pre></div>
 <p>Essa energia controla o efeito visual:</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> fatorEnergia <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">sqrt</span>(energiaLiberada <span class="op">/</span> <span class="dv">200</span>)<span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> fatorEnergia <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">sqrt</span>(energiaLiberada <span class="op">/</span> <span class="dv">200</span>)<span class="op">;</span></span></code></pre></div>
 <p>Depois, a animação é construída frame a frame:</p>
-<div class="sourceCode" id="cb19"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> numeroFrames<span class="op">;</span> i<span class="op">++</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> numeroFrames<span class="op">;</span> i<span class="op">++</span>)</span></code></pre></div>
 <p>A simulação tem duas fases. A primeira é a <em>aproximação</em>, quando o nêutron se aproxima do núcleo.</p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>neutronX <span class="op">=</span> <span class="op">-</span><span class="dv">6</span> <span class="op">+</span> <span class="op">...</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>neutronX <span class="op">=</span> <span class="op">-</span><span class="dv">6</span> <span class="op">+</span> <span class="op">...</span></span></code></pre></div>
 <p>E a segunda fase é a <em>fissão</em>, quando o núcleo se divide em Ba (bário), Kr (criptônio) e novos nêutrons.</p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> p <span class="op">=</span> (fase <span class="op">-</span> <span class="fl">0.35</span>) <span class="op">/</span> <span class="fl">0.65</span><span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> p <span class="op">=</span> (fase <span class="op">-</span> <span class="fl">0.35</span>) <span class="op">/</span> <span class="fl">0.65</span><span class="op">;</span></span></code></pre></div>
 <p>E a energia aparece como ondas, e que representam a energia liberada no processo.</p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ondaEnergia</span>(p<span class="op">,</span> <span class="op">...</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ondaEnergia</span>(p<span class="op">,</span> <span class="op">...</span>)</span></code></pre></div>
 </section>
 </div>
 </div>
@@ -791,10 +794,10 @@ Ela fornece calor de forma extremamente concentrada. -->
 <div class="callout callout-style-default callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
+<i class='callout-icon no-icon'></i>
 </div>
 <div class="callout-title-container flex-fill">
-E SE… <img src="figuras/icons/flor_bg.png" class="img-fluid" style="width:10.0%">
+E SE… <img src="figuras/icons/flor_bg.png" class="img-fluid" style="width:10.0%" />
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1018,39 +1021,39 @@ Por isso, estudar radioatividade é estudar uma das ideias mais profundas da Fí
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
+<i class='callout-icon no-icon'></i>
 </div>
 <div class="callout-title-container flex-fill">
-MESMO PADRÃO, OUTROS MUNDOS <img src="figuras/icons/fruto_bg.png" class="img-fluid" style="width:7.0%">
+MESMO PADRÃO, OUTROS MUNDOS <img src="figuras/icons/fruto_bg.png" class="img-fluid" style="width:7.0%" />
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <p>A radioatividade permeia nosso cotidiano o tempo todo, mesmo que não a percebamos. A pesquisa de matrizes energéticas, a medicina nuclear, a Arqueologia, as Ciências Naturais e outros tantos vértices da pesquisa e indústria desses tempos estão, de uma forma ou outra, envolvidos com radioatividade. Na medicina nuclear, com uso de radioisótopos em exames de imagem, rastreamento de processos fisiológicos e tratamentos específicos. Na datação por carbono, permitindo estimar a idade de materiais orgânicos, rochas e objetos arqueológicos por determinação da meia-vida. Na inspeção indústrial, sendo utilizada para se verificar soldas, medir espessuras, esterilizar materiais e acompanhar processos.</p>
 <p>A radioatividade também está presente na pesquisa de exploração espacial, pela maior exposição no vácuo a um fluxo constante de partículas ionizantes de alta energia, como a radiação solar, raios cósmicos e cinturões de radiação em redor dos planetas. Também está presente no meio ambiente, uma vez que rejeitos radioativos exigem isolamento, monitoramento e planejamento. E, como um todo, também na Sociedade, despertando debates intensos sobre o desenvolvimento e uso da energia nuclear, porque envolve ciência, risco, confiança pública, política energética e memória histórica.</p>
-<p>Em relação a esse último papel pertinente à decisões políticas e uso consciente de alternativas energéticas, segue um último JSPlotly (<a href="#fig-radio4" class="quarto-xref">Figura&nbsp;<span>4.5</span></a>). O aplicativo agora compara fontes de energia por critérios ponderados. Será que dá pra escolher uma fonte que agregue benefícios e exclua riscos ?</p>
-<div id="fig-radio4" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
+<p>Em relação a esse último papel pertinente à decisões políticas e uso consciente de alternativas energéticas, segue um último JSPlotly (<a href="#fig-radio4" class="quarto-xref">Figura <span class="quarto-unresolved-ref">fig-radio4</span></a>). O aplicativo agora compara fontes de energia por critérios ponderados. Será que dá pra escolher uma fonte que agregue benefícios e exclua riscos ?</p>
+<div id="fig-radio4" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
 <div aria-describedby="fig-radio4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="figuras/radio4_q.png" class="img-fluid figure-img">
+<img src="figuras/radio4_q.png" class="img-fluid" />
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-radio4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;4.5: Escolher fonte de energia envolve decisão pública, ambiental e tecnológica. Clique com o botão direito neste <a href="https://bioquanti.netlify.app/pt/nivel/basico/jsplotly/livrosvivos/em/fis/_book/apps/radio4">LINK</a> e abra em nova aba.
+Figura 6.5: Escolher fonte de energia envolve decisão pública, ambiental e tecnológica. Clique com o botão direito neste <a href="https://bioquanti.netlify.app/pt/nivel/basico/jsplotly/livrosvivos/em/fis/_book/apps/radio4">LINK</a> e abra em nova aba.
 </figcaption>
 </figure>
 </div>
 <p>O script compara diferentes fontes de energia: nuclear, carvão, gás, solar, eólica e hidrelétrica. A comparação considera vários critérios ao mesmo tempo, como produção de energia, confiabilidade, emissão de CO<span class="math inline">\(_2\)</span>, área ocupada, resíduos e risco percebido. Assim, decidir sobre energia exige comparar benefícios, riscos e impactos.</p>
 <section id="agite-antes-de-usar-3" class="level4 unnumbered">
-<h4 class="unnumbered anchored" data-anchor-id="agite-antes-de-usar-3">Agite antes de usar</h4>
+<h4 class="unnumbered">Agite antes de usar</h4>
 <p>O gráfico de barras resume o índice integrado, enquanto que o gráfico radar mostra o perfil de cada fonte. Uma fonte com radar equilibrado tende a apresentar bom desempenho em vários critérios. Mas uma fonte com radar irregular pode ser muito forte em alguns aspectos e fraca em outros.</p>
 <p>Execute o script e observe o gráfico de barras. Depois use o menu suspenso para selecionar uma fonte:</p>
-<div class="sourceCode" id="cb23"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>Nuclear</span>
+<div class="sourceCode" id="cb23"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>Nuclear</span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>Carvão</span>
 <span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>Gás</span>
 <span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>Solar</span>
 <span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>Eólica</span>
-<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>Hidrelétrica</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>Hidrelétrica</span></code></pre></div>
 <p>Observe o gráfico radar à direita e depois clique em:</p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>Mostrar critérios</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb24"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>Mostrar critérios</span></code></pre></div>
 <p>Compare quais critérios favorecem ou desfavorecem cada fonte, e verifique se existe uma fonte de energia perfeita.</p>
 <p>A seguir, um pequeno tutorial para uso do <em>app</em>.</p>
 <ol type="1">
@@ -1076,74 +1079,210 @@ Figura&nbsp;4.5: Escolher fonte de energia envolve decisão pública, ambiental 
 <li><p><em>Comparação nuclear X solar/eólica</em>. Como baixa emissão de CO<span class="math inline">\(_2\)</span> pode aparecer em fontes com perfis técnicos bem diferentes ?</p></li>
 <li><p><em>Alterando pesos</em>. No código, modifique:</p></li>
 </ol>
-<div class="sourceCode" id="cb25"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> pesoCO2 <span class="op">=</span> <span class="fl">2.5</span><span class="op">;</span></span>
+<div class="sourceCode" id="cb25"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> pesoCO2 <span class="op">=</span> <span class="fl">2.5</span><span class="op">;</span></span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> pesoRisco <span class="op">=</span> <span class="fl">2.0</span><span class="op">;</span></span>
-<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> pesoConfiabilidade <span class="op">=</span> <span class="fl">0.5</span><span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> pesoConfiabilidade <span class="op">=</span> <span class="fl">0.5</span><span class="op">;</span></span></code></pre></div>
 <p>O ranking muda quando a sociedade decide valorizar outros critérios ?</p>
 <p>Energia nuclear costuma gerar muita eletricidade com baixa emissão direta de CO<span class="math inline">\(_2\)</span>, mas exige cuidado com rejeitos, segurança e percepção pública. Fontes fósseis podem ser confiáveis, mas emitem mais gases associados ao aquecimento global. Energias solar e eólica emitem pouco CO<span class="math inline">\(_2\)</span>, mas dependem de condições ambientais e sistemas de armazenamento. Por sua vez, hidrelétricas podem produzir muito, mas ocupam grandes áreas e alteram ecossistemas. Por isso, o futuro energético não depende de uma resposta simples.</p>
 <p>Decisão energética é uma comparação de compromissos. Questões como impacto, risco, custo, confiabilidade e consequências precisam ser levadas em conta para escolha de uma fonte energética, mesmo que isso não leva àquela que gera mais energia.</p>
 </section>
 <section id="por-dentro-do-script-3" class="level4 unnumbered">
-<h4 class="unnumbered anchored" data-anchor-id="por-dentro-do-script-3">Por dentro do script</h4>
+<h4 class="unnumbered">Por dentro do script</h4>
 <p>O script começa definindo as fontes comparadas:</p>
-<div class="sourceCode" id="cb26"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> fontes <span class="op">=</span> [<span class="st">"Nuclear"</span><span class="op">,</span> <span class="st">"Carvao"</span><span class="op">,</span> <span class="st">"Gas"</span><span class="op">,</span> <span class="st">"Solar"</span><span class="op">,</span> <span class="st">"Eolica"</span><span class="op">,</span> <span class="st">"Hidreletrica"</span>]<span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb26"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> fontes <span class="op">=</span> [<span class="st">&quot;Nuclear&quot;</span><span class="op">,</span> <span class="st">&quot;Carvao&quot;</span><span class="op">,</span> <span class="st">&quot;Gas&quot;</span><span class="op">,</span> <span class="st">&quot;Solar&quot;</span><span class="op">,</span> <span class="st">&quot;Eolica&quot;</span><span class="op">,</span> <span class="st">&quot;Hidreletrica&quot;</span>]<span class="op">;</span></span></code></pre></div>
 <p>Depois atribui notas “didáticas” de 0 a 10 para cada critério. Aqui são estimativas, mas o barato é que você pode editá-las a seu critério, também.</p>
-<div class="sourceCode" id="cb27"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> energia <span class="op">=</span> [<span class="dv">9</span><span class="op">,</span> <span class="dv">8</span><span class="op">,</span> <span class="dv">7</span><span class="op">,</span> <span class="dv">5</span><span class="op">,</span> <span class="dv">6</span><span class="op">,</span> <span class="dv">8</span>]<span class="op">;</span></span>
+<div class="sourceCode" id="cb27"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> energia <span class="op">=</span> [<span class="dv">9</span><span class="op">,</span> <span class="dv">8</span><span class="op">,</span> <span class="dv">7</span><span class="op">,</span> <span class="dv">5</span><span class="op">,</span> <span class="dv">6</span><span class="op">,</span> <span class="dv">8</span>]<span class="op">;</span></span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> confiabilidade <span class="op">=</span> [<span class="dv">9</span><span class="op">,</span> <span class="dv">8</span><span class="op">,</span> <span class="dv">7</span><span class="op">,</span> <span class="dv">3</span><span class="op">,</span> <span class="dv">4</span><span class="op">,</span> <span class="dv">7</span>]<span class="op">;</span></span>
-<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> baixoCO2 <span class="op">=</span> [<span class="dv">9</span><span class="op">,</span> <span class="dv">1</span><span class="op">,</span> <span class="dv">4</span><span class="op">,</span> <span class="dv">9</span><span class="op">,</span> <span class="dv">9</span><span class="op">,</span> <span class="dv">8</span>]<span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> baixoCO2 <span class="op">=</span> [<span class="dv">9</span><span class="op">,</span> <span class="dv">1</span><span class="op">,</span> <span class="dv">4</span><span class="op">,</span> <span class="dv">9</span><span class="op">,</span> <span class="dv">9</span><span class="op">,</span> <span class="dv">8</span>]<span class="op">;</span></span></code></pre></div>
 <p>Em seguida, o script define pesos:</p>
-<div class="sourceCode" id="cb28"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> pesoEnergia <span class="op">=</span> <span class="fl">1.2</span><span class="op">;</span></span>
-<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> pesoCO2 <span class="op">=</span> <span class="fl">1.4</span><span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb28"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> pesoEnergia <span class="op">=</span> <span class="fl">1.2</span><span class="op">;</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> pesoCO2 <span class="op">=</span> <span class="fl">1.4</span><span class="op">;</span></span></code></pre></div>
 <p>Esses pesos indicam quais critérios importam mais na decisão. O índice integrado é calculado pela média ponderada:</p>
-<div class="sourceCode" id="cb29"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="cf">return</span> (</span>
+<div class="sourceCode" id="cb29"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="cf">return</span> (</span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>  energia[i] <span class="op">*</span> pesoEnergia <span class="op">+</span></span>
 <span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>  confiabilidade[i] <span class="op">*</span> pesoConfiabilidade <span class="op">+</span></span>
 <span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>  baixoCO2[i] <span class="op">*</span> pesoCO2 <span class="op">+</span></span>
 <span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>  baixaArea[i] <span class="op">*</span> pesoArea <span class="op">+</span></span>
 <span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>  baixoResiduo[i] <span class="op">*</span> pesoResiduo <span class="op">+</span></span>
 <span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>  baixoRisco[i] <span class="op">*</span> pesoRisco</span>
-<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>) <span class="op">/</span> somaPesos<span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>) <span class="op">/</span> somaPesos<span class="op">;</span></span></code></pre></div>
 <p>Por fim, o painel mostra as barras com o índice integrado, as curvas dos critérios, e o radar da fonte selecionada.</p>
 </section>
 </div>
 </div>
-<hr>
+<hr />
 <div class="callout callout-style-default callout-important no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
+<i class='callout-icon no-icon'></i>
 </div>
 <div class="callout-title-container flex-fill">
-POR DENTRO DA FERRAMENTA <img src="figuras/icons/semente_bg.png" class="img-fluid" style="width:7.0%">
+POR DENTRO DA FERRAMENTA <img src="figuras/icons/semente_bg.png" class="img-fluid" style="width:7.0%" />
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Ao longo desta obra, a essa seção tem sido dedicada a espelhar o <code>pensamento computacional</code> e a <code>lógica de programação</code> junto aos diversos scripts de JSPlotly, finalizando com um <code>pseudocódigo</code> voltado a um desses scripts em cada capítulo.</p>
-<p>Os scripts de JSPlotly utilizados nesse capítulo, por exemplo, miram numa compreensão progressiva para alguns conceitos da termodinâmica. Brevemente, a relação que envolve a meia-vida radioativa (Script no. 1), os tipos de radiação (Script no. 2), uma animação para fissão nuclear (Script no. 3), bem como um painel de decisões sobre tipos energéticos (Script no. 4).</p>
-<p>Mas você já deve ter percebido também que, ao longos dos capítulos deste trabalho, aquelas <code>competências digitais</code> passaram a integrar paulatinamente o próprio capítulo, diminuindo a necessidade de sua exclusividade para o tópico que se apresenta. A partir de agora, então, essa seção irá dedicar-se à <strong><code>verdadeira ferramenta</code></strong> por detrás de todos os scripts que podem ser feitos com o JSPlotly: a linguagem <strong><code>JavaScript</code></strong>.</p>
-<p>O entendimento de como opera essa ferramenta permitirá a você compreender e modificar qualquer código deste livro, ajustá-lo às suas preferências ou necessidades, bem como criar outros tantos que desejar. Além disso, poderá também entender o que há por detrás das páginas de internet e criar as suas próprias, como blogs e sites. Isso porque o JavaScript opera silenciosamente quando você clica num botão da tela de seu celular, preenche um formulário ou acompanha uma animação gráfica na internet. Por óbvio, entretanto, esta nanométrica seção não lhe dará condições de sair por aí programando em JavaScript. Mas lhe dará munição básica para que avance ao próximo nível nessa e em qualquer linguagem de programação.</p>
-<p><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">JavaScript (JS)</a>, é uma linguagem de programação moderna, utilizada por grandes empresas e <em>big techs</em>, e focada na interatividade entre a página web e o usuário. Diferente de outras linguagens, <em>JavaScript</em> não precisa ser compilada separadamente por um programa, pois é interpretada a partir de máquinas homônimas presentes em navegadores comuns (<em>browser</em>), como Firefox, Chrome, Safari, Opera, Edge, etc.</p>
-<p>Assim, <em>Javacript (JS)</em> é uma linguagem para web. Ela completa a tríade essencial, <em>HTML-CSS-JS</em>. Enquanto <em>HTML</em> preocupa-se com o conteúdo e <em>CSS</em> com o estilo, <em>JavaScript</em> ocupa-se do comportamento, ou seja, da interatividade do usuário frente à uma página web. Vamos então chamá-la agora carinhosamente por <em>JS</em>, somente.</p>
-<p>Como ocorre com outras linguagens de programação, a linguagem <em>JS</em> possui bibliotecas, que são módulos independentes de códigos para cumprir certas funções. Nesse sentido, <em>JS</em> cumpre metade do nome do <em>JSPlotly</em>. A outra metade vem da principal biblioteca que é utilizada por esse para a construção de gráficos, mapas, e alguns outros objetos interativos, <a href="https://plotly.com/javascript/">Plotly.js</a>.</p>
-<section id="estrutura-de-js" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="estrutura-de-js"><span class="header-section-number">4.1</span> Estrutura de <em>JS</em></h2>
-<p>Uma linguagem de programação normalmente possui características estruturais comuns. Isso quer dizer que há comandos para declarar uma <code>variável</code> e seu <code>tipo</code>, a <code>entrada</code> e <code>saída</code> de dados (resultados), a criação e uso de <code>funções</code>, e <code>cálculos aritméticos</code>, por exemplo. E tal como outras linguagens de programação, JS opera com uma lógica similar de <code>declarações</code> (palavras-chave, operadores, valores, expressões). Em resumo, a gente dizer as declarações de JS compõem:</p>
-<div class="sourceCode" id="cb30"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="ex">1.</span> Palavras-chave: sintaxe da linguagem JS<span class="kw">;</span></span>
-<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="ex">2.</span> Operadores: caracteres que realizam operações<span class="kw">;</span></span>
-<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="ex">3.</span> Valores: texto, números, verdadeiro/falso <span class="er">(</span><span class="ex">variável</span> <span class="st">"booleana"</span><span class="kw">)</span><span class="ex">,</span> <span class="st">"não definido"</span>, <span class="st">"nulo"</span><span class="kw">;</span></span>
-<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="ex">4.</span> Expressões: trechos de código que produzem um único valor.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Do ponto de vista estrutural, por conseguinte, JS possui características que também são comuns a outras linguagens de programação:</p>
-<div class="sourceCode" id="cb31"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="ex">1.</span> Saída de dados<span class="kw">;</span></span>
-<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="ex">2.</span> Declaração de variáveis<span class="kw">;</span> </span>
-<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="ex">3.</span> Tipos de dados<span class="kw">;</span></span>
-<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a><span class="ex">4.</span> Constantes<span class="kw">;</span></span>
-<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a><span class="ex">5.</span> Aritmética<span class="kw">;</span></span>
-<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a><span class="ex">6.</span> Vetores<span class="kw">;</span></span>
-<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a><span class="ex">7.</span> Funções<span class="kw">;</span></span>
-<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a><span class="ex">8.</span> Geração de dados aleatórios<span class="kw">;</span></span>
-<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a><span class="ex">9.</span> Objetos<span class="kw">;</span></span>
-<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a><span class="ex">10.</span> Operadores<span class="kw">;</span></span>
-<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a><span class="ex">11.</span> Estruturas de controle<span class="kw">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Nessa seção, damos sequência a um aprendizado panorâmico em <em>JavaScript</em>, voltado ou não à edição de objetos com JSPlotly, como realizado no capítulo anterior. Nesse sentido, segue um pouco sobre a estrutura de <em>JS</em> para aritmética e <em>arrays</em> (vetores).</p>
+<p>E agora um truque bem bacana !!! <strong>Você poderá treinar a linguagem JavaScript utilizando um JSPlotly específico para isso !</strong>. Esse JSPlotly personalizado está disponível na <a href="#fig-JSPlotly_treinoJS" class="quarto-xref">Figura <span class="quarto-unresolved-ref">fig-JSPlotly_treinoJS</span></a> que segue. Abra-o num navegador e deixe-o quietinho lá. <code>*Quando quiser rodar algum trecho desses treinamentos, basta copiar, colar o trecho no campo "ÁREA PARA DIGITAR COMANDOS", e rodá-lo*</code>. Muito legal, não ?!</p>
+<div id="fig-JSPlotly_treinoJS" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-JSPlotly_treinoJS-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figuras/JSPlotly_treinoJS.png" class="img-fluid" />
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-JSPlotly_treinoJS-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura 6.6: JSPlotly personalizado para treinamento da linguagem <em>JavaScript</em> <a href="apps/JSPlotly_treinoJS.html">JSPlotly_treinoJS.html</a>. Basta clicar com o botão direito do mouse para abri-lo em outra janela do navegador. Deixe-o quietinho lá. Quando quiser executar algum trecho de código ao longo desse treinamento, basta copiar, colar no campo “ÁREA PARA DIGITAR COMANDOS”, e rodar no JSPlotly personalizado.
+</figcaption>
+</figure>
+</div>
+<section id="aritmética" class="level3 unnumbered">
+<h3 class="unnumbered">Aritmética</h3>
+<p>Diversas operações matemáticas são possíveis, quer pelo <em>JS</em> puro, quer pela instalação de bibliotecas específicas, tais como <em>Plotly.js</em> utilizada no JSPlotly, <em>mathjs</em> ou <em>numjs</em>. Segue abaixo uma lista de operações aritméticas realizadas com a linguagem:</p>
+<ol type="1">
+<li>+ : adição de números ou concatenação de texto (<em>strings</em>);</li>
+<li>- : subtração;</li>
+<li>* : multiplicação;</li>
+<li>/ : divisão;</li>
+<li>% : módulo;</li>
+<li>++ : incremento de valor;</li>
+<li>-- : decremento;</li>
+<li>** : exponenciação.</li>
+</ol>
+<p><em>Obs:</em> o operador de módulo <code>*%*</code> divide o primeiro <code>operando</code> pelo segundo operando e retorna o resto.</p>
+<p>Os exemplos a seguir ilustram o uso desses operadores aritméticos, bem como de algumas constantes matemáticas. Para testá-los, cole no <em>JSPlotly</em> customizado para treinamento de <em>JS</em>, como informado acima. Você pode experimentá-los separadamente ou em bloco.</p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> resultado <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>resultado <span class="op">=</span> <span class="dv">5</span> <span class="op">+</span> <span class="dv">3</span><span class="op">;</span>                 <span class="fu">print</span>(<span class="st">&quot;5 + 3 = &quot;</span><span class="op">,</span> resultado)<span class="op">;</span>          <span class="co">// 8</span></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>resultado <span class="op">=</span> <span class="dv">10</span> <span class="op">-</span> <span class="dv">4</span><span class="op">;</span>                <span class="fu">print</span>(<span class="st">&quot;10 - 4 = &quot;</span><span class="op">,</span> resultado)<span class="op">;</span>          <span class="co">// 6</span></span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>resultado <span class="op">=</span> <span class="dv">6</span> <span class="op">*</span> <span class="dv">7</span><span class="op">;</span>                 <span class="fu">print</span>(<span class="st">&quot;6 * 7 = &quot;</span><span class="op">,</span> resultado)<span class="op">;</span>           <span class="co">// 42</span></span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>resultado <span class="op">=</span> <span class="dv">20</span> <span class="op">/</span> <span class="dv">5</span><span class="op">;</span>                <span class="fu">print</span>(<span class="st">&quot;20 / 5 = &quot;</span><span class="op">,</span> resultado)<span class="op">;</span>          <span class="co">// 4</span></span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>resultado <span class="op">=</span> <span class="dv">17</span> <span class="op">%</span> <span class="dv">3</span><span class="op">;</span>                <span class="fu">print</span>(<span class="st">&quot;17 % 3 = &quot;</span><span class="op">,</span> resultado)<span class="op">;</span>          <span class="co">// 2</span></span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a>resultado <span class="op">=</span> <span class="dv">2</span> <span class="op">**</span> <span class="dv">3</span><span class="op">;</span>                <span class="fu">print</span>(<span class="st">&quot;2 ** 3 = &quot;</span><span class="op">,</span> resultado)<span class="op">;</span>          <span class="co">// 8</span></span>
+<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> contador <span class="op">=</span> <span class="dv">5</span><span class="op">;</span> contador<span class="op">++;</span>      <span class="fu">print</span>(<span class="st">&quot;contador++ = &quot;</span><span class="op">,</span> contador)<span class="op">;</span>       <span class="co">// 6</span></span>
+<span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> decrementar <span class="op">=</span> <span class="dv">8</span><span class="op">;</span> decrementar<span class="op">--;</span><span class="fu">print</span>(<span class="st">&quot;decrementar-- = &quot;</span><span class="op">,</span> decrementar)<span class="op">;</span> <span class="co">// 7</span></span>
+<span id="cb30-11"><a href="#cb30-11" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> soma <span class="op">=</span> <span class="dv">10</span><span class="op">;</span> soma <span class="op">+=</span> <span class="dv">5</span><span class="op">;</span>          <span class="fu">print</span>(<span class="st">&quot;soma += 5 = &quot;</span><span class="op">,</span> soma)<span class="op">;</span>            <span class="co">// 15</span></span>
+<span id="cb30-12"><a href="#cb30-12" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> diferenca <span class="op">=</span> <span class="dv">20</span><span class="op">;</span> diferenca <span class="op">-=</span> <span class="dv">7</span><span class="op">;</span><span class="fu">print</span>(<span class="st">&quot;diferença -= 7 = &quot;</span><span class="op">,</span> diferenca)<span class="op">;</span>   <span class="co">// 13</span></span>
+<span id="cb30-13"><a href="#cb30-13" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> produto <span class="op">=</span> <span class="dv">3</span><span class="op">;</span> produto <span class="op">*=</span> <span class="dv">4</span><span class="op">;</span>     <span class="fu">print</span>(<span class="st">&quot;produto *= 4 = &quot;</span><span class="op">,</span> produto)<span class="op">;</span>       <span class="co">// 12</span></span>
+<span id="cb30-14"><a href="#cb30-14" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> quociente <span class="op">=</span> <span class="dv">24</span><span class="op">;</span> quociente <span class="op">/=</span> <span class="dv">3</span><span class="op">;</span><span class="fu">print</span>(<span class="st">&quot;quociente /= 3 = &quot;</span><span class="op">,</span> quociente)<span class="op">;</span>   <span class="co">// 8</span></span>
+<span id="cb30-15"><a href="#cb30-15" aria-hidden="true" tabindex="-1"></a>resultado <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">sqrt</span>(<span class="dv">25</span>)<span class="op">;</span>         <span class="fu">print</span>(<span class="st">&quot;sqrt(25) = &quot;</span><span class="op">,</span> resultado)<span class="op">;</span>         <span class="co">// 5</span></span>
+<span id="cb30-16"><a href="#cb30-16" aria-hidden="true" tabindex="-1"></a>resultado <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">abs</span>(<span class="op">-</span><span class="dv">15</span>)<span class="op">;</span>         <span class="fu">print</span>(<span class="st">&quot;abs(-15) = &quot;</span><span class="op">,</span> resultado)<span class="op">;</span>         <span class="co">// 15</span></span>
+<span id="cb30-17"><a href="#cb30-17" aria-hidden="true" tabindex="-1"></a>resultado <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">floor</span>(<span class="fl">7.8</span>)<span class="op">;</span>       <span class="fu">print</span>(<span class="st">&quot;floor(7.8) = &quot;</span><span class="op">,</span> resultado)<span class="op">;</span>       <span class="co">// 7</span></span>
+<span id="cb30-18"><a href="#cb30-18" aria-hidden="true" tabindex="-1"></a>resultado <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">ceil</span>(<span class="fl">7.2</span>)<span class="op">;</span>        <span class="fu">print</span>(<span class="st">&quot;ceil(7.2) = &quot;</span><span class="op">,</span> resultado)<span class="op">;</span>        <span class="co">// 8</span></span>
+<span id="cb30-19"><a href="#cb30-19" aria-hidden="true" tabindex="-1"></a>resultado <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">round</span>(<span class="fl">9.4</span>)<span class="op">;</span>       <span class="fu">print</span>(<span class="st">&quot;round(9.4) = &quot;</span><span class="op">,</span> resultado)<span class="op">;</span>       <span class="co">// 9</span></span>
+<span id="cb30-20"><a href="#cb30-20" aria-hidden="true" tabindex="-1"></a>resultado <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">max</span>(<span class="dv">42</span><span class="op">,</span> <span class="dv">27</span>)<span class="op">;</span>      <span class="fu">print</span>(<span class="st">&quot;max(42,27) = &quot;</span><span class="op">,</span> resultado)<span class="op">;</span>       <span class="co">// 42</span></span>
+<span id="cb30-21"><a href="#cb30-21" aria-hidden="true" tabindex="-1"></a>resultado <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">min</span>(<span class="dv">42</span><span class="op">,</span> <span class="dv">27</span>)<span class="op">;</span>      <span class="fu">print</span>(<span class="st">&quot;min(42,27) = &quot;</span><span class="op">,</span> resultado)<span class="op">;</span>       <span class="co">// 27</span></span>
+<span id="cb30-22"><a href="#cb30-22" aria-hidden="true" tabindex="-1"></a>resultado <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">sin</span>(<span class="bu">Math</span><span class="op">.</span><span class="cn">PI</span><span class="op">/</span><span class="dv">2</span>)<span class="op">;</span>   <span class="fu">print</span>(<span class="st">&quot;sin(π/2) = &quot;</span><span class="op">,</span> resultado)<span class="op">;</span> </span></code></pre></div>
+</section>
+<section id="arrays" class="level3 unnumbered">
+<h3 class="unnumbered">Arrays</h3>
+<p>Um <em>array</em> em <em>JavaScript</em> representa uma estrutura de dados para armazenamento de elementos ordenados. Esses elementos podem envolver qualquer tipo de dado, como números, <em>strings</em> (termos), objetos, etc. Na prática, um <em>array</em> pode ser criado, acessado, filtrado, ou mapeado. Seguem exemplos:</p>
+<section id="criação" class="level4 unnumbered">
+<h4 class="unnumbered">Criação</h4>
+<div class="sourceCode" id="cb31"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> numeros <span class="op">=</span> [<span class="dv">1</span><span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="dv">3</span><span class="op">,</span> <span class="dv">4</span><span class="op">,</span> <span class="dv">5</span>]<span class="op">;</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> cores <span class="op">=</span> [<span class="st">&#39;vermelho&#39;</span><span class="op">,</span> <span class="st">&#39;verde&#39;</span><span class="op">,</span> <span class="st">&#39;azul&#39;</span>]<span class="op">;</span></span></code></pre></div>
+</section>
+<section id="acesso" class="level4 unnumbered">
+<h4 class="unnumbered">Acesso</h4>
+<div class="sourceCode" id="cb32"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(numeros[<span class="dv">0</span>])<span class="op">;</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(cores[<span class="dv">2</span>])<span class="op">;</span></span></code></pre></div>
+<p>Ou seja, para você acessar o <em>array</em> <code>numeros</code>, por exemplo, basta colar e rodar o seguinte trecho no JSPlotly de treinamento:</p>
+<div class="sourceCode" id="cb33"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> numeros <span class="op">=</span> [<span class="dv">1</span><span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="dv">3</span><span class="op">,</span> <span class="dv">4</span><span class="op">,</span> <span class="dv">5</span>]<span class="op">;</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> cores <span class="op">=</span> [<span class="st">&#39;vermelho&#39;</span><span class="op">,</span> <span class="st">&#39;verde&#39;</span><span class="op">,</span> <span class="st">&#39;azul&#39;</span>]<span class="op">;</span></span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(numeros[<span class="dv">0</span>])<span class="op">;</span></span></code></pre></div>
+</section>
+<section id="mapeamento-map" class="level4 unnumbered">
+<h4 class="unnumbered">Mapeamento (<code>map</code>)</h4>
+<div class="sourceCode" id="cb34"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> numeros <span class="op">=</span> [<span class="dv">1</span><span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="dv">3</span><span class="op">,</span> <span class="dv">4</span><span class="op">,</span> <span class="dv">5</span>]<span class="op">;</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> quadrados <span class="op">=</span> numeros<span class="op">.</span><span class="fu">map</span>(numero <span class="kw">=&gt;</span> numero <span class="op">*</span> numero)<span class="op">;</span></span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(quadrados)<span class="op">;</span></span></code></pre></div>
+</section>
+</section>
+<section id="uma-palavrinha-sobre-métodos" class="level3 unnumbered">
+<h3 class="unnumbered">Uma palavrinha sobre métodos</h3>
+<p>Observe que, diferente do que já foi explicitado, agora aparece um comando múltiplo, como <em>“numeros.map”</em>. Existe uma infinidade de comandos com esta sintaxe em <em>JS</em>. Ele representa a função que será aplicada a cada elemento do array <em>numeros</em> pelo <em>método map</em>. Além disso, surge a sintaxe <em>“=&gt;”</em> ou sintaxe de <em>arrow function</em> (função de seta), uma forma concisa de atribuir um mapeamento.</p>
+<p>Em <em>JavaScript</em>, <em>objetos</em> são tratados como no mundo real, ou seja, possuem <em>atributos</em> e <em>comportamentos</em>. Atributos descrevem as características que um objeto possui, e os comportamentos as ações que podem realizar. A notação em <em>JS</em> para referenciar as propriedades de um objeto pode ser, alternativamente:</p>
+<div class="sourceCode" id="cb35"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>objeto<span class="op">.</span><span class="at">propriedade</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a><span class="op">...</span>ou<span class="op">...</span></span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>objeto[propriedade]</span></code></pre></div>
+<div class="line-block">  Voltando ao exemplo acima e esmiuçando-o um pouquinho mais, o <em>método map()</em> (<code>numeros.map</code>) é chamado no <em>array numeros</em> (um <em>Array.prototype</em>). O <code>*protótipo*</code> permite transmitir propriedades e métodos para um objeto <em>JS</em>. No caso, o <em>método map()</em> itera sobre cada elemento do array original (refinamento por ações sucessivas para aproximar um resultado desejado), aplica uma função a cada um deles e retorna um novo array com os resultados. Assim, <em>numero =&gt; numero </em> numero* é a <em>função de seta</em>. E nesse caso, <em>numero</em> é o parâmetro de entrada da função, um atalho para o elemento atual do <em>array</em> sendo processado pelo <em>map</em>. Em adição, <em>“=&gt;”</em> representa o separador entre o(s) parâmetro(s) e o corpo da função. Finalmente, <em>“numero * numero”</em> é a expressão que é executada, com o resultado sendo retornado pela função. Seguem outros exemplos para arrays e mapeamento:</div>
+<div class="sourceCode" id="cb36"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a> <span class="kw">const</span> x <span class="op">=</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">1</span><span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="dv">3</span><span class="op">,</span> <span class="dv">4</span>]<span class="op">;</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a> <span class="kw">const</span> y <span class="op">=</span> x<span class="op">.</span><span class="fu">map</span>(valor <span class="kw">=&gt;</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">pow</span>(<span class="dv">2</span><span class="op">,</span> valor))</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a> <span class="fu">print</span>(y)<span class="op">;</span></span></code></pre></div>
+<div class="sourceCode" id="cb37"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> Vmax <span class="op">=</span> <span class="dv">100</span><span class="op">;</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> Km <span class="op">=</span> <span class="dv">10</span><span class="op">;</span></span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> S_values <span class="op">=</span> <span class="bu">Array</span><span class="op">.</span><span class="fu">from</span>({<span class="dt">length</span><span class="op">:</span> <span class="dv">10</span>}<span class="op">,</span> (_<span class="op">,</span> i) <span class="kw">=&gt;</span> i <span class="op">*</span> <span class="dv">5</span>)<span class="op">;</span></span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> V_values <span class="op">=</span> S_values<span class="op">.</span><span class="fu">map</span>(S <span class="kw">=&gt;</span> (Vmax <span class="op">*</span> S) <span class="op">/</span> (Km <span class="op">+</span> S))<span class="op">;</span></span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">&quot;Valores de S:&quot;</span><span class="op">,</span> S_values)<span class="op">;</span></span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">&quot;Valores de V:&quot;</span><span class="op">,</span> V_values)<span class="op">;</span></span></code></pre></div>
+</section>
+<section id="javascript-uma-linguagem-orientada-a-objetos" class="level3 unnumbered">
+<h3 class="unnumbered">JavaScript, uma linguagem orientada a objetos</h3>
+<div class="line-block">  Ainda que o esforço para traduzir os comandos acima possa auxliar como funciona a linguagem, é por óbvio esperar uma certa confusão de termos. Sendo assim, vamos subindo de nível ….!</div>
+<div class="line-block">  Como diz o título acima, <em>JS</em> é uma linguagem orientada a objetos. Isso significa que o código é organizado em torno de <em>objetos</em>, que combinam dados (<em>propriedades</em>) e comportamentos (<em>métodos</em>) para modelar entidades do mundo real (não, não são fantasmas!). Isso permite um código mais modular, reutilizável e fácil de gerenciar, ao organizar a lógica em <em>“partes”</em> menores e mais compreensíveis (<em>pensamento computacional</em>).</div>
+<section id="objetos-propriedades-e-métodos" class="level4 unnumbered">
+<h4 class="unnumbered">Objetos, propriedades, e métodos</h4>
+<div class="line-block">  Um <em>objeto</em> é uma estrutura que agrupa dados e comportamentos. Os dados ficam guardados em <em>propriedades</em>, e os comportamentos são implementados por <em>métodos</em> (funções dentro do objeto). Assim, propriedades constituem pares nome–valor armazenados dentro de um objeto, podendo variar como números, textos, arrays, e outros objetos. Já os métodos são funções associadas a um objeto, e que descrevem ações que ele pode executar.</div>
+<div class="line-block">  Objetos em <em>JS</em> <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Working_with_objects">“podem ser comparados a objetos da vida real”</a>, e guardam informações relacionadas entre si. Por exemplo, o objeto <em>“ponto”</em> abaixo representa um ponto no plano:</div>
+<div class="sourceCode" id="cb38"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> ponto <span class="op">=</span> { <span class="dt">x</span><span class="op">:</span> <span class="dv">2</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="dv">5</span> }<span class="op">;</span>  <span class="co">// objeto com duas propriedades</span></span></code></pre></div>
+<p>Assim, as propriedades são as características do objeto:</p>
+<div class="sourceCode" id="cb39"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(ponto<span class="op">.</span><span class="at">x</span>)<span class="op">;</span>  <span class="co">// mostra 2</span></span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(ponto<span class="op">.</span><span class="at">y</span>)<span class="op">;</span>  <span class="co">// mostra 5</span></span></code></pre></div>
+<div class="line-block">  <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Working_with_objects">“Propriedades de objetos são basicamente as mesmas que variáveis normais em JavaScript, exceto pelo fato de estarem ligadas a objetos”</a>. Propriedades podem ser acessadas por colchetes, <em>[…]</em>.</div>
+<div class="line-block">  Assim, um objeto pode ser encarado como um <em>“pacote”</em> contendo nome, conteúdo e ferramentas próprias. Virtualmente, tudo em <em>JavaScript</em> — arrays, funções, strings, números — é, de alguma forma, um objeto com suas propriedades e métodos. Segue um exemplo:</div>
+<p><br />
+</p>
+<div class="sourceCode" id="cb40"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> carro <span class="op">=</span> {</span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marca</span><span class="op">:</span> <span class="st">&quot;Toyota&quot;</span><span class="op">,</span>        <span class="co">// propriedade (dado)</span></span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">ano</span><span class="op">:</span> <span class="dv">2022</span><span class="op">,</span>              <span class="co">// propriedade</span></span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">ligar</span><span class="op">:</span> <span class="kw">function</span>() {     <span class="co">// método (ação)</span></span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">&quot;O carro está ligado!&quot;</span>)<span class="op">;</span></span>
+<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb40-7"><a href="#cb40-7" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span>
+<span id="cb40-8"><a href="#cb40-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-9"><a href="#cb40-9" aria-hidden="true" tabindex="-1"></a>carro<span class="op">.</span><span class="fu">ligar</span>()<span class="op">;</span>            <span class="co">// chama o método</span></span>
+<span id="cb40-10"><a href="#cb40-10" aria-hidden="true" tabindex="-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(carro<span class="op">.</span><span class="at">marca</span>)<span class="op">;</span> <span class="co">// acessa a propriedade</span></span></code></pre></div>
+<p>Reforçando (não custa nada…), um objeto <em>JavaScript</em> envolve uma coleção de propriedades, onde cada propriedade é definida por um par chave-valor, permitindo uma representação ordenada de elementos. Objetos podem conter diferentes tipos de dados como valores, números, strings, <code>booleanos</code> (falso/verdadeiro), arrays, outras funções e até mesmo outros objetos. Objetos criados são facilmente acessados por seus atributos. Seguem exemplos para testes.</p>
+</section>
+<section id="criação-1" class="level4 unnumbered">
+<h4 class="unnumbered">Criação</h4>
+<div class="sourceCode" id="cb41"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> pessoa <span class="op">=</span> {</span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">nome</span><span class="op">:</span> <span class="st">&#39;João&#39;</span><span class="op">,</span></span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">idade</span><span class="op">:</span> <span class="dv">30</span><span class="op">,</span></span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">cidade</span><span class="op">:</span> <span class="st">&#39;São Paulo&#39;</span></span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span></code></pre></div>
+</section>
+<section id="acesso-1" class="level4 unnumbered">
+<h4 class="unnumbered">Acesso</h4>
+<div class="sourceCode" id="cb42"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(pessoa<span class="op">.</span><span class="at">nome</span>)<span class="op">;</span></span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(pessoa[<span class="st">&#39;idade&#39;</span>])<span class="op">;</span></span></code></pre></div>
+</section>
+<section id="atributos" class="level4 unnumbered">
+<h4 class="unnumbered">Atributos</h4>
+<div class="sourceCode" id="cb43"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>pessoa<span class="op">.</span><span class="at">profissao</span> <span class="op">=</span> <span class="st">&#39;Engenheiro&#39;</span><span class="op">;</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(pessoa)<span class="op">;</span></span></code></pre></div>
+<p>Para um exemplo fechado de objetos:</p>
+<div class="sourceCode" id="cb44"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> pessoa <span class="op">=</span> {</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">nome</span><span class="op">:</span> <span class="st">&quot;João&quot;</span><span class="op">,</span></span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">idade</span><span class="op">:</span> <span class="dv">30</span><span class="op">,</span></span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">profissao</span><span class="op">:</span> <span class="st">&quot;Desenvolvedor&quot;</span><span class="op">,</span></span>
+<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">hobbies</span><span class="op">:</span> [<span class="st">&quot;leitura&quot;</span><span class="op">,</span> <span class="st">&quot;música&quot;</span><span class="op">,</span> <span class="st">&quot;jogos&quot;</span>]<span class="op">,</span></span>
+<span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">endereco</span><span class="op">:</span> {</span>
+<span id="cb44-7"><a href="#cb44-7" aria-hidden="true" tabindex="-1"></a>    <span class="dt">rua</span><span class="op">:</span> <span class="st">&quot;Rua Principal, 123&quot;</span><span class="op">,</span></span>
+<span id="cb44-8"><a href="#cb44-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">cidade</span><span class="op">:</span> <span class="st">&quot;São Paulo&quot;</span><span class="op">,</span></span>
+<span id="cb44-9"><a href="#cb44-9" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb44-10"><a href="#cb44-10" aria-hidden="true" tabindex="-1"></a>  <span class="dt">saudacao</span><span class="op">:</span> <span class="kw">function</span> () {</span>
+<span id="cb44-11"><a href="#cb44-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">print</span>(<span class="st">&quot;Olá, meu nome é &quot;</span> <span class="op">+</span> <span class="kw">this</span><span class="op">.</span><span class="at">nome</span>)<span class="op">;</span></span>
+<span id="cb44-12"><a href="#cb44-12" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb44-13"><a href="#cb44-13" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span>
+<span id="cb44-14"><a href="#cb44-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-15"><a href="#cb44-15" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(pessoa<span class="op">.</span><span class="at">nome</span>)<span class="op">;</span> <span class="co">// Saída: &quot;João&quot;</span></span>
+<span id="cb44-16"><a href="#cb44-16" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(pessoa<span class="op">.</span><span class="at">hobbies</span>[<span class="dv">0</span>])<span class="op">;</span> <span class="co">// Saída: &quot;leitura&quot;</span></span>
+<span id="cb44-17"><a href="#cb44-17" aria-hidden="true" tabindex="-1"></a>pessoa<span class="op">.</span><span class="fu">saudacao</span>()<span class="op">;</span> <span class="co">// Saída: &quot;Olá, meu nome é João&quot;</span></span></code></pre></div>
+<p>E por aí vai !! No próximo capítulo esse seção irá explorar um pouco sobre <code>variáveis</code> e <code>funções</code> em <em>JavaScript</em>.</p>
 <div style="page-break-after: always;"></div>
 <!-- SEÇÃO PARA QUANDO TIVER O FULL BOOK ABAIXO 
 ### Separação de comandos, inserção de comentários, e boas práticas {.unnumbered}
@@ -1468,14 +1607,19 @@ modelo físico → simulação → interação → interpretação → decisão
 Em outras palavras, o objetivo não é apenas “ver um gráfico”.
 
 É usar o gráfico para pensar. -->
-
-
+<div id="quarto-navigation-envelope" class="hidden">
+<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyLXRpdGxl">Simulações Interativas com JSPlotly em Física</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXItdGl0bGU=">Simulações Interativas com JSPlotly em Física</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1wcmV2"><span class="chapter-number">5</span>  <span class="chapter-title">Termodinâmica, Gases e Soluções</span></span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9pbmRleC5odG1sPHNwYW4tY2xhc3M9J2NoYXB0ZXItbnVtYmVyJz4xPC9zcGFuPi0tPHNwYW4tY2xhc3M9J2NoYXB0ZXItdGl0bGUnPkludHJvZHXDp8Ojbzwvc3Bhbj4="><span class="chapter-number">1</span>  <span class="chapter-title">Introdução</span></span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9tZWNhbmljYS5odG1sPHNwYW4tY2xhc3M9J2NoYXB0ZXItbnVtYmVyJz4yPC9zcGFuPi0tPHNwYW4tY2xhc3M9J2NoYXB0ZXItdGl0bGUnPk1lY8OibmljYTotb2JqZXRvcy1lbS1tb3ZpbWVudG88L3NwYW4+"><span class="chapter-number">2</span>  <span class="chapter-title">Mecânica: objetos em movimento</span></span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9lbGVjdC5odG1sPHNwYW4tY2xhc3M9J2NoYXB0ZXItbnVtYmVyJz4zPC9zcGFuPi0tPHNwYW4tY2xhc3M9J2NoYXB0ZXItdGl0bGUnPkVsZXRyaWNpZGFkZS1lLU1hZ25ldGlzbW88L3NwYW4+"><span class="chapter-number">3</span>  <span class="chapter-title">Eletricidade e Magnetismo</span></span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9vbmRhcy5odG1sPHNwYW4tY2xhc3M9J2NoYXB0ZXItbnVtYmVyJz40PC9zcGFuPi0tPHNwYW4tY2xhc3M9J2NoYXB0ZXItdGl0bGUnPk9uZGFzOi1tb3ZpbWVudG8sLXNvbS1lLWx1ejwvc3Bhbj4="><span class="chapter-number">4</span>  <span class="chapter-title">Ondas: movimento, som e luz</span></span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90ZXJtLmh0bWw8c3Bhbi1jbGFzcz0nY2hhcHRlci1udW1iZXInPjU8L3NwYW4+LS08c3Bhbi1jbGFzcz0nY2hhcHRlci10aXRsZSc+VGVybW9kaW7Dom1pY2EsLUdhc2VzLWUtU29sdcOnw7Vlczwvc3Bhbj4="><span class="chapter-number">5</span>  <span class="chapter-title">Termodinâmica, Gases e Soluções</span></span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9yYWRpby5odG1sPHNwYW4tY2xhc3M9J2NoYXB0ZXItbnVtYmVyJz42PC9zcGFuPi0tPHNwYW4tY2xhc3M9J2NoYXB0ZXItdGl0bGUnPlJhZGlvYXRpdmlkYWRlLWUtZW5lcmdpYS1udWNsZWFyPC9zcGFuPg=="><span class="chapter-number">6</span>  <span class="chapter-title">Radioatividade e energia nuclear</span></span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWJyZWFkY3J1bWJzLTxzcGFuLWNsYXNzPSdjaGFwdGVyLW51bWJlcic+Njwvc3Bhbj4tLTxzcGFuLWNsYXNzPSdjaGFwdGVyLXRpdGxlJz5SYWRpb2F0aXZpZGFkZS1lLWVuZXJnaWEtbnVjbGVhcjwvc3Bhbj4="><span class="chapter-number">6</span>  <span class="chapter-title">Radioatividade e energia nuclear</span></span></p>
+</div>
+<div id="quarto-meta-markdown" class="hidden">
+<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGF0aXRsZQ=="><span class="chapter-number">6</span>  <span class="chapter-title">Radioatividade e energia nuclear</span> – Simulações Interativas com JSPlotly em Física</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkdGl0bGU="><span class="chapter-number">6</span>  <span class="chapter-title">Radioatividade e energia nuclear</span> – Simulações Interativas com JSPlotly em Física</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZHRpdGxl"><span class="chapter-number">6</span>  <span class="chapter-title">Radioatividade e energia nuclear</span> – Simulações Interativas com JSPlotly em Física</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGFzaXRlbmFtZQ==">Simulações Interativas com JSPlotly em Física</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkZGVzYw=="></span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZGRkZXNj"></span></p>
+</div>
+</section>
 </section>
 </div>
 </div>
 
 </main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+<script id = "quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
@@ -1876,8 +2020,8 @@ Em outras palavras, o objetivo não é apenas “ver um gráfico”.
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./ondas.html" class="pagination-link" aria-label="Ondas: movimento, som e luz">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Ondas: movimento, som e luz</span></span>
+      <a  href="/term.html" class="pagination-link" aria-label="Termodinâmica, Gases e Soluções">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class='chapter-number'>5</span>  <span class='chapter-title'>Termodinâmica, Gases e Soluções</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
@@ -1885,7 +2029,6 @@ Em outras palavras, o objetivo não é apenas “ver um gráfico”.
 </nav>
 </div> <!-- /content -->
 
+</body>
 
-
-
-</body></html>
+</html>

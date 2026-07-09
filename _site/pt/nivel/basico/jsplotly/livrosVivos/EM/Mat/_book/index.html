@@ -186,8 +186,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#trilha-didática" id="toc-trilha-didática" class="nav-link" data-scroll-target="#trilha-didática">Trilha didática</a>
   <ul class="collapse">
   <li><a href="#bncc" id="toc-bncc" class="nav-link" data-scroll-target="#bncc">BNCC</a></li>
-  </ul></li>
   <li><a href="#conteúdo-dos-capítulos" id="toc-conteúdo-dos-capítulos" class="nav-link" data-scroll-target="#conteúdo-dos-capítulos">Conteúdo dos capítulos</a></li>
+  </ul></li>
   <li><a href="#simulador-jsplotly-e-gerador-de-códigos-gsplotly" id="toc-simulador-jsplotly-e-gerador-de-códigos-gsplotly" class="nav-link" data-scroll-target="#simulador-jsplotly-e-gerador-de-códigos-gsplotly">Simulador JSPlotly e gerador de códigos GSPlotly</a>
   <ul class="collapse">
   <li><a href="#aplicativos-de-jsplotly-acessórios-no-livro" id="toc-aplicativos-de-jsplotly-acessórios-no-livro" class="nav-link" data-scroll-target="#aplicativos-de-jsplotly-acessórios-no-livro">Aplicativos de JSPlotly acessórios no livro</a></li>
@@ -218,7 +218,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p><strong><code>Este é um livro diferente</code></strong>.</p>
+<p><strong><code>Este é um livro diferente</code></strong> <span style="color:green">em desenvolvimento</span>.</p>
 <p>Nele você não encontrará o conteúdo vasto e tampouco a cobertura completa para conceitos e definições comumente espelhados em livros didáticos da área. Também não poderá usufruir da diagramação artística ímpar que obras afins convencionalmente apresentam, desde a formatação até a oferta de inúmeras figuras, gráficos, tabelas, diagramas, “boxes”, textos marginais e outras formas de representação visual da informação, minuciosamente arranjadas para o melhor aproveitamento possível de seus conteúdos.</p>
 <p>Aqui você encontrará apenas um texto básico, com alguns conceitos principais e figuras ilustrativas em número reduzido para cada assunto ao longo de poucos capítulos.</p>
 <p>Contudo, encontrará um <span style="color:green">livro vivo</span> .</p>
@@ -258,6 +258,7 @@ Mediante a necessidade de uma linguagem de programação para o pleno uso do *ap
 <p>Embora a mesma trilha didática tenha sido idealizada para permear toda a obra, o livro também pretende ser <em>vivo</em>, no sentido em que busca estimular aos poucos o leitor por meio de um quantitativo de páginas e <em>apps</em> temáticos paulatinamente crescentes ao longo de seus. A inserção de <em>pensamento computacional</em> e de <em>lógica de programação</em> foram também pensados de forma a flexibilizar um aprendizado crescente do <code>leitor-usuário</code>. Até pouco mais da metade da obra, cada capítulo é finalizado apontando um <em>pseudocódigo</em> referente a um único <em>JSPlotly</em> temático na seção <code>"Por dentro da ferramenta"</code>. Na continuidade dos capítulos entretanto, diversas inserções para lógica em programação referentes aos <em>apps</em> são explicadas brevemente e de forma crescente no texto. A partir do capítulo 5, a seção <code>"Por dentro da ferramenta"</code> amadurece para envolver uma introdução prática e de curva suave ao uso da linguagem <em>JavaScript</em>, a <code>"verdadeira ferramenta"</code> de <em>JSPlotly</em>.</p>
 <p>No fechamento dessa trilha de aprendizagem, os dois últimos capítulos do livro são devotados ao entendimento da construção de objetos didáticos com o simulador <em>JSPlotly</em> e seu gerador de códigos <em>GSPlotly</em> (cap. 9), bem como à estrutura e sintaxe dos <em>scripts</em> do livro junto à biblioteca <em>Plotly.js</em>. Dessa forma, os capítulos finais acabam por oportunizar, desde uma edição mais consciente dos códigos, como sua construção mediada por IA, até a criação de novos para outras propostas do leitor.</p>
 <p>A concepção pedagógica do livro vivo também foi refletida para uma perspectiva construtivista e sociointeracionista, com aprendizagem significativa, modelagem científica e aprendizagem baseada em investigação, ao partir de situações-problema contextualizadas e conduzir o estudante à elaboração progressiva de explicações por uso de simulações em cenários específicos.</p>
+<p>A linguagem empregada no texto busca, além da simplicidade para interação direta com o aprendiz, o foco na ação desse para uma aprendizagem autônoma, passível de adaptação para diferentes contextos e modalidades educacionais (presencial, híbrido, remoto, EaD). Em adição, o conjunto de JSPlotly personalizados para simulações em cada tema são acessíveis e editáveis por um simples clique de mouse, tela capacitiva ou leitura por QRCode, permitindo o uso do <strong>livro vivo</strong> desde desktops a tablets e celulares, e quer por sua versão digital disponível no site <em>Bioquanti</em>, ou livremente impressa frente à licença CC BY-NC-SA que traz consigo.</p>
 <p>Além disso, e diferente do que é comumente apresentado em livros didáticos, aqui os questionamentos não são alocados como um bloco de questões ao final de cada capítulo, mas ao longo desses, e tanto antes como após um experimento com <em>app</em> de JSPlotly personalizado a determinado assunto.</p>
 <p>Como um todo, esse <em>livros vivo</em> integra texto, código, visualização e experimentação digital para favorecer autonomia intelectual, pensamento crítico, e coautoria em modelos computacionais para novos contextos.</p>
 <p>Dessa forma, a <em>trilha didática</em> é disposta no livro como :</p>
@@ -271,27 +272,30 @@ Mediante a necessidade de uma linguagem de programação para o pleno uso do *ap
 <section id="bncc" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="bncc">BNCC</h2>
 <p>Os conteúdos, atividades e objetos interativos apresentados no livro foram concebidos em consonância com as competências gerais e específicas previstas pela <a href="https://basenacionalcomum.mec.gov.br/">Base Nacional Comum Curricular (BNCC)</a> para o Ensino Médio e anos finais do Ensino Fundamental, contemplando habilidades associadas à investigação científica, pensamento crítico, cultura digital, competências digitais e resolução de problemas. Nesse sentido, o livro incorpora modelos conceituais e quantitativos alinhados às competências da área por meio de simulações computacionais personalizáveis, permitindo visualizações dinâmicas e ambientes interativos para o desenvolvimento do pensamento computacional e da lógica de programação para uma formação integral dos estudantes, bem como para sua atuação em ambiente acadêmico, profissional e social contemporâneos.</p>
+</section>
+<section id="conteúdo-dos-capítulos" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="conteúdo-dos-capítulos">Conteúdo dos capítulos</h2>
+<p><strong><span style="color:brown">Em desenvolvimento.</span></strong></p>
 <!-- ### O Conteúdo {.unnumbered}
   
 Esse **Guia de Uso** contempla 3 capítulos voltados a temas comumente recorrentes na Matemática do ensino médio: o estudo de `Funções`, de `Geometria` e de `Matemática Financeira`, e abordados junto a *`11 apps de JSPlotly personalizados`* ao longo das seções, além de 121 questionamentos correlatos.  -->
 <!-- Outros capítulos envolvendo *códigos para conteúdos* em temas da área podem ser livremente acessados junto ao site [Bioquanti](https://bioquanti.netlify.app/). -->
-</section>
-</section>
-<section id="conteúdo-dos-capítulos" class="level1 unnumbered">
-<h1 class="unnumbered">Conteúdo dos capítulos</h1>
-<table class="caption-top table">
-<tbody>
-<tr class="odd">
-<td>EM ATUALIZAÇÃO…</td>
-</tr>
-</tbody>
-</table>
-<p>Esse livro é composto por apenas 10 capítulos. Entretanto, cada capítulo busca integrar temas abrangentes comumente encontrados de forma separada em obras referenciais. Diferente dessas, também, conta com <strong><code>28 apps temáticos</code></strong> distribuidos ao longo do texto para visualizações interativas, simulações e <em><code>exploração paramétrica</code></em>. –&gt;</p>
-<!-- O conteúdo didático do livro inicia no capítulo 2 com *`Soluções, equilíbrio e cinética`* num mesmo bloco, apresentando tanto conceitos como *apps* interligados de forma integrada. Continua no capítulo 3 com *`Termoquímica e estequiometria`*, integrando proporções de matéria e energia subsequente das reações químicas envolvidas. Segue apresentando a *`Arquitetura da matéria`* junto à teoria atômica para construção de moléculas no capítulo 4, e continua com *`Funções e transformações químicas`* no capítulo 5, estabelecendo conceitos e interações dos domínios da Química Orgânica e Inorgânica.  
+<!--
+
+# Conteúdo dos capítulos {.unnumbered}
+
+
+--
+EM ATUALIZAÇÃO...
+--
+
+
+Esse livro é composto por apenas 10 capítulos. Entretanto, cada capítulo busca integrar temas abrangentes comumente encontrados de forma separada em obras referenciais. Diferente dessas, também, conta com **`28 apps temáticos`** distribuidos ao longo do texto para visualizações interativas, simulações e *`exploração paramétrica`*. -->
+<p><!-- O conteúdo didático do livro inicia no capítulo 2 com *`Soluções, equilíbrio e cinética`* num mesmo bloco, apresentando tanto conceitos como *apps* interligados de forma integrada. Continua no capítulo 3 com *`Termoquímica e estequiometria`*, integrando proporções de matéria e energia subsequente das reações químicas envolvidas. Segue apresentando a *`Arquitetura da matéria`* junto à teoria atômica para construção de moléculas no capítulo 4, e continua com *`Funções e transformações químicas`* no capítulo 5, estabelecendo conceitos e interações dos domínios da Química Orgânica e Inorgânica.  
 
 O capítulo 6 prossegue com *`Química Ambiental e Eletroquímica`* com conceitos e aplicações digitais assimilados de forma conjunta para ilustrar desde fenômenos gerais de oxi-redução até monitoramento ambiental. O capítulo 7 introduz conceitos da *`Química de Materiais e Nanotecnologia`*, discutindo a matéria que compõe polímeros, nanopartículas e nanocompósitos. O capítulo 8 trata de *`Química Analítica`*, e apresenta conceitos e simulações voltados à técnicas usuais da área.  
 
-A obra prossegue no capítulo 9 com *`Uso de JSPlotly e construção de objetos interativos`*, um texto para permitir que o usuário possa utiliar o *app* com proficiência e elaborar outros objetos interativos de interesse com auxílio de *GSPlotly*. O livro encerra ao capítulo 10 com *`Biblioteca Plotly`*, voltado uma melhor compreensão das instruções utilizadas pela biblioteca *Plotly.js* ao longo dos *scripts* contidos no livro, bem como para a criação de outros objetos gráficos e cartográficos com *JSPlotly*.  -->
+A obra prossegue no capítulo 9 com *`Uso de JSPlotly e construção de objetos interativos`*, um texto para permitir que o usuário possa utiliar o *app* com proficiência e elaborar outros objetos interativos de interesse com auxílio de *GSPlotly*. O livro encerra ao capítulo 10 com *`Biblioteca Plotly`*, voltado uma melhor compreensão das instruções utilizadas pela biblioteca *Plotly.js* ao longo dos *scripts* contidos no livro, bem como para a criação de outros objetos gráficos e cartográficos com *JSPlotly*.  --></p>
 <!-- - solEqkin.qmd - 2
     - termsteq.qmd - 3
     - materia.qmd - 3
@@ -299,6 +303,7 @@ A obra prossegue no capítulo 9 com *`Uso de JSPlotly e construção de objetos 
     - ambEletroq.qmd - 5
     - tecnol.qmd - 4
     - analit.qmd - 7 --->
+</section>
 </section>
 <section id="simulador-jsplotly-e-gerador-de-códigos-gsplotly" class="level1 unnumbered">
 <h1 class="unnumbered">Simulador JSPlotly e gerador de códigos GSPlotly</h1>
@@ -332,7 +337,8 @@ Tangente ao *JSPlotly*, o site apresenta descrição, funcionalidades e modo de 
 <section id="em-síntese" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="em-síntese">Em síntese</h2>
 <p>O autor espera que o leitor e usuário desse livro possa aproveitar seu conteúdo e aplicações interativas em um ritmo pesssol e da melhor forma possível. Assim foi pensado, para que essa obra concretize a oferta de conteúdos didáticos de forma ampla e irrestrita, para uma apropriação ativa do leitor, e tanto do conteúdo programático da área como para <em>competências digitais</em> variadas: <em>Códigos para Conteúdos</em>.</p>
-<p>Em suma….<strong><code>esse é um livro diferente</code></strong>.</p>
+<p>Em suma….<strong><code>esse é um livro diferente</code></strong> <span style="color:green">em desenvolvimento</span>.</p>
+<p><span style="color:red">Outros capítulos em finalização</span> envolvendo <strong>códigos para conteúdos</strong> em temas da área serão brevemente disponibilizados junto ao site.</p>
 <section id="notas" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="notas">Notas</h4>
 <p><small></small></p><small>
@@ -345,9 +351,9 @@ Tangente ao *JSPlotly*, o site apresenta descrição, funcionalidades e modo de 
 <li><p>O livro e seus objetos interativos são oferecidos com propósito educacional e experimental, buscando <em>estimular exploração, criatividade e aprendizagem ativa</em>. Apesar do cuidado empregado em seu desenvolvimento, o autor não garante ausência de falhas, interrupções ou inadequações para usos específicos. O uso das simulações, códigos e conteúdos é de responsabilidade do usuário, incluindo interpretação de resultados, adaptações e aplicações práticas. Por fim, o autor não se responsabiliza por usos indevidos, interpretações incorretas, danos diretos ou indiretos, perdas de dados, decisões técnicas, acadêmicas, profissionais ou educacionais tomadas a partir do uso do software, scripts, simulações ou materiais derivados.</p></li>
 <li><p>O <em>uso da plataforma</em> JSPlotly e GSPlotly pode ser apreciado junto ao site <em>Bioquanti</em> a partir de alguns <a href="https://bioquanti.netlify.app/pt/producao">Trabalhos</a> de acesso aberto desenvolvidos pelo autor:</p>
 <ul>
-<li>Schneedorf, J.M. <a href="https://bioquanti.netlify.app/pt/producao/simulador_IA_papoProf.pdf">JSPlotly: um aplicativo aberto para gráficos interativos e dinâmicos no ensino e aprendizagem de Ciências.</a> In: Gerolin, E., Crisafulli, U. Papo de Professores: desafios, inovações e práticas no ensino de Ciências. V &amp; V Editora, Santo André (SP), 14p., 2026 (in press).</li>
-<li>Schneedorf, J.M. <a href="https://bioquanti.netlify.app/pt/producao/robotica_aplicativo_schneedorf.pdf">Um aplicativo para gráficos interativos e dinâmicos para navegadores HTML, e GPT personalizado para seu códigos.</a> In: Sumariva, G. Robótica, Inovação e Educação: conexões para o futuro. V &amp; V Editora, Santo André (SP), 2026.</li>
-<li>Schneedorf, J.M. <a href="https://www.pimentacultural.com/livro/recursos-educacionais/">JSPlotly - um aplicativo prático e portável para simulações gráficas interativas ao ensino reprodutível.</a> In: Recursos Educacionais Abertos na UNIFAL-MG. Org: Mafra, L.A.S; Silva, L.E; Schneedorf, J.M. Ed. Pimenta Cultural. 2025. DOI: 10.31560/pimentacultural/978-85-7221-396-7.4.</li>
+<li>Schneedorf, J.M. <a href="https://bioquanti.netlify.app/pt/producao/simulador_IA_papoProf.pdf">JSPlotly: um aplicativo aberto para gráficos interativos e dinâmicos no ensino e aprendizagem de Ciências.</a> In: Gerolin, E., Crisafulli, U. Papo de Professores: desafios, inovações e práticas no ensino de Ciências. V &amp; V Editora, Santo André (SP), 14p., 2026 (no prelo).</li>
+<li>Schneedorf, J.M. <a href="https://bioquanti.netlify.app/pt/producao/robotica_aplicativo_schneedorf.pdf">Um aplicativo para gráficos interativos e dinâmicos para navegadores HTML, e GPT personalizado para seu códigos.</a> In: Sumariva, G. Robótica, Inovação e Educação: conexões para o futuro. V &amp; V Editora, Santo André (SP), 19p., 2026.</li>
+<li>Schneedorf, J.M. <a href="https://bioquanti.netlify.app/pt/producao/schneedorf_jsplotly.pdf">JSPlotly - um aplicativo prático e portável para simulações gráficas interativas ao ensino reprodutível.</a> In: Recursos Educacionais Abertos na UNIFAL-MG. Org: Mafra, L.A.S; Silva, L.E; Schneedorf, J.M. Ed. Pimenta Cultural. 2025. DOI: 10.31560/pimentacultural/978-85-7221-396-7.4.</li>
 <li>Schneedorf, J.M. <a href="https://bioquanti.netlify.app/pt/producao/aplicativo_html_esud_schneedorf.pdf">Aplicativo html para construção e compartilhamento de objetos interativos facilitados por IA para ensino e pesquisa.</a> 21º Congresso de Ensino Superior a Distância (ESUD) e 10º Congresso Internacional de Educação Superior a Distância (CIESUD). Trabalho completo, 2025.</li>
 <li>Schneedorf, J.M. <a href="https://www.bioquimica.org.br/index.php/REB/article/view/1111/866">JSPlotly: um aplicativo para gráficos interativos em Bioquímica para visualizadores HTML.</a> Revista de Ensino de Bioquímica, vol.&nbsp;23 (1), 1-15, 2025.</li>
 </ul></li>
