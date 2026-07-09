@@ -753,33 +753,47 @@ function limparTudo() {
 
 // Definir a equação quadrática padrão
 var codigoPadrao = `
+
 // CÓDIGO PARA APRENDIZAGEM EM JavaScript
 
+let logs = [];
+
+// Redefine print apenas dentro deste script
+function print(valor) {
+  logs.push(String(valor));
+}
+
 ////////////// ÁREA PARA DIGITAR COMANDOS  ////////////
+
 
 
 ////////////////////////////////////////////////////////
 
 
-
-
 // Saída como texto no JSPlotly
 const output = {
-    trace: {
-        x: [0], // posição fixa no eixo X
-        y: [0], // posição fixa no eixo Y
-        text: logs.join("<br>"),
-        type: 'scatter',
-        mode: 'text',
-        textfont: { family: 'Courier New, monospace', size: 14 }
+  trace: {
+    x: [0],
+    y: [0],
+    text: logs.join("<br>"),
+    type: "scatter",
+    mode: "text",
+    textfont: {
+      family: "Courier New, monospace",
+      size: 14
     },
-    layout: {
-        title: 'Saídas do Script',
-        xaxis: { visible: false },
-        yaxis: { visible: false }
-    }
+    textposition: "middle center"
+  },
+  layout: {
+    title: "Saídas do Script",
+    xaxis: { visible: false },
+    yaxis: { visible: false },
+    margin: { l: 20, r: 20, t: 60, b: 20 }
+  }
 };
+
 return output;
+
 `;
 
 
