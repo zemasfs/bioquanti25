@@ -753,19 +753,19 @@ function limparTudo() {
 
 // Definir a equação quadrática padrão
 var codigoPadrao = `
-// =====================================================
+/* =====================================================
 FRACIONAMENTO CROMATOGRAFICO ANIMADO
-// Quimica Analitica - separacao, eluicao e coleta
-// =====================================================
-// Instruções e cenários simulados no site Bioquanti (JSPlotly --> Livros Vivos)
-//
-// Controles sugeridos:
-// input_mistura: "polar", "balanceada", "hidrofobica", "complexa"
-// input_solvente: 0.20 a 0.95
-// input_seletividade: 0.5 a 2.0
-// input_tempoColeta: 1 a 5
-// input_passoFrame: 1 a 4
-//
+ Quimica Analitica - separacao, eluicao e coleta
+ =====================================================
+ Instruções e cenários simulados no site Bioquanti (JSPlotly --> Livros Vivos)
+
+ Controles sugeridos:
+ input_mistura: "polar", "balanceada", "hidrofobica", "complexa"
+ input_solvente: 0.20 a 0.95
+ input_seletividade: 0.5 a 2.0
+ input_tempoColeta: 1 a 5
+ input_passoFrame: 1 a 4
+*/
 
 const mistura = typeof input_mistura !== "undefined" ? input_mistura : "balanceada";
 const solvente = typeof input_solvente !== "undefined" ? Number(input_solvente) : 0.55;

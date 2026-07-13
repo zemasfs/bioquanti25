@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>5&nbsp; Termodinâmica, Gases e Soluções – Simulações Interativas com JSPlotly em Física</title>
+<title>6&nbsp; Termodinâmica, Gases e Soluções – Simulações Interativas com JSPlotly em Física</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,7 +66,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./radio.html" rel="next">
-<link href="./ondas.html" rel="prev">
+<link href="./gravFlui.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -147,7 +147,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./term.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Termodinâmica, Gases e Soluções</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./term.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Termodinâmica, Gases e Soluções</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
@@ -198,14 +198,38 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./gravFlui.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Gravitação e Fluidos</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./term.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Termodinâmica, Gases e Soluções</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Termodinâmica, Gases e Soluções</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./radio.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Radioatividade e energia nuclear</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Radioatividade e energia nuclear</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./modern.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Relatividade e Quântica</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./jsp3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Construção de objetos interativos com JSPlotly</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./plotly.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">A Biblioteca <em>Plotly</em></span></span></a>
   </div>
 </li>
     </ul>
@@ -221,7 +245,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Termodinâmica, Gases e Soluções</span></h1>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Termodinâmica, Gases e Soluções</span></h1>
 </div>
 
 
@@ -373,7 +397,7 @@ O MUNDO TE CHAMA <img src="figuras/icons/tronco_bg.png" class="img-fluid" style=
 <img src="figuras/gizz_gases.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gases-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;5.1: Energia, matéria e movimento estão constantemente em transformação.
+Figura&nbsp;6.1: Energia, matéria e movimento estão constantemente em transformação.
 </figcaption>
 </figure>
 </div>
@@ -397,14 +421,14 @@ MEXA ANTES DE ENTENDER <img src="figuras/icons/ramo_bg.png" class="img-fluid" st
 <img src="figuras/gases.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gases-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;5.2: Apertar o espaço muda a pressão num <em>gás ideal</em>. Clique neste <a href="apps/gases.html">LINK</a> para abrir o aplicativo em nova aba.
+Figura&nbsp;6.2: Apertar o espaço muda a pressão num <em>gás ideal</em>. Clique neste <a href="apps/gases.html">LINK</a> para abrir o aplicativo em nova aba.
 </figcaption>
 </figure>
 </div>
 <p>Ao alterar o espaço disponível para as partículas, a pressão muda automaticamente, o que revela no gráfico que pressões maiores levam a volumes menores. Essa é a famosa relação inversa entre pressão e volume descrita pela <code>Lei de Boyle</code>:</p>
 <p><span id="eq-boyle"><span class="math display">\[
 P_1*V_1=P_2*V_2
-\tag{5.1}\]</span></span></p>
+\tag{6.1}\]</span></span></p>
 <section id="agite-antes-de-usar" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="agite-antes-de-usar">Agite antes de usar</h4>
 <p>Execute o script original e depois o altere para diferentes valores de temperatura (200, 500, 800, por ex). Observe as diferenças.</p>
@@ -414,11 +438,11 @@ P_1*V_1=P_2*V_2
 <p>O script usa a <code>Equação Geral dos Gases Ideais</code>, um conceito teórico aplicado a vários temas e áreas, desde a Física clássica até o metabolismo celular:</p>
 <p><span id="eq-ideal"><span class="math display">\[
 PV=nRT
-\tag{5.2}\]</span></span></p>
+\tag{6.2}\]</span></span></p>
 <p>Para calcular a pressão, basta reorganizar a equação:</p>
 <p><span id="eq-Pideal"><span class="math display">\[
 P=\frac{nRT}{V}
-\tag{5.3}\]</span></span></p>
+\tag{6.3}\]</span></span></p>
 <p>O gráfico resultante forma uma hipérbole, mostrando uma relação inversa entre as variáveis. Isso significa que a pressão aumenta quando o volume diminui, e vice-versa. E também informa que a temperatura e a quantidade de gás influenciam positivamente a pressão.</p>
 <p>Para o <em>app</em>, o script percorre diferentes valores de volume:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (<span class="kw">let</span> v <span class="op">=</span> <span class="dv">1</span><span class="op">;</span> v <span class="op">&lt;=</span> <span class="dv">20</span><span class="op">;</span> v <span class="op">+=</span> <span class="fl">0.5</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -460,18 +484,18 @@ P=\frac{nRT}{V}
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> T <span class="op">=</span> <span class="dv">500</span><span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Ainda que o mecanismo seja invisível, o gráfico simula colisões microscópicas que ocorrem quando há variação de volume. Quando esse diminui, as partículas ficam mais próximas, as colisões aumentam, e a pressão cresce. Já quando a temperatura aumenta, as partículas se movem mais rapidamente, as colisões ficam mais intensas, e a pressão aumenta ainda mais. Assim, a curva traduz o comportamento coletivo de bilhões de partículas invisíveis.</p>
 <p>Ou até bem mais do que isso, já que o <code>mol</code>, a unidade do <code>*Sistema Internacional de Unidades*</code> para quantidade, representa 6,02 x 10 <span class="math inline">\(^{23}\)</span> moléculas. Ou a bagatela de <em>seissecentos e dois sextilhões</em> de moléculas…ou ainda <em>602.000.000.000.000.000.000.000 moléculas</em> !! Ou ainda…e essa poucos sabem, praticamente o mesmo valor do peso de Marte, em kilogramas (útil isso, não ?!).</p>
-<p>O que acha de dar uma incrementada na representação da <a href="#fig-gases" class="quarto-xref">Figura&nbsp;<span>5.2</span></a> ? Não para acrescentar conceitos teóricos, mas dar um <em>“charme”</em> à sua visualização, além de <em>usabilidade</em>, e estilo ! Veja na <a href="#fig-gases_1b" class="quarto-xref">Figura&nbsp;<span>5.3</span></a> como uma mesma ideia pode ser vista de formas distintas usando linguagem de programação.</p>
+<p>O que acha de dar uma incrementada na representação da <a href="#fig-gases" class="quarto-xref">Figura&nbsp;<span>6.2</span></a> ? Não para acrescentar conceitos teóricos, mas dar um <em>“charme”</em> à sua visualização, além de <em>usabilidade</em>, e estilo ! Veja na <a href="#fig-gases_1b" class="quarto-xref">Figura&nbsp;<span>6.3</span></a> como uma mesma ideia pode ser vista de formas distintas usando linguagem de programação.</p>
 <div id="fig-gases_1b" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-gases_1b-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="figuras/gases_1b.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gases_1b-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;5.3: Uma nova roupagem para a equação geral dos gases da <a href="#fig-gases" class="quarto-xref">Figura&nbsp;<span>5.2</span></a>. Clique com o botão direito neste <a href="apps/gases_1b.html">LINK</a> e abra em nova aba.
+Figura&nbsp;6.3: Uma nova roupagem para a equação geral dos gases da <a href="#fig-gases" class="quarto-xref">Figura&nbsp;<span>6.2</span></a>. Clique com o botão direito neste <a href="apps/gases_1b.html">LINK</a> e abra em nova aba.
 </figcaption>
 </figure>
 </div>
-<p>A equação do gases ideais é a mesma da <a href="#eq-Pideal" class="quarto-xref">Equação&nbsp;<span>5.3</span></a>. Mas agora, você tem um cilindro comprimível com um pistão, algumas partículas em seu interior, um botão para <code>animar</code> e outro para <code>pausar</code> a animação, e um controle deslizante (<em>slider</em>) para selecionar o volume do cilindro. Ao deslocar o <em>slider</em>, perceba que o cilindro comprime ou expande auxiliado por um pistão (o retângulo cinza superior), simulando exatamente o efeito de variação interna da pressão pela <a href="#eq-Pideal" class="quarto-xref">Equação&nbsp;<span>5.3</span></a>. Aqui não é necessário um tutorial, pois você já sabe o que fazer. Além de ajustar o <em>slider</em>, pode também alterar os valores de <code>n</code> e <code>T</code> no editor códigos. Então divirta-se com essa versão animada e visual da equação geral dos gases.</p>
+<p>A equação do gases ideais é a mesma da <a href="#eq-Pideal" class="quarto-xref">Equação&nbsp;<span>6.3</span></a>. Mas agora, você tem um cilindro comprimível com um pistão, algumas partículas em seu interior, um botão para <code>animar</code> e outro para <code>pausar</code> a animação, e um controle deslizante (<em>slider</em>) para selecionar o volume do cilindro. Ao deslocar o <em>slider</em>, perceba que o cilindro comprime ou expande auxiliado por um pistão (o retângulo cinza superior), simulando exatamente o efeito de variação interna da pressão pela <a href="#eq-Pideal" class="quarto-xref">Equação&nbsp;<span>6.3</span></a>. Aqui não é necessário um tutorial, pois você já sabe o que fazer. Além de ajustar o <em>slider</em>, pode também alterar os valores de <code>n</code> e <code>T</code> no editor códigos. Então divirta-se com essa versão animada e visual da equação geral dos gases.</p>
 </section>
 </div>
 </div>
@@ -525,15 +549,15 @@ FAZENDO APARECER <img src="figuras/icons/folha_bg.png" class="img-fluid" style="
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>A equação dos gases ideais da <a href="#fig-gases" class="quarto-xref">Figura&nbsp;<span>5.2</span></a> propõe uma situação no mínimo bastante curiosa, e já traduzida pelo próprio nome: gases ideais. Um <em>gás ideal</em> é um conceito físico e imaterial. Ou seja, ele não existe no mundo real, pois a condição <em>ideal</em> pressupõe limitações impossíveis de ocorrer. Isso porque um gás ideal é formado por partículas tão pequenas que não possuem massa, e são muito afastadas uma das outras que não interagem entre si.</p>
-<p>Por conseguinte, um gás ideal é um modelo teórico simplificado para explicar as relações de pressão, volume, temperatura e quantidade num gás <em>“perfeito”</em> (<a href="#eq-ideal" class="quarto-xref">Equação&nbsp;<span>5.2</span></a>). Mas o mundo costuma ser menos perfeito que isso. Quando se assume que o gás possui partículas reais capazes de interagir entre si, o conceito deixa de ser ideal e cai no mundo real… ou do <code>gás real</code>. Uma maneira de compreender como o <em>gás real</em> se comporta em relação ao <em>gás ideal</em> está ilustrada pelo <em>app</em> de JSPlotly da <a href="#fig-gases2b" class="quarto-xref">Figura&nbsp;<span>5.4</span></a>.</p>
+<p>A equação dos gases ideais da <a href="#fig-gases" class="quarto-xref">Figura&nbsp;<span>6.2</span></a> propõe uma situação no mínimo bastante curiosa, e já traduzida pelo próprio nome: gases ideais. Um <em>gás ideal</em> é um conceito físico e imaterial. Ou seja, ele não existe no mundo real, pois a condição <em>ideal</em> pressupõe limitações impossíveis de ocorrer. Isso porque um gás ideal é formado por partículas tão pequenas que não possuem massa, e são muito afastadas uma das outras que não interagem entre si.</p>
+<p>Por conseguinte, um gás ideal é um modelo teórico simplificado para explicar as relações de pressão, volume, temperatura e quantidade num gás <em>“perfeito”</em> (<a href="#eq-ideal" class="quarto-xref">Equação&nbsp;<span>6.2</span></a>). Mas o mundo costuma ser menos perfeito que isso. Quando se assume que o gás possui partículas reais capazes de interagir entre si, o conceito deixa de ser ideal e cai no mundo real… ou do <code>gás real</code>. Uma maneira de compreender como o <em>gás real</em> se comporta em relação ao <em>gás ideal</em> está ilustrada pelo <em>app</em> de JSPlotly da <a href="#fig-gases2b" class="quarto-xref">Figura&nbsp;<span>6.4</span></a>.</p>
 <div id="fig-gases2b" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-gases2b-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="figuras/gases2b.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gases2b-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;5.4: Quando as partículas deixam de ser “perfeitas” surge um gás real. Clique com o botão direito neste <a href="apps/gases2b.html">LINK</a> e acesse o <em>app</em>.
+Figura&nbsp;6.4: Quando as partículas deixam de ser “perfeitas” surge um gás real. Clique com o botão direito neste <a href="apps/gases2b.html">LINK</a> e acesse o <em>app</em>.
 </figcaption>
 </figure>
 </div>
@@ -544,10 +568,10 @@ Figura&nbsp;5.4: Quando as partículas deixam de ser “perfeitas” surge um g�
 <div class="sourceCode" id="cb10"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> V <span class="op">=</span> <span class="dv">10</span><span class="op">;</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> n <span class="op">=</span> <span class="fl">1.0</span><span class="op">;</span></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> interacao <span class="op">=</span> <span class="fl">0.20</span><span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Depois use o <em>slider</em> para alterar a <code>temperatura absoluta</code> (em graus <code>Kelvin</code>, K). Observe como a diferença entre o gás ideal e o sistema com interação muda em cada cenário. Contrastando com a <a href="#eq-Pideal" class="quarto-xref">Equação&nbsp;<span>5.3</span></a> para um gás ideal, no sistema com interação a variação da pressão conta com um fator associado à interação:</p>
+<p>Depois use o <em>slider</em> para alterar a <code>temperatura absoluta</code> (em graus <code>Kelvin</code>, K). Observe como a diferença entre o gás ideal e o sistema com interação muda em cada cenário. Contrastando com a <a href="#eq-Pideal" class="quarto-xref">Equação&nbsp;<span>6.3</span></a> para um gás ideal, no sistema com interação a variação da pressão conta com um fator associado à interação:</p>
 <p><span id="eq-interacao"><span class="math display">\[
 P_{\text{interação}} = P_{\text{ideal}}(1 - \text{interação})
-\tag{5.4}\]</span></span></p>
+\tag{6.4}\]</span></span></p>
 <p>Essa é uma simplificação didática, apenas. Ela não pretende reproduzir os detalhes de um gás real, mas apenas te ajudar a visualizar que interações entre partículas podem modificar o comportamento previsto pelo modelo ideal.</p>
 <p>A função principal do script é:</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">calcularEstado</span>(T) {</span>
@@ -566,10 +590,10 @@ P_{\text{interação}} = P_{\text{ideal}}(1 - \text{interação})
 <p>Mas se você achar interessante a descrição de uma função que modele o mundo dos gases reais, conheça a <code>Equação de van der Waals</code> que segue:</p>
 <p><span id="eq-real"><span class="math display">\[
 \left( P + \frac{n^2 a}{V^2} \right) (V - nb) = nRT
-\tag{5.5}\]</span></span></p>
-<p>Nessa <a href="#eq-real" class="quarto-xref">Equação&nbsp;<span>5.5</span></a>, <span class="math inline">\(V_{m}\)</span> é o volume molar, <span class="math inline">\(T\)</span> é a temperatura, <span class="math inline">\(R\)</span> é a constante universal dos gases - 8,31 <span class="math inline">\(J*mol^{-1}K^{-1}\)</span> - <span class="math inline">\(a\)</span> é um parâmetro de atração, e <span class="math inline">\(b\)</span> um parâmetro de volume.</p>
+\tag{6.5}\]</span></span></p>
+<p>Nessa <a href="#eq-real" class="quarto-xref">Equação&nbsp;<span>6.5</span></a>, <span class="math inline">\(V_{m}\)</span> é o volume molar, <span class="math inline">\(T\)</span> é a temperatura, <span class="math inline">\(R\)</span> é a constante universal dos gases - 8,31 <span class="math inline">\(J*mol^{-1}K^{-1}\)</span> - <span class="math inline">\(a\)</span> é um parâmetro de atração, e <span class="math inline">\(b\)</span> um parâmetro de volume.</p>
 <p>Observe que o que diferencia a equação de gases ideais da de gases reais são os parâmetros <span class="math inline">\(a\)</span> (atração) e <span class="math inline">\(b\)</span> (volume) das partículas. Se você atribuir valor nulo a ambos (zero), a equação se torna a de gases ideais.</p>
-<p>Voltando para o script da <a href="#fig-gases2b" class="quarto-xref">Figura&nbsp;<span>5.4</span></a>, para cada temperatura o código calcula a pressão do gás ideal, a pressão do sistema com interação, a energia relativa do gás ideal, e a energia relativa do sistema com interação. Depois, esses valores aparecem em barras comparativas. O <em>slider</em> altera a temperatura, enquanto os botões alternam a exibição entre pressão e energia relativa. Se quiser um tutorial rápido para mexer no <em>app</em>:</p>
+<p>Voltando para o script da <a href="#fig-gases2b" class="quarto-xref">Figura&nbsp;<span>6.4</span></a>, para cada temperatura o código calcula a pressão do gás ideal, a pressão do sistema com interação, a energia relativa do gás ideal, e a energia relativa do sistema com interação. Depois, esses valores aparecem em barras comparativas. O <em>slider</em> altera a temperatura, enquanto os botões alternam a exibição entre pressão e energia relativa. Se quiser um tutorial rápido para mexer no <em>app</em>:</p>
 <ol type="1">
 <li>Rode o script com os valores originais;</li>
 <li>Observe as barras de pressão;</li>
@@ -663,15 +687,15 @@ VOLTA PRO MUNDO <img src="figuras/icons/galho_bg.png" class="img-fluid" style="w
 <p>Quer ver ? Multiplique ambas e verá que o resultado aproxima-se do valor da constante geral dos gases ideais:</p>
 <p><span id="eq-R_kb"><span class="math display">\[
 R = k_b *N_A
-\tag{5.6}\]</span></span></p>
-<p>Assim como foi feito para a <a href="#fig-gases_1b" class="quarto-xref">Figura&nbsp;<span>5.3</span></a>, também é possível uma visualização mais clara para o comportamento de um gás real, o que é proposto no <em>app</em> da <a href="#fig-gases3b" class="quarto-xref">Figura&nbsp;<span>5.5</span></a> abaixo. Ele não “roda” uma animação como a da <a href="#fig-gases_1b" class="quarto-xref">Figura&nbsp;<span>5.3</span></a>, mas propõe uma visão comparativa sem gráficos pelo editor.</p>
+\tag{6.6}\]</span></span></p>
+<p>Assim como foi feito para a <a href="#fig-gases_1b" class="quarto-xref">Figura&nbsp;<span>6.3</span></a>, também é possível uma visualização mais clara para o comportamento de um gás real, o que é proposto no <em>app</em> da <a href="#fig-gases3b" class="quarto-xref">Figura&nbsp;<span>6.5</span></a> abaixo. Ele não “roda” uma animação como a da <a href="#fig-gases_1b" class="quarto-xref">Figura&nbsp;<span>6.3</span></a>, mas propõe uma visão comparativa sem gráficos pelo editor.</p>
 <div id="fig-gases3b" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-gases3b-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="figuras/gases3b.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gases3b-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;5.5: A temperatura agita um gás real. Clique com o botão direito neste <a href="apps/gases3b.html">LINK</a> e acesse o <em>app</em>.
+Figura&nbsp;6.5: A temperatura agita um gás real. Clique com o botão direito neste <a href="apps/gases3b.html">LINK</a> e acesse o <em>app</em>.
 </figcaption>
 </figure>
 </div>
@@ -730,21 +754,21 @@ Figura&nbsp;5.5: A temperatura agita um gás real. Clique com o botão direito n
 </section>
 <section id="uma-animação-para-gases-reais" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="uma-animação-para-gases-reais">Uma animação para gases reais</h3>
-<p>Vamos lá ! Confesse que o <em>app</em> da <a href="#fig-gases_1b" class="quarto-xref">Figura&nbsp;<span>5.3</span></a> para gases reais estava bem mais legal que o de gases reais da <a href="#fig-gases3b" class="quarto-xref">Figura&nbsp;<span>5.5</span></a> acima, não ? Então, por que não considerar uma animação também para o comportamento coletivo de interação desse último ?</p>
+<p>Vamos lá ! Confesse que o <em>app</em> da <a href="#fig-gases_1b" class="quarto-xref">Figura&nbsp;<span>6.3</span></a> para gases reais estava bem mais legal que o de gases reais da <a href="#fig-gases3b" class="quarto-xref">Figura&nbsp;<span>6.5</span></a> acima, não ? Então, por que não considerar uma animação também para o comportamento coletivo de interação desse último ?</p>
 <div id="fig-gases4" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-gases4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="figuras/gases4.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gases4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;5.6: Termodinâmica em movimento para um gás real. Clique com o botão direito neste <a href="apps/gases4.html">LINK</a> e acesse o <em>app</em>.
+Figura&nbsp;6.6: Termodinâmica em movimento para um gás real. Clique com o botão direito neste <a href="apps/gases4.html">LINK</a> e acesse o <em>app</em>.
 </figcaption>
 </figure>
 </div>
 <p>O script transforma a Termodinâmica em uma animação dinâmica de partículas interagindo em tempo real. Elas se movem, colidem com as paredes, influenciam umas às outras e mudam de comportamento conforme a temperatura. Essa movimentação sob interação faz com que o comportamento microscópico coletivo produza propriedades macroscópicas observáveis.</p>
 <section id="agite-antes-de-usar-3" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="agite-antes-de-usar-3">Agite antes de usar</h4>
-<p>Execute o script original e use os botões <code>Play</code> e <code>Pause</code> para observar o movimento das partículas. Assim como para o script da <a href="#fig-gases3b" class="quarto-xref">Figura&nbsp;<span>5.5</span></a>, altere depois a temperatura e o efeito de <code>interacao</code>.</p>
+<p>Execute o script original e use os botões <code>Play</code> e <code>Pause</code> para observar o movimento das partículas. Assim como para o script da <a href="#fig-gases3b" class="quarto-xref">Figura&nbsp;<span>6.5</span></a>, altere depois a temperatura e o efeito de <code>interacao</code>.</p>
 <div class="sourceCode" id="cb23"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> T <span class="op">=</span> <span class="fl">1.2</span><span class="op">;</span></span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> interacao <span class="op">=</span> <span class="fl">0.04</span><span class="op">;</span></span>
 <span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> N <span class="op">=</span> <span class="dv">40</span><span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -977,8 +1001,8 @@ POR DENTRO DA FERRAMENTA <img src="figuras/icons/semente_bg.png" class="img-flui
 <p><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">JavaScript (JS)</a>, é uma linguagem de programação moderna, utilizada por grandes empresas e <em>big techs</em>, e focada na interatividade entre a página web e o usuário. Diferente de outras linguagens, <em>JavaScript</em> não precisa ser compilada separadamente por um programa, pois é interpretada a partir de máquinas homônimas presentes em navegadores comuns (<em>browser</em>), como Firefox, Chrome, Safari, Opera, Edge, etc.</p>
 <p>Assim, <em>Javacript (JS)</em> é uma linguagem para web. Ela completa a tríade essencial, <em>HTML-CSS-JS</em>. Enquanto <em>HTML</em> preocupa-se com o conteúdo e <em>CSS</em> com o estilo, <em>JavaScript</em> ocupa-se do comportamento, ou seja, da interatividade do usuário frente à uma página web. Vamos então chamá-la agora carinhosamente por <em>JS</em>, somente.</p>
 <p>Como ocorre com outras linguagens de programação, a linguagem <em>JS</em> possui bibliotecas, que são módulos independentes de códigos para cumprir certas funções. Nesse sentido, <em>JS</em> cumpre metade do nome do <em>JSPlotly</em>. A outra metade vem da principal biblioteca que é utilizada por esse para a construção de gráficos, mapas, e alguns outros objetos interativos, <a href="https://plotly.com/javascript/">Plotly.js</a>.</p>
-<section id="estrutura-de-javascript" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="estrutura-de-javascript"><span class="header-section-number">5.1</span> Estrutura de <em>JavaScript</em></h2>
+<section id="estrutura-de-javascript" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="estrutura-de-javascript"><span class="header-section-number">6.1</span> Estrutura de <em>JavaScript</em></h2>
 <p>Uma linguagem de programação normalmente possui características estruturais comuns. Isso quer dizer que há comandos para declarar uma <code>variável</code> e seu <code>tipo</code>, a <code>entrada</code> e <code>saída</code> de dados (resultados), a criação e uso de <code>funções</code>, e <code>cálculos aritméticos</code>, por exemplo. E tal como outras linguagens de programação, JS opera com uma lógica similar de <code>declarações</code> (palavras-chave, operadores, valores, expressões). Em resumo, a gente dizer as declarações de JS compõem:</p>
 <div class="sourceCode" id="cb32"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="ex">1.</span> Palavras-chave: sintaxe da linguagem JS<span class="kw">;</span></span>
 <span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="ex">2.</span> Operadores: caracteres que realizam operações<span class="kw">;</span></span>
@@ -1579,13 +1603,13 @@ ajuda a dissolver a fronteira artificial entre assuntos ensinados como se fossem
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./ondas.html" class="pagination-link" aria-label="Ondas: movimento, som e luz">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Ondas: movimento, som e luz</span></span>
+      <a href="./gravFlui.html" class="pagination-link" aria-label="Gravitação e Fluidos">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Gravitação e Fluidos</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./radio.html" class="pagination-link" aria-label="Radioatividade e energia nuclear">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Radioatividade e energia nuclear</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Radioatividade e energia nuclear</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
