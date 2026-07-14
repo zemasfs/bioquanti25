@@ -1,84 +1,61 @@
 ---
-title: "Montagem Interativa de Estruturas Proteicas"
+title: "Estrutura de Proteínas"
 ---
 
 ::: {.callout-tip}
 
-As proteínas são macromoléculas formadas por cadeias de aminoácidos que desempenham funções fundamentais nos organismos vivos, como catálise de reações químicas, transporte de substâncias, defesa imunológica e suporte estrutural. A forma tridimensional de uma proteína está diretamente relacionada à sua função biológica, sendo influenciada pela sequência de aminoácidos e pela presença de estruturas secundárias, como α-hélices e folhas β.
+As proteínas são macromoléculas formadas por cadeias de aminoácidos ligadas por ligações peptídicas. A sequência dos aminoácidos determina o dobramento da molécula e sua estrutura tridimensional. Entre os principais níveis estruturais das proteínas estão a estrutura primária, correspondente à sequência de aminoácidos, e a estrutura secundária, representada principalmente pelas α-hélices e folhas β.
 
-Este objeto interativo permite ao usuário simular a montagem de uma proteína tridimensional simplificada. É possível modificar o número de aminoácidos, a quantidade de α-hélices, a quantidade de folhas β e o tipo de proteína (hidrofóbica, hidrofílica ou mista). O gráfico 3D é atualizado automaticamente, permitindo visualizar como essas características influenciam a organização espacial da molécula.
+Este objeto interativo simula a montagem simplificada de uma proteína em três dimensões. O usuário pode selecionar o tipo de estrutura secundária e definir o número de aminoácidos da cadeia polipeptídica. O gráfico tridimensional é atualizado automaticamente, permitindo visualizar como a estrutura da proteína se modifica conforme os parâmetros escolhidos.
 
 ## Equação:
 
-A construção da estrutura tridimensional utiliza funções trigonométricas para representar a disposição espacial dos aminoácidos.
-
 $$
-x = \cos(\theta)\cdot r
-$$
-
-$$
-y = \sin(\theta)\cdot r
-$$
-
-$$
-z = k \cdot i
+N = n_{AA}
 $$
 
 Onde:
 
-- \(x\) = coordenada horizontal da estrutura.
-- \(y\) = coordenada lateral da estrutura.
-- \(z\) = coordenada vertical da estrutura.
-- \(r\) = fator de compactação da proteína.
-- \(\theta\) = posição angular do aminoácido na cadeia.
-- \(i\) = posição do aminoácido na sequência.
-- \(k\) = fator de alongamento da estrutura.
+**N** = tamanho da proteína
+
+**n₍AA₎** = número de aminoácidos da cadeia polipeptídica
 
 ## Download e Uso:
 
-[![Estrutura tridimensional simplificada de uma proteína gerada pelo simulador.](QUI-BIMOOL-ESTRUT-01.png)](QUI-BIO-ESTRUT-01-JS.html){target="_blank"}
+[![Figura 1 – Simulação da estrutura tridimensional simplificada de uma proteína.](QUI-BIMOOL-ESTRUT-01_print_tela.png)](QUI-BIMOOL-ESTRUT-01-JS.html){target="_blank"}
 \
 
-Obs: a imagem deve conter apenas a área gráfica do objeto.
+Obs: a imagem deve conter apenas a área gráfica do objeto desenvolvido no JSPlotly.
 
-1. Utilize o controle "Número de aminoácidos" para definir o tamanho da proteína.
-2. Ajuste o número de α-hélices para aumentar regiões helicoidais da estrutura.
-3. Ajuste o número de folhas β para aumentar regiões de folhas pregueadas.
-4. Escolha o tipo de proteína (hidrofóbica, hidrofílica ou mista).
-5. Clique em "Montar proteína".
-6. Observe as alterações na estrutura tridimensional exibida no gráfico.
-   
+1. Clique em **"add"** para carregar o objeto interativo.
+2. Selecione a estrutura secundária desejada (α-hélice, folha β ou mista).
+3. Ajuste o número de aminoácidos utilizando o controle deslizante.
+4. Clique em **"Montar proteína"**.
+5. Observe a estrutura tridimensional gerada e compare as diferenças entre os modelos.
+
 :::
 
 ::: {.callout-caution}
 
 ## Sugestão:
 
-1. Compare proteínas com poucos e muitos aminoácidos para observar diferenças no tamanho da estrutura.
-2. Aumente o número de α-hélices e observe o crescimento das regiões helicoidais em vermelho.
-3. Aumente o número de folhas β e compare sua distribuição espacial com as α-hélices.
-4. Compare os três tipos de proteína para verificar como a compactação da estrutura varia.
+1. Compare a forma das proteínas do tipo α-hélice e folha β.
+2. Observe como o aumento do número de aminoácidos altera o tamanho da proteína.
+3. Analise a estrutura mista e compare-a com as demais.
+4. Relacione as diferentes estruturas secundárias com a organização tridimensional das proteínas.
 
 ## Lógica de código
 
-O código cria uma interface interativa utilizando controles deslizantes para definir características estruturais da proteína. Inicialmente, o usuário escolhe o número de aminoácidos, a quantidade de α-hélices, a quantidade de folhas β e o tipo de proteína.
+O código cria uma interface interativa composta por um seletor de estruturas secundárias, um controle deslizante para definir o número de aminoácidos e um gráfico tridimensional desenvolvido com a biblioteca Plotly.
 
-Após o acionamento do botão de simulação, o algoritmo gera coordenadas tridimensionais para cada aminoácido. Dependendo do tipo selecionado, diferentes fatores de compactação e alongamento são aplicados à cadeia proteica. Proteínas hidrofóbicas tendem a apresentar estruturas mais compactas, proteínas hidrofílicas apresentam conformações mais abertas e proteínas mistas exibem comportamento intermediário.
+Ao executar a simulação, o programa gera as coordenadas espaciais dos aminoácidos de acordo com a estrutura selecionada. Para α-hélices são utilizadas funções trigonométricas que produzem uma espiral tridimensional. Para folhas β, os aminoácidos são distribuídos em um padrão alternado, representando a organização típica dessa estrutura. Na opção mista, parte da cadeia é organizada como α-hélice e a outra parte como folha β.
 
-As α-hélices são representadas por segmentos helicoidais construídos por funções trigonométricas, enquanto as folhas β são representadas por regiões mais lineares e organizadas. Os aminoácidos individuais são exibidos como marcadores verdes, as α-hélices como linhas vermelhas e as folhas β como linhas azuis.
-
-Por fim, todas as coordenadas são enviadas ao Plotly, que gera um gráfico tridimensional interativo, permitindo a rotação e exploração visual da proteína construída pelo usuário.
+As coordenadas calculadas são utilizadas para construir uma representação tridimensional simplificada da proteína. Os aminoácidos são exibidos como marcadores e as ligações peptídicas são representadas por linhas, permitindo ao usuário visualizar a organização espacial da cadeia polipeptídica.
 
 :::
 
-<!-- **Autor:** 
-
-Maria Clara – Ciências Biológicas (UNIFAL-MG) -->
-
-
+**Estudante:** Curso de Bacharelado em Ciências Biológicas - Universidade Federal de Alfenas (UNIFAL-MG). 
 
 <!---
-Código
-
-QUI-BIO-PROT-01
+QUI-BIMOOL-ESTRUT-01
 --->

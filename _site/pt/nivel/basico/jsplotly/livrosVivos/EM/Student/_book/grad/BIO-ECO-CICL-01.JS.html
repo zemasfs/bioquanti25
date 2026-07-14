@@ -1,0 +1,175 @@
+// ======================================================
+// BIO-ECO-CICL-01
+// Dinâmica ecológica por processos (causa → efeito)
+// ======================================================
+
+var container = document.createElement("div");
+container.style.fontFamily = "Arial";
+container.style.padding = "15px";
+
+// ---------- TÍTULO ----------
+var titulo = document.createElement("h2");
+titulo.innerHTML = "Simulador de Ecossistema Dinâmico";
+container.appendChild(titulo);
+
+// ---------- DESCRIÇÃO ----------
+var texto = document.createElement("p");
+texto.innerHTML =
+"Altere os processos ecológicos e observe o sistema entrar em equilíbrio, colapso ou explosão naturalmente.";
+container.appendChild(texto);
+
+// ---------- SLIDERS ----------
+function slider(nome, val, min, max){
+
+    var div = document.createElement("div");
+
+    var label = document.createElement("span");
+    label.innerHTML = nome + ": " + val;
+
+    var input = document.createElement("input");
+    input.type = "range";
+    input.min = min;
+    input.max = max;
+    input.step = 0.01;
+    input.value = val;
+
+    input.oninput = function(){
+        label.innerHTML = nome + ": " + input.value;
+    };
+
+    div.appendChild(label);
+    div.appendChild(document.createElement("br"));
+    div.appendChild(input);
+
+    container.appendChild(div);
+
+    return input;
+}
+
+// ---------- PROCESSOS ECOLÓGICOS ----------
+var fotossintese = slider("Fotossíntese", 0.10, 0, 0.2);
+var respiracao = slider("Respiração", 0.05, 0, 0.2);
+var decomposicao = slider("Decomposição", 0.03, 0, 0.2);
+
+// ---------- BOTÃO ----------
+var botao = document.createElement("button");
+botao.innerHTML = "Simular Ecossistema";
+container.appendChild(botao);
+
+// ---------- RESULTADO ----------
+var resultado = document.createElement("h2");
+container.appendChild(resultado);
+
+// ---------- GRÁFICO ----------
+var grafico = document.createElement("div");
+grafico.id = "grafico";
+grafico.style.height = "550px";
+
+document.body.appendChild(container);
+document.body.appendChild(grafico);
+
+// ======================================================
+// SIMULAÇÃO
+// ======================================================
+
+botao.onclick = function(){
+
+// ---------- ESTADO INICIAL ----------
+var P = 100;
+var H = 40;
+var C = 15;
+
+// ---------- VETORES ----------
+var tempo = [];
+var plantas = [];
+var herb = [];
+var carn = [];
+
+// ---------- SIMULAÇÃO ----------
+for(var t = 0; t <= 80; t++){
+
+    tempo.push(t);
+    plantas.push(P);
+    herb.push(H);
+    carn.push(C);
+
+    // 🌱 crescimento das plantas
+    var crescimentoP =
+        fotossintese.value * P;
+
+    // 🌿 perdas naturais
+    var perdaP =
+        respiracao.value * P;
+
+    // 🐇 consumo
+    var consumo =
+        0.04 * P * H;
+
+    // 🐺 predação
+    var predacao =
+        0.03 * H * C;
+
+    // 🔄 decomposição influencia reciclagem
+    var reciclagem =
+        decomposicao.value * (P + H + C);
+
+    // atualização com dinâmica ecológica real
+    P = Math.max(P + crescimentoP - consumo - perdaP + 0.2 * reciclagem, 0);
+
+    H = Math.max(H + 0.02 * consumo - predacao - respiracao.value * H, 0);
+
+    C = Math.max(C + 0.015 * predacao - respiracao.value * C, 0);
+}
+
+// ---------- CLASSIFICAÇÃO FINAL ----------
+var somaFinal = P + H + C;
+
+if(somaFinal < 50){
+    resultado.innerHTML = "⚫ COLAPSO ECOLÓGICO";
+}
+else if(somaFinal > 300){
+    resultado.innerHTML = "🔴 EXPLOSÃO POPULACIONAL";
+}
+else{
+    resultado.innerHTML = "🟢 EQUILÍBRIO ECOLÓGICO";
+}
+
+// ---------- GRÁFICO ----------
+Plotly.newPlot("grafico", [
+
+    {
+        x: tempo,
+        y: plantas,
+        mode: "lines",
+        name: "Plantas",
+        line: { color: "green" }
+    },
+
+    {
+        x: tempo,
+        y: herb,
+        mode: "lines",
+        name: "Herbívoros",
+        line: { color: "orange" }
+    },
+
+    {
+        x: tempo,
+        y: carn,
+        mode: "lines",
+        name: "Carnívoros",
+        line: { color: "red" }
+    }
+
+], {
+
+    title: "Dinâmica ecológica por processos",
+    xaxis: { title: "Tempo" },
+    yaxis: { title: "População" }
+
+});
+
+};
+
+// execução inicial
+botao.onclick();

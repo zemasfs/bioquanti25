@@ -754,186 +754,177 @@ function limparTudo() {
 // Definir a equação quadrática padrão
 var codigoPadrao = `
 
-const estruturas = {
+const cenarios = {
 
-  "α-Hélice": {
-    fator: 1
+  "Equilíbrio": {
+
+    plantas: 120,
+    herbivoros: 40,
+    carnivoros: 12
+
   },
 
-  "Folha β": {
-    fator: 1
+  "Excesso de Herbívoros": {
+
+    plantas: 120,
+    herbivoros: 90,
+    carnivoros: 10
+
   },
 
-  "Mista": {
-    fator: 1
+  "Excesso de Carnívoros": {
+
+    plantas: 120,
+    herbivoros: 40,
+    carnivoros: 40
+
+  },
+
+  "Abundância de Plantas": {
+
+    plantas: 260,
+    herbivoros: 30,
+    carnivoros: 10
+
   }
 
 };
 
-// ===== AMINOÁCIDOS =====
+// ===== TEMPO =====
+const tempos = [];
 
-const aminoacidos = [];
+for (let t = 0; t <= 60; t++) {
 
-for(let n = 20; n <= 200; n += 10){
-
-  aminoacidos.push(n);
+  tempos.push(t);
 
 }
 
 // ===== FRAMES =====
-
 const frames = [];
-
 const steps = [];
 
 // ===== CRIAÇÃO DOS FRAMES =====
 
-aminoacidos.forEach((numeroAA)=>{
+tempos.forEach((tempoAtual) => {
 
-  const dados = [];
+  const nomes = [];
 
-  Object.keys(estruturas).forEach((estrutura)=>{
+  const populacoes = [];
 
-    var x = [];
-    var y = [];
-    var z = [];
+  Object.keys(cenarios).forEach((cenario) => {
 
-    for(let i=0;i<numeroAA;i++){
+    let P = cenarios[cenario].plantas;
+    let H = cenarios[cenario].herbivoros;
+    let C = cenarios[cenario].carnivoros;
 
-      if(estrutura=="α-Hélice"){
+    for (let i = 0; i < tempoAtual; i++) {
 
-        x.push(
-          Math.cos(i*0.35)*5
+      const nascPlantas =
+        0.08 * P *
+        (1 - P / 300);
+
+      const consumo =
+        0.004 * P * H;
+
+      const nascHerb =
+        0.0008 * consumo;
+
+      const predacao =
+        0.002 * H * C;
+
+      const nascCarn =
+        0.0009 * predacao;
+
+      P =
+        Math.max(
+          P +
+          nascPlantas -
+          consumo,
+          0
         );
 
-        y.push(
-          Math.sin(i*0.35)*5
+      H =
+        Math.max(
+          H +
+          nascHerb -
+          predacao -
+          0.03 * H,
+          0
         );
 
-        z.push(
-          i*0.45
+      C =
+        Math.max(
+          C +
+          nascCarn -
+          0.04 * C,
+          0
         );
-
-      }
-
-      else if(estrutura=="Folha β"){
-
-        x.push(i*0.55);
-
-        y.push(
-          i%2==0 ? 3 : -3
-        );
-
-        z.push(0);
-
-      }
-
-      else{
-
-        if(i<numeroAA/2){
-
-          x.push(
-            Math.cos(i*0.35)*5
-          );
-
-          y.push(
-            Math.sin(i*0.35)*5
-          );
-
-          z.push(
-            i*0.45
-          );
-
-        }
-
-        else{
-
-          x.push(i*0.55);
-
-          y.push(
-            i%2==0 ? 3 : -3
-          );
-
-          z.push(
-            numeroAA*0.2
-          );
-
-        }
-
-      }
 
     }
 
-    dados.push({
+    nomes.push(cenario);
 
-      x:x,
-
-      y:y,
-
-      z:z,
-
-      type:"scatter3d",
-
-      mode:"markers+lines",
-
-      marker:{
-
-        size:4,
-
-        color:"green"
-
-      },
-
-      line:{
-
-        width:5
-
-      },
-
-      name:estrutura,
-
-      visible:false
-
-    });
+    populacoes.push(
+      Number(H.toFixed(1))
+    );
 
   });
 
-  dados[0].visible = true;
-
   frames.push({
 
-    name:String(numeroAA),
+    name: String(tempoAtual),
 
-    data:dados
+    data: [
+
+      {
+
+        x: nomes,
+
+        y: populacoes,
+
+        type: "bar",
+
+        text: populacoes,
+
+        textposition: "outside",
+
+        name:
+          "Herbívoros"
+
+      }
+
+    ]
 
   });
 
   steps.push({
 
     label:
-      numeroAA,
+      tempoAtual,
 
-    method:"animate",
+    method:
+      "animate",
 
-    args:[
+    args: [
 
-      [String(numeroAA)],
+      [String(tempoAtual)],
 
       {
 
-        mode:"immediate",
+        mode:
+          "immediate",
 
-        transition:{
+        transition: {
 
-          duration:300
+          duration: 300
 
         },
 
-        frame:{
+        frame: {
 
-          duration:400,
+          duration: 400,
 
-          redraw:true
+          redraw: true
 
         }
 
@@ -947,32 +938,47 @@ aminoacidos.forEach((numeroAA)=>{
 
 // ===== DADOS =====
 
-const data = frames[0].data;
+const data = [
+
+  {
+
+    x: [],
+
+    y: [],
+
+    type: "bar",
+
+    name:
+      "Herbívoros"
+
+  }
+
+];
 
 // ===== LAYOUT =====
 
 const layout = {
 
   title:
-    "Montagem tridimensional de proteínas",
+    "Equilíbrio presa-predador",
 
-  scene:{
+  xaxis: {
 
-    xaxis:{
-      title:"X"
-    },
-
-    yaxis:{
-      title:"Y"
-    },
-
-    zaxis:{
-      title:"Z"
-    }
+    title:
+      "Cenários"
 
   },
 
-  sliders:[
+  yaxis: {
+
+    title:
+      "Quantidade de herbívoros",
+
+    range: [0,120]
+
+  },
+
+  sliders: [
 
     {
 
@@ -981,7 +987,7 @@ const layout = {
       currentvalue:{
 
         prefix:
-        "Número de aminoácidos: "
+        "Tempo: "
 
       },
 
@@ -1055,9 +1061,7 @@ const layout = {
 
               frame:{
 
-                duration:0,
-
-                redraw:false
+                duration:0
 
               }
 
@@ -1078,7 +1082,7 @@ const layout = {
     {
 
       text:
-      "O aumento do número de aminoácidos altera a dimensão da proteína.",
+      "Comparação dos cenários ecológicos ao longo do tempo.",
 
       xref:"paper",
 
@@ -1098,7 +1102,7 @@ const layout = {
 
 // ===== RETORNO =====
 
-return{
+return {
 
   data,
   layout,

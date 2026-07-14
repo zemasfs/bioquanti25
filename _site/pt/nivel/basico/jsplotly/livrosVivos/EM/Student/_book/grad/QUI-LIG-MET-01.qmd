@@ -26,7 +26,7 @@ T = temperatura do sistema
 
 ## Download e Uso:
 
-[![Figura 1 – Relação entre temperatura e condução elétrica em metais.](QUI-LIG-MET-01.png)](QUI-LIG-MET-01-JS.html){target="_blank"}
+[![Figura 1 – Relação entre temperatura e condução elétrica em metais.](QUI-LIG-MET-01_print_tela.png)](QUI-LIG-MET-01.JS.html){target="_blank"}
 \
 
 Obs: a imagem deve conter apenas a área gráfica do objeto no JSPlotly.
@@ -58,11 +58,9 @@ Após os cálculos, o código atualiza o gráfico principal exibindo a posição
 
 :::
 
-**Estudante:** Curso de Bacharelado em Ciências Biológicas - Universidade Federal de Alfenas (UNIFAL-MG).
+### Autor: {.unnumbered}
 
-<!-- **Autor:** {.unnumbered}
-
-Maria Clara — Ciências Biológicas (UNIFAL-MG) -->
+Maria Clara — Ciências Biológicas (UNIFAL-MG)
 
 <!---
 QUI-LIG-MET-01
