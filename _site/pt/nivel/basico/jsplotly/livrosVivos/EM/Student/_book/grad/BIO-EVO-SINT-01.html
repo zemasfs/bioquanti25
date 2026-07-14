@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>37&nbsp; Ciclo Ecológico Interativo – JSPlotly por Estudantes</title>
+<title>39&nbsp; Equação de Drake da exobiologia – JSPlotly por Estudantes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../grad/BIO-POP-01.html" rel="next">
-<link href="../grad/QUI-LIG-MET-01.html" rel="prev">
+<link href="../grad/QUI-BIMOOL-ESTRUT-01.html" rel="next">
+<link href="../grad/BIO-POP-01.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -112,7 +112,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../grad/BIO-ECO-CICL-01.html"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Ciclo Ecológico Interativo</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../grad/BIO-EVO-SINT-01.html"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Equação de Drake da exobiologia</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
@@ -363,7 +363,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../grad/BIO-ECO-CICL-01.html" class="sidebar-item-text sidebar-link active">
+  <a href="../grad/BIO-ECO-CICL-01.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Ciclo Ecológico Interativo</span></span></a>
   </div>
 </li>
@@ -375,7 +375,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../grad/BIO-EVO-SINT-01.html" class="sidebar-item-text sidebar-link">
+  <a href="../grad/BIO-EVO-SINT-01.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Equação de Drake da exobiologia</span></span></a>
   </div>
 </li>
@@ -402,15 +402,22 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul>
+  <li><a href="#equação" id="toc-equação" class="nav-link active" data-scroll-target="#equação"><span class="header-section-number">39.1</span> Equação:</a></li>
+  <li><a href="#lógica-de-código" id="toc-lógica-de-código" class="nav-link" data-scroll-target="#lógica-de-código"><span class="header-section-number">39.2</span> Lógica de código</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Ciclo Ecológico Interativo</span></h1>
+<h1 class="title"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Equação de Drake da exobiologia</span></h1>
 </div>
 
 
@@ -427,53 +434,65 @@ window.Quarto = {
 </header>
 
 
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<p>A Equação de Drake foi inventada em 1961 por um astrônomo Frank Drake com um objetivo de ter uma estimativa de quantas civilizações extraterrestres poderiam existir. Equação de Drake é uma ferramenta teorica que estima o numero de civilizações extraterrestres avançadas na via Lactia com fatores relacionados a formação de estrelas, planetas habitaveis e desenvolvimento de uma vida inteligente. Ela Reune diferentes fatores que colaboram para o surgimento de civilização capaz de se comunicar pelo espaço. A forma mais conhecida da equação é: <span class="math display">\[
+N = R^* \cdot f_p \cdot n_e \cdot f_l \cdot f_i \cdot f_c \cdot L\
+\]</span> que cada variavel representa uma etapa necessária para o surgimento de uma possivel de uma civilização fora da terra.</p>
+<p>Essa quação não oferece um numero exato, mas ajuda os cientistas e pesquisadores a entenderem quais são os fatores necessarios para a existencia de uma vida fora da terra. E essas pequenas alterações nas variaveis da equçaõ podem aumentar ou reduzir o numero final de vida extraterrestre, mostrando como o tema envolve muitas incertezas cientificas. Alem disso, a equação de Drake estimula pesquisas sobre exoplanetas, evolução biológica e comunicação interestelar, sendo frequentemente utilizada em estudos sobre a busca por vida extraterrestre e em projetos científicos como o SETI.</p>
+<section id="equação" class="level2" data-number="39.1">
+<h2 data-number="39.1" class="anchored" data-anchor-id="equação"><span class="header-section-number">39.1</span> Equação:</h2>
+<p><span class="math display">\[
+N = R^* \cdot f_p \cdot n_e \cdot f_l \cdot f_i \cdot f_c \cdot L\
+\]</span></p>
+<p>Onde:</p>
+<span class="math display">\[\begin{aligned}
+N   &amp; = \text{número de civilizações detectáveis} \\
+R^* &amp; = \text{taxa de formação de estrelas} \\
+f_p &amp; = \text{fração de estrelas com planetas} \\
+n_e &amp; = \text{número de planetas habitáveis por sistema} \\
+f_l &amp; = \text{fração dos planetas onde surge vida} \\
+f_i &amp; = \text{fração onde surge vida inteligente} \\
+f_c &amp; = \text{fração com tecnologia detectável} \\
+L   &amp; = \text{tempo de emissão de sinais detectáveis}
+\end{aligned}\]</span>
+<p><br>
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="BIO-EVO-SINT-01-JS.html" target="_blank"><img src="BIO-EVO-SINT-01.png" class="img-fluid figure-img"></a></p>
+<figcaption>O grafico mostra a variação do número de civilizações detectáveis com diferentes parâmetros.</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Dica
+Como usar
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Os ecossistemas são formados por organismos que interagem continuamente entre si e com o ambiente. Processos como fotossíntese, respiração e decomposição influenciam diretamente a disponibilidade de energia e matéria, afetando o crescimento das plantas, a sobrevivência dos herbívoros e a manutenção dos carnívoros. Alterações nesses processos podem provocar equilíbrio ecológico, explosão populacional ou colapso das populações.</p>
-<p>Este objeto interativo simula a dinâmica de um ecossistema por meio da manipulação das taxas de fotossíntese, respiração e decomposição. O usuário modifica esses processos ecológicos utilizando controles deslizantes e observa, em um gráfico, a evolução das populações de plantas, herbívoros e carnívoros ao longo do tempo. Ao final da simulação, o sistema classifica automaticamente o cenário como equilíbrio ecológico, explosão populacional ou colapso ecológico.</p>
-<section id="equação" class="level2" data-number="37.1">
-<h2 data-number="37.1" class="anchored" data-anchor-id="equação"><span class="header-section-number">37.1</span> Equação:</h2>
-<p><span class="math display">\[
-P_{t+1}=P_t+F-C-R+D
-\]</span></p>
-<p><span class="math display">\[
-H_{t+1}=H_t+G_H-P_R-R_H
-\]</span></p>
-<p><span class="math display">\[
-C_{t+1}=C_t+G_C-R_C
-\]</span></p>
-<p>Onde:</p>
-<p><strong>P</strong> = população de plantas</p>
-<p><strong>H</strong> = população de herbívoros</p>
-<p><strong>C</strong> = população de carnívoros</p>
-<p><strong>F</strong> = taxa de fotossíntese</p>
-<p><strong>R</strong> = perdas por respiração</p>
-<p><strong>D</strong> = contribuição da decomposição para a reciclagem de nutrientes</p>
-<p><strong>Gₕ</strong> = crescimento dos herbívoros</p>
-<p><strong>Pᵣ</strong> = predação pelos carnívoros</p>
-<p><strong>G𝒸</strong> = crescimento dos carnívoros</p>
-</section>
-<section id="download-e-uso" class="level2" data-number="37.2">
-<h2 data-number="37.2" class="anchored" data-anchor-id="download-e-uso"><span class="header-section-number">37.2</span> Download e Uso:</h2>
-<p><a href="BIO-ECO-CICL-01-JS.html" target="_blank"><img src="BIO-ECO-CICL-01_print_tela.png" class="img-fluid" alt="Figura 1 – Simulação da dinâmica de um ecossistema."></a><br>
-</p>
-<p>Obs: a imagem deve conter apenas a área gráfica do objeto desenvolvido no JSPlotly.</p>
 <ol type="1">
-<li>Clique em <strong>“add”</strong> para carregar o objeto interativo.</li>
-<li>Ajuste as taxas de <strong>fotossíntese</strong>, <strong>respiração</strong> e <strong>decomposição</strong> utilizando os controles deslizantes.</li>
-<li>Clique em <strong>“Simular Ecossistema”</strong>.</li>
-<li>Observe a evolução das populações de plantas, herbívoros e carnívoros no gráfico.</li>
-<li>Analise o resultado final indicado pelo sistema: <strong>equilíbrio ecológico</strong>, <strong>explosão populacional</strong> ou <strong>colapso ecológico</strong>.</li>
+<li><p>O grafico gerado, mostra como a alteração dos parâmetros influencia o número final de civilizações detectáveis ((N)).</p></li>
+<li><p>Utilize variáveis da equação, como:</p></li>
 </ol>
-</section>
+<span class="math display">\[\begin{aligned}
+N   &amp; = \text{número de civilizações detectáveis} \\
+R^* &amp; = \text{taxa de formação de estrelas} \\
+f_p &amp; = \text{fração de estrelas com planetas} \\
+n_e &amp; = \text{número de planetas habitáveis por sistema} \\
+f_l &amp; = \text{fração dos planetas onde surge vida} \\
+f_i &amp; = \text{fração onde surge vida inteligente} \\
+f_c &amp; = \text{fração com tecnologia detectável} \\
+L   &amp; = \text{tempo de emissão de sinais detectáveis}
+\end{aligned}\]</span>
+<p><br>
+</p>
+<ol start="4" type="1">
+<li><p>Compare os resultados obtidos ao aumentar ou diminuir cada variável individualmente. Assim analisa como que pequenas mudanças nos parametros podem alterar o valor final da equção.</p></li>
+<li><p>Ao passar o mause no grafico você pode ver o valor exato de cada ponto.</p></li>
+<li><p>Reinicie a simulação sempre que desejar testar um novo conjunto de parâmetros.</p></li>
+</ol>
 </div>
 </div>
 <div class="callout callout-style-default callout-caution no-icon callout-titled">
@@ -487,26 +506,26 @@ Sugestão:
 </div>
 <div class="callout-body-container callout-body">
 <ol type="1">
-<li>Aumente a taxa de fotossíntese e observe o crescimento das populações.</li>
-<li>Eleve a taxa de respiração e analise a redução das populações ao longo do tempo.</li>
-<li>Modifique a taxa de decomposição e observe como a reciclagem de nutrientes influencia o ecossistema.</li>
-<li>Compare diferentes combinações dos parâmetros para identificar quais favorecem o equilíbrio ecológico.</li>
-<li>Observe em quais condições o sistema entra em explosão populacional ou colapso ecológico.</li>
+<li><p>Altere apenas o valor de (fl) (probabilidade de surgir vida) para observar como pequenas mudanças biológicas podem aumentar ou reduzir drasticamente o número final de civilizações.</p></li>
+<li><p>Modifique o parâmetro (L) (tempo de duração de uma civilização tecnológica) e compare os resultados no gráfico, analisando como civilizações mais duradouras impactam a chance de detecção extraterrestre.</p></li>
 </ol>
-<section id="lógica-de-código" class="level2" data-number="37.3">
-<h2 data-number="37.3" class="anchored" data-anchor-id="lógica-de-código"><span class="header-section-number">37.3</span> Lógica de código</h2>
-<p>O código implementa um modelo ecológico dinâmico baseado na interação entre plantas, herbívoros e carnívoros. Inicialmente, são definidos valores para as populações e criados controles deslizantes que permitem ao usuário modificar as taxas de fotossíntese, respiração e decomposição, representando processos ecológicos fundamentais.</p>
-<p>Durante a simulação, a população de plantas aumenta de acordo com a taxa de fotossíntese e diminui em função do consumo pelos herbívoros e das perdas por respiração. Os herbívoros crescem conforme a disponibilidade de alimento, mas sofrem redução pela respiração e pela ação dos carnívoros. Os carnívoros aumentam em função da disponibilidade de presas e diminuem devido às perdas naturais.</p>
-<p>A cada etapa da simulação, as populações são recalculadas e armazenadas para construir um gráfico de linhas que representa sua evolução temporal. Ao final do processo, o sistema analisa automaticamente os valores finais das populações e classifica o ecossistema em uma das três situações possíveis: <strong>equilíbrio ecológico</strong>, <strong>explosão populacional</strong> ou <strong>colapso ecológico</strong>, permitindo ao usuário compreender as consequências das alterações realizadas nos processos ecológicos.</p>
+</div>
+</div>
 </section>
-</div>
-</div>
-<p><strong>Estudante:</strong> Curso de Bacharelado em Ciências Biológicas - Universidade Federal de Alfenas (UNIFAL-MG).</p>
-<!---
-BIO-ECO-CICL-01
+<section id="lógica-de-código" class="level2" data-number="39.2">
+<h2 data-number="39.2" class="anchored" data-anchor-id="lógica-de-código"><span class="header-section-number">39.2</span> Lógica de código</h2>
+<ol type="1">
+<li>Ao rodar, o sistema exibe um gráfico mostrando o impacto de R no número de civilizações. Se o usuário abrir o menu dropdown e mudar para fl (fração de planetas que desenvolvem vida), a linha anterior desaparece instantaneamente, uma nova linha toma o seu lugar, e os títulos do gráfico se adaptam sozinhos, revelando a sensibilidade do resultado final a essa nova variável.</li>
+</ol>
+<p><strong>Estudante:</strong> Curso de Biotecnologia, Universidade Federal de Alfenas (UNIFAL-MG)</p>
+<!--- Código 
+
+BIO-EVO-SINT-01
+
 --->
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -910,13 +929,13 @@ BIO-ECO-CICL-01
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../grad/QUI-LIG-MET-01.html" class="pagination-link" aria-label="Condução Elétrica em Metais">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Condução Elétrica em Metais</span></span>
+      <a href="../grad/BIO-POP-01.html" class="pagination-link" aria-label="Simulador de Equilíbrio Presa-Predador">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Simulador de Equilíbrio Presa-Predador</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../grad/BIO-POP-01.html" class="pagination-link" aria-label="Simulador de Equilíbrio Presa-Predador">
-        <span class="nav-page-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Simulador de Equilíbrio Presa-Predador</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../grad/QUI-BIMOOL-ESTRUT-01.html" class="pagination-link" aria-label="Estrutura de Proteínas">
+        <span class="nav-page-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Estrutura de Proteínas</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -34,7 +34,7 @@
     "href": "index.html#química",
     "title": "JSPlotly por Estudantes",
     "section": "1.3 Química",
-    "text": "1.3 Química\n\n1.3.1 Leis ponderais\n\n\n1.3.2 Diluição de soluções\n\n\n1.3.3 Estrutura atômica\n\n\n1.3.4 Eletrólise da água",
+    "text": "1.3 Química\n\n1.3.1 Leis ponderais (Jogo)\n\n\n1.3.2 Diluição de soluções\n\n\n1.3.3 Estrutura atômica\n\n\n1.3.4 Eletrólise da água",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>DESCRIÇÃO DOS OBJETOS</span>"
     ]
@@ -84,7 +84,7 @@
     "href": "index.html#biologia-1",
     "title": "JSPlotly por Estudantes",
     "section": "2.4 Biologia",
-    "text": "2.4 Biologia\n\n2.4.1 Montagem de proteínas\n\n\n2.4.2 Ciclo ecológico\n\n\n2.4.3 Relação presa-predador (ecologia)\n\n\n2.4.4 Ciclo do carbono (ecologia)\n\n\n2.4.5 Equação de Drake e exobiologia (evolução)\n\n\n2.4.6 Fotossíntese (biologia vegetal)\n\n\n2.4.7 Fermentação e respiração celular (metabolismo)",
+    "text": "2.4 Biologia\n\n2.4.1 Montagem de proteínas\n\n\n2.4.2 Ciclo ecológico\n\n\n2.4.3 Relação presa-predador (ecologia)\n\n\n\n2.4.4 Equação de Drake e exobiologia (evolução)\n\n\n2.4.5 Fotossíntese (biologia vegetal)\n\n\n2.4.6 Fermentação e respiração celular (metabolismo)",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>DESCRIÇÃO DOS OBJETOS</span>"
     ]
@@ -252,61 +252,61 @@
   {
     "objectID": "FIS-OPT-FIS-01.html",
     "href": "FIS-OPT-FIS-01.html",
-    "title": "7  Simulador Gráfico de Qualidade Fotográfica",
+    "title": "8  Simulador Gráfico de Qualidade Fotográfica",
     "section": "",
-    "text": "7.1 Equação:\nO objeto abaixo mostra uma simulação em formato de gráfico ondulatório, que busca comparar a qualidade fotográfica atual com uma qualidade de referência. O usuário pode escolher os valores do diafragma, obturador e focal da “câmera”. Sendo assim, é possível analisar se os valores IQF estão de acordo.\n\\[\n  \\sigma_{\\mathrm{final}}\n=\n\\sqrt{\n\\sigma_{\\mathrm{dif}}^{2}\n+\n\\sigma_{\\mathrm{trem}}^{2}\n}\n  \\]\n\\[\nIQF=\n\\frac{100}\n{\\sigma_{\\mathrm{final}}}\n  \\]\nOnde:\nσfinal = borramento total da imagem; σdif = borramento devido à degradação óptica da lente (difração e aberrações); σtrem = borramento causado pelo tremor da câmera.\nIQF = Índice de Qualidade Fotográfica (0–100); 100 = valor de referência correspondente à condição ideal do simulador; σfinal​ = borramento total da imagem.",
+    "text": "8.1 Equação:\nO objeto abaixo mostra uma simulação em formato de gráfico ondulatório, que busca comparar a qualidade fotográfica atual com uma qualidade de referência. O usuário pode escolher os valores do diafragma, obturador e focal da “câmera”. Sendo assim, é possível analisar se os valores IQF estão de acordo.\n\\[\n  \\sigma_{\\mathrm{final}}\n=\n\\sqrt{\n\\sigma_{\\mathrm{dif}}^{2}\n+\n\\sigma_{\\mathrm{trem}}^{2}\n}\n  \\]\n\\[\nIQF=\n\\frac{100}\n{\\sigma_{\\mathrm{final}}}\n  \\]\nOnde:\nσfinal = borramento total da imagem; σdif = borramento devido à degradação óptica da lente (difração e aberrações); σtrem = borramento causado pelo tremor da câmera.\nIQF = Índice de Qualidade Fotográfica (0–100); 100 = valor de referência correspondente à condição ideal do simulador; σfinal​ = borramento total da imagem.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Simulador Gráfico de Qualidade Fotográfica</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Simulador Gráfico de Qualidade Fotográfica</span>"
     ]
   },
   {
     "objectID": "FIS-OPT-FIS-01.html#download-e-uso",
     "href": "FIS-OPT-FIS-01.html#download-e-uso",
-    "title": "7  Simulador Gráfico de Qualidade Fotográfica",
-    "section": "7.2 Download e Uso:",
-    "text": "7.2 Download e Uso:\n\n\n\nO usuário pode trocar os valores do Diafragma, Obturador e Focal da câmera nos sliders acima do gráfico.\nPode-se comparar os resultados com o “Ideal”.\nAnalise os valores no cabeçalho, produtos da equação da qualidade fotográfica.\nExplore os diferentes estados da qualidade fotográfica, como Boa, Comprometida, etc.\n\n\n\n\n\n\n\nSugestão:\n\n\n\n\nMude os valores de diferentes formas, para ver se a qualidade está comprometida, ou de acordo com o Ideal.\nTroque a posição do gráfico ondulatório de acordo com os resultados, tentando aproximá-lo da linha azul.\n\n\n7.3 Lógica de código\n\nO usuário escolhe a abertura do diafragma, a velocidade do obturador e a distância focal.\nO simulador estima a perda de nitidez causada pela óptica da lente (difração e aberrações).\nA velocidade do obturador é comparada com a regra do obturador seguro (≈1/focal) para estimar o efeito do tremor da câmera.\nAs perdas ópticas e o tremor são combinados para calcular o borramento total da imagem.\nO borramento é representado por uma curva que indica o nível de nitidez da fotografia.\nO resultado é convertido em um Índice de Qualidade Fotográfica (IQF), variando aproximadamente de 0 a 100.\nA fotografia é então classificada em categorias: Excelente, Muito boa, Boa, Aceitável ou Comprometida.\n\n\n\n\nEstudante: Escola Estadual Doutor Emílio Silveira, Alfenas-MG.",
+    "title": "8  Simulador Gráfico de Qualidade Fotográfica",
+    "section": "8.2 Download e Uso:",
+    "text": "8.2 Download e Uso:\n\n\n\nO usuário pode trocar os valores do Diafragma, Obturador e Focal da câmera nos sliders acima do gráfico.\nPode-se comparar os resultados com o “Ideal”.\nAnalise os valores no cabeçalho, produtos da equação da qualidade fotográfica.\nExplore os diferentes estados da qualidade fotográfica, como Boa, Comprometida, etc.\n\n\n\n\n\n\n\nSugestão:\n\n\n\n\nMude os valores de diferentes formas, para ver se a qualidade está comprometida, ou de acordo com o Ideal.\nTroque a posição do gráfico ondulatório de acordo com os resultados, tentando aproximá-lo da linha azul.\n\n\n8.3 Lógica de código\n\nO usuário escolhe a abertura do diafragma, a velocidade do obturador e a distância focal.\nO simulador estima a perda de nitidez causada pela óptica da lente (difração e aberrações).\nA velocidade do obturador é comparada com a regra do obturador seguro (≈1/focal) para estimar o efeito do tremor da câmera.\nAs perdas ópticas e o tremor são combinados para calcular o borramento total da imagem.\nO borramento é representado por uma curva que indica o nível de nitidez da fotografia.\nO resultado é convertido em um Índice de Qualidade Fotográfica (IQF), variando aproximadamente de 0 a 100.\nA fotografia é então classificada em categorias: Excelente, Muito boa, Boa, Aceitável ou Comprometida.\n\n\n\n\nEstudante: Escola Estadual Doutor Emílio Silveira, Alfenas-MG.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Simulador Gráfico de Qualidade Fotográfica</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Simulador Gráfico de Qualidade Fotográfica</span>"
     ]
   },
   {
     "objectID": "FIS-OPT-FIS-01.html#lógica-de-código",
     "href": "FIS-OPT-FIS-01.html#lógica-de-código",
-    "title": "7  Simulador Gráfico de Qualidade Fotográfica",
-    "section": "7.3 Lógica de código",
-    "text": "7.3 Lógica de código\n\nO usuário escolhe a abertura do diafragma, a velocidade do obturador e a distância focal.\nO simulador estima a perda de nitidez causada pela óptica da lente (difração e aberrações).\nA velocidade do obturador é comparada com a regra do obturador seguro (≈1/focal) para estimar o efeito do tremor da câmera.\nAs perdas ópticas e o tremor são combinados para calcular o borramento total da imagem.\nO borramento é representado por uma curva que indica o nível de nitidez da fotografia.\nO resultado é convertido em um Índice de Qualidade Fotográfica (IQF), variando aproximadamente de 0 a 100.\nA fotografia é então classificada em categorias: Excelente, Muito boa, Boa, Aceitável ou Comprometida.",
+    "title": "8  Simulador Gráfico de Qualidade Fotográfica",
+    "section": "8.3 Lógica de código",
+    "text": "8.3 Lógica de código\n\nO usuário escolhe a abertura do diafragma, a velocidade do obturador e a distância focal.\nO simulador estima a perda de nitidez causada pela óptica da lente (difração e aberrações).\nA velocidade do obturador é comparada com a regra do obturador seguro (≈1/focal) para estimar o efeito do tremor da câmera.\nAs perdas ópticas e o tremor são combinados para calcular o borramento total da imagem.\nO borramento é representado por uma curva que indica o nível de nitidez da fotografia.\nO resultado é convertido em um Índice de Qualidade Fotográfica (IQF), variando aproximadamente de 0 a 100.\nA fotografia é então classificada em categorias: Excelente, Muito boa, Boa, Aceitável ou Comprometida.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Simulador Gráfico de Qualidade Fotográfica</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Simulador Gráfico de Qualidade Fotográfica</span>"
     ]
   },
   {
     "objectID": "QUI-FIS-SOL-02.html",
     "href": "QUI-FIS-SOL-02.html",
-    "title": "8  Diluição em solução aquosa",
+    "title": "10  Diluição em solução aquosa",
     "section": "",
-    "text": "8.1 Equação\nEsse é um simulador para estudar a diluição de soluções aquosas. O objeto mostra um béquer com água e partículas de sal representadas pelos pontos coloridos. Ao aumentar o volume final da solução, a concentração final diminui, mantendo a quantidade de soluto (partículas de sal), constante. O simulador compara duas soluções iniciais de cloreto de sódio: uma com concentração inicial de 5 g/L e outra com concentração inicial de 10 g/L. Cada solução possui um slider próprio do volume, permitindo observar separadamente o efeito da adição de água sobre a concentração.\n\\[\nC_i \\cdot V_i = C_f \\cdot V_f\n\\]\n\\[\nC_f = \\frac{C_i \\cdot V_i}{V_f}\n\\]\nOnde:\nCi = concentração inicial da solução, em g/L. Vi = volume inicial da solução, em mL. Cf = concentração final após a diluição, em g/L. Vf = volume final após a adição de água, em mL.",
+    "text": "10.1 Equação\nEsse é um simulador para estudar a diluição de soluções aquosas. O objeto mostra um béquer com água e partículas de sal representadas pelos pontos coloridos. Ao aumentar o volume final da solução, a concentração final diminui, mantendo a quantidade de soluto (partículas de sal), constante. O simulador compara duas soluções iniciais de cloreto de sódio: uma com concentração inicial de 5 g/L e outra com concentração inicial de 10 g/L. Cada solução possui um slider próprio do volume, permitindo observar separadamente o efeito da adição de água sobre a concentração.\n\\[\nC_i \\cdot V_i = C_f \\cdot V_f\n\\]\n\\[\nC_f = \\frac{C_i \\cdot V_i}{V_f}\n\\]\nOnde:\nCi = concentração inicial da solução, em g/L. Vi = volume inicial da solução, em mL. Cf = concentração final após a diluição, em g/L. Vf = volume final após a adição de água, em mL.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Diluição em solução aquosa</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Diluição em solução aquosa</span>"
     ]
   },
   {
     "objectID": "QUI-FIS-SOL-02.html#download-e-uso",
     "href": "QUI-FIS-SOL-02.html#download-e-uso",
-    "title": "8  Diluição em solução aquosa",
-    "section": "8.2 Download e uso",
-    "text": "8.2 Download e uso\n\n\n1.Use o slider Solução A - Vf para alterar o volume final da solução com Ci = 5 g/L. 2.Use o slider Solução B - Vf para alterar o volume final da solução com Ci = 10 g/L. 3.Compare como a concentração final diminui quando o volume final aumenta.\n\n\n\n\n\n\nSugestão\n\n\n\n\nCom o Vf = 100 mL observe e confirme que a concentração final é igual à concentração inicial.\nAumente o volume final para 200 mL e observe o efeito de dobrar o volume.\nCompare a Solução A e a Solução B no volume final.\n\n\n8.3 Lógica de código\nO código define duas soluções iniciais, uma com 5 g/L e outra com 10 g/L. Para cada solução, são gerados quadros de animação correspondentes aos volumes finais de 100 a 500 mL.\nA função montarCena calcula a altura da água no béquer, distribui as partículas de sal apenas dentro da região ocupada pela água e calcula a concentração final pela equação Cf = (Ci * Vi) / Vf.\nOs dois sliders controlam os frames das soluções A e B. Assim, cada solução pode ser explorada separadamente sem alterar a outra.\n\n\n\nEstudante: Escola Estadual Prefeito Ismael Brasil Corrêa, Alfenas-MG.",
+    "title": "10  Diluição em solução aquosa",
+    "section": "10.2 Download e uso",
+    "text": "10.2 Download e uso\n\n\n1.Use o slider Solução A - Vf para alterar o volume final da solução com Ci = 5 g/L. 2.Use o slider Solução B - Vf para alterar o volume final da solução com Ci = 10 g/L. 3.Compare como a concentração final diminui quando o volume final aumenta.\n\n\n\n\n\n\nSugestão\n\n\n\n\nCom o Vf = 100 mL observe e confirme que a concentração final é igual à concentração inicial.\nAumente o volume final para 200 mL e observe o efeito de dobrar o volume.\nCompare a Solução A e a Solução B no volume final.\n\n\n10.3 Lógica de código\nO código define duas soluções iniciais, uma com 5 g/L e outra com 10 g/L. Para cada solução, são gerados quadros de animação correspondentes aos volumes finais de 100 a 500 mL.\nA função montarCena calcula a altura da água no béquer, distribui as partículas de sal apenas dentro da região ocupada pela água e calcula a concentração final pela equação Cf = (Ci * Vi) / Vf.\nOs dois sliders controlam os frames das soluções A e B. Assim, cada solução pode ser explorada separadamente sem alterar a outra.\n\n\n\nEstudante: Escola Estadual Prefeito Ismael Brasil Corrêa, Alfenas-MG.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Diluição em solução aquosa</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Diluição em solução aquosa</span>"
     ]
   },
   {
     "objectID": "QUI-FIS-SOL-02.html#lógica-de-código",
     "href": "QUI-FIS-SOL-02.html#lógica-de-código",
-    "title": "8  Diluição em solução aquosa",
-    "section": "8.3 Lógica de código",
-    "text": "8.3 Lógica de código\nO código define duas soluções iniciais, uma com 5 g/L e outra com 10 g/L. Para cada solução, são gerados quadros de animação correspondentes aos volumes finais de 100 a 500 mL.\nA função montarCena calcula a altura da água no béquer, distribui as partículas de sal apenas dentro da região ocupada pela água e calcula a concentração final pela equação Cf = (Ci * Vi) / Vf.\nOs dois sliders controlam os frames das soluções A e B. Assim, cada solução pode ser explorada separadamente sem alterar a outra.",
+    "title": "10  Diluição em solução aquosa",
+    "section": "10.3 Lógica de código",
+    "text": "10.3 Lógica de código\nO código define duas soluções iniciais, uma com 5 g/L e outra com 10 g/L. Para cada solução, são gerados quadros de animação correspondentes aos volumes finais de 100 a 500 mL.\nA função montarCena calcula a altura da água no béquer, distribui as partículas de sal apenas dentro da região ocupada pela água e calcula a concentração final pela equação Cf = (Ci * Vi) / Vf.\nOs dois sliders controlam os frames das soluções A e B. Assim, cada solução pode ser explorada separadamente sem alterar a outra.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Diluição em solução aquosa</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Diluição em solução aquosa</span>"
     ]
   },
   {
@@ -342,61 +342,61 @@
   {
     "objectID": "BIO-MIC-VIR-01.html",
     "href": "BIO-MIC-VIR-01.html",
-    "title": "10  Replicação do vírus na célula",
+    "title": "13  Replicação do vírus na célula",
     "section": "",
-    "text": "10.1 Equação:\nEsta animação mostra como um vírus invade nosso corpo e se multiplica e esse processo é representado de dentro da célula! O objeto mostra o momento exato em que o vírus entra, solta seu material genético e começa a fabricar novas cópias de si mesmo. Para ficar mais intuitivo, existem contadores que avançam ao longo de 12 horas fictícias. Eles mostram uma estimativa de quantos genomas, proteínas e novos vírus vão surgindo na célula. É usado uma conta matemática simples para calcular esses números, ajudando a visualizar o impacto real dessa multiplicação com o passar do tempo.\n\\[\nV(t)=V_0 e^{rt}\n\\] ​\nV(t) = valor no instante t; V0 = valor inicial; e = número de Euler (≈2,718); r = taxa de crescimento (ou decaimento, se negativa); t = tempo.",
+    "text": "13.1 Equação:\nEsta animação mostra como um vírus invade nosso corpo e se multiplica e esse processo é representado de dentro da célula! O objeto mostra o momento exato em que o vírus entra, solta seu material genético e começa a fabricar novas cópias de si mesmo. Para ficar mais intuitivo, existem contadores que avançam ao longo de 12 horas fictícias. Eles mostram uma estimativa de quantos genomas, proteínas e novos vírus vão surgindo na célula. É usado uma conta matemática simples para calcular esses números, ajudando a visualizar o impacto real dessa multiplicação com o passar do tempo.\n\\[\nV(t)=V_0 e^{rt}\n\\] ​\nV(t) = valor no instante t; V0 = valor inicial; e = número de Euler (≈2,718); r = taxa de crescimento (ou decaimento, se negativa); t = tempo.",
     "crumbs": [
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Replicação do vírus na célula</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Replicação do vírus na célula</span>"
     ]
   },
   {
     "objectID": "BIO-MIC-VIR-01.html#download-e-uso",
     "href": "BIO-MIC-VIR-01.html#download-e-uso",
-    "title": "10  Replicação do vírus na célula",
-    "section": "10.2 Download e Uso:",
-    "text": "10.2 Download e Uso:\n\n\n1-Após apertar o botão “add” o objeto pode ser iniciado com o botão play. 2-O usuário pode utlizar a barra deslizante para observar a evolução do vírus na célula de acordo com o tempo.\n\n\n\n\n\n\nSugestão:\n\n\n\n1-O aluno pode observar e analisar quais são as etapas da invasão do vírus em uma célula através da barra deslizante. 2-O aluno pode ver como novos vírus surgem na célula em 12 horas utilizando a barra deslizante.\n\n10.3 Lógica de código\n1-Define as etapas da replicação viral e o tempo biológico de cada uma. 2-Usa a equação V = V0 exp(r t) para calcular a quantidade de genomas virais ao longo do tempo. 3-Calcula a quantidade de proteínas virais a partir do número de genomas. 4-Calcula quantos vírus completos podem ser formados com base nos genomas e proteínas disponíveis. 5-Desenha a célula, o núcleo, o vírus, o genoma viral, as proteínas e o capsídeo usando formas geométricas simples. 6-Em cada etapa, muda a posição e a visibilidade dessas estruturas para representar adsorção, entrada, desnudamento, replicação, montagem e liberação. 7-Atualiza uma caixa de texto com a etapa atual, a equação, o valor de r e os contadores. 8-Cria os frames da animação e permite controlar o processo com o botão Play/Pause e a barra deslizante de tempo.\n\n\n\nEstudante: Escola Estadual Prefeito Ismael Brasil Corrêa , Alfenas-MG.",
+    "title": "13  Replicação do vírus na célula",
+    "section": "13.2 Download e Uso:",
+    "text": "13.2 Download e Uso:\n\n\n1-Após apertar o botão “add” o objeto pode ser iniciado com o botão play. 2-O usuário pode utlizar a barra deslizante para observar a evolução do vírus na célula de acordo com o tempo.\n\n\n\n\n\n\nSugestão:\n\n\n\n1-O aluno pode observar e analisar quais são as etapas da invasão do vírus em uma célula através da barra deslizante. 2-O aluno pode ver como novos vírus surgem na célula em 12 horas utilizando a barra deslizante.\n\n13.3 Lógica de código\n1-Define as etapas da replicação viral e o tempo biológico de cada uma. 2-Usa a equação V = V0 exp(r t) para calcular a quantidade de genomas virais ao longo do tempo. 3-Calcula a quantidade de proteínas virais a partir do número de genomas. 4-Calcula quantos vírus completos podem ser formados com base nos genomas e proteínas disponíveis. 5-Desenha a célula, o núcleo, o vírus, o genoma viral, as proteínas e o capsídeo usando formas geométricas simples. 6-Em cada etapa, muda a posição e a visibilidade dessas estruturas para representar adsorção, entrada, desnudamento, replicação, montagem e liberação. 7-Atualiza uma caixa de texto com a etapa atual, a equação, o valor de r e os contadores. 8-Cria os frames da animação e permite controlar o processo com o botão Play/Pause e a barra deslizante de tempo.\n\n\n\nEstudante: Escola Estadual Prefeito Ismael Brasil Corrêa , Alfenas-MG.",
     "crumbs": [
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Replicação do vírus na célula</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Replicação do vírus na célula</span>"
     ]
   },
   {
     "objectID": "BIO-MIC-VIR-01.html#lógica-de-código",
     "href": "BIO-MIC-VIR-01.html#lógica-de-código",
-    "title": "10  Replicação do vírus na célula",
-    "section": "10.3 Lógica de código",
-    "text": "10.3 Lógica de código\n1-Define as etapas da replicação viral e o tempo biológico de cada uma. 2-Usa a equação V = V0 exp(r t) para calcular a quantidade de genomas virais ao longo do tempo. 3-Calcula a quantidade de proteínas virais a partir do número de genomas. 4-Calcula quantos vírus completos podem ser formados com base nos genomas e proteínas disponíveis. 5-Desenha a célula, o núcleo, o vírus, o genoma viral, as proteínas e o capsídeo usando formas geométricas simples. 6-Em cada etapa, muda a posição e a visibilidade dessas estruturas para representar adsorção, entrada, desnudamento, replicação, montagem e liberação. 7-Atualiza uma caixa de texto com a etapa atual, a equação, o valor de r e os contadores. 8-Cria os frames da animação e permite controlar o processo com o botão Play/Pause e a barra deslizante de tempo.",
+    "title": "13  Replicação do vírus na célula",
+    "section": "13.3 Lógica de código",
+    "text": "13.3 Lógica de código\n1-Define as etapas da replicação viral e o tempo biológico de cada uma. 2-Usa a equação V = V0 exp(r t) para calcular a quantidade de genomas virais ao longo do tempo. 3-Calcula a quantidade de proteínas virais a partir do número de genomas. 4-Calcula quantos vírus completos podem ser formados com base nos genomas e proteínas disponíveis. 5-Desenha a célula, o núcleo, o vírus, o genoma viral, as proteínas e o capsídeo usando formas geométricas simples. 6-Em cada etapa, muda a posição e a visibilidade dessas estruturas para representar adsorção, entrada, desnudamento, replicação, montagem e liberação. 7-Atualiza uma caixa de texto com a etapa atual, a equação, o valor de r e os contadores. 8-Cria os frames da animação e permite controlar o processo com o botão Play/Pause e a barra deslizante de tempo.",
     "crumbs": [
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Replicação do vírus na célula</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Replicação do vírus na célula</span>"
     ]
   },
   {
     "objectID": "BIO-CEL-01.html",
     "href": "BIO-CEL-01.html",
-    "title": "11  Simulador de Célula Eucarionte 3D",
+    "title": "15  Simulador de Célula Eucarionte 3D",
     "section": "",
-    "text": "11.1 Download e Uso:\nO objeto apresentado a seguir é um simulador celular em 3D que representa uma célula e suas principais organelas. Cada organela, como núcleo, mitocôndrias e ribossomos, é exibida como formas simplificadas posicionadas no espaço. A visualização permite o entendimento da organização interna celular de maneira simples e fácil. Sua função é apoiar o aprendizado de biologia celular por meio da interatividade. O usuário pode usar um controle deslizante (slider) para selecionar organelas e visualizar suas funções/características. Sendo assim, um painel exibe explicações sobre cada estrutura.\nEstudante: Escola Estadual Doutor Emílio Silveira, Alfenas-MG.",
+    "text": "15.1 Download e Uso:\nO objeto apresentado a seguir é um simulador celular em 3D que representa uma célula e suas principais organelas. Cada organela, como núcleo, mitocôndrias e ribossomos, é exibida como formas simplificadas posicionadas no espaço. A visualização permite o entendimento da organização interna celular de maneira simples e fácil. Sua função é apoiar o aprendizado de biologia celular por meio da interatividade. O usuário pode usar um controle deslizante (slider) para selecionar organelas e visualizar suas funções/características. Sendo assim, um painel exibe explicações sobre cada estrutura.\nEstudante: Escola Estadual Doutor Emílio Silveira, Alfenas-MG.",
     "crumbs": [
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Simulador de Célula Eucarionte 3D</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Simulador de Célula Eucarionte 3D</span>"
     ]
   },
   {
     "objectID": "BIO-CEL-01.html#download-e-uso",
     "href": "BIO-CEL-01.html#download-e-uso",
-    "title": "11  Simulador de Célula Eucarionte 3D",
-    "section": "11.2 Lógica de código",
-    "text": "Segure o botão esquerdo do mouse para rotacionar o modelo 3D da célula, para melhor visualização.\nArraste o indicador na barra deslizante para observar as organelas celulares em destaque.\nObserve a função e estrutura de cada organela, descritas no painel informativo (também possível de arrastar).\n\n\n\n\n\n\n\nSugestão:\n\n\n\n\nVeja os diferentes tipos de componentes da célula e associe cada organela com suas funções.\nObserve os destaques em amarelo e compreenda a localização das organelas.\nExplore todas as estruturas e analise cada uma delas utilizando o slider.\n\n\n11.2 Lógica de código\n\nA célula surge com todas as organelas visíveis.\nO slider controla qual organela será selecionada.\nDestaques surgem para facilitar a visualização.\nO painel descreve cada função da organela selecionada.",
+    "title": "15  Simulador de Célula Eucarionte 3D",
+    "section": "15.2 Lógica de código",
+    "text": "Segure o botão esquerdo do mouse para rotacionar o modelo 3D da célula, para melhor visualização.\nArraste o indicador na barra deslizante para observar as organelas celulares em destaque.\nObserve a função e estrutura de cada organela, descritas no painel informativo (também possível de arrastar).\n\n\n\n\n\n\n\nSugestão:\n\n\n\n\nVeja os diferentes tipos de componentes da célula e associe cada organela com suas funções.\nObserve os destaques em amarelo e compreenda a localização das organelas.\nExplore todas as estruturas e analise cada uma delas utilizando o slider.\n\n\n15.2 Lógica de código\n\nA célula surge com todas as organelas visíveis.\nO slider controla qual organela será selecionada.\nDestaques surgem para facilitar a visualização.\nO painel descreve cada função da organela selecionada.",
     "crumbs": [
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Simulador de Célula Eucarionte 3D</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Simulador de Célula Eucarionte 3D</span>"
     ]
   },
   {
     "objectID": "BIO-CEL-01.html#lógica-de-código",
     "href": "BIO-CEL-01.html#lógica-de-código",
-    "title": "11  Simulador de Célula Eucarionte 3D",
+    "title": "15  Simulador de Célula Eucarionte 3D",
     "section": "",
     "text": "A célula surge com todas as organelas visíveis.\nO slider controla qual organela será selecionada.\nDestaques surgem para facilitar a visualização.\nO painel descreve cada função da organela selecionada.",
     "crumbs": [
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Simulador de Célula Eucarionte 3D</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Simulador de Célula Eucarionte 3D</span>"
     ]
   },
   {
@@ -972,11 +972,11 @@
   {
     "objectID": "grad/QUI-FISQ-ELETRO-01.html",
     "href": "grad/QUI-FISQ-ELETRO-01.html",
-    "title": "29  Pilha de Daniell - potencial e íons",
+    "title": "33  Influência da Concentração dos Íons na Tensão da Pilha de Daniell",
     "section": "",
-    "text": "Estudante: Curso de Biotecnologia - Universidade Federal de Alfenas (UNIFAL-MG).",
+    "text": "33.1 Equação:\nAs pilhas, são objetos fundamentais para que podsamos ter a compreensão dos processos de conversão de energia quimica para uma energia elerica, e a pilha de Daniell é um dos exemplos mais ilustraivos desse processo. Esse sistema é composto por duas meias celulas onde ocorre a oxidação do zinco metálico no ânodo e a redução dos íons de cobre no cátodo, resultando na geração de uma corrente elétrica. E a ponte salina é essencial, ela permite o movimento de íons entre as soluções. Essa voltagem gerada pela pilha de Daniell é diretamente influenciada pela concentração dos íons presentes nas soluções.\nNo grafico de animação, é possivel obervar a relção entre a concentração dos íons e a tensão da pilha de Daniell, esse grafico começa com uma concentração muito baixa e uma tensão alta, conforme a concentração dos íons aumenta, a tensão da pilha cai, mostrando a relação inversa entre a concentração dos íons e a tensão da pilha, o que é explicado pela equação de Nernst, que relaciona a tensão da pilha com a concentração dos íons envolvidos na reação.",
     "crumbs": [
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Pilha de Daniell - potencial e íons</span>"
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Influência da Concentração dos Íons na Tensão da Pilha de Daniell</span>"
     ]
   },
   {
@@ -992,121 +992,121 @@
   {
     "objectID": "grad/QUI-FISQ-ELETRO-01.html#equação-simplificada-para-a-tensão-da-pilha-de-daniell",
     "href": "grad/QUI-FISQ-ELETRO-01.html#equação-simplificada-para-a-tensão-da-pilha-de-daniell",
-    "title": "29  Pilha de Daniell - potencial e íons",
-    "section": "29.2 Equação simplificada para a tensão da pilha de Daniell:",
-    "text": "29.2 Equação simplificada para a tensão da pilha de Daniell:\n\\[\nV = 1.1 \\cdot \\log_{10}\\left(\\frac{10}{c}\\right) + 0.1\n\\]\n-V: tensão da pilha (V). -C: concentração da solução (mol/L). -log10: logaritmo na base 10. -10: valor de referência de concentração utilizado na simulação. -1.1: fator que controla a sensibilidade da tensão à concentração. -0.1: constante adicionada para ajustar o valor inicial da tensão.",
+    "title": "33  Influência da Concentração dos Íons na Tensão da Pilha de Daniell",
+    "section": "33.2 Equação simplificada para a tensão da pilha de Daniell:",
+    "text": "33.2 Equação simplificada para a tensão da pilha de Daniell:\n\\[\nV = 1.1 \\cdot \\log_{10}\\left(\\frac{10}{c}\\right) + 0.1\n\\]\nOnde:\n-V: tensão da pilha (V).\n-C: concentração da solução (mol/L).\n-log10: logaritmo na base 10.\n-10: valor de referência de concentração utilizado na simulação.\n-1.1: fator que controla a sensibilidade da tensão à concentração.\n-0.1: constante adicionada para ajustar o valor inicial da tensão.",
     "crumbs": [
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Pilha de Daniell - potencial e íons</span>"
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Influência da Concentração dos Íons na Tensão da Pilha de Daniell</span>"
     ]
   },
   {
     "objectID": "grad/QUI-FISQ-ELETRO-01.html#equação-de-nernst-para-a-pilha-de-daniell",
     "href": "grad/QUI-FISQ-ELETRO-01.html#equação-de-nernst-para-a-pilha-de-daniell",
-    "title": "29  Pilha de Daniell - potencial e íons",
-    "section": "29.3 Equação de Nernst para a pilha de Daniell:",
-    "text": "29.3 Equação de Nernst para a pilha de Daniell:\n\\[\nE = E^\\circ - \\frac{0.0592}{2}\n\\log\\left(\n\\frac{[Zn^{2+}]}\n{[Cu^{2+}]}\n\\right)\n\\]\n-E: potencial da pilha de Daniell (V). -E∘: potencial padrão da pilha de Daniell (aproximadamente 1,10 V). -0.0592: constante da Equação de Nernst para 25∘C. -2: número de elétrons transferidos na reação global. -[Zn2+]: concentração dos íons zinco na solução (mol/L). -[Cu2+]: concentração dos íons cobre na solução (mol/L). -log: logaritmo decimal.",
+    "title": "33  Influência da Concentração dos Íons na Tensão da Pilha de Daniell",
+    "section": "33.3 Equação de Nernst para a pilha de Daniell:",
+    "text": "33.3 Equação de Nernst para a pilha de Daniell:\n\\[\nE = E^\\circ - \\frac{0.0592}{2}\n\\log\\left(\n\\frac{[Zn^{2+}]}\n{[Cu^{2+}]}\n\\right)\n\\]\nOnde:\n-E: potencial da pilha de Daniell (V).\n-E∘: potencial padrão da pilha de Daniell (aproximadamente 1,10 V).\n-0.0592: constante da Equação de Nernst para 25∘C.\n-2: número de elétrons transferidos na reação global.\n-[Zn2+]: concentração dos íons zinco na solução (mol/L).\n-[Cu2+]: concentração dos íons cobre na solução (mol/L).\n-log: logaritmo decimal.",
     "crumbs": [
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Pilha de Daniell - potencial e íons</span>"
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Influência da Concentração dos Íons na Tensão da Pilha de Daniell</span>"
     ]
   },
   {
     "objectID": "grad/QUI-FISQ-ELETRO-01.html#download-e-uso",
     "href": "grad/QUI-FISQ-ELETRO-01.html#download-e-uso",
-    "title": "29  Pilha de Daniell - potencial e íons",
-    "section": "29.4 Download e Uso:",
-    "text": "29.4 Download e Uso:\n\n\n\nEssa animação mostra a relação entre a concentração dos íons e a tensão da pilha de Daniell.\n\n\n\nVisualiza a animação: O grafico será desenhado automaticamete no seu navegador, exibindo o ponto de partida da simulaçõa com uma concentração baixa e uma tensão alta. Conforme a animação progride, a concentração dos íons aumenta e a tensão da pilha diminui, ilustrando a relação inversa entre esses dois parâmetros.\nInterpreta os resultados: Observe como a tensão da pilha de Daniell varia em resposta às mudanças na concentração dos íons. A relação inversa é evidente, e isso pode ser explicado pela equação de Nernst, que relaciona a tensão da pilha com a concentração dos íons envolvidos na reação.\nExplora diferentes cenários: Você pode modificar a equação ou os parâmetros para explorar como diferentes concentrações de íons afetam a tensão da pilha. Por exemplo, você pode ajustar o valor de referência de concentração ou o fator de sensibilidade para ver como isso influencia a curva da animação.",
+    "title": "33  Influência da Concentração dos Íons na Tensão da Pilha de Daniell",
+    "section": "33.4 Download e Uso:",
+    "text": "33.4 Download e Uso:\n\n\n\nEssa animação mostra a relação entre a concentração dos íons e a tensão da pilha de Daniell.\n\n\n\n\n\n\n\n\nComo usar:\n\n\n\n\nVisualiza a animação: O grafico será desenhado automaticamete no seu navegador, exibindo o ponto de partida da simulaçõa com uma concentração baixa e uma tensão alta. Conforme a animação progride, a concentração dos íons aumenta e a tensão da pilha diminui, ilustrando a relação inversa entre esses dois parâmetros.\nInterpreta os resultados: Observe como a tensão da pilha de Daniell varia em resposta às mudanças na concentração dos íons. A relação inversa é evidente, e isso pode ser explicado pela equação de Nernst, que relaciona a tensão da pilha com a concentração dos íons envolvidos na reação.\nExplora diferentes cenários: Você pode modificar a equação ou os parâmetros para explorar como diferentes concentrações de íons afetam a tensão da pilha. Por exemplo, você pode ajustar o valor de referência de concentração ou o fator de sensibilidade para ver como isso influencia a curva da animação.\n\n\n\n\n\n\n\n\n\nSugestão:\n\n\n\n\nControlar a concentração dos íons em uma pilha de Daniell, pode ser uma maneira eficaz de ajustar a tensão gerada pela pilha. Um exemplo, aumentando a concentração dos íons de cobre no cátodo ou diminuindo a concentração dos íons de zinco no ânodo, é possível aumentar a tensão da pilha.\nRedefina a equação para incluir outros fatores como a temperatura ou a presença de outros íons na solução, isso pode fornecer uma compreensão mais completa do comportamento da pilha de Daniell.",
     "crumbs": [
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Pilha de Daniell - potencial e íons</span>"
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Influência da Concentração dos Íons na Tensão da Pilha de Daniell</span>"
     ]
   },
   {
     "objectID": "grad/QUI-FISQ-ELETRO-01.html#lógica-de-código",
     "href": "grad/QUI-FISQ-ELETRO-01.html#lógica-de-código",
-    "title": "29  Pilha de Daniell - potencial e íons",
-    "section": "29.5 Lógica de código",
-    "text": "29.5 Lógica de código\n\ndefinição das concentrações e tensões: O código começa definindo dois arrays, um para armazenar as concentrações dos íons e outro para armazenar as tensões correspondentes. Um loop é usado para calcular a tensão da pilha de Daniell para uma série de concentrações, usando a equação simplificada fornecida.\ncriação dos dados para a animação: Os dados iniciais para a animação são criados, começando com a primeira concentração e tensão calculada. A animação é configurada para mostrar tanto as linhas quanto os marcadores.",
+    "title": "33  Influência da Concentração dos Íons na Tensão da Pilha de Daniell",
+    "section": "33.5 Lógica de código",
+    "text": "33.5 Lógica de código\n\ndefinição das concentrações e tensões: O código começa definindo dois arrays, um para armazenar as concentrações dos íons e outro para armazenar as tensões correspondentes. Um loop é usado para calcular a tensão da pilha de Daniell para uma série de concentrações, usando a equação simplificada fornecida.\ncriação dos dados para a animação: Os dados iniciais para a animação são criados, começando com a primeira concentração e tensão calculada. A animação é configurada para mostrar tanto as linhas quanto os marcadores.\n\nEstudante: Curso de Biotecnologia, Universidade Federal de Alfenas (UNIFAL-MG)",
     "crumbs": [
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Pilha de Daniell - potencial e íons</span>"
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Influência da Concentração dos Íons na Tensão da Pilha de Daniell</span>"
     ]
   },
   {
     "objectID": "grad/QUI-FISQ-SOL-01.html",
     "href": "grad/QUI-FISQ-SOL-01.html",
-    "title": "30  Modelo interativo para cálculo de diluição de soluções na química",
+    "title": "34  Modelo interativo para cálculo de diluição de soluções na química",
     "section": "",
     "text": "Estudante: Curso de Bacharelado em Ciência da Computação - Universidade Federal de Alfenas (UNIFAL-MG).",
     "crumbs": [
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Modelo interativo para cálculo de diluição de soluções na química</span>"
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Modelo interativo para cálculo de diluição de soluções na química</span>"
     ]
   },
   {
     "objectID": "grad/QUI-FISQ-SOL-01.html#equação",
     "href": "grad/QUI-FISQ-SOL-01.html#equação",
-    "title": "30  Modelo interativo para cálculo de diluição de soluções na química",
-    "section": "30.1 Equação:",
-    "text": "30.1 Equação:\n\\[\nC \\cdot V = C' \\cdot V'\n\\] ou isolando a concentração final: \\[\nC' = \\frac{C \\cdot V}{V'}\n\\]\nOnde:\n\nC (concentração inicial): concentração da solução antes da diluição (ex: mol/L)\nV (volume inicial): volume da solução antes de adicionar solvente\nC’ (concentração final): concentração após a diluição\nV’ (volume final): volume total após adicionar solvente",
+    "title": "34  Modelo interativo para cálculo de diluição de soluções na química",
+    "section": "34.1 Equação:",
+    "text": "34.1 Equação:\n\\[\nC \\cdot V = C' \\cdot V'\n\\] ou isolando a concentração final: \\[\nC' = \\frac{C \\cdot V}{V'}\n\\]\nOnde:\n\nC (concentração inicial): concentração da solução antes da diluição (ex: mol/L)\nV (volume inicial): volume da solução antes de adicionar solvente\nC’ (concentração final): concentração após a diluição\nV’ (volume final): volume total após adicionar solvente",
     "crumbs": [
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Modelo interativo para cálculo de diluição de soluções na química</span>"
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Modelo interativo para cálculo de diluição de soluções na química</span>"
     ]
   },
   {
     "objectID": "grad/QUI-FISQ-SOL-01.html#download-e-uso",
     "href": "grad/QUI-FISQ-SOL-01.html#download-e-uso",
-    "title": "30  Modelo interativo para cálculo de diluição de soluções na química",
-    "section": "30.2 Download e Uso:",
-    "text": "30.2 Download e Uso:\n\n\n\nO gráfico de barras apresenta a variação da concentração final (C’) em função do volume final (V’) durante um processo de diluição, mantendo fixo o volume inicial (V = 6) e a concentração inicial. Observa-se que, à medida que o volume final aumenta, a concentração diminui, evidenciando a relação inversa descrita pela equação da diluição.O controle deslizante indica o valor do volume inicial utilizado no cálculo.\n\n\n\nApós inserir o código no editor do JSPlotly, clique em add para gerar o gráfico.\nVeja as barras representando a concentração final (C’) para diferentes volumes finais (V’).\nMovimente o slider para alterar o volume inicial (V).\nAnalise as mudanças no gráfico\n\n\n\nas barras se atualizam automaticamente\n\nos valores de concentração mudam\n\num novo cenário é exibido\n\n\n\nRepare que:\n\n\nvolumes maiores geram menores concentrações\n\na relação segue \\(C \\cdot V = C' \\cdot V'\\)",
+    "title": "34  Modelo interativo para cálculo de diluição de soluções na química",
+    "section": "34.2 Download e Uso:",
+    "text": "34.2 Download e Uso:\n\n\n\nO gráfico de barras apresenta a variação da concentração final (C’) em função do volume final (V’) durante um processo de diluição, mantendo fixo o volume inicial (V = 6) e a concentração inicial. Observa-se que, à medida que o volume final aumenta, a concentração diminui, evidenciando a relação inversa descrita pela equação da diluição.O controle deslizante indica o valor do volume inicial utilizado no cálculo.\n\n\n\nApós inserir o código no editor do JSPlotly, clique em add para gerar o gráfico.\nVeja as barras representando a concentração final (C’) para diferentes volumes finais (V’).\nMovimente o slider para alterar o volume inicial (V).\nAnalise as mudanças no gráfico\n\n\n\nas barras se atualizam automaticamente\n\nos valores de concentração mudam\n\num novo cenário é exibido\n\n\n\nRepare que:\n\n\nvolumes maiores geram menores concentrações\n\na relação segue \\(C \\cdot V = C' \\cdot V'\\)",
     "crumbs": [
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Modelo interativo para cálculo de diluição de soluções na química</span>"
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Modelo interativo para cálculo de diluição de soluções na química</span>"
     ]
   },
   {
     "objectID": "grad/QUI-FISQ-SOL-01.html#lógica-de-código",
     "href": "grad/QUI-FISQ-SOL-01.html#lógica-de-código",
-    "title": "30  Modelo interativo para cálculo de diluição de soluções na química",
-    "section": "30.3 Lógica de código",
-    "text": "30.3 Lógica de código\n\nDefinir a concentração inicial (C) e os volumes finais (V’)\nCalcular a concentração final usando:\nArmazenar os valores em listas\nConstruir o gráfico de barras\nCriar frames para diferentes valores de V\nPermitir a interação via slider",
+    "title": "34  Modelo interativo para cálculo de diluição de soluções na química",
+    "section": "34.3 Lógica de código",
+    "text": "34.3 Lógica de código\n\nDefinir a concentração inicial (C) e os volumes finais (V’)\nCalcular a concentração final usando:\nArmazenar os valores em listas\nConstruir o gráfico de barras\nCriar frames para diferentes valores de V\nPermitir a interação via slider",
     "crumbs": [
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Modelo interativo para cálculo de diluição de soluções na química</span>"
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Modelo interativo para cálculo de diluição de soluções na química</span>"
     ]
   },
   {
     "objectID": "grad/QUI-FISQ-SOL-02.html",
     "href": "grad/QUI-FISQ-SOL-02.html",
-    "title": "31  Simulador de Escalas de Concentração Química (mol/L, %, ppm e ppb)",
+    "title": "36  Simulador de Escalas de Concentração Química (mol/L, %, ppm e ppb)",
     "section": "",
     "text": "Estudante: Curso de Bacharelado em Biomedicina - Universidade Federal de Alfenas (UNIFAL-MG).",
     "crumbs": [
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Simulador de Escalas de Concentração Química (mol/L, %, ppm e ppb)</span>"
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>Simulador de Escalas de Concentração Química (mol/L, %, ppm e ppb)</span>"
     ]
   },
   {
     "objectID": "grad/QUI-FISQ-SOL-02.html#equação",
     "href": "grad/QUI-FISQ-SOL-02.html#equação",
-    "title": "31  Simulador de Escalas de Concentração Química (mol/L, %, ppm e ppb)",
-    "section": "31.1 Equação:",
-    "text": "31.1 Equação:\n\\[\nM = \\frac{m}{MM \\cdot V}\n\\]\n\\[\n\\% (m/v) = \\frac{m}{V \\cdot 1000} \\times 100\n\\]\nOnde:\n\n\\(M\\) : Quantidade de matéria (mol) por litro de solução\n\\(m\\) : Quantidade da substância em gramas (g)\n\\(MM\\) : Massa de 1 mol da substância (g/mol)\n\\(V\\) : Quantidade de solução em litros (L)\n\\(\\% (m/v)\\) : Gramas de soluto em 100 mL de solução",
+    "title": "36  Simulador de Escalas de Concentração Química (mol/L, %, ppm e ppb)",
+    "section": "36.1 Equação:",
+    "text": "36.1 Equação:\n\\[\nM = \\frac{m}{MM \\cdot V}\n\\]\n\\[\n\\% (m/v) = \\frac{m}{V \\cdot 1000} \\times 100\n\\]\nOnde:\n\n\\(M\\) : Quantidade de matéria (mol) por litro de solução\n\\(m\\) : Quantidade da substância em gramas (g)\n\\(MM\\) : Massa de 1 mol da substância (g/mol)\n\\(V\\) : Quantidade de solução em litros (L)\n\\(\\% (m/v)\\) : Gramas de soluto em 100 mL de solução",
     "crumbs": [
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Simulador de Escalas de Concentração Química (mol/L, %, ppm e ppb)</span>"
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>Simulador de Escalas de Concentração Química (mol/L, %, ppm e ppb)</span>"
     ]
   },
   {
     "objectID": "grad/QUI-FISQ-SOL-02.html#download-e-uso",
     "href": "grad/QUI-FISQ-SOL-02.html#download-e-uso",
-    "title": "31  Simulador de Escalas de Concentração Química (mol/L, %, ppm e ppb)",
-    "section": "31.2 Download e Uso:",
-    "text": "31.2 Download e Uso:\n\n\nVariação da concentração com a massa em diferentes unidades\n\n\n\n1- Utilize o slider na parte inferior do gráfico para variar a massa do soluto adicionada a solução. Observe como todas as unidades de concentração se alteram simultaneamente.\n2- Compare as curvas apresentadas (mol/L, %, ppm e ppb) para entender como a mesma solução pode ser descrita em diferentes escalas.\n3- Observe o ponto destacado no gráfico, que indica o valor atual selecionado, junto com a anotação que mostra os valores numéricos correspondentes.\n4- Analise as linhas de referencia para relacionar os valores obtidos com situações reais, como limites ambientais ou soluções biológicas.",
+    "title": "36  Simulador de Escalas de Concentração Química (mol/L, %, ppm e ppb)",
+    "section": "36.2 Download e Uso:",
+    "text": "36.2 Download e Uso:\n\n\nVariação da concentração com a massa em diferentes unidades\n\n\n\n1- Utilize o slider na parte inferior do gráfico para variar a massa do soluto adicionada a solução. Observe como todas as unidades de concentração se alteram simultaneamente.\n2- Compare as curvas apresentadas (mol/L, %, ppm e ppb) para entender como a mesma solução pode ser descrita em diferentes escalas.\n3- Observe o ponto destacado no gráfico, que indica o valor atual selecionado, junto com a anotação que mostra os valores numéricos correspondentes.\n4- Analise as linhas de referencia para relacionar os valores obtidos com situações reais, como limites ambientais ou soluções biológicas.",
     "crumbs": [
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Simulador de Escalas de Concentração Química (mol/L, %, ppm e ppb)</span>"
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>Simulador de Escalas de Concentração Química (mol/L, %, ppm e ppb)</span>"
     ]
   },
   {
     "objectID": "grad/QUI-FISQ-SOL-02.html#lógica-de-código",
     "href": "grad/QUI-FISQ-SOL-02.html#lógica-de-código",
-    "title": "31  Simulador de Escalas de Concentração Química (mol/L, %, ppm e ppb)",
-    "section": "31.3 Lógica de código",
-    "text": "31.3 Lógica de código\nO código gera uma faixa de valores de massa e, para cada um, calcula a concentração da solução em diferentes unidades (mol/L, %, ppm e ppb) com base nas relações entre massa, volume e massa molar, organizando esses resultados em curvas para visualização simultânea; em seguida, utiliza frames e um slider para atualizar dinamicamente um ponto no gráfico, permitindo ao usuário observar, de forma interativa, como a concentração varia em múltiplas escalas conforme a massa do soluto é modificada.",
+    "title": "36  Simulador de Escalas de Concentração Química (mol/L, %, ppm e ppb)",
+    "section": "36.3 Lógica de código",
+    "text": "36.3 Lógica de código\nO código gera uma faixa de valores de massa e, para cada um, calcula a concentração da solução em diferentes unidades (mol/L, %, ppm e ppb) com base nas relações entre massa, volume e massa molar, organizando esses resultados em curvas para visualização simultânea; em seguida, utiliza frames e um slider para atualizar dinamicamente um ponto no gráfico, permitindo ao usuário observar, de forma interativa, como a concentração varia em múltiplas escalas conforme a massa do soluto é modificada.",
     "crumbs": [
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Simulador de Escalas de Concentração Química (mol/L, %, ppm e ppb)</span>"
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>Simulador de Escalas de Concentração Química (mol/L, %, ppm e ppb)</span>"
     ]
   },
   {
@@ -1222,121 +1222,311 @@
   {
     "objectID": "grad/BIO-ECO-CICL-01.html",
     "href": "grad/BIO-ECO-CICL-01.html",
-    "title": "33  Ciclo Ecológico Interativo",
+    "title": "37  Ciclo Ecológico Interativo",
     "section": "",
     "text": "Estudante: Curso de Bacharelado em Ciências Biológicas - Universidade Federal de Alfenas (UNIFAL-MG).",
     "crumbs": [
-      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Ciclo Ecológico Interativo</span>"
+      "<span class='chapter-number'>37</span>  <span class='chapter-title'>Ciclo Ecológico Interativo</span>"
     ]
   },
   {
     "objectID": "grad/BIO-ECO-CICL-01.html#equação",
     "href": "grad/BIO-ECO-CICL-01.html#equação",
-    "title": "33  Ciclo Ecológico Interativo",
-    "section": "33.1 Equação:",
-    "text": "33.1 Equação:\n\\[\nP_{t+1}=P_t+F-C-R+D\n\\]\n\\[\nH_{t+1}=H_t+G_H-P_R-R_H\n\\]\n\\[\nC_{t+1}=C_t+G_C-R_C\n\\]\nOnde:\nP = população de plantas\nH = população de herbívoros\nC = população de carnívoros\nF = taxa de fotossíntese\nR = perdas por respiração\nD = contribuição da decomposição para a reciclagem de nutrientes\nGₕ = crescimento dos herbívoros\nPᵣ = predação pelos carnívoros\nG𝒸 = crescimento dos carnívoros",
+    "title": "37  Ciclo Ecológico Interativo",
+    "section": "37.1 Equação:",
+    "text": "37.1 Equação:\n\\[\nP_{t+1}=P_t+F-C-R+D\n\\]\n\\[\nH_{t+1}=H_t+G_H-P_R-R_H\n\\]\n\\[\nC_{t+1}=C_t+G_C-R_C\n\\]\nOnde:\nP = população de plantas\nH = população de herbívoros\nC = população de carnívoros\nF = taxa de fotossíntese\nR = perdas por respiração\nD = contribuição da decomposição para a reciclagem de nutrientes\nGₕ = crescimento dos herbívoros\nPᵣ = predação pelos carnívoros\nG𝒸 = crescimento dos carnívoros",
     "crumbs": [
-      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Ciclo Ecológico Interativo</span>"
+      "<span class='chapter-number'>37</span>  <span class='chapter-title'>Ciclo Ecológico Interativo</span>"
     ]
   },
   {
     "objectID": "grad/BIO-ECO-CICL-01.html#download-e-uso",
     "href": "grad/BIO-ECO-CICL-01.html#download-e-uso",
-    "title": "33  Ciclo Ecológico Interativo",
-    "section": "33.2 Download e Uso:",
-    "text": "33.2 Download e Uso:\n\n\nObs: a imagem deve conter apenas a área gráfica do objeto desenvolvido no JSPlotly.\n\nClique em “add” para carregar o objeto interativo.\nAjuste as taxas de fotossíntese, respiração e decomposição utilizando os controles deslizantes.\nClique em “Simular Ecossistema”.\nObserve a evolução das populações de plantas, herbívoros e carnívoros no gráfico.\nAnalise o resultado final indicado pelo sistema: equilíbrio ecológico, explosão populacional ou colapso ecológico.",
+    "title": "37  Ciclo Ecológico Interativo",
+    "section": "37.2 Download e Uso:",
+    "text": "37.2 Download e Uso:\n\n\nObs: a imagem deve conter apenas a área gráfica do objeto desenvolvido no JSPlotly.\n\nClique em “add” para carregar o objeto interativo.\nAjuste as taxas de fotossíntese, respiração e decomposição utilizando os controles deslizantes.\nClique em “Simular Ecossistema”.\nObserve a evolução das populações de plantas, herbívoros e carnívoros no gráfico.\nAnalise o resultado final indicado pelo sistema: equilíbrio ecológico, explosão populacional ou colapso ecológico.",
     "crumbs": [
-      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Ciclo Ecológico Interativo</span>"
+      "<span class='chapter-number'>37</span>  <span class='chapter-title'>Ciclo Ecológico Interativo</span>"
     ]
   },
   {
     "objectID": "grad/BIO-ECO-CICL-01.html#lógica-de-código",
     "href": "grad/BIO-ECO-CICL-01.html#lógica-de-código",
-    "title": "33  Ciclo Ecológico Interativo",
-    "section": "33.3 Lógica de código",
-    "text": "33.3 Lógica de código\nO código implementa um modelo ecológico dinâmico baseado na interação entre plantas, herbívoros e carnívoros. Inicialmente, são definidos valores para as populações e criados controles deslizantes que permitem ao usuário modificar as taxas de fotossíntese, respiração e decomposição, representando processos ecológicos fundamentais.\nDurante a simulação, a população de plantas aumenta de acordo com a taxa de fotossíntese e diminui em função do consumo pelos herbívoros e das perdas por respiração. Os herbívoros crescem conforme a disponibilidade de alimento, mas sofrem redução pela respiração e pela ação dos carnívoros. Os carnívoros aumentam em função da disponibilidade de presas e diminuem devido às perdas naturais.\nA cada etapa da simulação, as populações são recalculadas e armazenadas para construir um gráfico de linhas que representa sua evolução temporal. Ao final do processo, o sistema analisa automaticamente os valores finais das populações e classifica o ecossistema em uma das três situações possíveis: equilíbrio ecológico, explosão populacional ou colapso ecológico, permitindo ao usuário compreender as consequências das alterações realizadas nos processos ecológicos.",
+    "title": "37  Ciclo Ecológico Interativo",
+    "section": "37.3 Lógica de código",
+    "text": "37.3 Lógica de código\nO código implementa um modelo ecológico dinâmico baseado na interação entre plantas, herbívoros e carnívoros. Inicialmente, são definidos valores para as populações e criados controles deslizantes que permitem ao usuário modificar as taxas de fotossíntese, respiração e decomposição, representando processos ecológicos fundamentais.\nDurante a simulação, a população de plantas aumenta de acordo com a taxa de fotossíntese e diminui em função do consumo pelos herbívoros e das perdas por respiração. Os herbívoros crescem conforme a disponibilidade de alimento, mas sofrem redução pela respiração e pela ação dos carnívoros. Os carnívoros aumentam em função da disponibilidade de presas e diminuem devido às perdas naturais.\nA cada etapa da simulação, as populações são recalculadas e armazenadas para construir um gráfico de linhas que representa sua evolução temporal. Ao final do processo, o sistema analisa automaticamente os valores finais das populações e classifica o ecossistema em uma das três situações possíveis: equilíbrio ecológico, explosão populacional ou colapso ecológico, permitindo ao usuário compreender as consequências das alterações realizadas nos processos ecológicos.",
     "crumbs": [
-      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Ciclo Ecológico Interativo</span>"
+      "<span class='chapter-number'>37</span>  <span class='chapter-title'>Ciclo Ecológico Interativo</span>"
     ]
   },
   {
     "objectID": "grad/BIO-POP-01.html",
     "href": "grad/BIO-POP-01.html",
-    "title": "34  Simulador de Equilíbrio Presa-Predador",
+    "title": "38  Simulador de Equilíbrio Presa-Predador",
     "section": "",
     "text": "Estudante: Curso de Bacharelado em Ciências Biológicas - Universidade Federal de Alfenas (UNIFAL-MG).",
     "crumbs": [
-      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Simulador de Equilíbrio Presa-Predador</span>"
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>Simulador de Equilíbrio Presa-Predador</span>"
     ]
   },
   {
     "objectID": "grad/BIO-POP-01.html#equações",
     "href": "grad/BIO-POP-01.html#equações",
-    "title": "34  Simulador de Equilíbrio Presa-Predador",
-    "section": "34.1 Equações",
-    "text": "34.1 Equações\nO modelo utiliza relações simplificadas de crescimento populacional e interação entre os níveis tróficos.\nCrescimento das plantas:\n\\[\nP_{t+1}=P_t+rP_t\\left(1-\\frac{P_t}{K}\\right)-aPH\n\\]\nCrescimento dos herbívoros:\n\\[\nH_{t+1}=H_t+b(aPH)-cHC-dH\n\\]\nCrescimento dos carnívoros:\n\\[\nC_{t+1}=C_t+e(cHC)-fC\n\\]\nOnde:\n\nP = população de plantas;\nH = população de herbívoros;\nC = população de carnívoros;\nr = taxa de crescimento das plantas;\nK = capacidade de suporte do ambiente;\na = taxa de consumo das plantas pelos herbívoros;\nb = eficiência de conversão em herbívoros;\nc = taxa de predação;\nd = mortalidade dos herbívoros;\ne = eficiência de conversão em carnívoros;\nf = mortalidade dos carnívoros.",
+    "title": "38  Simulador de Equilíbrio Presa-Predador",
+    "section": "38.1 Equações",
+    "text": "38.1 Equações\nO modelo utiliza relações simplificadas de crescimento populacional e interação entre os níveis tróficos.\nCrescimento das plantas:\n\\[\nP_{t+1}=P_t+rP_t\\left(1-\\frac{P_t}{K}\\right)-aPH\n\\]\nCrescimento dos herbívoros:\n\\[\nH_{t+1}=H_t+b(aPH)-cHC-dH\n\\]\nCrescimento dos carnívoros:\n\\[\nC_{t+1}=C_t+e(cHC)-fC\n\\]\nOnde:\n\nP = população de plantas;\nH = população de herbívoros;\nC = população de carnívoros;\nr = taxa de crescimento das plantas;\nK = capacidade de suporte do ambiente;\na = taxa de consumo das plantas pelos herbívoros;\nb = eficiência de conversão em herbívoros;\nc = taxa de predação;\nd = mortalidade dos herbívoros;\ne = eficiência de conversão em carnívoros;\nf = mortalidade dos carnívoros.",
     "crumbs": [
-      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Simulador de Equilíbrio Presa-Predador</span>"
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>Simulador de Equilíbrio Presa-Predador</span>"
     ]
   },
   {
     "objectID": "grad/BIO-POP-01.html#download-e-uso",
     "href": "grad/BIO-POP-01.html#download-e-uso",
-    "title": "34  Simulador de Equilíbrio Presa-Predador",
-    "section": "34.2 Download e Uso",
-    "text": "34.2 Download e Uso\n\n\n\nFigura 1 – Simulador de equilíbrio presa-predador.\n\n\n\n\nObs: a imagem deve conter apenas a área gráfica do objeto no JSPlotly.\n\nClique em “Add” para carregar o objeto interativo.\nSelecione uma das pré-condições disponíveis.\nClique em “Simular”.\nObserve o gráfico da evolução das populações ao longo do tempo.\nCompare as quantidades finais de plantas, herbívoros e carnívoros apresentadas pelo simulador.",
+    "title": "38  Simulador de Equilíbrio Presa-Predador",
+    "section": "38.2 Download e Uso",
+    "text": "38.2 Download e Uso\n\n\n\nFigura 1 – Simulador de equilíbrio presa-predador.\n\n\n\n\nObs: a imagem deve conter apenas a área gráfica do objeto no JSPlotly.\n\nClique em “Add” para carregar o objeto interativo.\nSelecione uma das pré-condições disponíveis.\nClique em “Simular”.\nObserve o gráfico da evolução das populações ao longo do tempo.\nCompare as quantidades finais de plantas, herbívoros e carnívoros apresentadas pelo simulador.",
     "crumbs": [
-      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Simulador de Equilíbrio Presa-Predador</span>"
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>Simulador de Equilíbrio Presa-Predador</span>"
     ]
   },
   {
     "objectID": "grad/BIO-POP-01.html#lógica-de-código",
     "href": "grad/BIO-POP-01.html#lógica-de-código",
-    "title": "34  Simulador de Equilíbrio Presa-Predador",
-    "section": "34.3 Lógica de código",
-    "text": "34.3 Lógica de código\nO código cria uma interface interativa composta por um seletor de pré-condições ecológicas, um botão para iniciar a simulação e um gráfico dinâmico produzido com a biblioteca Plotly. Cada cenário define valores iniciais diferentes para as populações de plantas, herbívoros e carnívoros, representando diferentes condições do ecossistema.\nApós a seleção do cenário e o acionamento do botão “Simular”, o algoritmo executa uma simulação temporal na qual as populações são atualizadas iterativamente. Durante cada passo, as plantas crescem segundo um modelo logístico limitado pela capacidade de suporte do ambiente e sofrem redução devido ao consumo pelos herbívoros. A população de herbívoros aumenta em função da disponibilidade de alimento, diminui pela ação dos carnívoros e também pela mortalidade natural. Os carnívoros aumentam conforme a disponibilidade de presas e reduzem sua população devido à mortalidade.\nAo final da simulação, os valores calculados são armazenados em vetores e utilizados para construir um gráfico contendo três curvas, correspondentes às populações de plantas, herbívoros e carnívoros ao longo do tempo. O objeto também apresenta as quantidades finais de cada população, permitindo comparar os efeitos das diferentes pré-condições sobre o equilíbrio ecológico.",
+    "title": "38  Simulador de Equilíbrio Presa-Predador",
+    "section": "38.3 Lógica de código",
+    "text": "38.3 Lógica de código\nO código cria uma interface interativa composta por um seletor de pré-condições ecológicas, um botão para iniciar a simulação e um gráfico dinâmico produzido com a biblioteca Plotly. Cada cenário define valores iniciais diferentes para as populações de plantas, herbívoros e carnívoros, representando diferentes condições do ecossistema.\nApós a seleção do cenário e o acionamento do botão “Simular”, o algoritmo executa uma simulação temporal na qual as populações são atualizadas iterativamente. Durante cada passo, as plantas crescem segundo um modelo logístico limitado pela capacidade de suporte do ambiente e sofrem redução devido ao consumo pelos herbívoros. A população de herbívoros aumenta em função da disponibilidade de alimento, diminui pela ação dos carnívoros e também pela mortalidade natural. Os carnívoros aumentam conforme a disponibilidade de presas e reduzem sua população devido à mortalidade.\nAo final da simulação, os valores calculados são armazenados em vetores e utilizados para construir um gráfico contendo três curvas, correspondentes às populações de plantas, herbívoros e carnívoros ao longo do tempo. O objeto também apresenta as quantidades finais de cada população, permitindo comparar os efeitos das diferentes pré-condições sobre o equilíbrio ecológico.",
     "crumbs": [
-      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Simulador de Equilíbrio Presa-Predador</span>"
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>Simulador de Equilíbrio Presa-Predador</span>"
     ]
   },
   {
     "objectID": "grad/QUI-BIMOOL-ESTRUT-01.html",
     "href": "grad/QUI-BIMOOL-ESTRUT-01.html",
-    "title": "35  Estrutura de Proteínas",
+    "title": "40  Estrutura de Proteínas",
     "section": "",
     "text": "Estudante: Curso de Bacharelado em Ciências Biológicas - Universidade Federal de Alfenas (UNIFAL-MG).",
     "crumbs": [
-      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Estrutura de Proteínas</span>"
+      "<span class='chapter-number'>40</span>  <span class='chapter-title'>Estrutura de Proteínas</span>"
     ]
   },
   {
     "objectID": "grad/QUI-BIMOOL-ESTRUT-01.html#equação",
     "href": "grad/QUI-BIMOOL-ESTRUT-01.html#equação",
-    "title": "35  Estrutura de Proteínas",
-    "section": "35.1 Equação:",
-    "text": "35.1 Equação:\n\\[\nN = n_{AA}\n\\]\nOnde:\nN = tamanho da proteína\nn₍AA₎ = número de aminoácidos da cadeia polipeptídica",
+    "title": "40  Estrutura de Proteínas",
+    "section": "40.1 Equação:",
+    "text": "40.1 Equação:\n\\[\nN = n_{AA}\n\\]\nOnde:\nN = tamanho da proteína\nn₍AA₎ = número de aminoácidos da cadeia polipeptídica",
     "crumbs": [
-      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Estrutura de Proteínas</span>"
+      "<span class='chapter-number'>40</span>  <span class='chapter-title'>Estrutura de Proteínas</span>"
     ]
   },
   {
     "objectID": "grad/QUI-BIMOOL-ESTRUT-01.html#download-e-uso",
     "href": "grad/QUI-BIMOOL-ESTRUT-01.html#download-e-uso",
-    "title": "35  Estrutura de Proteínas",
-    "section": "35.2 Download e Uso:",
-    "text": "35.2 Download e Uso:\n\n\nObs: a imagem deve conter apenas a área gráfica do objeto desenvolvido no JSPlotly.\n\nClique em “add” para carregar o objeto interativo.\nSelecione a estrutura secundária desejada (α-hélice, folha β ou mista).\nAjuste o número de aminoácidos utilizando o controle deslizante.\nClique em “Montar proteína”.\nObserve a estrutura tridimensional gerada e compare as diferenças entre os modelos.",
+    "title": "40  Estrutura de Proteínas",
+    "section": "40.2 Download e Uso:",
+    "text": "40.2 Download e Uso:\n\n\nObs: a imagem deve conter apenas a área gráfica do objeto desenvolvido no JSPlotly.\n\nClique em “add” para carregar o objeto interativo.\nSelecione a estrutura secundária desejada (α-hélice, folha β ou mista).\nAjuste o número de aminoácidos utilizando o controle deslizante.\nClique em “Montar proteína”.\nObserve a estrutura tridimensional gerada e compare as diferenças entre os modelos.",
     "crumbs": [
-      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Estrutura de Proteínas</span>"
+      "<span class='chapter-number'>40</span>  <span class='chapter-title'>Estrutura de Proteínas</span>"
     ]
   },
   {
     "objectID": "grad/QUI-BIMOOL-ESTRUT-01.html#lógica-de-código",
     "href": "grad/QUI-BIMOOL-ESTRUT-01.html#lógica-de-código",
-    "title": "35  Estrutura de Proteínas",
-    "section": "35.3 Lógica de código",
-    "text": "35.3 Lógica de código\nO código cria uma interface interativa composta por um seletor de estruturas secundárias, um controle deslizante para definir o número de aminoácidos e um gráfico tridimensional desenvolvido com a biblioteca Plotly.\nAo executar a simulação, o programa gera as coordenadas espaciais dos aminoácidos de acordo com a estrutura selecionada. Para α-hélices são utilizadas funções trigonométricas que produzem uma espiral tridimensional. Para folhas β, os aminoácidos são distribuídos em um padrão alternado, representando a organização típica dessa estrutura. Na opção mista, parte da cadeia é organizada como α-hélice e a outra parte como folha β.\nAs coordenadas calculadas são utilizadas para construir uma representação tridimensional simplificada da proteína. Os aminoácidos são exibidos como marcadores e as ligações peptídicas são representadas por linhas, permitindo ao usuário visualizar a organização espacial da cadeia polipeptídica.",
+    "title": "40  Estrutura de Proteínas",
+    "section": "40.3 Lógica de código",
+    "text": "40.3 Lógica de código\nO código cria uma interface interativa composta por um seletor de estruturas secundárias, um controle deslizante para definir o número de aminoácidos e um gráfico tridimensional desenvolvido com a biblioteca Plotly.\nAo executar a simulação, o programa gera as coordenadas espaciais dos aminoácidos de acordo com a estrutura selecionada. Para α-hélices são utilizadas funções trigonométricas que produzem uma espiral tridimensional. Para folhas β, os aminoácidos são distribuídos em um padrão alternado, representando a organização típica dessa estrutura. Na opção mista, parte da cadeia é organizada como α-hélice e a outra parte como folha β.\nAs coordenadas calculadas são utilizadas para construir uma representação tridimensional simplificada da proteína. Os aminoácidos são exibidos como marcadores e as ligações peptídicas são representadas por linhas, permitindo ao usuário visualizar a organização espacial da cadeia polipeptídica.",
     "crumbs": [
-      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Estrutura de Proteínas</span>"
+      "<span class='chapter-number'>40</span>  <span class='chapter-title'>Estrutura de Proteínas</span>"
+    ]
+  },
+  {
+    "objectID": "FIS-MOD-RELAT-01.html",
+    "href": "FIS-MOD-RELAT-01.html",
+    "title": "7  Bússola Interativa",
+    "section": "",
+    "text": "7.1 Download e Uso:\nUma orientação especial e importante para a navegação e localizaçao geográfica, como mapas e bússolas. Latitude e longitude ajudam na identificação de posições e direções na superfície a terra, tendo o magnetismo uma influencia direta no funcionamento da bússola. No objeto interativo o usuário observa um mapa com coordenadas geográficas, um ponto de localizaçao e uma agulha de uma bússola no ponto central.\nA figura mostra um bússola no centro do mapa e uma imagem azul girando ao seu redor,a agulha da bússola aponta para o ima por causa do ima magnetico.\nEstudante: Escola Estadual Doutor Emílio Silveira, Alfenas-MG.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Bússola Interativa</span>"
+    ]
+  },
+  {
+    "objectID": "FIS-MOD-RELAT-01.html#download-e-uso",
+    "href": "FIS-MOD-RELAT-01.html#download-e-uso",
+    "title": "7  Bússola Interativa",
+    "section": "7.2 Lógica de código",
+    "text": "bserve como a agulha da bússola muda de direção quando o ima azul gira ao redor do mapa.\nCompare a posição do ponto vermelho com as coordenadas de latitude e longitude.\nUse o slider para controlar a rotação do ima em diferentes ângulos.\nIdentifique as direções norte, sul, leste e oeste usando a bússola.\n\n\n\n\n\n\n\nSugestão:\n\n\n\n\nMude os valores de diferentes formas, para ver se a qualidade está comprometida, ou de acordo com o Ideal.\nTroque a posição do gráfico ondulatório de acordo com os resultados, tentando aproximá-lo da linha azul.\n\n\n7.2 Lógica de código\n\nO mapa usa coordenadas x e y.\nA bússola fica no centro do mapa.\nO imã azul gira em 360 graus.\nA agulha aponta para o ima magnetico.\nO ponto vermelho mostra uma localização.\nOs controles permitem interagir com a simulação.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Bússola Interativa</span>"
+    ]
+  },
+  {
+    "objectID": "FIS-MOD-RELAT-01.html#lógica-de-código",
+    "href": "FIS-MOD-RELAT-01.html#lógica-de-código",
+    "title": "7  Bússola Interativa",
+    "section": "",
+    "text": "O mapa usa coordenadas x e y.\nA bússola fica no centro do mapa.\nO imã azul gira em 360 graus.\nA agulha aponta para o ima magnetico.\nO ponto vermelho mostra uma localização.\nOs controles permitem interagir com a simulação.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Bússola Interativa</span>"
+    ]
+  },
+  {
+    "objectID": "QUI-ANA-IDENT-01.html",
+    "href": "QUI-ANA-IDENT-01.html",
+    "title": "12  Eletrólise da água",
+    "section": "",
+    "text": "A eletrólise da água é um processo químico no qual a energia elétrica é utilizada para decompor moléculas de água em hidrogênio e oxigênio. Esse processo é importante para a produção de hidrogênio um combustível limpo. Neste objeto é possível variar parâmetros como voltagem, corrente ou tempo da eletrólise, acompanhando em tempo “real” as formações de gases.\nEstudante: Escola Estadual Doutor Emílio Silveira, Alfenas-MG.",
+    "crumbs": [
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Eletrólise da água</span>"
+    ]
+  },
+  {
+    "objectID": "QUI-ANA-IDENT-01.html#download-e-uso",
+    "href": "QUI-ANA-IDENT-01.html#download-e-uso",
+    "title": "12  Eletrólise da água",
+    "section": "12.1 Download e Uso:",
+    "text": "12.1 Download e Uso:\n\n\n\nEletrólise\n\n\n1. Execute o código no JSPlotly utilizando o botão add.\n2. Observe a representação do recipiente contendo água e os eletrodos responsáveis pela eletrólise.\n3. Selecione uma das opções de voltagem disponíveis para definir a energia elétrica aplicada ao sistema.\n4. Clique no botão Aplicar Energia para iniciar a simulação.\n5. Observe a formação e a movimentação das bolhas de hidrogênio (H2) e oxigênio (O2) durante o processo.\n6. Acompanhe os valores exibidos na tela para voltagem, corrente elétrica, potência, energia consumida e volumes produzidos de H2 e O2.\n7. Compare os resultados obtidos para diferentes valores de voltagem e verifique como a produção dos gases varia com a energia fornecida ao sistema.\n8. Repita a simulação utilizando diferentes configurações para analisar a relação entre energia elétrica e velocidade da eletrólise da água.",
+    "crumbs": [
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Eletrólise da água</span>"
+    ]
+  },
+  {
+    "objectID": "QUI-ANA-IDENT-01.html#lógica-de-código",
+    "href": "QUI-ANA-IDENT-01.html#lógica-de-código",
+    "title": "12  Eletrólise da água",
+    "section": "12.2 Lógica de código",
+    "text": "12.2 Lógica de código\n\nO usuário escolhe a voltagem aplicada ao sistema.\nO código calcula a corrente elétrica e a produção de hidrogênio (H2) e oxigênio (O2).\nA animação mostra a formação dos gases por meio de bolhas nos eletrodos.\nOs valores de energia, potência e volume dos gases são atualizados durante a simulação.",
+    "crumbs": [
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Eletrólise da água</span>"
+    ]
+  },
+  {
+    "objectID": "QUI-FIS-SOL-01.html",
+    "href": "QUI-FIS-SOL-01.html",
+    "title": "9  Quiz Interativo: Leis Ponderais",
+    "section": "",
+    "text": "9.1 Download e Uso:\nEsta folha apresenta um objeto interativo projetado para o estudo das Leis Ponderais da Química, abordando os princípios de conservação da massa e proporções constantes. A proposta do objeto é fornecer uma plataforma de verificação de conhecimento onde o usuário analisa diferentes afirmações científicas e avalia sua veracidade de forma imediata.\nO objeto interativo utiliza a biblioteca Plotly estruturada com um menu de seleção do tipo dropdown. Ao escolher uma das afirmações listadas no menu, a interface gráfica atualiza o texto central nativamente, exibindo o enunciado selecionado e o seu respectivo gabarito comentado, identificando se a afirmação é verdadeira ou falsa e a lei associada.\nInstruções de uso do objeto interativo:\nEstudante: Escola Estadual Professora Maria Olimpia de Oliveira",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Quiz Interativo: Leis Ponderais</span>"
+    ]
+  },
+  {
+    "objectID": "QUI-FIS-SOL-01.html#download-e-uso",
+    "href": "QUI-FIS-SOL-01.html#download-e-uso",
+    "title": "9  Quiz Interativo: Leis Ponderais",
+    "section": "9.2 Lógica de código",
+    "text": "Clique no botão de seleção localizado na parte superior do gráfico.\nNavegue pela lista de afirmações disponíveis sobre as Leis Ponderais.\nSelecione a afirmação que deseja analisar.\nObserve a atualização automática no painel central para conferir a resposta correta e a justificativa teórica.\n\n\n\n\n\n\n\nSugestão:\n\n\n\n\nSelecione sequencialmente as afirmações 1, 2 e 3 para comparar como a Lei de Lavoisier (Conservação da Massa) é expressa em diferentes enunciados.\nAnalise as afirmações 4 e 5 para diferenciar uma proporção constante de uma proporção variável em compostos químicos.\nUtilize o gabarito exibido na tela para revisar os conceitos teóricos das leis de Lavoisier, Proust e Dalton diretamente no painel.\n\n\n9.2 Lógica de código\nEste objeto interativo serve como um instrumento pedagógico digital e dinâmico para fixação de conceitos químicos, permitindo o autoestudo das Leis Ponderais sem a necessidade de mediação constante ou de correção manual externa.\nA lógica no qual o código foi criado baseia-se no princípio de renderização reativa estática dentro do ecossistema JSPlotly. Como o ambiente de execução delimita e restringe o processamento de scripts pós-renderização (impedindo o uso de funções JavaScript tradicionais de clique ou contadores vivos), a arquitetura do código foi projetada para embutir toda a base de dados diretamente nas propriedades nativas do gráfico. Um array de objetos armazena previamente os rótulos do menu (labels), os enunciados correspondentes e os respectivos gabaritos. O código utiliza uma função de mapeamento (map) para converter essa estrutura em um menu dropdown nativo do Plotly. A reatividade do objeto ocorre por meio do método update interno da biblioteca, que intercepta a escolha do usuário no dropdown e reconfigura instantaneamente o vetor de texto (scatter mode text) exibido no centro da tela, alterando o conteúdo visual sem recarregar a página e garantindo a estabilidade da aplicação na planilha.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Quiz Interativo: Leis Ponderais</span>"
+    ]
+  },
+  {
+    "objectID": "QUI-FIS-SOL-01.html#lógica-de-código",
+    "href": "QUI-FIS-SOL-01.html#lógica-de-código",
+    "title": "9  Quiz Interativo: Leis Ponderais",
+    "section": "",
+    "text": "Este objeto interativo serve como um instrumento pedagógico digital e dinâmico para fixação de conceitos químicos, permitindo o autoestudo das Leis Ponderais sem a necessidade de mediação constante ou de correção manual externa.\nA lógica no qual o código foi criado baseia-se no princípio de renderização reativa estática dentro do ecossistema JSPlotly. Como o ambiente de execução delimita e restringe o processamento de scripts pós-renderização (impedindo o uso de funções JavaScript tradicionais de clique ou contadores vivos), a arquitetura do código foi projetada para embutir toda a base de dados diretamente nas propriedades nativas do gráfico. Um array de objetos armazena previamente os rótulos do menu (labels), os enunciados correspondentes e os respectivos gabaritos. O código utiliza uma função de mapeamento (map) para converter essa estrutura em um menu dropdown nativo do Plotly. A reatividade do objeto ocorre por meio do método update interno da biblioteca, que intercepta a escolha do usuário no dropdown e reconfigura instantaneamente o vetor de texto (scatter mode text) exibido no centro da tela, alterando o conteúdo visual sem recarregar a página e garantindo a estabilidade da aplicação na planilha.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Quiz Interativo: Leis Ponderais</span>"
+    ]
+  },
+  {
+    "objectID": "BIO-MET-GER-02.html",
+    "href": "BIO-MET-GER-02.html",
+    "title": "14  Simulador do Experimento de Miller-Urey",
+    "section": "",
+    "text": "14.1 Download e Uso:\nO Experimento de Miller-Urey foi desenvolvido para investigar a possibilidade de formacao espontanea de moleculas organicas em condicoes semelhantes as da Terra primitiva. O sistema original utilizava uma mistura de gases, agua aquecida e descargas eletricas para simular processos atmosfericos e ambientais que poderiam ter contribuido para a origem da vida.\nEste objeto interativo apresenta uma versao didatica do experimento, permitindo explorar diferentes cenarios de temperatura, pressao e energia aplicada ao sistema. O simulador exibe a evolucao do rendimento de compostos organicos ao longo do tempo, alem de estimar o pH final e a composicao relativa dos principais gases presentes na camara experimental.",
+    "crumbs": [
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Simulador do Experimento de Miller-Urey</span>"
+    ]
+  },
+  {
+    "objectID": "BIO-MET-GER-02.html#download-e-uso",
+    "href": "BIO-MET-GER-02.html#download-e-uso",
+    "title": "14  Simulador do Experimento de Miller-Urey",
+    "section": "14.2 Lógica de código",
+    "text": "Clique no menu suspenso localizado na parte superior do grafico.\nEscolha um dos cenarios experimentais disponiveis.\nObserve a curva de rendimento organico em funcao do tempo.\nAnalise o valor estimado de pH final apresentado no painel superior.\nCompare a composicao dos gases exibida no grafico de setores.\nAlterne entre os diferentes cenarios para comparar os resultados produzidos.\n\n\n\n\n\n\n\nSugestão:\n\n\n\n\nCompare os resultados entre os cenarios Baixa Energia e Alta Energia.\nVerifique como a Temperatura Extrema afeta o rendimento final em relacao ao Miller Classico.\nCompare os valores de composicao gasosa entre os diferentes cenarios.\nAnalise quais configuracoes produzem maiores rendimentos organicos apos 30 dias.\n\n\n14.2 Lógica de código\n\nCada cenario experimental possui um conjunto de parametros predefinidos.\nO rendimento organico e calculado por uma funcao de crescimento gradual ao longo do tempo.\nO rendimento final influencia a estimativa do pH do sistema.\nA composicao gasosa e ajustada de acordo com a intensidade relativa de cada cenario.\nO menu dropdown atualiza simultaneamente a curva temporal, os indicadores e o grafico de gases.\n\n\n\n\n\nAutor:\nEstudante: Escola Estadual Professora Maria Olimpia de Oliveira",
+    "crumbs": [
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Simulador do Experimento de Miller-Urey</span>"
+    ]
+  },
+  {
+    "objectID": "BIO-MET-GER-02.html#lógica-de-código",
+    "href": "BIO-MET-GER-02.html#lógica-de-código",
+    "title": "14  Simulador do Experimento de Miller-Urey",
+    "section": "",
+    "text": "Cada cenario experimental possui um conjunto de parametros predefinidos.\nO rendimento organico e calculado por uma funcao de crescimento gradual ao longo do tempo.\nO rendimento final influencia a estimativa do pH do sistema.\nA composicao gasosa e ajustada de acordo com a intensidade relativa de cada cenario.\nO menu dropdown atualiza simultaneamente a curva temporal, os indicadores e o grafico de gases.",
+    "crumbs": [
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Simulador do Experimento de Miller-Urey</span>"
+    ]
+  },
+  {
+    "objectID": "grad/BIO-EVO-SINT-01.html",
+    "href": "grad/BIO-EVO-SINT-01.html",
+    "title": "39  Equação de Drake da exobiologia",
+    "section": "",
+    "text": "39.1 Equação:\nA Equação de Drake foi inventada em 1961 por um astrônomo Frank Drake com um objetivo de ter uma estimativa de quantas civilizações extraterrestres poderiam existir. Equação de Drake é uma ferramenta teorica que estima o numero de civilizações extraterrestres avançadas na via Lactia com fatores relacionados a formação de estrelas, planetas habitaveis e desenvolvimento de uma vida inteligente. Ela Reune diferentes fatores que colaboram para o surgimento de civilização capaz de se comunicar pelo espaço. A forma mais conhecida da equação é: \\[\nN = R^* \\cdot f_p \\cdot n_e \\cdot f_l \\cdot f_i \\cdot f_c \\cdot L\\\n\\] que cada variavel representa uma etapa necessária para o surgimento de uma possivel de uma civilização fora da terra.\nEssa quação não oferece um numero exato, mas ajuda os cientistas e pesquisadores a entenderem quais são os fatores necessarios para a existencia de uma vida fora da terra. E essas pequenas alterações nas variaveis da equçaõ podem aumentar ou reduzir o numero final de vida extraterrestre, mostrando como o tema envolve muitas incertezas cientificas. Alem disso, a equação de Drake estimula pesquisas sobre exoplanetas, evolução biológica e comunicação interestelar, sendo frequentemente utilizada em estudos sobre a busca por vida extraterrestre e em projetos científicos como o SETI.\n\\[\nN = R^* \\cdot f_p \\cdot n_e \\cdot f_l \\cdot f_i \\cdot f_c \\cdot L\\\n\\]\nOnde:",
+    "crumbs": [
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>Equação de Drake da exobiologia</span>"
+    ]
+  },
+  {
+    "objectID": "grad/BIO-EVO-SINT-01.html#equação",
+    "href": "grad/BIO-EVO-SINT-01.html#equação",
+    "title": "39  Equação de Drake da exobiologia",
+    "section": "",
+    "text": "\\[\\begin{aligned}\nN   & = \\text{número de civilizações detectáveis} \\\\\nR^* & = \\text{taxa de formação de estrelas} \\\\\nf_p & = \\text{fração de estrelas com planetas} \\\\\nn_e & = \\text{número de planetas habitáveis por sistema} \\\\\nf_l & = \\text{fração dos planetas onde surge vida} \\\\\nf_i & = \\text{fração onde surge vida inteligente} \\\\\nf_c & = \\text{fração com tecnologia detectável} \\\\\nL   & = \\text{tempo de emissão de sinais detectáveis}\n\\end{aligned}\\]\n\n\n\n\nO grafico mostra a variação do número de civilizações detectáveis com diferentes parâmetros.\n\n\n\n\n\n\n\n\nComo usar\n\n\n\n\nO grafico gerado, mostra como a alteração dos parâmetros influencia o número final de civilizações detectáveis ((N)).\nUtilize variáveis da equação, como:\n\n\\[\\begin{aligned}\nN   & = \\text{número de civilizações detectáveis} \\\\\nR^* & = \\text{taxa de formação de estrelas} \\\\\nf_p & = \\text{fração de estrelas com planetas} \\\\\nn_e & = \\text{número de planetas habitáveis por sistema} \\\\\nf_l & = \\text{fração dos planetas onde surge vida} \\\\\nf_i & = \\text{fração onde surge vida inteligente} \\\\\nf_c & = \\text{fração com tecnologia detectável} \\\\\nL   & = \\text{tempo de emissão de sinais detectáveis}\n\\end{aligned}\\]\n\n\n\nCompare os resultados obtidos ao aumentar ou diminuir cada variável individualmente. Assim analisa como que pequenas mudanças nos parametros podem alterar o valor final da equção.\nAo passar o mause no grafico você pode ver o valor exato de cada ponto.\nReinicie a simulação sempre que desejar testar um novo conjunto de parâmetros.\n\n\n\n\n\n\n\n\n\nSugestão:\n\n\n\n\nAltere apenas o valor de (fl) (probabilidade de surgir vida) para observar como pequenas mudanças biológicas podem aumentar ou reduzir drasticamente o número final de civilizações.\nModifique o parâmetro (L) (tempo de duração de uma civilização tecnológica) e compare os resultados no gráfico, analisando como civilizações mais duradouras impactam a chance de detecção extraterrestre.",
+    "crumbs": [
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>Equação de Drake da exobiologia</span>"
+    ]
+  },
+  {
+    "objectID": "grad/BIO-EVO-SINT-01.html#lógica-de-código",
+    "href": "grad/BIO-EVO-SINT-01.html#lógica-de-código",
+    "title": "39  Equação de Drake da exobiologia",
+    "section": "39.2 Lógica de código",
+    "text": "39.2 Lógica de código\n\nAo rodar, o sistema exibe um gráfico mostrando o impacto de R no número de civilizações. Se o usuário abrir o menu dropdown e mudar para fl (fração de planetas que desenvolvem vida), a linha anterior desaparece instantaneamente, uma nova linha toma o seu lugar, e os títulos do gráfico se adaptam sozinhos, revelando a sensibilidade do resultado final a essa nova variável.\n\nEstudante: Curso de Biotecnologia, Universidade Federal de Alfenas (UNIFAL-MG)",
+    "crumbs": [
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>Equação de Drake da exobiologia</span>"
+    ]
+  },
+  {
+    "objectID": "grad/QUI-FISQ-TERM-01.html",
+    "href": "grad/QUI-FISQ-TERM-01.html",
+    "title": "35  Calor liberado em combustão",
+    "section": "",
+    "text": "Estudante: Curso de Biotecnologia (UNIFAL-MG).",
+    "crumbs": [
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Calor liberado em combustão</span>"
+    ]
+  },
+  {
+    "objectID": "grad/QUI-FISQ-TERM-01.html#equação",
+    "href": "grad/QUI-FISQ-TERM-01.html#equação",
+    "title": "35  Calor liberado em combustão",
+    "section": "35.1 Equação:",
+    "text": "35.1 Equação:\n\nLei dos Gases Ideais \\[\n  PV = nRT\n  \\]\nTemperatura isolada (para o gráfico) \\[\n  T = \\frac{PV}{nR}\n  \\]\n\nP = pressão\nV = volume\nT = temperatura\nn = quantidade de gás\nR = constante",
+    "crumbs": [
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Calor liberado em combustão</span>"
+    ]
+  },
+  {
+    "objectID": "grad/QUI-FISQ-TERM-01.html#download-e-uso",
+    "href": "grad/QUI-FISQ-TERM-01.html#download-e-uso",
+    "title": "35  Calor liberado em combustão",
+    "section": "35.2 Download e Uso:",
+    "text": "35.2 Download e Uso:\n\n\n\nNo gafico abaixo, mostra a expansão ou compressão de um gás em relção a temperatura com o volume, no eixo x está o volume e no eixo y a temperatura. Na esquerda está o pistão, como um exemplo prático desse fenomeno.",
+    "crumbs": [
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Calor liberado em combustão</span>"
+    ]
+  },
+  {
+    "objectID": "grad/QUI-FISQ-TERM-01.html#lógica-de-código",
+    "href": "grad/QUI-FISQ-TERM-01.html#lógica-de-código",
+    "title": "35  Calor liberado em combustão",
+    "section": "35.3 Lógica de código",
+    "text": "35.3 Lógica de código\n\nDefinição das constantes físicas O código começa definindo os valores fixos: n (quantidade de gás) R (constante dos gases) P (pressão constante)\nCriação dos valores de volume É criado um conjunto de volumes (de 8 a 16 L). Esses valores simulam o movimento do pistão (subindo e descendo).\nEscala visual do pistão O volume real é convertido para uma escala menor (0 a 10). Isso é feito apenas para melhorar a visualização do movimento do pistão no gráfico.\nUm controle deslizante (slider) permite ao usuário escolher o volume. Quando o slider muda: o pistão sobe ou desce o ponto se move no gráfico o título atualiza com os valores",
+    "crumbs": [
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Calor liberado em combustão</span>"
     ]
   }
 ]

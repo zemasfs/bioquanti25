@@ -754,76 +754,110 @@ function limparTudo() {
 // Definir a equação quadrática padrão
 var codigoPadrao = `
 
-// Pilha de Daniel simplificada
-
-const concentracao = [];
-const tensao = [];
-
-for (let i = 0; i <= 100; i++) {
-
-  const c = 0.1 + i * 0.1;
-
-  const V =
-    1.1 * Math.log10(10 / c) + 0.1;
-
-  concentracao.push(c);
-  tensao.push(V);
-}
-
-const data = [
-  {
-    x: [concentracao[0]],
-    y: [tensao[0]],
-    mode: "lines+markers",
-    name: "Tensao da pilha"
-  }
-];
-
-const frames = [];
-
-for (let i = 1; i < concentracao.length; i++) {
-
-  frames.push({
-    name: "f" + i,
-    data: [
-      {
-        x: concentracao.slice(0, i + 1),
-        y: tensao.slice(0, i + 1)
-      }
-    ],
-    layout: {
-      annotations: [
-        {
-          x: 0.98,
-          y: 0.98,
-          xref: "paper",
-          yref: "paper",
-          showarrow: false,
-          align: "right",
-          text:
-            "Concentracao = " +
-            concentracao[i].toFixed(1) +
-            "<br>Tensao = " +
-            tensao[i].toFixed(2) +
-            " V"
-        }
-      ]
-    }
-  });
-}
-
-const layout = {
-  title: "Pilha de Daniel: efeito da concentracao",
-  xaxis: {
-    title: "Concentracao da solucao"
-  },
-  yaxis: {
-    title: "Tensao (V)",
-    range: [0, 2]
-  }
+const parametros = {
+  R: 2,
+  fp: 0.8,
+  ne: 0.5,
+  fl: 0.3,
+  fi: 0.1,
+  fc: 0.2,
+  L: 10000
 };
 
-return { data, layout, frames };
+function drake(p) {
+  return p.R * p.fp * p.ne * p.fl * p.fi * p.fc * p.L;
+}
+
+const nomes = ["R", "fp", "ne", "fl", "fi", "fc", "L"];
+
+const data = [];
+const buttons = [];
+
+nomes.forEach((nome, idx) => {
+
+  const x = [];
+  const y = [];
+
+  for (let v = 0.01; v <= 1.0; v += 0.01) {
+
+    const p = { ...parametros };
+
+    if (nome === "L") {
+      p[nome] = v * 100000;
+      x.push((v * 100000).toFixed(0));
+    } else {
+      p[nome] = v;
+      x.push(v.toFixed(2));
+    }
+
+    y.push(drake(p));
+  }
+
+  data.push({
+    x: x,
+    y: y,
+    visible: idx === 0,
+    type: "scatter",
+    mode: "lines",
+    line: {
+      width: 4
+    },
+    name: nome
+  });
+
+  buttons.push({
+    label: nome,
+    method: "update",
+    args: [
+      {
+        visible: nomes.map((_, i) => i === idx)
+      },
+      {
+        title:
+          "Equacao de Drake - Variacao do parametro " + nome,
+        xaxis: {
+          title: "Valor de " + nome
+        }
+      }
+    ]
+  });
+
+});
+
+const layout = {
+  title: "Equacao de Drake - Variacao do parametro R",
+  xaxis: {
+    title: "Valor de R"
+  },
+  yaxis: {
+    title: "Numero estimado de civilizacoes",
+    type: "log"
+  },
+  updatemenus: [
+    {
+      type: "dropdown",
+      x: 0.02,
+      y: 1.18,
+      buttons: buttons
+    }
+  ],
+  annotations: [
+    {
+      text:
+        "Selecione um parametro e observe a sensibilidade do resultado.",
+      xref: "paper",
+      yref: "paper",
+      x: 0,
+      y: 1.12,
+      showarrow: false,
+      font: {
+        size: 14
+      }
+    }
+  ]
+};
+
+return { data, layout };
 
 `;
 

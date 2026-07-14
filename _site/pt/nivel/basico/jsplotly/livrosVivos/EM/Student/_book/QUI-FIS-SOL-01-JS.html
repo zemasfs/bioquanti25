@@ -754,76 +754,275 @@ function limparTudo() {
 // Definir a equação quadrática padrão
 var codigoPadrao = `
 
-// Pilha de Daniel simplificada
+// 1. MAPEAMENTO DAS QUESTOES E RESPOSTAS
 
-const concentracao = [];
-const tensao = [];
-
-for (let i = 0; i <= 100; i++) {
-
-  const c = 0.1 + i * 0.1;
-
-  const V =
-    1.1 * Math.log10(10 / c) + 0.1;
-
-  concentracao.push(c);
-  tensao.push(V);
-}
-
-const data = [
+const opcoesMenu = [
   {
-    x: [concentracao[0]],
-    y: [tensao[0]],
-    mode: "lines+markers",
-    name: "Tensao da pilha"
+    label: "1. Conservacao da Massa (I)",
+    afirmacao:
+      "A massa total se conserva em uma reacao.",
+    gabarito:
+      "VERDADEIRO (Lei de Lavoisier)"
+  },
+  {
+    label: "2. Conservacao da Massa (II)",
+    afirmacao:
+      "A massa desaparece durante a reacao.",
+    gabarito:
+      "FALSO (A materia se transforma)"
+  },
+  {
+    label: "3. Conservacao da Massa (III)",
+    afirmacao:
+      "A soma das massas dos reagentes e igual a dos produtos.",
+    gabarito:
+      "VERDADEIRO"
+  },
+  {
+    label: "4. Proporcoes Constantes (I)",
+    afirmacao:
+      "A proporcao entre elementos e fixa em um composto.",
+    gabarito:
+      "VERDADEIRO (Lei de Proust)"
+  },
+  {
+    label: "5. Proporcoes Constantes (II)",
+    afirmacao:
+      "A proporcao varia em cada amostra.",
+    gabarito:
+      "FALSO (A proporcao e sempre constante)"
+  },
+  {
+    label: "6. Proporcoes Multiplas",
+    afirmacao:
+      "Elementos podem formar mais de um composto com massas em proporcoes simples.",
+    gabarito:
+      "VERDADEIRO (Lei de Dalton)"
   }
 ];
 
-const frames = [];
+// 2. TEXTO INICIAL
 
-for (let i = 1; i < concentracao.length; i++) {
+const textoInicial =
+  "<b>Estudo das Leis Ponderais</b>" +
+  "<br><br>" +
+  "Selecione uma afirmacao no menu acima" +
+  "<br>" +
+  "para analisar se ela e verdadeira ou falsa.";
 
-  frames.push({
-    name: "f" + i,
-    data: [
-      {
-        x: concentracao.slice(0, i + 1),
-        y: tensao.slice(0, i + 1)
-      }
-    ],
-    layout: {
-      annotations: [
+const trace = {
+  type: "scatter",
+
+  mode: "text",
+
+  x: [0],
+  y: [0],
+
+  text: [
+    textoInicial
+  ],
+
+  textfont: {
+    size: 16,
+    color: "#263238"
+  },
+
+  hoverinfo: "skip",
+
+  showlegend: false
+};
+
+// 3. CONSTRUCAO DOS BOTOES DO MENU
+
+const botoesDropdown = opcoesMenu.map(
+  function(item) {
+    const textoFormatado =
+      "<b>Afirmacao:</b>" +
+      "<br><br>" +
+      item.afirmacao +
+      "<br><br>" +
+      "<b>Gabarito:</b>" +
+      "<br>" +
+      "<span style='color:#2E86AB'>" +
+      "<b>" +
+      item.gabarito +
+      "</b>" +
+      "</span>";
+
+    return {
+      label: item.label,
+
+      method: "restyle",
+
+      args: [
         {
-          x: 0.98,
-          y: 0.98,
-          xref: "paper",
-          yref: "paper",
-          showarrow: false,
-          align: "right",
-          text:
-            "Concentracao = " +
-            concentracao[i].toFixed(1) +
-            "<br>Tensao = " +
-            tensao[i].toFixed(2) +
-            " V"
-        }
+          text: [
+            textoFormatado
+          ]
+        },
+
+        [0]
       ]
-    }
-  });
-}
+    };
+  }
+);
+
+// 4. LAYOUT DO PLOTLY
 
 const layout = {
-  title: "Pilha de Daniel: efeito da concentracao",
-  xaxis: {
-    title: "Concentracao da solucao"
+  title: {
+    text:
+      "Quiz Interativo: Leis Ponderais",
+
+    x: 0.5
   },
+
+  paper_bgcolor: "#f4f6fb",
+
+  plot_bgcolor: "#f4f6fb",
+
+  margin: {
+    l: 30,
+    r: 30,
+    t: 130,
+    b: 40
+  },
+
+  xaxis: {
+    visible: false,
+
+    range: [
+      -1,
+      1
+    ],
+
+    fixedrange: true
+  },
+
   yaxis: {
-    title: "Tensao (V)",
-    range: [0, 2]
+    visible: false,
+
+    range: [
+      -1,
+      1
+    ],
+
+    fixedrange: true
+  },
+
+  shapes: [
+    {
+      type: "rect",
+
+      xref: "x",
+      yref: "y",
+
+      x0: -0.9,
+      x1: 0.9,
+
+      y0: -0.5,
+      y1: 0.5,
+
+      fillcolor: "#ffffff",
+
+      line: {
+        color: "#2E86AB",
+        width: 2
+      },
+
+      layer: "below"
+    }
+  ],
+
+  updatemenus: [
+    {
+      type: "dropdown",
+
+      direction: "down",
+
+      x: 0.5,
+      y: 1.12,
+
+      xanchor: "center",
+      yanchor: "top",
+
+      active: -1,
+
+      showactive: true,
+
+      bgcolor: "#ffffff",
+
+      bordercolor: "#2E86AB",
+
+      borderwidth: 1,
+
+      font: {
+        size: 13
+      },
+
+      buttons:
+        botoesDropdown
+    }
+  ],
+
+  annotations: [
+    {
+      x: 0.5,
+      y: 1.02,
+
+      xref: "paper",
+      yref: "paper",
+
+      showarrow: false,
+
+      text:
+        "Escolha uma afirmacao:",
+
+      font: {
+        size: 13,
+        color: "#263238"
+      }
+    }
+  ]
+};
+
+const config = {
+  responsive: true,
+
+  displaylogo: false,
+
+  modeBarButtonsToRemove: [
+    "zoom2d",
+    "pan2d",
+    "select2d",
+    "lasso2d",
+    "zoomIn2d",
+    "zoomOut2d",
+    "autoScale2d",
+    "resetScale2d"
+  ],
+
+  toImageButtonOptions: {
+    format: "png",
+
+    filename:
+      "quiz_leis_ponderais",
+
+    width: 1000,
+    height: 650,
+    scale: 2
   }
 };
 
-return { data, layout, frames };
+return {
+  data: [
+    trace
+  ],
+
+  layout: layout,
+
+  config: config
+};
 
 `;
 

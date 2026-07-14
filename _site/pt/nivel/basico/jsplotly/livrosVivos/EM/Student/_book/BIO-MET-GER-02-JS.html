@@ -754,76 +754,239 @@ function limparTudo() {
 // Definir a equação quadrática padrão
 var codigoPadrao = `
 
-// Pilha de Daniel simplificada
-
-const concentracao = [];
-const tensao = [];
-
-for (let i = 0; i <= 100; i++) {
-
-  const c = 0.1 + i * 0.1;
-
-  const V =
-    1.1 * Math.log10(10 / c) + 0.1;
-
-  concentracao.push(c);
-  tensao.push(V);
-}
-
-const data = [
+const cenarios = [
   {
-    x: [concentracao[0]],
-    y: [tensao[0]],
-    mode: "lines+markers",
-    name: "Tensao da pilha"
+    nome: "Miller Classico",
+    temp: 100,
+    pressao: 1,
+    potencia: 50,
+    agua: 500,
+    fator: 1.0
+  },
+  {
+    nome: "Baixa Energia",
+    temp: 75,
+    pressao: 1,
+    potencia: 25,
+    agua: 500,
+    fator: 0.6
+  },
+  {
+    nome: "Alta Energia",
+    temp: 125,
+    pressao: 2,
+    potencia: 100,
+    agua: 500,
+    fator: 1.5
+  },
+  {
+    nome: "Alta Pressao",
+    temp: 100,
+    pressao: 5,
+    potencia: 50,
+    agua: 500,
+    fator: 1.3
+  },
+  {
+    nome: "Temperatura Extrema",
+    temp: 150,
+    pressao: 1,
+    potencia: 75,
+    agua: 500,
+    fator: 0.8
   }
 ];
 
-const frames = [];
+function gerarCenario(c) {
 
-for (let i = 1; i < concentracao.length; i++) {
+  const tempo = [];
+  const rendimento = [];
 
-  frames.push({
-    name: "f" + i,
-    data: [
+  for (let d = 0; d <= 30; d++) {
+
+    const y =
+      100 *
+      (1 - Math.exp(-d / 8)) *
+      c.fator;
+
+    tempo.push(d);
+    rendimento.push(Math.min(y, 100));
+  }
+
+  const rendimentoFinal =
+    rendimento[rendimento.length - 1];
+
+  const pH =
+    (7.5 - rendimentoFinal * 0.015)
+      .toFixed(2);
+
+  const CH4 =
+    Math.round(30 + c.fator * 8);
+
+  const NH3 =
+    Math.round(20 + c.fator * 5);
+
+  const H2 =
+    Math.round(15 + c.fator * 4);
+
+  const H2O =
+    100 - CH4 - NH3 - H2;
+
+  return {
+    tempo,
+    rendimento,
+    pH,
+    CH4,
+    NH3,
+    H2,
+    H2O
+  };
+}
+
+const inicial = gerarCenario(cenarios[0]);
+
+const trace1 = {
+  x: inicial.tempo,
+  y: inicial.rendimento,
+  mode: "lines",
+  name: "Rendimento (%)",
+  xaxis: "x",
+  yaxis: "y"
+};
+
+const trace2 = {
+  labels: [
+    "CH4",
+    "NH3",
+    "H2",
+    "H2O"
+  ],
+  values: [
+    inicial.CH4,
+    inicial.NH3,
+    inicial.H2,
+    inicial.H2O
+  ],
+  type: "pie",
+  hole: 0.45,
+  domain: {
+    x: [0.62, 1.0],
+    y: [0.15, 0.85]
+  },
+  showlegend: true,
+  name: "Gases"
+};
+
+const data = [trace1, trace2];
+
+const buttons = [];
+
+for (let i = 0; i < cenarios.length; i++) {
+
+  const r = gerarCenario(cenarios[i]);
+
+  buttons.push({
+    label: cenarios[i].nome,
+    method: "update",
+    args: [
       {
-        x: concentracao.slice(0, i + 1),
-        y: tensao.slice(0, i + 1)
+        x: [
+          r.tempo,
+          null
+        ],
+        y: [
+          r.rendimento,
+          null
+        ],
+        values: [
+          null,
+          [
+            r.CH4,
+            r.NH3,
+            r.H2,
+            r.H2O
+          ]
+        ]
+      },
+      {
+        annotations: [
+          {
+            x: 0.18,
+            y: 0.95,
+            xref: "paper",
+            yref: "paper",
+            showarrow: false,
+            text:
+              "pH final: " +
+              r.pH +
+              "<br>Rendimento: " +
+              r.rendimento[
+                r.rendimento.length - 1
+              ].toFixed(1) +
+              "%"
+          }
+        ]
       }
-    ],
-    layout: {
-      annotations: [
-        {
-          x: 0.98,
-          y: 0.98,
-          xref: "paper",
-          yref: "paper",
-          showarrow: false,
-          align: "right",
-          text:
-            "Concentracao = " +
-            concentracao[i].toFixed(1) +
-            "<br>Tensao = " +
-            tensao[i].toFixed(2) +
-            " V"
-        }
-      ]
-    }
+    ]
   });
 }
 
 const layout = {
-  title: "Pilha de Daniel: efeito da concentracao",
+  title:
+    "Experimento de Miller-Urey",
+
+  paper_bgcolor: "white",
+  plot_bgcolor: "white",
+
   xaxis: {
-    title: "Concentracao da solucao"
+    domain: [0, 0.55],
+    title: "Tempo (dias)"
   },
+
   yaxis: {
-    title: "Tensao (V)",
-    range: [0, 2]
+    title: "Rendimento (%)",
+    range: [0, 100]
+  },
+
+  annotations: [
+    {
+      x: 0.18,
+      y: 0.95,
+      xref: "paper",
+      yref: "paper",
+      showarrow: false,
+      text:
+        "pH final: " +
+        inicial.pH +
+        "<br>Rendimento: " +
+        inicial.rendimento[
+          inicial.rendimento.length - 1
+        ].toFixed(1) +
+        "%"
+    }
+  ],
+
+  updatemenus: [
+    {
+      x: 0.02,
+      y: 1.15,
+      showactive: true,
+      buttons: buttons
+    }
+  ],
+
+  margin: {
+    t: 80,
+    r: 20,
+    l: 60,
+    b: 60
   }
 };
 
-return { data, layout, frames };
+return {
+  data,
+  layout
+};
 
 `;
 

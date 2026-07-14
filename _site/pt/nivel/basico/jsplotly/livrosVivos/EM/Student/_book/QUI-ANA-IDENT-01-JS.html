@@ -754,76 +754,347 @@ function limparTudo() {
 // Definir a equação quadrática padrão
 var codigoPadrao = `
 
-// Pilha de Daniel simplificada
+const resistencia = 4;
 
-const concentracao = [];
-const tensao = [];
-
-for (let i = 0; i <= 100; i++) {
-
-  const c = 0.1 + i * 0.1;
-
-  const V =
-    1.1 * Math.log10(10 / c) + 0.1;
-
-  concentracao.push(c);
-  tensao.push(V);
-}
+const voltagens = [6,12,24,48];
 
 const data = [
-  {
-    x: [concentracao[0]],
-    y: [tensao[0]],
-    mode: "lines+markers",
-    name: "Tensao da pilha"
-  }
+
+{
+  x:[0,0,10,10,0],
+  y:[0,10,10,0,0],
+  mode:"lines",
+  name:"Recipiente"
+},
+
+{
+  x:[0,10,10,0,0],
+  y:[0,0,6,6,0],
+  fill:"toself",
+  mode:"lines",
+  name:"Agua"
+},
+
+{
+  x:[3,3],
+  y:[1,8],
+  mode:"lines",
+  line:{width:8},
+  name:"Catodo"
+},
+
+{
+  x:[7,7],
+  y:[1,8],
+  mode:"lines",
+  line:{width:8},
+  name:"Anodo"
+},
+
+{
+  x:[3],
+  y:[2],
+  mode:"markers+text",
+  text:["H2"],
+  textposition:"top center",
+  marker:{size:20},
+  name:"H2"
+},
+
+{
+  x:[7],
+  y:[2],
+  mode:"markers+text",
+  text:["O2"],
+  textposition:"top center",
+  marker:{size:20},
+  name:"O2"
+}
+
 ];
 
 const frames = [];
 
-for (let i = 1; i < concentracao.length; i++) {
+const voltagemInicial = 12;
+const correnteInicial = voltagemInicial / resistencia;
+
+for(let k=0;k<=60;k++){
+
+  const tempo = k*10;
+
+  const carga = correnteInicial*tempo;
+
+  const molH2 = carga/(2*96485);
+  const molO2 = carga/(4*96485);
+
+  const volH2 = molH2*22.4;
+  const volO2 = molO2*22.4;
+
+  const energia = voltagemInicial*correnteInicial*tempo;
+
+  const h = 2 + 0.12*k;
 
   frames.push({
-    name: "f" + i,
-    data: [
+
+    name:"f"+k,
+
+    data:[
+
+      {},{},{},{},
+
       {
-        x: concentracao.slice(0, i + 1),
-        y: tensao.slice(0, i + 1)
+        x:[3,2.8,3.2],
+        y:[h,h+0.4,h+0.8],
+        mode:"markers+text",
+        text:["","","H2"],
+        textposition:"top center",
+        marker:{size:[10,14,18]}
+      },
+
+      {
+        x:[7,6.8,7.2],
+        y:[h,h+0.3,h+0.6],
+        mode:"markers+text",
+        text:["","","O2"],
+        textposition:"top center",
+        marker:{size:[10,12,15]}
       }
+
     ],
-    layout: {
-      annotations: [
+
+    layout:{
+
+      annotations:[
+
         {
-          x: 0.98,
-          y: 0.98,
-          xref: "paper",
-          yref: "paper",
-          showarrow: false,
-          align: "right",
+          x:3,
+          y:9,
+          text:"(-)",
+          showarrow:false
+        },
+
+        {
+          x:7,
+          y:9,
+          text:"(+)",
+          showarrow:false
+        },
+
+        {
+          x:5,
+          y:11.2,
+          showarrow:false,
+
           text:
-            "Concentracao = " +
-            concentracao[i].toFixed(1) +
-            "<br>Tensao = " +
-            tensao[i].toFixed(2) +
-            " V"
+          "Voltagem = "+voltagemInicial+
+          " V | Corrente = "+
+          correnteInicial.toFixed(2)+" A"
+        },
+
+        {
+          x:5,
+          y:10.2,
+          showarrow:false,
+
+          text:
+          "Potencia = "+
+          (voltagemInicial*correnteInicial).toFixed(1)+
+          " W | Energia = "+
+          energia.toFixed(0)+
+          " J"
+        },
+
+        {
+          x:5,
+          y:9.2,
+          showarrow:false,
+
+          text:
+          "H2 = "+
+          volH2.toFixed(4)+
+          " L | O2 = "+
+          volO2.toFixed(4)+
+          " L"
         }
+
       ]
+
     }
+
   });
+
 }
 
+const botoesVoltagem = [];
+
+voltagens.forEach(function(V){
+
+  const I = V/resistencia;
+
+  const tempoFinal = 600;
+
+  const carga = I*tempoFinal;
+
+  const molH2 = carga/(2*96485);
+  const molO2 = carga/(4*96485);
+
+  const volH2 = molH2*22.4;
+  const volO2 = molO2*22.4;
+
+  botoesVoltagem.push({
+
+    label:V+" V",
+
+    method:"relayout",
+
+    args:[{
+
+      annotations:[
+
+        {
+          x:3,
+          y:9,
+          text:"(-)",
+          showarrow:false
+        },
+
+        {
+          x:7,
+          y:9,
+          text:"(+)",
+          showarrow:false
+        },
+
+        {
+          x:5,
+          y:11.2,
+          showarrow:false,
+
+          text:
+          "Voltagem = "+V+
+          " V | Corrente = "+
+          I.toFixed(2)+" A"
+        },
+
+        {
+          x:5,
+          y:10.2,
+          showarrow:false,
+
+          text:
+          "Potencia = "+
+          (V*I).toFixed(1)+
+          " W"
+        },
+
+        {
+          x:5,
+          y:9.2,
+          showarrow:false,
+
+          text:
+          "H2 = "+
+          volH2.toFixed(4)+
+          " L | O2 = "+
+          volO2.toFixed(4)+
+          " L"
+        }
+
+      ]
+
+    }]
+
+  });
+
+});
+
 const layout = {
-  title: "Pilha de Daniel: efeito da concentracao",
-  xaxis: {
-    title: "Concentracao da solucao"
+
+  title:"Eletrolise da Agua",
+
+  xaxis:{
+    range:[-1,11],
+    visible:false
   },
-  yaxis: {
-    title: "Tensao (V)",
-    range: [0, 2]
-  }
+
+  yaxis:{
+    range:[-1,12],
+    visible:false
+  },
+
+  annotations:[
+
+    {
+      x:3,
+      y:9,
+      text:"(-)",
+      showarrow:false
+    },
+
+    {
+      x:7,
+      y:9,
+      text:"(+)",
+      showarrow:false
+    },
+
+    {
+      x:5,
+      y:11.2,
+      text:"Voltagem = 12 V | Corrente = 3.00 A",
+      showarrow:false
+    }
+
+  ],
+
+  updatemenus:[
+
+    {
+      type:"buttons",
+
+      x:0.02,
+      y:1.15,
+
+      buttons:[
+
+        {
+          label:"Aplicar Energia",
+
+          method:"animate",
+
+          args:[
+            null,
+            {
+              frame:{
+                duration:80,
+                redraw:true
+              },
+              transition:{
+                duration:0
+              }
+            }
+          ]
+        }
+
+      ]
+
+    },
+
+    {
+      x:0.45,
+      y:1.15,
+      buttons:botoesVoltagem
+    }
+
+  ]
+
 };
 
-return { data, layout, frames };
+return {
+  data,
+  layout,
+  frames
+};
 
 `;
 
