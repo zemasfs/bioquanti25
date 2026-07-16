@@ -1744,9 +1744,9 @@
   {
     "objectID": "nivel/basico/jsplotly/livrosVivos/index.html",
     "href": "nivel/basico/jsplotly/livrosVivos/index.html",
-    "title": "Livros Vivos - Uma experiência imersiva com JSPlotly",
+    "title": "Coleção Livros Vivos",
     "section": "",
-    "text": "Esta página em construção busca ofecer conteúdos didático-científicos para aprendizagem autônoma de textos estilizados combinados à simulações interativas com uso do JSPlotly.\nOu seja, uma versão para livros vivos, combinando texto e códigos reprodutíveis e editáveis para uso do JSPlotly.\nCada livro vivo abaixo busca permitir uma experiência interativa e imersiva única no uso do aplicativo, na qual a sequência didática é intercalada por objetos interativos. A parte do material relativa ao USo do JSPlotly e JavaScript & JSPlotly foi estruturada para permitir a inserção direta de comandos em campos visando a reprodução dos objetos abordados, por simples cópia/cola/execução na própria página do “livro”, e sem necessidade do programa JSPlotly externo.\nOs demais livros vivos em construção foram estruturados para permitir uma combinação da sequência didática com objetos interativos de JSPlotly personalizados a cada tema.\nO material intititulado JSPlotly por Estudantes compreende alguns temas do ensino médio para Matemática e Ciências da Natureza abordados com auxílio de objetos interativos desenvolvidos por estudantes de graduação e do ensino médio.\nUso do JSPlotly\nJavaScript & JSPlotly \n\nMatemática & JSPlotly\n\nFísica & JSPlotly\n\nQuímica & JSPlotly\n\nBiologia & JSPlotly\n\nBiofísico-química & JSPlotly\n\nJSPlotly por Estudantes\nSensores & JSPlotly\n\n\n\n Back to top",
+    "text": "Esta página em construção busca ofecer conteúdos didático-científicos para aprendizagem autônoma de textos estilizados combinados à simulações interativas com uso do JSPlotly.\nOu seja, uma versão para livros vivos, combinando texto e códigos reprodutíveis e editáveis para uso do JSPlotly.\nCada livro vivo busca facultar uma experiência interativa e imersiva única no uso do aplicativo, na qual a sequência didática é intercalada por objetos interativos de acesso instantâneo pelo usuário por meio de um JSPlotly personalizado em cada tema.\nOs livros vivos intitulados USo do JSPlotly e JavaScript & JSPlotly foram estruturados para permitir a inserção direta de comandos em campos visando a reprodução dos objetos abordados, por simples cópia/cola/execução na própria página do “livro”, e sem necessidade de JSPlotly externo.\nUso do JSPlotly\nJavaScript & JSPlotly \n\nSimulações em Matemática com JSPlotly\n\nSimulações em Física com JSPlotly\n\nSimulações em Química com JSPlotly\n\nSimulações em Biologia com JSPlotly\n\nSimulações em Biofísico-química com JSPlotly\n\nJSPlotly por Estudantes\nSensores & JSPlotly",
     "crumbs": [
       "Sobre",
       "JSPlotly: objetos interativos & IA",
@@ -3707,5 +3707,17 @@
     "title": "",
     "section": "7 GPT personalizado",
     "text": "7 GPT personalizado\n\nSchneedorf, J.M. GSPlotly: gerador de scripts interativos para JSPlotly. GPT customizado. OpenAI, 2025."
+  },
+  {
+    "objectID": "nivel/basico/jsplotly/livrosVivos/index.html#uma-experiência-imersiva-com-jsplotly",
+    "href": "nivel/basico/jsplotly/livrosVivos/index.html#uma-experiência-imersiva-com-jsplotly",
+    "title": "Coleção Livros Vivos",
+    "section": "",
+    "text": "Esta página em construção busca ofecer conteúdos didático-científicos para aprendizagem autônoma de textos estilizados combinados à simulações interativas com uso do JSPlotly.\nOu seja, uma versão para livros vivos, combinando texto e códigos reprodutíveis e editáveis para uso do JSPlotly.\nCada livro vivo busca facultar uma experiência interativa e imersiva única no uso do aplicativo, na qual a sequência didática é intercalada por objetos interativos de acesso instantâneo pelo usuário por meio de um JSPlotly personalizado em cada tema.\nOs livros vivos intitulados USo do JSPlotly e JavaScript & JSPlotly foram estruturados para permitir a inserção direta de comandos em campos visando a reprodução dos objetos abordados, por simples cópia/cola/execução na própria página do “livro”, e sem necessidade de JSPlotly externo.\nUso do JSPlotly\nJavaScript & JSPlotly \n\nSimulações em Matemática com JSPlotly\n\nSimulações em Física com JSPlotly\n\nSimulações em Química com JSPlotly\n\nSimulações em Biologia com JSPlotly\n\nSimulações em Biofísico-química com JSPlotly\n\nJSPlotly por Estudantes\nSensores & JSPlotly",
+    "crumbs": [
+      "Sobre",
+      "JSPlotly: objetos interativos & IA",
+      "Livros Vivos"
+    ]
   }
 ]
