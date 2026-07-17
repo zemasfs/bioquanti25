@@ -54,7 +54,7 @@ pesquisa e ensino com R & RStudio. Editora UNIFAL-MG, Alfenas, 342p. (in press).
 
 - Schneedorf, J.M., Nogueira, M.G.F., Mafra, L.A.S., Silva, E.L. [Jardim de Moléculas: um catálogo virtual para ensino reprodutível de modelos atômicos ao ensino básico.](producao/jardim_moleculas_schneedorf.pdf) In: Aprendizagem Ativa: da Educação Básica ao Ensino Superior. Org: Sindiany Suelen Caduda dos Santos, Débora Moreira de Oliveira. V & V Editora, Santo André (SP), 2026.
 
-- Schneedorf, J.M. [Uma plataforma para aprendizagem por simulação computacional à Matemática e Ciências Naturais com auxílio de IA.](producao/ciencias_exatas_jsplotly_schneedorf.pdf) In: Silva, J.L. Alves, Araújo, F.G.A, Souza, L.A.S. Cências Exatas: diálogos entre pesquisas e práticas. V & V Editora, Santo André (SP), 12p., 2026 (in press).
+- Schneedorf, J.M. [Arquivo html e bot personalizado para códigos javascript voltados à produção de objetos interativos em matemática e ciências naturais.](producao/ciencias_exatas_jsplotly_schneedorf.pdf) In: Silva, J.L. Alves, Araújo, F.G.A, Souza, L.A.S. Ciências Exatas: diálogos entre pesquisas e práticas. V & V Editora, Santo André (SP), 12p., 2026 (in press).
 
 - Silva, L.E., Lima, D.C., Isgrignero, I., França, J.G., Lage, R.M., Schneedorf, J.M., Mafra, L.A.S. [Tales Ludos: aprimorando a experiência dos usuários para a elaboração de jogos educacionais online.](http://dx.doi.org/10.47247/ASJ/6063.091.8)  In: Tecnologias Emergentes em Educação. V & V Editora, Santo André (SP), 2026.
 
