@@ -12,7 +12,7 @@ Cada ***livro vivo*** busca facultar uma *experiência interativa e imersiva ún
 
 Os livros vivos intitulados *Uso do JSPlotly* e *JavaScript com JSPlotly* reunem atividades práticas organizadas em um ambiente navegável e com recursos executáveis incorporados às próprias páginas. Essa integração permite testar comandos, modificar códigos e observar resultados sem sair da página. 
 
-*JSPlotly por Estudantes* contempla uma coleção de objetos interativos para Matemática, Física, Química e Biologia do ensino médio, e desenvolvidos por bolsistas de iniciação científica do ensino médio e de graduação.
+*JSPlotly por Estudantes* contempla uma coleção de objetos interativos para Matemática, Física, Química e Biologia do ensino médio, e desenvolvidos por bolsistas de iniciação científica do ensino médio e de graduação. 
 
 [Uso do JSPlotly em Ambiente Interativo Integrado](Tutorial/_book/index.html){target="_blank" rel="noopener"}
 
